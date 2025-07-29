@@ -1,0 +1,1148 @@
+body {
+    font-family: Montserrat;
+    background: #222A33;
+
+}
+
+.main-blog-clr {
+    background: #00668B;
+    color: #ffffff;
+    font-size: 14px;
+    padding-block: 5px;
+    padding-inline: 10px;
+    border-radius: 5px;
+}
+
+.main-blog-caption {
+    color: #ffffff;
+    font-size: 14px;
+    color: #D5D5D5;
+}
+
+.main-blog-h {
+    font-size: 32px;
+    font-weight: 600;
+    width: 60%;
+    line-height: normal;
+}
+
+.blog-banner {
+    position: relative;
+    display: inline-block;
+}
+
+.inside-content {
+    position: absolute;
+    color: #ffffff;
+    bottom: 0;
+    padding-inline: 20px;
+    width: 100%;
+}
+
+.author-section {
+    display: flex;
+    align-items: center;
+}
+
+.author-section-in-mob {
+    display: flex;
+    align-items: center;
+    color:#ffffff;
+}
+
+@media (max-width:576px) {
+    .main-blog-h {
+        font-size: 16px !important;
+    }
+
+    .main-blog-caption,
+    .main-blog-clr {
+        font-size: 12px;
+    }
+
+}
+
+.summary-container {
+    display: flex;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.sidebar {
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    border-radius: 10px;
+    width: 25%;
+}
+
+.summary-content {
+    width: 60%;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 40px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.follow-h {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 35px;
+    color:#ffffff;
+}
+
+.menu-item {
+    padding-block: 10px;
+    padding-inline: 13px;
+    border-left: 3px solid rgba(77, 77, 77, 1);
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.menu-item.active {
+    border-left: 3px solid rgba(0, 186, 255, 1);
+    font-weight: 700;
+}
+
+.menu-item:hover {
+    border-left: 3px solid rgb(148, 223, 251);
+}
+
+.menu-item.active:hover {
+    border-left: 3px solid rgba(0, 186, 255, 1); /* Keep the active style */
+}
+
+
+.menu-item.active .summary-h {
+    margin-top: 40px;
+    /* Adjust the value to set the desired margin */
+}
+
+
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.newsletter-banner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-height: 40vh;
+    background: url('/Course-landing-img/newsletter-frame.png') no-repeat center/cover;
+    border-radius: 35px;
+}
+
+.get-notified-card {
+    position: absolute;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    /* Adjust if needed */
+}
+
+.margin-section {
+    margin: 50px;
+}
+
+@media (max-width:768px) {
+    .margin-section {
+        margin: 25px;
+    }
+}
+
+.newsletter-h {
+    font-weight: 700;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.newsletter-p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(217, 217, 217, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    backdrop-filter: blur(35px);
+    border: 1px solid #84848461;
+    border-radius: 50px;
+    padding: 5px;
+    width: 70%;
+}
+
+.newsletter-btn {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: #C8C8C8;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.newsletter-sub-btn {
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #15465B;
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid #004C6B;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media (max-width:992px) {
+    .newsletter-h {
+        font-size: 30px;
+    }
+
+    .newsletter-p {
+        font-size: 16px;
+    }
+
+    .newsletter-btn {
+        font-size: 14px;
+        padding: 3px 20px;
+    }
+
+    .newsletter-sub-btn {
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
+    .newsletter-container {
+        width: unset;
+    }
+}
+
+@media (max-width:768px) {
+    .get-notified-card {
+        width: 90%;
+    }
+
+    .newsletter-h {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width:576px) {
+    .newsletter-h {
+        font-size: 20px;
+    }
+
+    .newsletter-p {
+        font-size: 14px;
+    }
+
+    .newsletter-btn {
+        font-size: 12px;
+    }
+
+    .newsletter-sub-btn {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:470px) {
+    .newsletter-h {
+        font-size: 16px;
+    }
+
+    .newsletter-p {
+        font-size: 12px;
+    }
+
+    .newsletter-btn {
+        padding: 3px 10px;
+        font-size: 11px;
+    }
+
+    .newsletter-sub-btn {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width:370px) {
+
+    .newsletter-btn,
+    .newsletter-sub-btn {
+        font-size: 8px;
+    }
+}
+
+.related-blogs-sub-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.related-blog-card {
+    border: 2px solid #006185;
+    border-radius: 32px;
+    background: linear-gradient(180deg, rgba(2, 53, 72, 0.5) 0%, rgba(7, 95, 128, 0.5) 100%);
+}
+
+.blog-content {
+    color: #EFEFEF;
+    padding: 20px;
+}
+
+.blog-card-img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.user-name, .view-count {
+    font-size: 14px;
+    font-weight: 500;
+    color: #C8C8C8;
+}
+
+.blog-content-h {
+    font-weight: 700;
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-clamp: 2;
+}
+
+.blog-content-p {
+    font-size: 14px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-clamp: 2;
+}
+
+.blog-content-span{
+    text-decoration: none;
+}
+
+.underline-text {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.underline-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff; 
+    transition: width 0.3s ease-in-out;
+}
+
+.underline-text:hover::after {
+    width: 100%;
+}
+
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+.blog-content-span:hover .arrow {
+    transform: translateX(5px); 
+}
+
+
+
+.related-blogs-heading {
+    font-weight: 700;
+    font-size: 32px;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:992px) {
+    .related-blogs-sub-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .related-blog-card:nth-child(3) {
+        transform: translateX(54%);
+        justify-self: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:768px) {
+    .related-blogs-sub-section {
+        gap: 20px;
+    }
+
+    .blog-content-h {
+        font-size: 16px;
+    }
+
+    .user-name {
+        font-size: 12px;
+    }
+
+    .blog-content-p {
+        font-size: 13px;
+    }
+
+    .blog-content-span {
+        font-size: 14px;
+    }
+
+    .related-blogs-heading {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width:576px) {
+    .related-blogs-sub-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .related-blog-card:nth-child(3) {
+        transform: translateX(0%);
+    }
+
+    .related-blogs-heading {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:420px) {
+    .related-blogs-heading {
+        font-size: 20px;
+    }
+}
+
+.courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    max-height: 300px;
+    resize: vertical;
+    overflow-y: auto;
+    padding: 10px;
+    border: 2.5px solid rgba(10, 55, 78, 1);
+    background: rgba(5, 38, 52, 1);
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+
+textarea::placeholder{
+    color:#ffffff;
+}
+
+.Comment-input-container {
+    position: relative;
+    width: 100%;
+}
+
+.Comment-input-field {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(10, 55, 78, 1);
+    border-radius: 12px;
+    padding-block: 15px;
+    padding-inline: 10px;
+    color: #ffffff;
+}
+
+/* Hide label when input is focused */
+.Comment-input-field:focus+.Comment-input-label {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Keep label hidden if input has a value */
+.Comment-input-field:not(:placeholder-shown)+.Comment-input-label {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Show label only when input is empty and not focused */
+.Comment-input-field:placeholder-shown:not(:focus)+.Comment-input-label {
+    visibility: visible;
+    opacity: 1;
+}
+
+.Comment-input-label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: rgba(235, 235, 235, 1);
+    transition: 0.3s ease;
+    pointer-events: none;
+    padding-inline: 13px;
+}
+
+.Comment-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 10px;
+}
+
+.required {
+    color: red !important;
+}
+
+/* For Chrome, Safari, Edge, Opera */
+.Comment-input-field::-webkit-outer-spin-button,
+.Comment-input-field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+.Comment-input-field {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.courses-name {
+    border: 1px solid #3F3F3F;
+    background-color: transparent;
+    border-radius: 12px;
+    color: #ffffff;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+.Comment-s-btn {
+    background: linear-gradient(180deg, rgba(9, 103, 138, 0.5) 0%, rgba(0, 73, 100, 0.5) 100%);
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    border: 2px solid #004C6B;
+    padding-inline: 30px;
+    padding-block: 10px;
+    border-radius: 22px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.req-reg-btn {
+    background: linear-gradient(180deg, rgba(105, 105, 105, 0.5) 0%, rgba(35, 43, 52, 0.5) 100%);
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    padding-inline: 30px;
+    padding-block: 10px;
+    border-radius: 22px;
+}
+
+.summary-h {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+.summary-p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #BABABF;
+}
+
+.carousel-container {
+    max-width: 230px;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    display: flex;
+    bottom: -12%;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 0px;
+    border-width: 2px;
+    border-radius: 2px;
+    background: #D9D9D9;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.carousel-indicators button {
+    width: 40px;
+    border: none;
+    background-color: #5FA4C6;
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+
+.carousel-indicators .active {
+    background: rgba(0, 103, 142, 1);
+    opacity: 1;
+    width: 40px;
+}
+
+.happy-students-h {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 16px;
+    color:#ffffff;
+}
+
+.Request-input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.Request-input-field {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #5E5E5E;
+    border-radius: 12px;
+    padding-block: 15px;
+    padding-inline: 10px;
+    color: #ffffff;
+}
+
+/* Hide label when input is focused */
+.Request-input-field:focus+.Request-input-label {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Keep label hidden if input has a value */
+.Request-input-field:not(:placeholder-shown)+.Request-input-label {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Show label only when input is empty and not focused */
+.Request-input-field:placeholder-shown:not(:focus)+.Request-input-label {
+    visibility: visible;
+    opacity: 1;
+}
+
+.Request-input-label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #747474;
+    transition: 0.3s ease;
+    pointer-events: none;
+    padding-inline: 13px;
+}
+
+.Request-input-label-query {
+    top: 15% !important;
+}
+
+.required {
+    color: red !important;
+}
+
+/* For Chrome, Safari, Edge, Opera */
+.Request-input-field::-webkit-outer-spin-button,
+.Request-input-field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+.Request-input-field {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.categories {
+    background: linear-gradient(180deg, rgba(2, 53, 72, 0.25) 0%, rgba(7, 95, 128, 0.25) 100%);
+    border: 1px solid rgba(20, 69, 96, 1);
+    padding-block: 25px;
+    padding-inline: 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.promotional-h {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.category-btn {
+    background: linear-gradient(180deg, rgba(9, 103, 138, 0.2) 15.32%, rgba(0, 73, 100, 0.2) 100%);
+    border: 1px solid rgba(20, 69, 96, 1);
+    color: #ffffff;
+    width: 100%;
+    padding-block: 10px;
+    padding-inline: 15px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.category-btn:hover{
+    background-color: #047CA8;
+}
+
+.top-posts,
+.Request-form {
+    background: linear-gradient(180deg, rgba(105, 105, 105, 0.5) 0%, rgba(35, 43, 52, 0.5) 100%);
+    border: none;
+    padding-block: 25px;
+    padding-inline: 20px;
+    border-radius: 20px;
+}
+
+.numbering-post {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 0;
+    background: linear-gradient(180deg, rgba(145, 145, 145, 123) 40%, #181818 86.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.top-post-card {
+    background: linear-gradient(180deg, rgba(145, 145, 145, 0.41) 0%, #181818 86.4%);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.top-post-p {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+
+.promotional-content {
+    width: 40%;
+}
+
+.promotional-p {
+    font-weight: 500;
+    font-size: 12px;
+    color: rgba(173, 173, 173, 1);
+}
+
+.follow-img{
+    height:45px;
+    width:45px;
+}
+
+.icon-align{
+    gap:10px;
+}
+
+.related-blogs-section{
+    padding-bottom:30px;
+}
+
+@media (max-width: 1060px) {
+    .sidebar {
+        display: none;
+    }
+
+    .happy-students-h {
+        text-align: center;
+    }
+
+    .follow-us-section {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .icon-align{
+        justify-content: center;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .numbering-post {
+        font-size: 45px;
+    }
+
+    .post-image {
+        height: 50px;
+    }
+
+    .top-post-p {
+        font-size: 11px;
+        ;
+    }
+
+    .category-btn {
+        padding-inline: 8px;
+    }
+}
+
+@media (max-width:768px) {
+    .author-section {
+        display: none;
+    }
+
+    .main-blog-h {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .summary-container {
+        display: block;
+    }
+
+    .summary-content {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .promotional-content {
+        width: 100%;
+    }
+
+    .top-posts,
+    .Request-form {
+        width: 65%;
+    }
+
+    .categories {
+        width: 65%;
+    }
+
+    .Comment-form {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .centering {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-align{
+        gap:5px;
+    }
+}
+
+@media (max-width:576px) {
+    .Comment-form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top-posts,
+    .Request-form {
+        width: 100%;
+    }
+
+    .categories {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .summary-container {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+        padding: 25px;
+        margin-top: 20px;
+    }
+
+    .courses-list {
+        margin-top: 40px;
+    }
+
+    .align-me{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .follow-h, .follow-us-section{
+        margin-top:0px;
+        text-align: left;
+    }
+
+    .align-me-3 {
+        margin-top: 20px;
+    }
+
+    .author-section-in-mob{
+        font-size: 14px;
+    }
+
+    .follow-img{
+        height:35px;
+        width:35px;
+    }
+}
+
+@media (min-width:768px) {
+    .session-details {
+        position: sticky;
+        top: 10px;
+    }
+}
+
+@media (min-width:769px){
+
+    .align-me{
+        display: none;
+    }
+
+}
+
+.heart-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 44px;
+}
+
+.fa-heart {
+    color: rgba(200, 200, 200, 1);
+    transition: color 0.3s ease-in-out;
+}
+
+.blog-floating-btn{
+    background: rgba(10, 109, 151, 1);
+    border: 2px solid rgba(17, 137, 188, 1);
+    color:#ffffff;
+    padding-block:12px;
+    padding-inline:30px;
+    border-radius: 30px;
+}
+
+.blog-floating-sub-btn{
+    background:rgba(144, 22, 0, 1);
+    width:fit-content;
+    padding-block:12px;
+    padding-inline: 16px;
+    border-radius: 7px;
+    color:#ffffff;
+    border:none;
+    display: flex;
+    align-items: center;
+}
+
+.blog-sub-text, .blog-connect-text{
+    color:rgba(0, 102, 146, 1);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.blog-floating-btn{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.float-No-of-likes{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 0px;
+    color:rgba(0, 111, 170, 1);
+}
+
+.likes-text{
+    color:rgba(0, 111, 170, 1);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.blog-floating-label{
+    background-color: #ffffff;
+    padding-block:2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.float-social-media{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.float-blog-subs{
+    display: flex;
+    align-items: center;
+}
+
+.Yt-text{
+    font-weight: 14px;
+    font-weight: 700;
+    margin-left:5px;
+}
+
+.dividing-line{
+    border-right: 2px solid rgba(166, 228, 255, 1);
+    font-size: 35px;
+}
+
+.dividing-line-mb{
+    border-right: 2px solid rgba(166, 228, 255, 1);
+    font-size: 35px;
+}
+
+.yt-mb-icon{
+    display: none;
+}
+
+.leave-comment-in-mob{
+    display: flex;
+    align-items: center;
+    color:white;
+    gap:15px;
+}
+
+.leave-comment-in-cust-screen{
+    display: none;
+}
+
+
+.blog-author-h{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.blog-author-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media (min-width:992px){
+    .blog-floating-sub-btn{
+        margin-left:10px;
+    }
+}
+
+
+@media (max-width:992px){
+    .float-social-media{
+        display: block;
+    }
+
+    .float-blog-subs{
+        display: block;
+    }
+
+    .blog-sub-text, .blog-connect-text{
+        font-size: 18px;
+    }
+
+    .float-social-media img{
+        margin-right:10px
+    }
+
+    .blog-floating-sub-btn{
+        padding-block: 7px;
+    }
+}
+
+@media (max-width:768px){
+    .float-social-media, .float-blog-subs, .dividing-line{
+        display: none;
+    }
+
+    .yt-mb-icon{
+        display: block;
+        border:none;
+        background-color: rgba(144, 22, 0, 1);
+        padding-block:14px;
+        padding-inline:10px;
+        border-radius: 50px;
+        position: absolute;
+        top: -90%;
+        right: 5%;
+    }
+
+    .blog-author-h{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .blog-author-name{
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.Comment-input-field{
+    background: rgba(5, 38, 52, 1);
+}
+
+@media (min-width: 768px) and (max-width: 850px),
+       (max-width: 470px) {
+    .leave-comment-in-mob {
+        display: none; /* Hide in these ranges */
+    }
+
+    .leave-comment-in-cust-screen {
+        display: flex; /* Show instead */
+        color:white;
+        gap:15px;
+        margin-bottom:20px;
+    }
+}

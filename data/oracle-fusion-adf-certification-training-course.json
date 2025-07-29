@@ -1,0 +1,879 @@
+{
+    "title": "Oracle ADF Online Training",
+    "id":"ORF-ADF-OT-018",
+    "category":"Oracle",
+    "duration":"3 Months",
+    "hero": {
+        "title": "Master Oracle ADF Online Training at tech Leads IT",
+        "animationTitle": [
+            "Expert Training.",
+            "Redwood Experience",
+            "AI with ADF"
+        ],
+        "shortDescription": "Advance your career in Enterprise Application Development with our expert-led Oracle ADF Online Training!Master ADF Architecture, Business Components, Task Flows, UI Design, and Integration using real-time project use cases. Gain hands-on experience in building scalable enterprise applications with Oracle Application Development Framework (ADF).",
+        "brouchurePath": "/brochure/adf-training.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "JDeveloper",
+            "ADF Architecture",
+            "ADF Business Components",
+            "ADF Task Flow",
+            "ADF UI Design",
+            "Data Management",
+            "Layout Management",
+            "Data Binding",
+            "User Input Validation",
+            "ADF Troubleshoot",
+            "ADF Debugging"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Enterprise Application Development with Industry-Leading Oracle ADF Online Training",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Java-based enterprise application Dev.",
+                        "Those interested in areas such as ADF components, web services.",
+                        "Job seekers aiming to enhance their resumes with in-demand Oracle ADF development skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "Java & ERP professionals transitioning to Oracle ADF from other frameworks",
+                        "ADF Developers, Middleware Consultants, & Technical Architects seeking expertise in Oracle ADF",
+                        "Business owners aiming to build scalable enterprise applications using Oracle’s ADF",
+                        "Professionals looking to specialize in Fusion Middleware technologies and enterprise UI/UX architecture."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "25 May 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the Oracle ADF  Live Demo with Nageswara Rao"
+        }
+    },
+  "curriculum": {
+        "curriculumPath": "xyz",
+        "modules": [
+            {
+                "moduleName": "Introduction to Fusion and ADF",
+                "chapters": [
+                    {
+                        "chapterName": "Oracle ADF and Jdeveloper",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Oracle Fusion Middleware",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Oracle Fusion Architecture",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ADF and MVC",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "More about ADF",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Exploring JDeveloper",
+                "chapters": [
+                    {
+                        "chapterName": "Jdeveloper 11g and 12c New Features ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Building ADF Application in JDeveloper",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configuring JDeveloper Preferences",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Database Scheme Design",
+                "chapters": [
+                    {
+                        "chapterName": "JDeveloper 11g New Features",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Database Designing Tools in JDeveloper",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Offline Objects",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Synchronize Online-Offline Database",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Data Modelling with ADF Business Components",
+                "chapters": [
+                    {
+                        "chapterName": "Advantages of ADF BC",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ADF BC Categories",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating ADF Business Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Business Component Browser",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Entity Objects and Associations",
+                "chapters": [
+                    {
+                        "chapterName": "Data Persistence using Entity Objects",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Entity Objects",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Modify Entity Object Default Behavior",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Associations",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "View Objects and View Links",
+                "chapters": [
+                    {
+                        "chapterName": "Populating Data in View Objects",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating View Objects",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Modify View Object Default Behavior",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "View Links",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating View Criteria",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating List of Values",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Application Modules",
+                "chapters": [
+                    {
+                        "chapterName": "Designing Application Module",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Application Module",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Application Module Editor",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Testing Service Methods",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Programmatically Modifying Default Behaviour",
+                "chapters": [
+                    {
+                        "chapterName": "Supporting Java Classes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Modify Entity Object Behavior",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Modify View Object Behavior",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Service Methods and Application Module",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Groovy Support",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "User Input Validation",
+                "chapters": [
+                    {
+                        "chapterName": "Validation Life Cycle",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Built-in Declarative Validation Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Validation Execution",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Failure Handling",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Validation Rule Class",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Troubleshooting ADF BC",
+                "chapters": [
+                    {
+                        "chapterName": "Logging and Diagnostics",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Java Logging",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ADF Logging",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ADF Declarative Debugger",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Introduction to User Interface Technologies",
+                "chapters": [
+                    {
+                        "chapterName": "User Interface – Available Technologies",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Java Server Faces",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ADF Faces",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Understanding ADF Data Bindings",
+                "chapters": [
+                    {
+                        "chapterName": "ADF Data Model and Bindings",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Exposing Business Components as Data Controls",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "JSF Expression Language",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Binding Components to Data",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Understanding ADF Task Flows",
+                "chapters": [
+                    {
+                        "chapterName": "Characteristics of ADF Task Flow",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating a Task Flow ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Using ADF Task Flow Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Using Method Call Activities",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Managed Beans",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Enriching the Page Content",
+                "chapters": [
+                    {
+                        "chapterName": "ADF Faces Rich Client Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Using Facets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Using ADF Faces Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "UI and Translation",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Understanding Layout Basics",
+                "chapters": [
+                    {
+                        "chapterName": "ADF Faces Layout Component",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ADF Faces Skins",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Enabling PPR",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Ensuring Reusability",
+                "chapters": [
+                    {
+                        "chapterName": "Pros and Cons of Reusability",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Reusing Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Designing for Reuse",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating ADF Library",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "What Fits your Requirements",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Implementing Page Navigation",
+                "chapters": [
+                    {
+                        "chapterName": "ADF Faces Navigation Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Performing Navigation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Access Keys",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Using Train Components",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Handling Application Events",
+                "chapters": [
+                    {
+                        "chapterName": "JSF Page Life Cycle",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ADF Lifecycle Phases",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Action Methods",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Value Change Events",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Contextual Event Framework",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Managing and Validating Data",
+                "chapters": [
+                    {
+                        "chapterName": "Holding Values in Data Model",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Holding Values in Managed Beans",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Passing Values between Pages",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Validation Event Points",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ADF Binding Validation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ADF Faces Validation",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Transcation Management",
+                "chapters": [
+                    {
+                        "chapterName": "Handling Transactions with ADF BC",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Transaction in ADF Task Flow",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Specifying Task Flow Transaction Start Options",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Handling Transaction Exceptions",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Troubleshooting User Interface",
+                "chapters": [
+                    {
+                        "chapterName": "UI Troubleshooting Tools",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configuring ADF Logging",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ADF Declarative Debugger",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Deploying ADF Applications (WebLogic)",
+                "chapters": [
+                    {
+                        "chapterName": "Creating a WAR Profile",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating a EAR Profile",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Deploying the Application",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Deploying ADF (Oracle Apps R12)"
+            }
+        ],
+        "demoVideoPath": "",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/adf.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Oracle Fusion Experts!",
+            "shortDescription": "Unlock new career opportunities—Oracle ADF professionals are in high demand. Start your journey today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Nageswara Rao is an Oracle-certified ADF expert with over 14 years of experience in enterprise application development using Oracle technologies. As a senior Oracle trainer and consultant, he brings deep expertise in Java, ADF BC, task flows, integrations, and user interface design. He has delivered 30+ successful training batches, mentoring over 3,000 learners with real-time implementation scenarios. Nageswara’s sessions are hands-on and career-focused—perfect for developers, technical consultants, and fresh graduates alike. He is also an active contributor in Oracle forums, known for his practical knowledge and strong development acumen."
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized Oracle Fusion PPM Trainer",
+            "points": [
+                "Oracle-Certified Trainer, Expert in Oracle ADF, Java EE & Web Technologies",
+                "14+ years of experience in Oracle ADF Development & Enterprise Applications",
+                "Trained over 3,000 professionals in Oracle ADF, enabling them to build scalable enterprise apps"
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Nageshwara Rao",
+            "trainerDesignation": "Oracle ADF Expert",
+            "avatarImagePath": "/images/courses/trainer/adf.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Pratap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Satish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹18,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹25,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/adf.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/adf.png"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Oracle ADF Architecture",
+                    "Gain a Clear Understanding of ADF Business Components and Task Flows",
+                    "Develop Core Skills in Java, XML, and JDeveloper Toolset"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Build Real-Time ADF Applications with Business Use Cases",
+                    "Integrate Web Services (SOAP/REST), CSV/XML Data, and UI Components",
+                    "Learn Reusable ADF Components, Validation, and Error Handling"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume",
+                    "Build a Strong LinkedIn Profile and Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on Enterprise-Level ADF Projects for HR, Finance, or SCM",
+                    "Understand Deployment on WebLogic and Integration with Oracle Cloud",
+                    "Strengthen Problem-Solving & Debugging Skills with Industry Experts"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Oracle ADF Training Are You Ready?",
+            "shortDescription": "Join the rising demand for Oracle ADF professionals. Get certified and unlock high-paying career opportunities with top enterprise IT, ERP, and custom application development organizations."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle ADF Trainee Developer",
+                "Oracle ADF Support Analyst",
+                "Oracle ADF Developer",
+                "Java ADF Technical Consultant",
+                "Oracle ADF Technical Lead",
+                "Oracle ADF Consultant",
+                "Fusion Middleware Developer",
+                "Oracle Application Developer",
+                "Oracle ADF Architect"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Power  Master Oracle ADF Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, validating your expertise in Oracle ADF Development.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Oracle Fusion SCM Online Training Course",
+        "Oracle Fusion HCM Online Training Course",
+        "Oracle Fusion Functional Online Training Course",
+        "Oracle Fusion Technical +OIC Online Training Course"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Oracle ADF Training?",
+            "answer": "Our Oracle ADF Training covers key modules such as JDeveloper, ADF Architecture, ADF Business Components, ADF Task Flows, ADF UI Design, Layout Management, Data Binding, User Input Validation, Data Management, ADF Troubleshooting, and ADF Debugging. A detailed syllabus is available in our course brochure."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Live training sessions are held from Monday to Saturday, with 1-hour classes each day. This schedule ensures consistent learning and hands-on practice with Oracle ADF development tools."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, we do not offer weekend-only batches. All sessions are scheduled from Monday to Saturday to maintain learning continuity"
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we provide recorded sessions for learners who prefer self-paced study. However, please note that these sessions do not include live doubt-clearing support."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internship opportunities are available based on performance in mock evaluations. These internships provide practical exposure to Oracle ADF development and real-world application projects."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No, the Oracle ADF Training is offered as a complete package. We do not provide individual modules separately."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes, we offer end-to-end resume assistance specifically tailored to Oracle ADF developer roles, highlighting your skills and project experience."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, a laptop or desktop is required to access JDeveloper and other Oracle ADF tools for hands-on practice during training."
+        },
+        {
+            "question": "Are There Any Prerequisites for This Training?",
+            "answer": "No prior experience is required. The course is beginner-friendly and designed to start from the basics of Oracle ADF development. Basic knowledge of Java and web technologies is helpful but not mandatory."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Absolutely. We begin with fundamental concepts such as JDeveloper setup and ADF architecture and progress to advanced features, making it ideal for both beginners and experienced developers."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes, we provide complete job placement support including mock interviews, resume optimization, and guidance. Our network includes top employers hiring Oracle ADF developers."
+        },
+        {
+            "question": "Do You Offer Oracle ADF Certification Support?",
+            "answer": "Yes, we assist with certification preparation by providing sample questions, study material, and expert mentoring to help you clear Oracle ADF certification exams."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes, all session recordings will be available for 1 year. Detailed study materials, including step-by-step documentation with screenshots, are also provided."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Mock Support?",
+            "answer": "Yes, we share module-specific interview questions and conduct mock interviews to prepare you for real-time job interviews."
+        },
+        {
+            "question": "Do You Provide Instance Access for Practice?",
+            "answer": "Yes, we provide access to JDeveloper and Oracle ADF development environments so you can gain hands-on experience without needing to install software on your own machine."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes, with your 1-year course access, you can attend future batches of Oracle ADF training at no additional cost."
+        },
+        {
+            "question": "Will I Get a Course Completion Certificate?",
+            "answer": "Yes, after successful completion, you will receive a Course Completion Certificate in Oracle ADF development from Tech Leads IT."
+        },
+        {
+            "question": "Is Coding Knowledge Required?",
+            "answer": "Basic coding knowledge in Java and web technologies is helpful but not mandatory. The course includes coding concepts needed for Oracle ADF development."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, we offer 1-on-1 personalized training sessions on request. Pricing will differ from standard group batches."
+        }
+    ]
+}

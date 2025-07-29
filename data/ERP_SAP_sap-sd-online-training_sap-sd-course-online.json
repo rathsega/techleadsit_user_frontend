@@ -1,0 +1,1032 @@
+{
+    "title": "SAP SD Course",
+    "id":"SAP-SDO-OT-007",
+    "category":"ERP",
+    "duration":"3 Months",
+    "hero": {
+        "title": "Master SAP SD Training at Tech Leads IT with",
+        "animationTitle": [
+            "Expert Training.",
+            "Hands-On Projects",
+            "AI With SAP"
+        ],
+        "shortDescription": "Accelerate your career in SAP Sales and Distribution (SD) with our comprehensive SAP SD Training! Master core concepts, develop real-world skills, and gain hands-on experience with end-to-end order-to-cash processes. Our expert-led training equips you to work confidently with SAP SD module training ",
+        "brouchurePath": "/brochure/sap-sd-course-online.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Master Data",
+            "Sales Documents",
+            "Contracts",
+            "Transfer of requirements",
+            "Logistic processes",
+            "Billing",
+            "Pricing & Taxes",
+            "Diverse sales",
+            "Distribution Functions",
+            "Credit Management",
+            "Risk  Management"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Sales & Distribution with Industry-Leading sAP SD online training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Sales  & Distribution within ERP systems.",
+                        "Those interested in enterprise sales processes, order management, pricing, and billing using SAP SD.",
+                        "job seekers aiming to enhance their resumes with in-demand SAP SD skills"
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT & ERP professionals transitioning into Sales and Distribution roles within SAP.",
+                        "Functional Consultants & Business Analysts seeking expertise in SAP SD processes",
+                        "IT Managers & Solution Architects aiming to enhance order-to-cash cycles using SAP S/4HANA",
+                        "Professionals looking to streamline sales operations, pricing strategies through SAP"
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "online",
+            "demoDate": "12 May 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the SAP SD Online Training Live Demo with Kumar"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "SAP SD Online Training",
+        "modules": [
+            {
+                "moduleName": "SAP Introduction",
+                "chapters": [
+                    {
+                        "chapterName": "Introduction to SAP",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SAP Application Integration",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "The SAPGUI",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Customizing Tools",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Basic Transaction Codes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Enterprise Structure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Organizational Structures in Accounting",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Organizational Structures in Logistics",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Assignment of Organizational Units",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Master Data Configuration",
+                "chapters": [
+                    {
+                        "chapterName": "Customer Master Records",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Preparations for Creating Customer Master Data",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Material Master Data",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Customer-Material Info Records",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Master Data Specifics",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Sales Documents",
+                "chapters": [
+                    {
+                        "chapterName": "Overview of a Sales Document",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Item Category Usage",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Higher-Level Item",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Schedule Line Categories",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Schedule Line Category",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Schedule Line Category Determination",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Summary Overview of a Sales Document",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Copy Control",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Sales Process Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Copy Control for Sales Documents",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Item Category Groups",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Item Category Determination",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Basic Sales Order Process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Number Ranges",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Item Proposals (Product Proposal)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Sales Document Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Assignment of Sales Areas to Sales Documents",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Order Reasons for Sales Documents",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Purchase Order Types for Sales Documents",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Sales Order Item Categories and Determination",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Item Categories",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Special Sales Document Types",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " The Quotation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " The Cash Sale Process",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " The Rush Order Process",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " The Credit Process",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " The Debit Process",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " The Returns Process",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Invoice Correction Request",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Contracts and Special Processes",
+                "chapters": [
+                    {
+                        "chapterName": "Quantity Contracts",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Contract Configuration Settings",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Service and Maintenance Contract Process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Value Contract Process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Master Contracts",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Scheduling Agreements",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Consignment Stock Process",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Available to Promise and Transfer of Requirements",
+                "chapters": [
+                    {
+                        "chapterName": "Material Determination",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "An Introduction to the Condition Technique",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Material Listing and Exclusion",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Materials Requirements Planning and Transfer of Requirements",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Individual or Collective Requirements",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Availability Check",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Terminology Used in the Availability Check",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Basic Elements of the Availability Check",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configuring the Availability Check with ATP Logic",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Logistics Execution Process",
+                "chapters": [
+                    {
+                        "chapterName": "Delivery Process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Special Stock",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Returnable Packaging",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Packing Requirements",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Packing by Item Category",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Packing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Delivery Blocks at the Customer/Header Level",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Delivery Blocking at Schedule Line Level",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Delivery Blocking at Header Level",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Blocking Reasons",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Delivery Blocks",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Delivery Creation Process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configuring the Shipping Point Determination",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Shipping Point Determination",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Delivery Item Categories and Determination",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Delivery Document Configuration",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Posting Goods Issue in the Delivery",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Billing",
+                "chapters": [
+                    {
+                        "chapterName": "Billing Process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Payment Terms",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Inter-company Stock Transfer",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Inter-company Sales Transaction",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Rebate Agreement Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Rebate Agreements",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Billing Plan Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Billing Plans",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Invoice List Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Invoice Lists",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Introduction to Copy Control for Billing Documents",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Introduction to Collective Billing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Collective Billing and Copy Control for Billing Documents",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Inter-company Invoice",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Cancellation Invoice",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Pro Forma Invoice",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Special Billing Document Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Billing Document Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configuring Payment Terms",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Pricing and Taxes",
+                "chapters": [
+                    {
+                        "chapterName": "The Condition Technique",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Customers: Account Assignment Groups",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Materials: Account Assignment Groups",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Account Assignment",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Tax Integration with Financial Accounting",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Tax Determination",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Material Groups",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Pricing Groups for Customers",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Price-Relevant Master Data",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Pricing Procedure Determination",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Maintaining Pricing Procedures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Adding Fields to the Field Catalog",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Condition Tables",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Condition Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Assigning Account Determination Procedure",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Diverse Sales and Distribution Functions",
+                "chapters": [
+                    {
+                        "chapterName": "Sales Incompletion Logs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Partner Determination",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Text Determination",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Output Determination",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Customer Hierarchies",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Product Hierarchies",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Credit Management, Receivable Risk Management",
+                "chapters": [
+                    {
+                        "chapterName": "Blocks, and Calendars",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Factory Calendars",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Billing Blocks",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Order Blocks",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Shipping Blocks",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Blocking Customers",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Payment Guarantee Procedure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Forms of Payment Guarantee",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Receivables Risk Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Automatic Credit Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Credit Control Basics",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Maintaining a Credit Control Area",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Credit Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Customer Calendars",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Advanced Consultant Tools",
+                "chapters": [
+                    {
+                        "chapterName": "Sales and Distribution User Exits, Enhancements and BADis",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SAP Enhancements",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Business Add-Ins",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "List of User Exits in the Sales and Distribution Module",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "EDI—Electronic Data Interchange",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Useful Transaction Codes",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP S4 HANA - Overview",
+                "chapters": [
+                    {
+                        "chapterName": "SAP Simple Logistics Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Main Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Simplication Item",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Business Partner",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SAP Fiori US",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Resume Preparation"
+            },
+            {
+                "moduleName": "Interview Preparation"
+            },
+            {
+                "moduleName": "JIRA Functionality Overview"
+            },
+            {
+                "moduleName": "Agile Methodology Overview"
+            }
+        ],
+        "demoVideoPath": "",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/sap_sd.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for SAP SD Experts!",
+            "shortDescription": "Unlock New Career Opportunities  SAP Sales & Distribution Professionals Are In High Demand. Start Your Journey Today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Mr. Kumar, a seasoned SAP professional with over 20 years of hands-on experience in Sales & Distribution (SD) and broader ERP implementations, has empowered numerous global organizations with robust SAP SD solutions. His expertise spans across diverse industries, helping businesses streamline their sales, billing, pricing, and logistics processes through SAP.His deep domain knowledge, combined with a passion for teaching, makes him the ideal mentor for aspiring SAP SD consultants. Kumar’s training is driven by real-time business use cases and industry challenges, enabling students to confidently handle end-to-end SD implementations and support roles. "
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized SAP SD Trainer",
+            "points": [
+                "SAP SD Certified Consultant, with specialization in Pricing Configurations",
+                "20+ years of expertise in SAP technologies, with a strong focus on SAP SD Training",
+                "Trained over 4,000 professionals in SAP SD, helping them excel in functional consulting, project implementations."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Kumar",
+            "trainerDesignation": "SAP SD Expert",
+            "avatarImagePath": "/images/courses/trainer/sap_sd.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Pratap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Satish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹18,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹25,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support"
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/sap_sd.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/sap_sd.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of SAP Sales and Distribution (SD)",
+                    "Gain a Clear Understanding of Order-to-Cash (O2C) Cycle",
+                    "Develop Essential Problem-Solving Skills"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-Time SAP SD Use Cases",
+                    "Solve Business Scenarios with Industry Experts",
+                    "Get Extensive Knowledge in Pricing, Sales Orders, & Billing Processes"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume Tailored to SAP SD Roles",
+                    "Build a Strong LinkedIn Profile and Project Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on Case Studies and End-to-End SD Implementations",
+                    "Understand Real-World Expectations & Best Practices",
+                    "Enhance Analytical Thinking and Functional Design Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students"
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with SAP SD Are You Ready?",
+            "shortDescription": "Join the booming demand for SAP Sales & Distribution experts. Get certified in SAP SD and unlock high-paying career opportunities with top global companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "SAP SD Trainee / Intern",
+                "Junior SAP SD Consultant",
+                "SAP SD Support Analyst",
+                "SAP SD Consultant",
+                "SAP Order-to-Cash Specialist",
+                "SAP SD Lead / Team Lead",
+                "SAP Functional Consultant",
+                "SAP SD Solution Architect",
+                "SAP Practice Head / Delivery Manager (SD)"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "",
+        "shortDescription": ""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your SAP Sales and Distribution (SD) expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "SAP CPI Online Training Course",
+        "SAP MM Online Training Course",
+        "SAP ABAP Online Training Course",
+        "Worday HCM Techno Functional Online Training"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in the SAP SD Training?",
+            "answer": "Our SAP SD online training covers essential modules including Master Data, Sales Order Management, Pricing, Shipping & Delivery, Billing, and Credit Management. This SAP SD course is designed to align with real-world business needs and SAP SD certification objectives. Please refer to the syllabus for a detailed breakdown."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Sessions are conducted from Monday to Friday, each lasting 1 hour. This consistent structure ensures strong fundamentals and expert-led SAP SD training."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "No, live sessions are available only on weekdays to maintain regular engagement and structured learning throughout the SAP SD online course."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, recorded sessions are available for those who prefer self-paced SAP SD training. However, live doubt-clearing support is not included in this mode."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, based on performance in mock evaluations, learners are offered internships that provide practical exposure to SAP SD module training environments."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No, SAP SD training is offered as a complete course. Individual module enrollment is not available."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes, we help you craft an ATS-friendly resume tailored for SAP SD certification roles, showcasing your skills and project exposure."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, to complete hands-on tasks and access the SAP SD course sandbox environment, a laptop or desktop is necessary."
+        },
+        {
+            "question": "Are There Any Prerequisites or Minimum Qualifications Required?",
+            "answer": "No prior SAP experience is needed. Our SAP SD training is suitable for both freshers and experienced professionals, especially those with backgrounds in business, commerce, or IT."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Yes, this SAP SD module training starts with fundamentals and gradually advances to real-time scenarios, making it beginner-friendly."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes, we provide full support including resume building, mock interviews, and job referrals. Our SAP SD online training in Hyderabad and other regions has helped many students get placed in top companies."
+        },
+        {
+            "question": "Do You Provide Support for SAP Certification?",
+            "answer": "Yes, we guide you through the entire SAP SD certification process, including preparation tips and practice materials."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes, all sessions are recorded and shared daily. Our SAP SD online course also includes study guides, configuration documents, and real-time business process references."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Assistance?",
+            "answer": "Yes, we share module-specific and scenario-based SAP SD interview questions along with mock interviews to help you prepare."
+        },
+        {
+            "question": "Do You Provide Instance or Application Access for Practice?",
+            "answer": "Yes, learners receive access to a dedicated SAP SD system or sandbox environment for up to 4 months for hands-on learning."
+        },
+        {
+            "question": "Can I Retake This Course?",
+            "answer": "Yes, with one-time enrollment in our SAP SD online training, you are eligible to attend future batches within a year for revision."
+        },
+        {
+            "question": "Can I Get a Course Completion Certificate?",
+            "answer": "Yes, you will receive a certificate upon completing the SAP SD course and required project work."
+        },
+        {
+            "question": "Is Any Coding Knowledge Required?",
+            "answer": "No coding skills are required. The SAP SD module focuses on functional business processes rather than programming."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, we offer personalized SAP SD training upon request. Pricing differs for individual sessions compared to group batches."
+        }
+    ]
+}

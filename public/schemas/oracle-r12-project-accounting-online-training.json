@@ -1,0 +1,63 @@
+{
+  "product": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Oracle EBS R12 Project Accounting Training",
+    "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_1001719384448.jpg",
+    "description": "Oracle offers Project Accounting applications in its ERP E-Business suite. Best chosen by Business Enterprises to manage their project Costing, Portfolio, Analytics and planning their contracts. It comes with inbuilt features comprise of Analytics, Collaboration, Resource Management, Billing, Costing, Contracts, Portfolio analysis, Planning, and control, etc.",
+    "sku": "TLIT100",
+    "mpn": "TLIT100",
+    "brand": {
+      "@type": "Brand",
+      "name": "Tech Leads IT"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.9",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Joshiram"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 3851
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.techleadsit.com/oracle-r12-project-accounting-online-training",
+      "priceCurrency": "INR",
+      "price": "15000",
+      "priceValidUntil": "2025-07-29",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  "educationEvent": {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "Weekday-Oracle EBS R12 Project Accounting Training",
+    "description": "Oracle offers Project Accounting applications in its ERP E-Business suite. Best chosen by Business Enterprises to manage their project Costing, Portfolio, Analytics and planning their contracts. It comes with inbuilt features comprise of Analytics, Collaboration, Resource Management, Billing, Costing, Contracts, Portfolio analysis, Planning, and control, etc.",
+    "performer": "Tech Leads IT",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://www.techleadsit.com/oracle-r12-project-accounting-online-training"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tech Leads IT",
+      "url": "https://www.techleadsit.com/"
+    },
+    "startDate": "2025-06-21",
+    "endDate": "2025-08-21",
+    "url": "https://www.techleadsit.com/oracle-r12-project-accounting-online-training",
+    "duration": "60"
+  }
+}

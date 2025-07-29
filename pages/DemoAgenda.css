@@ -1,0 +1,117 @@
+.Demo-Agenda-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color:#ffffff;
+    margin:40px;
+    padding:15px;
+    font-family: Montserrat;
+    gap:20px;
+}
+
+@media (max-width:992px){
+    .Demo-Agenda-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .main-options{
+        order:2;
+    }
+
+    .sub-main-option{
+        order:1;
+    }
+}
+
+.main-options {
+    border: 1px solid #FFFFFF33;
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
+    background: linear-gradient(180deg, rgba(9, 103, 138, 0.5) 0%, rgba(0, 73, 100, 0.5) 100%);
+  }
+
+  /* .options {
+    border: none;
+    background: #bcd1ff80;
+    width: 100%;
+    color: #0037b2;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: 600;
+  } */
+
+  .other-options {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color:#CCCCCC;
+    border: 1px solid #1F6A88
+  }
+  
+  .options-heading {
+    color: #33A3FF;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.8rem;
+  }
+
+  .options-para {
+    font-weight: 500;
+    font-size: 1.04rem;
+    color:#E6E6E6;
+  }
+
+  .options-h-res{
+    font-weight:400;
+    font-size: 24px;
+  }
+
+  .main-options-h{
+    font-weight:700;
+    font-size: 28px;
+    margin-bottom:20px;
+  }
+
+  .below-content{
+    color: #F2F2F2;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  @media (max-width:576px){
+    .Demo-Agenda-section{
+        margin:20px;
+        padding:10px;
+    }
+
+    .options-heading{
+        font-size: 1.8rem;
+    }
+
+    .options-para{
+        font-size: 0.9rem;
+    }
+
+    .options-h-res{
+        font-size:20px;
+    }
+
+    .main-options-h{
+        font-size: 20px;
+    }
+
+    .main-options{
+      padding:20px;
+    }
+
+    .other-options{
+        font-size: 14px;
+    }
+}

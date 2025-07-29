@@ -1,0 +1,63 @@
+{
+  "product": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Oracle Integration Cloud Online Training",
+    "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_1211719384273.jpg",
+    "description": "Oracle Integration Cloud (OIC) is a comprehensive cloud-based integration platform that connects on-premises and cloud applications, automates workflows, and facilitates data exchange across systems. If you're interested in learning OIC through online training enroll in our Oracle Integration Cloud online training today!",
+    "sku": "TLIT121",
+    "mpn": "TLIT121",
+    "brand": {
+      "@type": "Brand",
+      "name": "Tech Leads IT"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Joshiram"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": 3812
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.techleadsit.com/oracle-integration-cloud-training/oracle-fusion-technical-oic-online-training",
+      "priceCurrency": "INR",
+      "price": "25000",
+      "priceValidUntil": "2025-08-21",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  "educationEvent": {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "Weekday-Oracle Integration Cloud Online Training",
+    "description": "Oracle Integration Cloud (OIC) is a comprehensive cloud-based integration platform that connects on-premises and cloud applications, automates workflows, and facilitates data exchange across systems. If you're interested in learning OIC through online training enroll in our Oracle Integration Cloud online training today!",
+    "performer": "Tech Leads IT",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://www.techleadsit.com/oracle-integration-cloud-training/oracle-fusion-technical-oic-online-training"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tech Leads IT",
+      "url": "https://www.techleadsit.com/"
+    },
+    "startDate": "2025-06-21",
+    "endDate": "2025-08-21",
+    "url": "https://www.techleadsit.com/oracle-integration-cloud-training/oracle-fusion-technical-oic-online-training",
+    "duration": "50"
+  }
+}

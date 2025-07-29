@@ -1,0 +1,278 @@
+import { useRef, useState, useEffect } from "react";
+
+const AllCoursesButton = () => {
+
+    const panelsContent = {
+        all: (
+            <div className="Header-All-Category-Icon-card-Container">
+                <div className="Header-All-Category-Icon-card">
+                    <img src="/images/header/Oracle-Fusion-Icon.svg" alt="Oracle Fusion" className="Header-All-Category-Icon" />
+                    <p className="Header-All-Category-Icon-card-Para">Oracle Fusion</p>
+                </div>
+                <div className="Header-All-Category-Icon-card">
+                    <img src="/images/header/Oracle-EBS-Icon.svg" alt="Oracle EBS" className="Header-All-Category-Icon" />
+                    <p className="Header-All-Category-Icon-card-Para">Oracle EBS</p>
+                </div>
+                <div className="Header-All-Category-Icon-card">
+                    <img src="/images/header/SAP-Icon.svg" alt="SAP" className="Header-All-Category-Icon" />
+                    <p className="Header-All-Category-Icon-card-Para">SAP</p>
+                </div>
+                <div className="Header-All-Category-Icon-card">
+                    <img src="/images/header/Workday-HCM-Icon.svg" alt="Workday HCM" className="Header-All-Category-Icon" />
+                    <p className="Header-All-Category-Icon-card-Para">Workday HCM</p>
+                </div>
+                <div className="Header-All-Category-Icon-card">
+                    <img src="/images/header/Sales-Force-Icon.svg" alt="Salesforce" className="Header-All-Category-Icon" />
+                    <p className="Header-All-Category-Icon-card-Para">Salesforce</p>
+                </div>
+                <div className="Header-All-Category-Icon-card">
+                    <img src="/images/header/Data-Science-Icon.svg" alt="Data Science" className="Header-All-Category-Icon" />
+                    <p className="Header-All-Category-Icon-card-Para">Data Science</p>
+                </div>
+            </div>
+        ),
+        fusion: (
+            <div class="Header-Oracle-Fusion-Content-Section">
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Oracle Fusion SCM Online Training</p>
+                </div>
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Oracle Fusion HCM Online Training</p>
+                </div>
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Oracle Fusion Financials Online Training</p>
+                </div>
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Oracle Fusion Technical + OIC Training</p>
+                </div>
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Oracle Recruiting Cloud Online Training</p>
+                </div>
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Oracle Transportation Management Cloud Training</p>
+                </div>
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Oracle Global Trade Management Training</p>
+                </div>
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Oracle Integration Cloud (OIC) Online Training</p>
+                </div>
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Oracle Fusion Procurement Training</p>
+                </div>
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Oracle Fusion HCM Technical Training</p>
+                </div>
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Oracle Fusion Manufacturing training</p>
+                </div>
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Oracle Fusion Planning Central Training</p>
+                </div>
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Oracle Fusion PPM | Project's Training</p>
+                </div>
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Fusion Cloud CRM Online Training</p>
+                </div>
+                <div class="Header-Oracle-Fusion-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-Oracle-Fusion-Content-P">Oracle ADF Online Training</p>
+                </div>
+
+            </div>
+        ),
+        sap: (
+            <div class="Header-SAP-Content-Section">
+                <div class="Header-SAP-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-SAP-Content-P">SAP CPI Online Training</p>
+                </div>
+                <div class="Header-SAP-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-SAP-Content-P">SAP SD Online Training</p>
+                </div>
+                <div class="Header-SAP-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-SAP-Content-P">SAP MM Online Training</p>
+                </div>
+                <div class="Header-SAP-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-SAP-Content-P">SAP ABAP Online Training</p>
+                </div>
+            </div>
+        ),
+        ds: (
+            <div class="Header-DS-Content-Section">
+                <div class="Header-DS-Content">
+                    <img src="/images/header/Header-Arrow-Mark-Icon.svg" alt="Arrow-Mark-Pointer" />
+                    <p class="Header-DS-Content-P">Oracle Fusion SCM Online Training</p>
+                </div>
+            </div>
+        ),
+    };
+
+    const menuItems = [
+        { key: "all", label: "All Categories" },
+        { key: "fusion", label: "Oracle Fusion" },
+        { key: "sap", label: "SAP" },
+        { key: "ds", label: "Data Science" },
+    ];
+
+
+    const menuRef = useRef(null);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [activePanel, setActivePanel] = useState("all");
+    const [isMobile, setIsMobile] = useState(false);
+    const [mobilePanelOpen, setMobilePanelOpen] = useState(null);
+
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 993);
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    // Close menu when clicking outside
+    useEffect(() => {
+        if (!menuOpen) return;
+        const handleClickOutside = (e) => {
+            if (menuRef.current && !menuRef.current.contains(e.target)) {
+                setMenuOpen(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, [menuOpen]);
+
+    const handleToggle = (e) => {
+        e.stopPropagation();
+        setMenuOpen((prev) => !prev);
+    };
+
+    // Desktop: open on hover/click, keep open if mouse is over any part
+    if (true) {
+        return (
+            <div
+                className="Main-Course-TLI-Common-Header-dropdown"
+                ref={menuRef}
+                onMouseEnter={() => { if (!isMobile) setMenuOpen(true); }}
+                onMouseLeave={() => { if (!isMobile) setMenuOpen(false); }}
+            >
+                <button
+                    className="Main-Course-TLI-Common-Header-dropdown-toggle Main-Course-TLI-Header-a-hover All-Courses-Common-Header-button"
+                    onClick={handleToggle}
+                    type="button"
+                >
+                    All Courses{" "}
+                    <i
+                        className={`fas fa-chevron-down chevron header-chevron-icon ${menuOpen ? "rotate" : ""}`}
+                    ></i>
+                </button>
+                <div
+                    className={`Main-Course-TLI-Common-Header-dropdown-menu${menuOpen ? " show" : ""}`}
+                >
+                    {
+                        menuOpen && (
+                            <div class="All-Courses-Common-Header-dropdown" id="dropdown-menu">
+                                <h2 class="Common-Header-Heading-Content">Trainings</h2>
+                                {menuItems.map((item) => (
+                                    <div
+                                        key={item.key}
+                                        className={`All-Courses-Common-Header-item${activePanel === item.key ? " active" : ""}`}
+                                        data-panel={item.key}
+                                        onMouseEnter={() => setActivePanel(item.key)}
+                                    >
+                                        {item.label}
+                                        <span className="All-Courses-Common-Header-chevron">
+                                            <i className="fa-solid fa-chevron-right"></i>
+                                        </span>
+                                    </div>
+                                ))}
+                            </div>
+                        )
+                    }
+
+                </div>
+                {menuOpen && (
+                    <div
+                        id={activePanel}
+                        className="All-Courses-Common-Header-right-panel active"
+                    >
+                        {panelsContent[activePanel]}
+                    </div>
+                )}
+            </div>
+        )
+    }
+
+    /*return (
+        <div
+            className="Main-Course-TLI-Common-Header-dropdown"
+            ref={menuRef}
+            onMouseEnter={() => { if (!isMobile) setMenuOpen(true); }}
+            onMouseLeave={() => { if (!isMobile) setMenuOpen(false); }}
+        >
+            <button
+                className="Main-Course-TLI-Common-Header-dropdown-toggle Main-Course-TLI-Header-a-hover All-Courses-Common-Header-button"
+                onClick={handleToggle}
+                type="button"
+            >
+                All Courses{" "}
+                <i
+                    className={`fas fa-chevron-down chevron header-chevron-icon ${menuOpen ? "rotate" : ""}`}
+                ></i>
+            </button>
+            <div
+                className={`Main-Course-TLI-Common-Header-dropdown-menu${menuOpen ? " show" : ""}`}
+            >
+                {
+                    menuOpen && (
+                        <div class="All-Courses-Common-Header-dropdown" id="dropdown-menu">
+                            <h2 class="Common-Header-Heading-Content">Trainings</h2>
+                            {menuItems.map((item) => (
+                                <div
+                                    key={item.key}
+                                    className={`All-Courses-Common-Header-item${activePanel === item.key ? " active" : ""}`}
+                                    data-panel={item.key}
+                                    onMouseEnter={() => setActivePanel(item.key)}
+                                >
+                                    {item.label}
+                                    <span className="All-Courses-Common-Header-chevron">
+                                        <i className="fa-solid fa-chevron-right"></i>
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
+                    )
+                }
+
+            </div>
+            {menuOpen && (
+                <div
+                    id={activePanel}
+                    className="All-Courses-Common-Header-right-panel active"
+                >
+                    {panelsContent[activePanel]}
+                </div>
+            )}
+        </div>
+    );*/
+};
+
+export default AllCoursesButton;

@@ -1,0 +1,63 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Oracle Fusion Financials Certification Training",
+    "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_1901734951234.jpg",
+    "description": "Oracle Fusion Financials Certification Training by Tech Leads IT helps professionals gain practical and theoretical expertise in financial modules including Payables, Receivables, General Ledger, and Asset Management. This course prepares learners for certification with real-time scenarios and hands-on project work.",
+    "sku": "TLIT190",
+    "mpn": "TLIT190",
+    "brand": {
+      "@type": "Brand",
+      "name": "Tech Leads IT"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.9",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Praveen"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 4269
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.techleadsit.com/oracle-financials-certification/oracle-fusion-financials-certification-training",
+      "priceCurrency": "INR",
+      "price": "25000",
+      "priceValidUntil": "2025-08-04",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "Weekday-Oracle Fusion Financials Certification Training",
+    "description": "Oracle Fusion Financials Certification Training by Tech Leads IT helps professionals gain practical and theoretical expertise in financial modules including Payables, Receivables, General Ledger, and Asset Management. This course prepares learners for certification with real-time scenarios and hands-on project work.",
+    "performer": "Tech Leads IT",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://www.techleadsit.com/oracle-financials-certification/oracle-fusion-financials-certification-training"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tech Leads IT",
+      "url": "https://www.techleadsit.com/"
+    },
+    "startDate": "2025-06-21",
+    "endDate": "2025-08-21",
+    "url": "https://www.techleadsit.com/oracle-financials-certification/oracle-fusion-financials-certification-training",
+    "duration": "70"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "product": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Oracle EBS R12 SCM Training",
+    "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_981719384369.jpg",
+    "description": "Oracle R12 SCM (Supply Chain Management) is an industry-leading solution in the Oracle R12 ERP family. It allows companies to build World-class Value-chains for maximum growth. Oracle R12 Apps SCM integrates and automates all supply chain processes from Designing, Planning and Procurement to Manufacturing and fulfillment to give a complete set of solutions. It has a Unified data model with the best-driven principles, accurate view of each Supply chain.",
+    "sku": "TLIT98",
+    "mpn": "TLIT98",
+    "brand": {
+      "@type": "Brand",
+      "name": "Tech Leads IT"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.9",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Joshiram"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 4897
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.techleadsit.com/oracle-r12-scm-online-training-course",
+      "priceCurrency": "INR",
+      "price": "15000",
+      "priceValidUntil": "2025-07-09",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  "educationEvent": {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "Weekday-Oracle EBS R12 SCM Training",
+    "description": "Oracle R12 SCM (Supply Chain Management) is an industry-leading solution in the Oracle R12 ERP family. It allows companies to build World-class Value-chains for maximum growth. Oracle R12 Apps SCM integrates and automates all supply chain processes from Designing, Planning and Procurement to Manufacturing and fulfillment to give a complete set of solutions. It has a Unified data model with the best-driven principles, accurate view of each Supply chain.",
+    "performer": "Tech Leads IT",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://www.techleadsit.com/oracle-r12-scm-online-training-course"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tech Leads IT",
+      "url": "https://www.techleadsit.com/"
+    },
+    "startDate": "2025-06-21",
+    "endDate": "2025-08-21",
+    "url": "https://www.techleadsit.com/oracle-r12-scm-online-training-course",
+    "duration": "60"
+  }
+}

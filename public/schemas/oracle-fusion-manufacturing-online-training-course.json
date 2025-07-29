@@ -1,0 +1,63 @@
+{
+  "product": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Oracle Fusion Manufacturing Training",
+    "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_931712832058.jpg",
+    "description": "Oracle Fusion Cloud Manufacturing Application is a part of Oracle Cloud ERP solutions. It is used widely by Global Manufacturing Companies and Organizations as a Manufacturing Application. Fusion Cloud Manufacturing allows customized Work Definition, Execution and fulfills requirements with advanced functions. It is the best option to cut down and save Manufacturing costs with the best options to give a faster performance.",
+    "sku": "TLIT93",
+    "mpn": "TLIT93",
+    "brand": {
+      "@type": "Brand",
+      "name": "Tech Leads IT"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Joshiram"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": 2715
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.techleadsit.com/oracle-fusion-manufacturing-online-training-course",
+      "priceCurrency": "INR",
+      "price": "25000",
+      "priceValidUntil": "2025-06-30",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  "educationEvent": {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "Weekday-Oracle Fusion Manufacturing Training",
+    "description": "Oracle Fusion Cloud Manufacturing Application is a part of Oracle Cloud ERP solutions. It is used widely by Global Manufacturing Companies and Organizations as a Manufacturing Application. Fusion Cloud Manufacturing allows customized Work Definition, Execution and fulfills requirements with advanced functions. It is the best option to cut down and save Manufacturing costs with the best options to give a faster performance.",
+    "performer": "Tech Leads IT",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://www.techleadsit.com/oracle-fusion-manufacturing-online-training-course"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tech Leads IT",
+      "url": "https://www.techleadsit.com/"
+    },
+    "startDate": "2025-06-21",
+    "endDate": "2025-08-21",
+    "url": "https://www.techleadsit.com/oracle-fusion-manufacturing-online-training-course",
+    "duration": "70"
+  }
+}

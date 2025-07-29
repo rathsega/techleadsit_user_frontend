@@ -1,0 +1,63 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Oracle Fusion WMS Cloud (Logfire) Training",
+        "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_1441719222095.jpg",
+        "description": "Tech Leads IT is the best institute offers Oracle WMS Cloud (Logfire) Training with detailed content covering almost all the modules in the training. The instructor is very knowledgeable and kind to cover this much curriculum with a detailed explanation based on Real-Time Project Examples.",
+        "sku": "TLIT144",
+        "mpn": "TLIT144",
+        "brand": {
+            "@type": "Brand",
+            "name": "Tech Leads IT"
+        },
+        "review": {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.8",
+                "bestRating": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Ravi"
+            }
+        },
+        "aggregateRating": {
+            "@type": "aggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": 1012
+        },
+        "offers": {
+            "@type": "Offer",
+            "url": "https://www.techleadsit.com/oracle-warehouse-management-training/oracle-wms-training",
+            "priceCurrency": "INR",
+            "price": "30000",
+            "priceValidUntil": "2025-07-12",
+            "itemCondition": "https://schema.org/UsedCondition",
+            "availability": "https://schema.org/InStock"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationEvent",
+        "name": "Weekday-Oracle Fusion WMS Cloud (Logfire) Training",
+        "description": "Tech Leads IT is the best institute offers Oracle WMS Cloud (Logfire) Training with detailed content covering almost all the modules in the training. The instructor is very knowledgeable and kind to cover this much curriculum with a detailed explanation based on Real-Time Project Examples.",
+        "performer": "Tech Leads IT",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "location": {
+            "@type": "VirtualLocation",
+            "url": "https://www.techleadsit.com/oracle-warehouse-management-training/oracle-wms-training"
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "Tech Leads IT",
+            "url": "https://www.techleadsit.com/"
+        },
+        "startDate": "2025-06-13",
+        "endDate": "2025-08-13",
+        "url": "https://www.techleadsit.com/oracle-warehouse-management-training/oracle-wms-training",
+        "duration": "50"
+    }
+]

@@ -1,0 +1,433 @@
+{
+    "title": "Data Science course",
+    "id":"GEN-DST-OT-008",
+    "category":"Data Science",
+    "duration":"3 Months",
+    "hero": {
+        "title": "Master Data Science at Tech Leads IT with",
+        "animationTitle": [
+            "Expert Training.",
+            "Hands-On Projects",
+            "Job-Ready Skills"
+        ],
+        "shortDescription": "Accelerate your career in Data Science with our comprehensive training program! Master key concepts, gain hands-on experience, and position yourself for success in the industry with expert-led instruction covering machine learning, Python, statistics, data visualization, and AI tools",
+        "brouchurePath": "/brochure/Data Science course.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Python",
+            "Statistics",
+            "Machine Learning",
+            "Neural  Networks",
+            "Deep Learning",
+            "NLP",
+            "Computer Vision",
+            "Deep NLP",
+            "LLMs",
+            "MLOps",
+            "Transformers"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Data Science with Industry-Leading Data Science Online Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Data Science, AI, or Machine Learning.",
+                        "Those interested in data analysis, predictive modeling, statistics, and Python programming.",
+                        "Job seekers aiming to enhance their resumes with in-demand Data Science  skills"
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT & software professionals transitioning into roles in Data Science, ML, or AI.",
+                        "Functional Consultants seeking to enhance decision-making through data-driven insights.",
+                        "IT Managers & Solution Architects aiming to implement data-driven solutions ",
+                        "Professionals looking to streamline operations & strategy using data visualization"
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "online",
+            "demoDate": "22 May 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the Data Science Course Live Demo with Chaitanya"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "Data Science Online Training Course",
+        "modules": [
+            {
+                "moduleName": "Introduction to Data Science"
+            },
+            {
+                "moduleName": "Introduction to Python"
+            },
+            {
+                "moduleName": "Statistics"
+            },
+            {
+                "moduleName": "Machine learning"
+            },
+            {
+                "moduleName": "Neural networks and Deep learning"
+            },
+            {
+                "moduleName": "Deep Dive into Computer Vision"
+            },
+            {
+                "moduleName": "Deep Dive into NLP (Natural Language Processing)"
+            },
+            {
+                "moduleName": "Deep Learning for NLP"
+            },
+            {
+                "moduleName": "Applications of NLP and LLMs"
+            },
+            {
+                "moduleName": "Fine-tuning Techniques for LLMs"
+            },
+            {
+                "moduleName": "Hugging Face Transformers"
+            },
+            {
+                "moduleName": "MLOps (Machine Learning Operations)"
+            },
+            {
+                "moduleName": "Capstone Projects and Real-world Applications"
+            }
+        ],
+        "demoVideoPath": "",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/ds.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Data Science Experts!",
+            "shortDescription": "Unlock New Career Opportunities  Data Science Professionals Are In High Demand. Start Your Journey Today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Mr. Chaitanya, a seasoned Data Science professional with 12+ years of industry experience, has led transformative projects across various domains. Passionate about mentoring and upskilling aspiring tech professionals, he is dedicated to turning students into industry-ready data scientists. With a vision to create top-notch Data Science experts to meet the surging global demand, Chaitanya believes that knowledge is the gateway to financial independence and career growth. His mission is to empower learners to build meaningful careers and contribute to the data-driven economy."
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized Data Science Trainer",
+            "points": [
+                "Certified Data Science Professional &  AI/ML Expert.",
+                "12+ years of experience in data analytics, machine learning, & business intelligence",
+                "Successfully trained over 3,000+ students in Data Science, helping them land roles in top tech companies."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Chaitanya ",
+            "trainerDesignation": "Datascience Expert",
+            "avatarImagePath": "/images/courses/trainer/ds.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Pratap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Satish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹30,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹40,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/ds.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/ds.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Core Concepts of Data Science, Statistics & Python",
+                    "Gain a Clear Understanding of Data Analysis, Data Wrangling & Visualization",
+                    "Develop Problem-Solving & Critical Thinking Skills "
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-Time Data Science Projects",
+                    "Solve Industry Use Cases in ML, AI, and Predictive Analytics",
+                    " Gain Practical Exposure to Tools like Python, Pandas, NumPy."
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume Tailored to Data Science Roles",
+                    "Build a Strong LinkedIn Profile and Project Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on Capstone Projects Based on Real Business Problems",
+                    "Understand Real-World Expectations, Data Pipelines & ML Deployments",
+                    "Strengthen Analytical Thinking & Model-Building Capabilities"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Data Science Are You Ready?",
+            "shortDescription": " the Growing Demand for Data Science Professionals. Get certified in Data Science and open doors to high-paying opportunities in top companies"
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Data Science Intern / Trainee",
+                "Junior Data Analyst",
+                "Data Analyst",
+                "Business Intelligence (BI) Analyst",
+                "Machine Learning Engineer",
+                "Data Scientist",
+                "Senior Data Scientist",
+                "Data Science Consultant",
+                "Head of Data Science"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "",
+        "shortDescription": ""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your Data Science expertise and industry readiness.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Oracle Fusion HCM Online Training Course",
+        "Oracle Fusion SCM Online Training Course",
+        "Oracle Fusion Techninal+OIC Online Training Course",
+        "Oracle Fusion Functional Online Training Course"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in the Data Science Training?",
+            "answer": "Our Data Science Online Training includes core modules such as Python Programming, Statistics, Machine Learning, Neural Networks, Computer Vision, Natural Language Processing (NLP), MLOps, and real-world Capstone Projects. For a detailed module breakdown, please refer to our data science course syllabus."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "The data science training sessions are conducted from Monday to Saturday, with each class lasting 1 hour per day to ensure consistent and interactive learning."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, weekend batches are not available. Our live data science online course runs Monday to Saturday for optimal engagement."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, recorded sessions are available for self-paced learners. However, doubt clarification sessions are exclusive to live training batches."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, we offer internship opportunities based on your performance in mock assessments and capstone project evaluations, giving you valuable industry exposure."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No, our data science course is designed as a comprehensive program. Modules are not offered separately to ensure a complete learning experience."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes, our expert team helps you create a compelling resume, highlighting your data science certificate program experience and project work to stand out in job applications."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, a laptop or desktop is essential for hands-on exercises with Python, data analysis, and machine learning tools used throughout the data science training."
+        },
+        {
+            "question": "Are There Any Prerequisites for the Data Science Training?",
+            "answer": "No prior experience is necessary. The course begins with the fundamentals. A basic understanding of math, statistics, or programming is helpful but not mandatory."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Absolutely. We start from the basics and gradually move to advanced topics, making the course ideal for beginners and professionals alike."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes, we support job placement with mock interviews, resume reviews, and career guidance. We also share job leads from our industry network and hiring partners."
+        },
+        {
+            "question": "Do You Provide Certification Support?",
+            "answer": "Yes, we guide you through obtaining a data science certificate, including preparation tips and mock questions for recognized industry certifications."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes, all training sessions are recorded and accessible through our portal. In addition, we provide module-wise study materials and reference content."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Assistance?",
+            "answer": "Yes, we share updated interview questions and conduct mock interviews to help you prepare for real-world job interviews."
+        },
+        {
+            "question": "Do You Provide Tools or Platform Access for Practice?",
+            "answer": "Yes, we provide access to all necessary tools and platforms used during training, including cloud-based environments—no installations needed."
+        },
+        {
+            "question": "Can I Retake This Course?",
+            "answer": "Yes, upon enrollment, you get a 1-year membership allowing you to attend multiple batches to reinforce your understanding."
+        },
+        {
+            "question": "Can I Get a Course Completion Certificate?",
+            "answer": "Yes, upon completing the training, you will receive a Data Science Certificate that adds value to your professional profile."
+        },
+        {
+            "question": "Is Any Coding Knowledge Required?",
+            "answer": "Basic coding is introduced during the course, particularly in Python. No advanced programming background is needed to get started."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, one-on-one personalized training is available on request. Note that pricing differs from group sessions."
+        }
+    ]
+}

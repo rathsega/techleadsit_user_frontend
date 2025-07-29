@@ -1,0 +1,84 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Oracle Fusion HCM Online Training",
+        "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_881746620509.jpg",
+        "description": "Oracle Fusion HCM Training at Tech Leads IT by Mr. Sumesh having 20+ years of real-time experience and successfully delivered/worked on a couple of Oracle Fusion HCM Implementations. The trainer has enormous knowledge in imparting the beautifully designed course curriculum. This training helps everyone to master their skill set to level up carrier goals.",
+        "sku": "TLIT88",
+        "mpn": "TLIT88",
+        "brand": {
+            "@type": "Brand",
+            "name": "Tech Leads IT"
+        },
+        "review": {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.8",
+                "bestRating": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Ravi"
+            }
+        },
+        "aggregateRating": {
+            "@type": "aggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": 3872
+        },
+        "offers": {
+            "@type": "Offer",
+            "url": "https://www.techleadsit.com/oracle-fusion-hcm-online-training-course",
+            "priceCurrency": "INR",
+            "price": "25000",
+            "priceValidUntil": "2025-07-12",
+            "itemCondition": "https://schema.org/UsedCondition",
+            "availability": "https://schema.org/InStock"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationEvent",
+        "name": "Weekday-Oracle Fusion HCM Online Training",
+        "description": "Oracle Fusion HCM Training at Tech Leads IT by Mr. Sumesh having 20+ years of real-time experience and successfully delivered/worked on a couple of Oracle Fusion HCM Implementations. The trainer has enormous knowledge in imparting the beautifully designed course curriculum. This training helps everyone to master their skill set to level up carrier goals.",
+        "performer": "Tech Leads IT",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "location": {
+            "@type": "VirtualLocation",
+            "url": "https://www.techleadsit.com/oracle-fusion-hcm-online-training-course"
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "Tech Leads IT",
+            "url": "https://www.techleadsit.com/"
+        },
+        "startDate": "2025-06-09",
+        "endDate": "2025-08-09",
+        "url": "https://www.techleadsit.com/oracle-fusion-hcm-online-training-course",
+        "duration": "70"
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "Online Fusion HCM Training",
+        "description": "Online training course for Oracle Fusion HCM, led by Mr. Sumesh, who has over 20 years of real-time experience and has successfully worked on multiple Oracle Fusion HCM implementations.",
+        "provider": {
+            "@type": "Organization",
+            "name": "Tech Leads IT",
+            "url": "https://www.techleadsit.com/oracle-fusion-hcm-online-training-course"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Mr. Sumesh",
+            "jobTitle": "Oracle Fusion HCM Consultant",
+            "description": "Mr. Sumesh has over 20 years of real-time experience and has successfully delivered multiple Oracle Fusion HCM implementations.",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Tech Leads IT"
+            }
+        }
+    }
+]

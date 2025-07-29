@@ -1,0 +1,64 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Salesforce Online Training",
+      "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_1101718003011.jpg",
+      "description": "Best Institute for Salesforce online training covering vast content with problem and solution solving approach and real time project based scenarios from industry expert Mrs. Sapna, having 13+ years of real time experience and delivered 36+ batches trained more than 2100 students.",
+      "sku": "TLIT110",
+      "mpn": "TLIT110",
+      "brand": {
+        "@type": "Brand",
+        "name": "Tech Leads IT"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.8",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Praveen"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": 1392
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.techleadsit.com/salesforce-crm-training/salesforce-online-training",
+        "priceCurrency": "INR",
+        "price": "25000",
+        "priceValidUntil": "2025-06-26",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "EducationEvent",
+      "name": "Weekday-Salesforce Online Training",
+      "description": "Best Institute for Salesforce online training covering vast content with problem and solution solving approach and real time project based scenarios from industry expert Mrs. Sapna, having 13+ years of real time experience and delivered 36+ batches trained more than 2100 students.",
+      "performer": "Tech Leads IT",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+      "location": {
+        "@type": "VirtualLocation",
+        "url": "https://www.techleadsit.com/salesforce-crm-training/salesforce-online-training"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Tech Leads IT",
+        "url": "https://www.techleadsit.com/"
+      },
+      "startDate": "2025-06-21",
+      "endDate": "2025-08-21",
+      "url": "https://www.techleadsit.com/salesforce-crm-training/salesforce-online-training",
+      "duration": "P60D"
+    }
+  ]
+}

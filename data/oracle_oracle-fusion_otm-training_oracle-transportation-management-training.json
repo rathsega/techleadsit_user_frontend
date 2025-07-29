@@ -1,0 +1,797 @@
+{
+    "title": "Oracle Transportation Management Cloud online training Course",
+    "id":"ORF-OTM-OT-013",
+    "category":"Oracle",
+    "duration":"3 Months",
+    "hero": {
+        "title": "Master Oracle Transportation Management Cloud with",
+        "animationTitle": [
+            "Expert Training.",
+            "Redwood Experience",
+            "AI with OTM"
+        ],
+        "shortDescription": "Advance your career in Supply Chain Management with our expert-led Oracle Transportation Management (OTM) Cloud Online Training! Master Order Management, Shipment Planning, Rate Management, Carrier Integration, Freight Settlement, and Transportation Analytics with real-world implementation use cases. Gain real-time hands-on experience.",
+        "brouchurePath": "/brochure/oracle-transportation-management-training.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Logistic Inbound",
+            "Logistic Outbound",
+            "Transactional Data",
+            "Master Data",
+            "OTM Technical",
+            "Technical Architecture",
+            "OTM Financials",
+            "Fleet Monitoring"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Logistics and Freight Management with Industry-Leading Oracle Transportation Management Cloud Online Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in OTM Cloud.",
+                        "Those interested in areas such as shipment planning, carrier integration, and freight settlement.",
+                        "Job seekers aiming to enhance their resumes with in-demand OTM Cloud skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT & ERP professionals transitioning from Oracle EBS, PeopleSoft, SAP TM, or other ERP systems to Oracle OTM Cloud.",
+                        "Logistics Managers, Transportation Coordinators, & ERP Consultants seeking expertise in Oracle Cloud Transportation modules.",
+                        "Business owners and logistics heads aiming to automate & streamline shipment processes.",
+                        "Professionals aiming to optimize logistics workflows using Oracle OTM tools."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "22 May 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the OTM cloud Live Demo with Abhiram"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "XYZ",
+        "modules": [
+            {
+                "moduleName": "Introduction to OTM Introduction and Overview",
+                "chapters": [
+                    {
+                        "chapterName": "OTM product history and current version (from 5.5 to 6.4.3 with cloud versions)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM On premise vs Cloud",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM Integration and future Road Map",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Core OTM Modules and GTM Modules",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Order Management",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Shipment Management",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Contract and Rate Management",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Configuration and Administration",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Business Process Automation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Operational Planning",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Financials",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sourcing",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Fleet Management",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "OTM Scenario (Logistic Inbound and Outbound)",
+                "chapters": [
+                    {
+                        "chapterName": "Direct shipment",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Shipment execution process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "continuous move",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Milk run- Ground schedule",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Commitment allocation and Commitment Count",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "consolidation & deconsolidation.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Cross dock",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Multi leg shipments",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Multistop Shipment",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Bulk Planning logic and planning parameters, 3D Loading configuration",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "OTM Transactional data elaboration and creation",
+                "chapters": [
+                    {
+                        "chapterName": "Order Base",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Order release",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Order movement",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Shipment",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Invoice",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Voucher",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Bill",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "OTM Master data",
+                "chapters": [
+                    {
+                        "chapterName": "Items and Package Item",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Rate Quality",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Rate preferences",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Rate Record",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Rate Offering",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Rate Service",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Rate contract configurations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Itinerary",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Service Providers",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Equipment and Equipment groups and profiles.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Commodities",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Contact Notification",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Calendars",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Locations and Corporations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "package unit and Transport handling unit",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Workbench",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "OTM Technical Topics",
+                "chapters": [
+                    {
+                        "chapterName": "Automation Agents",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Advanced Manager Layout",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Enhanced Workbench configurations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Menu creation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Screen sets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manager Layout",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "user roles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "VPD profiles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Custom actions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Grants",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Domains",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM XML Schema",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "CSV Export and Import",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "EBS to OTM mapping",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ERP Cloud to OTM mapping and integration challenges",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM User management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Status",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "scheduling process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Events",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Error and warnings",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "OTM Technical Architecture and Topics",
+                "chapters": [
+                    {
+                        "chapterName": "OTM Application Architecture (Technical)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM Integration with WMS Cloud application",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM Integrations with External applications (Purchasing, Order management , Payables , Receivables)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM Integration Capabilities",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM to WMS Cloud integration",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM to IoT Fleet monitoring Integration",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM to ERP Cloud Integration",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM to EBS Integration",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM to CPQ integration",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "OTM Financials",
+                "chapters": [
+                    {
+                        "chapterName": "Invoice Creations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Match and Pay",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Auto Pay",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Approvals",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Allocations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "General ledger key configuration",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "General ledger code combination",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "VAT Tax creation",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "OTM and Fleet Monitoring Additional Topics",
+                "chapters": [
+                    {
+                        "chapterName": "Fleet Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM Sourcing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Brokerage and Forwarding",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Logistics Network Modeling",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Transportation Intelligence",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM Reporting capabilities",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM Cloud Mobile App",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "GTM Overview",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            }
+        ],
+        "demoVideoPath": "https://youtu.be/6bOJc9-9jzo",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/otm.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Oracle Fusion Experts!",
+            "shortDescription": "Unlock new career opportunities  Oracle Transportation Management Cloud professionals are in high demand. Start your journey today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Mr. Abhiram, a seasoned Oracle professional with over 14 years of hands-on experience in Transportation and Logistics Solutions, has been instrumental in delivering successful Oracle Transportation Management (OTM) Cloud implementations across diverse industry sectors. His passion for mentoring and in-depth expertise in Oracle OTM Cloud make him the ideal guide for aspiring transportation and supply chain professionals. With a clear mission to develop skilled Oracle OTM Cloud consultants to match the growing market demand, Abhiram is dedicated to equipping learners with practical, real-world knowledge and empowering them to build rewarding careers."
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized OTM Cloud Trainer",
+            "points": [
+                "Oracle OTM Cloud Certified Professional, specializing in Transportation Management",
+                "14+ years of expertise in Oracle ERP, with a strong focus on OTM Cloud Training",
+                "Trained over 3,000 professionals in Oracle Supply Chain and OTM Cloud, enabling them to excel in ERP, logistics roles"
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Abhiram ",
+            "trainerDesignation": "Oracle OTM Cloud Expert",
+            "avatarImagePath": "/images/courses/trainer/otm.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Pratap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Satish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹18,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹30,000+Taxes",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/otm.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/otm.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Oracle Transportation Management (OTM) Cloud Modules",
+                    "Gain a Clear Understanding of Logistics & Shipment Processes",
+                    "Develop Core Technical & Functional Knowledge in OTM"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-World Transportation Use Cases",
+                    "Solve Logistics & Supply Chain Scenarios with Technical Experts",
+                    "Get Deep Insights into Integration, Configuration & Planning Tools"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume",
+                    "Build a Strong LinkedIn Profile and Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on Real-Life Case Studies in Shipment Planning & Freight Management",
+                    "Understand Industry Expectations & Best Practices in Supply Chain",
+                    "Develop Problem-Solving & Decision-Making Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Oracle Transportation Management Cloud Are You Ready?",
+            "shortDescription": "Join the rising demand for Oracle OTM Cloud professionals. Get certified and unlock high-paying career opportunities with top global logistics and supply chain organizations."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle OTM Cloud Trainee",
+                "Oracle Transportation Support Analyst (L1)",
+                "Oracle SCM Associate Consultant",
+                "Oracle OTM Consultant",
+                "Oracle OTM Implementation Specialist",
+                "Oracle OTM Cloud Support Lead",
+                "Oracle OTM Cloud Lead",
+                "Oracle OTM Project Manager",
+                "ERP SCM Program Manager"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Power  Master Oracle OTM Cloud Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your OTM Cloud expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Oracle Fusion HCM Online Training Course",
+        "Oracle Fusion SCM Online Training Course",
+        "Oracle Fusion Functional Online Training Course",
+        "Oracle Fusion Technical Online Training Course"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Oracle Transportation Management Cloud Training?",
+            "answer": "Our Oracle Transportation Management training covers key modules such as Logistics Inbound and Outbound, Transactional Data, Master Data, OTM Technical, Technical Architecture, OTM Financials, and Fleet Monitoring. This complete OTM training course equips learners with hands-on experience in both technical and functional aspects of Oracle OTM."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "The sessions are part of a structured online training program, conducted Monday to Saturday, 1 hour per day. This allows for steady and practical progress through the OTM training curriculum. "
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "No, currently all sessions of our Oracle Transportation Management training course are scheduled on weekdays to maintain consistency and interaction."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, recorded sessions are available for those who prefer learning at their own pace. This format is ideal for professionals seeking OTM online certification through flexible training courses online."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internships are offered based on performance in assessments. These provide hands-on exposure to Oracle Transportation Management Cloud use cases in logistics and fleet operations."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single OTM Module Instead of the Full Course?",
+            "answer": "No, the course is designed as a complete package. Our Oracle OTM training ensures you build a strong foundation and develop job-ready skills across all modules."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes, resume-building support is included to help you target Oracle Transportation Management Cloud roles more effectively."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, a system is required to access the Oracle Cloud instance provided as part of your OTM training for hands-on practice."
+        },
+        {
+            "question": "Are There Any Prerequisites for the OTM Cloud Training?",
+            "answer": "There are no prerequisites. This online training course is beginner-friendly and also beneficial for professionals from logistics, ERP, or supply chain domains."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Yes! Our Oracle Transportation Management online certification course starts with the fundamentals and gradually advances into complex real-world case studies."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes, placement assistance is included in the Oracle OTM training program, covering resume support, mock interviews, and guidance from industry experts."
+        },
+        {
+            "question": "Do You Offer Oracle OTM Cloud Certification Support?",
+            "answer": "Yes, we provide support for Oracle’s official OTM online certification, including practice questions and mentorship."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes, all sessions are recorded, and you’ll receive structured online training materials with step-by-step instructions and real-time examples."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Mock Support?",
+            "answer": "Yes, we provide module-specific interview questions and conduct mock sessions to prepare you for roles in Oracle OTM and logistics management."
+        },
+        {
+            "question": "Do You Provide Instance Access for Practice?",
+            "answer": "Yes, 4 months of Oracle Cloud instance access is included for in-depth, real-time practice during your OTM training."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes, once enrolled in our Oracle Transportation Management training, you can attend multiple batches within 1 year."
+        },
+        {
+            "question": "Will I Get a Course Completion Certificate?",
+            "answer": "Yes, upon successful completion, you’ll receive an online certification from Tech Leads IT that validates your expertise in Oracle Transportation Management Cloud."
+        },
+        {
+            "question": "Is Coding Knowledge Required?",
+            "answer": "No coding skills are required. This is a non-programming training course focused on transportation logistics, planning, and implementation using Oracle OTM."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, one-on-one Oracle OTM training is available upon request with customized schedules and pricing."
+        }
+    ]
+}

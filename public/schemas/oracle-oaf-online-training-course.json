@@ -1,0 +1,63 @@
+{
+  "product": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Oracle OAF Online Training",
+    "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_1021719384557.jpg",
+    "description": "Oracle OAF is the core development framework for every Oracle E-Business Suite application. It was widely implemented in creating the customized forms, pages and even introduce new features by integrating third-party apps into Oracle Apps.",
+    "sku": "TLIT102",
+    "mpn": "TLIT102",
+    "brand": {
+      "@type": "Brand",
+      "name": "Tech Leads IT"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Praveen"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": 372
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.techleadsit.com/oracle-oaf-online-training-course",
+      "priceCurrency": "INR",
+      "price": "10000",
+      "priceValidUntil": "2025-06-21",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  "educationEvent": {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "Weekday-Oracle OAF Online Training",
+    "description": "Oracle OAF is the core development framework for every Oracle E-Business Suite application. It was widely implemented in creating the customized forms, pages and even introduce new features by integrating third-party apps into Oracle Apps.",
+    "performer": "Tech Leads IT",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://www.techleadsit.com/oracle-oaf-online-training-course"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tech Leads IT",
+      "url": "https://www.techleadsit.com/"
+    },
+    "startDate": "2025-06-21",
+    "endDate": "2025-08-21",
+    "url": "https://www.techleadsit.com/oracle-oaf-online-training-course",
+    "duration": "60"
+  }
+}

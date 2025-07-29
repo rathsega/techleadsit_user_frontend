@@ -1,0 +1,162 @@
+html {
+    text-size-adjust: 100%;
+    /* Standard support */
+  }
+
+  body {
+    font-family: Montserrat;
+  }
+
+  .success-section {
+    text-align: center;
+    transform: translateY(50px);
+  }
+
+  .payment-s-heading {
+    font-weight: 600;
+    font-size: 20px;
+    color: #13AE05;
+  }
+
+  .payment-s-para {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+  }
+
+  /* From Uiverse.io by cohencoo */
+  .Payment-custom-loader {
+    width: 70%;
+    height: 22px;
+    border-radius: 20px;
+    color: #13AE05;
+    border: 2px solid;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .Payment-custom-loader::before {
+    content: "";
+    position: absolute;
+    margin: 2px;
+    inset: 0 100% 0 0;
+    border-radius: inherit;
+    background: #13AE05;
+    animation: p6 8s linear;
+  }
+
+  @keyframes p6 {
+    100% {
+      inset: 0
+    }
+  }
+
+  .download-button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: transparent;
+    background-color: #3665cf;
+    overflow: hidden;
+    border-radius: 5px;
+    appearance: none;
+    text-align: match-parent;
+  }
+
+  .download-button,
+  .download-button__icon,
+  .download-button__text {
+    transition: all 0.3s;
+  }
+
+  .download-button__text {
+    transform: translateX(10px);
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .download-button__icon {
+    position: absolute;
+    transform: translateX(115px);
+    height: 100%;
+    width: 35px;
+    background-color: #003e95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .download-button__icon svg {
+    width: 20px;
+    fill: #fff;
+  }
+
+  .download-button:hover {
+    background: #003e95;
+  }
+
+  .download-button:hover .download-button__text {
+    color: transparent;
+  }
+
+  .download-button:hover .download-button__icon {
+    width: 140px;
+    transform: translateX(0);
+  }
+
+  .download-button:active .download-button__icon {
+    background-color: #003e95;
+  }
+
+  .download-button:active {
+    border: 1px solid #003e95;
+  }
+
+  .download-animation {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .gif-size {
+    width: 200px;
+  }
+
+  @media (min-width:992px) {
+    .success-section {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+
+  @media (max-width:992px) {
+    .Payment-custom-loader {
+      width: 40%;
+    }
+  }
+
+  @media (max-width:450px) {
+    .payment-s-para {
+      font-size: 16px;
+    }
+
+    .payment-s-heading {
+      font-size: 18px;
+    }
+
+    .gif-size {
+      width: 160px;
+    }
+
+    .Payment-custom-loader {
+      width: 50%;
+    }
+
+  }

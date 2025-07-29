@@ -1,0 +1,63 @@
+{
+  "product": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Oracle Fusion SCM Self-Paced Training",
+    "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_1521745239859.jpg",
+    "description": "Master Oracle Fusion SCM with our comprehensive self-paced training course. Access in-depth video lectures, hands-on exercises, and 6 months of instance access. Perfect for beginners to advanced learners.",
+    "sku": "TLIT152",
+    "mpn": "TLIT152",
+    "brand": {
+      "@type": "Brand",
+      "name": "Tech Leads IT"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.9",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Joshiram"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 836
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.techleadsit.com/oracle-fusion-scm-video-course/oracle-fusion-scm-self-paced-training",
+      "priceCurrency": "INR",
+      "price": "20000",
+      "priceValidUntil": "2025-07-18",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  "educationEvent": {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "Weekday-Oracle Fusion SCM Self-Paced Training",
+    "description": "Master Oracle Fusion SCM with our comprehensive self-paced training course. Access in-depth video lectures, hands-on exercises, and 6 months of instance access. Perfect for beginners to advanced learners.",
+    "performer": "Tech Leads IT",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://www.techleadsit.com/oracle-fusion-scm-video-course/oracle-fusion-scm-self-paced-training"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tech Leads IT",
+      "url": "https://www.techleadsit.com/"
+    },
+    "startDate": "2025-06-21",
+    "endDate": "2025-08-21",
+    "url": "https://www.techleadsit.com/oracle-fusion-scm-video-course/oracle-fusion-scm-self-paced-training",
+    "duration": "80"
+  }
+}

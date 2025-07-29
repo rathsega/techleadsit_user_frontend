@@ -1,0 +1,63 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Oracle Fusion Financials Self-Paced Training",
+    "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_1551721367250.jpg",
+    "description": "Advance your career with our Oracle Fusion Financials Self-Paced Course. Learn through detailed video lectures, practical exercises, and gain hands-on experience with 6 months of instance access. Perfect for all skill levels.",
+    "sku": "TLIT155",
+    "mpn": "TLIT155",
+    "brand": {
+      "@type": "Brand",
+      "name": "Tech Leads IT"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.9",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Praveen"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 936
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.techleadsit.com/oracle-fusion-financials-video-course/oracle-fusion-financials-self-paced-training",
+      "priceCurrency": "INR",
+      "price": "18000",
+      "priceValidUntil": "2025-08-13",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "Weekday-Oracle Fusion Financials Self-Paced Training",
+    "description": "Advance your career with our Oracle Fusion Financials Self-Paced Course. Learn through detailed video lectures, practical exercises, and gain hands-on experience with 6 months of instance access. Perfect for all skill levels.",
+    "performer": "Tech Leads IT",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://www.techleadsit.com/oracle-fusion-financials-video-course/oracle-fusion-financials-self-paced-training"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tech Leads IT",
+      "url": "https://www.techleadsit.com/"
+    },
+    "startDate": "2025-06-21",
+    "endDate": "2025-08-21",
+    "url": "https://www.techleadsit.com/oracle-fusion-financials-video-course/oracle-fusion-financials-self-paced-training",
+    "duration": "70"
+  }
+]

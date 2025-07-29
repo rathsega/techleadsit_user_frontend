@@ -1,0 +1,63 @@
+{
+  "product": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Oracle Global Trade Management Training",
+    "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_1481723874314.jpg",
+    "description": "Tech Leads IT is the best institute offers Oracle Global Trade Management (GTM Cloud) Training with detailed content covering almost all the modules in the training. The instructor is very knowledgeable and kind to cover this much curriculum with a detailed explanation based on Real-Time Project Examples.",
+    "sku": "TLIT148",
+    "mpn": "TLIT148",
+    "brand": {
+      "@type": "Brand",
+      "name": "Tech Leads IT"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Praveen"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": 1492
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.techleadsit.com/oracle-gtm-online-training/oracle-global-trade-management-training",
+      "priceCurrency": "INR",
+      "price": "25000",
+      "priceValidUntil": "2025-07-30",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  "educationEvent": {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "Weekday-Oracle Global Trade Management Training",
+    "description": "Tech Leads IT is the best institute offers Oracle Global Trade Management (GTM Cloud) Training with detailed content covering almost all the modules in the training. The instructor is very knowledgeable and kind to cover this much curriculum with a detailed explanation based on Real-Time Project Examples.",
+    "performer": "Tech Leads IT",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://www.techleadsit.com/oracle-gtm-online-training/oracle-global-trade-management-training"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tech Leads IT",
+      "url": "https://www.techleadsit.com/"
+    },
+    "startDate": "2025-06-21",
+    "endDate": "2025-08-21",
+    "url": "https://www.techleadsit.com/oracle-gtm-online-training/oracle-global-trade-management-training",
+    "duration": "40"
+  }
+}

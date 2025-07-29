@@ -1,0 +1,1512 @@
+{
+    "title": "Oracle Fusion Financials Self-Paced Training",
+    "id":"ORF-FIN-SP-032",
+    "category":"Oracle",
+    "duration":"3 Months",
+    "hero": {
+        "title": "Master Oracle Fusion Financials Self-Paced Training at Tech Leads IT",
+        "animationTitle": [
+            "Expert Training.",
+            "Redwood Experience",
+            "AI With Financials"
+        ],
+        "shortDescription": "Advance your career in Financial Management with our expert-led Oracle Fusion Financials Training! Master key financial modules, gain real-time hands-on experience, and build the skills needed to excel in today’s dynamic finance and accounting landscape.",
+        "brouchurePath": "/brochure/oracle-fusion-financials-course brouchure.pdf",
+        "successStories": {
+            "shortDescription": "",
+            "stories": [
+                {
+                    "studentName": "Aditya Garabadu",
+                    "studentAvatarPath": "/images/courses/success_stories/fin/Main-Course-Hero-Img1.webp",
+                    "studentDesignation": "Application Development Analyst at Accenture",
+                    "salaryHikeInPercentage": "140%",
+                    "studentReview": "\"I am writing to express my heartfelt gratitude for the invaluable training, guidance, and support I received during my course at Tech Leads IT Institute. I have not only gained knowledge but also acquired the skills.\"",
+                    "preTechLeadsItCompanyName": "Genpact",
+                    "postTechLeadsItCompanyLogoPath": "/images/courses/success_stories/fin/Accenture-Logo.svg"
+                },
+                {
+                    "studentName": "Monica Benny",
+                    "studentAvatarPath": "/images/courses/success_stories/fin/Main-Course-Hero-Img2.webp",
+                    "studentDesignation": "Oracle ERP Technical Consultant",
+                    "salaryHikeInPercentage": "100%",
+                    "studentReview": "\"This course offered comprehensive coverage, providing me with the skills to handle real-world scenarios. This training is not just theoretical and Instructor guidance made it a truly enriching experience.\"",
+                    "preTechLeadsItCompanyName": "Etihad Airport Services",
+                    "postTechLeadsItCompanyLogoPath": "/images/courses/success_stories/fin/Abu Dhabi Airports-logo.svg"
+                },
+                {
+                    "studentName": "Taha Maaz",
+                    "studentAvatarPath": "/images/courses/success_stories/fin/Main-Course-Hero-Img3.webp",
+                    "studentDesignation": "Senior Specialist at American Express",
+                    "salaryHikeInPercentage": "120%",
+                    "studentReview": "\"I completed my Oracle Fusion Financial training from Tech Leads IT. It is one of the best and highly recommended institution, I had a great learning experience",
+                    "preTechLeadsItCompanyName": "American Express",
+                    "postTechLeadsItCompanyLogoPath": "/images/courses/success_stories/fin/American-Express-logo.svg"
+                },
+                {
+                    "studentName": "Hari Mulik",
+                    "studentAvatarPath": "/images/courses/success_stories/fin/Main-Course-Hero-Img4.webp",
+                    "studentDesignation": "Manager - Finance at Haldirams",
+                    "salaryHikeInPercentage": "150%",
+                    "studentReview": "\"One of the Best training institute for Oracle Fusion finance And Basha Sir having very good Knowledge on Finance Modules. I can recommend this institute ",
+                    "preTechLeadsItCompanyName": "CredR",
+                    "postTechLeadsItCompanyLogoPath": "/images/courses/success_stories/fin/haldirams-logo.svg"
+                }
+            ]
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "General Ledger",
+            "Account Payables",
+            "Account receivables",
+            "Cash management",
+            "Fusion Tax",
+            "Fixed assets",
+            "Fusion Expenses",
+            "Budgeting",
+            "Inter company"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Financial Management with Industry-Leading Oracle Cloud Financials Online Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Financial Management and ERP systems.",
+                        "Those interested in financial accounting, payables, cash management & reporting using Oracle Fusion Financials Course.",
+                        "Job seekers aiming to boost their resumes with in-demand Financials skills"
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT & ERP professionals transitioning from Oracle EBS or other ERP systems to Oracle Fusion Financials.",
+                        "Finance Managers, Accountants & ERP consultants seeking expertise in  Financials.",
+                        "finance leaders aiming to automate financial operations using Oracle.",
+                        "Professionals looking to optimize financial processes using Oracle’s advanced Tools."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "25 May 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the Oracle Fusion Financials Live Demo with Kaleem Basha"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "xyz",
+        "modules": [
+            {
+                "moduleName": "Introduction to Oracle Fusion Financials",
+                "chapters": [
+                    {
+                        "chapterName": "Functional Setup Manager",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Overview Oracle Fusion Financials",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Security console & User Creation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Overview of Fusion Functional Setup Manager",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Overview(Roles)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "User Interface",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Overview of Common Configuration",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Enterprise Structure - Design",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "COA Structure - Design",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Legal Locations",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Legal Entities",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Define Business Units",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "General Ledger",
+                "chapters": [
+                    {
+                        "chapterName": "Oracle Fusion General Ledger",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Reporting Currencies Conversion Levels",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Define Secondary Ledgers",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Secondary Ledgers Conversion Levels",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Secondary Ledgers Mapping",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Review and Submit Accounting Configuration",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Ledger Sets",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Segment Value Security Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Data Access Set Security",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Budgets & Controls",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Value Sets",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Defining the Chart of Accounts Structure",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Deploying the Chart of Accounts",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Segment Values",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Assigning Segment Attributes",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create Account Hierarchies",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Published Account Hierarchy Example",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Enabling Account Combinations",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Defining Cross-Validation Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Accounting Calendar",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Manage Currencies Overview",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Ledgers",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Specify Ledger Options",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Balancing Segment Value Assignments",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Manage Reporting Currencies",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Oracle Fusion General Ledger - Process Flows",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Open GL Periods",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Entering Daily Currency Rates",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manual Journal",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Journal through Spreadsheet Loaders",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Auto Post of Accounting Entries",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Auto Reversal of Accounting Entries",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cross Currency Journals",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Suspense Journal",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Translation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Revaluation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Transfering Entries to Secondary Ledgers",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Account Monitor",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Accounting Inspector",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Mass Allocations",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Recurring Journals",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Account Payables",
+                "chapters": [
+                    {
+                        "chapterName": "Oracle Fusion Payables - Setups",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Defining Common Options for Payables and Procurement",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Payables Calendars",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Payment Terms",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Invoice Options",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Payment Options",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Distribution Sets",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Aging Periods",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Interest Rates",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Invoice Approval Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Formats",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Payment Methods",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Payment Process Profiles",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Procurement Agents",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Oracle Fusion Payables - Process Flows/Transactions",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Supplier Creation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Manual Standard Invoices",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Prepayment Invoice",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Apply Prepayment to Standard invoice",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Credit Memo Invoices",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Apply Credit Memo Against invoice",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Interest Invoice Creation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " With Holding Tax",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Invoices through Spread Sheet",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Invoices through OER Templates",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Recurring Invoices",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manual Payments",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Batch Payments through PPR",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cross Currency Payments",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Supplier refund",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Accounts Payable Balances",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Banking",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Payable to GL Reconciliation",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Fusion Expenses",
+                "chapters": [
+                    {
+                        "chapterName": "Oracle Fusion Expenses - Setups",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Overview of Oracle Fusion Expenses",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Expenses System Options",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Expense Policies and Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Expense Templates",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Expense Report Approval Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Expense audit selection Rules",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Oracle Fusion Expenses - Process Flows",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Enter Expense Report",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Approve Expense Report",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Audit Expense Report",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Process Expense Reimbursements",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create Cash Advances",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Fixed Assets",
+                "chapters": [
+                    {
+                        "chapterName": "Oracle Fusion Assets - Setups",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Overview Oracle Fusion Assets",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Value sets & Values",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Asset Flex filed structures",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Managing System Controls",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Fiscal Years",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Asset Calendars",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Prorate Conventions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Asset Locations",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Managing Asset Books",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Asset Categories",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Managing Distribution Sets",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defining Depreciation Methods",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Oracle Fusion Assets - Process Flows",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Create Asset from Invoice",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Modify the Financial Information of An Asset",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Transfer of an Asset",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Depreciation of an Asset",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Revaluation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Retirement of an Asset",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Mass Retirements",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Impairment of an Asset",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create CIP Asset",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Capitalize CIP Asset",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Account Receivables",
+                "chapters": [
+                    {
+                        "chapterName": "Oracle Fusion Receivables - Setups",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Define Receivables Activities",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Auto Accounting Rule",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Define Remit-to Addresses",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Approval Limits",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Define Receipt Classes and Receipt Methods",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Statement Cycles",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Transaction Types",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Payment Terms",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Transaction Sources",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Memo Lines",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define AutoCash Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Application Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Define AutoMatch Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Receipt Application Exception Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Revenue Scheduling Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Revenue Policies",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Define Revenue Contingencies",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Customers",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Oracle Fusion Receivables - Process flows",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Create Customer",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create AR Invoice",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create AR Credit Memo",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create AR Invoices from OER Template",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Adjust AR Invoices",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Apply Credit Memo Against AR Invoice",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Charge Back invoice",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Balance forward Billing",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Banking",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create Receipts",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create Automatic Receipts",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create Receipts through spread sheet",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create Remittance Batch",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Reciepts through Lockbox System",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Late Charge Transaction",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create Bills Receivable batch",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create Bills Receivables Remittance Batch",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Customer Refund",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " On Account Receipts",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Miscellaneous Receipts",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Customer Merge",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Receipt Write-off",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Receipt Reversal",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cross Currency Receipts",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Adding/Removing the Contingencies",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Accounts Receivable Balances",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Cash Management",
+                "chapters": [
+                    {
+                        "chapterName": "Cash Management Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Automatic Reconciliation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manual Reconciliation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create External Cash Transactions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Generate Cash Transactions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create a Bank Statement",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Oracle Cash Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Bank Statement Reconciliation Rule Sets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Bank Statement Reconciliation Matching Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Bank Statement Transaction Creation Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Parse Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create and Edit Bank Statement Transaction Codes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Accounts",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Branches",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Banks",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Cash to General Ledger Reconciliation",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Oracle Fusion Reporting",
+                "chapters": [
+                    {
+                        "chapterName": "Defining of Role Security Model",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Reports in Smart Views",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Reports in Financial Reporting Studio",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Reports in BI Publisher",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Managing Reference data Sets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Migration of Data from Legacy System",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Migrating the Historical Journals",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Migrating Open AP invoices",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Migrating Open AR Invoices",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Fusion Intercompany",
+                "chapters": [
+                    {
+                        "chapterName": "Oracle Fusion Intercompany - Setups",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Intercompany Overview",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Intercompany System Options",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Intercompany Transaction Types",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Intercompany Period Status",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Intercompany Organizations",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Define Invoice Options",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Intercompany Customer and Supplier Assignments",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Intercompany Receivables Assignments",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Intercompany Balancing Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Intercompany Reconciliation",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Oracle Fusion Intercompany - Process Flows",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Intra - Ledger Transactions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cross - Ledger Transactions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Intercompany Reconciliation",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Key Topics",
+                "chapters": [
+                    {
+                        "chapterName": "VAT Tax",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "WHT Tax",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Module wise Questioner's will be shared",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Custom SLA",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Online Practise Session every Alternate Week (2 days)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Test Cases with Test Scripts Module Specific",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Module Specific Material prepared by Tech leads",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Video's access of daily class",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Knowledge Evaluation sessions",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Procurement Concepts",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Locations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configure Procurement business Function",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configure Requisitioning Business Function",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Common Options for Payables & Procurement",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Requisition Approval Process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "TAB - Setups",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Transactions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Requisition",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "PO",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Receipt",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Invoice",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "PO-Match Invoice",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Pay on Receipt",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Supplier Creation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Item",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Add Offering of Product Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Item Organization",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Facility Shifts",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Facility Workday Pattern",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Facility Schedules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Inventory Organization",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Add Offering Manterials Management & Logistics",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Sub Inventories",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Hire Employee",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Warehouse Employee",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Procurement Employee - Buyer",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Item classes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Debit Memo RTS",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            }
+        ],
+        "demoVideoPath": "https://youtu.be/rA_iQY2i_Sc",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/financials.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Oracle Fusion Experts!",
+            "shortDescription": "Unlock new career opportunities—Oracle Fusion Financial professionals are in high demand. Start your journey today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Mr. Kaleem Basha, an accomplished professional with over 20 years of experience in Oracle ERP and Financial Management systems, brings deep industry expertise and global implementation knowledge to the classroom. As a certified Oracle and PMP trainer, Kaleem combines technical proficiency with strategic insight, helping students bridge the gap between theoretical learning and real-world applications. Driven by a passion for mentorship and professional development, he is dedicated to shaping future-ready finance professionals. His vision is to produce industry-standard Oracle Fusion Financials consultants "
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized Oracle Fusion Financials Trainer",
+            "points": [
+                "Oracle & PMP Certified Trainer, Expert in Oracle Financial Management Solutions.",
+                "20+ years of experience in Oracle ERP, specializing in Financials Training.",
+                "Trained over 5,000 professionals in Oracle Cloud Financials, empowering them to excel in finance and ERP careers."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Kaleem Basha",
+            "trainerDesignation": "Oracle Finance Expert",
+            "trainerSocialLinks": [
+                "https://www.facebook.com/techleadsitinstitute",
+                "https://www.linkedin.com/company/techleadsit1/",
+                "https://www.instagram.com/techleadsit/"
+            ],
+            "avatarImagePath": "/images/courses/trainer/kaleem_basha.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Matheen Md",
+                "designation": "Exchange Administrator",
+                "imagePath": "/images/courses/students/financials/Matheen Md.png",
+                "review": "Thank You for the sessions that helped me gaining knowledge in Oracle Fusion Financial training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Kasi Reddy P",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/financials/kasi reddy.png",
+                "review": "Great Teacher Basha Sir and well versed with the knowledge. I was very impressed with his style of delivering ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Jagadeesh Mulaparthi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/financials/jagadeesh.png",
+                "review": "I recently completed the Oracle Finance course with Basha Sir, and it exceeded my expectations in every aspect.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Ttext",
+                "studentName": "Mayuri Bhuvad",
+                "designation": "Senior Consultant",
+                "imagePath": "/images/courses/students/financials/mayuri.png",
+                "review": "I felt the course was well organized and delivered by experienced tutors.Thanks to the course teacher (Kaleem Basha).",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Karthik Sanga",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/financials/karthik sanga.png",
+                "review": "Tech Leads IT is one of the best Training institute for Oracle Fusion Financials Trainings, they provide good training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Venkata Surya Prasad Palivela",
+                "designation": "Manager - Sr Oracle Application Consultant",
+                "imagePath": "/images/courses/students/financials/venkata surya.png",
+                "review": "I have got trained Oracle Financials here & they trained very well. Got hands on experience for all Finance modules. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹18,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹25,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/financials.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/financials.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Oracle Fusion Financials Modules",
+                    "Gain a Clear Understanding of Financial Business Processes",
+                    "Develop Essential Problem-Solving & Analytical Skills"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-World Financial Use Cases",
+                    "Solve Business Scenarios with ERP Experts",
+                    "Get Extensive Knowledge of Implementation Methodologies like AIM & OUM"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume Highlighting Finance & ERP Skills",
+                    "Build a Strong LinkedIn Profile and Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on Case Studies and End-to-End Financial Project Scenarios",
+                    "Understand Industry Expectations in Finance, Accounting, and Reporting",
+                    "Develop Financial Decision-Making & Troubleshooting Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Finance-Specific Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "Our Hiring Partners  Trusted by Top Companies in Oracle HCM",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Oracle Fusion  Financials Are You Ready?",
+            "shortDescription": "Join the growing demand for Oracle Fusion professionals. Get certified and open doors to high-paying opportunities in top companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle Fusion Financials Trainee",
+                "Oracle ERP Support Analyst",
+                "Oracle Fusion Associate Consultant",
+                "Oracle ERP Support Consultant – Financials",
+                "Financial Systems Analyst",
+                "Oracle Cloud Financials Consultant",
+                "Oracle Fusion Financials Lead",
+                "ERP Finance Solution Architect",
+                "Oracle Financials Project Manager"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Power  Master Oracle Fusion Financials Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "",
+        "certificateimagePath": "Celebrate your success with an official certificate, proving your Oracle Fusion Financials expertise."
+    },
+    "topCertifications": {
+        "title": "Top Oracle Fusion Financials Certifications",
+        "certifications": [
+            "Oracle Fusion Cloud Applications ERP Foundations Associate",
+            "Oracle Accounting Hub Cloud 2024 Implementation Professional",
+            "Oracle Financials Cloud: General Ledger 2024 Implementation Professional",
+            "Oracle Financials Cloud: Payables 2024 Implementation Professional",
+            "Oracle Financials Cloud: Receivables 2024 Implementation Professional",
+            "Oracle Revenue Management Cloud Service 2024 Implementation Professional",
+            "Oracle Risk Management Cloud 2024 Implementation Professional",
+            "Oracle Project Management Cloud 2024 Implementation Professional"
+        ]
+    },
+    "relatedCourses": [
+        "Oracle Fusion SCM Online Training",
+        "Oracle Fusion HCM Online Training",
+        "Oracle Fusion Technical + OIC Training",
+        "Oracle fusion WMS Cloud (Logfire) Training"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Oracle Fusion Financials Training?",
+            "answer": "Our Oracle Fusion Financials Training covers a complete curriculum including General Ledger (GL), Accounts Payables (AP), Accounts Receivables (AR), Fixed Assets (FA) and Cash Management (CM). Please refer to our syllabus for detailed module information."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Training sessions are held Monday to Saturday, with each session lasting 1 hour. This ensures consistent, interactive, and structured learning."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, we do not offer weekend batches. Training is conducted live from Monday to Saturday to maintain learning continuity."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, recorded sessions are available for learners who prefer self-paced study. Please note that live doubt clarification is not included in the self-paced plan."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internship opportunities are available based on your performance in mock evaluations, helping you gain hands-on experience in Oracle Fusion Financials."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Financials Module Instead of the Full Course?",
+            "answer": "No, our Financials course is structured as a comprehensive program. We do not offer modules separately."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes, we help you build a strong resume tailored for Financials roles. Our experts offer guidance on crafting an ATS-compliant and impactful resume."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, a laptop or desktop is necessary to access the Oracle Financials instance and complete practical exercises effectively."
+        },
+        {
+            "question": "Are There Any Prerequisites or Minimum Qualifications?",
+            "answer": "No prior experience is required. Basic knowledge of accounting or finance is beneficial, but the course is open to graduates from any background (Degree, PG, B.Com, MBA, etc.)."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Yes, the course begins with fundamentals and moves to advanced concepts—ideal for both freshers and working professionals."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes, we offer job assistance through mock interviews, resume support, and career guidance. We also have placement partnerships with firms such as Tech Mahindra, LTI, Evosys, FIS Global, and others."
+        },
+        {
+            "question": "Do You Provide Support for Oracle Certification?",
+            "answer": "Yes, we guide you through the certification process with expert tips and access to relevant sample questions and dumps."
+        },
+        {
+            "question": "Do You Provide Recordings and Study Materials?",
+            "answer": "Yes, session recordings (1-year access) and downloadable study materials (lifetime access via Google Drive) are provided, including screenshots and navigation guides."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Assistance?",
+            "answer": "Yes, we share the latest module-wise interview questions and help with preparation through mock interview sessions."
+        },
+        {
+            "question": "Do You Provide Instance or Application Access for Practice?",
+            "answer": "Yes, 6-month instance access is included. No software installation is needed—just a browser and internet connection."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes, enrollment comes with a 1-year membership, allowing you to attend multiple live batches during that period."
+        },
+        {
+            "question": "Will I Receive a Course Completion Certificate?",
+            "answer": "Yes, you will receive a certificate upon successfully completing the Oracle Fusion Financials training."
+        },
+        {
+            "question": "Is Any Coding Knowledge Required?",
+            "answer": "No coding is needed. This is a completely functional course designed for finance and accounting professionals."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, one-on-one sessions are available on request. Custom pricing applies for personalized training."
+        }
+    ]
+}

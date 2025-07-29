@@ -1,0 +1,64 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Oracle Fusion WMS Cloud (Logfire) Self-Paced Training",
+      "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_1581722946822.jpg",
+      "description": "Master Oracle's cloud-based Warehouse Management System with our self-paced training. Learn to manage inventory, optimize warehouse operations, and improve order fulfillment through engaging tutorials and practical exercises. Elevate your career with flexible, comprehensive WMS skills.",
+      "sku": "TLIT158",
+      "mpn": "TLIT158",
+      "brand": {
+        "@type": "Brand",
+        "name": "Tech Leads IT"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.8",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Praveen"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": 632
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.techleadsit.com/oracle-warehouse-management-training/oracle-wms-self-paced-training",
+        "priceCurrency": "INR",
+        "price": "20000",
+        "priceValidUntil": "2025-07-21",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "EducationEvent",
+      "name": "Weekday-Oracle Fusion WMS Cloud (Logfire) Self-Paced Training",
+      "description": "Master Oracle's cloud-based Warehouse Management System with our self-paced training. Learn to manage inventory, optimize warehouse operations, and improve order fulfillment through engaging tutorials and practical exercises. Elevate your career with flexible, comprehensive WMS skills.",
+      "performer": "Tech Leads IT",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+      "location": {
+        "@type": "VirtualLocation",
+        "url": "https://www.techleadsit.com/oracle-warehouse-management-training/oracle-wms-self-paced-training"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Tech Leads IT",
+        "url": "https://www.techleadsit.com/"
+      },
+      "startDate": "2025-06-21",
+      "endDate": "2025-08-21",
+      "url": "https://www.techleadsit.com/oracle-warehouse-management-training/oracle-wms-self-paced-training",
+      "duration": "P50D"
+    }
+  ]
+}

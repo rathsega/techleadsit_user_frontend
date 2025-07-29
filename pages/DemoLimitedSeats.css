@@ -1,0 +1,154 @@
+.Limited-seats-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    margin:40px;
+    padding:15px;
+    font-family: Montserrat;
+}
+
+.demo_banner {
+    position: relative;
+    height:80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.demo_content {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    padding-inline: 15px;
+}
+
+.demo_content-h{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.demo_content-para{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.imp-content-para{
+    font-weight: 600;
+    font-size: 16px;
+    color: #33A3FF;
+
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.time-box {
+    background: #21202033;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    min-width: 80px;
+}
+
+.time-box span {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+}
+
+.limited-seats-btn {
+    background: linear-gradient(180deg, rgba(9, 103, 138, 0.8) 0%, rgba(0, 73, 100, 0.8) 100%);
+    border: 1px solid #166380;
+    padding-inline: 40px;
+    padding-block:12px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+.dot-icon{
+    font-weight: 700;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+    }
+
+    .content-h {
+        font-size: 1.5em;
+    }
+
+    .content-para, .imp-content-para {
+        font-size: 0.9em;
+    }
+
+    .time-box span {
+        font-size: 1.2em;
+    }
+    
+    .limited-seats-btn{
+        font-size: 0.8rem;
+    }
+
+    .timer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        align-items: center;
+    }
+
+    .banner{
+        height:60vh;
+    }
+}
+
+@media (max-width:576px){
+    .Limited-seats-section{
+        margin:20px;
+        padding:10px; 
+    }
+
+    .df-al-c, .timer{
+        gap:5px !important;
+      }
+
+      .time-box{
+        font-size: 11px;
+        padding: 5px 10px;
+        min-width: 65px;
+      }
+
+      .content-h{
+        font-size: 1.2em;
+      }
+
+      .content-para{
+        font-size: 0.7em;
+      }
+
+      .h-11{
+        height:11px;
+      }
+
+}
+
+

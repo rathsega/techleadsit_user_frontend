@@ -1,0 +1,47 @@
+.play-button-img {
+    position: absolute;
+    top: 48%;
+    left: 20%;
+    z-index: 99;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 1000;
+  }
+  
+  .popup video {
+    width: 55vw;
+    border-radius: 10px;
+  }
+
+  .close {
+    color: white;
+    font-size: 16px;
+    position: relative;
+    font-family: Montserrat;
+    font-weight: 400;
+    top: -12%;
+    right: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }

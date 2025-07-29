@@ -1,0 +1,702 @@
+{
+    "title": "SAP CPI Course",
+    "id":"SAP-CPI-OT-006",
+    "category":"ERP",
+    "duration":"3 Months",
+    "hero": {
+        "title": "Master SAP CPI Training at Tech Leads IT with",
+        "animationTitle": [
+            "Expert Training.",
+            "Hands-On Projects",
+            "AI With SAP"
+        ],
+        "shortDescription": "Accelerate your career in system integration with our in-depth SAP CPI online training! Learn core concepts, develop real-world skills, and gain hands-on experience with end-to-end integration scenarios. Our expert-led training helps you become proficient in SAP and non-SAP systems.",
+        "brouchurePath": "/brochure/sap-cpi-course.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Cloud BTP Intro",
+            "CPI architecture",
+            "CPI IFlow Design",
+            "Building Blocks",
+            "CPI adaptors",
+            "CPI operations",
+            "Middleware Intro",
+            "Integration Intro",
+            "Groovy Scripting",
+            "PO to CPI migration",
+            "Security artifacts"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Cloud Integration with Industry-Leading SAP CPI Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Cloud Integration technologies.",
+                        "Those interested in enterprise application integration, APIs, & process automation using SAP CPI",
+                        "job seekers aiming to enhance their resumes with in-demand SAP skills"
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT & ERP professionals transitioning from traditional integration platforms to SAP Cloud Platform Integration (CPI).",
+                        "Integration Consultants, Middleware Specialists seeking  expertise in SAP CPI",
+                        "IT Managers & Solution Architects aiming to streamline integrations using SAP BTP.",
+                        "Professionals looking to optimize data flow &  business processes through SAP"
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "22 May 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the SAP CPI Online Training Live Demo with Bhargav"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "SAP CPI Training",
+        "modules": [
+            {
+                "moduleName": "Introduction to Cloud Concepts & BTP",
+                "chapters": [
+                    {
+                        "chapterName": "Cloud Concepts 0 Lessons",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SaaS, PaaS, i-PaaS, and IaaS",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SAP BTP",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "API, API-M, SAP API hub",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Introduction to Integration, Middleware and CPI",
+                "chapters": [
+                    {
+                        "chapterName": "What is Integration?",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "What is Middleware?",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "What is SAP CPI?",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Integration Use Cases",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "CPI and its Capabilities - Overview",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP CPI Architecture - Overview",
+                "chapters": [
+                    {
+                        "chapterName": "Technical System Architecture",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SAP CPI Tenant",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SAP Cloud Cockpit",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Cloud Connector",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SAP Data Centers",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Creation of Trial Account and Running your First iFlow",
+                "chapters": [
+                    {
+                        "chapterName": "Integration Content Catalog",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Consuming Prepackaged Content",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configure Integration Package",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Modify Prepackaged Content",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Prepackaged Content Provided by SAP",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating your own Content Package",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Hello CPI World",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Odata Scenario",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "CPI iFlow Design Aspects - Basic Building Blocks",
+                "chapters": [
+                    {
+                        "chapterName": "All Design Objects/Pallet Steps",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Event Steps",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Mapping Steps",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Message Transformers",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "External and Local Calls",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Message Routing Steps",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Security Steps",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Persistence",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Value Mapping",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Externalization",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Groovy Scripting and Exception Handling",
+                "chapters": [
+                    {
+                        "chapterName": "Groovy Basics 0 Lessons",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "What, Why, How - Exception Handling",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP CPI Adapters",
+                "chapters": [
+                    {
+                        "chapterName": "Different Adapters and Connectivity Aspects of CPI",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Peculiar Features Specific to Adapters",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "CPI - Keys Aspects from Developers Perspective",
+                "chapters": [
+                    {
+                        "chapterName": "Graphical Mapping and Concepts",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "XSLT Mapping",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Handling Peculiar Requirements",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP Cloud Platform Integration Operations",
+                "chapters": [
+                    {
+                        "chapterName": "Monitor Message Operations, Enabling Trace",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Integration Content",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Security Material",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Managing Temporary Data and Access Logs",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Security Concepts and Security Artifacts",
+                "chapters": [
+                    {
+                        "chapterName": "Transport Level Security Options (TLS)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Message-Level Security Options (MLS)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Data Protection and Data Flow Security",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Certificate Based Communication",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Private Key and Public Key Certificate",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Authentication and Oauth Scenario",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Deep Dive into SAP CPI",
+                "chapters": [
+                    {
+                        "chapterName": "Consume iFlows - Process Direct",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Condition Based Routing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Number Ranges",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Variables",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Data Store",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Introduction to PO to CPI Migration",
+                "chapters": [
+                    {
+                        "chapterName": "SAP Standard PO Assessment",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SAP's Migration Tool",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Real-time Scenarios",
+                "chapters": [
+                    {
+                        "chapterName": "Industry Use Cases",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Idocs Inbound",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Looping Process Calls with Pagination",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            }
+        ],
+        "demoVideoPath": "https://youtu.be/0euPFuBr71w",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/sap_cpi.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for  SAP CPI Experts!",
+            "shortDescription": "Unlock New Career Opportunities SAP Cloud Platform Integration Professionals Are In High Demand. Start Your Journey Today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Mr. Bhargav, a seasoned SAP professional with over 14 years of hands-on experience in Cloud Integration and Middleware technologies, has played a key role in enabling seamless SAP CPI implementations across various industries. His passion for teaching and deep expertise in SAP Cloud Platform Integration (SAP CPI) make him the perfect mentor for aspiring integration professionals.With a mission to produce skilled SAP CPI consultants to meet the rising industry demand, Bhargav is committed to sharing practical knowledge and empowering learners to build strong careers in enterprise system integration and digital transformation."
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized SAP CPI Trainer",
+            "points": [
+                "SAP CPI Certified Integration Specialist, specializing in  cloud & hybrid integrations",
+                "14+ years of expertise in SAP technologies, with a strong focus on SAP CPI Training",
+                "Trained over 3,000 professionals in SAP CPI, enabling them to excel in integration, middleware, and SAP consulting roles"
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Bhargav",
+            "trainerDesignation": "SAP CPI Expert",
+            "trainerSocialLinks": [
+                "https://www.facebook.com/techleadsitinstitute",
+                "https://www.facebook.com/techleadsitinstitute",
+                "https://www.facebook.com/techleadsitinstitute"
+            ],
+            "avatarImagePath": "/images/courses/trainer/sap_cpi.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Pratap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Satish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹20,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹30,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support"
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/sap_cpi.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/sap_cpi.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of SAP Cloud Platform Integration (CPI)",
+                    "Gain a Clear Understanding of Integration Scenarios & Architecture",
+                    "Develop Essential Problem-Solving Skills"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-Time Integration Use Cases",
+                    "Solve Business Scenarios with Industry Experts",
+                    "Get Extensive Knowledge on iFlow Development, Adapters & Security"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume Tailored to SAP CPI Roles",
+                    "Build a Strong LinkedIn Profile and Project Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on Case Studies and End-to-End Integration Projects",
+                    "Understand Real-World Expectations & Best Practices",
+                    "Enhance Problem-Solving and Integration Design Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with SAP CPI Are You Ready?",
+            "shortDescription": "Join the booming demand for SAP Integration experts. Get certified in SAP Cloud Platform Integration (CPI) and unlock high-paying career opportunities with top global companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "SAP Integration Trainee",
+                "Junior SAP CPI Consultant",
+                "SAP CPI Integration Support Analyst",
+                "SAP CPI Consultant",
+                "SAP Integration Specialist",
+                "SAP CPI Lead / Integration Lead",
+                "SAP Solution Architect (Integration / CPI)",
+                "Oracle WMS Solution Architect",
+                "Enterprise Integration Manager "
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "",
+        "shortDescription": ""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your SAP Cloud Platform Integration (CPI) expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "SAP SD Online Training",
+        "SAP MM Online Training",
+        "SAP ABAP Online Training",
+        "Workday HCM Techno Functional Online Training "
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in the SAP CPI Training?",
+            "answer": "Our SAP CPI training focuses on key areas including Cloud BTP Introduction, CPI Architecture, iFlow Design, Groovy Scripting, and Security Artifacts. This SAP CPI course online is structured to provide practical, job-ready skills. Please refer to our course syllabus for the detailed module breakdown."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Sessions are conducted from Monday to Friday, each lasting 1 hour, offering structured and continuous SAP CPI learning with instructor support."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "No, live sessions are available only on weekdays to ensure consistent SAP CPI course flow and regular engagement."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, recorded sessions are available for self-paced learners. This mode suits those who prefer SAP CPI online training at their convenience. Please note that live doubt-clearing support is not included in the self-paced track."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internships are offered based on performance in mock evaluations, allowing learners to gain practical exposure in SAP CPI project environments as part of the SAP CPI training program."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No, SAP CPI training is offered as a complete package. Individual module enrollment is not available."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes, we help you craft an ATS-optimized resume, tailored to SAP CPI certification and integration consultant roles, highlighting your project experience and technical skills."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, a laptop or desktop is mandatory to access the SAP BTP trial environment or provided sandbox instances for hands-on SAP CPI learning."
+        },
+        {
+            "question": "Are There Any Prerequisites or Minimum Qualifications Required?",
+            "answer": "No prior SAP experience is required. This SAP CPI course is suitable for freshers and professionals from IT or engineering backgrounds. A basic understanding of integration or APIs is helpful but not mandatory."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Yes, training starts from the very basics and gradually progresses to enterprise-level integrations, making it ideal for beginners and professionals transitioning to SAP CPI online training."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes, we provide full placement support including mock interviews, resume building, and job referrals. Our SAP CPI training in Hyderabad and other regions has helped many learners get placed in top MNCs."
+        },
+        {
+            "question": "Do You Provide Support for SAP Certification?",
+            "answer": "Yes, we provide complete guidance for SAP CPI certification (SAP Integration Suite), including study tips, practice materials, and assistance with registration."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes, all sessions are recorded and shared daily. You’ll also receive comprehensive study material, sample iFlows, and documentation walkthroughs as part of the SAP CPI course online."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Assistance?",
+            "answer": "Absolutely. We share module-wise interview questions, real-time scenarios, and conduct mock interviews to help you prepare for SAP CPI certification and job interviews."
+        },
+        {
+            "question": "Do You Provide Instance or Application Access for Practice?",
+            "answer": "Yes, we provide access to either the SAP BTP trial environment or a dedicated instance for 4 months, depending on availability and your SAP CPI learning mode."
+        },
+        {
+            "question": "Can I Retake This Course?",
+            "answer": "Yes, your enrollment includes 1-year access, allowing you to rejoin future SAP CPI training batches at no extra cost for revision."
+        },
+        {
+            "question": "Can I Get a Course Completion Certificate?",
+            "answer": "Yes, all learners will receive a SAP CPI course Completion Certificate upon completing the training and project requirements."
+        },
+        {
+            "question": "Is Any Coding Knowledge Required?",
+            "answer": "No prior coding knowledge is needed. We introduce and guide you through Groovy scripting basics during the SAP CPI online training."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, personalized SAP CPI training is available upon request. Individual training is priced differently from group batches."
+        }
+    ]
+}

@@ -1,0 +1,814 @@
+{
+    "title": "SAP MM Online Training",
+    "id": "SAP-MMO-OT-037",
+    "category": "ERP",
+    "duration": "3 Months",
+    "hero": {
+        "title": "Master SAP MM Training at Tech Leads IT with",
+        "animationTitle": [
+            "Expert Training.",
+            "Hands-On Projects",
+            "AI with SAP"
+        ],
+        "shortDescription": "Accelerate your career in materials management with our in-depth SAP MM online training! Learn core concepts, develop real-world skills, and gain hands-on experience with end-to-end procurement and inventory scenarios. Our expert-led training helps you become proficient in SAP purchasing & management systems.",
+        "brouchurePath": "/brochure/sap-mm-course-online.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Screen Navigation",
+            "Procurement Process",
+            "Enterprise Structure",
+            "Organizational Units",
+            "Master Data",
+            "Purchase Requisition",
+            "Inventory Management",
+            "Invoice Verifiction",
+            "Service Management",
+            "Account Determination"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Materials Management with Industry-Leading SAP MM Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Procurement & Supply Chain Management",
+                        "Those interested in materials management, vendor handling, and SAP ERP processes using SAP MM.",
+                        "Job seekers aiming to enhance their resumes with in-demand SAP skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT & ERP professionals transitioning into the supply chain or procurement domain with SAP MM.",
+                        "SAP Consultants, Procurement Specialists seeking expertise in SAP MM",
+                        "Inventory Managers & Logistics Coordinators aiming to streamline supply operations using SAP.",
+                        "Professionals looking to optimize procurement, inventory through SAP MM."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "25 May 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the SAP MM Online Training Live Demo with Kumar"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "xyz",
+        "modules": [
+            {
+                "moduleName": "SAP MM Overview",
+                "chapters": [
+                    {
+                        "chapterName": "SAP Business Process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Features of SAP MM",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Screen Navigation",
+                "chapters": [
+                    {
+                        "chapterName": "Login Screen",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Standard Toolbar Icons",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Standard Exit Keys",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Easy Access",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Menu path for MM Configuration",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Procurement Process",
+                "chapters": [
+                    {
+                        "chapterName": "Basic Procurement",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Special Procurement",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Enterprise Structure",
+                "chapters": [
+                    {
+                        "chapterName": "Client",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Company Code",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Plant",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SAP MM",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Storage Location",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Purchasing Organization",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Purchasing Group",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Defining Organizational Structure",
+                "chapters": [
+                    {
+                        "chapterName": "Create Company",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Company Code",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Plant",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Storage Location",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Purchasing Organization",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Purchasing Group",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Organizational Units",
+                "chapters": [
+                    {
+                        "chapterName": "Plant to Company Code",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Purchasing Organization to Company Code",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Purchasing Organization to Plant",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Standard Purchasing Organization to Plant",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Master Data",
+                "chapters": [
+                    {
+                        "chapterName": "Material Master Data",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Purchase Info Record",
+                "chapters": [
+                    {
+                        "chapterName": "Creation of Purchase Info Record",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Source Determination/List",
+                "chapters": [
+                    {
+                        "chapterName": "Automatic Creation of Source List",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manual Creation of Source List",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Procurement Cycle",
+                "chapters": [
+                    {
+                        "chapterName": "Determination of Requirement",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Purchase Order",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Posting Goods Receipt",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Posting Invoice",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Purchase Requisition",
+                "chapters": [
+                    {
+                        "chapterName": "Create Purchase Requisition",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Purchase Order from Purchase Requisition",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Request for Quotation",
+                "chapters": [
+                    {
+                        "chapterName": "Manual Creation of RFQ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Automatic Creation of RFQ from Purchase Requisition",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Outline Arrangement",
+                "chapters": [
+                    {
+                        "chapterName": "Contract",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Scheduling Agreement",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Quota Arrangement",
+                "chapters": [
+                    {
+                        "chapterName": "Create Quota Arrangement",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Posting Period",
+                "chapters": [
+                    {
+                        "chapterName": "Maintain Fiscal Year Variant",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Assign Company Code to Fiscal Year Variant",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Variants for Open Posting Periods",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Assign Variant to Company Code",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Open and Close Posting Periods",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Purchase Order Types",
+                "chapters": [
+                    {
+                        "chapterName": "Subcontracting Purchase Order",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Consignment Purchase Order",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Stock Transfer Purchase Order",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Service Purchase Order",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Inventory Management",
+                "chapters": [
+                    {
+                        "chapterName": "Movement Type",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Goods Receipt",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Reservation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Goods Issue",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Invoice Verification",
+                "chapters": [
+                    {
+                        "chapterName": "Posting of Invoice",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Blocked Invoice",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Evaluated Receipt Settlement",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Service Management",
+                "chapters": [
+                    {
+                        "chapterName": "Service Master Record",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Service Purchase Order",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Service Entry Sheet",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Valuation",
+                "chapters": [
+                    {
+                        "chapterName": "Split Valuation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Split Valuation Configuration",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Account Determination",
+                "chapters": [
+                    {
+                        "chapterName": "Define Valuation Control",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Group Together Valuation Areas",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Valuation Classes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configure Automatic Posting",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Configuration",
+                "chapters": [
+                    {
+                        "chapterName": "Assign Fields to Field Selection Groups",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Maintain Field Selection for Data Screens",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Maintain Company Codes for Materials Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Attributes of System Messages",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Number Ranges – Purchase Requisition",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Document Types – Purchase Requisition",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Number Ranges – RFQ/Quotation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Document Types – RFQ/Quotation",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP MM ─ Transcation Codes"
+            },
+            {
+                "moduleName": "Resume Preparation"
+            },
+            {
+                "moduleName": "Interview Preparation"
+            },
+            {
+                "moduleName": "JIRA Functionality Overview"
+            },
+            {
+                "moduleName": "Agile Methodology Overview"
+            }
+        ],
+        "demoVideoPath": "",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/sap-mm.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for  SAP MM Experts!",
+            "shortDescription": "Unlock New Career Opportunities – SAP Materials Management Professionals Are In High Demand. Start Your Journey Today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Mr. Kumar, a seasoned SAP professional with over 15 years of hands-on experience in SAP Materials Management (MM) and Supply Chain processes, has played a key role in driving successful SAP MM implementations across various industries. His passion for teaching and deep expertise in SAP Materials Management (SAP MM) make him the perfect mentor for aspiring supply chain professionals. With a mission to produce skilled SAP MM consultants to meet the rising industry demand, Kumar is committed to sharing practical knowledge and empowering learners to build strong careers in procurement, inventory, and supply chain transformation"
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized SAP MM Trainer",
+            "points": [
+                "SAP MM Certified Consultant, specializing in procurement, supply chain processes",
+                "15+ years of expertise in SAP ERP technologies, with a strong focus on SAP MM Training.",
+                "Trained over 3,000 professionals in SAP MM, enabling them to excel in procurement, inventory, and SAP consulting roles."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Kumar",
+            "trainerDesignation": "SAP MM Expert",
+            "avatarImagePath": "/images/courses/trainer/sap-mm.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Pratap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Satish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹18,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹25,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+         "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/sap-mm.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/sap-mm.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of SAP Materials Management (MM)",
+                    "Gain a Clear Understanding of Procurement Processes & System Architecture",
+                    "Develop Essential Problem-Solving Skills in Material Management"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-Time SAP MM Business Scenarios",
+                    "Solve Procurement and Inventory Challenges with Industry Experts",
+                    "Get Extensive Knowledge on Purchase Orders and Inventory Management"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume Tailored to SAP MM Roles",
+                    "Build a Strong LinkedIn Profile and Project Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on Case Studies and End-to-End Procurement Projects",
+                    "Understand Real-World Expectations & Best Practices in Supply Chain",
+                    "Enhance Problem-Solving and Integration Design Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with SAP MM Are You Ready?",
+            "shortDescription": "Join the booming demand for SAP Materials Management (MM) experts. Get certified in SAP MM and unlock high-paying career opportunities with top global companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "SAP MM Trainee",
+                "Junior SAP MM Consultant",
+                "SAP MM Support Analyst",
+                "SAP MM Consultant",
+                "SAP MM Specialist",
+                "Procurement Analyst (SAP MM Focus)",
+                "SAP MM Solution Architect",
+                "Supply Chain Solution Architect",
+                "Materials Management Manager"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "",
+        "shortDescription": ""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your SAP Materials Management (MM) expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Sap CPI Online Training Course",
+        "Sap SD Online Training Course",
+        "Sap ABAP Online Training Course",
+        "Oracle Fusion SCM Training  Course"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in SAP MM Online Training?",
+            "answer": "Our SAP MM Training covers essential modules including Screen Navigation, Procurement Process, Enterprise Structure, Organizational Units, Master Data, Procurement Cycle. This hands-on training equips you with the skills needed to work confidently with SAP Materials Management. A detailed syllabus is provided in our course brochure."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Live training sessions are conducted Monday to Saturday, 1 hour per day. This structured schedule ensures steady learning and practical experience in SAP MM."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, weekend-only batches are not available. Classes are conducted from Monday through Saturday for consistent skill-building in SAP MM."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we offer recorded sessions for self-paced learning. Please note, live Q&A support is not available in the self-paced format for SAP MM training."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internships are provided based on mock evaluation performance. Internships involve real-time project work using SAP MM modules such as Procurement Process and Inventory Management."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No. SAP MM Training is offered as a complete package to ensure a thorough understanding of all essential modules and best practices."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes. We offer resume building guidance focused on SAP MM roles, emphasizing your hands-on project experience with Procurement Cycle, Purchase Requisition, and Invoice Verification."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes. A personal computer is required to install and practice using the SAP environment, including modules like Enterprise Structure, Organizational Units, and Master Data."
+        },
+        {
+            "question": "Are There Any Prerequisites for This Training?",
+            "answer": "No prior experience is needed. This SAP MM course is beginner-friendly. Basic understanding of business processes or ERP systems is an advantage but not mandatory."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Yes. We begin with foundational concepts such as Screen Navigation and Procurement Process before progressing to advanced SAP MM topics like Account Determination and Service Management."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes. We offer full placement support including mock interviews, interview prep, and resume optimization tailored to SAP MM roles."
+        },
+        {
+            "question": "Do You Offer SAP MM Certification Support?",
+            "answer": "Yes, we provide expert guidance and study resources to help you prepare for SAP MM certification exams."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes. You’ll have 1-year access to all recordings and receive comprehensive notes, configuration guides, and reference documents covering Procurement Cycle, Inventory Management, and more."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Mock Support?",
+            "answer": "Absolutely. We provide targeted interview questions and conduct mock interviews focused on SAP MM to prepare you for real job roles."
+        },
+        {
+            "question": "Do You Provide Instance Access for Practice?",
+            "answer": "Yes. You’ll get 4 months of SAP system access with support for practicing modules like Purchase Requisition, Invoice Verification, and Service Management."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes. You can rejoin any future batch of SAP MM Training within your 1-year course access period at no additional cost."
+        },
+        {
+            "question": "Will I Get a Course Completion Certificate?",
+            "answer": "Yes. Upon completing the training, you’ll receive an official SAP MM Training Certificate from Tech Leads IT."
+        },
+        {
+            "question": "Is Coding Knowledge Required?",
+            "answer": "Basic knowledge of SAP navigation and procurement processes is sufficient. We cover all technical and functional aspects from the ground up with practical SAP MM exercises."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, one-on-one sessions are available upon request. Fees for personalized SAP MM training vary based on the schedule."
+        }
+    ]
+}

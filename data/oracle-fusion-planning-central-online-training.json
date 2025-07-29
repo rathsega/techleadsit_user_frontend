@@ -1,0 +1,874 @@
+{
+    "title": "Oracle Fusion Planning Central Training",
+    "id": "ORF-PLC-OT-040",
+    "category": "Oracle",
+    "duration": "3 Months",
+    "hero": {
+        "title": "Master Oracle Fusion Planning Central Training ",
+        "animationTitle": [
+            "expert training.",
+            "Redwood Experience",
+            "AI With Oracle Cloud"
+        ],
+        "shortDescription": "Accelerate your career in supply chain planning with our in-depth Oracle Fusion Planning Central online training! Learn core planning concepts, develop real-world functional expertise, and gain hands-on experience with end-to-end planning scenarios. Our expert-led training helps you become proficient in Oracle’s robust Planning Central module and Redwood Experience.",
+        "brouchurePath": false,
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Planning Basics",
+            "Data Collection",
+            "Supply Planning",
+            "Demand Planning",
+            "Plan Execution",
+            "Exceptions Handling",
+            "Analytics & KPIs",
+            "Project Scenarios",
+            "Security & Roles"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Enterprise Planning with Industry-Leading Oracle Fusion Planning Central Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in supply chain planning and ERP.",
+                        "Those interested in cloud-based supply chain planning & Oracle Fusion applications.",
+                        "Job seekers aiming to enhance their resumes with in-demand Oracle Fusion Planning Central skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT professionals or planners transitioning into Oracle Fusion Planning Central roles.",
+                        "Supply Chain Analysts and Planners seeking to specialize in Oracle’s cloud planning solutions.",
+                        "Business Analysts & Application Support Engineers aiming to optimize sCM workflows.",
+                        "Professionals looking to build scalable, efficient planning solutions using Oracle Tools"
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "22 May 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join Oracle Fusion Planning Central Online Training Live Demo with Santhosh"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "Planning central",
+        "modules": [
+            {
+                "moduleName": "Introduction to Oracle Cloud ",
+                "chapters": [
+                    {
+                        "chapterName": "Introduction to Oracle Cloud",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SAAS, PAAS and IAAS Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Oracle SCM Cloud Capabilities: Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Navigation Basics",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Resources",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Introduction to Functional Setup Manager and Quick Setup ",
+                "chapters": [
+                    {
+                        "chapterName": "Implementation Planning",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Roles and Responsibilities",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Offerings",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Implementation Considerations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SCM Simplified Setup: Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Automated Setup of SCM Common Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Simplified Setup: Time Savings",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Best Practices",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Enterprise Structure Overview ",
+                "chapters": [
+                    {
+                        "chapterName": "Walkthrough on Enterprise Structure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Differentiate E-Business Suite and Cloud Org Structure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Business Unit Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Business Unit Implementation",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Demo on Connected Modules ",
+                "chapters": [
+                    {
+                        "chapterName": "Fusion Product Data Hub",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Inventory Management and Costing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Manufacturing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Procurement",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Order Management",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Oracle Supply Chain Management Cloud Common Configuration ",
+                "chapters": [
+                    {
+                        "chapterName": "Set up an Inventory Organization",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Units of Measure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Calendars",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Inventory, including Issue and transfer of materials",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Oracle Planning Central Cloud Overview ",
+                "chapters": [
+                    {
+                        "chapterName": "Describe different types of Planning Business Flows ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create and manage Page Layouts ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage the Plan Summary Layout ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Tables and Graphs ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Infotiles and Tile Sets ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Material Planners ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Administer Planning Security ",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Manage Planning Profile Options ",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Creating, Copying and Viewing a Supply Plan ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Apply Supply Plan options (Advanced Options) ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configure Safety Stock Plan options ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Evaluate Supply Plan inputs ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Perform Running Supply Plan ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Supply Planning Concepts ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Develop Modelling and Analyzing Supply Plan ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Release Recommendations (Requisition Creation and Approval and Transfer order) ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Analyze Demand Fulfillment ",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Data Collection ",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Data Collection from the Oracle Fusion Source System ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain Loading Planning Data from Files ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Analyze Collected Data in the Planning Data Repository ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Program Order – Collection and Refresh ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Dimensions and Hierarchies",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Measures and Measure Catalogs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creation of Measures and Functions of Measures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Expressions in Measures",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Exceptions",
+                "chapters": [
+                    {
+                        "chapterName": "Configure Exceptions and Exception Sets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Analyze Exceptions in Plans",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Measure",
+                "chapters": [
+                    {
+                        "chapterName": "Creation of Measures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Measure catalog",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Assigning Measures to measure catalog",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Loading Measure Data",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Dimensions association in Measures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Review of seeded measures",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Supply Planning Functions",
+                "chapters": [
+                    {
+                        "chapterName": "Lead Time Calculations with respect to suggested dates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Release of Planned Orders",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Release of Reschedules from planning",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Supply Orchestration Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "MPS and MRP Planning",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Unconstrained and Constrained Supply Plan",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Forecast Consumption",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Forecast Spreading",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Loading Planning data through FBDI",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Time Fences",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Forecast Consumption and Spreading",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Calendars consideration in supply planning",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Tables supply planning",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Supplies and Demands",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Material Plan",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Build Plan",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Demand Fulfillment",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "EDD (Enfored Demand Due dates)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ECC (Enforced capacity Constraints)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ECC for limited days",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Natural Time Fence",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Forecast Consumption",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Forecast Spreading",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Past due supply and demand consideration in plan",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Decision Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Alternate Work definitions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Alternate sourcing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Allocation Splpit in Sourcing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Rank based Sourcing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Alternate Resources",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Substitute Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Bill of Distribution",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Lead Time and Suggested Dates in planning",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Calendar considerations in Planing",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Simulations",
+                "chapters": [
+                    {
+                        "chapterName": "Evaluate Demand/Supply Changes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Execute Simulations",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Demand Management",
+                "chapters": [
+                    {
+                        "chapterName": "Configure a Demand Plan",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Perform a Run and Manage Demand Plan",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Apply Forecasting Methods and Causal Factors  ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Override Demand Forecast and Plan Approval",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain Disaggregation Parameters and Conditional Formatting",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Supply Network Model",
+                "chapters": [
+                    {
+                        "chapterName": "Explain Supply Network Model",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "View Approved Supplier List",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Assignment Sets, Sourcing Rules, and Bills of Distribution",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Apply Item Attributes for Supply Planning",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            }
+        ],
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Oracle Fusion Experts!",
+            "shortDescription": "Unlock New Career Opportunities – Oracle Fusion Planning Central Consultants Are In High Demand. Start Your Journey Today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Mr. Santhosh, a seasoned Oracle professional with over 20 years of hands-on experience in Oracle ERP and Fusion applications, has been instrumental in delivering scalable and efficient planning solutions across diverse industries. His deep knowledge of Oracle SCM, Supply Chain Planning, Demand Management, and integration frameworks has helped enterprises streamline their operations. His passion for teaching and mentoring makes him the ideal guide for those aspiring to master Oracle Fusion Planning Central. With a focus on practical implementation, Mr. Santhosh bridges the gap between theoretical learning and real-time practices."
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized Oracle Fusion Trainer",
+            "points": [
+                "Oracle Certified Planning Central Expert, specializing in Fusion SCM & enterprise planning.",
+                "20+ years of experience in the Oracle ERP ecosystem, with a core focus on Planning.",
+                "Trained over 3,000 professionals in Oracle Fusion, enabling them to become successful ERP consultants and planners."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Santhosh",
+            "trainerDesignation": "Oracle Fusion Expert",
+            "avatarImagePath": "/images/courses/trainer/planning.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Pratap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Satish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹18,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹25,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/planning.png"
+        },
+        "portalView": {
+            "imagePath": "/images/courses/portal_view/planning.webp"
+        }
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Oracle Fusion Planning Central Functionality",
+                    "Gain a Clear Understanding of SCM Architecture & Planning Flows",
+                    "Develop Core Skills in Demand Planning, Supply Planning, and Configuration"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-Time Oracle Planning Central Implementation Scenarios",
+                    "Solve Business Requirements with Supply Plans, Demand Forecasts & Constraints",
+                    "Get In-Depth Exposure to Plan Management & Supply Chain Configuration"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume Tailored to Oracle SCM Roles",
+                    "Build a Strong LinkedIn Profile and Project Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on End-to-End Oracle Planning Central Implementation Projects",
+                    "Learn Real-World Functional Design & Business Scenarios",
+                    "Enhance Analytical Thinking and Integration Skills with Oracle Cloud"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Oracle Are You Ready?",
+            "shortDescription": "Join the growing demand for Oracle Fusion Planning Central professionals. Get certified and unlock high-paying roles with leading global companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle Planning Central Trainee",
+                "Oracle Fusion Functional Associate",
+                "Junior Oracle SCM Consultant",
+                "Oracle Fusion Planning Consultant",
+                "Oracle SCM Support Consultant",
+                "Oracle Supply Chain Functional Consultant",
+                "Oracle Fusion Implementation Specialist",
+                "Oracle Fusion Delivery Manager",
+                "Oracle Planning Central Project Manager"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Efficiency Master Oracle Fusion Planning Central Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, validating your Oracle Fusion Planning Central expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Oracle  Fusion SCM Online Training Course",
+        "Oracle  Fusion HCM Online Training Course",
+        "Oracle  Fusion Financials Online Training Course",
+        "Oracle  Fusion Technical +OIC Online Training Course"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Oracle Fusion Planning Central Training?",
+            "answer": "Our Oracle Fusion Planning Central Training covers key modules including Overview of Planning Central, Functional Setup Manager (FSM), Planning Process Flow, Supply Plan & Demand Plan Configuration, Forecasting, Simulation Sets, Planning Analytics, and Hands-on Case Studies. A complete syllabus is available in our course brochure."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Live training sessions are conducted Monday to Saturday, 1 hour per day. This structured schedule ensures continuous learning and hands-on experience in Oracle Cloud Planning Central implementation."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, weekend-only batches are not available. All classes are held Monday through Saturday for consistent progress and in-depth understanding."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we offer recorded sessions for self-paced learning. Please note that live Q&A sessions are not included in the self-paced format for Oracle Planning Central."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internships are provided based on mock evaluation performance. Internships involve practical experience on Planning Central real-time business scenarios."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No. Oracle Fusion Planning Central Training is offered as a complete course to ensure a comprehensive understanding of all planning features and configurations."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes. We offer resume building support specifically for Planning Central roles, highlighting your project experience and technical capabilities."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes. A personal system is needed to access the Oracle Fusion instance for hands-on practice and configuration exercises."
+        },
+        {
+            "question": "Are There Any Prerequisites for This Training?",
+            "answer": "No prior experience is required. This course is beginner-friendly. A basic understanding of supply chain or planning concepts can be helpful but is not mandatory."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Yes. The training starts with foundational concepts and gradually covers advanced Planning Central functionalities, suitable for beginners and working professionals alike."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes. We provide complete placement support including mock interviews, interview preparation, and resume optimization for Oracle Fusion Planning roles."
+        },
+        {
+            "question": "Do You Offer Oracle Fusion Certification Support?",
+            "answer": "Yes, we provide expert guidance and study materials to help you prepare for Oracle Fusion Planning certification exams."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes. You will have 1-year access to recordings and receive detailed notes, planning process documentation, and relevant reference materials."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Mock Support?",
+            "answer": "Absolutely. We provide planning-specific interview questions and conduct mock interviews to help you prepare for real-time job roles."
+        },
+        {
+            "question": "Do You Provide Instance Access for Practice?",
+            "answer": "Yes. You’ll get 6 months of access to the Oracle Fusion instance for practicing Planning Central modules and configurations."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes. You can rejoin any upcoming batch of Oracle Fusion Planning Central Training within your 1-year course access at no extra cost."
+        },
+        {
+            "question": "Will I Get a Course Completion Certificate?",
+            "answer": "Yes. After successfully completing the training, you will receive an official Oracle Fusion Planning Central Training Certificate from Tech Leads IT."
+        },
+        {
+            "question": "Is Coding Knowledge Required?",
+            "answer": "No coding knowledge is required. This course is focused on functional and configuration aspects of Oracle Planning Central, making it suitable for both technical and non-technical learners."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, one-on-one training is available upon request. Fees for personalized sessions vary based on schedule and duration."
+        }
+    ]
+}

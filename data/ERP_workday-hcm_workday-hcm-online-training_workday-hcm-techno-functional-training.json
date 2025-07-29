@@ -1,0 +1,1035 @@
+{
+    "title": "Workday HCM Techno Functional Training course",
+    "id":"WRK-HCM-OT-009",
+    "category":"ERP",
+    "duration":"3 Months",
+    "hero": {
+        "title": "Master Workday HCM Techno Functional with",
+        "animationTitle": [
+            "Expert Training.",
+            "Hands-On Projects",
+            "AI With HCM"
+        ],
+        "shortDescription": "Advance your career in Human Capital Management with our expert-led Workday HCM Techno Functional Training! Learn core HCM and integration modules, gain real-time hands-on experience, and build the skills needed to thrive in today’s dynamic HR and workforce management landscape.",
+        "brouchurePath": "/brochure/workday-hcm-techno-functional-training.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Workday  Organisations",
+            "Absence Management",
+            "Staffing  Models",
+            "Jobs & Positions",
+            "Compensation",
+            "EIB",
+            "Security Groups",
+            "Business Process",
+            "Workday Transactions",
+            "Recruitement",
+            "Time Management"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Human Capital Management with Industry-Leading Workday HCM Techno Functional Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Human Capital Management (HCM).",
+                        "Those interested in HR operations, payroll, talent management, integrations, and reporting using Workday HCM.",
+                        "Job seekers looking to enhance their resumes with in-demand Workday HCM Techno Functional skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT & ERP professionals transitioning from Oracle EBS, PeopleSoft, SAP, or other ERP systems to Workday HCM.",
+                        "HR Managers, HR Analysts, & ERP Consultants aiming to gain expertise in Workday’s HCM platform",
+                        "Business owners looking to streamline workforce operations using Workday HCM",
+                        "Professionals seeking to optimize HR processes with Workday’s advanced HCM tools."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "22 May 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the Workday HCM techno Functional Live Demo with Sridevi"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "",
+        "modules": [
+            
+            {
+                "moduleName": "Core Concepts and Navigation Basics",
+                "chapters": [
+                    {
+                        "chapterName": "Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Core Concepts",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Business Objects",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Worklets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Basic and Additional Navigations",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Organisations in Workday",
+                "chapters": [
+                    {
+                        "chapterName": "Organisation types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Supervisory organisations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Reorganisation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Setup of supervisory organization structure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Managing supervisory organization",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Creating subordinate organisation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Dividing a supervisory organisation",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Additional organization types",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Matrix organisation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Company creation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cost center organisation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Location",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Location hierarchy",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Region",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Region hierarchy",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Organisation hierarchies",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Organisational assignments on supervisory organization",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Organisational reports",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Staffing Models",
+                "chapters": [
+                    {
+                        "chapterName": "Types of staffing models",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configuring individual staffing model",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Hiring restrictions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Position management",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Headcount management",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Job management",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Differentiating between staffing models",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Maintaining staffing models",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Jobs and Positions",
+                "chapters": [
+                    {
+                        "chapterName": "Job Profiles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating positions (Task)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Managing filled and unfilled positions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Positions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating job profile (Task)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Differentiating job profiles, job families, job family group",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Management level hierarchy",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Job profiles and compensation grades",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Job profiles and localizations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Edit position restrictions and edit position",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Compensation",
+                "chapters": [
+                    {
+                        "chapterName": "Compensation overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Compensation components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Compensation elements",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Compensation plans",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Compensation grades, grade profiles and steps",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Compensation Package",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Compensation eligibility rules",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Security Groups",
+                "chapters": [
+                    {
+                        "chapterName": "Security groups",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Security group types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configurable security",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Funtional areas, securable items and security policies",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Business Process",
+                "chapters": [
+                    {
+                        "chapterName": "Business processes overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Navigating to a business process definition",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Supervisory organisations and business processes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Editing a business process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Condition rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Adding a custom notifications",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Copying a business process",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Transactions in Workday",
+                "chapters": [
+                    {
+                        "chapterName": "Creating applicants",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Rescinding a process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Workday accounts viewing personal data",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Mover workers and inactivate supervisory organisations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Termination",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Staffing movement",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Hire into position/job management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Assigning user-based security groups",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Hiring in supervisory organisations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Compensation changes",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Additional Functional Topics"
+            },
+            {
+                "moduleName": "Recruitment",
+                "chapters": [
+                    {
+                        "chapterName": "Recruitment process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Job requisitions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Job applications",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Questionnaries",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Posting templates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Offer templates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Career sites",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Time and Absence Management",
+                "chapters": [
+                    {
+                        "chapterName": "Time Calculations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Time Off Calendar",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Time Off Types/Plans",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Time offs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Time Tracking Templates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "All Time Calculations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Time Tags",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Time Calculation eligibilities",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Time Calculation groups",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Holiday Calendar",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Workday HCM Technica"
+            },
+            {
+                "moduleName": "Reports",
+                "chapters": [
+                    {
+                        "chapterName": "Report writer overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Scheduling reports",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Business object",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Data sources",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Sharing reports",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Custom report Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Advance field calculations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Developing simple, Advanced reports",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Standard report",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Report types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "How RW works",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Calculated Fields",
+                "chapters": [
+                    {
+                        "chapterName": "Calculated Field Concepts",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "System wide vs. Report Specific Calculated Fields",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Global Calculated Fields (e.g. Constants)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Calculated Field Dependencies",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Available Functions, such as:",
+                "chapters": [
+                    {
+                        "chapterName": "Date Calculation and Formatting Functions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "String and Text Functions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "True/False Conditions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Evaluate Expression",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Lookup Functions to leverage hierarchies",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Functions that access Related Business Objects",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Lookup value as of Date",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Arithmetic Calculations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Key Reports & Resources",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "EIB (Enterprise Interface Builder)",
+                "chapters": [
+                    {
+                        "chapterName": "EIB Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "EIB Features",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Custom Report Transformation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Developing a Outbound EIB",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Developing an Inbound EIB",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Workday Reports-as-a-Service (RaaS)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Workday Public Web services overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "EIB Limitations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "EIB Design Pattern Workday HCM Course Content",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Loading Customer Transactional Data into Workday using EIB’s",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Core Connectors",
+                "chapters": [
+                    {
+                        "chapterName": "Integration Architecture Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Integration Cloud Connect",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Integration System Templates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Core Connector: Worker",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Integration Services in Core Connector",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Change Deduction Procedure in Core Connectors",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Integration Business Process",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Workday Studio",
+                "chapters": [
+                    {
+                        "chapterName": "Introducing Workday Studio",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Workday Studio Install",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Workday Studio Navigation Tips",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Studio Runtime Architecture",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Features and Navigation of Workday Studio",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Workday Studio Assemblies (Integration systems) components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Basic Flow of Control between Assembly Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Basics of Web Services, XSLT in Workday Studio",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "BIRT Reports (Includes RPT Design)"
+            },
+            {
+                "moduleName": "Payroll Interface (PICOF)"
+            }
+        ],
+        "demoVideoPath": "",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/workday.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Workday HCM Experts!",
+            "shortDescription": "Unlock new career opportunities—Workday HCM Techno Functional professionals are in high demand. Start your journey today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Ms. Sridevi, a seasoned professional with 12+ years of experience in Workday HCM and ERP solutions, brings a rich blend of technical and functional knowledge across global implementations. With a strong passion for mentoring and enabling professionals in the HR tech space, she is dedicated to shaping future-ready Workday HCM experts. Guided by her commitment to excellence, Sridevi focuses on delivering real-time, practical learning experiences that align with current industry needs. Her training empowers students with in-demand skills in Workday HCM integrations and functional modules, paving the way for strong career growth in the cloud-based HR ecosystem."
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized Workday HCM Expert",
+            "points": [
+                "Workday HCM Techno Functional Consultant with real-world project experience ",
+                "12+ years of expertise in ERP & HCM, with specialization in Workday integrations.",
+                "Successfully trained 1,000+ professionals in Workday HCM, helping them launch & advance their careers in the HR domain."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Sridevi",
+            "trainerDesignation": "Workday HCM Expert",
+            "avatarImagePath": "/images/courses/trainer/workday.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Kodamati Sai",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_workday/kodamati sai.png",
+                "review": "I attended the Oracle Fusion HCM online course with Sumesh Raj Sir, Well-structured and highly informative .",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://g.co/kgs/BBuz2Hz"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Anthony Hanatiffe",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_workday/Anthony Hanatiffe.png",
+                "review": "I was happy with the support and the course tutor Sumesh was professional and friendly. .",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://g.co/kgs/sRU1grb"
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Darelli Mohankumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_workday/Darelli Mohankumar.png",
+                "review": "Tech Leads IT offers outstanding online training in Oracle Fusion HCM. The course is well-structured",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Georgina Marku Tyson",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_workday/Georgina Marku Tyson.png",
+                "review": "The Trainer has good understanding of the Fusion HCM application and delivers it with much ease and understanding.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Sai Rupa",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_workday/Sai Rupa.png",
+                "review": "They teach the subject in detail and helps the students with the interview preparation during the course itself.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Yogeesh p",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_workday/Yogeesh p.png",
+                "review": "I have Joined Fusion HCM Training in Tech leads IT Institute here the instructor is really very Knowledgeable.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹25,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹35,000+Taxes",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/workday.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/workday.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Workday HCM Techno Functional Course",
+                    "Gain a Clear Understanding of Industry Requirements",
+                    "Develop Essential Problem-Solving Skills"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-World Use Cases",
+                    "Solve Business Scenarios with Industry Experts",
+                    "Get Extensive Knowledge on Implementation Methodologies"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume",
+                    "Build a Strong LinkedIn Profile and Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on case studies and sample projectes",
+                    "Understand Industry Expectations & Best Practices",
+                    "Develop Problem-Solving & Decision-Making Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Workday HCM Are You Ready?",
+            "shortDescription": "Join the growing demand for Workday HCM professionals. Get certified and unlock high-paying career opportunities with leading global companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Workday HCM Trainee",
+                "Junior Workday Functional Consultant",
+                "Workday Business Analyst",
+                "Workday HCM Functional Consultant",
+                "HCM Implementation Specialist",
+                "Workday HCM Cloud Consultant",
+                "Workday HCM Lead",
+                "Workday HCM Solution Architect",
+                "ERP Implementation Manager"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Power  Master Workday HCM Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your Oracle Fusion HCM expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Orcacle Fusion HCM Online Training Course",
+        "Orcacle Fusion SCM Online Training Course",
+        "Orcacle Fusion Functional Online Training Course",
+        "Orcacle Fusion Technical+OIC Online Training Course"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in the Workday HCM Techno Functional Training?",
+            "answer": "This Workday HCM course includes core modules like Workday Organizations, Staffing Models, Jobs & Positions, Compensation, Security Groups, Business Processes, Workday Transactions, Recruitment, Time Management, Absence Management, and EIB integrations. For a detailed syllabus, please refer to the course curriculum."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Live Workday HCM training sessions are conducted Monday to Saturday, with each class lasting 1 hour to ensure consistent and focused learning."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, weekend batches are not offered. Sessions are conducted live from Monday to Saturday."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we provide recorded Workday course sessions for learners who prefer flexible, self-paced study. Please note, doubt-clearing sessions are not included in the self-paced version."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internship opportunities are provided based on your performance in mock interviews and assignments, allowing you to gain hands-on experience with Workday HCM implementations."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No, this Workday HCM certification program is designed as a complete training package. Modules cannot be taken individually."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes, we assist you in building a strong, ATS-compliant resume tailored for Workday HCM job roles, along with LinkedIn profile optimization."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, having a laptop or desktop is mandatory to access the Workday tenant for hands-on practice and configuration."
+        },
+        {
+            "question": "Are There Any Prerequisites or Minimum Qualifications?",
+            "answer": "A basic understanding of business processes and HR is helpful, but not mandatory. This Workday course is suitable for both technical and non-technical graduates (B.Tech, MBA, PG, etc.)."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Absolutely. Our Workday HCM course starts with the fundamentals and progresses into advanced techno-functional concepts—ideal for beginners and professionals."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes, we offer job placement support including resume building, mock interviews, and referrals through our network of hiring partners. We’re committed to Workday training and placement."
+        },
+        {
+            "question": "Do You Provide Support for Workday Certification?",
+            "answer": "Yes, we offer guidance and resources to prepare for Workday HCM certification exams, including sample questions and expert tips."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes, you will receive daily recordings and comprehensive module-wise study materials, including configuration steps and implementation screenshots."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Assistance?",
+            "answer": "Yes, we provide a bank of frequently asked interview questions and conduct mock interviews to help you confidently prepare for Workday HCM roles."
+        },
+        {
+            "question": "Do You Provide Instance or Application Access for Practice?",
+            "answer": "Yes, you will receive access to the Workday instance (tenant) for four months to gain real-time hands-on experience—no installation required, access via browser."
+        },
+        {
+            "question": "Can I Retake This Course?",
+            "answer": "Yes, once enrolled, you get one-year access to attend multiple batches of the Workday HCM techno-functional training."
+        },
+        {
+            "question": "Can I Get a Course Completion Certificate?",
+            "answer": "Yes, a Workday course completion certificate will be issued upon successful completion of the training."
+        },
+        {
+            "question": "Is Any Coding Knowledge Required?",
+            "answer": "Not necessarily. This is a techno-functional course—basic understanding of business logic is sufficient. We teach everything from scratch, and prior coding knowledge is not mandatory"
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, one-on-one personalized Workday training is available upon request. These sessions are priced higher than group sessions."
+        }
+    ]
+}

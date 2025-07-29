@@ -1,0 +1,63 @@
+{
+  "product": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Oracle EBS R12 Financials Training",
+    "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_991719384395.jpg",
+    "description": "Oracle R12 Financials E-Business Suite Application is the best financial solution for Enterprise management. It allows to make the best decisions, improve operations and cost reduction. It has the best data models to give a single accurate view of financial information with a panoramic view of customers. Oracle R12 Financials Modules has scope to focus on Asset Management, General Ledger Management, Order to Cash, Procure to Pay, etc.",
+    "sku": "TLIT99",
+    "mpn": "TLIT99",
+    "brand": {
+      "@type": "Brand",
+      "name": "Tech Leads IT"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Joshiram"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": 4567
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.techleadsit.com/oracle-ebs-r12-financials-training",
+      "priceCurrency": "INR",
+      "price": "15000",
+      "priceValidUntil": "2025-08-17",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  "educationEvent": {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "Weekday-Oracle EBS R12 Financials Training",
+    "description": "Oracle R12 Financials E-Business Suite Application is the best financial solution for Enterprise management. It allows to make the best decisions, improve operations and cost reduction. It has the best data models to give a single accurate view of financial information with a panoramic view of customers. Oracle R12 Financials Modules has scope to focus on Asset Management, General Ledger Management, Order to Cash, Procure to Pay, etc.",
+    "performer": "Tech Leads IT",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://www.techleadsit.com/oracle-ebs-r12-financials-training"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tech Leads IT",
+      "url": "https://www.techleadsit.com/"
+    },
+    "startDate": "2025-06-21",
+    "endDate": "2025-08-21",
+    "url": "https://www.techleadsit.com/oracle-ebs-r12-financials-training",
+    "duration": "60"
+  }
+}

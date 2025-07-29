@@ -1,0 +1,126 @@
+.Faq-section{
+    margin:40px;
+    padding:15px;
+    font-family: Montserrat;
+    text-align: center;
+    color:#ffffff;
+}
+
+.Faq-section-h{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.Faq-section-p{
+    font-size: 18px;
+    font-weight: 600;
+    padding:8px 7rem;
+    color:#B3B3B3;
+}
+
+.faq-options {
+    margin-bottom: 20px;
+    background: linear-gradient(180deg, rgba(9, 103, 138, 0.5) 0%, rgba(0, 73, 100, 0.5) 100%);
+    border-radius: 25px;
+    z-index: 9999;
+    width:80%;
+  }
+
+  .btn-offer {
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    background: #01385200;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding-block:20px;
+    padding-inline: 25px;
+    color:#ffffff;
+  }
+
+  .chevron-icon {
+    margin-left: 10px;
+    font-size: 16px;
+    transition: transform 0.6s ease;
+  }
+
+  .info-content {
+    max-height: 0; /* Start with no visible height */
+    overflow: hidden; /* Hide overflowing content */
+    padding-inline: 25px;
+    transition: max-height 0.6s ease, padding 0.6s ease;
+    text-align: left;
+}
+
+.info-content.show {
+    max-height: 500px; /* Set to a high enough value for the content */
+    padding-inline: 25px;
+}
+
+
+  .faq-para {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+
+  .rotated {
+    transform: rotate(180deg);
+    transition: transform 0.6s ease;
+  }
+
+  @media (max-width:992px){
+    .Faq-section-p{
+        padding:8px 4rem;
+    }
+    .faq-options{
+        width:100%;
+    }
+}
+
+@media (max-width:786px){
+    .Faq-section-h{
+        font-size: 28px;
+    }
+
+    .Faq-section-p{
+        font-size: 14px;
+        padding:8px 1rem;
+    }
+}
+
+@media (max-width:576px){
+    .Faq-section{
+        margin:20px;
+        padding:10px;
+    }
+
+    .Faq-section-h{
+        font-size: 20px;
+    }
+
+    .Faq-section-p{
+        font-size: 12px;
+        padding:8px 0rem;
+    }
+
+    .btn-offer {
+        font-size: 12px;
+    }
+
+    .chevron-icon {
+        font-size: 14px;
+    }
+
+    .faq-para{
+        font-size: 0.7rem;
+    }
+    
+    .btn-offer{
+        padding-block: 15px;
+    }
+
+}

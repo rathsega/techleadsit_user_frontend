@@ -1,0 +1,390 @@
+{
+    "title": "Salesforce Training",
+    "id": "SFR-CRM-OT-039",
+    "category": "ERP",
+    "duration": "3 Months",
+    "hero": {
+        "title": "Master Salesforce Training at Tech Leads IT with",
+        "animationTitle": [
+            "Expert Training.",
+            "Hands-On Projects",
+            "AI With Salesforce"
+        ],
+        "shortDescription": "Sure! Here's the same content adapted for a Salesforce course: Accelerate your career in Salesforce development with our in-depth Salesforce online training! Learn core programming concepts, develop real-world coding skills, and gain hands-on experience with end-to-end development scenarios.",
+        "brouchurePath": "",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Unified CRM Platform",
+            "Intuitive User Interface",
+            "Sales Cloud",
+            "Service Cloud",
+            "Marketing Cloud",
+            "Commerce Cloud",
+            "Einstein AI",
+            "Productivity Tools",
+            "AppExchange"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in CRM and Cloud Solutions with Industry-Leading Salesforce Online Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Salesforce CRM and development.",
+                        "Those interested in cloud-based application development, CRM customization using Salesforce.",
+                        "Job seekers aiming to enhance their resumes with in-demand Salesforce skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT professionals or developers transitioning into Salesforce CRM and development roles.",
+                        "Salesforce Administrators seeking to expand into development with Apex, Visualforce, and Lightning components.",
+                        "Application Support Engineers & Business Analysts aiming to automate CRM workflows.",
+                        "Professionals looking to build scalable CRM solutions using Salesforce tools."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "22 May 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the Salesforce Online Training Live Demo with Naresh"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "",
+        "demoVideoPath": "",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/salesforce.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for  Salesforce Experts!",
+            "shortDescription": "Unlock New Career Opportunities – Salesforce Developers Are In High Demand. Start Your Journey Today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Mr. Naresh, a seasoned Salesforce professional with over 10 years of hands-on experience in Salesforce CRM and custom development, has been instrumental in delivering scalable and innovative solutions across various business domains. His deep knowledge of Salesforce administration, Apex programming, Lightning components, and automation tools has helped organizations optimize their CRM systems. His passion for teaching and mentoring makes him the ideal guide for those aspiring to master Salesforce. With a focus on practical implementation, Mr. Naresh bridges the gap between theoretical learning and real-time practices."
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized Salesforce Trainer",
+            "points": [
+                "Salesforce Certified Developer and Administrator, specializing in custom CRM.",
+                " 10+ years of experience in Salesforce ecosystem, with a core focus on Salesforce CRM",
+                " Trained over 3,000 professionals in Salesforce, enabling them to become successful Salesforce consultants, developers"
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Naresh",
+            "trainerDesignation": "Salesforce Expert",
+            "avatarImagePath": "/images/courses/trainer/salesforce.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Pratap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Satish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹18,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹25,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/salesforce.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/salesforce.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Salesforce Administration & Development",
+                    "Gain a Clear Understanding of CRM Architecture & Data Model",
+                    "Develop Core Skills in Apex, Flows, and Lightning Components"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-Time Salesforce Implementation Scenarios",
+                    "Solve Business Requirements with Custom Objects, Triggers & Workflows",
+                    "Get In-Depth Exposure to Lightning App Builder & Process Automation"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume Tailored to Salesforce Roles",
+                    "Build a Strong LinkedIn Profile and Project Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on End-to-End Salesforce CRM Implementation Projects",
+                    "Learn Real-World Development Standards & Client Expectations",
+                    "Enhance Logical Thinking and Integration Skills with APIs"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Salesforce Are You Ready?",
+            "shortDescription": "Join the booming demand for Salesforce developers. Get certified in Salesforce and unlock high-paying career opportunities with top global companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Salesforce Admin Trainee",
+                "Junior Salesforce Developer",
+                "Salesforce Support Consultant",
+                "Salesforce Technical Consultant",
+                "Salesforce Developer",
+                "Salesforce Lead Consultant",
+                "Salesforce Technical Architect",
+                "Salesforce Platform Developer II",
+                "Salesforce Full Stack Developer"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "",
+        "shortDescription": ""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your Salesforce expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "SAP CPI Online Training Course",
+        "SAP MM Online Training Course",
+        "SAP ABAP Online Training Course",
+        "SAP SD Online Training Course"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Salesforce Online Training?",
+            "answer": "Our Salesforce Training covers essential modules including Unified CRM Platform, Intuitive User Interface, Sales Cloud, Service Cloud, Marketing Cloud, Commerce Cloud, Einstein AI, Productivity Tools, and AppExchange. This hands-on training equips you with the skills needed to work confidently with Salesforce development and administration. A detailed syllabus is provided in our course brochure."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Live training sessions are conducted Monday to Saturday, 1 hour per day. This structured schedule ensures steady learning and practical experience in Salesforce."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, weekend-only batches are not available. Classes are conducted from Monday through Saturday for consistent skill-building in Salesforce."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we offer recorded sessions for self-paced learning. Please note, live Q&A support is not available in the self-paced format for Salesforce training."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internships are provided based on mock evaluation performance. Internships involve real-time project work using Salesforce modules such as Sales Cloud, Service Cloud, and AppExchange."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No. Salesforce Training is offered as a complete package to ensure a thorough understanding of all essential modules and best practices."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes. We offer resume building guidance focused on Salesforce roles, emphasizing your hands-on project experience with Sales Cloud, Service Cloud, and CRM Customizations."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes. A personal computer is required to install and practice using the Salesforce environment, including modules like Sales Cloud and AppExchange development."
+        },
+        {
+            "question": "Are There Any Prerequisites for This Training?",
+            "answer": "No prior experience is needed. This Salesforce course is beginner-friendly. Basic understanding of programming or CRM systems is an advantage but not mandatory."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Yes. We begin with foundational concepts such as Unified CRM and Salesforce Basics before progressing to advanced Salesforce topics like Marketing Cloud, Einstein AI, and AppExchange."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes. We offer full placement support including mock interviews, interview prep, and resume optimization tailored to Salesforce roles."
+        },
+        {
+            "question": "Do You Offer Salesforce Certification Support?",
+            "answer": "Yes, we provide expert guidance and study resources to help you prepare for Salesforce certification exams."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes. You’ll have 1-year access to all recordings and receive comprehensive notes, development guides, and reference documents covering Salesforce modules."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Mock Support?",
+            "answer": "Absolutely. We provide targeted interview questions and conduct mock interviews focused on Salesforce to prepare you for real job roles."
+        },
+        {
+            "question": "Do You Provide Instance Access for Practice?",
+            "answer": "Yes. You’ll get 4 months of Salesforce system access with support for practicing modules like Sales Cloud, Service Cloud, and Productivity Tools."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes. You can rejoin any future batch of Salesforce Training within your 1-year course access period at no additional cost."
+        },
+        {
+            "question": "Will I Get a Course Completion Certificate?",
+            "answer": "Yes. Upon completing the training, you’ll receive an official Salesforce Training Certificate from Tech Leads IT."
+        },
+        {
+            "question": "Is Coding Knowledge Required?",
+            "answer": "Basic knowledge of programming is helpful. We cover all technical aspects from the ground up with practical Salesforce exercises."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, one-on-one sessions are available upon request. Fees for personalized Salesforce training vary based on the schedule."
+        }
+    ]
+}

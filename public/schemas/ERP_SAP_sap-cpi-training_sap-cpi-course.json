@@ -1,0 +1,63 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "SAP CPI Training",
+        "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_1431732076837.jpg",
+        "description": "Best Institute for SAP CPI Online Training covering vast content with real time project based scenarios from industry expert Mr. Bhargav, having 14+ Years of real time experience and delivered 36+ batches trained more than 1.2K+ students.",
+        "sku": "TLIT143",
+        "mpn": "TLIT143",
+        "brand": {
+            "@type": "Brand",
+            "name": "Tech Leads IT"
+        },
+        "review": {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.9",
+                "bestRating": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Joshiram"
+            }
+        },
+        "aggregateRating": {
+            "@type": "aggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": 1117
+        },
+        "offers": {
+            "@type": "Offer",
+            "url": "https://www.techleadsit.com/sap-cpi-training/sap-cpi-course",
+            "priceCurrency": "INR",
+            "price": "30000",
+            "priceValidUntil": "2025-07-19",
+            "itemCondition": "https://schema.org/UsedCondition",
+            "availability": "https://schema.org/InStock"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationEvent",
+        "name": "Weekday-SAP CPI Training",
+        "description": "Best Institute for SAP CPI Online Training covering vast content with real time project based scenarios from industry expert Mr. Bhargav, having 14+ Years of real time experience and delivered 36+ batches trained more than 1.2K+ students.",
+        "performer": "Tech Leads IT",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "location": {
+            "@type": "VirtualLocation",
+            "url": "https://www.techleadsit.com/sap-cpi-training/sap-cpi-course"
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "Tech Leads IT",
+            "url": "https://www.techleadsit.com/"
+        },
+        "startDate": "2025-06-20",
+        "endDate": "2025-08-20",
+        "url": "https://www.techleadsit.com/sap-cpi-training/sap-cpi-course",
+        "duration": "45"
+    }
+]

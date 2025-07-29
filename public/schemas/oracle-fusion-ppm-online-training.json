@@ -1,0 +1,63 @@
+{
+  "product": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Oracle Fusion PPM | Project's Training",
+    "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_951712832179.jpg",
+    "description": "Oracle ERP industry is now looking forward to Cloud Applications for its core business functions. Oracle Fusion Project Portfolio Management is launched in the cloud. Fusion cloud PPM can integrate with another Supply chain, procurement, manufacturing to derive collaborative output. It enables to execute of project costing, billing, accounting, and task reporting for preparing a Project planning, Scheduling, and implementation rapidly.",
+    "sku": "TLIT95",
+    "mpn": "TLIT95",
+    "brand": {
+      "@type": "Brand",
+      "name": "Tech Leads IT"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.9",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Praveen"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 38
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.techleadsit.com/oracle-fusion-ppm-online-training",
+      "priceCurrency": "INR",
+      "price": "25000",
+      "priceValidUntil": "2025-08-06",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  "educationEvent": {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "Weekday-Oracle Fusion PPM | Project's Training",
+    "description": "Oracle ERP industry is now looking forward to Cloud Applications for its core business functions. Oracle Fusion Project Portfolio Management is launched in the cloud. Fusion cloud PPM can integrate with another Supply chain, procurement, manufacturing to derive collaborative output. It enables to execute of project costing, billing, accounting, and task reporting for preparing a Project planning, Scheduling, and implementation rapidly.",
+    "performer": "Tech Leads IT",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://www.techleadsit.com/oracle-fusion-ppm-online-training"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tech Leads IT",
+      "url": "https://www.techleadsit.com/"
+    },
+    "startDate": "2025-06-21",
+    "endDate": "2025-08-21",
+    "url": "https://www.techleadsit.com/oracle-fusion-ppm-online-training",
+    "duration": "70"
+  }
+}

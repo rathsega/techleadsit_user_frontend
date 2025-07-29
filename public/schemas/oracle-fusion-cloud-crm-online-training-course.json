@@ -1,0 +1,64 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Fusion Cloud CRM Online Training",
+      "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_961722934896.jpg",
+      "description": "Customer Relationship Management is very crucial to every business organization and enterprise to maintain their brand trust. Customers always look for the best experience for support and services. To meet present-day customer relationship management requirements, Oracle developed Fusion cloud CRM application. With this business organizations and enterprises can implement their CRM very effectively. Oracle Fusion CRM is also called CX (Customer Experience) Cloud Suite.",
+      "sku": "TLIT96",
+      "mpn": "TLIT96",
+      "brand": {
+        "@type": "Brand",
+        "name": "Tech Leads IT"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.9",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Praveen"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": 5284
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.techleadsit.com/oracle-fusion-cloud-crm-online-training-course",
+        "priceCurrency": "INR",
+        "price": "25000",
+        "priceValidUntil": "2025-06-26",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "EducationEvent",
+      "name": "Weekday-Fusion Cloud CRM Online Training",
+      "description": "Customer Relationship Management is very crucial to every business organization and enterprise to maintain their brand trust. Customers always look for the best experience for support and services. To meet present-day customer relationship management requirements, Oracle developed Fusion cloud CRM application. With this business organizations and enterprises can implement their CRM very effectively. Oracle Fusion CRM is also called CX (Customer Experience) Cloud Suite.",
+      "performer": "Tech Leads IT",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+      "location": {
+        "@type": "VirtualLocation",
+        "url": "https://www.techleadsit.com/oracle-fusion-cloud-crm-online-training-course"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Tech Leads IT",
+        "url": "https://www.techleadsit.com/"
+      },
+      "startDate": "2025-06-21",
+      "endDate": "2025-08-21",
+      "url": "https://www.techleadsit.com/oracle-fusion-cloud-crm-online-training-course",
+      "duration": "P70D"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Workday HCM Techno Functional Online Training",
+        "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_1201715081477.jpg",
+        "description": "Join our Workday HCM Techno Functional training to master both technical and functional aspects of Workday Human Capital Management. Gain hands-on experience in business process configuration, data management, reporting, integrations, and HCM best practices. Ideal for professionals seeking a comprehensive understanding of Workday HCM for career growth.",
+        "sku": "TLIT120",
+        "mpn": "TLIT120",
+        "brand": {
+            "@type": "Brand",
+            "name": "Tech Leads IT"
+        },
+        "review": {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.9",
+                "bestRating": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Joshiram"
+            }
+        },
+        "aggregateRating": {
+            "@type": "aggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": 2095
+        },
+        "offers": {
+            "@type": "Offer",
+            "url": "https://www.techleadsit.com/workday-hcm-online-training/workday-hcm-techno-functional-training",
+            "priceCurrency": "INR",
+            "price": "35000",
+            "priceValidUntil": "2025-08-06",
+            "itemCondition": "https://schema.org/UsedCondition",
+            "availability": "https://schema.org/InStock"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationEvent",
+        "name": "Weekday-Workday HCM Techno Functional Online Training",
+        "description": "Join our Workday HCM Techno Functional training to master both technical and functional aspects of Workday Human Capital Management. Gain hands-on experience in business process configuration, data management, reporting, integrations, and HCM best practices. Ideal for professionals seeking a comprehensive understanding of Workday HCM for career growth.",
+        "performer": "Tech Leads IT",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "location": {
+            "@type": "VirtualLocation",
+            "url": "https://www.techleadsit.com/workday-hcm-online-training/workday-hcm-techno-functional-training"
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "Tech Leads IT",
+            "url": "https://www.techleadsit.com/"
+        },
+        "startDate": "2025-06-20",
+        "endDate": "2025-08-20",
+        "url": "https://www.techleadsit.com/workday-hcm-online-training/workday-hcm-techno-functional-training",
+        "duration": "60"
+    }
+]

@@ -1,0 +1,104 @@
+html {
+    text-size-adjust: 100%;
+    /* Standard support */
+}
+
+body {
+    font-family: Montserrat;
+}
+
+.payment-f-heading {
+    font-weight: 600;
+    font-size: 20px;
+    color: #FF2525;
+}
+
+.payment-f-para {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+.retry-btn {
+    background: #3665cf;
+    width: 50%;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.Right-plan-arrow {
+    transition: transform 0.3s ease-out;
+}
+
+.retry-btn:hover .Right-plan-arrow {
+    transform: translateX(7px);
+}
+
+.retry-btn:hover {
+    border-color: #8bafff;
+}
+
+.payment-appearance {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 4s;
+}
+
+.failed-section {
+    text-align: center;
+    padding-inline: 30px;
+    transform: translateY(50px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gif-size {
+        width: 200px;
+    }
+
+@media (min-width:992px) {
+    .failed-section {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+@media (max-width:450px) {
+    .payment-f-para {
+        font-size: 14px;
+    }
+
+    .payment-f-heading {
+        font-size: 18px;
+    }
+
+    .gif-size {
+        width: 160px;
+    }
+
+    .retry-btn{
+        width:70%;
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+}

@@ -1,0 +1,63 @@
+{
+  "product": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Oracle Apps R12 Technical Training",
+    "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_1011719384537.jpg",
+    "description": "Oracle R12 Apps Technical is the bridge to communicate Oracle Applications. Technical Consultants will play a key role in data administration and communications between Oracle Apps work together. Application Functionality back to front is designed and managed by Technical Apps.",
+    "sku": "TLIT101",
+    "mpn": "TLIT101",
+    "brand": {
+      "@type": "Brand",
+      "name": "Tech Leads IT"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Praveen"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": 2615
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.techleadsit.com/oracle-r12-technical-training-course",
+      "priceCurrency": "INR",
+      "price": "15000",
+      "priceValidUntil": "2025-06-27",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  "educationEvent": {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "Weekday-Oracle Apps R12 Technical Training",
+    "description": "Oracle R12 Apps Technical is the bridge to communicate Oracle Applications. Technical Consultants will play a key role in data administration and communications between Oracle Apps work together. Application Functionality back to front is designed and managed by Technical Apps.",
+    "performer": "Tech Leads IT",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://www.techleadsit.com/oracle-r12-technical-training-course"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tech Leads IT",
+      "url": "https://www.techleadsit.com/"
+    },
+    "startDate": "2025-06-21",
+    "endDate": "2025-08-21",
+    "url": "https://www.techleadsit.com/oracle-r12-technical-training-course",
+    "duration": "50"
+  }
+}

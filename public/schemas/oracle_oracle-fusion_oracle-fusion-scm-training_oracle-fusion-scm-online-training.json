@@ -1,0 +1,63 @@
+{
+  "product": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Oracle Fusion SCM Training in Hyderabad",
+    "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_1721737093437.jpg",
+    "description": "No. 1 Institute for the Best Oracle Fusion SCM Online Training in Hyderabad, covering vast content with real-time, project-based scenarios. Industry expert Mr. Krishna, with 18+ years of real-time experience, has delivered 62+ batches and trained more than 22,000+ students.",
+    "sku": "TLIT172",
+    "mpn": "TLIT172",
+    "brand": {
+      "@type": "Brand",
+      "name": "Tech Leads IT"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.9",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Praveen"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": 6621
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.techleadsit.com/oracle-fusion-scm-training/oracle-fusion-scm-online-training",
+      "priceCurrency": "INR",
+      "price": "30000",
+      "priceValidUntil": "2025-07-22",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  "educationEvent": {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "Weekday-Oracle Fusion SCM Training in Hyderabad",
+    "description": "No. 1 Institute for the Best Oracle Fusion SCM Online Training in Hyderabad, covering vast content with real-time, project-based scenarios. Industry expert Mr. Krishna, with 18+ years of real-time experience, has delivered 62+ batches and trained more than 22,000+ students.",
+    "performer": "Tech Leads IT",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://www.techleadsit.com/oracle-fusion-scm-training/oracle-fusion-scm-online-training"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tech Leads IT",
+      "url": "https://www.techleadsit.com/"
+    },
+    "startDate": "2025-06-21",
+    "endDate": "2025-08-21",
+    "url": "https://www.techleadsit.com/oracle-fusion-scm-training/oracle-fusion-scm-online-training",
+    "duration": "80"
+  }
+}

@@ -1,0 +1,385 @@
+{
+    "title": "Oracle EBS R12 Project Accounting",
+    "id": "ORR-PAT-OT-021",
+    "category": "EBS R12",
+    "duration": "3 Months",
+    "hero": {
+        "title": "Master Oracle EBS R12 Project Accounting With",
+        "animationTitle": [
+            "Expert Training.",
+            "Redwood Experience",
+            "AI With Financials"
+        ],
+        "shortDescription": "Advance your career in Project Financial Management with our expert-led Oracle EBS Project Accounting Training! Master core project accounting modules, gain real-time hands-on experience, and build the skills needed to excel in today’s dynamic project-based financial and cost management landscape.",
+        "brouchurePath": "/brochure/oracle-ebs-r12-financials-training.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Project Foundation",
+            "Project Costing",
+            "Project Billing",
+            "Project Management"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Project Financial Management with Industry-Leading Oracle EBS R12 Project Accounting Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Project Financial Management.",
+                        "Those interested in project costing, billing, capitalization using Oracle EBS Project Accounting.",
+                        "Job seekers aiming to boost their resumes with project accounting skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT & ERP professionals transitioning into Oracle EBS Project Accounting from other ERP domains.",
+                        "Project Managers seeking expertise in project-based financial control.",
+                        "Finance & project leaders aiming to manage budgets, expenditures, and revenues across projects using Oracle.",
+                        "Professionals looking to optimize project financial tracking using Oracle EBS tools "
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "22 May",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the Oracle EBS R12 Project Accounting  Live Demo with Srinivas"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "",
+        "demoVideoPath": "https://youtu.be/9G0TKJw4SjY",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/r12_account.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Oracle EBS Experts!",
+            "shortDescription": "Unlock new career opportunities—Oracle EBS R12 Project Accounting professionals are in high demand. Start your journey today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Mr. Srinivas, an accomplished professional with over 20 years of experience in Oracle E-Business Suite (EBS) R12 and Project Financial Management systems, brings deep industry expertise and global implementation knowledge to the classroom. As a certified Oracle trainer, Srinivas combines technical proficiency with strategic insight, helping students bridge the gap between theoretical learning and real-world applications. Driven by a passion for mentorship and professional development, he is dedicated to shaping future-ready project finance professionals. His vision is to produce industry-standard Oracle EBS R12 Project Accounting consultants."
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized Oracle Project Accounting Trainer",
+            "points": [
+                "Oracle Certified Trainer, Expert in Oracle EBS Project Financial Management Solutions.",
+                "20+ years of experience in Oracle, specializing in EBS R12 Project Accounting Training.",
+                "Trained over 5,000 professionals in Oracle EBS Project Accounting, empowering them to excel in project finance and ERP careers."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Srinivas",
+            "trainerDesignation": "Oracle Expert",
+            "avatarImagePath": "/images/courses/trainer/account.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Pratap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Satish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹10,000+Taxes",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹15,000+Taxes",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/r12_account.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/r12_account.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Oracle EBS R12 Project Accounting Modules",
+                    "Gain a Clear Understanding of Project Financial Business Processes",
+                    "Develop Essential Problem-Solving & Analytical Skills"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-World Project Accounting Use Cases",
+                    "Solve Business Scenarios with ERP and Domain Experts",
+                    "Get Extensive Knowledge of Implementation Methodologies like AIM & OUM"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume Highlighting Finance & ERP Skills",
+                    "Build a Strong LinkedIn Profile and Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on Case Studies and End-to-End Project Accounting Scenarios",
+                    "Understand Industry Expectations in Costing, Budgeting, and Project Reportin",
+                    "Develop Financial Planning, Forecasting & Troubleshooting Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Finance-Specific Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Oracle EBS R12 Project Accounting Are You Ready?",
+            "shortDescription": "Join the growing demand for Oracle EBS R12 Project Accounting professionals. Get certified and open doors to high-paying opportunities in top companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle EBS Project Accounting Trainee",
+                "Oracle ERP Support Analyst",
+                "Junior Oracle Project Costing Consultant",
+                "Oracle ERP Consultant – Projects",
+                "Oracle EBS Functional Consultant – Projects",
+                "ERP Support Consultant – Project Modules",
+                "Oracle Project Accounting Lead",
+                "Oracle Project Accounting Manager",
+                "Senior Functional Consultant"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Power  Master Oracle EBS Accounting Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your Oracle EBS R12 Project Accounting expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Oracle Fusion SCM Online Training Course",
+        "Oracle Fusion HCM Online Training Course",
+        "Oracle Fusion Functional Online Training Course",
+        "Oracle Fusion Technical+OIC Online Training Course"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Oracle EBS R12 Project Accounting Training?",
+            "answer": "Our Oracle EBS R12 Project Accounting Training covers key modules such as Project Foundation, Project Costing, Project Billing, and Project Management. These modules provide a complete understanding of managing financial and operational aspects of projects in Oracle EBS R12. A detailed syllabus is available in our course brochure."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Live training sessions are conducted from Monday to Saturday, with 1-hour sessions each day. This schedule ensures consistent learning and hands-on practice with Oracle EBS R12 Project Accounting."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, we do not offer weekend-only batches. All sessions are scheduled Monday through Saturday to maintain consistent progress throughout the training."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we provide recorded sessions for learners who prefer self-paced study. However, live doubt-clearing is not included with the self-paced option."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internship opportunities are available based on your performance in mock evaluations. These internships offer practical exposure to real-world Oracle Project Accounting scenarios."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No, the Oracle EBS R12 Project Accounting Training is offered as a complete package and modules are not available individually."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes, we offer resume-building support specific to Oracle Project Accounting roles, highlighting your ERP skills, project exposure, and training."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, a laptop or desktop is required to install and access the Oracle EBS environment and complete hands-on project exercises."
+        },
+        {
+            "question": "Are There Any Prerequisites for This Training?",
+            "answer": "No prior experience is necessary. The course is beginner-friendly and ideal for those with a basic understanding of project, accounting, or finance concepts."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Yes. We start with fundamentals of project accounting and gradually move to advanced concepts, making it suitable for freshers and professionals alike."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes, we offer complete job placement support, including mock interviews, resume building, and interview preparation tailored to Project Accounting roles."
+        },
+        {
+            "question": "Do You Offer Oracle EBS Certification Support?",
+            "answer": "Yes, we assist in preparing for Oracle certification exams by providing study materials, expert guidance, and sample questions."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes. You’ll have access to recorded sessions for 1 year and receive step-by-step documents and visual guides for each module."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Mock Support?",
+            "answer": "Absolutely. We share module-specific interview questions and conduct mock interviews to prepare you for real-time project accounting roles."
+        },
+        {
+            "question": "Do You Provide Instance Access for Practice?",
+            "answer": "Yes. We provide 4 months of instance access for hands-on Oracle EBS R12 Project Accounting practice. Full installation guidance is included."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes, you can rejoin any upcoming batch within your 1-year access period at no additional cost."
+        },
+        {
+            "question": "Will I Get a Course Completion Certificate?",
+            "answer": "Yes. Upon successful completion, you’ll receive a Course Completion Certificate in Oracle EBS R12 Project Accounting from Tech Leads IT."
+        },
+        {
+            "question": "Is Coding Knowledge Required?",
+            "answer": "No coding is needed. This is a functional training course focusing on configuring and managing project accounting processes in Oracle EBS."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, personalized 1-on-1 training is available on request. Please note that pricing will differ from group batch training."
+        }
+    ]
+}

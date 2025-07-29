@@ -1,0 +1,64 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Oracle Fusion Planning Central Training",
+      "image": "https://www.techleadsit.com/uploads/thumbnails/course_thumbnails/optimized/course_thumbnail_default-new_941712832113.jpg",
+      "description": "Oracle Fusion Planning Central SAAS with Release 12 has come up with a complete solution of planning module for Enterprises and Business Organizations. Oracle is very successful in providing Cloud ERP applications with its best features and latest updates that are very handy to implement in modern-day projects.",
+      "sku": "TLIT94",
+      "mpn": "TLIT94",
+      "brand": {
+        "@type": "Brand",
+        "name": "Tech Leads IT"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.8",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Praveen"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": 467
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.techleadsit.com/oracle-fusion-planning-central-online-training",
+        "priceCurrency": "INR",
+        "price": "25000",
+        "priceValidUntil": "2025-07-11",
+        "itemCondition": "https://schema.org/UsedCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "EducationEvent",
+      "name": "Weekday-Oracle Fusion Planning Central Training",
+      "description": "Oracle Fusion Planning Central SAAS with Release 12 has come up with a complete solution of planning module for Enterprises and Business Organizations. Oracle is very successful in providing Cloud ERP applications with its best features and latest updates that are very handy to implement in modern-day projects.",
+      "performer": "Tech Leads IT",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+      "location": {
+        "@type": "VirtualLocation",
+        "url": "https://www.techleadsit.com/oracle-fusion-planning-central-online-training"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Tech Leads IT",
+        "url": "https://www.techleadsit.com/"
+      },
+      "startDate": "2025-06-21",
+      "endDate": "2025-08-21",
+      "url": "https://www.techleadsit.com/oracle-fusion-planning-central-online-training",
+      "duration": "P70D"
+    }
+  ]
+}

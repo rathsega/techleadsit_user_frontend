@@ -1,0 +1,190 @@
+{
+    "title": "Oracle Fusion SCM Online Training",
+    "hero": {
+        "title": "",
+        "animationTitle": [
+            "", "", ""
+        ],
+        "shortDescription": "",
+        "brouchurePath": "",
+        "successStories": {
+            "shortDescription": "",
+            "stories": [
+                {
+                    "studentName": "",
+                    "studentAvatarPath": "",
+                    "studentDesignation": "",
+                    "salaryHikeInPercentage": "",
+                    "studentReview": "",
+                    "preTechLeadsItCompanyName": "",
+                    "postTechLeadsItCompanyLogoPath": ""
+                }
+            ]
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            ""
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "",
+            "details": [
+                {
+                    "studentType": "",
+                    "points": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "",
+            "demoDate": "",
+            "demoTimeSlot": "",
+            "demoTrainerName": ""
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "",
+        "modules": [
+            {
+                "moduleName": "",
+                "chapters": [
+                    {
+                        "chapterName": "",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "demoVideoPath": "",
+        "yourFutureBoss": {
+            "title": "",
+            "shortDescription": ""
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "",
+            "shortDescription": ""
+        },
+        "sectionTwo": {
+            "title": "",
+            "points": [
+                ""
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "",
+            "trainerDesignation": "",
+            "trainerSocialLinks": [
+                ""
+            ],
+            "avatarImagePath": ""
+        },
+        "testimonials": [
+            {
+                "testimonialType": "text",
+                "studentName": "",
+                "designation": "",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "",
+                "planShortDescription": "",
+                "planPrice": "",
+                "planFeatures": [
+                    ""
+                ]
+            }
+        ],
+        "mobileLearning":{
+            "imagePath":""
+        }
+    },
+    "placementPath":{
+        "steps":[
+            {
+                "title":"",
+                "points":[""]
+            }
+        ],
+        "hiringPartnersTitle":"",
+        "startJourney":{
+            "title":"",
+            "shortDescription":""
+        },
+        "companiesWaitingForYou":{
+            "careerPath":[""],
+            "averageFresherSalary":"",
+            "highestSalary":""
+        }
+    },
+    "jobTrends":{
+        "awards":{
+            "title":"",
+            "awardsList":[""]
+        },
+        "jobGrowth":{
+            "title":"",
+            "salaries":[
+                {
+                    "year":"",
+                    "amount":""
+                }
+            ],
+            "openings":[
+                {
+                    "year":"",
+                    "openingsCount":"",
+                    "growthRate":""
+                }
+            ],
+            "footerTitle":""
+        },
+        "jobTrendsAndOppertunities":{
+            "title":"",
+            "shortDescription":"",
+            "sectionDetails":{
+                "title":"",
+                "shortDescription":"",
+                "keyPoints":[""]
+            }
+        }
+    },
+    "turnKnowledgeIntoPower":{
+        "title":"",
+        "shortDescription":""
+    },
+    "certificate":{
+        "shortDescription":"",
+        "certificateimagePath":""
+    },
+    "topCertifications":{
+        "title":"",
+        "certifications":[""]
+    },
+    "relatedCourses":[
+        ""
+    ],
+    "faqs":[
+        {
+            "question":"",
+            "answer":""
+        }
+    ]
+
+}
