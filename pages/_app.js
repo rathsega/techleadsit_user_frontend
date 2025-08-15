@@ -8,6 +8,7 @@ import { LoaderProvider } from '../contexts/LoaderContext';
 import Header from '../components/header';
 import Loader from '../components/Loader';
 import Footer from "../components/footer";
+import QuickCall from './QuickCall';
 
 function MyApp({ Component, pageProps }) {
 
@@ -68,6 +69,7 @@ function MyApp({ Component, pageProps }) {
         <Header></Header>
         <Loader />
         <Component {...pageProps} />
+        <QuickCall></QuickCall>
         <Footer></Footer>
       </LoaderProvider>
     </HelmetProvider>

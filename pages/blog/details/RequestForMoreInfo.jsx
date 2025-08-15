@@ -19,6 +19,23 @@ const RequestForMoreInfo = ({ currentBlogId }) => {
     const [successMsg, setSuccessMsg] = useState(false);
     const [captchaToken, setCaptchaToken] = useState(null);
     const captchaRef = useRef();
+    const [captchaSize, setCaptchaSize] = useState("normal");
+
+
+    useEffect(() => {
+        // Set initial size
+        const updateCaptchaSize = () => {
+            console.log("Updating CAPTCHA size", window.innerWidth < 360 ? "compact" : "normal");
+            if (window.innerWidth < 360) {
+                setCaptchaSize("compact");
+            } else {
+                setCaptchaSize("normal");
+            }
+        };
+        updateCaptchaSize();
+        window.addEventListener("resize", updateCaptchaSize);
+        return () => window.removeEventListener("resize", updateCaptchaSize);
+    }, []);
 
     const validateForm = () => {
         let newErrors = {};
@@ -154,7 +171,7 @@ const RequestForMoreInfo = ({ currentBlogId }) => {
                     siteKey={process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_KEY}
                     onTokenChange={(token) => setCaptchaToken(token)}
                     theme="dark"
-                    size="normal"
+                    size={captchaSize}
                 />
             </div>
 

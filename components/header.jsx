@@ -104,7 +104,9 @@ const Header = () => {
     useEffect(() => {
         const getCategoriesDetails = async () => {
             try {
+                setLoading(true);
                 const response = await httpService.get('courses/getSubCategoriesWithCourses');
+                setLoading(false);
                 if (response && response.data) {
                     setCategoriesAndCourses(response?.data?.categories);
 

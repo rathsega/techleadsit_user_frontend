@@ -41,7 +41,7 @@ const GetInTouch = () => {
 
                 <a href="https://maps.app.goo.gl/MdpESQfm7xGgP7pw7" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                     <div className="d-flex align-items-start gap-2 mt-3">
-                        <img alt="Location-Icon" height="56" width="56" className="Main-Course-Get-In-Touch-Icon-S" src="/images/courses/Main-Course-Get-In-Touch-Our-Location-Icon.svg" />
+                        <img alt="Location-Icon" height="56" width="56" className="MMain-Course-Home-Page-Get-In-Touch-Icon-S" src="/images/courses/Main-Course-Get-In-Touch-Our-Location-Icon.svg" />
                         <div>
                             <h3 className="Main-Course-Get-In-Touch-Segment-Heading">Our address</h3>
                             <p className="Main-Course-Get-In-Touch-Segment-Para">4th Floor, Sridevi Nilayam, plot no 38, near Jntu Metro Station, back side lane of Pista house, Sardar Patel Nagar, IDPL Staff Cooperative Housing Society, Kukatpally Housing Board Colony, Kukatpally, Hyderabad, Telangana 500085</p>

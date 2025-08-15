@@ -182,14 +182,14 @@ const TurnKnowledgeIntoPower = React.memo(({ data, courseTitle }) => {
                     </button>
                 </form>
                 {success && <div className="mt-1 text-center">
-                    <Image priority={false} loading="lazy" src="/images/home/Main-Course-Home-Page-Get-Notified-About-Blogs-Tick-Icon.svg"
+                    <img loading="lazy" src="/images/home/Main-Course-Home-Page-Get-Notified-About-Blogs-Tick-Icon.svg"
                         alt="Tick-Icon"
                         className="Main-Course-Home-Page-Get-Notified-About-Blogs-newsletter-tick-img" />
                     <span className="Main-Course-Home-Page-Get-Notified-About-Blogs-newsletter-message">Thank
                         Registration successful!, Our team will get back to you. </span>
                 </div>}
                 {error && <div className="mt-1 text-center">
-                    <Image priority={false} loading="lazy" src="/images/home/Main-Course-Home-Page-Get-Notified-About-Blogs-invalid-Icon.svg"
+                    <img loading="lazy" src="/images/home/Main-Course-Home-Page-Get-Notified-About-Blogs-invalid-Icon.svg"
                         alt="Invalid-Icon"
                         className="Main-Course-Home-Page-Get-Notified-About-Blogs-newsletter-invalid-img" />
                     <span className="Main-Course-Home-Page-Get-Notified-About-Blogs-newsletter-message"> {errorMsg} </span>

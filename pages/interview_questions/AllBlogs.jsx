@@ -18,6 +18,7 @@ const AllBlogs = ({ activeCategory, searchText, handlePopupformVisibility, handl
     const [totalBlogCount, setTotalBlogCount] = useState(0);
     const { setLoading } = useLoader();
     const allBlogsRef = useRef(null);
+    const [upComingAds, setUpComingAds] = useState([]);
 
     const blogsPerPage = 14;
     const currentBlogId = 0;
@@ -50,6 +51,20 @@ const AllBlogs = ({ activeCategory, searchText, handlePopupformVisibility, handl
 
         return debouncedValue;
     };
+
+    useEffect(() => {
+        const getUpcomingAdvertisements = async () => {
+            try {
+                const response = await httpService.get('blogs/getUpcomingAdvertisements');
+                if (response && response?.data) {
+                    setUpComingAds(response?.data)
+                }
+            } catch (e) {
+                console.log("Unexpected error", e);
+            }
+        }
+        getUpcomingAdvertisements();
+    }, [])
 
     // ✅ Fetch Categories and Top Blogs on Mount
     useEffect(() => {
@@ -163,7 +178,7 @@ const AllBlogs = ({ activeCategory, searchText, handlePopupformVisibility, handl
                                 </div>
                                 <p className="blog-content-h">{blog?.basic?.title}</p>
                                 <p className="blog-content-p">{blog?.seo?.metaDescription}</p>
-                                <a href="#"  onClick={e => handleBlogRedirection(slugify(blog?.basic?.title), blog?._id)} className="category-content-span">
+                                <a href="#" onClick={e => handleBlogRedirection(slugify(blog?.basic?.title), blog?._id)} className="category-content-span">
                                     <span className="category-underline-text">learn more</span>
                                     <Image src="/images/blogs/category-arrow-mark.svg" alt="Right-arrow" height="20" width="20"
                                         className="category-arrow" />
@@ -236,20 +251,24 @@ const AllBlogs = ({ activeCategory, searchText, handlePopupformVisibility, handl
 
                 <HappyStudentsCarousel />
 
-                <h2 className="Side-heading-h mt-5">Upcoming Demos</h2>
-                <div className="mb-4">
-                    <Image src="/images/blogs/category-training-session-1.png" alt="training-session-image" height="570" width="570"
-                        style={{ maxWidth: "100%", height: "auto", border: "6px solid rgba(0, 186, 255, 0.8)" }} className="img-fluid" />
-                </div>
+                {upComingAds && upComingAds.length > 0 && <>
+                    <h2 className="Side-heading-h mt-5">Upcoming Demos</h2>
+                    <div className="mb-4">
+                        <Image src={process.env.NEXT_PUBLIC_FILES_URL + upComingAds[0]?.image.path} alt="training-session-image" height="570" width="570"
+                            style={{ maxWidth: "100%", height: "auto", border: "6px solid rgba(0, 186, 255, 0.8)" }} className="img-fluid" />
+                    </div>
+                </>}
 
                 <RequestForMoreInfo currentBlogId={currentBlogId} />
 
-                <h2 className="Side-heading-h">Upcoming Events</h2>
-                <div className="mt-4">
-                    <Image src="/images/blogs/category-training-session-2.png" alt="training-session-image" height="570" width="570"
-                        style={{ maxWidth: "100%", height: "auto", border: "6px solid", borderImage: "linear-gradient(180deg, rgba(221, 221, 221, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%) 1" }}
-                        className="img-fluid" />
-                </div>
+                {upComingAds && upComingAds.length > 1 && <>
+                    <h2 className="Side-heading-h">Upcoming Events</h2>
+                    <div className="mt-4">
+                        <Image src={process.env.NEXT_PUBLIC_FILES_URL + upComingAds[1]?.image.path} alt="training-session-image" height="570" width="570"
+                            style={{ maxWidth: "100%", height: "auto", border: "6px solid", borderImage: "linear-gradient(180deg, rgba(221, 221, 221, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%) 1" }}
+                            className="img-fluid" />
+                    </div>
+                </>}
 
                 <div className="blog-category-have-que-section">
                     <h2 className="blog-category-have-que-heading">Have any questions</h2>

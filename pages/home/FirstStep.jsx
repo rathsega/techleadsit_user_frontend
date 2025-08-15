@@ -2,7 +2,7 @@ const FirstStep = ({openForm}) => {
     return (
         <section className="Main-Course-HP-CTA-banner Main-Course-HP-CTA-banner-cust">
             <div className="Main-Course-HP-CTA-banner-content">
-                <h1 className="Main-Course-HP-CTA-banner-h">Take the First Step Toward Success!</h1>
+                <h2 className="Main-Course-HP-CTA-banner-h">Take the First Step Toward Success!</h2>
                 <p className="Main-Course-HP-CTA-banner-p">Upskill with expert-led courses to unlock endless career
                     opportunities. Take the first step today and
                     transform your future!</p>

@@ -35,6 +35,7 @@ const InstructorDetails = React.memo(({ data }) => {
                         <div className="position-relative">
                             <img loading="lazy" src={data?.sectionThree?.avatarImagePath}
                                 alt="Our-Founder-image" width="450" height="280"
+                                className="Main-Course-Meet-Our-Founder-Section-Card-img"
                                 style={{ "color": "transparent", "maxWidth": "100%", "width": "auto", "height": "auto", "position": "relative" }} />
                             <div className="Main-Course-Meet-Our-Founder-Image-Content-Container">
                                 <p className="Main-Course-Meet-Our-Founder-Image-Name">{data?.sectionThree?.trainerName}</p>

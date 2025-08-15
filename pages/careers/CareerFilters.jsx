@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import httpService from '../../services/httpService';
 
 const experiences = [
@@ -15,8 +15,7 @@ const jobTypes = [
     { _id: "Internship", title: "Internship" }
 ];
 
-const CareerFilters = ({ filters, setFilters, openFilter, handleSidebar }) => {
-
+const CareerFilters = ({ filters, setFilters, openFilter, handleSidebar, filterBtnRef }) => {
     const [locations, setLocations] = useState([]);
     const [skills, setSkills] = useState([]);
     const [selectedFilters, setSelectedFilters] = useState({
@@ -26,6 +25,8 @@ const CareerFilters = ({ filters, setFilters, openFilter, handleSidebar }) => {
         jobTypes: []
     });
 
+    const sidebarRef = useRef(null);
+
     // Fetch skills from API
     useEffect(() => {
         const fetchData = async () => {
@@ -34,23 +35,39 @@ const CareerFilters = ({ filters, setFilters, openFilter, handleSidebar }) => {
                     httpService.get(`/careers/getActiveCareerSkills`),
                     httpService.get(`/careers/getAllLocations`),
                 ]);
-
                 setSkills(skills?.data || 0);
                 setLocations(locations?.data || []);
             } catch (error) {
                 console.error("Error fetching blog data:", error);
             }
         };
-
         fetchData();
     }, []);
 
-    useEffect(()=>{
+    useEffect(() => {
         setFilters(selectedFilters)
     }, [selectedFilters?.location, selectedFilters?.skill, selectedFilters?.experience, selectedFilters?.jobTypes?.length])
-    // Handlers
+
+    // Click outside to close
+    useEffect(() => {
+        if (!openFilter) return;
+        function handleClickOutside(event) {
+            console.log("Clicked outside:", event.target);
+            if (
+                sidebarRef.current &&
+                !sidebarRef.current.contains(event.target) &&
+                !(filterBtnRef && filterBtnRef.current && filterBtnRef.current.contains(event.target))
+            ) {
+                handleSidebar();
+            }
+        }
+        document.addEventListener("click", handleClickOutside);
+        return () => {
+            document.removeEventListener("click", handleClickOutside);
+        };
+    }, [openFilter, handleSidebar]);
+
     const handleChange = (type, value, isCheckbox = false) => {
-        //console.log(type, value, isCheckbox);
         setSelectedFilters(prev => {
             if (isCheckbox) {
                 const updated = prev.jobTypes.includes(value)
@@ -63,9 +80,14 @@ const CareerFilters = ({ filters, setFilters, openFilter, handleSidebar }) => {
     };
 
     return (
-        <div className={`Main-Course-CP-FYNJ-Left-Part-Section sidebar-popup ${openFilter ? "open" : ""}`} id="sidebarPopup">
-            <div className="Main-Course-CP-FYNJ-Left-Part-Filters sidebar-content">
+        <div
+            
+            className={`Main-Course-CP-FYNJ-Left-Part-Section sidebar-popup ${openFilter ? "open" : ""}`}
+            id="sidebarPopup"
+        >
+            <div className="Main-Course-CP-FYNJ-Left-Part-Filters sidebar-content" ref={sidebarRef}>
                 <h3 className="Main-Course-CP-FYNJ-Sidebar-Heading">Filters</h3>
+                {/* ...rest of your filter code... */}
                 {/* Location */}
                 <fieldset className="Main-Course-CP-FYNJ-Left-Part-Group">
                     <legend className="Main-Course-CP-FYNJ-Left-Part-Heading">Location</legend>
@@ -77,19 +99,17 @@ const CareerFilters = ({ filters, setFilters, openFilter, handleSidebar }) => {
                         </label>
                     ))}
                 </fieldset>
-
                 {/* Experience */}
                 <fieldset className="Main-Course-CP-FYNJ-Left-Part-Group">
                     <legend className="Main-Course-CP-FYNJ-Left-Part-Heading">Work experience</legend>
                     <label className="Main-Course-CP-FYNJ-Left-Part-Label"><input type="radio" className="Main-Course-CP-FYNJ-Left-Part-Input" name="experience" onChange={() => handleChange('experience', '')} checked={!selectedFilters.experience} /> Any</label>
                     {experiences.map(exp => (
-                        <label key={exp._id}  className="Main-Course-CP-FYNJ-Left-Part-Label">
+                        <label key={exp._id} className="Main-Course-CP-FYNJ-Left-Part-Label">
                             <input type="radio" name="experience" className="Main-Course-CP-FYNJ-Left-Part-Input" checked={selectedFilters.experience === exp._id} onChange={() => handleChange('experience', exp._id)} />
                             {exp.title}
                         </label>
                     ))}
                 </fieldset>
-
                 {/* Skills */}
                 <fieldset className="Main-Course-CP-FYNJ-Left-Part-Group">
                     <legend className="Main-Course-CP-FYNJ-Left-Part-Heading">Skills</legend>
@@ -101,7 +121,6 @@ const CareerFilters = ({ filters, setFilters, openFilter, handleSidebar }) => {
                         </label>
                     ))}
                 </fieldset>
-
                 {/* Job Types */}
                 <fieldset className="Main-Course-CP-FYNJ-Left-Part-Group">
                     <legend className="Main-Course-CP-FYNJ-Left-Part-Heading">Job Type</legend>
@@ -112,13 +131,11 @@ const CareerFilters = ({ filters, setFilters, openFilter, handleSidebar }) => {
                         </label>
                     ))}
                 </fieldset>
-
                 {/* Buttons */}
                 <div className="d-flex align-items-center justify-content-between">
-                    <button className="Main-Course-CP-FYNJ-Close-Button" onClick={() => {setSelectedFilters({ location: '', experience: '', skill: '', jobTypes: [] }); handleSidebar()}}>Clear</button>
+                    <button className="Main-Course-CP-FYNJ-Close-Button" onClick={() => { setSelectedFilters({ location: '', experience: '', skill: '', jobTypes: [] }); handleSidebar() }}>Clear</button>
                     <button className="Main-Course-CP-FYNJ-Apply-Button" onClick={handleSidebar}>Apply</button>
                 </div>
-
             </div>
         </div>
     )

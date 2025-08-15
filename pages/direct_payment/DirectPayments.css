@@ -1,3 +1,77 @@
+html {
+    text-size-adjust: 100%;
+    /* Standard support */
+}
+
+body {
+    font-family: Montserrat;
+}
+
+.payment-f-heading {
+    font-weight: 600;
+    font-size: 20px;
+    color: #FF2525;
+}
+
+.payment-f-para {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+.retry-btn {
+    background: #3665cf;
+    width: 50%;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.Right-plan-arrow {
+    transition: transform 0.3s ease-out;
+}
+
+.retry-btn:hover .Right-plan-arrow {
+    transform: translateX(7px);
+}
+
+.retry-btn:hover {
+    border-color: #8bafff;
+}
+
+.payment-appearance {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 4s;
+}
+
+.failed-section {
+    text-align: center;
+    padding-inline: 30px;
+    transform: translateY(50px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gif-size {
+    width: 200px;
+}
+
 .Payment-Gateway-section {
     font-family: Montserrat;
     background: #F7F8FA;
@@ -12,7 +86,7 @@
 }
 
 .pb-50 {
-    padding: 50px;
+    padding: 30px;
 }
 
 .Gateway-header {
@@ -100,17 +174,11 @@
     padding: 20px;
 }
 
-
-
 /* Hide label when input is focused */
 .Payment-input-field:focus+.Payment-input-label {
     visibility: hidden;
     opacity: 0;
 }
-
-
-
-
 
 /* For select elements only */
 .Payment-select-field:invalid+.Payment-input-label {
@@ -238,42 +306,6 @@
     color: #4A4A4A;
 }
 
-@media (max-width:992px) {
-    .gateway-sections {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .table-align {
-        display: flex;
-        justify-content: center;
-    }
-
-}
-
-@media (max-width:576px) {
-    .pb-20 {
-        padding: 20px;
-    }
-
-    .grid-1 {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 0px;
-    }
-
-    .oracle-img {
-        padding: 10px;
-        height: 110px;
-    }
-
-    .checkout-box-h1 {
-        font-size: 14px;
-    }
-
-    .checkout-box-p {
-        font-size: 12px;
-    }
-}
-
 .checkout-box-p {
     color: #00963E;
     font-size: 14px;
@@ -399,7 +431,7 @@
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-    display: none;
+    color: red;
 }
 
 .discount-row.show {
@@ -415,20 +447,6 @@
     font-weight: 500;
 
 }
-
-@media (max-width:470px) {
-    .align-adj {
-        flex-direction: column;
-        align-items: start !important;
-    }
-
-    .align-mt {
-        margin-top: 7px;
-    }
-}
-
-
-
 
 .register_phone input {
     background-color: #F7F8FA;
@@ -473,10 +491,10 @@
 .coupon-input-container {
     position: relative;
     width: 100%;
-    margin-bottom:10px;  
-  }
+    margin-bottom: 10px;
+}
 
-  .coupon-input-label {
+.coupon-input-label {
     position: absolute;
     top: 50%;
     left: 5px;
@@ -488,16 +506,16 @@
     padding-inline: 13px;
 }
 
-.coupon-input-field{
-    width:100%;
+.coupon-input-field {
+    width: 100%;
     background: #F7F8FA;
-    border:none;
+    border: none;
     border-radius: 12px;
-    padding-block:15px;
+    padding-block: 15px;
     padding-inline: 10px;
 }
 
-.coupon-input-field:focus + .coupon-input-label {
+.coupon-input-field:focus+.coupon-input-label {
     visibility: hidden;
     opacity: 0;
 }
@@ -507,7 +525,7 @@
     opacity: 0;
 }*/
 
-.coupon-input-field:placeholder-shown:not(:focus) + .coupon-input-label {
+.coupon-input-field:placeholder-shown:not(:focus)+.coupon-input-label {
     visibility: visible;
     opacity: 1;
 }
@@ -516,23 +534,305 @@
     border: 2px solid red !important;
 }
 
-.invalid-message{
-    color:#FF0000;
-    margin-left:5px;
+.invalid-message {
+    color: #FF0000;
+    margin-left: 5px;
     font-size: 14px;
 }
 
-.coupon-offer{
-    color:#21AD14;
-    margin-left:5px;
+.coupon-offer {
+    color: #21AD14;
+    margin-left: 5px;
     font-size: 14px;
 }
 
-.tick-icon-y{
+.tick-icon-y {
     transform: translateY(3px);
 }
 
-.coupon-input-field:disabled + .coupon-input-label {
+.coupon-input-field:disabled+.coupon-input-label {
     visibility: hidden;
     opacity: 0;
+}
+
+html {
+    text-size-adjust: 100%;
+    /* Standard support */
+}
+
+body {
+    font-family: Montserrat;
+}
+
+.success-section {
+    text-align: center;
+    transform: translateY(50px);
+}
+
+.payment-s-heading {
+    font-weight: 600;
+    font-size: 20px;
+    color: #13AE05;
+}
+
+.payment-s-para {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+/* From Uiverse.io by cohencoo */
+.Payment-custom-loader {
+    width: 70%;
+    height: 22px;
+    border-radius: 20px;
+    color: #13AE05;
+    border: 2px solid;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Payment-custom-loader::before {
+    content: "";
+    position: absolute;
+    margin: 2px;
+    inset: 0 100% 0 0;
+    border-radius: inherit;
+    background: #13AE05;
+    animation: p6 8s linear;
+}
+
+@keyframes p6 {
+    100% {
+        inset: 0
+    }
+}
+
+.download-button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: transparent;
+    background-color: #3665cf;
+    overflow: hidden;
+    border-radius: 5px;
+    appearance: none;
+    text-align: match-parent;
+}
+
+.download-button,
+.download-button__icon,
+.download-button__text {
+    transition: all 0.3s;
+}
+
+.download-button__text {
+    transform: translateX(10px);
+    color: #fff;
+    font-weight: 600;
+}
+
+.download-button__icon {
+    position: absolute;
+    transform: translateX(115px);
+    height: 100%;
+    width: 35px;
+    background-color: #003e95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-button__icon svg {
+    width: 20px;
+    fill: #fff;
+}
+
+.download-button:hover {
+    background: #003e95;
+}
+
+.download-button:hover .download-button__text {
+    color: transparent;
+}
+
+.download-button:hover .download-button__icon {
+    width: 140px;
+    transform: translateX(0);
+}
+
+.download-button:active .download-button__icon {
+    background-color: #003e95;
+}
+
+.download-button:active {
+    border: 1px solid #003e95;
+}
+
+.download-animation {
+    display: flex;
+    justify-content: center;
+
+}
+
+.gif-size {
+    width: 200px;
+}
+
+@media (min-width:992px) {
+    .success-section {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+@media (max-width:1300px){ 
+  .checkout-box-h{
+    font-size: 16px;
+  }
+
+  .Payment-input-field, .coupon-input-field{
+    padding:10px;
+    font-size: 12px;
+    border-radius:5px;
+  }
+
+  .payment-option{
+    padding-block: 5px;
+    border-radius: 5px;
+  }
+
+  .coupon-apply-btn{
+    padding-block: 8.4px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .checkout-summary{
+    font-size: 15px;
+  }
+
+  .checkout-box{
+    padding:15px;
+  }
+
+  .checkout-box-h1, .main-price, .checkout-box-h2{
+    font-size: 18px;
+  }
+
+  .Payment-input-container:last-child, .grid-1 .Payment-input-container:nth-child(1), .grid-1 .Payment-input-container:nth-child(2), .checkout-box-h2{
+    margin-bottom: 0px;
+  }
+
+  .oracle-img{
+        padding:15px;
+        height: 109px;
+        width: 150px;
+  }
+
+  .coupon-apply-btn{
+    font-size: 14px;
+  }
+
+  .Payment-input-label, .coupon-input-label{
+    font-size: 12px;
+  }
+}
+
+@media (max-width:992px) {
+    .Payment-custom-loader {
+        width: 40%;
+    }
+
+        .gateway-sections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .table-align {
+        display: flex;
+        justify-content: center;
+    }
+
+        .failed-section {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+@media (max-width:576px) {
+    .pb-20 {
+        padding: 20px;
+    }
+
+    .grid-1 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+
+    .oracle-img {
+        padding: 10px;
+        height: 110px;
+    }
+
+    .checkout-box-h1 {
+        font-size: 14px;
+    }
+
+    .checkout-box-p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:470px) {
+    .align-adj {
+        flex-direction: column;
+        align-items: start !important;
+    }
+
+    .align-mt {
+        margin-top: 7px;
+    }
+}
+
+@media (max-width:450px) {
+        .payment-f-para {
+        font-size: 14px;
+    }
+
+    .payment-f-heading {
+        font-size: 18px;
+    }
+
+    .gif-size {
+        width: 160px;
+    }
+
+    .retry-btn {
+        width: 70%;
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .payment-s-para {
+        font-size: 16px;
+    }
+
+    .payment-s-heading {
+        font-size: 18px;
+    }
+
+    .Payment-custom-loader {
+        width: 50%;
+    }
+
 }

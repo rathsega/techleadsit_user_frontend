@@ -70,7 +70,7 @@ const UpcomingDemoHeaderStrip = React.memo(({ demos = [], price, discountedPrice
     <div
       className="Course-Page-Upcoming-Batch-banner"
       style={{
-        minHeight: "55px", // Reserve space for the banner
+        minHeight: "45px", // Reserve space for the banner
         opacity: nearestDemo ? 1 : 0,
         transition: "opacity 0.3s",
         display: "flex",

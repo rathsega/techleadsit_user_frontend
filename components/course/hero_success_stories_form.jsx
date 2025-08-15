@@ -109,12 +109,13 @@ const HeroSuccessStoriesForm = ({ courseTitle }) => {
                 //setFormData({ fullName: "", email: "", phone: "" });
                 localStorage.setItem("userDetails", JSON.stringify(formData));
                 setErrorMsg("Thank you for your submission!");
+                router.push(`/thankyou?courseTitle=${courseTitle}&slug=${router.query.slug.join('_')}`);
             } catch (err) {
                 setSuccess(false);
                 setError(true);
                 setErrorMsg(err?.response?.data?.message || "An error occurred while submitting the form.");
             } finally {
-                setLoading(false);
+                //setLoading(false);
             }
             // Reset form data after submission
             setSubmitted(false);

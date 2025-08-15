@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-const SearchBar = ({ searchTerm, setSearchTerm, handleSidebar }) => {
+const SearchBar = ({ searchTerm, setSearchTerm, handleSidebar, filterBtnRef }) => {
 
     const [localInput, setLocalInput] = useState(searchTerm);
+
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -28,7 +29,7 @@ const SearchBar = ({ searchTerm, setSearchTerm, handleSidebar }) => {
                 </button>
             </div>
             <div className="Main-Course-CP-FYNJ-Filter-Icon-Section">
-                <button className="Main-Course-CP-FYNJ-Filter-Icon" onClick={handleSidebar}>Filters <i className="fa-solid fa-filter"></i></button>
+                <button className="Main-Course-CP-FYNJ-Filter-Icon" ref={filterBtnRef} onClick={handleSidebar}>Filters <i className="fa-solid fa-filter"></i></button>
             </div>
         </div>
     )

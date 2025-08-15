@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 
-const MobileStickyNav = React.memo(({ showJobTrends }) => {
+const MobileStickyNav = React.memo(({ showJobTrends, handleBelowFoldLoad }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLabel, setActiveLabel] = useState('Course Overview');
 
@@ -19,6 +19,9 @@ const MobileStickyNav = React.memo(({ showJobTrends }) => {
   }, [showJobTrends]);
 
   const toggleDropdown = useCallback(() => {
+    if (handleBelowFoldLoad) {
+      handleBelowFoldLoad(true);
+    }
     setIsOpen(prev => !prev);
   }, []);
 

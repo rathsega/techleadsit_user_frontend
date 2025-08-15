@@ -73,8 +73,8 @@ const StartYourJourney = () => {
         <>
             <section className="Main-Course-CP-FYNJ-CTA-banner">
                 <div className="Main-Course-CP-FYNJ-CTA-banner-content">
-                    <h1 className="Main-Course-CP-FYNJ-CTA-banner-h">Join India's Most Trusted Oracle Fusion SCM Program by Tech Leads IT</h1>
-                    <p className="Main-Course-CP-FYNJ-CTA-banner-p">Master real-world SCM skills with expert-led training, hands-on projects, and guaranteed placement support.</p>
+                    <h1 className="Main-Course-CP-FYNJ-CTA-banner-h">Join India’s Most Trusted Oracle Trainings by Tech Leads IT</h1>
+                    <p className="Main-Course-CP-FYNJ-CTA-banner-p">Master real-world Oracle skills with expert-led sessions, hands-on projects, and guaranteed placement support—designed to accelerate your ERP career. </p>
                     <button className="Main-Course-CP-FYNJ-CL-CTA-button" onClick={() => {
                         openForm("Start Your Journey");
                     }}>

@@ -173,6 +173,7 @@ const UpcomingDemoSession = React.memo(({ data, courseTitle, courseId, demos, op
                 console.log("Form submitted successfully:", dataToSend);
                 localStorage.setItem('userDetails', JSON.stringify(dataToSend));
                 setSuccess(true);
+                router.push(`/thankyou?courseTitle=${courseTitle}&courseId=${courseId}&slug=${router.query.slug.join('_')}`);
             } else {
                 setSuccess(false);
             }
@@ -234,7 +235,7 @@ const UpcomingDemoSession = React.memo(({ data, courseTitle, courseId, demos, op
         return { date: dateStr, time: timeStr };
     }
 
-    const demoDetails = useMemo(()=>getNearestDemoDateTimeIST(demos), [demos]);
+    const demoDetails = useMemo(() => getNearestDemoDateTimeIST(demos), [demos]);
 
     const datePickerRef = useRef();
 
@@ -361,7 +362,12 @@ const UpcomingDemoSession = React.memo(({ data, courseTitle, courseId, demos, op
 
                 <div className="Main-Course-Upcoming-Demo-Details-input-container" ref={datePickerRef}>
                     <Suspense fallback={<div>Loading...</div>}><ReactDatePicker
-                        selected={formData.preferredDemoDate ? new Date(formData.preferredDemoDate) : null}
+                        selected={
+                            formData.preferredDemoDate &&
+                                !isNaN(new Date(formData.preferredDemoDate))
+                                ? new Date(formData.preferredDemoDate)
+                                : null
+                        }
                         onChange={date => {
                             const formatted = formatDate(date);
                             setFormData(prev => ({

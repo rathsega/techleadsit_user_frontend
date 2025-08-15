@@ -14,7 +14,7 @@ const RelatedCourses = React.memo(({ courses, courseTax }) => {
 
     return (
         <section className="Main-Course-Related-Course-Card-Section-Container">
-            <h2 className="Main-Course-Related-Course-Card-heading text-center mb-3">Explore Our Related Courses</h2>
+            <h2 className="Main-Course-Related-Course-Card-heading text-center">Explore Our Related Courses</h2>
             <p className="Main-Course-Related-Course-Card-Para text-center">Enhance your career prospects with
                 specialized courses in high-demand fields. Gain practical knowledge and stay competitive in the
                 industry.</p>
@@ -64,14 +64,14 @@ const RelatedCourses = React.memo(({ courses, courseTax }) => {
                                         </span>
                                     </div>
                                     <div className="Main-Course-Related-Courses-details">
-                                        {course?.basic?.discountedPrice ? <p className="mb-0">
+                                        {course?.basic?.discountedPrice > 0 ? <p className="mb-0">
                                             <span className="Main-Course-Related-Courses-old-price">₹{course?.basic?.price}</span>
                                             <span className="Main-Course-Related-Courses-price">₹{course?.basic?.discountedPrice}</span>
                                             {(courseTax?.cgst > 0 || courseTax?.sgst > 0 || courseTax?.igst > 0) && (
                                                 <span className="Main-Course-Related-Courses-text">+Taxes</span>
                                             )}
                                         </p> : <p className="mb-0">
-                                            <span className="Main-Course-Related-Courses-old-price">₹{course?.basic?.price}</span>
+                                            <span className="Main-Course-Related-Courses-price">₹{course?.basic?.price}</span>
                                             {(courseTax?.cgst > 0 || courseTax?.sgst > 0 || courseTax?.igst > 0) && (
                                                 <span className="Main-Course-Related-Courses-text">+Taxes</span>
                                             )}

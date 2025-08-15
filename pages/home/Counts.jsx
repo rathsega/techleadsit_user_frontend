@@ -3,7 +3,7 @@ import Image from 'next/image'; // Importing Image component from next.js for op
 const Counts = React.memo(() => {
     return (
         <section className="Main-Course-Home-Page-Empowering-Learners-Section">
-            <div className="d-flex flex-wrap justify-content-around row-gap-4 column-gap-3">
+            <div className="d-flex flex-xs-wrap row-gap-xs-2 justify-content-around row-gap-4 column-gap-3">
                 <div className="text-center">
                     <div className="d-flex gap-3 align-items-center justify-content-center">
                         <Image loading='lazy' priority={false} height={32} width={32} src="/images/home/Main-Course-HP-Empowering-Learners-B1.svg"

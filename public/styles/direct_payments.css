@@ -72,37 +72,6 @@ body {
     width: 200px;
 }
 
-@media (min-width:992px) {
-    .failed-section {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-}
-
-@media (max-width:450px) {
-    .payment-f-para {
-        font-size: 14px;
-    }
-
-    .payment-f-heading {
-        font-size: 18px;
-    }
-
-    .gif-size {
-        width: 160px;
-    }
-
-    .retry-btn {
-        width: 70%;
-        font-size: 14px;
-        padding: 8px 20px;
-    }
-
-}
-
 .Payment-Gateway-section {
     font-family: Montserrat;
     background: #F7F8FA;
@@ -117,7 +86,7 @@ body {
 }
 
 .pb-50 {
-    padding: 50px;
+    padding: 30px;
 }
 
 .Gateway-header {
@@ -205,17 +174,11 @@ body {
     padding: 20px;
 }
 
-
-
 /* Hide label when input is focused */
 .Payment-input-field:focus+.Payment-input-label {
     visibility: hidden;
     opacity: 0;
 }
-
-
-
-
 
 /* For select elements only */
 .Payment-select-field:invalid+.Payment-input-label {
@@ -341,42 +304,6 @@ body {
     font-size: 17px;
     font-weight: 500;
     color: #4A4A4A;
-}
-
-@media (max-width:992px) {
-    .gateway-sections {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .table-align {
-        display: flex;
-        justify-content: center;
-    }
-
-}
-
-@media (max-width:576px) {
-    .pb-20 {
-        padding: 20px;
-    }
-
-    .grid-1 {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 0px;
-    }
-
-    .oracle-img {
-        padding: 10px;
-        height: 110px;
-    }
-
-    .checkout-box-h1 {
-        font-size: 14px;
-    }
-
-    .checkout-box-p {
-        font-size: 12px;
-    }
 }
 
 .checkout-box-p {
@@ -520,20 +447,6 @@ body {
     font-weight: 500;
 
 }
-
-@media (max-width:470px) {
-    .align-adj {
-        flex-direction: column;
-        align-items: start !important;
-    }
-
-    .align-mt {
-        margin-top: 7px;
-    }
-}
-
-
-
 
 .register_phone input {
     background-color: #F7F8FA;
@@ -763,7 +676,6 @@ body {
 .download-animation {
     display: flex;
     justify-content: center;
-
 }
 
 .gif-size {
@@ -780,23 +692,142 @@ body {
     }
 }
 
+@media (max-width:1400px){ 
+  .checkout-box-h{
+    font-size: 16px;
+  }
+
+  .Payment-input-field, .coupon-input-field{
+    padding:10px;
+    font-size: 12px;
+    border-radius:5px;
+  }
+
+  .payment-option{
+    padding-block: 5px;
+    border-radius: 5px;
+  }
+
+  .coupon-apply-btn{
+    padding-block: 8.4px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .checkout-summary{
+    font-size: 15px;
+  }
+
+  .checkout-box{
+    padding:15px;
+  }
+
+  .checkout-box-h1, .main-price, .checkout-box-h2{
+    font-size: 18px;
+  }
+
+  .Payment-input-container:last-child, .grid-1 .Payment-input-container:nth-child(1), .grid-1 .Payment-input-container:nth-child(2), .checkout-box-h2{
+    margin-bottom: 0px;
+  }
+
+  .oracle-img{
+        padding:15px;
+        height: 109px;
+        width: 150px;
+  }
+
+  .coupon-apply-btn{
+    font-size: 14px;
+  }
+
+  .Payment-input-label, .coupon-input-label{
+    font-size: 12px;
+  }
+}
+
 @media (max-width:992px) {
     .Payment-custom-loader {
         width: 40%;
     }
+
+        .gateway-sections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .table-align {
+        display: flex;
+        justify-content: center;
+    }
+
+        .failed-section {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+@media (max-width:576px) {
+    .pb-20 {
+        padding: 20px;
+    }
+
+    .grid-1 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+
+    .oracle-img {
+        padding: 10px;
+        height: 110px;
+    }
+
+    .checkout-box-h1 {
+        font-size: 14px;
+    }
+
+    .checkout-box-p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:470px) {
+    .align-adj {
+        flex-direction: column;
+        align-items: start !important;
+    }
+
+    .align-mt {
+        margin-top: 7px;
+    }
 }
 
 @media (max-width:450px) {
+        .payment-f-para {
+        font-size: 14px;
+    }
+
+    .payment-f-heading {
+        font-size: 18px;
+    }
+
+    .gif-size {
+        width: 160px;
+    }
+
+    .retry-btn {
+        width: 70%;
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
     .payment-s-para {
         font-size: 16px;
     }
 
     .payment-s-heading {
         font-size: 18px;
-    }
-
-    .gif-size {
-        width: 160px;
     }
 
     .Payment-custom-loader {

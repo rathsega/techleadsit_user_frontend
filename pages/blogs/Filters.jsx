@@ -50,7 +50,7 @@ const Filters = ({ searchText, setSearchText, setSortByValue }) => {
                     <span className="Sort-text">Sort by</span>
                 </div>
                 {showSortPopup && <div className="Sort-text-popup">
-                    <ul className="mb-0 ps-0" style={{ transform: "translateX(10px)" }}>
+                    <ul className="mb-0 ps-0">
                         <li className={`Sort-by-options mb-3 ${sortBy == "popularity" ? "list-style-type-disc" : "list-style-type-none"}`} onClick={() => handleShowSortPopup("popularity")}>Popularity</li>
                         <hr />
                         <li className={`Sort-by-options ${sortBy == "latest" ? "list-style-type-disc" : "list-style-type-none"}`} onClick={() => handleShowSortPopup("latest")}>Latest Posts</li>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from 'next/router';
 import httpService from "../../services/httpService";
 import { useLoader } from "../../contexts/LoaderContext";
@@ -84,7 +84,7 @@ const ResetPassword = () => {
         } catch (error) {
             setLoading(false);
             console.error('Error:', error.customMessage || error.message || error);
-            setErrors({global: error.customMessage || 'Something went wrong, please try again.'});
+            setErrors({ global: error.customMessage || 'Something went wrong, please try again.' });
         }
 
     };
@@ -121,9 +121,21 @@ const ResetPassword = () => {
         return confirmPasswordError;
     };
 
+    useEffect(() => {
+        if (showSuccessMessage) {
+            const timer = setTimeout(() => {
+                closePopup();
+            }, 3000);
+            return () => clearTimeout(timer);
+        }
+    }, [showSuccessMessage]);
+
 
     const closePopup = () => {
         setShowSuccessMessage(prev => !prev)
+        setTimeout(() => {
+            router.push('/signin');
+        }, 0);
     }
 
 
@@ -209,9 +221,9 @@ const ResetPassword = () => {
                     showSuccessMessage && <section className="Main-Course-Successful-loader-overlay">
                         <div className="Main-Course-Successful-S-Text-Container">
                             <div className="Main-Course-User-Authentication-Create-New-Password-S-Text-Container">
-                                <button className="Universal-Cross-Mark-Rounded-Btn" onClick={closePopup} style={{"position":"absolute","right":"15px","top":"15px","fontSize":"20px","background":"rgb(1, 98, 140)","padding":"0px 9px","borderRadius":"50%","border":"none"}}>
-          <i className="fa-solid fa-xmark Universal-Cross-Mark" style={{color:"white"}}></i>
-        </button>
+                                <button className="Universal-Cross-Mark-Rounded-Btn" onClick={closePopup} style={{ "position": "absolute", "right": "15px", "top": "15px", "fontSize": "20px", "background": "rgb(1, 98, 140)", "padding": "0px 9px", "borderRadius": "50%", "border": "none" }}>
+                                    <i className="fa-solid fa-xmark Universal-Cross-Mark" style={{ color: "white" }}></i>
+                                </button>
                                 <img src="/images/auth/Successfully-Changed-Img.svg" alt="Successfully Changed" className="Main-Course-User-Authentication-Create-New-Password-Successfully-Changed-Img" />
                                 <h2 className="Main-Course-Create-New-Password-S-Heading">Password Reset Successful</h2>
                                 <p className="Main-Course-Create-New-Password-S-Para">Your new password has been set successfully. You can now log in with your updated credentials.</p>

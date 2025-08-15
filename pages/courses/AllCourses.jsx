@@ -89,29 +89,28 @@ const AllCourses = ({ category, subCategory, courseType, courseTracks, skillLeve
                                 <h1 className="All-category-course-card-main-h">{course?.basic?.title}
                                 </h1>
                                 <div className="All-category-course-card-info">
-                                    <span>
+                                    <span className="d-flex align-items-center flex-column">
                                         <img src="/images/courses/AC-RC-duration.svg" alt="Duration"
                                             height="16" width="16" />
                                         <span className="All-category-course-card-info-details">{course?.basic?.durationInMonths} {course?.basic?.durationInMonths == 1 ? " Month" : " Months"}</span>
                                     </span>
-                                    <span>
+                                    <span className="d-flex align-items-center flex-column">
                                         <img src="/images/courses/AC-RC-chapters.svg" alt="Chapters"
                                             height="16" width="16" />
                                         <span className="All-category-course-card-info-details">{course?.basic?.chapterCount} {course?.basic?.chapterCount == 1 ? " Chapter" : " Chapters"}</span>
                                     </span>
-                                    <span>
+                                    <span className="d-flex align-items-center flex-column">
                                         <img src="/images/courses/AC-RC-Mode.svg" alt="Mode" height="16"
                                             width="16" />
                                         <span className="All-category-course-card-info-details">{course?.basic?.trainingMode}</span>
                                     </span>
                                 </div>
                                 <div className="All-category-course-card-details">
-                                    <p className="mb-0">
+                                    <p className="mb-0 All-category-course-card-details-price-cust">
                                         {
                                             course?.basic?.discountedPrice ? <><span className="All-category-course-card-old-price">₹{course?.basic?.price}</span>
-                                                <span className="All-category-course-card-price">₹{course?.basic?.discountedPrice}</span></> : <span className="All-category-course-card-price">₹{course?.basic?.price}</span>
+                                                <span className="All-category-course-card-price">₹{course?.basic?.discountedPrice}<span className="All-category-course-card-text">+Taxes</span></span></> : <span className="All-category-course-card-price">₹{course?.basic?.price}<span className="All-category-course-card-text">+Taxes</span></span>
                                         }
-                                        <span className="All-category-course-card-text">+Taxes</span>
                                     </p>
                                     <button className="All-category-course-card-enroll">
                                         <a href={`/${course?.basic?.slug}`} target="_blank" rel="noopener noreferrer" className="All-category-course-card-enroll-link">Enroll Now</a>

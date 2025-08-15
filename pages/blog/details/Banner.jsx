@@ -24,7 +24,7 @@ const Banner = ({ details }) => {
             <img src={process.env.NEXT_PUBLIC_FILES_URL + details?.heroImage?.path} alt="banner-img" className="banner-img" />
             <div className="blur-overlay"></div>
             <div className="dark-overlay"></div>
-            <img src={process.env.NEXT_PUBLIC_FILES_URL + details?.heroImage?.path} alt="banner-img" className="banner-img Blog-Banner-Mb-Image" style={{ "zIndex": "3", "height": "500px", "width": "400px", "transform": "translate(-50%, -50%)", "left": "50%", "top": "40%" }} />
+            <img src={process.env.NEXT_PUBLIC_FILES_URL + details?.heroImage?.path} alt="banner-img" className="banner-img Blog-Banner-Mb-Image" style={{ "zIndex": "3", "height": "400px", "width": "300px", "transform": "translate(-50%, -50%)", "left": "50%", "top": "40%" }} />
             <div className="inside-content">
                 <span className="main-blog-clr">{details?.category?.title}</span>
                 <span className="main-blog-caption">{details?.durationInMinutes}-minutes read</span>

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import 'react-phone-number-input/style.css'; // Required for styling
 import classNames from 'classnames';
@@ -28,6 +28,15 @@ const JobApplication = () => {
     const [submissionSuccess, setSubmissionSuccess] = useState(false);
     const [fileUpload, setFileUpload] = useState(false);
     const fileRef = useRef(null);
+    const [pageReady, setPageReady] = useState(false);
+
+    // Refs for scrolling to error fields
+    const nameRef = useRef(null);
+    const emailRef = useRef(null);
+    const phoneRef = useRef(null);
+    const experienceRef = useRef(null);
+    const linkedinRef = useRef(null);
+    const resumeRef = useRef(null);
 
     const validate = async () => {
         const errors = {};
@@ -40,7 +49,7 @@ const JobApplication = () => {
         }
         if (!formData.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) errors.email = 'Valid email is required';
         if (!formData.phone) errors.phone = 'Valid phone number required';
-        if (!errors.hasOwnProperty(phone) && (typeof formData.phone !== "string" || !isValidPhoneNumber(formData.phone))) errors.phone = "Phone number is invalid";
+        if (!errors.hasOwnProperty('phone') && (typeof formData.phone !== "string" || !isValidPhoneNumber(formData.phone))) errors.phone = "Phone number is invalid";
         if (!formData.experience.trim()) errors.experience = 'Experience is required';
         if (formData.linkedin && !/^https?:\/\/.+/.test(formData.linkedin)) errors.linkedin = 'Enter a valid URL';
         if (!formData.resume) errors.resume = 'Resume is required';
@@ -76,19 +85,12 @@ const JobApplication = () => {
 
     const handleFieldChange = async (path, newValue, maxSize = 0) => {
         setFileUpload(false)
-        //console.log(path, maxSize);
         const keys = path.split(',');
 
         if (maxSize) {
-            // Validate file size before making the API call
-            const fileSizeInKB = newValue.size / 1024; // Convert size from bytes to KB
-
+            const fileSizeInKB = newValue.size / 1024;
             if (fileSizeInKB > maxSize) {
-                // toast.error(`File size exceeds the limit of ${maxSize} KB.`, {
-                //     position: "top-right",
-                //     className: "error-toast-message",
-                // });
-                return null; // Don't proceed with the upload
+                return null;
             } else {
                 newValue = await uploadFile(newValue, keys[0], maxSize);
             }
@@ -126,20 +128,42 @@ const JobApplication = () => {
         setSubmitted(true);
         const errors = await validate();
         setFormErrors(errors);
-        if (Object.keys(errors).length === 0) {
-            // Submit logic here
-            //console.log('Form submitted successfully:', formData);
-            setLoading(true)
-            const response = await httpService.post('careers/apply', formData);
-            setLoading(false)
-            if (response?.data ?? null) {
-                setSubmissionSuccess(true);
-                setTimeout(() => { setSubmissionSuccess(false); }, 3000)
-            } else {
-                setSubmissionSuccess(false);
-            }
+
+        // Scroll to first error field if any
+        if (Object.keys(errors).length > 0) {
+            if (errors.name && nameRef.current) nameRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            else if (errors.email && emailRef.current) emailRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            else if (errors.phone && phoneRef.current) phoneRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            else if (errors.experience && experienceRef.current) experienceRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            else if (errors.linkedin && linkedinRef.current) linkedinRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            else if (errors.resume && resumeRef.current) resumeRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            return;
+        }
+
+        setLoading(true)
+        const response = await httpService.post('careers/apply', formData);
+        setLoading(false)
+        if (response?.data ?? null) {
+            setSubmissionSuccess(true);
+            setTimeout(() => { setSubmissionSuccess(false); }, 3000)
+        } else {
+            setSubmissionSuccess(false);
         }
     };
+
+    useEffect(() => {
+        setLoading(true);
+        const timer = setTimeout(() => {
+            setLoading(false);
+            setPageReady(true);
+        }, 500);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (!pageReady) {
+        return null;
+    }
 
     return (
         <section className="Main-Course-CP-BAI-Main-Section">
@@ -152,6 +176,7 @@ const JobApplication = () => {
                         <div className='Form-MB-Gap-32'>
                             <label>Name<span className="Main-Course-CP-Form-Content-Required-Mark">*</span></label>
                             <input
+                                ref={nameRef}
                                 type="text"
                                 name="name"
                                 placeholder="Enter your Full name"
@@ -165,6 +190,7 @@ const JobApplication = () => {
                         <div className='Form-MB-Gap-32'>
                             <label>Email Address<span className="Main-Course-CP-Form-Content-Required-Mark">*</span></label>
                             <input
+                                ref={emailRef}
                                 type="email"
                                 name="email"
                                 placeholder="Enter your email address"
@@ -178,6 +204,7 @@ const JobApplication = () => {
                         <div className='Form-MB-Gap-32'>
                             <label>Phone Number<span className="Main-Course-CP-Form-Content-Required-Mark">*</span></label>
                             <PhoneInput
+                                ref={phoneRef}
                                 international
                                 id="phone"
                                 className={`input-field demo_register_phone Main-Course-CP-BAI-input ${submitted && formErrors.phone ? 'input-field-error' : ''}`}
@@ -193,6 +220,7 @@ const JobApplication = () => {
                         <div className='Form-MB-Gap-32'>
                             <label>Experience<span className="Main-Course-CP-Form-Content-Required-Mark">*</span></label>
                             <input
+                                ref={experienceRef}
                                 type="number"
                                 step="0.1"
                                 min="0"
@@ -208,6 +236,7 @@ const JobApplication = () => {
                         <div className='Form-MB-Gap-32'>
                             <label>LinkedIn Profile</label>
                             <input
+                                ref={linkedinRef}
                                 type="url"
                                 name="linkedin"
                                 placeholder="Enter your Linkedin Profile"
@@ -247,10 +276,10 @@ const JobApplication = () => {
                             </div>
                             <label className="BAI-Resume-File-Upload-custom-file-upload">
                                 <input
+                                    ref={resumeRef}
                                     type="file"
                                     name="resume"
                                     accept=".pdf,.docx"
-                                    ref={fileRef}
                                     className={classNames("BAI-Resume-File-Upload-title", { "input-field-error": submitted && formErrors.resume })}
                                     onChange={(e) => handleFieldChange('job', e.target.files[0], '5120')}
                                 />
@@ -258,7 +287,6 @@ const JobApplication = () => {
                             </label>
                             {fileUpload ? <label>{formData?.resume?.name}</label> : <p className="BAI-Resume-Upload-Supported-Size-Message">Supported file type: Pdf; Docx (max 5MB)</p>}
                         </div>
-                        {/* {fileUpload && <label>File uploaded successfully. Details : {formData?.resume?.name}</label>} */}
                         {submitted && !fileUpload && formErrors.resume && <small className="text-danger">{formErrors.resume}</small>}
 
                         <button type="submit" className="BAI-Form-Submit-Button">Submit Application</button>

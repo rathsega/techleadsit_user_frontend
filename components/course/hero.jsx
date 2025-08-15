@@ -1,7 +1,7 @@
 import React, { useCallback, Suspense  } from "react";
-const HeroForm = React.lazy(() => import("./hero_form"));
-const HeroSuccessStoriesForm = React.lazy(() => import("./hero_success_stories_form"));
-const SuccessStories = React.lazy(() => import("./hero_success_stories"));
+import SuccessStories from "./hero_success_stories";
+import HeroForm from "./hero_form";
+import HeroSuccessStoriesForm from "./hero_success_stories_form";
 
 const Hero = React.memo(({ data, handleButtonClick, openForm, courseTitle, handleYoutibeOpenVideoPopup, demoVideoPath }) => {
     const brouchurePath = data?.brouchurePath;
@@ -11,12 +11,7 @@ const Hero = React.memo(({ data, handleButtonClick, openForm, courseTitle, handl
         if (userDetails) {
             downloadBrochure();
         } else {
-            openForm("Download Course Brochure", () => {
-                const newDetails = localStorage.getItem("userDetails");
-                if (newDetails) {
-                    downloadBrochure();
-                }
-            });
+            openForm("Download Course Brochure");
         }
     });
 
@@ -26,12 +21,7 @@ const Hero = React.memo(({ data, handleButtonClick, openForm, courseTitle, handl
         if (userDetails) {
             handleYoutibeOpenVideoPopup();
         } else {
-            openForm("Watch Demo Video", () => {
-                const newDetails = localStorage.getItem("userDetails");
-                if (newDetails) {
-                    handleYoutibeOpenVideoPopup();
-                }
-            });
+            openForm("Watch Demo Video");
         }
     }, [handleYoutibeOpenVideoPopup, openForm]);
 

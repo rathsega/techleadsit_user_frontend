@@ -2,7 +2,8 @@ import React, { useCallback, useMemo } from "react";
 import { useRouter } from 'next/router';
 import { useLoader } from "../../contexts/LoaderContext";
 import Image from "next/image"; // Importing Image component from next.js for optimized image handling
-const PricingPlans = React.memo(({ data, openForm, courseId, courseTax }) => {
+import useLmsStore  from "../../store/lmsStore";
+const PricingPlans = React.memo(({ data, openForm, courseId, courseTax, nativeCourse }) => {
     // ...existing code...
     const [selfPeaced, liveTraining, corporateTraining] = useMemo(() => {
         if (Array.isArray(data) && data.length > 0) {
@@ -16,6 +17,8 @@ const PricingPlans = React.memo(({ data, openForm, courseId, courseTax }) => {
 
     const router = useRouter();
     const { setLoading } = useLoader();
+    const setQuickPaymentVisibility = useLmsStore((state) => state.setQuickPaymentVisibility);
+    const setBuyingCourse = useLmsStore((state) => state.setBuyingCourse);
 
     const redirectToPaymentPage = useCallback(() => {
         if (typeof courseId === 'number' && courseId > 0) {
@@ -26,6 +29,17 @@ const PricingPlans = React.memo(({ data, openForm, courseId, courseTax }) => {
             console.warn("Invalid course ID provided!");
         }
     }, [courseId, setLoading, router]);
+
+    const handleBuyNowClick = () => {
+        setBuyingCourse({
+            title: nativeCourse?.basic?.title,
+            price: nativeCourse?.basic?.price,
+            discountedPrice: nativeCourse?.basic?.discountedPrice,
+            thumbnail: nativeCourse?.basic?.thumbnailImage?.path,
+            id: courseId,
+        })
+        setQuickPaymentVisibility(true);
+    };
 
     return (
         <section className="Main-Course-Choose-Your-Right-Plan-Section">
@@ -44,7 +58,7 @@ const PricingPlans = React.memo(({ data, openForm, courseId, courseTax }) => {
                                 selfPeaced?.planFeatures?.map((feature, index) => (
                                     <div className="Main-Course-Choose-Your-Right-Plan-Pricing-card-Plans-Points" key={index}>
                                         <Image priority={false} loading="lazy" src="/images/courses/Choose-Your-Right-Plan-Tick-Mark-Icon.svg"
-                                            alt="Tick-Icon" height="24" width="24" 
+                                            alt="Tick-Icon" height="24" width="24"
                                             className="Main-Course-Choose-Your-Right-Plan-Pricing-card-Plans-Points-img" />
                                         <p>{feature}</p>
                                     </div>
@@ -71,14 +85,14 @@ const PricingPlans = React.memo(({ data, openForm, courseId, courseTax }) => {
                                 liveTraining?.planFeatures?.map((feature, index) => (
                                     <div className="Main-Course-Choose-Your-Right-Plan-Pricing-card-Plans-Points" key={index}>
                                         <Image priority={false} loading="lazy" src="/images/courses/Choose-Your-Right-Plan-Tick-Mark-Icon.svg"
-                                            alt="Tick-Icon" height="24" width="24" 
+                                            alt="Tick-Icon" height="24" width="24"
                                             className="Main-Course-Choose-Your-Right-Plan-Pricing-card-Plans-Points-img" />
                                         <p>{feature}</p>
                                     </div>
                                 ))
                             }
                         </div>
-                        <button className="Main-Course-Choose-Your-Right-Plan-Pricing-card-Plans-Btn" onClick={redirectToPaymentPage}>
+                        <button className="Main-Course-Choose-Your-Right-Plan-Pricing-card-Plans-Btn" onClick={handleBuyNowClick}>
                             Buy Now <i
                                 className="fa-solid fa-arrow-right Choose-Your-Right-plan-Arrow-Icon ms-1"></i>
                         </button>
@@ -96,7 +110,7 @@ const PricingPlans = React.memo(({ data, openForm, courseId, courseTax }) => {
                                 corporateTraining?.planFeatures?.map((feature, index) => (
                                     <div className="Main-Course-Choose-Your-Right-Plan-Pricing-card-Plans-Points" key={index}>
                                         <Image priority={false} loading="lazy" src="/images/courses/Choose-Your-Right-Plan-Tick-Mark-Icon.svg"
-                                            alt="Tick-Icon" height="24" width="24" 
+                                            alt="Tick-Icon" height="24" width="24"
                                             className="Main-Course-Choose-Your-Right-Plan-Pricing-card-Plans-Points-img" />
                                         <p>{feature}</p>
                                     </div>

@@ -8,7 +8,7 @@ import { useLoader } from "../../contexts/LoaderContext";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Image from "next/image"; // Importing Image component from next.js for optimized image handling
-
+import useLmsStore from "../../store/lmsStore";
 const CourseRegistrationForm = React.memo(({
   overlayRef,
   visible = false,
@@ -31,6 +31,8 @@ const CourseRegistrationForm = React.memo(({
   const { setLoading } = useLoader();
   const [defaultCountry, setDefaultCountry] = useState("IN");
   const [demos, setDemos] = useState([])
+  const setFormHeading = useLmsStore((state) => state.setFormHeading);
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -168,6 +170,13 @@ const CourseRegistrationForm = React.memo(({
           setLoading(false)
           // hidePopupForm();
           setSuccess(true);
+          //Redirect to thank you page
+          if(pageName === 'course') {
+            setFormHeading(" " + heading + " ");
+            router.push(`/thankyou?courseTitle=${courseTitle}&courseId=${courseId}&slug=${router.query.slug.join('_')}`);
+          }else{
+            router.push(`/thankyou`);
+          }
         }
       } catch (err) {
         captchaRef.current?.resetCaptcha(); // Reset CAPTCHA

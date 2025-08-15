@@ -81,12 +81,16 @@ export default function DynamicPage(props) {
                     changedData={props.changedData}
                     courseId={props.courseId}
                     courseTax={courseTax}
+                    demos={props.demos}
+                    upcomingDemoDate={props.upcomingDemoDate}
+                    relatedBlogs={props.relatedBlogs}
+                    relatedCourses={props.relatedCourses}
                 />
             );
         } else {
             return <Home />;
         }
-    }else {
+    } else {
         // If slug is not defined, render the Home component
         return <Home />;
     }
@@ -157,6 +161,25 @@ export default function DynamicPage(props) {
     return { props: { isCourse: false } };
 }*/
 
+function getNearestUpcomingDate(data) {
+    if (!Array.isArray(data)) return null; // <-- Fix: guard clause
+
+    const now = new Date();
+
+    const nearest = data
+        .map(item => new Date(item.date))
+        .filter(date => date > now)
+        .sort((a, b) => a - b)[0];
+
+    if (!nearest) return null;
+
+    return nearest.toLocaleDateString("en-GB", {
+        day: "2-digit",
+        month: "long",
+        year: "numeric"
+    });
+}
+
 export async function getStaticProps({ params }) {
     const { slug } = params;
     const slugPath = Array.isArray(slug) ? slug.join('/') : slug;
@@ -183,13 +206,28 @@ export async function getStaticProps({ params }) {
         changedData = changedParsedData.find(cpd => cpd.courseId == data?.id) || {};
 
         // ✅ Parallelize API calls
-        const [courseDetailRes, slugIdRes] = await Promise.all([
+        const [courseDetailRes, slugIdRes, upcomingDemosRes, blogsAndCoursesRes] = await Promise.all([
             httpService.get(`courses/getCourseDetailsByCourseId?courseId=${data?.id}`),
-            httpService.post('course/getCourseIdBySlug', { slug: slug?.join(' / ') })
+            httpService.post('course/getCourseIdBySlug', { slug: slug?.join(' / ') }),
+            httpService.post("courses/getUpcomingDemos", { courseId: data?.id }),
+            httpService.get(`courses/getBlogsAndCoursesByCategory?categoryName=${encodeURIComponent(data?.category)}`)
         ]);
+
 
         if (courseDetailRes?.status === 404) {
             return { notFound: true };
+        }
+
+        let demos, upcomingDemoDate;
+        if (upcomingDemosRes && upcomingDemosRes.data) {
+            demos = upcomingDemosRes.data.upcomingDemos || [];
+            upcomingDemoDate = getNearestUpcomingDate(upcomingDemosRes.data);
+        }
+
+        let relatedBlogs, relatedCourses;
+        if (blogsAndCoursesRes && blogsAndCoursesRes.data) {
+            relatedBlogs = blogsAndCoursesRes.data.blogs || [];
+            relatedCourses = blogsAndCoursesRes.data.courses || [];
         }
 
         const nativeCourse = courseDetailRes?.data || {};
@@ -201,9 +239,13 @@ export async function getStaticProps({ params }) {
                 filePath,
                 nativeCourse,
                 changedData,
-                courseId
+                courseId,
+                demos,
+                upcomingDemoDate,
+                relatedBlogs,
+                relatedCourses
             },
-            revalidate: 60,
+            revalidate: 43200,
         };
     } catch (error) {
         console.error('Error in getStaticProps:', error);

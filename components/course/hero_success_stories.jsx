@@ -14,7 +14,7 @@ const SuccessStories = React.memo(({ data }) => {
 
     return (
         <div className="phone-wrapper">
-            <img priority={true} src="/images/courses/Main-Course-Banner-Hero-R-Img.webp" loading="eager"
+            <img fetchPriority="high" src="/images/courses/Main-Course-Banner-Hero-R-Img.webp" loading="eager"
                 className="phone-image" alt="Phone Image" />
 
             <div className="carousel-overlay">
@@ -33,8 +33,7 @@ const SuccessStories = React.memo(({ data }) => {
                                             <p className="Main-Course-Hero-card-role-name">
                                                 {story.studentDesignation}
                                             </p>
-                                            <span className="Main-Course-Hero-card-span-1">Salary Hike</span>
-                                            <span className="Main-Course-Hero-card-span-2">{story.salaryHikeInPercentage}</span>
+                                            <span className="Main-Course-Hero-card-span-1">Salary Hike  <span className="Main-Course-Hero-card-span-2">{story.salaryHikeInPercentage}</span></span>
                                         </div>
                                     </div>
                                     <p className="Main-Course-Hero-card-rev">

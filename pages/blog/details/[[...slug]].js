@@ -140,7 +140,7 @@ export default function BlogDetailsPage({ initialBlogDetails }) {
                         overviewDetails={blogDetails?.overview}
                         keywords={blogDetails?.basic?.blogKeywords}
                         advertisement={blogDetails?.advertisement}
-                        viewsCount={blogDetails?.views?.length}
+                        viewsCount={blogDetails?.views}
                         currentBlogId={currentBlogId}
                         likeCount={likeCount}
                         categories={categories}
@@ -154,7 +154,7 @@ export default function BlogDetailsPage({ initialBlogDetails }) {
                         details={blogDetails?.overview}
                         keywords={blogDetails?.basic?.blogKeywords}
                         advertisement={blogDetails?.advertisement}
-                        viewsCount={blogDetails?.views?.length}
+                        viewsCount={blogDetails?.views}
                         currentBlogId={currentBlogId}
                         categories={categories}
                         topBlogsList={topBlogsList}

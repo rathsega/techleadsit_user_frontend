@@ -67,7 +67,7 @@ const ComapniesWaitngForYou = React.memo(({ data }) => {
                         <h3 className="Main-Course-O-C-Card-Heading text-center mb-4">Your Next oppotunity is Here
                             Find jobs across startups & MNC's</h3>
                         <div className="Hiring-Partners-Trusted-By-Top-Companies-track">
-                            <div className="Hiring-Partners-Trusted-By-Top-Companies-slide mb-5" id="leftSlide">
+                            <div className="Hiring-Partners-Trusted-By-Top-Companies-slide mb-3" id="leftSlide">
                                 <div className="Career-Path-You-Can-Explore-slide-images" id="imageSet">
 
                                     <Image priority={false} src="/images/courses/S-C-AAIS-Icon.png" alt="Slider-Company-Icon" width={184} height={64} />

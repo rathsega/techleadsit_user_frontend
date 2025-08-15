@@ -98,7 +98,7 @@ const FooterStrip = () => {
                 </svg>
                 <div className="ms-2 mainCoursetext">
                     <p className="Main-Course-strip-p1">Learning Format</p>
-                    <p className="Main-Course-strip-p2">Classroom, Online, Videos</p>
+                    <p className="Main-Course-strip-p2">Online, Self Paced</p>
                 </div>
             </div>
 

@@ -10,6 +10,8 @@ import { useLoader } from "../../contexts/LoaderContext";
 const ReserveYourSeatPopupForm = ({ handleReserveSeatVisibility, popupProps, handleUserDetailsSubmissionStatus, courseName, demoDate }) => {
 
     const [defaultCountry, setDefaultCountry] = useState('IN');
+    const [captchaSize, setCaptchaSize] = useState("normal");
+
 
     // const location = useLocation();
     const router = useRouter();
@@ -158,6 +160,20 @@ const ReserveYourSeatPopupForm = ({ handleReserveSeatVisibility, popupProps, han
         };
     }, [handleReserveSeatVisibility]);
 
+    useEffect(() => {
+        // Set initial size
+        const updateCaptchaSize = () => {
+            if (window.innerWidth < 360) {
+                setCaptchaSize("compact");
+            } else {
+                setCaptchaSize("normal");
+            }
+        };
+        updateCaptchaSize();
+        window.addEventListener("resize", updateCaptchaSize);
+        return () => window.removeEventListener("resize", updateCaptchaSize);
+    }, []);
+
     return (
         <>
             <div className="overlay"></div>
@@ -250,7 +266,7 @@ const ReserveYourSeatPopupForm = ({ handleReserveSeatVisibility, popupProps, han
                             siteKey={process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_KEY}
                             onTokenChange={(token) => setCaptchaToken(token)}
                             theme="light"
-                            size="normal"
+                            size={captchaSize} 
                         />
                         {formErrors.captcha && <small className="text-danger">{formErrors.captcha}</small>}
                     </div>

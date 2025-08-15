@@ -11,7 +11,7 @@ const IsthisCourseRightForYou = React.memo(({ data }) => {
             </p>
             <div className="Is-This-Course-Right-Segments">
                 <div className="Is-This-Course-Right-Segment">
-                    <div className="d-flex align-items-flex-start mb-4">
+                    <div className="d-flex align-items-flex-start mb-4 mb-md-2">
                         <Image priority={false} loading="lazy" src="/images/courses/Fresher-Graduates-icon.svg"
                             alt="Fresher-Graduates-icon" className="Is-This-Course-Right-card-Icon" height="24"
                             width="24" />
@@ -36,7 +36,7 @@ const IsthisCourseRightForYou = React.memo(({ data }) => {
                 <Image priority={false} loading="lazy" src="/images/courses/Main-Course-Is-this-Course-Right.webp"
                     alt="Is-this-course-right-for-you-img" width="365" height="450" style={{"width":"100%","height":"100%","objectFit":"cover","borderRadius":"20px","display":"block"}} className="Is-this-course-right-for-you-img" />
                 <div className="Is-This-Course-Right-Segment">
-                    <div className="d-flex align-items-flex-start mb-4">
+                    <div className="d-flex align-items-flex-start mb-4 mb-md-2">
                         <Image priority={false} loading="lazy" src="/images/courses/Working-Professional-icon.svg"
                             alt="Working-Professional-icon" className="Is-This-Course-Right-card-Icon"
                             height="22" width="22" />

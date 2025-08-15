@@ -6,6 +6,7 @@ import PhoneInput from "react-phone-number-input";
 import { isValidPhoneNumber } from "libphonenumber-js";
 import "react-phone-number-input/style.css";
 import { useLoader } from "../../contexts/LoaderContext";
+import useLmsStore  from "../../store/lmsStore";
 
 function convertWebinarDateFormat(date) {
     const newDate = new Date(date);
@@ -53,6 +54,16 @@ const DirectPayments = ({ courseId }) => {
     const [errors, setErrors] = useState({})
 
     const processingPayment = useRef(false);
+    const cartVisitor = useLmsStore((state) => state.cartVisitor);
+
+    useEffect(() => {
+        if (cartVisitor) {
+            setName(cartVisitor.fullName || "");
+            setEmail(cartVisitor.email || "");
+            setPhone(cartVisitor.phone || "");
+        }
+        console.log("Cart Visitor: ", cartVisitor);
+    }, [cartVisitor]);
 
     useEffect(() => {
         const fetchCountries = async () => {
@@ -515,6 +526,7 @@ const DirectPayments = ({ courseId }) => {
                                         required
                                         onChange={(e) => setName(e.target.value)}
                                         id="name"
+                                        value={name}
                                         className={`Payment-input-field ${proceedToCheckoutClicked && (!name || !validateName(name)) ? "error-label" : ""}`}
                                         placeholder=" "
                                         ref={nameRef}
@@ -524,7 +536,7 @@ const DirectPayments = ({ courseId }) => {
                                         className="required">*</span></label>
                                 </div>
                                 <div className="Payment-input-container">
-                                    <input type="email" onChange={handleEmailChange} id="email" ref={emailRef} className={`Payment-input-field ${proceedToCheckoutClicked && (!email || !validateEmail(email)) ? "error-label" : ""}`} placeholder=" " />
+                                    <input type="email" onChange={handleEmailChange} id="email" value={email} ref={emailRef} className={`Payment-input-field ${proceedToCheckoutClicked && (!email || !validateEmail(email)) ? "error-label" : ""}`} placeholder=" " />
                                     <label htmlFor="email" className="Payment-input-label top-animation">Email<span
                                         className="required">*</span></label>
                                 </div>

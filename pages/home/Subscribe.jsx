@@ -44,9 +44,9 @@ const Subscribe = () => {
         <section className="Main-Course-Home-Page-Get-Notified-About-Blogs-get-notified">
             <div className="Main-Course-Home-Page-Get-Notified-About-Blogs-newsletter-banner">
                 <div className="Main-Course-Home-Page-Get-Notified-About-Blogs-get-notified-card">
-                    <h1 className="Main-Course-Home-Page-Get-Notified-About-Blogs-newsletter-h">Get Notified about
+                    <h2 className="Main-Course-Home-Page-Get-Notified-About-Blogs-newsletter-h">Get Notified about
                         Latest Blogs,
-                        Interview Questions & Job Alerts</h1>
+                        Interview Questions & Job Alerts</h2>
                     <p className="Main-Course-Home-Page-Get-Notified-About-Blogs-newsletter-p">Stay updated with
                         Jobs, Interview
                         Questions, New Features and Expert Talks</p>

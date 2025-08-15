@@ -21,8 +21,9 @@ const Footer = React.memo(() => {
 
     const getTopCourses = useCallback(async () => {
         try {
+            setLoading(true);
             let response = await httpService.get('/courses/getTopCourses');
-            //console.log(response);
+            setLoading(false);
             if (response && response?.data && response?.data?.courses) {
                 setTopCourses(response?.data?.courses)
             }
@@ -33,7 +34,9 @@ const Footer = React.memo(() => {
 
     const getActiveSubcategoriesWithCourseCount = async () => {
         try {
+            setLoading(true);
             const response = await httpService.get('courses/getActiveSubcategoriesWithCourseCount');
+            setLoading(false);
             if (response?.data) {
                 setCategories(response?.data)
             }
@@ -58,6 +61,11 @@ const Footer = React.memo(() => {
                     <Image loading="lazy" src="/images/Main-Course-Page-Techleads-Logo.svg" className="cursor-pointer" width="236" height="40" onClick={openHome} alt="Footer-Techleads-Logo" />
                     <p><a href="tel:+918125323232">Phone: +91 8125323232</a></p>
                     <p><a href="mailto:info@techleadsit.com">Email: info@techleadsit.com</a></p>
+                    
+                    <div className="d-flex gap-2 align-items-center">
+                        <div className="Footer-Mobile-App-Icons">
+                            <a href="https://apps.apple.com/in/app/tech-leads-it/id6615066544" target="_blank" rel="noopener noreferrer"><img alt="Click-For-App-Store" loading="lazy" width="150" height="47" decoding="async" data-nimg="1"  src="/images/courses/Click-For-App-Store.avif" /></a><a href="https://play.google.com/store/apps/details?id=com.techleadsit.academy_app&amp;pli=1" target="_blank" rel="noopener noreferrer"><img alt="Click-For-Play-Store" loading="lazy" width="150" height="47" decoding="async" data-nimg="1"  src="/images/courses/Click-For-Play-Store.avif" /></a></div><img src="/images/courses/Scan-This-For-App.png" alt="Scan-for-Mobile-App" className="Main-Course-Footer-Scan-For-Mobile-App" /></div>
+
                 </div>
                 <div className="Main-Course-Footer-Wrap-Section">
                     <div className="Main-Course-Footer-Section-Nav-Section">
@@ -80,7 +88,6 @@ const Footer = React.memo(() => {
                                     key={i}
                                     style={{
                                         height: 24,
-                                        background: "#f0f0f0",
                                         margin: "8px 0",
                                         borderRadius: 4
                                     }}
@@ -95,7 +102,7 @@ const Footer = React.memo(() => {
                     </div>
                     <div className="Main-Course-Footer-Section-Nav-Section">
                         <h2>Useful Links</h2>
-                        <a href="/comingsoon" target="_blank"><p>Upcoming Batches</p></a>
+                        <a href="/upcoming-batches" target="_blank"><p>Upcoming Batches</p></a>
                         <a href="/blogs" target="_blank"><p>Blogs</p></a>
                         <a href="/interview_questions" target="_blank"><p>Interview Questions</p></a>
                         <a href="/careers" target="_blank"><p>Careers</p></a>
@@ -113,7 +120,7 @@ const Footer = React.memo(() => {
                 <p className="Main-Course-Copyright-Text">&copy; Copyright Tech Leads IT. All Rights Reserved </p>
                 <div className="Main-Course-Stay-Connected-Div">
                     <p className="Main-Course-Stay-Connected-Para">Stay Connected with us </p>
-                    <div className="d-flex gap-4">
+                    <div className="d-flex gap-3">
                         <a href="https://www.facebook.com/techleadsitinstitute" target="_blank"
                             rel="noopener noreferrer">
                             <Image loading="lazy" priority={false} src="/images/Main-Course-Follow-Facebook-Icon.svg" alt="Footer-Facebook-Logo" className="Main-Course-Footer-Social-Media-Icons" width={46} height={46} />

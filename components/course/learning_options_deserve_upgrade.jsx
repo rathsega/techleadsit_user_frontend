@@ -80,6 +80,7 @@ const LearningOptionsDeserveUpgrade = React.memo(({ courseTitle }) => {
                 setError(false);
                 setFormData({ fullName: "", email: "", phone: "" });
                 setErrorMsg("Thank you for your submission!");
+                router.push(`/thankyou?courseTitle=${courseTitle}&&slug=${router.query.slug.join('_')}`);
             } catch (err) {
                 setSuccess(false);
                 setError(true);
@@ -117,8 +118,7 @@ const LearningOptionsDeserveUpgrade = React.memo(({ courseTitle }) => {
                 </h2>
                 <p className="Main-Course-CTA-banner-p4">
                     "Upskilling yourself and keeping your resume updated significantly boosts your chances of
-                    landing a great job faster. Tech Leads IT helps you craft a powerful resume tailored to your
-                    current job profile, setting you apart in the job market."
+                    landing a great job faster."
                 </p>
                 <form className="contact-form Contact-Form-Banner-4" onSubmit={handleSubmit} noValidate>
                     <div className="Form-input-info-Container">
@@ -136,6 +136,7 @@ const LearningOptionsDeserveUpgrade = React.memo(({ courseTitle }) => {
                     <div className="Form-input-info-Container">
                         <input className="Form-input-info-email Form-input-info-email-banner-4 Form-Input-Common-Info" type="email"
                             name="email"
+                            id="email"
                             placeholder=" "
                             value={formData.email}
                             onChange={handleChange}
@@ -175,14 +176,14 @@ const LearningOptionsDeserveUpgrade = React.memo(({ courseTitle }) => {
                     </button>
                 </form>
                 {success && <div className="mt-1 text-center">
-                    <Image priority={false} loading="lazy" src="/images/home/Main-Course-Home-Page-Get-Notified-About-Blogs-Tick-Icon.svg"
+                    <img loading="lazy" src="/images/home/Main-Course-Home-Page-Get-Notified-About-Blogs-Tick-Icon.svg"
                         alt="Tick-Icon"
                         className="Main-Course-Home-Page-Get-Notified-About-Blogs-newsletter-tick-img" />
                     <span className="Main-Course-Home-Page-Get-Notified-About-Blogs-newsletter-message">Thank
                         Registration successful!, Our team will get back to you. </span>
                 </div>}
                 {error && <div className="mt-1 text-center">
-                    <Image priority={false} loading="lazy" src="/images/home/Main-Course-Home-Page-Get-Notified-About-Blogs-invalid-Icon.svg"
+                    <img loading="lazy" src="/images/home/Main-Course-Home-Page-Get-Notified-About-Blogs-invalid-Icon.svg"
                         alt="Invalid-Icon" 
                         className="Main-Course-Home-Page-Get-Notified-About-Blogs-newsletter-invalid-img" />
                     <span className="Main-Course-Home-Page-Get-Notified-About-Blogs-newsletter-message"> {errorMsg} </span>

@@ -67,12 +67,7 @@ const Curriculum = ({ data, courseTitle, brouchurePath, changedData, openForm })
         if (userDetails) {
             downloadBrochure();
         } else {
-            openForm("Download Course Brochure", () => {
-                const newDetails = localStorage.getItem("userDetails");
-                if (newDetails) {
-                    downloadBrochure();
-                }
-            });
+            openForm("Download Course Brochure");
         }
     };
 

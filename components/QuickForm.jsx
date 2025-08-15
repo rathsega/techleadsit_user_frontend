@@ -27,31 +27,20 @@ const QuickForm = () => {
   });
 
   const toggleForm = () => {
-    
     setSuccess(false);
     setFormErrors({});
     setSubmitted(false);
 
     if (showForm) {
-      // Trigger closing animation
-      // setIsAnimating(true);
       formRef.current.classList.remove('animate');
       formRef.current.classList.add('zoomOut');
-
-      // Wait for animation to finish
       setTimeout(() => {
         setShowForm(false);
-        // setIsAnimating(false);
         formRef.current.classList.remove('zoomOut');
       }, 400);
     } else {
       setShowForm(true);
-      // Trigger opening animation after render
-      // setTimeout(() => {
-      //   formRef.current.classList.add('animate');
-      // }, 0);
     }
-
   };
 
   const validateForm = (fields = ["fullName", "email", "phone", "message"]) => {
@@ -98,14 +87,14 @@ const QuickForm = () => {
   };
 
   const handleChange = (e) => {
-    const { id, value } = e.target;
+    const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [id]: value,
+      [name]: value,
     }));
 
     if (submitted) {
-      validateForm([id]);
+      validateForm([name]);
     }
   };
 
@@ -189,28 +178,32 @@ const QuickForm = () => {
           <div className="QuickForm-close" onClick={toggleForm}>×</div>
           <form onSubmit={handleSubmit} noValidate>
             <div className="QuickForm-group">
-              <label>Name <span className="QuickForm-required">*</span></label>
+              <label htmlFor="quickform-fullName">Name <span className="QuickForm-required">*</span></label>
               <input
                 type="text"
                 name="fullName"
                 placeholder="Enter Name"
                 className='QuickForm-InputField'
-                id='fullName'
+                id='quickform-fullName'
                 value={formData.fullName}
                 onChange={handleChange}
+                maxLength={100}
+                autoComplete="off"
               />
               {formErrors.fullName && <small className="text-danger">{formErrors.fullName}</small>}
             </div>
             <div className="QuickForm-group">
-              <label>Email ID <span className="QuickForm-required">*</span></label>
+              <label htmlFor="quickform-email">Email ID <span className="QuickForm-required">*</span></label>
               <input
                 type="email"
                 name="email"
-                id='email'
+                id='quickform-email'
                 placeholder="Enter Email ID"
                 className='QuickForm-InputField'
                 value={formData.email}
                 onChange={handleChange}
+                maxLength={100}
+                autoComplete="off"
               />
               {formErrors.email && <small className="text-danger">{formErrors.email}</small>}
             </div>
@@ -219,7 +212,7 @@ const QuickForm = () => {
               <div className="QuickForm-phone-wrapper">
                 <PhoneInput
                   international
-                  id="phone"
+                  id="quickform-phone"
                   className="input-field QuickForm-phone-wrapper cu_register_phone QuickForm-InputField"
                   defaultCountry={defaultCountry}
                   value={formData.phone}
@@ -230,16 +223,18 @@ const QuickForm = () => {
               {formErrors.phone && <small className="text-danger">{formErrors.phone}</small>}
             </div>
             <div className="QuickForm-group">
-              <label>Leave a Message <span className="QuickForm-required">*</span></label>
+              <label htmlFor="quickform-message">Leave a Message <span className="QuickForm-required">*</span></label>
               <textarea
                 name="message"
                 placeholder="Your message here..."
                 required
                 rows="3"
-                id='message'
+                id='quickform-message'
                 className='QuickForm-InputField Text-Area-Course-Naming-H'
                 value={formData.message}
                 onChange={handleChange}
+                maxLength={500}
+                autoComplete="off"
               ></textarea>
               {formErrors.message && <small className="text-danger">{formErrors.message}</small>}
             </div>

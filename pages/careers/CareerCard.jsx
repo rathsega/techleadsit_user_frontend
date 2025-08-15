@@ -71,7 +71,7 @@ const CareerCard = ({ data }) => {
                     }
 
                 </div>
-                <div className="d-flex justify-content-between mt-3">
+                <div className="d-flex justify-content-between mt-1">
                     <div className="d-flex gap-1 align-items-center">
                         <img src="/images/careers/CP-FYNJ-Calender-Icon.svg"
                             alt="CP-FYNJ-Calender-Icon" width="18" height="18" className="CP-FYNJ-Small-Icons" />
