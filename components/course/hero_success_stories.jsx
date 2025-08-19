@@ -14,8 +14,15 @@ const SuccessStories = React.memo(({ data }) => {
 
     return (
         <div className="phone-wrapper">
-            <img fetchPriority="high" src="/images/courses/Main-Course-Banner-Hero-R-Img.webp" loading="eager"
-                className="phone-image" alt="Phone Image" />
+            <Image
+                src="/images/courses/Main-Course-Banner-Hero-R-Img.webp"
+                width={513}
+                height={548}
+                alt="Phone Image"
+                fetchPriority="high"
+                priority
+                style={{width: "100%", height: "100%", objectFit: "contain", display: "block"}}
+            />
 
             <div className="carousel-overlay">
                 <div id="customCarouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
@@ -58,8 +65,6 @@ const SuccessStories = React.memo(({ data }) => {
             </div>
         </div>
     )
-}, (prevProps, nextProps) => {
-    return JSON.stringify(prevProps.data) === JSON.stringify(nextProps.data);
-});
+}, (prevProps, nextProps) => prevProps.data === nextProps.data);
 
 export default SuccessStories;

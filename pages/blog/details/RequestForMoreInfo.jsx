@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from "react";
-import PhoneInput from "react-phone-number-input";
-import "react-phone-number-input/style.css";
+import dynamic from 'next/dynamic';
+const PhoneInput = dynamic(() => import('react-phone-number-input'), { ssr: false });
+import 'react-phone-number-input/style.css';
+import { isValidPhoneNumber } from 'react-phone-number-input';
 import httpService from "../../../services/httpService";
-import { isValidPhoneNumber } from "libphonenumber-js";
 import SmartReCaptcha from "../../captcha/SmartReCaptcha";
 
 const RequestForMoreInfo = ({ currentBlogId }) => {
@@ -170,7 +171,7 @@ const RequestForMoreInfo = ({ currentBlogId }) => {
                     ref={captchaRef}
                     siteKey={process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_KEY}
                     onTokenChange={(token) => setCaptchaToken(token)}
-                    theme="dark"
+                    theme="light"
                     size={captchaSize}
                 />
             </div>

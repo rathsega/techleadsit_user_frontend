@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://techleadsit.com
+
+# Sitemaps
+Sitemap: https://techleadsit.com/sitemap.xml

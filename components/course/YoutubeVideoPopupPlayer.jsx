@@ -7,8 +7,6 @@ const ReactPlayer = dynamic(() => import('react-player'), {
 
 const YoutubeVideoPopupPlayer = React.memo(({ youtibeopenVideoPopup, handleYoutibeOpenVideoPopup, videoPath }) => {
     const handleClose = useCallback(() => handleYoutibeOpenVideoPopup(false), [handleYoutibeOpenVideoPopup]);
-    console.log("YoutubeVideoPopupPlayer: videoPath", videoPath);
-    console.log("YoutubeVideoPopupPlayer: youtibeopenVideoPopup", youtibeopenVideoPopup);
     if (!youtibeopenVideoPopup || !videoPath) return null;
 
     return (

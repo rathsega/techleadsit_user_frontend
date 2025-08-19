@@ -72,7 +72,7 @@ const Footer = React.memo(() => {
                         <h2>Top Categories</h2>
                         {categories.length === 0
                             ? Array.from({ length: 5 }).map((_, i) => (
-                                <div key={i} style={{ height: 24, background: "#f0f0f0", margin: "8px 0", borderRadius: 4 }} />
+                                <div key={i} style={{ height: 24, margin: "8px 0", borderRadius: 4 }} />
                             ))
                             : categories.slice(0, 5).map((cat, catIndex) => (
                                 <a href={`/courses?subCategoryId=${cat?.subCategoryId}&subCategoryName=${cat?.subCategoryName}`} key={catIndex} target="_blank">

@@ -1,6 +1,8 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
-import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
-import 'react-phone-number-input/style.css'; // Required for styling
+import dynamic from 'next/dynamic';
+const PhoneInput = dynamic(() => import('react-phone-number-input'), { ssr: false });
+import 'react-phone-number-input/style.css';
+import { isValidPhoneNumber } from 'react-phone-number-input';
 import classNames from 'classnames';
 import { useRouter } from "next/router";
 import { useLoader } from '../../../contexts/LoaderContext';

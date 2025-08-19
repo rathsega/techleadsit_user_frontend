@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import httpService from "../../../services/httpService";
-import PhoneInput from "react-phone-number-input";
-import "react-phone-number-input/style.css";
-import { isValidPhoneNumber } from "libphonenumber-js";
+import dynamic from 'next/dynamic';
+const PhoneInput = dynamic(() => import('react-phone-number-input'), { ssr: false });
+import 'react-phone-number-input/style.css';
+import { isValidPhoneNumber } from 'react-phone-number-input';
 
 const CommentForm = ({ blogId, viewsCount, likeCount }) => {
     const [fullName, setFullName] = useState("");

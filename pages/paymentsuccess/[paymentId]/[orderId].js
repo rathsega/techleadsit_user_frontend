@@ -2,7 +2,6 @@ import { useRouter } from 'next/router';
 import httpService from './../../../services/httpService';
 import React, { useRef, useEffect, useState, useMemo } from "react";
 import dynamic from "next/dynamic";
-import { Page, Text, View, Document, pdf } from "@react-pdf/renderer";
 const DirectInvoiceAutoDownload = dynamic(() => import("./../../direct_payment/DirectInvoiceAutoDownload"), { ssr: false });
 import DirectPaymentInvoiceReact from './../../direct_payment/DirectPaymentInvoiceReact';
 import { useLoader } from '../../../contexts/LoaderContext';
@@ -73,7 +72,7 @@ const PaymentSuccessPage = () => {
     const pdfRef = useRef(null);
 
     const generateBase64PDF = async (data) => {
-        const invoiceRef = useRef(null);
+        const { pdf } = await import("@react-pdf/renderer");
         const blob = await pdf(<DirectPaymentInvoiceReact invoiceDetails={data} />).toBlob();
 
         return new Promise((resolve) => {
@@ -207,7 +206,7 @@ const PaymentSuccessPage = () => {
     };
 
     const handleManualDownload = async () => {
-        const invoiceRef = useRef(null);
+        const { pdf } = await import("@react-pdf/renderer");
         const blob = await pdf(<DirectPaymentInvoiceReact  invoiceDetails={invoiceDetails} />).toBlob();
         const url = URL.createObjectURL(blob);
         window.open(url, '_blank');

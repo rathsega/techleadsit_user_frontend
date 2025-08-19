@@ -4,8 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* GTM Script */}
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -15,134 +14,23 @@ export default function Document() {
               })(window,document,'script','dataLayer','GTM-N8ML9N5');
             `,
           }}
-        />
+        /> */}
 
-        {/* DNS prefetch and preconnect for faster loading */}
         <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
 
-        {/* Inline Critical CSS - This eliminates render blocking */}
-        <style dangerouslySetInnerHTML={{
-          __html: `
-            /* Critical CSS - Above the fold styling */
-            * {
-              box-sizing: border-box;
-              margin: 0;
-              padding: 0;
-            }
-            
-            body {
-              font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-              line-height: 1.6;
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smoothing: grayscale;
-            }
-            
-            /* Critical Bootstrap classes - Only what's needed for above the fold */
-            .container, .container-fluid { 
-              width: 100%; 
-              padding-right: 15px; 
-              padding-left: 15px; 
-              margin-right: auto; 
-              margin-left: auto; 
-            }
-            
-            .row { 
-              display: flex; 
-              flex-wrap: wrap; 
-              margin-right: -15px; 
-              margin-left: -15px; 
-            }
-            
-            .col, [class*="col-"] { 
-              position: relative; 
-              width: 100%; 
-              padding-right: 15px; 
-              padding-left: 15px; 
-            }
-            
-            .d-flex { display: flex !important; }
-            .d-none { display: none !important; }
-            .justify-content-center { justify-content: center !important; }
-            .align-items-center { align-items: center !important; }
-            .text-center { text-align: center !important; }
-            
-            .btn { 
-              display: inline-block; 
-              font-weight: 400; 
-              text-align: center; 
-              white-space: nowrap; 
-              vertical-align: middle; 
-              user-select: none; 
-              border: 1px solid transparent; 
-              padding: 0.375rem 0.75rem; 
-              font-size: 1rem; 
-              line-height: 1.5; 
-              border-radius: 0.25rem; 
-              cursor: pointer; 
-              text-decoration: none;
-              transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
-            }
-            
-            .btn-primary { 
-              color: #fff; 
-              background-color: #007bff; 
-              border-color: #007bff; 
-            }
-            
-            .btn-primary:hover { 
-              background-color: #0056b3; 
-              border-color: #004085; 
-            }
-            
-            /* Loading state */
-            .loading { 
-              display: flex; 
-              justify-content: center; 
-              align-items: center; 
-              min-height: 100vh; 
-              font-size: 16px; 
-            }
+        <script src="https://www.gstatic.com/recaptcha/releases/07cvpCr3Xe3g2ttJNUkC6W0J/recaptcha__en.js" defer></script>
 
-            /* Hero section critical styles */
-            .hero-section {
-              min-height: 60vh;
-              display: flex;
-              align-items: center;
-              padding: 2rem 0;
-            }
+        <link rel="preload" href="/fonts/mont-latin.woff2" as="font" type="font/woff2" crossorigin />
 
-            /* Navigation critical styles */
-            .navbar {
-              padding: 0.5rem 1rem;
-              position: relative;
-              display: flex;
-              flex-wrap: wrap;
-              align-items: center;
-              justify-content: space-between;
-            }
-
-            /* Font fallback with proper font-display */
-            @font-face {
-              font-family: 'Poppins Fallback';
-              src: local('Arial'), local('Helvetica'), local('sans-serif');
-              font-display: swap;
-              ascent-override: 105%;
-              descent-override: 35%;
-              line-gap-override: 10%;
-            }
-            
-            /* Use fallback font initially */
-            body, .hero-title, .main-heading {
-              font-family: 'Poppins Fallback', system-ui, sans-serif;
-            }
-          `
-        }} />
-
-        {/* Non-blocking CSS loader script */}
+        {/* <link rel="stylesheet" href="/styles/bootstrap.min.css" media="print" onLoad="this.media='all'" /> */}
+        <link rel="stylesheet" href="/styles/all.min.css" media="print" onLoad="this.media='all'" />
+        <link rel="stylesheet" href="/styles/bootstrap-icons.min.css" media="print" onLoad="this.media='all'" />
+        <link rel="preload" as="image" href="/images/courses/Main-Course-Banner-Hero-R-Img.webp" />
+         {/* Non-blocking CSS loader script */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -214,67 +102,43 @@ export default function Document() {
             `,
           }}
         />
-
-        {/* Preload critical font files to eliminate FOIT */}
-        <link
-          rel="preload"
-          href="https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          href="https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin=""
-        />
-
-        {/* Service Worker for caching */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if ('serviceWorker' in navigator) {
-                window.addEventListener('load', function() {
-                  navigator.serviceWorker.register('/sw.js')
-                    .then(function(reg) {
-                      console.log('SW registered');
-                    })
-                    .catch(function(err) {
-                      console.log('SW registration failed');
-                    });
-                });
-              }
-            `,
-          }}
-        />
-
-        {/* Fallback for no-JS users - Only essential CSS */}
-        <noscript>
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-            integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
-            crossOrigin="anonymous"
-            referrerPolicy="no-referrer"
-          />
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-          />
-        </noscript>
+        <style>{`
+    .phone-wrapper {
+      position: relative;
+      width: 500px;
+      height: 600px;
+      margin: 0 auto;
+      flex-shrink: 0;
+      overflow-x: hidden;
+    }
+    @media (min-width:992px) and (max-width:1400px) {
+      .phone-wrapper {
+        width: 450px;
+        height: 470px;
+        margin-top: 20px;
+      }
+    }
+    @media (min-width:576px) and (max-width:992px) {
+      .phone-wrapper {
+        width: 500px;
+        height: 520px;
+      }
+    }
+    @media (max-width:576px) {
+      .phone-wrapper {
+        width: auto;
+      }
+    }
+    @media (max-width:480px) {
+      .phone-wrapper {
+        height: auto;
+        margin-top: 25px;
+      }
+    }
+  `}</style>
       </Head>
-      
-      <body>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-N8ML9N5"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
+      <body tabIndex={0}>
+
         <Main />
         <NextScript />
       </body>

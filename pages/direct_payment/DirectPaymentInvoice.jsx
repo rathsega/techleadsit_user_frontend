@@ -1,23 +1,47 @@
 import React, { forwardRef, useEffect, useState } from "react";
 import { toWords } from "number-to-words";
 import { format } from "date-fns";
-import { Page, Text, View, Document, StyleSheet, Font } from "@react-pdf/renderer";
 
-// Register the Inter font (Ensure internet connection for font loading)
-Font.register({
-    family: "Inter",
-    src: "https://fonts.gstatic.com/s/inter/v3/UcC8FJQ4PlQkZZKc-PtK8H0.woff2",
-});
 
-// Define styles for the PDF document
-const styles = StyleSheet.create({
-    page: { padding: 20 },
-    section: { marginBottom: 10 },
-    title: { fontSize: 18, fontFamily: "Inter", fontWeight: "bold", marginBottom: 5 },
-    text: { fontSize: 12, fontFamily: "Inter" },
-});
 
 const DirectPaymentInvoice = forwardRef((props, ref) => {
+
+    const [PDFComponents, setPDFComponents] = useState(null);
+
+    useEffect(() => {
+        let mounted = true;
+        import("@react-pdf/renderer").then((mod) => {
+            if (mounted) {
+                setPDFComponents({
+                    Page: mod.Page,
+                    Text: mod.Text,
+                    View: mod.View,
+                    Document: mod.Document,
+                    StyleSheet: mod.StyleSheet,
+                    Font: mod.Font,
+                });
+            }
+        });
+        return () => { mounted = false; };
+    }, []);
+
+    if (!PDFComponents) return null; // or a loader
+
+    // Register the Inter font (Ensure internet connection for font loading)
+    Font.register({
+        family: "Inter",
+        src: "https://fonts.gstatic.com/s/inter/v3/UcC8FJQ4PlQkZZKc-PtK8H0.woff2",
+    });
+
+    // Define styles for the PDF document
+    const styles = StyleSheet.create({
+        page: { padding: 20 },
+        section: { marginBottom: 10 },
+        title: { fontSize: 18, fontFamily: "Inter", fontWeight: "bold", marginBottom: 5 },
+        text: { fontSize: 12, fontFamily: "Inter" },
+    });
+
+    const { Page, Text, View, Document, StyleSheet, Font } = PDFComponents;
 
     const getAmountParams = (amountString) => {
         return amountString ? JSON.parse(amountString) : {};
@@ -286,12 +310,12 @@ const DirectPaymentInvoice = forwardRef((props, ref) => {
                 </View>
             </Page>
         </Document> : <Document>
-    <Page size="A4">
-      <View>
-        <Text>No data found</Text>
-      </View>
-    </Page>
-  </Document>
+            <Page size="A4">
+                <View>
+                    <Text>No data found</Text>
+                </View>
+            </Page>
+        </Document>
     );
 });
 

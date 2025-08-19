@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from 'next/router';
-// import { useParams, useLocation } from 'react-router-dom';
-import PhoneInput from "react-phone-number-input";
-import "react-phone-number-input/style.css";
+import dynamic from 'next/dynamic';
+const PhoneInput = dynamic(() => import('react-phone-number-input'), { ssr: false });
+import 'react-phone-number-input/style.css';
+import { isValidPhoneNumber } from 'react-phone-number-input';
 import httpService from "./../../services/httpService";
-import { isValidPhoneNumber } from "libphonenumber-js";
 import SmartReCaptcha from "../captcha/SmartReCaptcha";
 
 const PopupForm = ({ handlePopupformVisibility, popupProps, handleUserDetailsSubmissionStatus }) => {

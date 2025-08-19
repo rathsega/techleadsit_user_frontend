@@ -14,6 +14,7 @@
     "ajv": "^8.17.1",
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
+    "bundle-analyzer": "^0.0.6",
     "classnames": "^2.5.1",
     "critters": "^0.0.23",
     "date-fns": "^4.1.0",
@@ -23,8 +24,8 @@
     "jsencrypt": "^3.3.2",
     "jspdf": "^3.0.0",
     "jwt-decode": "^4.0.0",
-    "libphonenumber-js": "^1.12.6",
     "next": "^15.2.1",
+    "next-sitemap": "^4.2.3",
     "node-cache": "^5.1.2",
     "number-to-words": "^1.2.4",
     "razorpay": "^2.9.6",
@@ -50,7 +51,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "analyze": "next build"
+    "analyzer": "cross-env ANALYZE=true next build",
+    "postbuild": "next-sitemap"
   },
   "eslintConfig": {
     "extends": [
@@ -71,7 +73,9 @@
     ]
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^15.4.6",
     "ajv": "^8.17.1",
+    "cross-env": "^10.0.0",
     "eslint": "^9.22.0",
     "eslint-config-next": "^15.2.1"
   }

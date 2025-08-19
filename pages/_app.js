@@ -68,6 +68,15 @@ function MyApp({ Component, pageProps }) {
       <LoaderProvider>
         <Header></Header>
         <Loader />
+        {/* <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-N8ML9N5"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+            loading="lazy"
+          ></iframe>
+        </noscript> */}
         <Component {...pageProps} />
         <QuickCall></QuickCall>
         <Footer></Footer>

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import PhoneInput from 'react-phone-number-input';
-import { isValidPhoneNumber } from 'libphonenumber-js';
+import dynamic from 'next/dynamic';
+const PhoneInput = dynamic(() => import('react-phone-number-input'), { ssr: false });
 import 'react-phone-number-input/style.css';
+import { isValidPhoneNumber } from 'react-phone-number-input';
 import { useLoader } from '../../contexts/LoaderContext';
 import { useRouter } from 'next/router';
 import useLmsStore from '../../store/lmsStore';

@@ -8,14 +8,11 @@ import React, {
   useEffect,
   memo
 } from 'react';
-import dynamic from 'next/dynamic';
 
 // Dynamically import the real component for SSR-safe usage
-const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), {
-  ssr: false,
-});
+import ReCAPTCHA from "react-google-recaptcha";
 
-const SmartReCaptcha = memo(forwardRef(
+const SmartReCaptcha = React.memo(forwardRef(
   ({ siteKey, onTokenChange, theme = 'light', size = 'normal' }, ref) => {
     const recaptchaRef = useRef(null);
     const [timerId, setTimerId] = useState(null);
@@ -74,10 +71,15 @@ const SmartReCaptcha = memo(forwardRef(
         onExpired={handleExpired}
         theme={theme}
         size={size}
+        scriptProps={{ async: false, defer: false }}
       />
     );
   }
-));
+, { areEqual: (prevProps, nextProps) => {
+    return prevProps.siteKey === nextProps.siteKey &&
+           prevProps.theme === nextProps.theme &&
+           prevProps.size === nextProps.size;
+  }}));
 
 SmartReCaptcha.displayName = 'SmartReCaptcha';
 

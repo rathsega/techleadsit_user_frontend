@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+// import { useParams, useLocation, useNavigate } from 'react-router-dom';
 import { useRouter } from 'next/router';
 import httpService from "../../services/httpService";
 import dynamic from 'next/dynamic';
@@ -14,7 +15,6 @@ function convertWebinarDateFormat(date) {
 }
 
 const DirectPayments = ({ courseId }) => {
-    // Refs and State
     const nameRef = useRef(null);
     const emailRef = useRef(null);
     const phoneRef = useRef(null);
@@ -22,249 +22,144 @@ const DirectPayments = ({ courseId }) => {
     const stateRef = useRef(null);
     const countryRef = useRef(null);
     const gstinRef = useRef(null);
-
+    const [directPaymentId, setDirectPaymentId] = useState("");
+    const [invalidCoupon, setInvalidCoupon] = useState(false);
+    const [invalidCouponMessage, setInvalidCouponMessage] = useState(false);
+    const [couponDiscountText, setCouponDiscountText] = useState("");
+    const [selectedMethod, setSelectedMethod] = useState(null);
     const [countries, setCountries] = useState([]);
     const [states, setStates] = useState([]);
-    const [country, setCountry] = useState("");
-    const [state, setState] = useState("");
-    const [city, setCity] = useState("");
-    const [countryDisabled, setCountryDisabled] = useState(false);
-    const [stateDisabled, setStateDisabled] = useState(false);
-
     const [courseDetails, setCourseDetails] = useState({});
     const [priceDetails, setPriceDetails] = useState({});
     const [taxDetails, setTaxDetails] = useState({ cgst: 0, sgst: 0, igst: 0, userState: "Telangana", userCountry: "IN" });
-    const [thumbnail, setThumbnail] = useState("");
-
     const [coupon, setCoupon] = useState("");
     const [couponApplied, setCouponApplied] = useState(false);
-    const [couponDetails, setCouponDetails] = useState("");
-    const [couponDiscountText, setCouponDiscountText] = useState("");
-    const [invalidCoupon, setInvalidCoupon] = useState(false);
-    const [invalidCouponMessage, setInvalidCouponMessage] = useState("");
-    const [proceedToCheckoutClicked, setProceedToCheckoutClicked] = useState(false);
-
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [address, setAddress] = useState("");
+    const [state, setState] = useState("");
+    const [country, setCountry] = useState("");
     const [gstinNumber, setGstinNumber] = useState("");
-    const [selectedMethod, setSelectedMethod] = useState(null);
-
-    const { setLoading } = useLoader();
+    const [couponDetails, setCouponDetails] = useState("");
+    const [couponError, setCouponError] = useState("");
+    const [proceedToCheckoutClicked, setProceedToCheckoutClicked] = useState(false);
+    const [thumbnail, setThumbnail] = useState("");
     const router = useRouter();
-    const cartVisitor = useLmsStore((state) => state.cartVisitor);
-    const processingPayment = useRef(false);
+    const queryParams = new URLSearchParams(router.asPath.search);
+    const { setLoading } = useLoader();
+    // const { courseId } = router.query;
+    // const navigate = useNavigate();
     const MAX_RETRIES = 3;
     const RETRY_DELAY_MS = 2000; // 2 seconds
     const [errors, setErrors] = useState({})
-    const [directPaymentId, setDirectPaymentId] = useState("");
-    const [selectedCountryObj, setSelectedCountryObj] = useState(null);
-    const [selectedStateObj, setSelectedStateObj] = useState(null);
 
-    // Prefill from cart visitor
+    const processingPayment = useRef(false);
+    const cartVisitor = useLmsStore((state) => state.cartVisitor);
+
     useEffect(() => {
         if (cartVisitor) {
             setName(cartVisitor.fullName || "");
             setEmail(cartVisitor.email || "");
             setPhone(cartVisitor.phone || "");
         }
+        console.log("Cart Visitor: ", cartVisitor);
     }, [cartVisitor]);
 
-    // Fetch countries
-    const fetchCountries = async () => {
-        try {
-            const response = await httpService.get("course/getCountries");
-            const countryData = response.data.map((country) => ({
-                id: country.id,
-                name: country.name,
-                iso: country.iso2
-            }));
-            setCountries(countryData);
-            return countryData;
-        } catch (error) {
-            setCountries([]);
-            return [];
-        }
-    };
-
-    // Fetch states
-    const fetchStates = async (countryId) => {
-        try {
-            const response = await httpService.get(`course/getStates/${countryId}`);
-            const stateData = response.data.map((state) => ({
-                id: state.id,
-                name: state.name,
-            }));
-            setStates(stateData);
-            return stateData;
-        } catch (error) {
-            setStates([]);
-            return [];
-        }
-    };
-
-    // Fetch course details
-    const fetchCourseDetails = async (courseId, countryCode, stateName) => {
-        if (!courseId) return;
-        let url = `course/fetchCourseDetails/${courseId}`;
-        if (countryCode && stateName) {
-            url += `?country=${countryCode}&state=${encodeURIComponent(stateName)}`;
-        }
-        try {
-            setLoading(true);
-            const response = await httpService.get(url);
-            setLoading(false);
-            if (response?.data?.data) {
-                setCourseDetails(response.data.data);
-                setThumbnail(response.data.thumbnail || "/images/course/thumbnail.png");
-                const taxRates = response.data.course_selling_tax || { cgst: 0, sgst: 0, igst: 0, userState: "Telangana", userCountry: "IN" };
-                setTaxDetails(taxRates);
-
-                // Set default country
-                let userCountryObj = countries.filter(country => country.iso === taxRates.userCountry);
-                if (userCountryObj.length > 0) {
-                    setSelectedCountryObj(userCountryObj[0]);
-                    setCountry(userCountryObj[0].id);
-                }
-
-                calculateTax(
-                    response.data.data.price,
-                    response.data.data.discount_flag,
-                    response.data.data.discounted_price,
-                    taxRates
-                ).then((calculatedTaxDetails) => {
-                    setPriceDetails(calculatedTaxDetails);
-                });
-            }
-        } catch (error) {
-            setLoading(false);
-        }
-    };
-
-    // Fallback: get location from backend (by IP)
-    const fallbackToBackend = async () => {
-        try {
-            setLoading(true);
-            const res = await httpService.get("course/getLocationDetails");
-            setLoading(false);
-            const { country_code, region, city } = res.data;
-            // Fetch countries and set default
-            let countryList;
-            if (countries && countries.length > 0) {
-                countryList = countries;
-            } else {
-                countryList = await fetchCountries();
-            }
-            // Find the country object by iso2 code
-            const foundCountry = countryList.find(c => c.iso === country_code);
-            if (foundCountry) {
-                setSelectedCountryObj(foundCountry);
-                setCountry(foundCountry.id); // Set by country ID
-                setCountryDisabled(true);
-                // Fetch states using country ID
-                const stateList = await fetchStates(foundCountry.id);
-                const foundState = stateList.find(s => s.name.toLowerCase() === region.toLowerCase());
-                if (foundState) {
-                    setSelectedStateObj(foundState);
-                    setState(foundState.id);
-                    setStateDisabled(false); // Enable state selection if needed
-                }
-            }
-            setCity(city);
-
-            // Fetch course details with backend info
-            await fetchCourseDetails(courseId, country_code, state);
-        } catch (err) {
-            setLoading(false);
-            setSelectedCountryObj(null);
-            setSelectedStateObj(null);
-            setCountry("");
-            setState("");
-        }
-    };
-
-    // Geolocation and location logic
     useEffect(() => {
-        const getLocationAndSetDefaults = async () => {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(
-                    async (position) => {
-                        const { latitude, longitude } = position.coords;
-                        try {
-                            const res = await fetch(
-                                `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
-                            );
-                            const data = await res.json();
-                            const countryCode = data.address.country_code?.toUpperCase() || "";
-                            const stateName = data.address.state || "";
-                            const cityName = data.address.city || data.address.town || data.address.village || "";
-
-                            // Fetch countries and set default
-                            const countryList = await fetchCountries();
-                            const foundCountry = countryList.find(c => c.iso === countryCode);
-                            if (foundCountry) {
-                                setCountry(foundCountry.id);
-                                setCountryDisabled(true);
-                                // Fetch states and set default
-                                const stateList = await fetchStates(foundCountry.id);
-                                const foundState = stateList.find(s => s.name.toLowerCase() === stateName.toLowerCase());
-                                if (foundState) {
-                                    setSelectedStateObj(foundState);
-                                    setState(foundState.id);
-                                    setStateDisabled(true);
-                                }
-                            }
-                            setCity(cityName);
-
-                            // Fetch course details with geo info
-                            await fetchCourseDetails(courseId, countryCode, stateName);
-                        } catch (err) {
-                            await fallbackToBackend();
-                        }
-                    },
-                    async () => {
-                        await fallbackToBackend();
-                    }
-                );
-            } else {
-                fallbackToBackend();
+        const fetchCountries = async () => {
+            try {
+                const response = await httpService.get("course/getCountries");
+                const countryData = response.data.map((country) => ({
+                    id: country.id,
+                    name: country.name,
+                    iso: country.iso2
+                }));
+                setCountries(countryData);
+            } catch (error) {
+                console.error("Error fetching countries:", error);
             }
         };
 
-        getLocationAndSetDefaults();
-        // eslint-disable-next-line
+        const fetchCourseDetails = async () => {
+            try {
+                setLoading(true)
+                const response = await httpService.get(`course/fetchCourseDetails/${courseId}`);
+                setLoading(false)
+                if (response?.data?.data) {
+                    setCourseDetails(response.data.data);
+                    setThumbnail(response.data.thumbnail || "/images/course/thumbnail.png"); // Set default thumbnail if not available
+
+                    const taxRates = response.data.course_selling_tax || { cgst: 0, sgst: 0, igst: 0, userState: "Telangana", userCountry: "IN" }; // Default tax values
+                    setTaxDetails(taxRates);
+
+                    //set default country
+                    let userCountryObj = countries.filter(country => country.iso == taxRates.userCountry)
+
+                    if (userCountryObj.length > 0) {
+                        //console.log(userCountryObj);
+                        setCountry(userCountryObj[0].id)
+                    }
+                    //console.log(typeof response.data.data.discount_flag, response.data.data.discount_flag == null);
+                    calculateTax(
+                        response.data.data.price,
+                        response.data.data.discount_flag,
+                        response.data.data.discounted_price,
+                        taxRates
+                    ).then((calculatedTaxDetails) => {
+                        setPriceDetails(calculatedTaxDetails); // ✅ Correctly setting the tax details
+                    }).catch(error => {
+                        console.error("Error calculating tax:", error);
+                    });
+
+                } else {
+                    console.error("No data received from the API");
+                }
+            } catch (error) {
+                console.error("Error fetching course details:", error);
+            }
+        };
+
+        courseId && fetchCourseDetails();
+        fetchCountries();
     }, [courseId]);
 
-    // Fetch states when country changes
+    // Fetch states based on selected country
     useEffect(() => {
         if (!country) return;
-        fetchStates(country);
+
+        const fetchStates = async () => {
+            try {
+                const response = await httpService.get(
+                    `course/getStates/${country}`
+                );
+                if (response.data) {
+                    const stateData = response.data.map((state) => ({
+                        id: state.id,
+                        name: state.name,
+                    }));
+                    setStates(stateData);
+                } else {
+                    setStates([]);
+                }
+            } catch (error) {
+                console.error("Error fetching states:", error);
+                setStates([]);
+            }
+        };
+        fetchStates();
     }, [country]);
 
-    //upon changing the state, fetch course details again if country is India
-    const fetchDetailsForStateChange = () => {
-        if (!country || !state) return;
-        const selectedCountry = countries.find(c => c.id === country);
-        if (selectedCountry && selectedCountry.iso === "IN") {
-            let stateName = states.find(s => s.id == state)?.name;
-            fetchCourseDetails(courseId, selectedCountry.iso, stateName);
-        }
-    };
-    useEffect(() => {
-        fetchDetailsForStateChange();
-    }, [state]);
-
-    // ...rest of your coupon, payment, and validation logic remains unchanged...
-    // (You can keep your coupon, payment, and form logic as in your original code)
     useEffect(() => {
         const calculateTaxDetails = async () => {
+            //console.log("Recalculating Tax with Coupon");
             calculateTax(
                 courseDetails.price,
                 courseDetails.discount_flag,
                 courseDetails.discounted_price,
                 taxDetails
             ).then((calculatedTaxDetails) => {
+                //console.log(calculatedTaxDetails);
                 setPriceDetails(calculatedTaxDetails); // ✅ Correctly setting the tax details
             }).catch(error => {
                 console.error("Error calculating tax:", error);
@@ -276,7 +171,7 @@ const DirectPayments = ({ courseId }) => {
         }
     }, [couponDetails]);
 
-    /*useEffect(() => {
+    useEffect(() => {
         // Try to get user's location
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
@@ -291,29 +186,46 @@ const DirectPayments = ({ courseId }) => {
                         const stateName = data.address.state || "";
                         const countryName = data.address.country || "";
                         const countryCode = data.address.country_code?.toUpperCase() || "";
+                        // Set state and country here (you may need to map names to your IDs)
+                        //setState(stateName);
+                        //setCountry(countryCode);
                     } catch (err) {
                         console.log(err);
                         // If reverse geocoding fails, fallback to internal API
-                        //fetchInternalLocation();
-                        fallbackToBackend();
+                        fetchInternalLocation();
                     }
                 },
                 (error) => {
                     console.log(error);
                     // If user denies or error, fallback to internal API
-                    //fetchInternalLocation();
-                    fallbackToBackend();
+                    fetchInternalLocation();
                 }
             );
         } else {
             // Geolocation not supported, fallback to internal API
-            //fetchInternalLocation();
-            fallbackToBackend();
+            fetchInternalLocation();
         }
-    }, [navigator.geolocation]);*/
+    }, []);
+
+    // Fallback: call your internal API to get location
+    const fetchInternalLocation = async () => {
+        try {
+            const res = await httpService.get("course/getLocationDetails");
+            // Set state and country from your API response
+            setState(res.data.state);
+            setCountry(res.data.country);
+        } catch (err) {
+            // Handle error or set defaults
+            setState("");
+            setCountry("");
+        }
+    };
 
     const calculateTax = async (price, discountFlag, discountedPrice, taxRates) => {
         let finalDiscountedPrice = discountFlag == true ? discountedPrice : price; // Start with original price
+        //console.log(typeof discountFlag, discountFlag == true);
+
+        //console.log(price, discountFlag, finalDiscountedPrice);
         // Apply coupon discount (if applicable)
         if (couponDetails && couponDetails.status === "active") {
             if (couponDetails.coupon_value_type === "amount") {
@@ -331,6 +243,7 @@ const DirectPayments = ({ courseId }) => {
         const igstAmount = (finalDiscountedPrice * (taxRates?.igst || 0)) / 100;
         const totalTax = cgstAmount + sgstAmount + igstAmount;
         const totalPriceWithTax = finalDiscountedPrice + totalTax;
+        //console.log(price, discountFlag, finalDiscountedPrice, totalTax);
         return {
             discountFlag: discountFlag,
             originalPrice: price,
@@ -351,6 +264,7 @@ const DirectPayments = ({ courseId }) => {
         setInvalidCouponMessage("");
 
         try {
+            //console.log(coupon);
             let response;
             setLoading(true)
             if (email) {
@@ -360,12 +274,14 @@ const DirectPayments = ({ courseId }) => {
             }
             setLoading(false)
             if (response?.data?.appliedCoupon) {
+                //console.log(response.data.appliedCoupon);
                 setCouponDetails(response.data.appliedCoupon);
                 setCouponApplied(true);
                 const couponDiscountText =
                     response.data.appliedCoupon.coupon_value_type === "percentage"
                         ? `${response.data.appliedCoupon.coupon_value}% (${(courseDetails.price / 100) * response.data.appliedCoupon.coupon_value})`
                         : `${response.data.appliedCoupon.coupon_value}`;
+                //console.log(couponDiscountText);
                 setCouponDiscountText(couponDiscountText);
                 setInvalidCoupon(false);
                 setInvalidCouponMessage("");
@@ -381,6 +297,7 @@ const DirectPayments = ({ courseId }) => {
             setCouponApplied(false);
             setInvalidCoupon(true);
             setInvalidCouponMessage(response?.data?.message);
+            console.error("Error validating coupon:", error);
         }
     };
 
@@ -402,7 +319,7 @@ const DirectPayments = ({ courseId }) => {
             addressRef.current?.scrollIntoView({ behavior: "smooth" });
             return { error: "Address is required" };
         }
-        if (!state) {
+        if (!state.trim()) {
             stateRef.current?.scrollIntoView({ behavior: "smooth" });
             return { error: "State is required" };
         }
@@ -422,7 +339,7 @@ const DirectPayments = ({ courseId }) => {
             email: email.trim(),
             phone: phone.trim(),
             address: address.trim(),
-            state: state,
+            state: state.trim(),
             country: country
         };
     };
@@ -465,13 +382,8 @@ const DirectPayments = ({ courseId }) => {
 
         while (attempt < MAX_RETRIES && !success) {
             try {
-                const userData = {
-                    ...data,
-                    countryCode: selectedCountryObj ? selectedCountryObj.iso : "",
-                    stateName: selectedStateObj ? selectedStateObj.name : "",
-                };
                 response = await httpService.post(`payment/pay`, {
-                    userData: userData,
+                    userData: data,
                     courseId: courseId,
                     coupon: coupon,
                     gstinNumber: gstinNumber,
@@ -542,9 +454,11 @@ const DirectPayments = ({ courseId }) => {
                     // Make the POST request
                     setLoading(true)
                     const verifyRes = await httpService.post("payment/verify", response);
+                    //console.log(verifyRes);
                     setLoading(false)
                     // Check if the response is successful
                     if (verifyRes && verifyRes.status === 200) {
+                        //console.log("Payment verification successful:", verifyRes.data);
                         // Handle success (e.g., show success message, update UI)
                         router.push(`/paymentsuccess/${verifyRes.data.paymentId}/${preresponse.data.order.id}`);
                     } else {
@@ -641,11 +555,12 @@ const DirectPayments = ({ courseId }) => {
         window.addEventListener("beforeunload", handleUnload);
         window.addEventListener("pagehide", handleUnload);
 
-        return () => {
+        /*return () => {
             window.removeEventListener("beforeunload", handleUnload);
             window.removeEventListener("pagehide", handleUnload);
-        };
+        };*/
     }, [couponApplied, couponDetails, email]);
+
 
     return (
         <section className="Payment-Gateway-section">
@@ -701,13 +616,15 @@ const DirectPayments = ({ courseId }) => {
                                 <div className="grid-1">
                                     <div className="Payment-input-container">
                                         <select
-                                            disabled={countryDisabled}
+                                            id="country"
+                                            required
                                             value={country}
                                             onChange={(e) => {
                                                 setCountry(e.target.value);
                                                 setState(""); // Reset state when country changes
                                             }}
                                             className={`Payment-input-field Payment-select-field Payment-Gateway-Input-Field-H ${proceedToCheckoutClicked && !country ? "error-label" : ""}`}
+                                            ref={stateRef}
                                         >
                                             <option value="" disabled>Select Country *</option>
                                             {countries.map((country) => (
@@ -716,14 +633,16 @@ const DirectPayments = ({ courseId }) => {
                                                 </option>
                                             ))}
                                         </select>
-
                                     </div>
                                     <div className="Payment-input-container">
                                         <select
-                                            disabled={stateDisabled}
+                                            id="state"
+                                            required
                                             value={state}
-                                            onChange={(e) => {setState(e.target.value); setSelectedStateObj(states.find(state => state.id == e.target.value));}}
+                                            onChange={(e) => setState(e.target.value)}
                                             className={`Payment-input-field Payment-select-field Payment-Gateway-Input-Field-H ${proceedToCheckoutClicked && !state ? "error-label" : ""}`}
+                                            disabled={!country} // Disable if no country selected
+                                            ref={countryRef}
                                         >
                                             <option value="" disabled>Select State *</option>
                                             {states.map((state) => (
@@ -778,6 +697,38 @@ const DirectPayments = ({ courseId }) => {
                                     </div>
                                 )}
                             </label>
+
+                            {/* Razorpay Payment Option */}
+                            {/* <label className="radio-container bg-white">
+                                <div className="d-flex align-items-center">
+                                    <input
+                                        type="radio"
+                                        name="payment"
+                                        checked={selectedMethod === "razorpay"}
+                                        onChange={() => toggleContent("razorpay")}
+                                    />
+                                    <div className="payment-option">
+                                        <img src={RazorpayImage} height="25" alt="Razorpay" />
+                                    </div>
+                                </div>
+                                {selectedMethod === "razorpay" && (
+                                    <div className="content show">
+                                        <p className="payment-main">Continue With Razorpay</p>
+                                        <div className="grid-3 mb-2">
+                                            <div>
+                                                <p className="payment-sub">
+                                                    This payment method supports Net banking, Wallets, Pay Later & EMI.
+                                                </p>
+                                                <p className="notable-txt">EMI starts at ₹1,500/month</p>
+                                            </div>
+                                            <button className="payment-btn" onClick={(e) => proceedToCheckout('razorpay')}>
+                                                <img src={RazorpayBtnIcon} height="15" className="me-2" alt="Checkout" />
+                                                Checkout
+                                            </button>
+                                        </div>
+                                    </div>
+                                )}
+                            </label> */}
 
                             {/* Razorpay EMI Option */}
                             <label className="radio-container bg-white">
@@ -920,7 +871,8 @@ const DirectPayments = ({ courseId }) => {
                 </div>
             </div>
         </section >
+
     );
-};
+}
 
 export default DirectPayments;

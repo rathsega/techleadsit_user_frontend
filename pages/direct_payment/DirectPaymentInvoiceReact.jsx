@@ -1,31 +1,56 @@
-import React, { forwardRef } from "react";
+import React, { useEffect, useState } from "react";
 import { toWords } from "number-to-words";
-import { Page, Text, View, Document, StyleSheet, Font, Image } from "@react-pdf/renderer";
 
-// Register the Inter font (Ensure internet connection for font loading)
-Font.register({
-    family: "Inter",
-    src: "https://fonts.gstatic.com/s/inter/v3/UcC8FJQ4PlQkZZKc-PtK8H0.woff2",
-});
-
-// Styles for PDF
-const styles = StyleSheet.create({
-    page: { padding: 20, fontSize: 12, fontFamily: 'Helvetica' },
-    section: { marginBottom: 10, padding: 10 },
-    header: { textAlign: 'center', marginBottom: 10 },
-    table: { display: 'table', width: '100%', borderWidth: 1, borderColor: '#ddd' },
-    tableRow: { flexDirection: 'row' },
-    tableCellHeader: { padding: 5, fontWeight: 'bold', backgroundColor: '#F4F4F4', borderBottomWidth: 1 },
-    tableCell: { padding: 5, borderBottomWidth: 1 },
-    rightAlign: { textAlign: 'right' },
-    bold: { fontWeight: 'bold' },
-    logo: { height: 50, marginBottom: 10, width: '40%' },
-    signature: { height: 50, marginTop: 10 },
-    footer: { textAlign: 'center', marginTop: 20, fontSize: 10 },
-});
 
 // Invoice Component
 const DirectPaymentInvoiceReact = ({ invoiceDetails }) => {
+
+    const [PDF, setPDF] = useState(null);
+
+    useEffect(() => {
+        let mounted = true;
+        import("@react-pdf/renderer").then((mod) => {
+            if (mounted) {
+                setPDF({
+                    Page: mod.Page,
+                    Text: mod.Text,
+                    View: mod.View,
+                    Document: mod.Document,
+                    StyleSheet: mod.StyleSheet,
+                    Font: mod.Font,
+                    Image: mod.Image,
+                });
+            }
+        });
+        return () => { mounted = false; };
+    }, []);
+
+    if (!PDF) return null; // or a loader
+
+    const { Page, Text, View, Document, StyleSheet, Font, Image } = PDF;
+
+    // Register the Inter font (Ensure internet connection for font loading)
+    Font.register({
+        family: "Inter",
+        src: "https://fonts.gstatic.com/s/inter/v3/UcC8FJQ4PlQkZZKc-PtK8H0.woff2",
+    });
+
+    // ...styles and helpers as in your original code...
+    const styles = StyleSheet.create({
+        page: { padding: 20, fontSize: 12, fontFamily: 'Helvetica' },
+        section: { marginBottom: 10, padding: 10 },
+        header: { textAlign: 'center', marginBottom: 10 },
+        table: { display: 'table', width: '100%', borderWidth: 1, borderColor: '#ddd' },
+        tableRow: { flexDirection: 'row' },
+        tableCellHeader: { padding: 5, fontWeight: 'bold', backgroundColor: '#F4F4F4', borderBottomWidth: 1 },
+        tableCell: { padding: 5, borderBottomWidth: 1 },
+        rightAlign: { textAlign: 'right' },
+        bold: { fontWeight: 'bold' },
+        logo: { height: 50, marginBottom: 10, width: '40%' },
+        signature: { height: 50, marginTop: 10 },
+        footer: { textAlign: 'center', marginTop: 20, fontSize: 10 },
+    });
+
     const formatDate = (dateStr) => {
         const date = new Date(dateStr);
 
@@ -91,7 +116,7 @@ const DirectPaymentInvoiceReact = ({ invoiceDetails }) => {
                     <View style={{ padding: 15, textAlign: "right", verticalAlign: "top", width: "35%" }}>
                         <Text style={{ fontWeight: 500, color: '#5E6470', marginBottom: 8 }}>Invoice of (Rupees)</Text>
                         <Text style={{ fontWeight: 700, color: '#005CA9', marginBottom: 8, fontSize: 26 }}>
-                        {formatCurrency(getAmountParams(invoiceDetails?.payment_details)?.totalPriceWithTax)}
+                            {formatCurrency(getAmountParams(invoiceDetails?.payment_details)?.totalPriceWithTax)}
                         </Text>
                         <Text style={{ fontWeight: 500, color: '#5E6470', marginBottom: 8, fontSize: 12, textTransform: 'capitalize' }}>
                             Payment Mode: {invoiceDetails?.payment_type}

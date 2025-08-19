@@ -1,13 +1,15 @@
 import React, { useEffect, useState, useRef, useMemo, useCallback, lazy, Suspense } from "react";
 import httpService from './../../services/httpService'
-import PhoneInput from "react-phone-number-input";
-import "react-phone-number-input/style.css";
-import { isValidPhoneNumber } from "libphonenumber-js";
+import dynamic from 'next/dynamic';
+const PhoneInput = dynamic(() => import('react-phone-number-input'), { ssr: false });
+import 'react-phone-number-input/style.css';
+import { isValidPhoneNumber } from 'react-phone-number-input';
 import { useRouter } from 'next/router';
 import { useLoader } from "../../contexts/LoaderContext";
 import LiveChatButton from "../LiveChatButton";
-const ReactDatePicker = React.lazy(() => import("react-datepicker"));
 import "react-datepicker/dist/react-datepicker.css";
+// Dynamically import ReactDatePicker with SSR disabled
+const ReactDatePicker = dynamic(() => import("react-datepicker"), { ssr: false });
 import Image from "next/image"; // Importing Image component from next.js for optimized image handling
 
 const UpcomingDemoSession = React.memo(({ data, courseTitle, courseId, demos, openForm, subHeading }) => {

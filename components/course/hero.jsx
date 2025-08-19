@@ -1,4 +1,4 @@
-import React, { useCallback, Suspense  } from "react";
+import React, { useCallback } from "react";
 import SuccessStories from "./hero_success_stories";
 import HeroForm from "./hero_form";
 import HeroSuccessStoriesForm from "./hero_success_stories_form";
@@ -86,11 +86,9 @@ const Hero = React.memo(({ data, handleButtonClick, openForm, courseTitle, handl
                 </div>
             </div>
 
-            <Suspense fallback={<div>Loading...</div>}>
-                {data?.successStories && data?.successStories?.stories?.length > 0
-                    ? <SuccessStories data={data?.successStories} />
-                    : <HeroSuccessStoriesForm courseTitle={courseTitle} />}
-            </Suspense>
+            {data?.successStories && data?.successStories?.stories?.length > 0
+                ? <SuccessStories data={data?.successStories} />
+                : <HeroSuccessStoriesForm courseTitle={courseTitle} />}
         </section >
     )
 }, (prevProps, nextProps) => {

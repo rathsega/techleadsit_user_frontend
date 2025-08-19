@@ -1,12 +1,15 @@
 import React, { useEffect, useState, useRef } from "react";
-import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
-import 'react-phone-number-input/style.css'; // Required for styling
+import dynamic from 'next/dynamic';
+const PhoneInput = dynamic(() => import('react-phone-number-input'), { ssr: false });
+import 'react-phone-number-input/style.css';
+import { isValidPhoneNumber } from 'react-phone-number-input';
 import { useRouter } from "next/router";
 import httpService from "../../services/httpService";
 import SmartReCaptcha from "../../pages/captcha/SmartReCaptcha";
 import { useLoader } from "../../contexts/LoaderContext";
-import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+// Dynamically import ReactDatePicker with SSR disabled
+const ReactDatePicker = dynamic(() => import("react-datepicker"), { ssr: false });
 import Image from "next/image"; // Importing Image component from next.js for optimized image handling
 import useLmsStore from "../../store/lmsStore";
 const CourseRegistrationForm = React.memo(({

@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router';
 import httpService from './../../services/httpService';
 import React, { useRef, useEffect, useState } from "react";
-import { pdf } from "@react-pdf/renderer";
 import dynamic from "next/dynamic";
 const DirectInvoiceAutoDownload = dynamic(() => import("./DirectInvoiceAutoDownload"), { ssr: false });
 const DirectPaymentInvoiceReact = dynamic(() => import("./DirectPaymentInvoiceReact"), { ssr: false });
@@ -59,6 +58,7 @@ const DirectPaymentSuccess = () => {
 
     // Convert React component to PDF
     const generatePDF = async (data) => {
+        const { pdf } = await import("@react-pdf/renderer");
         const blob  = await pdf(<DirectPaymentInvoiceReact invoiceDetails={data} />).toBlob();
         // Convert Blob to Base64
         const reader = new FileReader();

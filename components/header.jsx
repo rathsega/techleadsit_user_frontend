@@ -426,19 +426,6 @@ const Header = () => {
             <nav className={`TLI-H-M-Main-Course-TLI-Common-Header-nav-links ${(isMobile || isTab) && hamburgerChecked ? 'active' : ''}`}>
                 <a href="/" className="TLI-H-M-Main-Course-TLI-Header-a-hover">Home</a>
                 <a href="/comingsoon" className="TLI-H-M-Main-Course-TLI-Header-a-hover">About Us</a>
-                {/* <div className="TLI-H-M-Main-Course-TLI-Common-Header-dropdown">
-                    <button
-                        className="TLI-H-M-Main-Course-TLI-Common-Header-dropdown-toggle TLI-H-M-Main-Course-TLI-Header-a-hover"
-                        onClick={toggleDropdown}
-                    >
-                        Services <i className={`fas fa-chevron-down chevron TLI-H-M-header-chevron-icon${openDropdown ? " rotate" : ""}`}></i>
-                    </button>
-                    <div className={`TLI-H-M-Main-Course-TLI-Common-Header-dropdown-menu${openDropdown ? " show" : ""}`}>
-                        {['Oracle', 'SAP', 'Microsoft', 'Salesforce', 'Service now'].map(service => (
-                            <a key={service} href="/comingsoon" className="TLI-H-M-Main-Course-TLI-Sub-Header-a-hover">{service}</a>
-                        ))}
-                    </div>
-                </div> */}
                 <a href="/blogs" className="TLI-H-M-Main-Course-TLI-Header-a-hover">Blogs</a>
                 <a href="/careers" className="TLI-H-M-Main-Course-TLI-Header-a-hover">Careers</a>
                 <a href="/contactus" className="TLI-H-M-Main-Course-TLI-Header-a-hover">Contact Us</a>

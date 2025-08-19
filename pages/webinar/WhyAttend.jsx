@@ -1,10 +1,11 @@
 import WhyAttendCard from './WhyAttendCard'
 import { useEffect, useState, useRef } from 'react'
 import httpService from '../../services/httpService'
-import PhoneInput from 'react-phone-number-input';
+import dynamic from 'next/dynamic';
+const PhoneInput = dynamic(() => import('react-phone-number-input'), { ssr: false });
 import 'react-phone-number-input/style.css';
+import { isValidPhoneNumber } from 'react-phone-number-input';
 import classNames from 'classnames';
-import { isValidPhoneNumber } from "libphonenumber-js";
 import SmartReCaptcha from "../captcha/SmartReCaptcha";
 import { useRouter } from 'next/router';
 import { useLoader } from "../../contexts/LoaderContext";

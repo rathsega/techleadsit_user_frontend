@@ -191,7 +191,6 @@ export async function getStaticProps({ params }) {
     const course_data_filename = slug.join('_');
     const filePath = path.join(process.cwd(), 'data', `${course_data_filename}.json`);
     const changesFilePath = path.join(process.cwd(), 'data', 'changes.json');
-    console.log(course_data_filename, filePath)
     let data = {};
     let changedData = {};
     let changedParsedData = [];
