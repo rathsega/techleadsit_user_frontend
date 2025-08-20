@@ -74,7 +74,9 @@ const DirectPayments = ({ courseId }) => {
     // Fetch countries
     const fetchCountries = async () => {
         try {
+            setLoading(true)
             const response = await httpService.get("course/getCountries");
+            setLoading(false)
             const countryData = response.data.map((country) => ({
                 id: country.id,
                 name: country.name,
@@ -91,7 +93,9 @@ const DirectPayments = ({ courseId }) => {
     // Fetch states
     const fetchStates = async (countryId) => {
         try {
+            setLoading(true)
             const response = await httpService.get(`course/getStates/${countryId}`);
+            setLoading(false)
             const stateData = response.data.map((state) => ({
                 id: state.id,
                 name: state.name,
@@ -362,10 +366,20 @@ const DirectPayments = ({ courseId }) => {
             if (response?.data?.appliedCoupon) {
                 setCouponDetails(response.data.appliedCoupon);
                 setCouponApplied(true);
-                const couponDiscountText =
-                    response.data.appliedCoupon.coupon_value_type === "percentage"
-                        ? `${response.data.appliedCoupon.coupon_value}% (${(courseDetails.price / 100) * response.data.appliedCoupon.coupon_value})`
-                        : `${response.data.appliedCoupon.coupon_value}`;
+                let couponDiscountText = "";
+                const appliedCoupon = response.data.appliedCoupon;
+                if (appliedCoupon.coupon_value_type === "percentage") {
+                    // percentage discount
+                    const discountAmount = (courseDetails.price / 100) * appliedCoupon.coupon_value;
+                    couponDiscountText = `Enjoy your exclusive ${appliedCoupon.coupon_value}% (${discountAmount}) discount on your course.`;
+                } else if (appliedCoupon.coupon_value_type === "amount") {
+                    // fixed amount discount (if you already use it)
+                    couponDiscountText = `Enjoy your exclusive ${appliedCoupon.coupon_value} discount on your course.`;
+                } else if (appliedCoupon.coupon_value_type === "validity") {
+                    // validity in months
+                    const months = appliedCoupon.coupon_value;
+                    couponDiscountText = appliedCoupon?.discount_message;
+                }
                 setCouponDiscountText(couponDiscountText);
                 setInvalidCoupon(false);
                 setInvalidCouponMessage("");
@@ -380,7 +394,7 @@ const DirectPayments = ({ courseId }) => {
             setCouponDetails({})
             setCouponApplied(false);
             setInvalidCoupon(true);
-            setInvalidCouponMessage(response?.data?.message);
+            setInvalidCouponMessage("");
         }
     };
 
@@ -722,7 +736,7 @@ const DirectPayments = ({ courseId }) => {
                                         <select
                                             disabled={stateDisabled}
                                             value={state}
-                                            onChange={(e) => {setState(e.target.value); setSelectedStateObj(states.find(state => state.id == e.target.value));}}
+                                            onChange={(e) => { setState(e.target.value); setSelectedStateObj(states.find(state => state.id == e.target.value)); }}
                                             className={`Payment-input-field Payment-select-field Payment-Gateway-Input-Field-H ${proceedToCheckoutClicked && !state ? "error-label" : ""}`}
                                         >
                                             <option value="" disabled>Select State *</option>
@@ -891,7 +905,7 @@ const DirectPayments = ({ courseId }) => {
                             {
                                 couponApplied && <div className="d-flex align-items-baseline mb-3">
                                     <img src="/images/payment_gateway/tick-icon.png" height="17" className="tick-icon-y" />
-                                    <span className="coupon-offer">Congratulations! Enjoy your exclusive {couponDiscountText} discount.</span>
+                                    <span className="coupon-offer">Congratulations! {couponDiscountText} </span>
                                 </div>
                             }
 
@@ -909,7 +923,7 @@ const DirectPayments = ({ courseId }) => {
                             <p className="checkout-summary"><span>IGST</span><span>&#8377;{priceDetails?.igstAmount}</span></p>
                             <p className="checkout-summary"><span>CGST </span><span>&#8377;{priceDetails?.cgstAmount}</span></p>
                             <p className="checkout-summary"><span>SGST </span><span>&#8377;{priceDetails?.sgstAmount}</span></p>
-                            {couponApplied && <div className="checkout-summary discount-row show">
+                            {couponApplied && couponDetails?.coupon_value_type !== 'validity' && <div className="checkout-summary discount-row show">
                                 <p className="">
                                     <span>Discount </span>
                                 </p><span>-&#8377;{priceDetails?.originalPrice - priceDetails?.discountedPrice}</span>
