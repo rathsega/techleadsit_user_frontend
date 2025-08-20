@@ -714,6 +714,13 @@ body {
     border-bottom-right-radius: 5px;
   }
 
+  .coupon-remove-btn{
+    font-size: 14px;
+    padding-block: 6px;
+    top: 2px;
+    right: 3px;
+  }
+  
   .checkout-summary{
     font-size: 15px;
   }

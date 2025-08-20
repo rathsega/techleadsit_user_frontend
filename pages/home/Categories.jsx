@@ -36,17 +36,22 @@ const Categories = () => {
             <p className="Main-Course-Home-Page-C-Section-Para">“Upskill with Industry-Relevant Courses Specializing
                 in
                 Oracle Fusion & ERP Solutions.”</p>
-            <div className="Main-Course-Home-Page-Featured-Courses-Card-Section">
+            <div className="Home-Section-CC-grid">
                 {
                     categories?.length > 0 && categories.map((category, cindex) => (
-                        <div className="Main-Course-Home-Page-Featured-Courses-Card cursor-pointer" key={cindex} onClick={() => openCourses(category?.subCategoryId, category?.subCategoryName)}>
-                            <Image height={75} width={75} loading='lazy' priority={false} src={`/images/home/${category?.subCategoryName}.svg`}
-                                alt="Featured-Courses-Icon" className="Main-Course-Home-Page-Featured-Courses-Icon" />
-                            <h3 className="Main-Course-Home-Page-Featured-Courses-Card-heading">{category?.subCategoryName}</h3>
-                            <p className="Main-Course-Home-Page-Featured-Courses-Card-para">{category?.courseCount > 9 ? category?.courseCount : '0' + category?.courseCount} {category?.courseCount == 1 ? ' Course' : " Courses"}</p>
-                        </div>
-                    ))
-                }
+                        <article key={cindex} className="Home-Section-CC-card" onClick={() => openCourses(category._id, category.title)}>
+                            <img src={process.env.NEXT_PUBLIC_LOCAL_FILES_URL + category.icon.path} alt={category.name} className="Home-Section-CC-image-T1" loading="lazy" />
+                            <h3>{category.title}</h3>
+                            <p>{category?.subTitle}</p>
+                            <div className="Home-Section-CC-meta">
+                                <span className="Home-Section-CC-count">{category?.courseCount} Courses</span>
+                                <span className="Home-Section-CC-rating">
+                                    <img src="/images/home/Course-Category-Star.svg" className="Home-Section-CC-Star-Icon" alt="Star" /> {category?.rating}
+                                </span>
+                            </div>
+                        </article>
+                    ))}
+
             </div>
         </section>
     )
