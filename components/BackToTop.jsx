@@ -1,42 +1,59 @@
-import { useEffect, useState } from "react";
-
+import React, { useEffect, useState } from "react";
+ 
 const BackToTop = () => {
-    const [visible, setVisible] = useState(false);
-    // const [bottomOffset, setBottomOffset] = useState("6%");
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY || window.pageYOffset;
-            const windowHeight = window.innerHeight;
-            const docHeight = document.documentElement.scrollHeight;
-
-            // Show if not at bottom and scrolled down 100px
-            if (scrollY > 100 && scrollY + windowHeight < docHeight - 10) {
-                setVisible(true);
-            } else {
-                setVisible(false);
-            }
-
-            /*const scrolledToBottom =
-                window.innerHeight + window.scrollY >= document.body.scrollHeight;
-            setBottomOffset(scrolledToBottom ? "12%" : "6%");*/
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
-    const handleClick = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+  const [scrollPercent, setScrollPercent] = useState(0);
+  const [visible, setVisible] = useState(false);
+ 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const docHeight =
+        document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (scrollTop / docHeight) * 100;
+      setScrollPercent(scrolled);
+      setVisible(scrollTop > 200); // Show after scrolling 200px
     };
-
-    if (!visible) return null;
-
-    return (
-        <button className="BTT-Btn"  onClick={handleClick}>
-            <i className="fas fa-arrow-up BTT-Arrow"></i>
-            <p className="BTT-Text">Back to Top</p>
-        </button>
-    );
+ 
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+ 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+ 
+  const circleDashArray = 307.919; // Original path length
+  const circleDashOffset =
+    circleDashArray - (circleDashArray * scrollPercent) / 100;
+ 
+  return (
+    visible && (
+      <div
+        className="rbt-progress-parent BTT-Btn"
+        aria-label="Back to top"
+        role="button"
+        tabIndex="0"
+        onClick={scrollToTop}
+        onKeyDown={(e) => e.key === "Enter" && scrollToTop()}
+      >
+        <svg
+          className="rbt-back-circle svg-inner"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path
+            d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+            style={{
+              strokeDasharray: circleDashArray,
+              strokeDashoffset: circleDashOffset,
+            }}
+          />
+        </svg>
+        <span className="rbt-icon"><i className="fas fa-arrow-up BTT-Arrow"></i></span>
+      </div>
+    )
+  );
 };
-
+ 
 export default BackToTop;
