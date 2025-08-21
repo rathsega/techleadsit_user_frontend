@@ -6,6 +6,7 @@ import 'react-phone-number-input/style.css';
 import { isValidPhoneNumber } from 'react-phone-number-input';
 import httpService from "./../../services/httpService";
 import SmartReCaptcha from "../captcha/SmartReCaptcha";
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 
 const PopupForm = ({ handlePopupformVisibility, popupProps, handleUserDetailsSubmissionStatus }) => {
 
@@ -32,16 +33,14 @@ const PopupForm = ({ handlePopupformVisibility, popupProps, handleUserDetailsSub
         userType: ""
     });
 
-    const [formData, setFormData] = useState({
-        fullName: "",
-        email: "",
-        phone: "",
-        reason: "",
-        userType: "Student",
-        source: queryParams.get('source') ?? 'Own',
-        page: 'blogs',
-        pageId: id?.[0] ? id?.[0] : ""
-    });
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -79,7 +78,8 @@ const PopupForm = ({ handlePopupformVisibility, popupProps, handleUserDetailsSub
             if (response.data) {
                 //console.log("Form submitted successfully:", formData);
                 handlePopupformVisibility();
-                localStorage.setItem('userDetails', JSON.stringify(formData));
+                //localStorage.setItem('userDetails', JSON.stringify(formData));
+                setUserDetails(formData);
                 handleUserDetailsSubmissionStatus(true);
                 // Reset after submission
                 captchaRef.current?.resetCaptcha();

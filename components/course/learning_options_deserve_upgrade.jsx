@@ -6,7 +6,7 @@ import { isValidPhoneNumber } from 'react-phone-number-input';
 import httpService from "../../services/httpService";
 import { useRouter } from "next/router";
 import { useLoader } from "../../contexts/LoaderContext";
-import Image from "next/image"; // Importing Image component from next.js for optimized image handling
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 
 const LearningOptionsDeserveUpgrade = React.memo(({ courseTitle }) => {
 
@@ -94,8 +94,17 @@ const LearningOptionsDeserveUpgrade = React.memo(({ courseTitle }) => {
         }
     };
 
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     useEffect(() => {
-        const userDetails = localStorage.getItem('userDetails');
+        // const userDetails = localStorage.getItem('userDetails');
         if (userDetails) {
             try {
                 const parsed = JSON.parse(userDetails);
@@ -185,7 +194,7 @@ const LearningOptionsDeserveUpgrade = React.memo(({ courseTitle }) => {
                 </div>}
                 {error && <div className="mt-1 text-center">
                     <img loading="lazy" src="/images/home/Main-Course-Home-Page-Get-Notified-About-Blogs-invalid-Icon.svg"
-                        alt="Invalid-Icon" 
+                        alt="Invalid-Icon"
                         className="Main-Course-Home-Page-Get-Notified-About-Blogs-newsletter-invalid-img" />
                     <span className="Main-Course-Home-Page-Get-Notified-About-Blogs-newsletter-message"> {errorMsg} </span>
                 </div>}

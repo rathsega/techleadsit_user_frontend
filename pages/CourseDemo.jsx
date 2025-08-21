@@ -19,6 +19,7 @@ import Footer from './course_demo/Footer'
 import LimitedSeats from "./course_demo/LimitedSeats";
 import httpService from "./../services/httpService";
 import Seo from "./Seo";
+import { useExpiringLocalStorage } from "../services/useExpiringLocalStorage";
 
 function convertWebinarDateFormat(date) {
     const newDate = new Date(date);
@@ -40,6 +41,16 @@ const CourseDemo = ({ props }) => {
     const handlePopupFormProps = (newProps) => {
         setPopupProps(newProps);
     }
+
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     useEffect(() => {
         const fetchCourseDemoDetails = async () => {
             try {
@@ -55,7 +66,7 @@ const CourseDemo = ({ props }) => {
             }
         };
 
-        const userDetails = localStorage.getItem('userDetails');
+        // const userDetails = localStorage.getItem('userDetails');
 
         if (userDetails) {
             try {

@@ -12,6 +12,7 @@ import "react-datepicker/dist/react-datepicker.css";
 const ReactDatePicker = dynamic(() => import("react-datepicker"), { ssr: false });
 import Image from "next/image"; // Importing Image component from next.js for optimized image handling
 import useLmsStore from "../../store/lmsStore";
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 const CourseRegistrationForm = React.memo(({
   overlayRef,
   visible = false,
@@ -21,7 +22,7 @@ const CourseRegistrationForm = React.memo(({
   hidePopupForm,
   pageName,
   courseTitle = "",
-  courseId="",
+  courseId = "",
   onSuccess = () => { },
 }) => {
   const router = useRouter();
@@ -43,27 +44,36 @@ const CourseRegistrationForm = React.memo(({
     qualification: "",
     userType: "Student",
     source: queryParams.get("source") ?? "Own",
-    page: pageName == 'course' ? pageName +' - ' + courseTitle : pageName,
+    page: pageName == 'course' ? pageName + ' - ' + courseTitle : pageName,
     pageId: courseId ?? id,
     demoDate: ""
   });
 
+  const now = new Date();
+  const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+  const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+    "userDetails",
+    null,
+    endOfDay
+  );
+
   useEffect(() => {
-        const userDetails = localStorage.getItem('userDetails');
-        if (userDetails) {
-            try {
-                const parsed = JSON.parse(userDetails);
-                setFormData(prev => ({
-                    ...prev,
-                    name: parsed?.name || parsed?.fullName || "",
-                    phone: parsed?.phone || "",
-                    email: parsed?.email || "",
-                }));
-            } catch (e) {
-                // ignore parse errors
-            }
-        }
-    }, []);
+    // const userDetails = localStorage.getItem('userDetails');
+    if (userDetails) {
+      try {
+        const parsed = JSON.parse(userDetails);
+        setFormData(prev => ({
+          ...prev,
+          name: parsed?.name || parsed?.fullName || "",
+          phone: parsed?.phone || "",
+          email: parsed?.email || "",
+        }));
+      } catch (e) {
+        // ignore parse errors
+      }
+    }
+  }, []);
 
   const [formErrors, setFormErrors] = useState({});
   const [success, setSuccess] = useState(false);
@@ -165,7 +175,8 @@ const CourseRegistrationForm = React.memo(({
 
         if (response.data) {
           //console.log("Form submitted:", formData);
-          localStorage.setItem("userDetails", JSON.stringify(formData));
+          // localStorage.setItem("userDetails", JSON.stringify(formData));
+          setUserDetails(formData);
           onSuccess(formData);
           captchaRef.current?.resetCaptcha(); // Reset after success
           setCaptchaToken('');
@@ -174,10 +185,10 @@ const CourseRegistrationForm = React.memo(({
           // hidePopupForm();
           setSuccess(true);
           //Redirect to thank you page
-          if(pageName === 'course') {
+          if (pageName === 'course') {
             setFormHeading(" " + heading + " ");
             router.push(`/thankyou?courseTitle=${courseTitle}&courseId=${courseId}&slug=${router.query.slug.join('_')}`);
-          }else{
+          } else {
             router.push(`/thankyou`);
           }
         }

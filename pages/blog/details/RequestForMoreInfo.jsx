@@ -5,6 +5,7 @@ import 'react-phone-number-input/style.css';
 import { isValidPhoneNumber } from 'react-phone-number-input';
 import httpService from "../../../services/httpService";
 import SmartReCaptcha from "../../captcha/SmartReCaptcha";
+import { useExpiringLocalStorage } from "../../../services/useExpiringLocalStorage";
 
 const RequestForMoreInfo = ({ currentBlogId }) => {
     const [formData, setFormData] = useState({
@@ -79,7 +80,8 @@ const RequestForMoreInfo = ({ currentBlogId }) => {
 
         try {
             const response = await httpService.post("/blogs/requestMoreInfo/" + currentBlogId, { ...formData, phone, token: captchaToken });
-            localStorage.setItem("userDetails", JSON.stringify(formData));
+            // localStorage.setItem("userDetails", JSON.stringify(formData));
+            setUserDetails(formData);
             if (!response?.data) throw new Error("Failed to submit");
             setSuccessMsg(true)
             // Reset after submission
@@ -97,8 +99,17 @@ const RequestForMoreInfo = ({ currentBlogId }) => {
         }
     };
 
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     useEffect(() => {
-        const userDetails = localStorage.getItem('userDetails');
+        // const userDetails = localStorage.getItem('userDetails');
         if (userDetails) {
             try {
                 const parsed = JSON.parse(userDetails);

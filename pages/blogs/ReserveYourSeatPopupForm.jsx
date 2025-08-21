@@ -7,6 +7,7 @@ import { isValidPhoneNumber } from 'react-phone-number-input';
 import httpService from "./../../services/httpService";
 import SmartReCaptcha from "../../pages/captcha/SmartReCaptcha";
 import { useLoader } from "../../contexts/LoaderContext";
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 
 const ReserveYourSeatPopupForm = ({ handleReserveSeatVisibility, popupProps, handleUserDetailsSubmissionStatus, courseName, demoDate }) => {
 
@@ -32,8 +33,17 @@ const ReserveYourSeatPopupForm = ({ handleReserveSeatVisibility, popupProps, han
         userType: ""
     });
 
+            const now = new Date();
+        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+          const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+            "userDetails",
+            null,
+            endOfDay
+        );
+
     useEffect(() => {
-        const userDetails = localStorage.getItem('userDetails');
+        // const userDetails = localStorage.getItem('userDetails');
         if (userDetails) {
             try {
                 const parsed = JSON.parse(userDetails);
@@ -108,7 +118,8 @@ const ReserveYourSeatPopupForm = ({ handleReserveSeatVisibility, popupProps, han
                 setCaptchaToken('');
                 setCaptchaKey(prev => prev + 1);
                 setTimeout(() => { handleReserveSeatVisibility(); }, 3000)
-                localStorage.setItem('userDetails', JSON.stringify(formData));
+                //localStorage.setItem('userDetails', JSON.stringify(formData));
+                setUserDetails(formData);
                 handleUserDetailsSubmissionStatus(true);
             } else {
                 setSuccess(false);
@@ -267,7 +278,7 @@ const ReserveYourSeatPopupForm = ({ handleReserveSeatVisibility, popupProps, han
                             siteKey={process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_KEY}
                             onTokenChange={(token) => setCaptchaToken(token)}
                             theme="light"
-                            size={captchaSize} 
+                            size={captchaSize}
                         />
                         {formErrors.captcha && <small className="text-danger">{formErrors.captcha}</small>}
                     </div>

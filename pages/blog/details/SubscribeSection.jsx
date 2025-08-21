@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import httpService from "../../../services/httpService";
+import { useExpiringLocalStorage } from "../../../services/useExpiringLocalStorage";
 
 const SubscribeSection = ({ currentBlogId, classes }) => {
     const [email, setEmail] = useState("");
@@ -7,8 +8,17 @@ const SubscribeSection = ({ currentBlogId, classes }) => {
     const [success, setSuccess] = useState("");
     const [errorMsg, setErrorMsg] = useState("Please Enter Valid Email Address");
 
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     useEffect(() => {
-        const userDetails = localStorage.getItem('userDetails');
+        // const userDetails = localStorage.getItem('userDetails');
         if (userDetails) {
             try {
                 const parsed = JSON.parse(userDetails);

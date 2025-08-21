@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import httpService from "./../../services/httpService";
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 
 const PopupForm = ({ handlePopupformVisibility, popupProps, handleUserDetailsSubmissionStatus }) => {
 
@@ -11,7 +12,7 @@ const PopupForm = ({ handlePopupformVisibility, popupProps, handleUserDetailsSub
 
     // const location = useLocation();
     const router = useRouter();
-        const { id } = router.query;
+    const { id } = router.query;
     // Get query parameters from the location object
     const queryParams = new URLSearchParams(router.asPath.search);
 
@@ -22,12 +23,12 @@ const PopupForm = ({ handlePopupformVisibility, popupProps, handleUserDetailsSub
     const [userType, setUserType] = useState("Student");
 
     const [formErrors, setFormErrors] = useState({
-            fullName: "",
-            email: "",
-            phone: "",
-            qualification: "",
-            userType: ""
-        });
+        fullName: "",
+        email: "",
+        phone: "",
+        qualification: "",
+        userType: ""
+    });
 
     const [formData, setFormData] = useState({
         fullName: "",
@@ -41,15 +42,14 @@ const PopupForm = ({ handlePopupformVisibility, popupProps, handleUserDetailsSub
         pageId: id
     });
 
-    const handleChange = (e) => {
-        const { id, value, name, type, checked } = e.target;
-        //console.log(id)
-        if (type === "radio") {
-            setFormData((prev) => ({ ...prev, userType: value }));
-        } else {
-            setFormData((prev) => ({ ...prev, [id]: value }));
-        }
-    };
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -81,7 +81,8 @@ const PopupForm = ({ handlePopupformVisibility, popupProps, handleUserDetailsSub
             if (response.data) {
                 //console.log("Form submitted successfully:", formData);
                 handlePopupformVisibility();
-                localStorage.setItem('userDetails', JSON.stringify(formData));
+                // localStorage.setItem('userDetails', JSON.stringify(formData));
+                setUserDetails(formData);
                 handleUserDetailsSubmissionStatus(true);
             }
         }

@@ -6,7 +6,7 @@ import { isValidPhoneNumber } from 'react-phone-number-input';
 import httpService from "../../services/httpService";
 import { useRouter } from "next/router";
 import { useLoader } from "../../contexts/LoaderContext";
-import Image from "next/image"; // Importing Image component from next.js for optimized image handling
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 
 const TurnKnowledgeIntoPower = React.memo(({ data, courseTitle }) => {
     const router = useRouter();
@@ -91,8 +91,17 @@ const TurnKnowledgeIntoPower = React.memo(({ data, courseTitle }) => {
         }
     };
 
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     useEffect(() => {
-        const userDetails = localStorage.getItem('userDetails');
+        // const userDetails = localStorage.getItem('userDetails');
         if (userDetails) {
             try {
                 const parsed = JSON.parse(userDetails);

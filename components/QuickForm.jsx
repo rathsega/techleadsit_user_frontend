@@ -6,6 +6,7 @@ import { isValidPhoneNumber } from 'react-phone-number-input';
 import { useLoader } from '../contexts/LoaderContext';
 import { useRouter } from "next/router";
 import httpService from '../services/httpService';
+import { useExpiringLocalStorage } from '../services/useExpiringLocalStorage';
 
 const QuickForm = () => {
   const [showForm, setShowForm] = useState(false);
@@ -116,7 +117,8 @@ const QuickForm = () => {
         setLoading(true);
         let response = await httpService.post("/contactus/submitForm", { ...formData });
         if (response.data) {
-          localStorage.setItem("userDetails", JSON.stringify(formData));
+          // localStorage.setItem("userDetails", JSON.stringify(formData));
+          setUserDetails(formData);
           setLoading(false);
           setSuccess(true);
           setFormData({
@@ -139,8 +141,18 @@ const QuickForm = () => {
     }
   };
 
+  const now = new Date();
+  const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+  const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+    "userDetails",
+    null,
+    endOfDay
+  );
+
   useEffect(() => {
-    const userDetails = localStorage.getItem('userDetails');
+    //const userDetails = localStorage.getItem('userDetails');
+
     if (userDetails) {
       try {
         const parsed = JSON.parse(userDetails);

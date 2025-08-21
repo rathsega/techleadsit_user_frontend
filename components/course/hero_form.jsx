@@ -6,7 +6,7 @@ import { isValidPhoneNumber } from 'react-phone-number-input';
 import httpService from "../../services/httpService";
 import { useRouter } from "next/router";
 import { useLoader } from "../../contexts/LoaderContext";
-import Image from "next/image"; // Importing Image component from next.js for optimized image handling
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 
 const HeroForm = ({ courseTitle }) => {
 
@@ -94,8 +94,17 @@ const HeroForm = ({ courseTitle }) => {
         }
     };
 
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     useEffect(() => {
-        const userDetails = localStorage.getItem('userDetails');
+        //const userDetails = localStorage.getItem('userDetails');
         if (userDetails) {
             try {
                 const parsed = JSON.parse(userDetails);
@@ -162,7 +171,7 @@ const HeroForm = ({ courseTitle }) => {
                 )}
             </div>
             <button className="Form-input-info-submit" type="submit">
-              <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right"></i>
             </button>
         </form>
             {success && <div className="mt-1 text-end">

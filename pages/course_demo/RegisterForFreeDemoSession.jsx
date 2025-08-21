@@ -10,7 +10,7 @@ import Image from "next/image";
 import { useLoader } from "../../contexts/LoaderContext";
 import SmartReCaptcha from "../captcha/SmartReCaptcha";
 import LiveChatButton from "../../components/LiveChatButton";
-
+import { useExpiringLocalStorage } from "./../../services/useExpiringLocalStorage";
 const RegisterForFreeDemoSession = ({ openForm }) => {
 
     const [userType, setUserType] = useState("Student");
@@ -34,6 +34,15 @@ const RegisterForFreeDemoSession = ({ openForm }) => {
         page: "demo",
         pageId: id,
     });
+
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
 
     const handleChange = (e) => {
         const { id, value } = e.target;
@@ -73,7 +82,8 @@ const RegisterForFreeDemoSession = ({ openForm }) => {
         try {
             const response = await httpService.post("/contactus/submitForm", updatedFormData);
             if (response.data) {
-                localStorage.setItem("userDetails", JSON.stringify(formData));
+                // localStorage.setItem("userDetails", JSON.stringify(formData));
+                setUserDetails(formData);
                 setSuccessMsg(true)
                 // Reset after submission
                 captchaRef.current?.resetCaptcha();

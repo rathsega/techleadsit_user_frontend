@@ -1,6 +1,7 @@
-import React,{ useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import httpService from "../../services/httpService";
 import Image from "next/image"; // Importing Image component from next.js for optimized image handling
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 const SubscribeNewsLetters = React.memo(() => {
 
     const [email, setEmail] = useState("");
@@ -8,8 +9,18 @@ const SubscribeNewsLetters = React.memo(() => {
     const [success, setSuccess] = useState("");
     const [errorMsg, setErrorMsg] = useState("Please Enter Valid Email Address");
 
+
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     useEffect(() => {
-        const userDetails = localStorage.getItem('userDetails');
+        // const userDetails = localStorage.getItem('userDetails');
         if (userDetails) {
             try {
                 const parsed = JSON.parse(userDetails);
@@ -62,13 +73,13 @@ const SubscribeNewsLetters = React.memo(() => {
                         </div>
                     </div>
                     {success && <div className="mt-2">
-                        <Image priority={false} loading="lazy" src="/images/courses/Main-Course-Get-Notified-About-Blogs-Tick-Icon.svg" 
+                        <Image priority={false} loading="lazy" src="/images/courses/Main-Course-Get-Notified-About-Blogs-Tick-Icon.svg"
                             alt="Tick-Icon" className="Main-Course-Get-Notified-About-Blogs-newsletter-tick-img" />
                         <span className="Main-Course-Get-Notified-About-Blogs-newsletter-message">Thank You!! You have
                             been Subscribed to our Newsletter </span>
                     </div>}
                     {error && <div className="mt-2">
-                        <Image priority={false} loading="lazy" src="/images/courses/Main-Course-Get-Notified-About-Blogs-invalid-Icon.svg" 
+                        <Image priority={false} loading="lazy" src="/images/courses/Main-Course-Get-Notified-About-Blogs-invalid-Icon.svg"
                             alt="Invalid-Icon" className="Main-Course-Get-Notified-About-Blogs-newsletter-invalid-img" />
                         <span className="Main-Course-Get-Notified-About-Blogs-newsletter-message">{errorMsg} </span>
                     </div>}

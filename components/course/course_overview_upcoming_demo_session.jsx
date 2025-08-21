@@ -11,6 +11,7 @@ import "react-datepicker/dist/react-datepicker.css";
 // Dynamically import ReactDatePicker with SSR disabled
 const ReactDatePicker = dynamic(() => import("react-datepicker"), { ssr: false });
 import Image from "next/image"; // Importing Image component from next.js for optimized image handling
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 
 const UpcomingDemoSession = React.memo(({ data, courseTitle, courseId, demos, openForm, subHeading }) => {
 
@@ -61,8 +62,18 @@ const UpcomingDemoSession = React.memo(({ data, courseTitle, courseId, demos, op
         return `${day}${suffix} ${monthName} ${year} ${hours}:${minutes} ${ampm}`;
     };
 
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     useEffect(() => {
-        const userDetails = localStorage.getItem('userDetails');
+        // const userDetails = localStorage.getItem('userDetails');
+
         if (userDetails) {
             try {
                 const parsed = JSON.parse(userDetails);
@@ -153,7 +164,6 @@ const UpcomingDemoSession = React.memo(({ data, courseTitle, courseId, demos, op
         return new Intl.DateTimeFormat('en-GB', options).format(date);
     };
 
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (validateForm()) {
@@ -173,7 +183,8 @@ const UpcomingDemoSession = React.memo(({ data, courseTitle, courseId, demos, op
             setLoading(false)
             if (response.data) {
                 console.log("Form submitted successfully:", dataToSend);
-                localStorage.setItem('userDetails', JSON.stringify(dataToSend));
+                //localStorage.setItem('userDetails', JSON.stringify(dataToSend));
+                setUserDetails(dataToSend);
                 setSuccess(true);
                 router.push(`/thankyou?courseTitle=${courseTitle}&courseId=${courseId}&slug=${router.query.slug.join('_')}`);
             } else {

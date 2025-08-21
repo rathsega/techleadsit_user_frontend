@@ -8,6 +8,7 @@ import { isValidPhoneNumber } from 'react-phone-number-input';
 import httpService from "./../../services/httpService";
 import { useLoader } from "../../contexts/LoaderContext";
 import SmartReCaptcha from "../captcha/SmartReCaptcha";
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 
 const Contactus = () => {
 
@@ -30,8 +31,17 @@ const Contactus = () => {
     const [captchaKey, setCaptchaKey] = useState(0);
     const { setLoading } = useLoader();
 
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     useEffect(() => {
-        const userDetails = localStorage.getItem('userDetails');
+        // const userDetails = localStorage.getItem('userDetails');
         if (userDetails) {
             try {
                 const parsed = JSON.parse(userDetails);
@@ -118,7 +128,8 @@ const Contactus = () => {
                 setLoading(false)
                 if (response.data) {
                     //console.log("Form submitted successfully:", formData);
-                    localStorage.setItem('userDetails', JSON.stringify(formData));
+                    // localStorage.setItem('userDetails', JSON.stringify(formData));
+                    setUserDetails(formData);
                     setHasError(false)
                     captchaRef.current?.resetCaptcha(); // Reset after success
                     setCaptchaToken('');
@@ -270,7 +281,7 @@ const Contactus = () => {
                                     alt="Contact-us-call-icon" />
                                 <div>
                                     <p className="CU-card-para1">Phone</p>
-                                    <p className="CU-card-para2"><a href="tel:+918125323232"  style={{textDecoration:"none"}}>+91 8125323232</a></p>
+                                    <p className="CU-card-para2"><a href="tel:+918125323232" style={{ textDecoration: "none" }}>+91 8125323232</a></p>
                                 </div>
                             </button>
                             <button className="CU-Contact-Us-card">

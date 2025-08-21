@@ -6,6 +6,7 @@ import { isValidPhoneNumber } from 'react-phone-number-input';
 import httpService from "../../services/httpService";
 import { useRouter } from "next/router";
 import { useLoader } from "../../contexts/LoaderContext";
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 
 const HeroSuccessStoriesForm = ({ courseTitle }) => {
     const router = useRouter();
@@ -105,11 +106,12 @@ const HeroSuccessStoriesForm = ({ courseTitle }) => {
             // Simulate API call
             setLoading(true);
             try {
-                const response = await httpService.post("/contactus/submitHeroForm", {...formData, qualification: formData.hero_success_qualification});
+                const response = await httpService.post("/contactus/submitHeroForm", { ...formData, qualification: formData.hero_success_qualification });
                 setSuccess(true);
                 setError(false);
                 //setFormData({ fullName: "", email: "", phone: "" });
-                localStorage.setItem("userDetails", JSON.stringify(formData));
+                // localStorage.setItem("userDetails", JSON.stringify(formData));
+                setUserDetails(formData);
                 setErrorMsg("Thank you for your submission!");
                 router.push(`/thankyou?courseTitle=${courseTitle}&slug=${router.query.slug.join('_')}`);
             } catch (err) {
@@ -124,8 +126,17 @@ const HeroSuccessStoriesForm = ({ courseTitle }) => {
         }
     };
 
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     useEffect(() => {
-        const userDetails = localStorage.getItem('userDetails');
+        // const userDetails = localStorage.getItem('userDetails');
         if (userDetails) {
             try {
                 const parsed = JSON.parse(userDetails);
@@ -146,103 +157,103 @@ const HeroSuccessStoriesForm = ({ courseTitle }) => {
     return (
         <div className="Hero-Form-D-fl-J-Cen">
             <div class="glow-border-wrapper">
-            <div className="Alternative-HeroBanner-Form-container">
-                <h2>
-                    Register for <span className="Alternative-HeroBanner-Form-highlight">Free Demo</span> Session
-                </h2>
-                <form className="Alternative-HeroBanner-Form-form" onSubmit={handleSubmit} noValidate>
-                    <label htmlFor="name">
-                        Name<span className="Alternative-HeroBanner-Form-required">*</span>
-                    </label>
-                    <input
-                        type="text"
-                        id="fullName"
-                        placeholder="Enter Name"
-                        value={formData.fullName}
-                        onChange={handleChange}
-                        required
-                    />
-                    {submitted && errors.fullName && (
-                        <div className="text-danger" style={{ fontSize: "13px" }}>{errors.fullName}</div>
-                    )}
-
-                    <label htmlFor="email">
-                        Email<span className="Alternative-HeroBanner-Form-required">*</span>
-                    </label>
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Enter Email ID"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                    {submitted && errors.email && (
-                        <div className="text-danger" style={{ fontSize: "13px" }}>{errors.email}</div>
-                    )}
-
-                    <label htmlFor="phone">
-                        Mobile Number<span className="Alternative-HeroBanner-Form-required">*</span>
-                    </label>
-                    <div className="Alternative-HeroBanner-Form-phone">
-                        <PhoneInput
-                            international
-                            defaultCountry="IN"
-                            value={formData.phone}
-                            onChange={handlePhoneChange}
-                            className="Alternative-HeroBanner-Form-phone-input"
-                            style={{ width: "100%" }}
-                            id="phone"
-                            name="phone"
-                            placeholder="Enter Mobile Number"
+                <div className="Alternative-HeroBanner-Form-container">
+                    <h2>
+                        Register for <span className="Alternative-HeroBanner-Form-highlight">Free Demo</span> Session
+                    </h2>
+                    <form className="Alternative-HeroBanner-Form-form" onSubmit={handleSubmit} noValidate>
+                        <label htmlFor="name">
+                            Name<span className="Alternative-HeroBanner-Form-required">*</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Enter Name"
+                            value={formData.fullName}
+                            onChange={handleChange}
+                            required
                         />
-                    </div>
-                    {submitted && errors.phone && (
-                        <div className="text-danger" style={{ fontSize: "13px" }}>{errors.phone}</div>
-                    )}
+                        {submitted && errors.fullName && (
+                            <div className="text-danger" style={{ fontSize: "13px" }}>{errors.fullName}</div>
+                        )}
 
-                    <label htmlFor="message">Message</label>
-                    <textarea
-                        id="message"
-                        placeholder="Write your Query (optional)"
-                        value={formData.message}
-                        onChange={handleChange}
-                    />
+                        <label htmlFor="email">
+                            Email<span className="Alternative-HeroBanner-Form-required">*</span>
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter Email ID"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                        />
+                        {submitted && errors.email && (
+                            <div className="text-danger" style={{ fontSize: "13px" }}>{errors.email}</div>
+                        )}
 
-                    <div className="Alternative-HeroBanner-Form-radio">
-                        <div className="Hero-AL-TI-Form-RB-container" style={{ flexDirection: "column" }}>
-                            {["Student", "IT Professional", "Domain Experience"].map((q) => (
-                                <div className="Hero-AL-TI-Form-RB" key={q}>
-                                    <input
-                                        className="Hero-AL-TI-Form-RB__input"
-                                        id={`hero_success_${q}`}
-                                        type="radio"
-                                        value={q}
-                                        name="hero_success_qualification"
-                                        checked={formData.hero_success_qualification === q}
-                                        onChange={handleChange}
-                                    />
-                                    <label className="Hero-AL-TI-Form-RB__label" htmlFor={`hero_success_${q}`}>
-                                        <span className="Hero-AL-TI-Form-RB__custom"></span>
-                                        <span>{q}</span>
-                                    </label>
-                                </div>
-                            ))}
+                        <label htmlFor="phone">
+                            Mobile Number<span className="Alternative-HeroBanner-Form-required">*</span>
+                        </label>
+                        <div className="Alternative-HeroBanner-Form-phone">
+                            <PhoneInput
+                                international
+                                defaultCountry="IN"
+                                value={formData.phone}
+                                onChange={handlePhoneChange}
+                                className="Alternative-HeroBanner-Form-phone-input"
+                                style={{ width: "100%" }}
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter Mobile Number"
+                            />
                         </div>
-                    </div>
-                    {submitted && errors.hero_success_qualification && (
-                        <div className="text-danger" style={{ fontSize: "13px" }}>{errors.hero_success_qualification}</div>
-                    )}
+                        {submitted && errors.phone && (
+                            <div className="text-danger" style={{ fontSize: "13px" }}>{errors.phone}</div>
+                        )}
 
-                    <button type="submit">Register Now</button>
-                    {success && (
-                        <div className="text-success" style={{ fontSize: "14px", marginTop: "10px" }}>
-                            Registration successful!, <br /> Our team will get back to you.
+                        <label htmlFor="message">Message</label>
+                        <textarea
+                            id="message"
+                            placeholder="Write your Query (optional)"
+                            value={formData.message}
+                            onChange={handleChange}
+                        />
+
+                        <div className="Alternative-HeroBanner-Form-radio">
+                            <div className="Hero-AL-TI-Form-RB-container" style={{ flexDirection: "column" }}>
+                                {["Student", "IT Professional", "Domain Experience"].map((q) => (
+                                    <div className="Hero-AL-TI-Form-RB" key={q}>
+                                        <input
+                                            className="Hero-AL-TI-Form-RB__input"
+                                            id={`hero_success_${q}`}
+                                            type="radio"
+                                            value={q}
+                                            name="hero_success_qualification"
+                                            checked={formData.hero_success_qualification === q}
+                                            onChange={handleChange}
+                                        />
+                                        <label className="Hero-AL-TI-Form-RB__label" htmlFor={`hero_success_${q}`}>
+                                            <span className="Hero-AL-TI-Form-RB__custom"></span>
+                                            <span>{q}</span>
+                                        </label>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                    )}
-                </form>
+                        {submitted && errors.hero_success_qualification && (
+                            <div className="text-danger" style={{ fontSize: "13px" }}>{errors.hero_success_qualification}</div>
+                        )}
+
+                        <button type="submit">Register Now</button>
+                        {success && (
+                            <div className="text-success" style={{ fontSize: "14px", marginTop: "10px" }}>
+                                Registration successful!, <br /> Our team will get back to you.
+                            </div>
+                        )}
+                    </form>
+                </div>
             </div>
-        </div>
         </div>
 
     );
