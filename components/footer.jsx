@@ -61,54 +61,41 @@ const Footer = React.memo(() => {
                     <Image loading="lazy" src="/images/Main-Course-Page-Techleads-Logo.svg" className="cursor-pointer" width="236" height="40" onClick={openHome} alt="Footer-Techleads-Logo" />
                     <p><a href="tel:+918125323232">Phone: +91 8125323232</a></p>
                     <p><a href="mailto:info@techleadsit.com">Email: info@techleadsit.com</a></p>
-                    
+
                     <div className="d-flex gap-2 align-items-center">
                         <div className="Footer-Mobile-App-Icons">
-                            <a href="https://apps.apple.com/in/app/tech-leads-it/id6615066544" target="_blank" rel="noopener noreferrer"><img alt="Click-For-App-Store" loading="lazy" width="150" height="47" decoding="async" data-nimg="1"  src="/images/courses/Click-For-App-Store.avif" /></a><a href="https://play.google.com/store/apps/details?id=com.techleadsit.academy_app&amp;pli=1" target="_blank" rel="noopener noreferrer"><img alt="Click-For-Play-Store" loading="lazy" width="150" height="47" decoding="async" data-nimg="1"  src="/images/courses/Click-For-Play-Store.avif" /></a></div><img src="/images/courses/Scan-This-For-App.png" alt="Scan-for-Mobile-App" className="Main-Course-Footer-Scan-For-Mobile-App" /></div>
+                            <a href="https://apps.apple.com/in/app/tech-leads-it/id6615066544" target="_blank" rel="noopener noreferrer"><img alt="Click-For-App-Store" loading="lazy" width="150" height="47" decoding="async" data-nimg="1" src="/images/courses/Click-For-App-Store.avif" /></a><a href="https://play.google.com/store/apps/details?id=com.techleadsit.academy_app&amp;pli=1" target="_blank" rel="noopener noreferrer"><img alt="Click-For-Play-Store" loading="lazy" width="150" height="47" decoding="async" data-nimg="1" src="/images/courses/Click-For-Play-Store.avif" /></a></div><img src="/images/courses/Scan-This-For-App.png" alt="Scan-for-Mobile-App" className="Main-Course-Footer-Scan-For-Mobile-App" /></div>
 
                 </div>
                 <div className="Main-Course-Footer-Wrap-Section">
                     <div className="Main-Course-Footer-Section-Nav-Section">
-                        <h2>Top Categories</h2>
-                        {categories.length === 0
-                            ? Array.from({ length: 5 }).map((_, i) => (
-                                <div key={i} style={{ height: 24, margin: "8px 0", borderRadius: 4 }} />
-                            ))
-                            : categories.slice(0, 5).map((cat, catIndex) => (
-                                <a href={`/courses?subCategoryId=${cat?.subCategoryId}&subCategoryName=${cat?.subCategoryName}`} key={catIndex} target="_blank">
-                                    <p>{cat?.subCategoryName}</p>
-                                </a>
-                            ))}
-                    </div>
-                    <div className="Main-Course-Footer-Section-Nav-Section">
-                        <h2>Popular Courses</h2>
-                        {topCourses.length === 0
-                            ? Array.from({ length: 5 }).map((_, i) => (
-                                <div
-                                    key={i}
-                                    style={{
-                                        height: 24,
-                                        margin: "8px 0",
-                                        borderRadius: 4
-                                    }}
-                                />
-                            ))
-                            : topCourses.map((tc, tci) => (
-                                <a href={'/' + tc?.basic?.slug} key={tci} target="_blank">
-                                    <p>{tc?.basic?.title}</p>
-                                </a>
+                        <h2 className="Footer-Heading-Underline-Top  Footer-Heading-Underline">Top Categories</h2>
+                        {
+                            categories?.slice(0, 5)?.map((cat, catIndex) => (
+                                <a href={`/courses?subCategoryId=${cat?._id}&subCategoryName=${cat?.title}`} key={catIndex} target="_blank"><p>{cat?.title}</p></a>
                             ))
                         }
                     </div>
+                    <div class="v-dotted" aria-hidden="true"></div>
                     <div className="Main-Course-Footer-Section-Nav-Section">
-                        <h2>Useful Links</h2>
-                        <a href="/upcoming-batches" target="_blank"><p>Upcoming Batches</p></a>
+                        <h2 className="Footer-Heading-Underline-Top  Footer-Heading-Underline">Popular Courses</h2>
+                        {
+                            topCourses?.map((tc, tci) => (
+                                <a href={'/' + tc?.basic?.slug} key={tci} target="_blank"><p>{tc?.basic?.title}</p></a>
+                            ))
+                        }
+                    </div>
+                    <div class="v-dotted" aria-hidden="true"></div>
+                    <div className="Main-Course-Footer-Section-Nav-Section">
+                        <h2 className="Footer-Heading-Underline-Top Footer-Heading-Underline">Useful Links</h2>
+                        <a href="/comingsoon" target="_blank"><p>Upcoming Batches</p></a>
                         <a href="/blogs" target="_blank"><p>Blogs</p></a>
                         <a href="/interview_questions" target="_blank"><p>Interview Questions</p></a>
                         <a href="/careers" target="_blank"><p>Careers</p></a>
                     </div>
+                    <div class="v-dotted" aria-hidden="true"></div>
                     <div className="Main-Course-Footer-Section-Nav-Section">
-                        <h2>Support & Policies</h2>
+                        <h2 className="Footer-Heading-Underline-Top Footer-Heading-Underline">Support & Policies</h2>
                         <a href="/terms-conditions" target="_blank"><p>Terms and conditions</p></a>
                         <a href="/privacy-policy" target="_blank"><p>Privacy policy</p></a>
                         <a href="/refund-policy" target="_blank"><p>Refund policy</p></a>

@@ -346,6 +346,20 @@ const Contactus = () => {
                             opp. Bahar Cafe, Hyderabad, Telangana 500038</p>
                     </div>
                 </div>
+
+                <div className="Course-Contact-Map-Section">
+                    <div className="map-container">
+                        <iframe title="instituteAddress2"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2818863631437!2d78.38926887369082!3d17.446217201110606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9151b883f395%3A0x61b3eacdb2eecbe6!2sTrendz%20Arcade!5e0!3m2!1sen!2sin!4v1755685194887!5m2!1sen!2sin"
+                            width="505" height="320" className="instituteAddressHW" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div>
+                        <h2 className="Course-contact-us-OA-h">Our Address</h2>
+                        <h2 className="Course-contact-us-OA-h">Branch 3:</h2>
+                        <p className="Course-contact-us-OA-p">4th Floor, Eashan Arcade, Plot no 3-164, Trendz Arcade, Kavuri Hills Road, Doctor's Colony, Hyderabad, Telangana 500033.</p>
+                    </div>
+                </div>
             </section>
 
             <SubscribeSection currentBlogId="0" classes="Course-Contact-Us-margin"></SubscribeSection>

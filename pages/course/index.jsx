@@ -1108,7 +1108,7 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                                 <Image loading='lazy' priority={false} alt="Location-Icon" height="56" width="56" className="Main-Course-Get-In-Touch-Icon-S" src="/images/courses/Main-Course-Get-In-Touch-Our-Location-Icon.svg" />
                                 <div>
                                     <h3 className="Main-Course-Get-In-Touch-Segment-Heading">Our address</h3>
-                                    <p className="Main-Course-Get-In-Touch-Segment-Para">4th Floor, Sridevi Nilayam, plot no 38, near Jntu Metro Station, back side lane of Pista house, Sardar Patel Nagar, IDPL Staff Cooperative Housing Society, Kukatpally Housing Board Colony, Kukatpally, Hyderabad, Telangana 500085</p>
+                                    <p className="Main-Course-Get-In-Touch-Segment-Para">4th Floor, Eashan Arcade, Plot no 3-164, Trendz Arcade, Kavuri Hills Road, Doctor's Colony, Hyderabad, Telangana 500033</p>
                                 </div>
                             </div>
                         </a>
