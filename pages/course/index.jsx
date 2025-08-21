@@ -32,6 +32,7 @@ import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import useLmsStore from '../../store/lmsStore';
 import QuickPayment from '../../components/course/quick_payment';
+import { useExpiringLocalStorage } from '../../services/useExpiringLocalStorage';
 
 const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, courseId, courseTax, demos, upcomingDemoDate, relatedBlogs, relatedCourses }) => {
     // console.log("Changed Data: ", changedData);
@@ -216,7 +217,16 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
     const openForm = (formType, onSuccessCallback) => {
         const config = formConfigs[formType];
 
-        let userDetails = localStorage.getItem("userDetails");
+        const now = new Date();
+        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+        const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+            "userDetails",
+            null,
+            endOfDay
+        );
+
+        // let userDetails = localStorage.getItem("userDetails");
         if (userDetails) {
             setDetailsSubmitted(true);
         } else {
@@ -269,7 +279,15 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
     }
 
     const handleBrochureDownload = () => {
-        const userDetails = localStorage.getItem("userDetails");
+        // const userDetails = localStorage.getItem("userDetails");
+        const now = new Date();
+        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+        const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+            "userDetails",
+            null,
+            endOfDay
+        );
 
         if (userDetails) {
             downloadBrochure();

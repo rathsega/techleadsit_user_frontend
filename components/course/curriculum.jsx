@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, useMemo, useCallback } from "react";
 import MobileCurriculum from "./mobile_curriculum";
 import YoutubeVideoPopupPlayer from "./YoutubeVideoPopupPlayer";
 import Image from "next/image"; // Importing Image component from next.js for optimized image handling
-
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage"; // Custom hook for local storage management
 
 const Curriculum = ({ data, courseTitle, brouchurePath, changedData, openForm }) => {
     const [activeModuleIndex, setActiveModuleIndex] = useState(0)
@@ -62,7 +62,15 @@ const Curriculum = ({ data, courseTitle, brouchurePath, changedData, openForm })
     }, [activeModuleIndex]);
 
     const handleBrochureDownload = () => {
-        const userDetails = localStorage.getItem("userDetails");
+        // const userDetails = localStorage.getItem("userDetails");
+        const now = new Date();
+        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+        const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+            "userDetails",
+            null,
+            endOfDay
+        );
 
         if (userDetails) {
             downloadBrochure();

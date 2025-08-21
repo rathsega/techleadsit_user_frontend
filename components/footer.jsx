@@ -88,7 +88,7 @@ const Footer = React.memo(() => {
                     <div class="v-dotted" aria-hidden="true"></div>
                     <div className="Main-Course-Footer-Section-Nav-Section">
                         <h2 className="Footer-Heading-Underline-Top Footer-Heading-Underline">Useful Links</h2>
-                        <a href="/comingsoon" target="_blank"><p>Upcoming Batches</p></a>
+                        <a href="/upcoming-batches" target="_blank"><p>Upcoming Batches</p></a>
                         <a href="/blogs" target="_blank"><p>Blogs</p></a>
                         <a href="/interview_questions" target="_blank"><p>Interview Questions</p></a>
                         <a href="/careers" target="_blank"><p>Careers</p></a>

@@ -5,6 +5,7 @@ import { useLoader } from "../contexts/LoaderContext";
 const CourseRegistrationForm = lazy(() => import('./course/RegistrationForm'));
 const AlreadySubmitted = lazy(() => import('../pages/blog/details/already_submitted'));
 import Image from "next/image";
+import { useExpiringLocalStorage } from "../services/useExpiringLocalStorage";
 const Header = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [isTab, setTab] = useState(false);
@@ -57,7 +58,16 @@ const Header = () => {
     const openForm = useCallback((formType, onSuccessCallback) => {
         const config = formConfigs[formType];
 
-        let userDetails = localStorage.getItem("userDetails");
+        // let userDetails = localStorage.getItem("userDetails");
+        const now = new Date();
+        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+        const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+            "userDetails",
+            null,
+            endOfDay
+        );
+        
         if (userDetails) {
             setDetailsSubmitted(true);
         } else {
@@ -289,7 +299,7 @@ const Header = () => {
                                 {categories.map((cat) => (
 
                                     <div className="TLI-H-M-Header-All-Category-Icon-card" onClick={() => redirectToCategory(cat)}>
-                                        <img src={`/images/header/${cat?.title}.svg`} alt={cat?.title} className="TLI-H-M-Header-All-Category-Icon" loading="lazy"  />
+                                        <img src={`/images/header/${cat?.title}.svg`} alt={cat?.title} className="TLI-H-M-Header-All-Category-Icon" loading="lazy" />
                                         <p className="TLI-H-M-Header-All-Category-Icon-card-Para">{cat?.title}</p>
                                     </div>
                                 ))

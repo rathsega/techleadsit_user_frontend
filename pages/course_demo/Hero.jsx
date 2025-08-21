@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Image from 'next/image';
+import { useExpiringLocalStorage } from '../../services/useExpiringLocalStorage';
 
 const Hero = ({ courseTitle, downloadCurriculum, userDetailsSubmitted, openForm }) => {
     useEffect(() => {
@@ -15,13 +16,20 @@ const Hero = ({ courseTitle, downloadCurriculum, userDetailsSubmitted, openForm 
     }, []);
 
     const handleDownloadCurriculum = () => {
-        if (localStorage.getItem("userDetails")) {
+        const now = new Date();
+        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+        const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+            "userDetails",
+            null,
+            endOfDay
+        );
+        if (userDetails) {
             downloadCurriculum();
         } else {
             localStorage.setItem('clickedFrom', 'hero');
             openForm("Download Course Curriculum", () => {
-                const newDetails = localStorage.getItem("userDetails");
-                if (newDetails) {
+                if (userDetails) {
                     downloadCurriculum();
                 }
             });

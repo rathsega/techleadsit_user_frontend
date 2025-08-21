@@ -10,6 +10,7 @@ import FloatingLabel from "./FloattingLabel";
 import MobileView from "./MobileView";
 import SocialShare from "./SocialShare";
 import { useLoader } from "../../../contexts/LoaderContext";
+import { useExpiringLocalStorage } from "../../../services/useExpiringLocalStorage";
 
 export default function BlogDetailsPage({ initialBlogDetails }) {
     const router = useRouter();
@@ -69,9 +70,18 @@ export default function BlogDetailsPage({ initialBlogDetails }) {
         return () => window.removeEventListener("resize", checkScreenSize);
     }, []);
 
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     // Set userDetails from localStorage and add view
     useEffect(() => {
-        const userDetails = localStorage.getItem("userDetails");
+        // const userDetails = localStorage.getItem("userDetails");
         if (userDetails) {
             try {
                 const parsed = JSON.parse(userDetails);

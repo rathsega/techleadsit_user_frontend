@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
+import { useExpiringLocalStorage } from '../../services/useExpiringLocalStorage';
 const CourseOverview = ({ details, downloadCurriculum, openForm, userDetailsSubmitted }) => {
     const handleDownloadCurriculum = () => {
         if (userDetailsSubmitted) {
@@ -7,8 +8,16 @@ const CourseOverview = ({ details, downloadCurriculum, openForm, userDetailsSubm
         } else {
             localStorage.setItem('clickedFrom', 'courseOverview');
             openForm("Download Course Curriculum", () => {
-                const newDetails = localStorage.getItem("userDetails");
-                if (newDetails) {
+                // const newDetails = localStorage.getItem("userDetails");
+                const now = new Date();
+                const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+                const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+                    "userDetails",
+                    null,
+                    endOfDay
+                );
+                if (userDetails) {
                     downloadCurriculum();
                 }
             });

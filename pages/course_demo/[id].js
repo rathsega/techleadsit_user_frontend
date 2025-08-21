@@ -8,21 +8,18 @@ import CourseOverView from "./CourseOverview";
 import WhoCanAttend from "./WhoCanAttend";
 import PricingPlans from "./PricingPlans";
 import UpcomingFreeDemoClass from "./UpcomingFreeDemoClass";
-import CourseDemoTestimonials from "./CourseDemoTestimonials";
 import Alumni from "./Alumni";
 import RegisterForFreeDemoSession from "./RegisterForFreeDemoSession";
-import PopupForm from "./PopupForm";
 import DemoAgenda from "./DemoAgenda";
 import Faqs from "./Faqs";
 import GetInTouch from "./GetInTouch";
-import Footer from "./Footer";
 import LimitedSeats from "./LimitedSeats";
 import httpService from "../../services/httpService";
 import Seo from "../Seo";
 import InstructorTestimonials from "../../components/course/instructor_testimonials";
 import CourseRegistrationForm from "../../components/course/RegistrationForm";
 import AlreadySubmitted from "../blog/details/already_submitted";
-
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 function convertWebinarDateFormat(date) {
     const newDate = new Date(date);
     return newDate.toISOString().slice(0, 10) + "T" + newDate.toTimeString().slice(0, 5);
@@ -64,7 +61,15 @@ const CourseDemo = ({ initialDemoDetails }) => {
     useEffect(() => {
         if (typeof window === "undefined") return; // Avoid server-side execution
 
-        const userDetails = localStorage.getItem("userDetails");
+        // const userDetails = localStorage.getItem("userDetails");
+        const now = new Date();
+        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+        const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+            "userDetails",
+            null,
+            endOfDay
+        );
         if (userDetails) {
             try {
                 const parsedDetails = JSON.parse(userDetails);
@@ -121,7 +126,7 @@ const CourseDemo = ({ initialDemoDetails }) => {
         }
     };
 
-    
+
     const formRef = useRef(null);
     const overlayRef = useRef(null);
 
@@ -196,7 +201,15 @@ const CourseDemo = ({ initialDemoDetails }) => {
     const openForm = (formType, onSuccessCallback) => {
         const config = formConfigs[formType];
 
-        let userDetails = localStorage.getItem("userDetails");
+        // let userDetails = localStorage.getItem("userDetails");
+        const now = new Date();
+        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+        const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+            "userDetails",
+            null,
+            endOfDay
+        );
         if (userDetails) {
             setDetailsSubmitted(true);
         } else {

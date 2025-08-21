@@ -1,7 +1,7 @@
 import CourseRegistrationForm from "../../components/course/RegistrationForm";
 import AlreadySubmitted from "../blog/details/already_submitted";
 import { useState, useRef } from "react";
-
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 const StartYourJourney = () => {
     const formRef = useRef(null);
     const overlayRef = useRef(null);
@@ -12,7 +12,6 @@ const StartYourJourney = () => {
     const [buttonLabel, setButtonLabel] = useState("");
     const [detailsSubmitted, setDetailsSubmitted] = useState(false);
     const [formSuccessCallback, setFormSuccessCallback] = useState(null);
-    const [userDetailsSubmitted, setUserDetailsSubmitted] = useState(false);
 
     const formConfigs = {
         "Start Your Journey": {
@@ -49,7 +48,16 @@ const StartYourJourney = () => {
     const openForm = (formType, onSuccessCallback) => {
         const config = formConfigs[formType];
 
-        let userDetails = localStorage.getItem("userDetails");
+        const now = new Date();
+        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+        const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+            "userDetails",
+            null,
+            endOfDay
+        );
+
+        // let userDetails = localStorage.getItem("userDetails");
         if (userDetails) {
             setDetailsSubmitted(true);
         } else {

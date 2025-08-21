@@ -3,9 +3,9 @@ import { useRouter } from "next/router";
 import Hero from "./Hero";
 import BottomHero from "./BottomHero"
 import MainSection from "./MainSection"
-import PopupForm from "../blogs/PopupForm";
 import CourseRegistrationForm from "../../components/course/RegistrationForm";
 import AlreadySubmitted from "../blog/details/already_submitted";
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 
 const Courses = () => {
     const formRef = useRef(null);
@@ -64,7 +64,15 @@ const Courses = () => {
     const openForm = (formType, onSuccessCallback) => {
         const config = formConfigs[formType];
 
-        let userDetails = localStorage.getItem("userDetails");
+        // let userDetails = localStorage.getItem("userDetails");
+        const now = new Date();
+        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+        const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+            "userDetails",
+            null,
+            endOfDay
+        );
         if (userDetails) {
             setDetailsSubmitted(true);
         } else {

@@ -18,8 +18,8 @@ const Testimonials = dynamic(() => import("./Testimonials"), { ssr: false });
 const CourseRegistrationForm = dynamic(() => import("./../../components/course/RegistrationForm"), { ssr: false });
 const AlreadySubmitted = dynamic(() => import("../blog/details/already_submitted"), { ssr: false });
 const HeaderStrip = dynamic(() => import("./HeaderStrip"));
-import { useInView } from 'react-intersection-observer';
 import Seo from "../Seo";
+import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 
 const Home = () => {
 
@@ -69,7 +69,15 @@ const Home = () => {
     const openForm = (formType, onSuccessCallback) => {
         const config = formConfigs[formType];
 
-        let userDetails = localStorage.getItem("userDetails");
+        // let userDetails = localStorage.getItem("userDetails");
+        const now = new Date();
+        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+        const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+            "userDetails",
+            null,
+            endOfDay
+        );
         if (userDetails) {
             setDetailsSubmitted(true);
         } else {
