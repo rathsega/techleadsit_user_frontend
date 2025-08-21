@@ -66,18 +66,19 @@ const Home = () => {
         }
     };
 
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     const openForm = (formType, onSuccessCallback) => {
         const config = formConfigs[formType];
 
         // let userDetails = localStorage.getItem("userDetails");
-        const now = new Date();
-        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
-
-        const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
-            "userDetails",
-            null,
-            endOfDay
-        );
         if (userDetails) {
             setDetailsSubmitted(true);
         } else {

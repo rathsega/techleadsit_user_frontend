@@ -45,17 +45,17 @@ const StartYourJourney = () => {
         }
     };
 
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     const openForm = (formType, onSuccessCallback) => {
         const config = formConfigs[formType];
-
-        const now = new Date();
-        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
-
-        const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
-            "userDetails",
-            null,
-            endOfDay
-        );
 
         // let userDetails = localStorage.getItem("userDetails");
         if (userDetails) {
