@@ -33,6 +33,7 @@ import Image from 'next/image';
 import useLmsStore from '../../store/lmsStore';
 import QuickPayment from '../../components/course/quick_payment';
 import { useExpiringLocalStorage } from '../../services/useExpiringLocalStorage';
+import Achievers from '../../components/course/achievers';
 
 const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, courseId, courseTax, demos, upcomingDemoDate, relatedBlogs, relatedCourses }) => {
     // console.log("Changed Data: ", changedData);
@@ -43,14 +44,7 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
     const setBuyingCourse = useLmsStore((state) => state.setBuyingCourse);
 
 
-    const handleCertificateDownload = () => {
-        const link = document.createElement('a');
-        link.href = `/images/courses/certificates/${courseData?.title?.replace(/\s*\+\s*/g, "_")?.replace(/\s_\s+/g, "_")}.webp`; // Ensure this path is correct
-        link.download = 'Sample-Certificate.webp'; // Desired filename
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -207,6 +201,11 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
             heading: "Request A Call Back",
             buttonLabel: "Submit",
         },
+        "Download Sample Certificate": {
+            fields: ["fullName", "email", "phone"],
+            heading: "Download Sample Certificate",
+            buttonLabel: "Submit",
+        },
     };
 
 
@@ -246,6 +245,23 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
             }
         }
 
+    };
+
+    const handleSampleCertificateDownload = () => {
+        if (userDetails) {
+            downloadCertificate();
+        } else {
+            openForm("Download Sample Certificate", downloadCertificate);
+        }
+    };
+
+    const downloadCertificate = () => {
+        const link = document.createElement('a');
+        link.href = `/images/courses/certificates/${courseData?.title?.replace(/\s*\+\s*/g, "_")?.replace(/\s_\s+/g, "_")}.webp`;
+        link.download = 'Sample-Certificate.webp';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     };
 
     const handleUserDetailsSubmissionStatus = (status) => {
@@ -890,61 +906,8 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                     {jobTrendsNotRequired.indexOf(courseData?.id) == -1 && <JobTrends courseData={courseData} openForm={openForm}></JobTrends>}</>}
             </div>
             {loadBelowFold && <section className="Main-Course-Common-Sections">
-                <section className="Main-Course-Success-Stories-Of-Our-Proud-Achievers-Section mt-1">
-                    <h2 className="Main-Course-Success-Stories-Of-Our-Proud-Achievers-Heading text-center mb-2">
-                        Success Stories of Our Proud Achievers
-                    </h2>
-                    <div className="Success-Stories-Of-Our-Proud-Achievers-track">
-                        <div className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide"
-                            id="successStoryCompaniesSection">
-                            <div className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-images"
-                                id="successStoryCompanies">
-                                <Image loading='lazy' priority={false} width={242} height={342} src="/images/courses/Success-Stories-Placed-Learner-1.webp"
-                                    alt="Success-Stories-Img"
-                                    className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-img" />
-                                <Image loading='lazy' priority={false} width={242} height={342} src="/images/courses/Success-Stories-Placed-Learner-2.webp"
-                                    alt="Success-Stories-Img"
-                                    className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-img" />
-                                <Image loading='lazy' priority={false} width={242} height={342} src="/images/courses/Success-Stories-Placed-Learner-3.webp"
-                                    alt="Success-Stories-Img"
-                                    className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-img" />
-                                <Image loading='lazy' priority={false} width={242} height={342} src="/images/courses/Success-Stories-Placed-Learner-4.webp"
-                                    alt="Success-Stories-Img"
-                                    className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-img" />
-                                <Image loading='lazy' priority={false} width={242} height={342} src="/images/courses/Success-Stories-Placed-Learner-5.webp"
-                                    alt="Success-Stories-Img"
-                                    className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-img" />
-                                <Image loading='lazy' priority={false} width={242} height={342} src="/images/courses/Success-Stories-Placed-Learner-6.webp"
-                                    alt="Success-Stories-Img"
-                                    className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-img" />
-                                <Image loading='lazy' priority={false} width={242} height={342} src="/images/courses/Success-Stories-Placed-Learner-7.webp"
-                                    alt="Success-Stories-Img"
-                                    className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-img" />
-                                <Image loading='lazy' priority={false} width={242} height={342} src="/images/courses/Success-Stories-Placed-Learner-8.webp"
-                                    alt="Success-Stories-Img"
-                                    className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-img" />
-                                <Image loading='lazy' priority={false} width={242} height={342} src="/images/courses/Success-Stories-Placed-Learner-9.webp"
-                                    alt="Success-Stories-Img"
-                                    className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-img" />
-                                <Image loading='lazy' priority={false} width={242} height={342} src="/images/courses/Success-Stories-Placed-Learner-10.webp"
-                                    alt="Success-Stories-Img"
-                                    className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-img" />
-                                <Image loading='lazy' priority={false} width={242} height={342} src="/images/courses/Success-Stories-Placed-Learner-11.webp"
-                                    alt="Success-Stories-Img"
-                                    className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-img" />
-                                <Image loading='lazy' priority={false} width={242} height={342} src="/images/courses/Success-Stories-Placed-Learner-12.webp"
-                                    alt="Success-Stories-Img"
-                                    className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-img" />
-                                <Image loading='lazy' priority={false} width={242} height={342} src="/images/courses/Success-Stories-Placed-Learner-13.webp"
-                                    alt="Success-Stories-Img"
-                                    className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-img" />
-                                <Image loading='lazy' priority={false} width={242} height={342} src="/images/courses/Success-Stories-Placed-Learner-14.webp"
-                                    alt="Success-Stories-Img"
-                                    className="Success-Stories-Of-Our-Proud-Achievers-Companies-slide-img" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
+                <Achievers slug={slug}></Achievers>
 
                 <section className="Main-Course-Badge-Of-Excellence-Section">
                     <div className="d-flex flex-column align-items-center">
@@ -963,7 +926,7 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                                 alt="Certificate-For-The-Badge-Of-Excellence-Img" loading='lazy' priority={false}
                                 className="Main-Course-Badge-Of-Excellence-Section-Img" width="632" height="447" />
                             <button className="Main-Course-Badge-Of-Excellence-Sample-Certificate-btn"
-                                aria-label="Download-brochure-btn" onClick={handleCertificateDownload}>
+                                aria-label="Download-brochure-btn" onClick={handleSampleCertificateDownload}>
                                 <p className="Main-Course-Badge-Of-Excellence-Sample-Certificate-download-icon">
                                     <svg className="Main-Course-Badge-Of-Excellence-Sample-Certificate-svgIcon-hero"
                                         viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg">

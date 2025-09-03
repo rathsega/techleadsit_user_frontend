@@ -6,7 +6,7 @@ import { useLoader } from '../../contexts/LoaderContext';
 
 const ThankYouPage = () => {
     const router = useRouter();
-    const { courseTitle, courseId, slug } = router.query;
+    const { courseTitle, courseId, slug, fromPage } = router.query;
     const formHeading = useLmsStore((state) => state.formHeading);
     const setFormHeading = useLmsStore((state) => state.setFormHeading);
     const { setLoading } = useLoader();
@@ -15,7 +15,9 @@ const ThankYouPage = () => {
         if (courseTitle) {
             setFormHeading(formHeading ? formHeading.trim() : "");
             router.push(slug.replaceAll("_", "/"));
-        } else {
+        } else if(fromPage == 'upcoming_demo'){
+            router.push(slug);
+        } else{
             router.back();
         }
         setLoading(false);

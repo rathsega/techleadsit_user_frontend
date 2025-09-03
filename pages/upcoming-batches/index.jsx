@@ -91,6 +91,7 @@ const UpcomingBatches = () => {
     const [youtibeopenVideoPopup, setYoutibeopenVideoPopup] = useState(false);
     const [videoPath, setVideoPath] = useState("");
     const [courseTitle, setCourseTitle] = useState("");
+    const [slug, setSlug] = useState("");
 
     const now = new Date();
     const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
@@ -108,7 +109,7 @@ const UpcomingBatches = () => {
         setFormVisibility(false)
     }
 
-    const handleCTA = (action, title = null) => {
+    const handleCTA = (action, title = null, slug= null) => {
 
         const config = formConfigs[action];
         console.log(action, config);
@@ -128,6 +129,11 @@ const UpcomingBatches = () => {
                     setCourseTitle(title);
                 }else{
                     setCourseTitle("");
+                }
+                if(slug){
+                    setSlug(slug);
+                }else{
+                    setSlug("");
                 }
             }
         }
@@ -201,7 +207,7 @@ const UpcomingBatches = () => {
                                                 </div>
                                             </div>
                                             <div className="Upcoming-Batches-actions">
-                                                <button className="Upcoming-Batches-btn Upcoming-Batches-btn-enroll" onClick={() => handleCTA('Enroll Now', batch?.title)}>Enroll Now</button>
+                                                <button className="Upcoming-Batches-btn Upcoming-Batches-btn-enroll" onClick={() => handleCTA('Enroll Now', batch?.title, batch?.slug)}>Enroll Now</button>
                                                 <button className="Upcoming-Batches-btn Upcoming-Batches-btn-sample" onClick={() => handleWatchDemoVideo(batch?.slug)}><i className="fa-solid fa-circle-play"></i> Sample Video</button>
                                             </div>
                                         </div>
@@ -249,8 +255,9 @@ const UpcomingBatches = () => {
                 heading={heading}
                 buttonLabel={buttonLabel}
                 hidePopupForm={hidePopupForm}
-                pageName="upcoming_demo"
+                pageName={"upcoming_demo - " + courseTitle}
                 courseTitle={courseTitle}
+                courseSlug={slug}
                 onSuccess={(data) => {
                     //console.log("Success!", data);
                     handleUserDetailsSubmissionStatus(true);

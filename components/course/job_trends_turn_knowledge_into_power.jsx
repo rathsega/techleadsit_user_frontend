@@ -65,6 +65,16 @@ const TurnKnowledgeIntoPower = React.memo(({ data, courseTitle }) => {
         setErrors((prev) => ({ ...prev, phone: undefined }));
     }, []);
 
+
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setSubmitted(true);
@@ -77,8 +87,10 @@ const TurnKnowledgeIntoPower = React.memo(({ data, courseTitle }) => {
                 const response = await httpService.post("/contactus/submitHeroForm", formData);
                 setSuccess(true);
                 setError(false);
-                setFormData({ fullName: "", email: "", phone: "" });
+                let userDetailsData = { ...userDetails, ...formData };
+                setUserDetails(userDetailsData);
                 setErrorMsg("Thank you for your submission!");
+                router.push(`/thankyou?courseTitle=${courseTitle}&&slug=${router.query.slug.join('_')}`);
             } catch (err) {
                 setSuccess(false);
                 setError(true);
@@ -91,14 +103,6 @@ const TurnKnowledgeIntoPower = React.memo(({ data, courseTitle }) => {
         }
     };
 
-    const now = new Date();
-    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
-
-    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
-        "userDetails",
-        null,
-        endOfDay
-    );
 
     useEffect(() => {
         // const userDetails = localStorage.getItem('userDetails');

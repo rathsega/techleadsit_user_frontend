@@ -26,6 +26,16 @@ const HeroForm = ({ courseTitle }) => {
     const [errorMsg, setErrorMsg] = useState("Please Enter Valid Details");
     const { setLoading } = useLoader();
 
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+
+
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
     const validate = () => {
         const newErrors = {};
         if (!formData.fullName.trim()) {
@@ -79,6 +89,8 @@ const HeroForm = ({ courseTitle }) => {
                 const response = await httpService.post("/contactus/submitHeroForm", formData);
                 setSuccess(true);
                 setError(false);
+                let userDetailsData = { ...userDetails, ...formData };
+                setUserDetails(userDetailsData);
                 // setFormData({ fullName: "", email: "", phone: "" });
                 setErrorMsg("Thank you for your submission!");
                 router.push(`/thankyou?courseTitle=${courseTitle}&slug=${router.query.slug.join('_')}`);
@@ -93,15 +105,6 @@ const HeroForm = ({ courseTitle }) => {
             setSubmitted(false);
         }
     };
-
-    const now = new Date();
-    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
-
-    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
-        "userDetails",
-        null,
-        endOfDay
-    );
 
     useEffect(() => {
         //const userDetails = localStorage.getItem('userDetails');

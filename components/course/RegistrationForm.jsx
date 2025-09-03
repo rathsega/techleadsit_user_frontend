@@ -23,6 +23,7 @@ const CourseRegistrationForm = React.memo(({
   pageName,
   courseTitle = "",
   courseId = "",
+  courseSlug = "",
   onSuccess = () => { },
 }) => {
   const router = useRouter();
@@ -188,6 +189,8 @@ const CourseRegistrationForm = React.memo(({
           if (pageName === 'course') {
             setFormHeading(" " + heading + " ");
             router.push(`/thankyou?courseTitle=${courseTitle}&courseId=${courseId}&slug=${router.query.slug.join('_')}`);
+          } else if(pageName.includes('upcoming_demo')) {
+            router.push(`/thankyou?fromPage=upcoming_demo&slug=${courseSlug}`);
           } else {
             router.push(`/thankyou`);
           }

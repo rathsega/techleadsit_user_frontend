@@ -65,9 +65,13 @@ const SubscribeNewsLetters = React.memo(() => {
                         Questions, New Features and Expert Talks</p>
                     <div className="d-flex justify-content-center">
                         <div className="Main-Course-Get-Notified-About-Blogs-newsletter-container">
-                            <input type="email" className="Main-Course-Get-Notified-About-Blogs-newsletter-btn"
-                                placeholder="Enter your email address" value={email}
-                                onChange={(e) => handleEmailChange} />
+                            <input
+                                type="email"
+                                className="Main-Course-Get-Notified-About-Blogs-newsletter-btn"
+                                placeholder="Enter your email address"
+                                value={email}
+                                onChange={handleEmailChange}
+                            />
                             <button className="Main-Course-Get-Notified-About-Blogs-newsletter-sub-btn" onClick={handleSubscribe}>Subscribe
                                 Now!!</button>
                         </div>

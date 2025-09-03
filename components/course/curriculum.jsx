@@ -61,9 +61,7 @@ const Curriculum = ({ data, courseTitle, brouchurePath, changedData, openForm })
 
     }, [activeModuleIndex]);
 
-    const handleBrochureDownload = () => {
-        // const userDetails = localStorage.getItem("userDetails");
-        const now = new Date();
+    const now = new Date();
         const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
 
         const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
@@ -71,6 +69,10 @@ const Curriculum = ({ data, courseTitle, brouchurePath, changedData, openForm })
             null,
             endOfDay
         );
+
+    const handleBrochureDownload = () => {
+        // const userDetails = localStorage.getItem("userDetails");
+        
 
         if (userDetails) {
             downloadBrochure();
