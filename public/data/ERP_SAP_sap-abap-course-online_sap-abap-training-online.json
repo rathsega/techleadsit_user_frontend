@@ -1,0 +1,1454 @@
+{
+    "title": "Master SAP ABAP Training",
+    "id": "SAP-ABP-OT-038",
+    "category": "ERP",
+    "duration": "3 Months",
+    "hero": {
+        "title": "Master SAP ABAP Training at Tech Leads IT with",
+        "animationTitle": [
+            "Expert Training.",
+            "Hands-On Projects",
+            "AI With SAP"
+        ],
+        "shortDescription": "Accelerate your career in SAP development with our in-depth SAP ABAP online training! Learn core programming concepts, develop real-world coding skills, and gain hands-on experience with end-to-end development scenarios. Our expert-led training helps you become proficient in SAP’s powerful ABAP programming language.",
+        "brouchurePath": "/brochure/sap-abap-training-online.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "ERP Basics",
+            "HANA Basics",
+            "ABAP Programming",
+            "Classical Reports",
+            "ALV Reports",
+            "Forms",
+            "OO Concepts",
+            "Migration",
+            "Enhancements",
+            "SAP Notes",
+            "Training Tools"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Cloud Integration with Industry-Leading SAP ABAP Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in SAP Technical Development.",
+                        "Those interested in enterprise programming, report building, and SAP customization using ABAP.",
+                        "Job seekers aiming to enhance their resumes with in-demand SAP ABAP skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT professionals or developers transitioning into SAP with ABAP expertise.",
+                        "SAP Functional Consultants seeking to expand into technical ABAP development.",
+                        "Application Support Engineers & Data Analysts aiming to automate SAP tasks.",
+                        "Professionals looking to build robust business logic using SAP ABAP."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "22 May 2025 ",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the SAP ABAP Online Training Live Demo with Kumar"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "xyz",
+        "modules": [
+            {
+                "moduleName": "Basic concepts of ERP",
+                "chapters": [
+                    {
+                        "chapterName": "ERP Overview and Introduction to SAP",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Introduction",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Explain SAP",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " installation of required Tools (SAP GUI and pulse secure,",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " What is ERP",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Types of ERP",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " What is SAP",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Modules of SAP",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "SAP R/3 - System Architecture",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Concept of R-3 (3 Tier Architecture)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Concept of work process and LUW",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Introduction to ABAP",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " SAP Screen",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " T-Code Concept",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Concept of header and item data",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Concept of Master and transactional data",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Concept of RICEFW",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Basics of HANA",
+                "chapters": [
+                    {
+                        "chapterName": "Introduction to HANA",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Introduction to HANA",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "HANA Studio and ADT",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Introduction to HANA studio/ Eclipse and ADT",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Basics of ABAP Programming",
+                "chapters": [
+                    {
+                        "chapterName": "Getting started with ABAP programming",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Create ABAP Program - \"Hello world\" program in ABAP TR",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " ABAP Editor features - syntax check, exteded program",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Difference b/w custom programming languages & SAP",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Use Variables, WRITE statement and Create a",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Introduction to ABAP programming",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Arithmetic operations",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " System Variables",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " string operations",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " IF statement",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Case Statement",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Do-Endo Statement",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " While Statement",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Message Statement",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Debugging",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Debugging",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " ATC demo",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Loop termination",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Add Number of Days to a Date",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : part 1: Print 1 to 20 numbers",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : part 2 : Print 1 to 20 numbers and Use",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "ATC Check",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Execute ABAP Test Cockpit ( ATC ) and fix errors for",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Selection Screen",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " ABAP Events",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Calculate the Squares of Whole Numbers Exercise : Add selection screen to Calculator Program",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Data Dictionary",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " About Data Dictionary",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Standard Data Types",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Data Objects",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Data Element",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Domain",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Ex. Create domain and data element",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Structures and table types",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Types of Tables",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Table Creation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : ABAP Dictionary Search",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Create Basic ABAP Dictionary Object",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Type Pools",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Views and search helps",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Foreign key",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Append and include structures",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Lock objects + exercise",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Create Table Indexes",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create search Help & View tables with Data Browser",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Introduction to Basic Modules of SAP",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Introduction to Basic modules of SAP (SD,MM and FI)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Basic flow, important tables/fields/ master data in SD",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Basic flow, important tables/fields/master data in FI module and Demo videos (reference) for module1",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Classical Reports",
+                "chapters": [
+                    {
+                        "chapterName": "Reports-Classical",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Introduction to open SQL (Select Statement)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " DB operations - Insert, Modify etc.",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Types of Internal Tables",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Declaration",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Populating",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Create list of customers",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Processing (Read,Delete,Update)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sorting",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Control Break statements",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Modify internal tables",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Joins & subqueries",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Using foll all entries",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Additional Advanced ABAP and SQL sysntax",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Using operators, other syntax of Open SQL",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Write advanced open SQL",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Modularization and ALV Reports",
+                "chapters": [
+                    {
+                        "chapterName": "Modelling",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Introduction to Modelling and external views without",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Introduction to Modelling and external views",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "CDS views",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " CDS views with Hands-on",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Create CDS views",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Create CDS view and consume in ABAP report",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Subroutines",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Subroutines",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Use a Subquery and Inner Join",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Pass Variables and Internal Table to a",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Modularization - Function Modules",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Definition of Function Module & Types",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Function Group",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Function Library (Where Use)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Testing of Function Module",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Creation Of Function Module",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Calling a Function Module",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Use a Function Module & Exercise : Create",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "BAPI",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Using BAPI in ABAP report",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Use BAPI in report",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "ALV Report",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Simple ALV Reports",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Use ALV for output display",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Interactive ALV Report",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Interactive ALV Reports",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Interactive ALV Report",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Code Review - Hands on help",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Performance Tuning and Lock Object",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Performance Tuning",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Check Your Report Program",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Usage of Lock object",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Write a Program using Lock object",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Background Jobs",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Background Job + Hands on",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "",
+                                "lessonVideoPath": " Exercise : Create a Background Job, Exercise : Create a"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Forms",
+                "chapters": [
+                    {
+                        "chapterName": "Smart forms",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Overview (forms and scripts)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Character format",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Paragraph format",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Pages",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Windows",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Page Windows",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Smart form Program",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Upload an Image to a Smart Form",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Standard Text, style builder,Text Modules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Create a SAP SmartForm",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Adobe Forms",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Introduction to Adobe Forms",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Create simple Adobe form",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Basic OO Concepts",
+                "chapters": [
+                    {
+                        "chapterName": "Object Oriented Programming",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Object Oriented Programming",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "OO Concepts in ABAP",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Introduction to Classes, Components, Visibility Sections",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Types of Attributes,Types of Methods,Method",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Write a Program Using Local Class.",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Global Class Creation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Create and Use Global Class",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Constructor Method",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise - Create a class using instance and static methods",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Exceptions",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Class-based Exceptions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise – Use Class Based Exceptions",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Advanced Concepts of OO",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Abstraction",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Using Abstract class and methods",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Inheritance",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Unit Testing",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Test Class for Unit Testing",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise on unit testing with ABAP UNIT",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "ALV report using OO concept",
+                "chapters": [
+                    {
+                        "chapterName": "ALV OOPS",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " ALV using OOPS",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Write ALV report using OO concept",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Events in OO ABAP",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Events, Event handler methods",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Interactive ALV using OOPS",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Write ALV report using OO concept and handle",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "ALV-IDA",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Simple ALV-IDA using table and CDS views",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise - ALV IDA",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "AMDP",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Limitations of CDS view, Creating AMDP",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " AMDP exercise",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Migration",
+                "chapters": [
+                    {
+                        "chapterName": "Migrations",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " LTMC + LTMom - Introduction + Basic hands-on",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Migrating ECC programs to HANA - error analysis tools",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : LTMC using standard FM, Standard migration",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Migration of ECC Object to S4HANA",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Enhancements",
+                "chapters": [
+                    {
+                        "chapterName": "Overview of Enhancements",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Customer Exit",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Enhancement Implementation Techniques",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " BADI Overview",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Find a proper BADI create implementation",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Enhancement Framework",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Introduction to Enhancement Point",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Trasport Management & Development guidelines",
+                "chapters": [
+                    {
+                        "chapterName": "Development Guidelines",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Development Guidelines",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "HANA AMDP",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " HANA AMDP - demo",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Creation",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Code Quality",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " How peer review works",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Transport Management System",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Transport Management System",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "SAP Version",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Additional content to add individual objects in TR to be added",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " TR release(depolyment), version management",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Deployment",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " video demo of transport import (to a target",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise: TR release(depolyment), version management",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " ChaRM and non-ChaRm",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Application Security",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Application Security",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "SAP Notes",
+                "chapters": [
+                    {
+                        "chapterName": "SAP Notes",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " SAP Notes",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Training Tools",
+                "chapters": [
+                    {
+                        "chapterName": "ACRTS FOR SAP",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " ACRTS",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Along with ACRTS, use ATC check with variants",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Review your program using ACRTS",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "myconcerto/ARTL For SAP",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " ARTL",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "ADM Methods",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " ADM for SAP",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Work with Training Delivery Methods",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Module pool",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Module pool Program creation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " All the Module pool icon creations",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Module pool Program Execution",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Fiori/UI and Odata",
+                "chapters": [
+                    {
+                        "chapterName": "Introduction to Firori, Ui5 and Odata",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Introduction to Fiori and UI5",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Introduction to Odata services",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Publish CDS view in fiori app using Odata services",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Exercise : Publish CDS view as oDATA and consume in FIORI",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Advance HANA",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Open SQL , NATIVE SQL, AMDP , CDS View , FIORI In",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "demoVideoPath": "",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/sap-abap.png",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for  SAP ABAP Experts!",
+            "shortDescription": "Unlock New Career Opportunities – SAP ABAP Developers Are In High Demand. Start Your Journey Today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Mr. Kumar, a seasoned SAP professional with over 15 years of hands-on experience in SAP ABAP and custom development, has been instrumental in delivering robust and scalable solutions across various industries. His deep knowledge of ABAP programming, data dictionary, reports, enhancements, and module pool programming has helped organizations optimize their ERP systems. His passion for teaching and mentoring makes him the ideal guide for those aspiring to master SAP ABAP. With a focus on practical implementation, Mr. Kumar bridges the gap between theoretical learning and real-time coding practices, empowering students to build strong careers in SAP."
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized SAP ABAP Trainer",
+            "points": [
+                "SAP ABAP Certified Developer, specializing in custom development and ERP enhancement.",
+                "15+ years of experience in SAP technical landscape, with a core focus on ABAP Training.",
+                "Trained over 3,000 professionals in SAP ABAP, enabling them to become successful SAP technical consultants and developers."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Kumar",
+            "trainerDesignation": "SAP ABAP Expert",
+            "avatarImagePath": "/images/courses/trainer/sap-abap.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Pratap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Satish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹18,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹25,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/sap-abap.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/sap-abap.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of SAP ABAP Programming",
+                    "Gain a Clear Understanding of ERP Architecture & Data Dictionary",
+                    "Develop Core Programming & Debugging Skills"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-Time SAP ABAP Development Scenarios",
+                    "Solve Business Requirements with Custom Reports, Enhancements & Forms",
+                    "Get In-Depth Exposure to Module Pool Programming & Interfaces"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume Tailored to SAP ABAP Roles",
+                    "Build a Strong LinkedIn Profile and Project Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on End-to-End Custom Development Projects in SAP",
+                    "Learn Real-World Coding Standards & Client Expectations",
+                    "Enhance Logical Thinking and Integration Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with SAP ABAP Are You Ready?",
+            "shortDescription": "Join the booming demand for SAP ABAP developers. Get certified in SAP ABAP and unlock high-paying career opportunities with top global companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "SAP ABAP Trainee",
+                "Junior SAP ABAP Developer",
+                "SAP ABAP Support Consultant",
+                "SAP Technical Consultant (ABAP)",
+                "SAP ABAP Developer",
+                "SAP ABAP Lead Consultant",
+                "SAP ABAP Technical Architect",
+                "SAP S/4HANA Technical Consultant",
+                "SAP Full Stack Developer (ABAP)"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "",
+        "shortDescription": ""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your SAP ABAP expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Sap  MM Online Training Course",
+        "Sap CPI Online Training Course",
+        "Sap MM On Online Training Course",
+        "Oracle Fusion SCM Online Training Course"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in SAP ABAP Online Training?",
+            "answer": "Our SAP ABAP Training covers essential modules including ERP Basics, HANA Basics, ABAP Programming, Classical Reports, ALV Reports, Forms, OO Concepts, and Enhancements. This hands-on training equips you with the skills needed to work confidently with SAP ABAP development. A detailed syllabus is provided in our course brochure."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Live training sessions are conducted Monday to Saturday, 1 hour per day. This structured schedule ensures steady learning and practical experience in SAP ABAP."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, weekend-only batches are not available. Classes are conducted from Monday through Saturday for consistent skill-building in SAP ABAP."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we offer recorded sessions for self-paced learning. Please note, live Q&A support is not available in the self-paced format for SAP ABAP training.  "
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internships are provided based on mock evaluation performance. Internships involve real-time project work using SAP ABAP modules such as Reports, Enhancements, and Forms."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No. SAP ABAP Training is offered as a complete package to ensure a thorough understanding of all essential modules and best practices."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes. We offer resume building guidance focused on SAP ABAP roles, emphasizing your hands-on project experience with Classical Reports, ALV Reports, and Enhancements."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes. A personal computer is required to install and practice using the SAP environment, including modules like ABAP Programming and Forms Development."
+        },
+        {
+            "question": "Are There Any Prerequisites for This Training?",
+            "answer": "No prior experience is needed. This SAP ABAP course is beginner-friendly. Basic understanding of programming or ERP systems is an advantage but not mandatory."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Yes. We begin with foundational concepts such as ERP Basics and ABAP Programming before progressing to advanced SAP ABAP topics like OO Concepts and Enhancements."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes. We offer full placement support including mock interviews, interview prep, and resume optimization tailored to SAP ABAP roles."
+        },
+        {
+            "question": "Do You Offer SAP ABAP Certification Support?",
+            "answer": "Yes, we provide expert guidance and study resources to help you prepare for SAP ABAP certification exams."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes. You’ll have 1-year access to all recordings and receive comprehensive notes, development guides, and reference documents covering ABAP Reports, Forms, and more."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Mock Support?",
+            "answer": "Absolutely. We provide targeted interview questions and conduct mock interviews focused on SAP ABAP to prepare you for real job roles."
+        },
+        {
+            "question": "Do You Provide Instance Access for Practice?",
+            "answer": "Yes. You’ll get 4 months of SAP system access with support for practicing modules like ABAP Programming, Classical Reports, and Enhancements."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes. You can rejoin any future batch of SAP ABAP Training within your 1-year course access period at no additional cost."
+        },
+        {
+            "question": "Will I Get a Course Completion Certificate?",
+            "answer": "Yes. Upon completing the training, you’ll receive an official SAP ABAP Training Certificate from Tech Leads IT."
+        },
+        {
+            "question": "Is Coding Knowledge Required?",
+            "answer": "Basic knowledge of programming is helpful. We cover all technical aspects from the ground up with practical SAP ABAP exercises."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, one-on-one sessions are available upon request. Fees for personalized SAP ABAP training vary based on the schedule."
+        }
+    ]
+}

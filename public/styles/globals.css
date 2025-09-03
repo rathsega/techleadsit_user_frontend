@@ -2026,6 +2026,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  color: #000;
 }
 
 .striked-price {
@@ -3416,6 +3417,7 @@ textarea::placeholder {
   border-bottom-left-radius: 12px !important;
   height: 270px !important;
   width: 380px !important;
+  max-width: none;
 }
 
 .Upcoming-demo-course-name {
@@ -5097,6 +5099,7 @@ textarea::placeholder {
 
 .All-category-course-card-body {
   padding: 25px 20px;
+  color: #000;
 }
 
 .All-category-course-card-body h3 {
@@ -9713,6 +9716,7 @@ textarea::placeholder {
 .testimonial-image {
   position: relative;
   border-radius: 20px;
+  max-width: none;
 }
 
 .testimonial-image::before {
@@ -12734,7 +12738,6 @@ textarea::placeholder {
 }
 
 .Footer-Heading-Underline-Top{
-  font: 600 28px/1.2 system-ui, -apple-system, "Segoe UI", Inter, Arial, sans-serif;
   color: var(--ink);
   letter-spacing: -0.01em;
   margin: 0;
@@ -12785,7 +12788,7 @@ textarea::placeholder {
     width: 50px;
     height: 2px;
     bottom: unset !important;
-  border-left: 3px solid var(--accent);
+  border-left: 3px solid #0c65b2;
   border-top: 3px solid var(--accent);
   border-radius: 2px;
 }
@@ -18627,6 +18630,7 @@ input#consulting:checked~.Main-Course-Home-Page-Toggle-Btn-IT-T-option[data-opti
 .payment-failed-div {
   position: relative;
   height: 80vh;
+  background-color:#fff;
 }
 
 .Course-Page-Upcoming-Batch-banner {
@@ -19573,6 +19577,7 @@ input#consulting:checked~.Main-Course-Home-Page-Toggle-Btn-IT-T-option[data-opti
   bottom: 100px;
   right: 30px;
   z-index: 10000000;
+  color: #000;
 }
 
 .QuickForm-Popup.animate {
@@ -20502,6 +20507,7 @@ input#consulting:checked~.Main-Course-Home-Page-Toggle-Btn-IT-T-option[data-opti
   flex-direction: column;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
   z-index: 10000000;
+  color: #000;
 }
 
 .Quick-Payment-Checkout-Content {
@@ -20629,8 +20635,6 @@ input#consulting:checked~.Main-Course-Home-Page-Toggle-Btn-IT-T-option[data-opti
 }
 
 .Quick-Payment-Checkout-PhoneGroup {
-  display: flex;
-  align-items: center;
   gap: 10px;
   margin-bottom: 0px;
 }
@@ -21772,7 +21776,8 @@ input#consulting:checked~.Main-Course-Home-Page-Toggle-Btn-IT-T-option[data-opti
   .Main-Course-CTA-banner-content3,
   .Main-Course-CTA-banner-content4,
   .Main-Course-CTA-banner-content5,
-  .Main-Course-CTA-banner-content6 {
+  .Main-Course-CTA-banner-content6,
+  .All-category-CTA-banner-content {
     padding: 40px 0px 40px 60px;
   }
 
@@ -23955,7 +23960,7 @@ gap: 20px;
 
   .live-demo-card {
     grid-template-columns: repeat(2, 1fr);
-    padding-block: 50px;
+    padding-block: 30px;
   }
 
   .Slider-image {
@@ -24913,7 +24918,6 @@ gap: 20px;
   }
 
   .All-category-CTA-banner-content {
-    padding: 40px 0px 40px 40px;
     width: 55%;
   }
 
@@ -30219,4 +30223,11 @@ padding: 20px 15px;
 .Main-Course-Form-Container {
    max-width: 345px !important;
 }
+}
+.Footer-Mobile-App-Icons img{
+  max-width: none;
+}
+.payment-failed-div .Right-plan-arrow{
+    width: auto;
+height: 14px;
 }

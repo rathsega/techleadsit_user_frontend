@@ -62,7 +62,7 @@ const Footer = React.memo(() => {
                     <p><a href="tel:+918125323232">Phone: +91 8125323232</a></p>
                     <p><a href="mailto:info@techleadsit.com">Email: info@techleadsit.com</a></p>
 
-                    <div className="d-flex gap-2 align-items-center">
+                    <div className="d-flex gap-2 align-items-center" style={{ width: 'max-content' }}>
                         <div className="Footer-Mobile-App-Icons">
                             <a href="https://apps.apple.com/in/app/tech-leads-it/id6615066544" target="_blank" rel="noopener noreferrer"><img alt="Click-For-App-Store" loading="lazy" width="150" height="47" decoding="async" data-nimg="1" src="/images/courses/Click-For-App-Store.avif" /></a><a href="https://play.google.com/store/apps/details?id=com.techleadsit.academy_app&amp;pli=1" target="_blank" rel="noopener noreferrer"><img alt="Click-For-Play-Store" loading="lazy" width="150" height="47" decoding="async" data-nimg="1" src="/images/courses/Click-For-Play-Store.avif" /></a></div><img src="/images/courses/Scan-This-For-App.png" alt="Scan-for-Mobile-App" className="Main-Course-Footer-Scan-For-Mobile-App" /></div>
 

@@ -4,12 +4,9 @@ export function useExpiringLocalStorage(key = 'userDetails', initialValue, expir
   const getStoredValue = () => {
     if (typeof window === "undefined" || !window.localStorage) return initialValue;
     const item = localStorage.getItem(key);
-    console.log(key, item);
     if (!item) return initialValue;
     try {
       const { data, expiry: exp } = JSON.parse(item);
-      console.log(`Retrieving ${key} from localStorage with expiry:`, exp);
-      console.log(data);
       if (exp == null) {
         if (typeof window !== "undefined" && window.localStorage) {
           localStorage.removeItem(key);

@@ -1,0 +1,390 @@
+{
+    "title": "EBS R12 SCM Training Course",
+    "id":"ORR-SCM-OT-019",
+    "category":"Oracle",
+    "duration":"3 Months",
+    "hero": {
+        "title": "Master Oracle EBS R12 SCM Training With",
+        "animationTitle": [
+            "Expert Training.",
+            "Redwood Experience",
+            "AI With SCM"
+        ],
+        "shortDescription": "Accelerate your career in Supply Chain Management with our comprehensive Oracle EBS R12 SCM Training! Master key concepts, gain hands-on experience, and position yourself for success in the industry with expert-led training on Oracle EBS R12 SCM modules.",
+        "brouchurePath": "/brochure/oracle-r12-scm-online-training-course.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Inventory Management",
+            "Order Management",
+            "Purchasing"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Supply Chain Management with Industry-Leading Oracle EBS R12 SCM Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Supply Chain Management.",
+                        "Those interested in ERP, procurement, inventory, and logistics with Oracle Fusion SCM.",
+                        "job seekers aiming to enhance their resumes with in-demand SCM skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT & ERP Professionals transitioning from Oracle EBS or other ERP systems to Oracle Fusion SCM.",
+                        "Supply Chain Managers, Analysts, and ERP Consultants seeking expertise in SCM.",
+                        "Business owners seeking to streamline supply chain operations using Oracle SCM.",
+                        " Professionals aiming to optimize operations using Oracle’s advanced tools."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "22 May 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the Oracle EBS R12 SCM Live Demo with Krishna V "
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "",
+        "demoVideoPath": "https://www.youtube.com/watch?v=AWvJdEBvOxU",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/ebs_r12_scm.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Oracle Fusion Experts!",
+            "shortDescription": "Companies are actively hiring Oracle Fusion EBS R12 SCM professionals. Don’t miss the opportunity to be in demand—start learning today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Our Founder  & Your Trainer",
+            "shortDescription": "Mr.Krishna, a seasoned professional with 20 years of experience across diverse projects and industries, is driven by a passion for sharing knowledge and transforming students into skilled professionals. With a vision to produce top-tier Oracle Fusion Supply Chain consultants to meet the growing market demand, our founder firmly believes that knowledge is the key to individual financial growth, empowering people to support their families and contribute to the economy."
+        },
+        "sectionTwo": {
+            "title": "Learn from the World Leading Oracle Fusion SCM Trainer",
+            "points": [
+                "Oracle Fusion SCM Certified Professional,  Supply Chain Management Expert.",
+                "20+ years of expertise in Oracle ERP, specializing in Fusion SCM Training",
+                "Successfully trained over 5,000 students in Oracle Cloud SCM Course, empowering them to become skilled IT professionals."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Krishna V",
+            "trainerDesignation": "Oracle SCM Expert",
+            "avatarImagePath": "/images/courses/trainer/ebs_r12_scm.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Tanvi Srivastava",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/ebs_r12_scm/Tanvi Srivastava.png",
+                "review": "Overall, A great learning experience and 5 star to Krishna Sir for always motivating his students to do better.",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/Y2quqG1XVGEKqhLF8"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Umashankar M",
+                "designation": "Oracle Counsultant",
+                "imagePath": "/images/courses/students/ebs_r12_scm/Umashankar.png",
+                "review": "I highly recommend to join this institution They also provide LMS portal which helps to learn from videos",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/f3sH1GvWfGw59gBR9"
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Ratheesh Poshala",
+                "designation": "Senior Oracle Solution Engineer",
+                "imagePath": "/images/courses/students/ebs_r12_scm/Ratheesh Poshala.png",
+                "review": "Techleads is one of the Best training institute for Oracle fusion Scm. I would strongly recommend this institute.",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/CAzYtE8NMrzVzgqE6"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Velmurugan M",
+                "designation": "Junior Engineer",
+                "imagePath": "/images/courses/students/ebs_r12_scm/Velmurugan M.png",
+                "review": "Best institute to get trained in the module of SCM Fusion. Krishna teaches everything related to Live scenarios.",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/77awnEjxonY7gwpa6"
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divakar Buddiga ",
+                "designation": "Process Engineer",
+                "imagePath": "/images/courses/students/ebs_r12_scm/Divakar Buddiga.png",
+                "review": "Krishna (trainer) is having good knowledge in SCM. I thank tech leads for the support and to be trained here.",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/uZSRFMsqJUBh6Ppj6"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Sudarshan kawade",
+                "designation": "Oracle Functional Consultant",
+                "imagePath": "/images/courses/students/ebs_r12_scm/Sudarshan kawade.png",
+                "review": "I am part of Oracle Fusion SCM course. instructor Krishna Sir had explained all concepts clearly with real time examples",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/vCnHhKN9xxpRN85r9"
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹10,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹15,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/ebs_r12_scm.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/ebs_r12_scm.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Oracle Fusion SCM",
+                    "Gain a Clear Understanding of Industry Requirements",
+                    "Develop Essential Problem-Solving Skills"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-World Use Cases",
+                    "Solve Business Scenarios with Industry Experts",
+                    "Get Extensive Knowledge on Implementation Methodologies"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume",
+                    "Build a Strong LinkedIn Profile and Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on case studies and sample projectes",
+                    "Understand Industry Expectations & Best Practices",
+                    "Develop Problem-Solving & Decision-Making Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Oracle Fusion  SCM Are You Ready?",
+            "shortDescription": "Join the growing demand for Oracle Fusion professionals. Get certified and open doors to high-paying opportunities in top companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle SCM Trainee",
+                "Junior SCM Functional Consultant",
+                "SCM Business Analyst",
+                "Oracle SCM Functional Consultant",
+                "SCM Implementation Specialist",
+                "Oracle SCM Cloud Consultant",
+                "Oracle Fusion SCM Lead",
+                "Oracle SCM Solution Architect",
+                "ERP Implementation Manager"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Power  Master Oracle EBS R12 SCM Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your Oracle Fusion SCM expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Oracle Fusion SCM Online Training Course",
+        "Oracle Fusion HCM Online Training Course",
+        "Oracle Fusion Functional Training Course",
+        "Oracle Fusion technical +OIC Online Training Course"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Oracle EBS R12 SCM Training?",
+            "answer": "Our Oracle EBS R12 SCM Training covers key modules such as Inventory Management, Order Management, and Purchasing. These modules are designed to equip you with in-demand skills for managing end-to-end supply chain operations using Oracle EBS R12. A detailed syllabus is available in our course brochure."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Live training sessions are held from Monday to Saturday, with 1-hour classes each day. This schedule ensures consistent learning and hands-on experience with Oracle EBS R12 SCM."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, we do not offer weekend-only batches. All sessions are scheduled from Monday to Saturday to ensure continuity in the learning process."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we provide recorded sessions for learners who prefer self-paced study. However, please note that these sessions do not include live doubt-clearing support."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internship opportunities are available based on performance in mock evaluations. These internships offer real-time exposure to Oracle EBS R12 SCM modules and hands-on project experience."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No, the Oracle EBS R12 SCM Training is offered as a complete package. We do not offer individual modules separately."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes, we offer end-to-end resume assistance tailored to Oracle EBS R12 SCM roles, helping you highlight relevant skills, certifications, and project experience."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, a laptop or desktop is required to access Oracle EBS applications and complete hands-on tasks during the training."
+        },
+        {
+            "question": "Are There Any Prerequisites for This Training?",
+            "answer": "No prior experience is required. The course is beginner-friendly and designed to start from the basics of Oracle EBS R12 SCM. A basic understanding of supply chain concepts is helpful but not mandatory."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Absolutely. We begin with foundational concepts and progress to advanced features of Oracle EBS R12 SCM, making it suitable for both beginners and professionals."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes, we offer complete placement support including mock interviews, resume optimization, and interview guidance. Our training prepares you for roles in Oracle EBS SCM across various industries."
+        },
+        {
+            "question": "Do You Offer Oracle EBS Certification Support?",
+            "answer": "Yes, we assist with certification preparation by providing practice questions, study materials, and expert guidance to help you succeed in Oracle EBS certification exams."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes, all session recordings will be available for 1 year. We also provide in-depth study materials, including real-time process documents and step-by-step guides with screenshots."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Mock Support?",
+            "answer": "Yes, we provide module-wise interview questions and conduct mock interviews to prepare you for job interviews in Oracle EBS SCM roles."
+        },
+        {
+            "question": "Do You Provide Instance Access for Practice?",
+            "answer": "Yes, we provide 4 months of Oracle EBS R12 SCM practice instance access. Please note that installation is required on your system to access the EBS application. We provide complete guidance and support during the setup process to ensure you can practice effectively."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes, with your 1-year course access, you can rejoin any upcoming batch of Oracle EBS R12 SCM training at no additional cost."
+        },
+        {
+            "question": "Will I Get a Course Completion Certificate?",
+            "answer": "Yes, upon successful completion, you will receive a Course Completion Certificate in Oracle EBS R12 SCM from Tech Leads IT."
+        },
+        {
+            "question": "Is Coding Knowledge Required?",
+            "answer": "No, this is a functional course focused on business processes and application configuration. No coding is required."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, we offer 1-on-1 personalized training sessions upon request. Pricing will vary from our standard group training batches."
+        }
+    ]
+}

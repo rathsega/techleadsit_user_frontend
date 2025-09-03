@@ -39,9 +39,9 @@ const Categories = () => {
             <div className="Home-Section-CC-grid">
                 {
                     categories?.length > 0 && categories.map((category, cindex) => (
-                        <article key={cindex} className="Home-Section-CC-card" onClick={() => openCourses(category._id, category.title)}>
-                            <img src={process.env.NEXT_PUBLIC_LOCAL_FILES_URL + category.icon.path} alt={category.name} className="Home-Section-CC-image-T1" loading="lazy" />
-                            <h3>{category.title}</h3>
+                        <article key={cindex} className="Home-Section-CC-card" onClick={() => openCourses(category?._id, category?.title)}>
+                            <img src={process.env.NEXT_PUBLIC_FILES_URL + category?.icon?.path} alt={category?.name} className="Home-Section-CC-image-T1" loading="lazy" />
+                            <h3>{category?.title}</h3>
                             <p>{category?.subTitle}</p>
                             <div className="Home-Section-CC-meta">
                                 <span className="Home-Section-CC-count">{category?.courseCount} Courses</span>

@@ -29,7 +29,7 @@ const Banner = ({ details }) => {
                 <span className="main-blog-clr">{details?.category?.title}</span>
                 <span className="main-blog-caption">{details?.durationInMinutes}-minutes read</span>
                 <div className="d-flex align-items-center justify-content-between mt-2">
-                    <p className="main-blog-h">{details?.title}</p>
+                    <h1 className="main-blog-h">{details?.title}</h1>
                     <div className="author-section">
                         <img src={process.env.NEXT_PUBLIC_FILES_URL + details?.authorImage?.path} alt="blog-person-img" height="50" width="50" />
                         <div className="ms-1">

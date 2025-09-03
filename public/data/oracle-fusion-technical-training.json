@@ -1,0 +1,1135 @@
+{
+    "title": "Oracle Fusion HCM Technical Training",
+    "id":"ORF-HCM-OT-011",
+    "category":"Oracle",
+    "duration":"3 Months",
+    "hero": {
+        "title": "Master Oracle Fusion HCM Technical Training with",
+        "animationTitle": [
+            "Expert Training.",
+            "Redwood Experience",
+            "AI With hCM"
+        ],
+        "shortDescription": "Advance your career in Human Capital Management with our expert-led Oracle Fusion HCM Technical Training!Master Oracle HCM Extracts, Fast Formulas, and Integrations with real-world implementation use cases. Gain real-time hands-on experience and Oracle HCM Cloud instance access for technical practice.",
+        "brouchurePath": "/brochure/oracle-fusion-hcm-technical-training.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "OTBI Reports",
+            "BIP Reports",
+            "Web Services ",
+            "Integrations",
+            "Data Loading Inbound",
+            "Data Extraction Outbound",
+            "HCM data loader",
+            "Spreadsheet Data Loader",
+            "Master Data Creation"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in HCM Integrations with Industry-Leading Oracle Fusion HCM Technical Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Human Capital Management (HCM).",
+                        "Those interested in areas such as Core HR, integrations, data loading,reporting using Oracle Fusion HCM Technical tools.",
+                        "Job seekers aiming to enhance their resumes with in-demand Oracle Fusion HCM Technical skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals",
+                    "points": [
+                        "IT & ERP professionals transitioning from Oracle EBS, PeopleSoft, SAP, or other ERP systems to Oracle Fusion HCM.",
+                        "HR Managers, Technical Analysts, & ERP Consultants seeking expertise in Oracle Fusion HCM Technical components.",
+                        "Business owners looking to automate and enhance workforce operations using HCM.",
+                        "Professionals aiming to optimize HR data processing with Fusion HCM Technical tools."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online ",
+            "demoDate": "22 May 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the Oracle fusion HCM Technical Live Demo with Vijay"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "xyz",
+        "modules": [
+            {
+                "moduleName": "Introduction to Oracle Fusion Technical",
+                "chapters": [
+                    {
+                        "chapterName": "Introduction to Oracle Cloud Applications",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Oracle Fusion Architecture",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Oracle Cloud Service Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Types of Oracle Cloud Applications",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Oracle cloud portals (My Services & My Account)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Oracle Cloud Portal Administrators",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Functional Setup Manager Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Offerings, Functional Areas, Features, Task Lists and Tasks",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Security",
+                "chapters": [
+                    {
+                        "chapterName": "Oracle Fusion Security Model (RBAC)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Security Console : Benefits/ Features",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Role Provisioning/Role Mapping",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Role Inheritance",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Role Types (Data Role, Job Role, Duty Role, Abstract Role & Aggregate Privileges)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Functional User Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Implementation User : Creation & Role provisioning",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "User Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Security Building Blocks(FSM, Security Console, Security Reference Model, AACG)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Security Implementation Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Security Console : Manager, Create, Copy & Compare Roles",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Data Loading (Inbound Integrations)",
+                "chapters": [
+                    {
+                        "chapterName": "Overview on Inbound Integrations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Data Loaders",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Spreadsheet Data Loaders (ADFDI)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "File-Based Data Import(FBDI) ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Inbound Web Services Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Inbound Automations",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "HCM Technical Components",
+                "chapters": [
+                    {
+                        "chapterName": "Overview of HCM Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Master data and Employee Creation from UI",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Data Loaders (HCM Data Loader and Spreadsheet data Loader)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Master data and Employee Creation from Data loaders",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fast Formulas Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fast Formula Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fast Formula Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fast Formula Creations with live examples",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Data Extraction (Outbound Integrations)",
+                "chapters": [
+                    {
+                        "chapterName": "BI Publishers Architecture",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Data Model, Reports, Layouts and templates",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Excel Layout and text template development",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Scheduling BI Publisher : Bursting",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Complex SQL logics",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Oracle Transactional Business Intelligence(OTBI) Architecture",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " OTBI Security",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " BI Analysis, Subject Areas, Folders & Attributes",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Dashboards, KPIs and briefing books",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Delivering Content (Agents)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " HCM Extracts",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Financial Data Extract",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Outbound Automations",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Financial Reports",
+                "chapters": [
+                    {
+                        "chapterName": "Overview and Financial Reports",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Financial Reports: Report",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Development Financial Reports",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Report Functions Financial Reports",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Scheduling",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Financial Reports: Migration",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Extending Fusion Applications",
+                "chapters": [
+                    {
+                        "chapterName": "Overview and Accessing Fusion Applications UI",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Understanding ADF Architecture",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Application Extensibility, Customization & personalization",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Sandbox",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Page Composer, Application Composer",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Customization Migrations",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Integration Using Web Services",
+                "chapters": [
+                    {
+                        "chapterName": "Introduction",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " SOA Architecture",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Principles",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Types of web services",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "About SOAP Web Service",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Introduction",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Anatomy of SOAP",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Structure of SOAP",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " SOAP with HTTP",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " SOAP-1.2 Features",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "About Web services Security",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Introduction",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Need of security",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Types of securities",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Real time Examples with scenarios",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "About REST Web Service",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Introduction",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Rest principles & Terminology",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " About JAX-RS API",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Annotation Inheritance with REST",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " REST Client Design Scenarios",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " REST Service Endpoint & URL Design Scenarios",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Real time Examples with scenarios",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "About WSDL",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Introduction",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " WSDL Structure (Covers 2.0)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Message Exchanging Design Patterns & Modes",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Integration scenarios with web services",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Figuring out the cloud web services",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Building the payload",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Testing the web services (REST and SOAP)",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Visual Basic Cloud Service",
+                "chapters": [
+                    {
+                        "chapterName": "Overview of VBCS",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "VBCS User Interface",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create, Read, Update, Delete web application creation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Single column and Multi column filter use case",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Delete use case for each row",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "RESTAPI invocation(GET, POST) from web application",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Process Cloud Service",
+                "chapters": [
+                    {
+                        "chapterName": "Overview of PCS",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "PCS User Interface",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "PCS various components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Approval workflow use case Development",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Decision Model use case",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Test, Activate, Version, and Migration of PCS components",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Oracle Integration Cloud (OIC)",
+                "chapters": [
+                    {
+                        "chapterName": "Prerequisites",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " XML and XSD schema Overview",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Fusion Application User and Roles (Include Custom Roles)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " FDBI Process Overview",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " BI Reports and ESS Jobs Overview",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Data Mapping and Lookups",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Data Transformation with OIC mapper",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " XPATH functions for advanced mapping",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " OIC data lookups",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Use of lookups to share information between applications",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Lookup Functions",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Creating Connections, Integrations and Packages",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "OIC Integration Templates",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " XPATH functions for advanced mapping",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " OIC data lookups",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Use of lookups to share information between applications",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Lookup Functions",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Advanced Integrations and Orchestrations",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Routing based on content",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Integration inbuilt activities",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Managing Conditional Expressions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " OIC security, Schedules and additional features",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Packages Overview",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create, Export and Import Packages",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Editing OIC Integration",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Versioning Integration",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Deploy Integrations",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Defining and Configuring Connections",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " OIC Supported message exchange patterns",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Creating OIC Integration",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Basic Mappings",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " How to use Publish to OIC Integration Pattern",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " How to use Subscribe to OIC Integration Pattern",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Data Mapping Overview",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Scheduling Integrations",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " File Based Integrations",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Configuring Adapters and defining connections",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "OIC Built Adapters ",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Triggering and Invoking adapter properties",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " REST Adapter properties definition",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " SOAP Adapter Properties definition",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Database Adapter Configuration",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cloud Adapters Overview",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Connectivity Agent",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Agent Overview",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Setup Agent Group",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Download and Install Connectivity Agent",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Creating connection to On-Premise end points",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Debugging using Agent logs",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "OIC Overview",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " OIC Capabilities",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Overview of Use case and Architecture",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Steps for basic configuration of workflow",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "OIC Setup",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Provision DBaaS Instance",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " DBaaS Access Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Provision OIC Instance",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Start / Stop OIC Instance",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Monitoring Integrations",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Handle Errors, define custom exceptions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Managing and Tracking messages between Integration flow",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Common Error Handle framework",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "demoVideoPath": "https://youtu.be/mPOLJFaIqGE",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/fusion_technical.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Oracle Fusion Experts!",
+            "shortDescription": "Unlock new career opportunities Oracle Fusion HCM Technical professionals are in high demand. Start your journey today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Vijay is an Oracle-certified expert with over 16 years of experience in Oracle ERP and Cloud technologies. As an instructor for Oracle University and a certified trainer, he brings in-depth technical expertise specifically in Oracle Fusion HCM Technical and OIC (Oracle Integration Cloud). He has successfully conducted 35+ batches, mentored over 16,000 learners, and is renowned for his flexible and practical teaching style—whether it’s corporate, classroom, or online training.Vijay is an active contributor in the Oracle community, known for his guidance, mentorship, and staying ahead with evolving HCM technologies. "
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized Oracle Fusion HCM Technical Trainer",
+            "points": [
+                " Oracle-Certified Trainer, Expert in Oracle Fusion HCM Technical & OIC",
+                "16+ years of experience in Oracle ERP, Technical Implementations & Integrations",
+                "Trained over 3,000 professionals in Oracle Fusion HCM Technical & OIC, helping them succeed in ERP & Cloud careers"
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Vijay",
+            "trainerDesignation": "Oracle Technical Expert",
+            "avatarImagePath": "/images/courses/trainer/hcmtech.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/technical/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Vaishali Purohit",
+                "designation": "Technical Consultant",
+                "imagePath": "/images/courses/students/technical/vaishali purohit.png",
+                "review": "I have attended Oracle Fusion Technical course.Vijay is experienced & very good in explaining each & every concept.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rajneesh Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/technical/rajneesh.png",
+                "review": "The training on Oracle Fusion Application was excellent. Vijay Sir explained every topic with real-time examples ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Anandakumar Chandrasekaran",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/technical/anandakumar.png",
+                "review": "TechLeads is good and professional in teaching. Highly recommended for the beginners to understand the concepts",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Shrikant Karhale",
+                "designation": "Oracle Technical Lead",
+                "imagePath": "/images/courses/students/technical/shrikant.png",
+                "review": "This is my first experience with a remote instructor and I liked it. I have taken Oracle Fusion Technical Training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Sudheer Devarasetty",
+                "designation": "Technical Consultant",
+                "imagePath": "/images/courses/students/technical/sudheer devarasetty.png",
+                "review": "Fusion Technical was very good I'm confident to work in technical work in Fusion after training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹18,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹25,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/hcm_technical.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/hcm_technical.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Oracle Fusion HCM Technical Modules",
+                    "Gain a Clear Understanding of Industry Requirements",
+                    "Develop Core Technical & Problem-Solving Skills"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-World Use Cases",
+                    "Solve Business Scenarios with Technical Experts",
+                    "Get Deep Insights into Integration & Extension Methodologies"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume",
+                    "Build a Strong LinkedIn Profile and Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on case studies and sample projectes",
+                    "Understand Industry Expectations & Best Practices",
+                    "Develop Problem-Solving & Decision-Making Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Starts with Oracle Fusion HCM Are You Ready?",
+            "shortDescription": "Join the growing demand for Oracle Fusion HCM Technical professionals. Get certified and unlock high-paying career opportunities with leading global companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle Fusion HCM Trainee",
+                "Oracle HCM Cloud Technical Analyst",
+                "Oracle HCM Reporting Developer",
+                "Oracle Fusion HCM Technical Consultant",
+                "Oracle HCM Integration Consultant",
+                "Oracle HCM Technical Support Analyst",
+                "Oracle Fusion HCM Technical Lead",
+                "Oracle HCM Integration Architect",
+                "ERP Implementation Manager"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Power  Master Fusion HCM Technical Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your Oracle Fusion HCM expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Oracle Fusion SCM Training Course",
+        "Oracle Fusion HCM Training Course",
+        "Oracle Fusion Technical Training Course",
+        "Oracle Fusion Technical+OIC Training Course"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Oracle Fusion HCM Technical Training?",
+            "answer": "Our Oracle Fusion HCM Technical Training covers essential modules such as Fusion Technical Overview, BI Publisher (BIP) Reports, OTBI Reports, Web Services, Integrations, Inbound and Outbound Data Loading, HCM Data Loader (HDL), Spreadsheet Data Loader (SDL), and Master Data Creation. For a detailed breakdown, please refer to the course syllabus."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "The training sessions are conducted from Monday to Saturday, with each session lasting 1 hour per day. This ensures a structured and interactive learning experience throughout the Oracle Fusion HCM Technical Training."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, we do not offer weekend batches. All live sessions are scheduled Monday through Saturday for consistency and smooth learning progression."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we provide recorded sessions for self-paced learners. However, please note that live doubt clarification is not available in the self-paced mode of our Fusion HCM Technical Training."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internships are offered based on your performance in mock evaluations. These opportunities help you gain hands-on experience with real-world Oracle Fusion Cloud HCM technical scenarios."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single HCM Technical Module Instead of the Full Course?",
+            "answer": "No, the Oracle Fusion HCM Technical Course is offered as a complete training package. Individual module enrollment is not available."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes, we offer end-to-end resume building support tailored to Oracle Fusion HCM Technical roles. Our experts help craft a job-ready resume highlighting your relevant skills and projects."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, a Laptop or Desktop is essential to access the Oracle Cloud instance and practice hands-on during the Oracle Fusion HCM Technical Online Training."
+        },
+        {
+            "question": "Are There Any Prerequisites for the Fusion HCM Technical Training?",
+            "answer": "No prior technical experience is needed! This training starts from the basics. However, basic knowledge of HCM concepts or Oracle EBS is an added advantage. The course is suitable for graduates from any background, including B.Tech, PG, and other degree holders."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Absolutely! Our Fusion HCM Training begins with foundational topics and gradually advances to complex technical concepts, making it perfect for both beginners and experienced professionals."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes, we offer complete job placement support, including mock interviews, resume building, and career guidance. We are associated with top hiring partners like Evosys, Hitachi Vantara, NTT Data, LTI, FIS Global, AAIS, Tech Mahindra, and others."
+        },
+        {
+            "question": "Do You Offer Oracle Cloud HCM Certification Support?",
+            "answer": "Yes, we guide you through the Oracle Fusion Cloud HCM Certification process with sample dumps, preparation tips, and expert mentorship to help you succeed."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes, all training session recordings are accessible through our portal. We also provide soft copy study materials for each module with screenshots and step-by-step navigation instructions."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Mock Support?",
+            "answer": "Yes, we supply module-specific interview questions and conduct mock interview sessions to help you prepare confidently for job interviews in Oracle Fusion HCM Technical roles."
+        },
+        {
+            "question": "Do You Provide Instance Access for Practice?",
+            "answer": "Yes, 6 months of Oracle Cloud instance access is provided for hands-on practice. No installation is required—practice is done through a secure cloud URL."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes, once enrolled, you receive a 1-year membership which allows you to attend multiple batches of our Oracle Fusion Technical Online Training."
+        },
+        {
+            "question": "Will I Get a Course Completion Certificate?",
+            "answer": "Yes, after successful completion of the course, you will receive an official Course Completion Certificate in Oracle Fusion HCM Technical Training."
+        },
+        {
+            "question": "Is Coding Knowledge Required?",
+            "answer": "No, this is a non-coding focused Oracle Fusion Technical Training. Basic technical understanding is helpful, but not mandatory."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, we offer personalized one-on-one training upon request. Please note that pricing for one-on-one sessions differs from group training batches."
+        }
+    ]
+}

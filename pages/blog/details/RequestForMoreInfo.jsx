@@ -128,7 +128,7 @@ const RequestForMoreInfo = ({ currentBlogId }) => {
 
     return (
         <form className="Request-form" onSubmit={handleSubmit}>
-            <h1 className="promotional-h">Request More Info</h1>
+            <h2 className="promotional-h">Request More Info</h2>
             <p className="promotional-p">We're here to help! Get expert guidance for your Oracle Fusion journey.</p>
 
             <div className="Request-input-container">

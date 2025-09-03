@@ -275,6 +275,10 @@ const CourseRegistrationForm = React.memo(({
     const getUpcomingDemos = () => {
       const fetchDemos = async () => {
         try {
+          if (!courseTitle || !courseId) {
+            console.error("Course title or ID is missing");
+            return;
+          }
           const response = await httpService.post("courses/getUpcomingDemosByCourseTitle", {
             courseTitle: courseTitle,
             courseId: courseId

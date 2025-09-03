@@ -25,10 +25,10 @@ const Signin = () => {
     useEffect(() => {
 
         const remembered = localStorage.getItem('rememberedUser');
-        if (remembered) {
-            const userData = JSON.parse(remembered);
-            setInput(prev => ({ ...prev, emailOrPhone: userData.emailOrPhone }));
-            setRememberMe(true);
+        if (rememberMe) {
+            localStorage.setItem('rememberedUser', JSON.stringify({ emailOrPhone: input.emailOrPhone }));
+        } else {
+            localStorage.removeItem('rememberedUser');
         }
 
         // Dynamically import to ensure it's only run in the browser
@@ -93,7 +93,7 @@ const Signin = () => {
 
 
             if (rememberMe) {
-                localStorage.setItem('rememberedUser', JSON.stringify({ emailOrPhone: input.emailOrPhone }));
+                localStorage.setItem('rememberedUser', JSON.stringify({ emailOrPhone: input.emailOrPhone, password: input.password }));
             } else {
                 localStorage.removeItem('rememberedUser');
             }
@@ -229,6 +229,8 @@ const Signin = () => {
                                 placeholder="Enter your email"
                                 className={`${submitted && emailOrPhoneError ? 'Main-Course-User-Authentication-Form-FB' : ''}`}
                                 value={input.emailOrPhone}
+                                name='username'
+                                autoComplete='username'
                                 onChange={(e) => handleUsername(e)}
                             />
                             {submitted && emailOrPhoneError && (
@@ -251,6 +253,8 @@ const Signin = () => {
                                         className={`${submitted && passwordError ? 'Main-Course-User-Authentication-Form-FB' : ''}`}
                                         value={input.password}
                                         onChange={(e) => handlePassword(e)}
+                                        name='password'
+                                        autoComplete='current-password'
                                     />
                                     <span className="Main-Course-User-Authentication-Signin-toggle-eye" onClick={() => setShowPassword(prev => !prev)}
                                         style={{ cursor: "pointer" }}>
@@ -258,15 +262,15 @@ const Signin = () => {
                                     </span>
                                 </div>
                                 {submitted && passwordError && (
-                            <div className="Main-Course-User-Authentication-Message-Container">
-                                <img src="/images/auth/Error_Icon.svg" className="Main-Course-User-Authentication-Signin-error-icon" alt="Error-Icon" />
-                                <p className="Main-Course-User-Authentication-Signin-error-Message">{passwordError}</p>
+                                    <div className="Main-Course-User-Authentication-Message-Container">
+                                        <img src="/images/auth/Error_Icon.svg" className="Main-Course-User-Authentication-Signin-error-icon" alt="Error-Icon" />
+                                        <p className="Main-Course-User-Authentication-Signin-error-Message">{passwordError}</p>
+                                    </div>
+                                )}
                             </div>
-                        )}
-                            </div>
-                            
+
                         </div>
-                        
+
 
                         {globalError && (
                             <div className="Main-Course-User-Authentication-Message-Container">

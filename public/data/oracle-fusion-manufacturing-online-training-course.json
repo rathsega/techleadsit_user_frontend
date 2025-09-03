@@ -1,0 +1,795 @@
+{
+    "title": "Oracle Manufacturing Training Course",
+    "id": "ORF-MFG-OT-016",
+    "category": "Oracle",
+    "duration": "3 Months",
+    "hero": {
+        "title": "Master Oracle Fusion Manufacturing with",
+        "animationTitle": [
+            "Expert Training.",
+            "Redwood Experience",
+            "AI with Manufacturing"
+        ],
+        "shortDescription": "Advance your career in Manufacturing and Supply Chain Automation with our expert-led Oracle Fusion Manufacturing Online Training! Master Work Order Management, Production Execution, Costing, Work Definitions, Supply Planning, and Quality Management with real-world implementation use cases. Gain real-time hands-on experience with Oracle Fusion Manufacturing.",
+        "brouchurePath": "/brochure/oracle-fusion-manufacturing-online-training-course.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Business Units",
+            "Manufacture Configuration",
+            "Master Data",
+            "Execute Production",
+            "Cost Management",
+            "Change Orders",
+            "Inventory",
+            "Quality Management"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Smart Manufacturing with Industry-Leading Oracle Fusion Manufacturing Online Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Oracle Fusion Manufacturing.",
+                        "Those interested in areas such as smart manufacturing, production planning, and supply chain execution.",
+                        "Job seekers aiming to enhance their resumes with in-demand Oracle Fusion Manufacturing skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals",
+                    "points": [
+                        "IT & ERP professionals transitioning from Oracle EBS, PeopleSoft, SAP, or other platforms to Oracle Fusion Manufacturing.",
+                        "Manufacturing Consultants, Supply Chain Analysts, & ERP Specialists seeking expertise in Oracle Cloud Manufacturing tools.",
+                        "Business owners aiming to digitize & streamline their production & manufacturing operations.",
+                        "Professionals looking to optimize factory operations using Oracle Manufacturing Cloud"
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "22 May 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the Oracle Fusion Manufacturing Live Demo with Krishna V"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "xyz",
+        "modules": [
+            {
+                "moduleName": "Introduction to Oracle Cloud ",
+                "chapters": [
+                    {
+                        "chapterName": "Introduction to Oracle Cloud",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SAAS, PAAS and IAAS Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Oracle SCM Cloud Capabilities: Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Navigation Basics",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Resources",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Introduction to Functional Setup Manager and Quick Setup ",
+                "chapters": [
+                    {
+                        "chapterName": "Implementation Planning",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Roles and Responsibilities",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Offerings",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Implementation Considerations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SCM Simplified Setup: Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Automated Setup of SCM Common Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Simplified Setup: Time Savings",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Best Practices",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Enterprise Structure Overview ",
+                "chapters": [
+                    {
+                        "chapterName": "Walkthrough on Enterprise Structure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Differentiate E-Business Suite and Cloud Org Structure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Business Unit Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Business Unit Implementation",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Demo on Connected Modules ",
+                "chapters": [
+                    {
+                        "chapterName": "Fusion Product Data Hub",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Inventory Management and Costing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Manufacturing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Procurement",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Order Management",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Oracle Supply Chain Management Cloud Common Configuration ",
+                "chapters": [
+                    {
+                        "chapterName": "Set up an Inventory Organization",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Units of Measure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Calendars",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Inventory, including Issue and transfer of materials",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Manage Items and Item Structures ",
+                "chapters": [
+                    {
+                        "chapterName": "Describe Item attributes that are critical to Oracle Manufacturing Cloud",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Items",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Item Structures and attributes that are critical to Oracle Manufacturing Cloud",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Manage work orders ",
+                "chapters": [
+                    {
+                        "chapterName": "Explain Work Execution Work Areas",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create and update Work Orders for standard and non-standard Work Orders and Serialized Manufacturing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain Work Order Reservations and History",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Reporting and Analytics for Manufacturing ",
+                "chapters": [
+                    {
+                        "chapterName": "Execute Work Definition and Work Order reports, including Component Lists, Work Order traveler, and Labels",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Set up Product Task Reporting",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Set up BI and Reporting",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain OTBI Metrics",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain Reporting customization",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Manufacturing Set Up ",
+                "chapters": [
+                    {
+                        "chapterName": "Describe Function Set Up Manager and Simplified Set Up",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Set up Product Resources and Standard Operations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain how to set up Plant, Plant Parameters, and Plant Security",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain how to set up Profile Options, Look Ups, and Descriptive Flexfields",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Import and Export Services for setup data",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Standard Operations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Work Centers set up",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Production Calendars and add Shift and Work Center Resource exceptions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Product Resources and Standard Operations setup",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Manage Work Definitions ",
+                "chapters": [
+                    {
+                        "chapterName": "Describe Work Definitions, Work Definition Names, and Library",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create and update Work Definitions, including spreadsheets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Manufacturing Lead-time",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Process Item Structure changes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Work Definition versions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Visual Work Definitions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Import Work Definitions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe how work definition is automatically generated",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Execute Production ",
+                "chapters": [
+                    {
+                        "chapterName": "Describe Production Execution transactions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain a Dispatch List",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Report Production Transactions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Report Orderless Transactions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain a Production Transactions Review",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Transfer Production Transactions to Costing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Import Production Transactions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain Close Work Orders",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create manufacturing Production Exceptions, including raising exceptions and managing and resolving exceptions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Supply Types of Components (Push, Assembly Pull, Operation Pull, Bulk, Supplier",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Operation Types (Couting Point, Auto Transact, Optional Operations)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OperaWork Order Scheduling and type (Backward, Forward Scheduling and Mid Point Scheduling)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Work Order Types (Standard, Non Standard, Rework and Transform work order) and Orderless transactions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Work Order Reservation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Work Order PickSlip generation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Geneology Tracking",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Derivation of Lead Time (Processing Lead Time, Fixed Lead Time, Variable Lead Time, Cumulative Manufacturing Lead Time, Cumulative Total Lead Time)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Process Manufacturing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Process Manufacturing - Work Definitions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Process Manufacturing - Work Order Cycle",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Process Manufacturing - Co product and By product",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Process Manufacturing - Scaling",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Costing and Inventory Foundations ",
+                "chapters": [
+                    {
+                        "chapterName": "Explain Common Inventory Configurations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Managerial Accounting Basics",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain Cost Accounting",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Manufacturing Costing ",
+                "chapters": [
+                    {
+                        "chapterName": "Describe Manufacturing Costing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Compute Production Costs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Evaluate a Work Order completion cost, including Partial and Scrap",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain Cost Reporting, including WIP Inventory Valuation Report Set up and implement Cost Planning estimates",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            }
+        ],
+        "demoVideoPath": "https://youtu.be/S0pUcqelFrA?si=VtidRusmOAq6CNzo",
+        "demoVideoThumbnail": "/images/courses/demo_thumbnail/manufacturing.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Oracle Fusion Experts!",
+            "shortDescription": "Unlock new career opportunities—Oracle Fusion Manufacturing professionals are in high demand. Start your journey today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Our Founder  & Your Trainer",
+            "shortDescription": "Mr.Krishna, a seasoned professional with 20 years of experience across diverse projects and industries, is driven by a passion for sharing knowledge and transforming students into skilled professionals. With a vision to produce top-tier Oracle Fusion Supply Chain consultants to meet the growing market demand, our founder firmly believes that knowledge is the key to individual financial growth, empowering people to support their families and contribute to the economy."
+        },
+        "sectionTwo": {
+            "title": "Learn from the World Leading Oracle Fusion Manufacturing Trainer",
+            "points": [
+                "Oracle Fusion SCM Certified Professional,  Supply Chain Management Expert.",
+                "20+ years of expertise in Oracle ERP, specializing in Fusion SCM Training.",
+                "Successfully trained over 5,000 students in Oracle Cloud SCM Course, empowering them to become skilled IT professionals."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Krishna V",
+            "trainerDesignation": "Oracle SCM Expert",
+            "avatarImagePath": "/images/courses/trainer/manufacturing.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Tanvi Shrivastava",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/procurement/Tanvi Srivastava.png",
+                "review": "Overall, A great learning experience and 5 star to Krishna Sir for always motivating his students to do better.",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/Y2quqG1XVGEKqhLF8"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Uma Shankar ",
+                "designation": "Oracle Consultant",
+                "imagePath": "/images/courses/students/procurement/Umashankar M.png",
+                "review": "I highly recommend to join this institution They also provide LMS portal which helps to learn from videos",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/f3sH1GvWfGw59gBR9"
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Ratheesh Poshala",
+                "designation": "Senior Oracle Solution Engineer",
+                "imagePath": "/images/courses/students/procurement/Ratheesh Poshala.png",
+                "review": "Techleads is one of the Best training institute for Oracle fusion Scm. I would strongly recommend this institute.",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/CAzYtE8NMrzVzgqE6"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Velmurugan M",
+                "designation": "Junior Engineer",
+                "imagePath": "/images/courses/students/procurement/Velmurugan M.png",
+                "review": "Best institute to get trained in the module of SCM Fusion. Krishna teaches everything related to Live scenarios.",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/77awnEjxonY7gwpa6"
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya buddhiga",
+                "designation": "Process Engineer",
+                "imagePath": "/images/courses/students/procurement/Divakar Buddiga.png",
+                "review": "Krishna (trainer) is having good knowledge in SCM. I thank tech leads for the support and to be trained here.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Sudarshan Kawade",
+                "designation": "Oracle Functional Consultant",
+                "imagePath": "/images/courses/students/procurement/Sudarshan kawade.png",
+                "review": "I am part of Oracle Fusion SCM course. instructor Krishna Sir had explained all concepts clearly with real time examples",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/vCnHhKN9xxpRN85r9"
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹18,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹25,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/manufacturing.png"
+        },
+        "portalView": {
+            "imagePath": "/images/courses/portal_view/manufacturing.webp"
+        }
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Oracle Fusion Manufacturing Modules",
+                    "Gain a Clear Understanding of Manufacturing Processes and Architecture",
+                    "Develop Core Technical & Functional Knowledge in Oracle Fusion Manufacturing"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-World Manufacturing Use Cases",
+                    "Solve Production, Work Order, & Supply Chain Scenarios with Technical Experts",
+                    "Get Deep Insights into Work Definitions, Execution, Costing, and Planning Modules"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume",
+                    "Build a Strong LinkedIn Profile and Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on Real-Life Case Studies in Discrete & Process Manufacturing",
+                    "Understand Industry Expectations & Best Practices in Cloud Manufacturing",
+                    "Develop Problem-Solving & Decision-Making Skills/"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Oracle fusion Manufacturing Are You Ready?",
+            "shortDescription": "Join the rising demand for Oracle Integration Cloud professionals. Get certified and unlock high-paying career opportunities with top enterprise IT, ERP, and cloud integration organizations."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle Fusion Manufacturing Trainee",
+                "Oracle Manufacturing Support Analyst",
+                "Oracle Fusion Supply Chain Associate",
+                "Oracle Manufacturing  Specialist",
+                "Oracle Manufacturing  Specialist",
+                "Oracle Cloud Manufacturing Lead",
+                "Oracle Manufacturing Practice Lead",
+                "ERP Delivery Manager",
+                "Oracle Manufacturing Project Manager"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Power  Master Oracle Fusion Manufacturing Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your Oracle Fusion Manufacturing expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Oracle Fusion SCM Online Training",
+        "Oracle Fusion HCM Online Training",
+        "Oracle Fusion Functional Online Training",
+        "Oracle Fusion Technical+OIC Online Training"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Oracle Fusion Manufacturing Training?",
+            "answer": "Our Oracle Fusion Manufacturing Training covers key modules including Business Units, Manufacturing Configuration, Master Data Management, Production Execution, Cost Management, Change Order Management, Inventory Management, and Quality Management. For a complete syllabus, please refer to our detailed course brochure."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Training sessions are conducted from Monday to Saturday, with 1-hour live sessions each day. This structure ensures regular engagement and hands-on experience with Oracle Fusion Manufacturing Cloud."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, we do not offer weekend-only batches. All live sessions are scheduled from Monday to Saturday to maintain consistency in learning."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we provide recorded sessions for self-paced learners. Please note that real-time doubt clarification is not included in this mode."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes! Internship opportunities are offered based on performance in mock evaluations. These provide practical experience with Oracle Fusion Manufacturing tools and real-world projects."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Manufacturing Module Instead of the Full Course?",
+            "answer": "No, the Oracle Fusion Manufacturing Training is delivered as a comprehensive course package. Individual modules are not offered separately."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes, we offer complete resume building assistance tailored to Oracle Fusion Manufacturing roles, highlighting your training and project experience."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, access to a laptop or desktop is necessary for working with the Oracle Cloud instance during training."
+        },
+        {
+            "question": "Are There Any Prerequisites for This Training?",
+            "answer": "No prior technical background is required. The course begins with the basics, making it suitable for students and professionals from any field. A basic understanding of manufacturing or supply chain processes is helpful but not mandatory."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Absolutely. We start from foundational topics and progress to advanced features in Oracle Fusion Manufacturing Cloud, ideal for both freshers and experienced professionals."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes, we offer full job placement support, including mock interviews, resume optimization, and career guidance. Our network includes top employers hiring for Oracle Fusion SCM and Manufacturing roles."
+        },
+        {
+            "question": "Do You Offer Oracle Fusion Manufacturing Certification Support?",
+            "answer": "Yes, we support your certification journey by providing sample questions, study tips, and expert mentoring to help you clear Oracle Fusion Manufacturing Cloud certification exams."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes, all training recordings will be available for 1 year. Soft-copy materials, including detailed steps and screenshots, are provided for each module."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Mock Support?",
+            "answer": "Yes, we offer module-specific interview questions and conduct mock interview sessions to boost your confidence for real-time Oracle Fusion Manufacturing job roles."
+        },
+        {
+            "question": "Do You Provide Instance Access for Practice?",
+            "answer": "Yes, 5 months of Oracle Cloud instance access is included, allowing you to gain real-time hands-on experience without any software installation."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes, your 1-year membership allows you to attend multiple batches of our Oracle Fusion Manufacturing training at no additional cost."
+        },
+        {
+            "question": "Will I Get a Course Completion Certificate?",
+            "answer": "Yes, after completing the course successfully, you will receive an official Course Completion Certificate in Oracle Fusion Manufacturing Cloud."
+        },
+        {
+            "question": "Is Coding Knowledge Required?",
+            "answer": "No, this is a non-coding focused course. The training is centered on the functional and technical configuration aspects of Oracle Fusion Manufacturing."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, we offer personalized 1-on-1 training sessions on request. Please note that pricing is different from regular group batches."
+        }
+    ]
+}

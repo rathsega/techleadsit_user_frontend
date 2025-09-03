@@ -321,9 +321,9 @@ const Contactus = () => {
             <section className="Course-Contact-Us-margin mt-5">
                 <div className="Course-Contact-Map-Section">
                     <div className="map-container">
-                        <iframe title="instituteAddress1"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1457.3289242683845!2d78.38912971234372!3d17.498183645336336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91b0d118c443%3A0xb98977e757a468ac!2sTech%20Leads%20IT%20Oracle%20Fusion%20Cloud%20SCM%2C%20HCM%2C%20Financials%2C%20Technical%2BOIC%20Trainings!5e0!3m2!1sen!2sin!4v1742638516643!5m2!1sen!2sin"
-                            className="instituteAddressHW" allowfullscreen="" loading="lazy"
+                        <iframe title="instituteAddress2"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2818863631437!2d78.38926887369082!3d17.446217201110606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9151b883f395%3A0x61b3eacdb2eecbe6!2sTrendz%20Arcade!5e0!3m2!1sen!2sin!4v1755685194887!5m2!1sen!2sin"
+                            width="505" height="320" className="instituteAddressHW" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div>
@@ -336,11 +336,25 @@ const Contactus = () => {
                         <div>
                             <h2 className="Course-contact-us-OA-h">Our Address</h2>
                             <h2 className="Course-contact-us-OA-h">Branch 1:</h2>
-                            <p className="Course-contact-us-OA-p">4th Floor, Sridevi Nilayam, plot no 38, near Jntu Metro
-                                Station, back side lane of Pista
-                                house, Sardar Patel Nagar, IDPL Staff Cooperative Housing Society, Kukatpally Housing Board
-                                Colony, Kukatpally, Hyderabad, Telangana 500085</p>
+                            <p className="Course-contact-us-OA-p">4th Floor, Eashan Arcade, Plot no 3-164, Trendz Arcade, Kavuri Hills Road, Doctor's Colony, Hyderabad, Telangana 500033.</p>
                         </div>
+                    </div>
+
+                </div>
+                <div className="Course-Contact-Map-Section">
+                    <div className="map-container">
+                        <iframe title="instituteAddress1"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1457.3289242683845!2d78.38912971234372!3d17.498183645336336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91b0d118c443%3A0xb98977e757a468ac!2sTech%20Leads%20IT%20Oracle%20Fusion%20Cloud%20SCM%2C%20HCM%2C%20Financials%2C%20Technical%2BOIC%20Trainings!5e0!3m2!1sen!2sin!4v1742638516643!5m2!1sen!2sin"
+                            className="instituteAddressHW" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div>
+                        <h2 className="Course-contact-us-OA-h">Our Address</h2>
+                        <h2 className="Course-contact-us-OA-h">Branch 2:</h2>
+                        <p className="Course-contact-us-OA-p">4th Floor, Sridevi Nilayam, plot no 38, near Jntu Metro
+                            Station, back side lane of Pista
+                            house, Sardar Patel Nagar, IDPL Staff Cooperative Housing Society, Kukatpally Housing Board
+                            Colony, Kukatpally, Hyderabad, Telangana 500085</p>
                     </div>
                 </div>
                 <div className="Course-Contact-Map-Section">
@@ -352,25 +366,13 @@ const Contactus = () => {
                     </div>
                     <div>
                         <h2 className="Course-contact-us-OA-h">Our Address</h2>
-                        <h2 className="Course-contact-us-OA-h">Branch 2:</h2>
+                        <h2 className="Course-contact-us-OA-h">Branch 3:</h2>
                         <p className="Course-contact-us-OA-p">44/A, 302, Geetanjali Apartments, Near SR Nagar, SR Nagar Main Rd,
                             opp. Bahar Cafe, Hyderabad, Telangana 500038</p>
                     </div>
                 </div>
 
-                <div className="Course-Contact-Map-Section">
-                    <div className="map-container">
-                        <iframe title="instituteAddress2"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2818863631437!2d78.38926887369082!3d17.446217201110606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9151b883f395%3A0x61b3eacdb2eecbe6!2sTrendz%20Arcade!5e0!3m2!1sen!2sin!4v1755685194887!5m2!1sen!2sin"
-                            width="505" height="320" className="instituteAddressHW" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div>
-                        <h2 className="Course-contact-us-OA-h">Our Address</h2>
-                        <h2 className="Course-contact-us-OA-h">Branch 3:</h2>
-                        <p className="Course-contact-us-OA-p">4th Floor, Eashan Arcade, Plot no 3-164, Trendz Arcade, Kavuri Hills Road, Doctor's Colony, Hyderabad, Telangana 500033.</p>
-                    </div>
-                </div>
+
             </section>
 
             <SubscribeSection currentBlogId="0" classes="Course-Contact-Us-margin"></SubscribeSection>

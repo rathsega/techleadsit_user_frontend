@@ -1,0 +1,473 @@
+{
+    "title": "Oracle Recruiting cloud training online clourse",
+    "id":"ORF-RCT-OT-012",
+    "category":"Oracle",
+    "duration":"3 Months",
+    "hero": {
+        "title": "Master Oracle Recruiting Cloud at Tech Leads IT with",
+        "animationTitle": [
+            "Expert Training.",
+            "Redwood Experience",
+            "AI With Recruting"
+        ],
+        "shortDescription": "Advance your career in Human Capital Management with our expert-led Oracle Recruiting Cloud Online Training! Master Job Requisitions, Candidate Management, Career Sites, Interview Scheduling, and Recruiting Analytics with real-world implementation use cases. Gain real-time hands-on experience and Oracle Recruiting Cloud instance access for in-depth technical practice.",
+        "brouchurePath": "/brochure/oracle-recruiting-cloud-training.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Core HR",
+            "Security ",
+            "Recruiting",
+            "Candidate Management",
+            "Career Sites",
+            "Candidate Selection",
+            "Interview Management",
+            "Job Requistions",
+            "Third Party Integration",
+            "Onboarding Administration"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Talent Acquisition with Industry-Leading Oracle Recruiting Cloud Online Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Oracle Fusion Recruiting Cloud.",
+                        "Those interested in areas such as talent acquisition, job requisitions,  and career site configuration.",
+                        "Job seekers aiming to enhance their resumes with in-demand Oracle Recruiting Cloud skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT & ERP professionals transitioning from Oracle EBS, PeopleSoft, SAP, or other ERP systems to Oracle Recruiting Cloud.",
+                        "HR Managers, Talent Acquisition Specialists, & ERP Consultants seeking expertise in Oracle Cloud Recruiting modules.",
+                        "Business owners looking to automate & streamline the hiring & onboarding processes",
+                        "Professionals aiming to optimize recruitment workflows and analytics with Oracle Tools."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "22 May 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the Oracle Recruiting cloud Live Demo with Chanakya"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "",
+        "modules": [
+            {
+                "moduleName": "Oracle HCM Cloud Overview"
+            },
+            {
+                "moduleName": "ORC v OTAC (Taleo) Overview"
+            },
+            {
+                "moduleName": "Prerequisites for ORC Implementation"
+            },
+            {
+                "moduleName": "Foundations required from Core HR such as ERC, Jobs, Positions, Departments, Locations, Salary Grades, Organization Hierarchy, Location Hierarchy etc"
+            },
+            {
+                "moduleName": "Security concepts for ORC"
+            },
+            {
+                "moduleName": "Recruiting Process Life Cycle in ORC"
+            },
+            {
+                "moduleName": "Applicant process flow from stage of initial apply, candidate screening, interview, offer generation, Offer acceptance, Onboarding in ORC from user prospective"
+            },
+            {
+                "moduleName": "ORC Implementation Steps"
+            },
+            {
+                "moduleName": "Security Implementation for ORC and User Configuration"
+            },
+            {
+                "moduleName": "Recruiting and Candidate Experience Offering & Functional Area"
+            },
+            {
+                "moduleName": "Job Requisitions Functional Area"
+            },
+            {
+                "moduleName": "Candidate Experience Functional Area"
+            },
+            {
+                "moduleName": "Candidate Job Applications Functional Area"
+            },
+            {
+                "moduleName": "Third Party Integration"
+            },
+            {
+                "moduleName": "Career Site"
+            },
+            {
+                "moduleName": "Job Application Flows (JAF)"
+            },
+            {
+                "moduleName": "Candidate Selection Process (CSF)"
+            },
+            {
+                "moduleName": "Recruiting Content Library"
+            },
+            {
+                "moduleName": "Alert Notifications and Alert Composer"
+            },
+            {
+                "moduleName": "Questionnaires"
+            },
+            {
+                "moduleName": "Final End User Experience"
+            },
+            {
+                "moduleName": "Job Requisition Templates"
+            },
+            {
+                "moduleName": "Candidate Management"
+            },
+            {
+                "moduleName": "Recruiting Campaigns"
+            },
+            {
+                "moduleName": "Candidate Pools"
+            },
+            {
+                "moduleName": "Scheduled Processes"
+            },
+            {
+                "moduleName": "Best features of ORC compared to OTC (Taleo), Oracle Recruiting(eBiz), PeopleSoft Recruiting"
+            }
+        ],
+        "demoVideoPath": "",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Oracle Fusion Experts!",
+            "shortDescription": "Unlock new career opportunities Oracle Recruiting Cloud professionals are in high demand. Start your journey today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Chanakya is an Oracle-certified expert with over 12 years of experience in Oracle ERP and Cloud technologies. As an instructor and certified trainer, he brings deep technical and functional expertise, specifically in Oracle Recruiting Cloud and Fusion HCM modules. He has successfully conducted 30+ batches, trained over 2,500 learners, and is known for his real-time, hands-on teaching style—be it in corporate, classroom, or online formats.Chanakya is a passionate mentor and active contributor to the Oracle community, guiding students and staying updated with the latest in recruiting cloud technologies."
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized Oracle Recruiting Cloud Trainer",
+            "points": [
+                "Oracle-Certified Trainer, Expert in Oracle Recruiting Cloud & Fusion HCM",
+                "12+ years of experience in Oracle ERP, Recruitment Implementations & Integrations",
+                "Trained over 2,500 professionals in Oracle Recruiting Cloud, helping them succeed in HCM & Cloud careers"
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Chanakya",
+            "trainerDesignation": "Oracle Recruiting Expert",
+            "avatarImagePath": "/images/courses/trainer/orc.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Yogesh P",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/orc/yogeesh.png",
+                "review": "I have Joined Fusion HCM Training in Tech leads IT Institute here the instructor is really very Knowledgeable.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Sai Rupa",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/orc/sai rupa.png",
+                "review": "They teach the subject in detail and helps the students with the interview preparation during the course itself.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/orc/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/orc/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Strudent",
+                "imagePath": "/images/courses/students/orc/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/orc/rohith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹8,000+Taxes",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹12,000+Taxes",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/orc.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/orc.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Oracle Recruiting Cloud Modules",
+                    "Gain a Clear Understanding of Hiring Processes",
+                    "Develop Core Technical & Functional Knowledge"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-World Use Cases",
+                    "Solve HR Scenarios with Technical Experts",
+                    "Get Deep Insights into Integration & Extension Tools"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume",
+                    "Build a Strong LinkedIn Profile and Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on real-life case studies and hiring projects",
+                    "Understand Industry Expectations & Best Practices",
+                    "Develop Problem-Solving & Decision-Making Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "Invest in Yourself  It’s the Best Decision You’ll Ever Make!",
+            "shortDescription": "Upskill with Oracle Recruiting Cloud Online Training and transform your career prospects. A small step today leads to big rewards tomorrow."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle Recruiting Cloud Trainee",
+                "Oracle Recruiting Cloud Support Analyst (L1)",
+                "Oracle HCM Associate Consultant ",
+                "Oracle HCM Consultant (Recruiting)",
+                "Oracle Recruiting Implementation Specialist",
+                "Oracle Recruiting Cloud Support Lead ",
+                "Oracle Recruiting Cloud Lead ",
+                "Oracle Recruiting Cloud Project Manager",
+                "ERP HCM Program Manager"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Power  Master Oracle Recruiting Cloud Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your Oracle Recruiting Cloud expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Oracle Fusion Hcm Online Training",
+        "Oracle Fusion Scm Online Training",
+        "Oracle Fusion Functional Online Training",
+        "Oracle Fusion Technical+OIC Online Training"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Oracle Recruiting Cloud Training?",
+            "answer": "Our Oracle Recruiting Cloud Training covers key modules including Core HR, Security, Recruiting, Candidate Management, Career Sites, Candidate Selection, Interview Management, Job Requisitions, Third-Party Integrations, and Onboarding Administration. For a complete syllabus, please refer to our detailed course brochure."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Training sessions are held from Monday to Saturday, with 1-hour live sessions per day. This schedule ensures consistent learning and time for hands-on practice."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, we do not offer weekend-only batches. All sessions are scheduled from Monday to Saturday for better continuity."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, recorded sessions are available for self-paced learners. However, live doubt clarification is not included in the self-paced model."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes! Internship opportunities are offered based on your performance in mock evaluations, giving you practical exposure to real-world Oracle Recruiting Cloud projects."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Recruiting Module Instead of the Full Course?",
+            "answer": "No, the Oracle Recruiting Cloud Training is offered as a complete course package. We do not offer individual module enrollment."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes, we offer end-to-end resume building assistance tailored to Oracle Recruiting Cloud job roles, showcasing your project experience and relevant skills."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, having a laptop or desktop is essential for accessing the Oracle Cloud instance and practicing hands-on tasks."
+        },
+        {
+            "question": "Are There Any Prerequisites for This Training?",
+            "answer": "No prior technical background is needed. The course starts from the basics, although familiarity with HR or recruitment processes is a plus. Suitable for B.Tech, PG, and graduates from all fields."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Absolutely. We start with foundational concepts and build up to advanced topics in Oracle Recruiting Cloud, making it ideal for both freshers and experienced professionals."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes, we offer placement support, including mock interviews, resume preparation, and career guidance. We collaborate with top companies like Evosys, Tech Mahindra, NTT Data, Hitachi Vantara, and others."
+        },
+        {
+            "question": "Do You Offer Oracle Recruiting Cloud Certification Support?",
+            "answer": "Yes, we provide certification guidance, including sample questions, preparation tips, and mentorship to help you achieve Oracle certification."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes, all session recordings are available for 1 year, along with soft-copy study materials that include step-by-step guides and screenshots"
+        },
+        {
+            "question": "Do You Provide Interview Questions and Mock Support?",
+            "answer": "Yes, we provide module-wise interview questions and conduct mock interviews to prepare you for real-time job scenarios."
+        },
+        {
+            "question": "Do You Provide Instance Access for Practice?",
+            "answer": "Yes, you will receive 3 months of Oracle Cloud instance access for practical training. No installation is required — everything is cloud-based."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes! With your 1-year membership, you can attend multiple batches at no extra cost."
+        },
+        {
+            "question": "Will I Get a Course Completion Certificate?",
+            "answer": "Yes, on successful completion of the training, you will receive an official Course Completion Certificate in Oracle Recruiting Cloud."
+        },
+        {
+            "question": "Is Coding Knowledge Required?",
+            "answer": "No coding skills are required. The course focuses on functional and technical aspects of Oracle Recruiting Cloud without heavy programming."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, personalized one-on-one training is available upon request. Pricing will differ from group batches."
+        }
+    ]
+}

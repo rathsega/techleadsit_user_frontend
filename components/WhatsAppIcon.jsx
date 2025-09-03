@@ -15,7 +15,7 @@ const WhatsAppIcon = () => {
     const handleClick = (e) => {
 
         window.open(
-            "https://api.whatsapp.com/send?phone=918125323232&text=",
+            "https://api.whatsapp.com/send?phone=918889993194&text=",
             "_blank",
             "noopener,noreferrer"
         );

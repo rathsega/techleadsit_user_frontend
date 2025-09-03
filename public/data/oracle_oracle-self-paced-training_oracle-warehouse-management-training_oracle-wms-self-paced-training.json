@@ -1,0 +1,1141 @@
+{
+    "title": "Oracle Fusion WMS Cloud (Logfire) Self-Paced Training",
+    "id":"ORF-WMS-SP-035",
+    "category":"Oracle",
+    "duration":"3 Months",
+    "hero": {
+        "title": "Master Oracle Fusion WMS Cloud (Logfire) Self-Paced Training at Tech Leads IT",
+        "animationTitle": [
+            "Expert Training.",
+            "Redwood Experience",
+            "AI With WMS"
+        ],
+        "shortDescription": "Accelerate your career in Warehouse Management with our comprehensive Oracle Fusion WMS Cloud (LogFire) Training! Master core warehousing concepts, gain hands-on experience, and position yourself for success in the logistics and supply chain industry with expert-led training on Oracle WMS Cloud modules.",
+        "brouchurePath": "/brochure/oracle-wms-training-brochure.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "System Configuration",
+            "Putaway Operations",
+            "Inventory Management",
+            "Master Data",
+            "AI ML Configuration",
+            "Inbound operations",
+            "Extra Configuration",
+            "Workforce Management",
+            "Advanced Reporting",
+            "Label Printing"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Warehouse Management with Industry-Leading Oracle Fusion WMS Cloud (LogFire) Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Warehouse and Logistics Management",
+                        "Those interested in ERP, warehouse operations, inventory control, & logistics using Oracle WMS Cloud.",
+                        "job seekers aiming to enhance their resumes with in-demand WMS skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT & ERP professionals transitioning from Oracle EBS or other ERP systems to Oracle Fusion WMS Cloud.",
+                        "Warehouse Managers, Logistics Analysts,  seeking specialized expertise in WMS",
+                        "Business owners aiming to streamline warehouse operations using Oracle WMS",
+                        "Professionals looking to optimize inventory and logistics workflows."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "online",
+            "demoDate": "25/05/2025",
+            "demoTimeSlot": "08:00AM-10:00AM",
+            "demoTrainerName": "Join the Oracle Fusion SCM Live Demo with Abhiram"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "xvy",
+        "modules": [
+            {
+                "moduleName": "System Overview and Architecture",
+                "chapters": [
+                    {
+                        "chapterName": "Parent-Child Company Hierarchy",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "EBS WMS and Cloud WMS major differences overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Setting Email Notifications for Failed Interfaces",
+                        "chaptherVideoPath":"" 
+                    },
+                    {
+                        "chapterName": "Uploading Interface files with the WMS.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Output Interfaces.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion ERP to WMS Cloud standard integration touchpoints",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Input Interface templates and samples",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Input Interfaces",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Supported Formats",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "System Integration Framework",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "User Management",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Users",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Menu's",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Screens",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Groups and Permissions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " User access controls",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " User Roles",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Inbound",
+                "chapters": [
+                    {
+                        "chapterName": "Purchase Orders (PO)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Checking in a Load",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Appointments",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create an Appointment",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Assigning multiple ASNs to the same load",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Receiving Process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SKU Level Receipt",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Pallet Level Receipt",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Case Level Receipt",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ASN Level Receipt",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Receiving Return ASN",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "System-directed Quality Control",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Cross Dock Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Cross Dock for facility orders (Auto cross dock order)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ASN Updates in UI",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Combing/Splitting IB LPNs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Pre-Receiving - Cartonization of Multiple Lines of the same Item",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manual Purchase Order (PO) creation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Purchase Orders through Interfaces (UI)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Purchase Order (PO) Integration into the WMS",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Inbound Shipments - Advance Shipment Notifications (ASNs)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating ASNs Manually (UI)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating ASN through Interfaces (UI)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ASN Integration into the WMS",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ASN against existing POs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ASNs created for multiple PO Lines of the same item",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ASNs created for Inventory Returns",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Assigning Putaway Type to SKUs on ASN",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Vendor Compliance",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Pre-Receiving - Cartonization",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Pre-Receiving - Cartonize based on standard case quantity",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ASN Verification",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Putaway Operations",
+                "chapters": [
+                    {
+                        "chapterName": "System Directed Putaway",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Putaway Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Location Size Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Putaway Rules",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Outbound",
+                "chapters": [
+                    {
+                        "chapterName": "Outbound Orders",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Put-To-Store (Distribution)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Packing (Repack Module)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "LTL Load Management and Shipping",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Load Assignment",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Loading an OBLPN",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Unloading an OBLPN",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Pack and Hold functionality",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Parcel Configuration, Load Management and Shipping",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Parcel Manifest Components in Log Fire - WMS Cloud",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Parcel Manifest Configuration",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Overall Caveats for Using Parcel Functionality",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manually Updating Manifest and Ship Vias to Individual LPNs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Loading/Shipping Parcel Manifests",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Pick Carts",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Exceptions While Calculating LPN Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Cubed Picking",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configuring Order Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Orders in the WMS",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Order Integration into the WMS",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Waves",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Wave Templates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Executing Waves",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Wave Inquiry - Viewing Created Waves",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Printing Pick Tickets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Picking",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Tasks",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Non-Cubed Picking",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Exceptions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Zone Picking",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Parcel Manifest Exceptions",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Inventory Management",
+                "chapters": [
+                    {
+                        "chapterName": "Inventory Types",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Available/Allocatable Inventory",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Unavailable/Unallocatable Inventory",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Unit of Measure in the WMS",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Description of Item fields",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Adding Items through Manual Interfaces",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Item Master Integration into the WMS",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Adding Alternate Barcodes from the UI",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Adding Alternate Barcodes via Interface",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Required Item Fields",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Location Master",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Creating Locations through the Interface (UI)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Inventory Screens",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Reserve Inventory",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " IBLPNs",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Configuring Reason Codes",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Configuring Lock Codes",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Adding Lock Codes to LPNs",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Modifying IBLPNs",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Inventory Summary",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cycle Count",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cycle Count Location",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cycle Count LPN",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cycle Count LPN Detail",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cycle Count by SKU Scan",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cycle Count Exception",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Extra Configuration",
+                "chapters": [
+                    {
+                        "chapterName": "Sequence Counters",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "RF Screen Parameters.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Facility parameters.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Company parameters",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Module configuration.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Screen Configuration.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Schedule Jobs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OTM integration with WMS and ERP.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SaaS configuration",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Rest API Overview and Postman integration testing.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Labels",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Column ordering rule.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Column formatting rule.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "End point configuration.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Printers",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configuring Barcode Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Barcode Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Literals",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Master Data",
+                "chapters": [
+                    {
+                        "chapterName": "Items",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Workorder wave template",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Replenishment wave template.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Wave template",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Task template",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Equipment Type",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Dock Type",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Dock",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Companies",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Facilities",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OB LPN type",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Trailer",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Movement request type",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Work order types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "UOM Class",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Locations (Active, Reserve, Dock, Drop, QC, Consolidation, etc.)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Location Size type",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Vendors",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Allocation Mode",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Workforce Management",
+                "chapters": [
+                    {
+                        "chapterName": "Work area",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Break Report",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "User Productivity Report",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Prod Goal Line Group View",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Prod Goal Vas View",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SKU Line Group View",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Teams View",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SKU Line",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Shifts",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Clock In and Clock out",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Group activity",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Cost center",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Work group",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Work area activity",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "3PL Billing Configuration",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Billing groups",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Invoices",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Billing report",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "AI/ML Configuration and Flow",
+                "chapters": [
+                    {
+                        "chapterName": "AI/ML Training Template",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "AI/ML Model",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "AI/ML Training Data",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "AI/ML Training Date Rule Hdr",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "AI/ML Prediction Run",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Generate training data for Market Basket Analysis",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Generate training data for Order Cycle/Waiting/Processing time",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Generate Prediction Run for Order Cycle/Waiting/Processing time",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            }
+        ],
+        "demoVideoPath": "https://youtu.be/6dRJNQxsvoM",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/wms.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Oracle Fusion Experts!",
+            "shortDescription": "Unlock New Career Opportunities Oracle Fusion Cloud WMS (LogFire) Professionals Are In High Demand. Start Your Journey Today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Mr. Abhiram, a seasoned Oracle professional with over 14 years of hands-on experience in Warehouse Management Systems, has played a key role in guiding organizations through seamless WMS Cloud implementations across various industries. His passion for teaching and deep expertise in Oracle WMS Cloud (LogFire) make him the perfect mentor for aspiring WMS professionals.With a mission to produce skilled Oracle WMS Cloud consultants to meet the rising industry demand, Abhiram is committed to sharing practical knowledge and empowering learners to build strong careers in supply chain logistics and warehouse automation."
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized Oracle WMS Cloud (LogFire) Trainer",
+            "points": [
+                " Oracle WMS Cloud Certified Professional, specialising in Warehouse Management",
+                "14+ years of expertise in Oracle ERP, with a strong focus on WMS Cloud Training.",
+                "Trained over 3,000 professionals in Oracle WMS Cloud (LogFire), enabling them to excel in ERP, logistics, and WMS roles."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Abhiram",
+            "trainerDesignation": "Oracle WMS Cloud Expert",
+            "trainerSocialLinks": [
+                "https://www.facebook.com/techleadsitinstitute",
+                "https://www.facebook.com/techleadsitinstitute",
+                "https://www.facebook.com/techleadsitinstitute"
+            ],
+            "avatarImagePath": "/images/courses/trainer/wms.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Prathap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Sathish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹20,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹30,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/wms.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/wms.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Oracle Fusion Cloud WMS (LogFire)",
+                    "Gain a Clear Understanding of Warehouse and Logistics Operations",
+                    "Develop Essential Problem-Solving Skills"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-World Warehouse Use Cases",
+                    "Solve Inventory & Logistics Scenarios with Industry Experts",
+                    "Get Extensive Knowledge on WMS Implementation Methodologies"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume",
+                    "Build a Strong LinkedIn Profile and Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on Real-Time WMS Case Studies and Sample Projects",
+                    "Understand Industry Expectations & Best Practices",
+                    "Develop Problem-Solving & Decision-Making Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Oracle Fusion WMS Are You Ready?",
+            "shortDescription": "Join the growing demand for Oracle Fusion professionals. Get certified and open doors to high-paying opportunities in top companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle WMS Trainee",
+                "Junior Oracle WMS Functional Consultant",
+                "WMS Support Analyst (L1)",
+                "Oracle WMS Functional Consultant",
+                "WMS Business Analyst",
+                "WMS Implementation Consultant",
+                "Oracle Fusion WMS Lead",
+                "Oracle WMS Solution Architect",
+                "ERP Implementation Manager"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Efficiency Master Oracle Cloud WMS (LogFire) Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your Oracle Fusion Cloud WMS (LogFire) expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Oracle Fusion SCM Online Training",
+        "Oracle Fusion HCM Online Training",
+        "Oracle Fusion Technical +OIC Online Training",
+        "Oracle Fusion Financials sOnline Training"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Oracle Fusion Cloud WMS (LogFire) Training?",
+            "answer": "Our training includes a comprehensive curriculum covering Warehouse Configuration, Inbound Logistics, Outbound Logistics, Inventory Management, & Reporting. Please refer to our course syllabus for the detailed module breakdown."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Training sessions are held Monday to Friday, with each session lasting 1 hour per day to ensure a consistent and interactive learning experience"
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "No, we currently offer live sessions only from Monday to Friday to maintain steady progress and engagement."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we provide recorded sessions for those who prefer to learn at their own pace. Please note that doubt clarification is not included in self-paced learning"
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internships are offered based on your performance in mock evaluations, helping you gain hands-on exposure to Oracle Cloud WMS environments"
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single WMS Module Instead of the Full Course?",
+            "answer": "No, Oracle Fusion Cloud WMS training is offered as a complete course, and modules cannot be taken individually."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Absolutely! Our team assists you in building a professional resume tailored for Oracle WMS roles, highlighting your skills and practical experience."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, a Laptop or Desktop is required to access the Oracle Cloud instance and perform hands-on exercises effectively."
+        },
+        {
+            "question": "Are There Any Prerequisites or Minimum Qualifications Required?",
+            "answer": "No prior experience is needed! The course starts from the basics and is open to all graduates (Degree, PG, B.Tech, etc.). Having knowledge of warehouse operations or Oracle EBS WMS is an added advantage."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Yes, the training begins with foundational concepts and progresses to advanced topics, making it suitable for both freshers and experienced professionals."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes, we offer complete job support through mock interviews, resume building, and career guidance. Our placement network includes companies like Hitachi Vantara, Evosys, Tech Mahindra, LTI, NTT Data, and others."
+        },
+        {
+            "question": "Do You Provide Support for Oracle Certification?",
+            "answer": "Yes, we help you navigate the Oracle WMS Cloud certification process and provide expert tips and practice materials to assist your preparation."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes, you will receive daily session recordings and module-wise study materials, including screenshots and navigation instructions."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Assistance?",
+            "answer": "Yes, we offer up-to-date, module-wise interview questions and conduct mock interview sessions to boost your confidence."
+        },
+        {
+            "question": "Do You Provide Instance or Application Access for Practice?",
+            "answer": "Yes, 4 months of Oracle WMS Cloud instance access is included for hands-on practice via a URL—no installation required."
+        },
+        {
+            "question": "Can I Retake This Course?",
+            "answer": "Yes, once enrolled, you receive a 1-year membership, allowing you to attend multiple batches of the WMS Cloud Training."
+        },
+        {
+            "question": "Can I Get a Course Completion Certificate?",
+            "answer": "Yes, you will be awarded a Course Completion Certificate upon successful training completion."
+        },
+        {
+            "question": "Is Any Coding Knowledge Required?",
+            "answer": "No, this course is entirely functional—no coding or programming background is necessary."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, personalized one-on-one training is available on request. Pricing for this is higher than group sessions."
+        }
+    ]
+}

@@ -1,0 +1,1265 @@
+{
+    "title": "Oracle Fusion HCM Certification Training",
+    "id": "ORF-HCM-CT-028",
+    "category": "Oracle",
+    "duration": "3 Months",
+    "hero": {
+        "title": "Master Oracle Fusion HCM Certification Training at Tech Leads IT with",
+        "animationTitle": [
+            "Expert Training",
+            "Redwood Experience",
+            "Ai with HCM"
+        ],
+        "shortDescription": "Advance your career in Human Capital Management with our expert-led Oracle Fusion HCM Training! Learn core HCM modules, gain real-time hands-on experience, and build the skills needed to thrive in today’s dynamic HR and workforce management landscape.",
+        "brouchurePath": "/brochure/oracle-fusion-hcm-online-training-course brouchure.pdf",
+        "successStories": {
+            "shortDescription": "Our students thrive in top supply chain roles worldwide driving success with Oracle Fusion HCM expertise",
+            "stories": [
+                {
+                    "studentName": "Aparna Jakkula",
+                    "studentAvatarPath": "/images/courses/success_stories/hcm/Main-Course-Hero-Img1.webp",
+                    "studentDesignation": "HR Practitioner at Accenture",
+                    "salaryHikeInPercentage": "140%",
+                    "studentReview": "\"TechLeadsIT provides excellent Oracle Fusion HCM training, with real-time scenarios and expert guidance that significantly enhanced my learning experience.\"",
+                    "preTechLeadsItCompanyName": "Centotech",
+                    "postTechLeadsItCompanyLogoPath": "/images/courses/success_stories/hcm/Accenture-Logo.svg"
+                },
+                {
+                    "studentName": "Nitisha Babaria",
+                    "studentAvatarPath": "/images/courses/success_stories/hcm/Main-Course-Hero-Img2.webp",
+                    "studentDesignation": "Human Resources Executive",
+                    "salaryHikeInPercentage": "100%",
+                    "studentReview": "\"I have Attended Oracle Fusion HCM training in Tech Lead IT. Our trainer Raj has explained the topics by giving real time scenarios and he has a very good knowledge.\"",
+                    "preTechLeadsItCompanyName": "Wipro",
+                    "postTechLeadsItCompanyLogoPath": "/images/courses/success_stories/hcm/Accenture-Logo.svg"
+                },
+                {
+                    "studentName": "Jaydip Tripathi",
+                    "studentAvatarPath": "/images/courses/success_stories/hcm/Main-Course-Hero-Img3.webp",
+                    "studentDesignation": "Senior Manager at GUVNL",
+                    "salaryHikeInPercentage": "120%",
+                    "studentReview": "\"Excellent content presentation. Covering all the points and Hands on practice is an added advantage. Must enroll for better clarity and understanding basic concepts.",
+                    "preTechLeadsItCompanyName": "GSECL",
+                    "postTechLeadsItCompanyLogoPath": "/images/courses/success_stories/hcm/guvnl-logo.svg"
+                },
+                {
+                    "studentName": "Nidhi Behl",
+                    "studentAvatarPath": "/images/courses/success_stories/hcm/Main-Course-Hero-Img4.webp",
+                    "studentDesignation": "Senior Associate HR at Antarang",
+                    "salaryHikeInPercentage": "150%",
+                    "studentReview": "\"Oracle HCM Fusion Sumesh's manner of teaching is so wonderful and refreshing!! He’s patient and supportive, but really knows how to motivate his students. ",
+                    "preTechLeadsItCompanyName": "Vani Coach",
+                    "postTechLeadsItCompanyLogoPath": "/images/courses/success_stories/hcm/Antarang-Logo.svg"
+                }
+            ]
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Core HR",
+            "Absence Management",
+            "Compensation",
+            "Payroll",
+            "Talent Management",
+            "Goal Management",
+            "Profile Management",
+            "HCM Communicate",
+            "Succession Planning",
+            "Oracle ME"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Human Capital Management with Industry-Leading Oracle Fusion HCM Online Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Human Capital Management (HCM).",
+                        "Those interested in HR operations, payroll, talent management, & workforce planning using Oracle Fusion HCM.",
+                        "Job seekers aiming to enhance their resumes with in-demand HCM skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT & ERP professionals transitioning from Oracle EBS or other ERP systems to Oracle Fusion HCM.",
+                        "HR Managers, HR Analysts, and ERP Consultants seeking expertise in HCM",
+                        "Business owners or HR leaders aiming to streamline workforce using Oracle HCM.",
+                        "Professionals looking to optimize HR processes using Oracle’s advanced HCM tools."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "25  JAN 2025",
+            "demoTimeSlot": "8:00 AM - 10:00 AM",
+            "demoTrainerName": "Join the Oracle Fusion HCM Live Demo with Raj Sumesh"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "xyz",
+        "modules": [
+            {
+                "moduleName": "Functional Setup Manager ",
+                "chapters": [
+                    {
+                        "chapterName": "Getting started with fusion applications",
+                        "chaptherVideoPath": "https://youtu.be/DdAMREtRFc0?si=Qb2ufTjlJi5sNlfn"
+                    },
+                    {
+                        "chapterName": "Initial Activities for Oracle Fusion Implementation ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Preparing Fusion Applications",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "User Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Role Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Implememt Users Using the FA Super - User",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Synchronizing Users & Roles in LDAP with - Fusion HCM",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Introduction to Functional Setup Manager",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creation of Implementation Project",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Offerings",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Options",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Features",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Fusion HCM Business Process Overview",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Core HR",
+                "chapters": [
+                    {
+                        "chapterName": "Implementation Tasks",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Geographies",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Geographies",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Currencies",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Locations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Enterprise Creation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Enterprise Structure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Enterprise Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Enterprise Divisions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Legal entities",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Business Units",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Employment Model",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Two tier model",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Work Relationship",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Assignment",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Three tier model",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Employment Terms",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Reference Data Sets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Work Structures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Departments",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Jobs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Positions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Grades & Grade Rates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "HCM Security Profiles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Role Mapping",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Profile options",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Work Structure",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Departments",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Jobs",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Positions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Grades",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Global Payroll",
+                "chapters": [
+                    {
+                        "chapterName": "Payroll Introduction",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "HCM Security",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Common Application Configurations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Payroll Business Definitions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Pay Frequencies",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Payroll Elements",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Element Entries",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Fast Formulas",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Balance Definitions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Calculate Payroll",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Events",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Payment Methods",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Payroll Costing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Payroll flexes fields",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Object Groups",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Payroll Patterns",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Security for Payroll",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Run Payroll",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Payslip overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Security for Payroll",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Profile and Performance Management",
+                "chapters": [
+                    {
+                        "chapterName": "Lesson and Course Objectives",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Talent Profile Settings",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Implementation Projects and Assigning Implementation Tasks",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Job Roles with Functional Setups Duty",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Talent Management Duties and Privileges by Application Functional Setup Manager Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Roles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Talent Management Job",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Security Reference Implementation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Role-Based Access Control Role Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Security and Functional Setup Manager Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Main Business Activities",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Introducing Oracle Fusion Talent Management - Introducing Talent Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Profile Management",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Compensation",
+                "chapters": [
+                    {
+                        "chapterName": "Introduction to compensation management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Individual Compensation Plans",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Grade Ladder with Progression Configuration",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Salary Basis & Salary Ranges",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Linking compensation to performance and results",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Administering pay increases and bonuses",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Implementing a compensation program",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Determining pay structure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Setting pay levels and ranges",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Overview of Base Pay Configuration",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Key considerations in designing a compensation program",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Types of compensation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Definition and importance of compensation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Workforce Compensation Plan",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Talent Management",
+                "chapters": [
+                    {
+                        "chapterName": "Integrations and Setup",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Talent Profile Content",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Setting Up Talent Profile Content",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Content Library, Content Types and Content Items",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Rating Models and Talent Profiles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Rating Models",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Profile Types and Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Instance Qualifiers",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Writing Assistant",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Talent Profiles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Access to Talent Profiles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Using Team Talent and Talent Profile Cards",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Using Compare Items and Best Fit",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Common Talent Objects",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Review Periods",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Managing Performance Document Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Managing the Goal Library",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Managing the Goal Library",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Auditing Talent Management Business Objects",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Goal Management Concepts",
+                "chapters": [
+                    {
+                        "chapterName": "Goal Management Setup",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Lookups, Flex fields and Profile Options",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Managing Goal Plans",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Goal Plans",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Managing Goal Plan Sets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Using Goal Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Administering and Mass Assigning Goals",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Managing Worker and Organization Goals - Approving Goals",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Questionnaires",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Questionnaires Concepts",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Managing Questions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Question Library",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Question & Response Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Questionnaire Templates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creating Questionnaire",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Understanding and Defining Worker Performance",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Performance Management Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Performance Profile Options and Descriptive Flex fields",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Performance Roles and Matrix Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Eligibility Profiles and Process Flow Definitions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configuring Sections, Document Types and Templates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Performance Templates and Performance Template Sections",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Using Performance Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Performance Documents and Worker Evaluations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Administration and Monitoring Tasks for Worker Performance",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Oracle HCM Communicate",
+                "chapters": [
+                    {
+                        "chapterName": "Target Messaging",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "News Letter – Customization",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Scheduling",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Message Tracking",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Collaboration",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Audience – filtering and Creation",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Absence Management",
+                "chapters": [
+                    {
+                        "chapterName": "Absence Management Setup Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Absence Management Supporting Setup Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Accrual Plan Attributes and Participation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Absence Plan Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Accrual Plans Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Accrual Plan Attributes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Eligibility Profiles Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Accrual Limits, Rates, and Balances",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Defining Accruals",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Repeating Time Periods",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Accrual Plan Limits Fusion HCM",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Setting Up Qualification Plans and No Entitlement Plans",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Qualification Plans",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Qualification Plan Attributes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Qualification Plan Term Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fast Formulas in Absence Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Formula Usage for Absence Plans and Absence Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Absence Types, Reasons, Categories, and Certifications",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Absence Management Setup Framework",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Absence Type Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Absence Pattern and Features",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Plans and Reasons for Absence Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Scheduling and Maintaining Absences",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Managing Absence Records and Entitlements",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Absence Recording Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Absence Approvals",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Scheduling and Monitoring Absence Processes",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Time and Labour",
+                "chapters": [
+                    {
+                        "chapterName": "Repeating Time Periods",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Time Processing Profile",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Worker Time Entry Profile",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Time Card Calculation Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Time Card Calculation Rule Templates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Time card Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage HCM Groups",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Layout Sets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Time Card Layout Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Loading of Timecards",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Technical Concepts",
+                "chapters": [
+                    {
+                        "chapterName": "OTBI Reports",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "BI Reports",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "FBL",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fast Formulas",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "HCM Data Loader",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Spread sheet Data Loader",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            }
+        ],
+        "demoVideoPath": "https://youtu.be/qxiANiaG-fs",
+        "demoVideoThumbnail": "/images/courses/demo_thumbnail/hcm.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Oracle Fusion Experts!",
+            "shortDescription": "Unlock new career opportunities—Oracle Fusion HCM professionals are in high demand. Start your journey today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Mr. Raj Sumesh, a seasoned professional with 20 years of experience in Oracle ERP and Human Capital Management solutions, brings a wealth of knowledge from diverse industries and global implementations. With a deep passion for mentoring and empowering students, he is committed to shaping future-ready HCM professionals.Guided by his vision to develop industry-standard Oracle Fusion HCM consultants, Raj firmly believes that empowering individuals with cutting-edge HR tech skills leads to personal growth and economic progress."
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized Oracle Fusion HCM Trainer",
+            "points": [
+                "Oracle Fusion HCM Certified Professional, Human Capital Management Expert.",
+                "20+ years of expertise in Oracle ERP, specializing in Fusion HCM Training.",
+                "Successfully trained over 5,000 students in Oracle Cloud HCM Course, helping them excel as HR tech professionals."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Raj Sumesh",
+            "trainerDesignation": "Oracle HCM expert",
+            "avatarImagePath": "/images/courses/trainer/raj_sumesh.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Kodamati Sai",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/hcm/kodamati sai.png",
+                "review": "I attended the Oracle Fusion HCM online course with Sumesh Raj Sir, Well-structured and highly informative .",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://g.co/kgs/BBuz2Hz"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Anthony Hanatiffe",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/hcm/anthony.png",
+                "review": "I was happy with the support and the course tutor Sumesh was professional and friendly. .",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Darelli Mohankumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/hcm/darelli mohan.png",
+                "review": "Tech Leads IT offers outstanding online training in Oracle Fusion HCM. The course is well-structured",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Georgina Marku Tyson",
+                "designation": "student",
+                "imagePath": "/images/courses/students/hcm/georgina.png",
+                "review": "The Trainer has good understanding of the Fusion HCM application and delivers it with much ease and understanding.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Sai Rupa",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/hcm/sai rupa.png",
+                "review": "They teach the subject in detail and helps the students with the interview preparation during the course itself.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Yogeesh p",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/hcm/yogeesh.png",
+                "review": "I have Joined Fusion HCM Training in Tech leads IT Institute here the instructor is really very Knowledgeable.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts.",
+                "planPrice": "₹18,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    "Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    "Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹25,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/hcm.png"
+        },
+        "portalView": {
+            "imagePath": "/images/courses/portal_view/hcm.webp"
+        }
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Oracle Fusion HCM Course",
+                    "Gain a Clear Understanding of Industry Requirements",
+                    "Develop Essential Problem-Solving Skills"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-World Use Cases",
+                    "Solve Business Scenarios with Industry Experts",
+                    "Get Extensive Knowledge on Implementation Methodologies"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume",
+                    "Build a Strong LinkedIn Profile and Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on case studies and sample projectes",
+                    "Understand Industry Expectations & Best Practices",
+                    "Develop Problem-Solving & Decision-Making Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Gurantee for Merit students"
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "Our Hiring Partners  Trusted by Top Companies in Oracle HCM",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Oracle Fusion  HCM Are You Ready?",
+            "shortDescription": "Join the growing demand for Oracle Fusion professionals. Get certified and open doors to high-paying opportunities in top companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle HCM Trainee",
+                "Junior HCM Functional Consultant",
+                "HCM Business Analyst",
+                "Oracle HCM Functional Consultant",
+                "HCM Implementation Specialist",
+                "Oracle HCM Cloud Consultant",
+                "Oracle Fusion HCM Lead",
+                "HCM Solution Architect",
+                "ERP Implementation Manager"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Power  Master Oracle Fusion HCM Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "This certificate recognizes your exceptional dedication and  successful completion of the Oracle Fusion HCM Course at  Tech Leads IT, demonstrating excellence in Supply Chain Management",
+        "certificateimagePath": "/images/courses/certificates/hcm.jpg"
+    },
+    "topCertifications": {
+        "title": "Top Oracle Cloud HCM Certifications ",
+        "certifications": [
+            "Oracle Fusion Cloud Applications HCM Foundations Associate",
+            "Oracle Global Human Resources Cloud 2024 Implementation Professional",
+            "Oracle Absence Management Cloud 2024 Implementation Professional",
+            "Oracle Payroll Cloud 2024 Implementation Professional",
+            "Oracle Benefits Cloud 2024 Implementation Professional",
+            "Oracle Compensation Cloud 2024 Implementation Professional",
+            "Oracle Recruiting Cloud 2024 Implementation Professional",
+            "Oracle Talent Management Cloud 2024 Implementation Professional"
+        ]
+    },
+    "relatedCourses": [
+        "Oracle Fusion SCM Online Training",
+        "Oracle Fusion Financials Training",
+        "Oracle Fusion Technical + OIC Training",
+        "Oracle Fusion WMS Cloud Log fire Training "
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Oracle Fusion HCM Training? ",
+            "answer": "Our Oracle Fusion HCM Training offers a comprehensive curriculum covering Global Human Resources (Core HR), Payroll, Talent Management, Recruiting, Absence Management, Time and Labor, and Compensation. For a detailed module breakdown, please refer to our course syllabus."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "The training sessions are conducted Monday to Saturday, with each class lasting 1 hour per day to ensure an interactive and structured learning experience."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, we do not offer weekend batches. Our live sessions run Monday to Saturday to maintain consistent learning progress."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we provide recorded sessions for learners who prefer a self-paced learning approach. However, doubt clarification sessions are not available for self-paced training."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, we offer internships based on your performance in mock evaluations, helping you gain real-world experience in Oracle Fusion HCM."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Access the Course Material After the Training Ends?",
+            "answer": "Yes, we provide a soft copy of the course material through Google Drive, ensuring lifetime access. You can download and refer to the materials at any time."
+        },
+        {
+            "question": "Can I Request a Demo Class Before Enrolling?",
+            "answer": "Absolutely! We offer a free demo session to help you understand the teaching methodology and course content before making a decision."
+        },
+        {
+            "question": "Can I Enroll in a Single HCM Module Instead of the Full Course?",
+            "answer": "No, our Oracle Fusion HCM training is structured as a complete course, and individual modules cannot be taken separately."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes, we assist with resume preparation to help you showcase your skills effectively. Our expert team will guide you in creating a professional, job-ready resume tailored to Oracle HCM roles."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, having a Laptop or Desktop is essential to access the Oracle instance and complete hands-on exercises efficiently."
+        },
+        {
+            "question": "Are There Any Prerequisites or Minimum Qualifications Required for the Oracle Fusion HCM Training?",
+            "answer": "No prior experience is required! We cover everything from the basics. However, if you have knowledge of Oracle EBS R12 or basic HR processes, it will be an added advantage. The course is open to all graduates, including those with a Degree, PG, MBA, B.Tech, etc."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Yes, we teach from the basics and progress to advanced concepts. This makes the Oracle Fusion HCM Online Training suitable for both freshers and experienced professionals. No prior experience is required to enroll."
+        },
+        {
+            "question": "Is the Training Updated for the Latest Oracle HCM Cloud Release?",
+            "answer": "Yes, we continuously update our content to reflect the latest Oracle Cloud quarterly updates, ensuring you learn the most up-to-date features and processes."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes, we assist you in your job placement journey with mock interviews, resume building, and career guidance. We also have tie-ups with top companies like Hitachi Vantara, Evosys, NTT Data, Tech Mahindra, LTI, AAIS, FIS Global, Splash BI, Innovacx, and others."
+        },
+        {
+            "question": "Do You Provide Support for Oracle Certification?",
+            "answer": "Yes, we guide you through the Oracle Fusion HCM certification process and provide sample dumps and preparation tips to help you succeed."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes, daily class recordings are available through our learning portal along with module-wise soft copy materials including screenshots and navigation steps."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Assistance?",
+            "answer": "Yes, we provide the latest module-wise interview questions and conduct mock interviews to help you prepare for real interviews."
+        },
+        {
+            "question": "Do You Provide Instance or Application Access for Practice?",
+            "answer": "Yes, 6 months of instance access is provided for practice purposes. No software installation is required—practice can be done through a provided URL."
+        },
+        {
+            "question": "Can I Retake This Course?",
+            "answer": "Yes, once enrolled, you will receive a 1-year membership, allowing you to attend multiple batches of Oracle Fusion HCM Online Training."
+        },
+        {
+            "question": "Can I Get a Course Completion Certificate?",
+            "answer": "Yes, a Course Completion Certificate will be awarded after successfully completing the training."
+        },
+        {
+            "question": "Is Any Coding Knowledge Required?",
+            "answer": "No, coding knowledge is not required. Oracle Fusion HCM is a functional, non-coding course."
+        },
+        {
+            "question": "Is Any Coding Knowledge Required?",
+            "answer": "No, coding knowledge is not required. Oracle Fusion HCM is a functional, non-coding course."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, we do provide one-on-one personalised training sessions upon request. Please note, the cost for one-on-one sessions will be higher than regular group training."
+        },
+        {
+            "question": "What Is the Difference Between Oracle E-Business Suite (EBS) and Oracle Fusion HCM?",
+            "answer": "Oracle EBS is an on-premise solution, while Fusion HCM is cloud-based. Fusion offers a more modern user interface, better scalability, and frequent updates compared to EBS."
+        },
+        {
+            "question": "What Is the Difference Between Functional and Technical Training?",
+            "answer": "Functional Training focuses on HR processes, configuration, and business use cases. Technical Training covers integrations, data loading (HCM Data Loader), HCM Extracts, Fast Formulas, and BI Reports."
+        }
+    ]
+}

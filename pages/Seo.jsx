@@ -10,7 +10,7 @@ const Seo = ({details}) => {
         {/* Open Graph (OG) Meta Tags for Social Media */}
         <meta property="og:title" content={details?.metaTitle} />
         <meta property="og:description" content={details?.metaTitle} />
-        <meta property="og:image" content={process.env.NEXT_PUBLIC_FILES_URL + details?.ogImage?.path} />
+        <meta property="og:image" content={details?.home ? details?.ogImage?.path: process.env.NEXT_PUBLIC_FILES_URL + details?.ogImage?.path} />
     </Head>)
 }
 

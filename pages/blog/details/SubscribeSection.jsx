@@ -54,7 +54,7 @@ const SubscribeSection = ({ currentBlogId, classes }) => {
         <section className={`get-notified ${classes}`}>
             <div className="newsletter-banner">
                 <div className="get-notified-card">
-                    <h1 className="newsletter-h">Get Notified about Latest Blogs, Interview Questions & Job Alerts</h1>
+                    <h2 className="newsletter-h">Get Notified about Latest Blogs, Interview Questions & Job Alerts</h2>
                     <p className="newsletter-p">Stay updated with the latest insights, trends, and expert tips on Oracle
                         Fusion SCM.
                         Subscribe to our newsletter and never miss an update!</p>

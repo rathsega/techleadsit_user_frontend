@@ -163,7 +163,25 @@ const DirectPaymentInvoiceReact = ({ invoiceDetails }) => {
                             <Text style={[styles.tableCell, { width: '40%' }]}>{invoiceDetails?.title}</Text>
                             <Text style={[styles.tableCell, { width: '15%' }]}>999293</Text>
                             <Text style={[styles.tableCell, { width: '15%' }]}>1</Text>
-                            <Text style={[styles.tableCell, { width: '15%' }]}>{formatCurrency(getAmountParams(invoiceDetails?.payment_details)?.discountedPrice)}</Text>
+                            <Text style={[styles.tableCell, { width: '15%' }]}>
+                                {getAmountParams(invoiceDetails?.payment_details)?.discountedPrice &&
+                                    getAmountParams(invoiceDetails?.payment_details)?.discountedPrice !== getAmountParams(invoiceDetails?.payment_details)?.price ? (
+                                    <>
+                                        <Text style={{ textDecoration: 'line-through', color: '#a00' }}>
+                                            {formatCurrency(getAmountParams(invoiceDetails?.payment_details)?.price)}
+                                        </Text>
+                                        {" "}
+                                        <Text>
+                                            {formatCurrency(getAmountParams(invoiceDetails?.payment_details)?.discountedPrice)}
+                                        </Text>
+                                    </>
+                                ) : (
+                                    <Text>
+                                        {formatCurrency(getAmountParams(invoiceDetails?.payment_details)?.price)}
+                                    </Text>
+                                )
+                                }
+                            </Text>
                             <Text style={[styles.tableCell, { width: '15%' }]}>{formatCurrency(getAmountParams(invoiceDetails?.payment_details)?.discountedPrice)}</Text>
                         </View>
                     </View>

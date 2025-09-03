@@ -44,7 +44,7 @@ const RelatedBlogs = ({ category, currentBlogId }) => {
 
     return (
         <section className="related-blogs-section">
-            <h1 className="related-blogs-heading">Explore Our Related Blogs</h1>
+            <h2 className="related-blogs-heading">Explore Our Related Blogs</h2>
             <div className="related-blogs-sub-section">
                 {
                     relatedBlogsList.map((rb, rbi) => (

@@ -236,7 +236,9 @@ const DirectPayments = ({ courseId }) => {
             }
         };
 
-        getLocationAndSetDefaults();
+        if (courseId) {
+            getLocationAndSetDefaults();
+        }
         // eslint-disable-next-line
     }, [courseId]);
 
@@ -544,8 +546,7 @@ const DirectPayments = ({ courseId }) => {
 
     const openRazorpayPaymentPage = (preresponse, data) => {
         const options = {
-            // key: "rzp_test_xvOk5RDYmeuXYG",
-            key: process.env.NEXT_PUBLIC_RAZORPAY_KEY || "rzp_live_ueLIAvyKBHgxkQ", // Use environment variable or default to test key
+            key: process.env.NEXT_PUBLIC_RAZORPAY_KEY || "rzp_live_RAiPfWlEr15tTt", // Use environment variable or default to test key
             amount: preresponse.data.order.amount,
             currency: preresponse.data.order.currency,
             name: "Tech Leads IT",

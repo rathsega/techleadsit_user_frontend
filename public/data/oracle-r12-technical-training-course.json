@@ -1,0 +1,389 @@
+{
+    "title": "Oracle Apps R12 Technical Training",
+    "id": "ORR-TCH-OT-022",
+    "category": "Oracle",
+    "duration": "3 Months",
+    "hero": {
+        "title": "Master Oracle Apps R12 Technical Training With",
+        "animationTitle": [
+            "Expert Training.",
+            "Redwood Experience",
+            "AI With Technical"
+        ],
+        "shortDescription": "Advance your career in Oracle ERP development with our expert-led Oracle Apps R12 Technical Training! Master core technical modules, gain real-time hands-on experience and build the skills needed to excel in today’s dynamic enterprise application landscape.",
+        "brouchurePath": "/brochure/Oracle Apps R12 Technical Training.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Business Flows",
+            "Rice Components",
+            "Reports",
+            "Interfaces",
+            "Conversions",
+            "Forms",
+            "XML Publisher",
+            "BI Publisher",
+            "Database intro"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Oracle Integrations with Industry-Leading Oracle Apps R12 Technical Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Oracle ERP technical development.",
+                        "Those interested in PL/SQL, Reports, Interfaces, Conversions, Extensions, and Workflows.",
+                        "Job seekers aiming to enhance their resumes with Oracle Apps Technical skills"
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT & ERP professionals transitioning into Oracle EBS Project Accounting from other ERP domains.",
+                        "Project Managers seeking expertise in project-based financial control.",
+                        "Finance & project leaders aiming to manage budgets, expenditures, and revenues across projects using Oracle.",
+                        "Professionals looking to optimize project financial tracking using Oracle EBS tools "
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "25 Jan 2025",
+            "demoTimeSlot": "8:00AM-10:00AM",
+            "demoTrainerName": "Join the Oracle Apps R12 Technical Training Live Demo with Vijay"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "",
+        "demoVideoPath": "",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Oracle EBS Experts!",
+            "shortDescription": "Unlock new career opportunities—Oracle Apps R12 Technical professionals are in high demand. Start your journey today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Vijay is an Oracle-certified expert with over 16 years of experience in Oracle ERP and Technical consulting. As an Oracle University instructor and certified trainer, he delivers hands-on knowledge across Oracle Apps R12 Technical domains. He has completed 35+ batches, trained 16,000+ learners, and is known for his adaptive training style—be it corporate, online, or classroom. Vijay actively shares his expertise in the Oracle community, mentoring learners and staying up-to-date with evolving tech. Choose Vijay to guide your Oracle Apps journey with real-world technical insight and proven strategies for ERP success in Oracle Apps R12 Technical projects"
+        },
+        "sectionTwo": {
+            "title": "Learn from a Globally Recognized Oracle Apps R12 Technical Expert",
+            "points": [
+                "Oracle-Certified Trainer, Expert in Oracle Apps R12 Technical (Reports, PL/SQL, XML",
+                "16+ years of experience in Oracle ERP, Technical Implementations & Customizations",
+                "Trained over 3,000 professionals in Oracle Apps R12 Technical, enabling them to excel in ERP roles"
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Vijay",
+            "trainerDesignation": "Oracle Technical Expert",
+            "avatarImagePath": "/images/courses/trainer/r12tech.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Pratap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Satish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹10,000+Taxes",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹15,000+Taxes",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/r12_tech.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/r12_tech.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master Core Concepts of Oracle Apps R12 Technical",
+                    "Gain Clarity on ERP Architecture & Oracle E-Business Suite Framework",
+                    "Develop Logical Thinking, Debugging & Analytical Problem-Solving Skills"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-Time Technical Use Cases & Customization Scenarios",
+                    "Design Interfaces, Conversions, and Reports with Guidance from Experts",
+                    "Learn Oracle Implementation Methodologies like AIM & OUM"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume Showcasing ERP Technical Expertise",
+                    "Build a Strong LinkedIn Profile and Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on End-to-End ERP Technical Projects (Reports, Interfaces, Workflows)",
+                    "Understand Industry Demands in Customization, Migration & Data Loading",
+                    "Build Practical Skills in System Integration, Performance Tuning, Debugging"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Finance-Specific Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Oracle Apps R12 Technical Are You Ready?",
+            "shortDescription": "Join the growing demand for Oracle Apps R12 Technical professionals. Get certified and unlock high-paying opportunities with top global companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle Apps R12 Technical Trainee",
+                "Oracle Technical Support Analyst",
+                "Junior Oracle Technical Consultant",
+                "Oracle Apps Developer – Technical",
+                "Oracle EBS Technical Consultant",
+                "ERP Technical Support Engineer",
+                "Oracle Technical Lead – EBS",
+                "Oracle Technical Project Manager",
+                "Senior Technical Consultant"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Power  Master Oracle Apps R12 Technical Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your Oracle Apps R12 Technical expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Oracle Fusion SCM Online Training Course",
+        "Oracle Fusion HCM Online Training Course",
+        "Oracle Fusion Functional Online Training Course",
+        "Oracle Fusion Technical+OIC Online Training Course"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Oracle Apps R12 Technical Training?",
+            "answer": "Our Oracle Apps R12 Technical Training covers key modules including Business Flows, RICE Components (Reports, Interfaces, Conversions, Extensions), Forms, XML Publisher, BI Publisher, and an introduction to Oracle Database. This comprehensive training equips you with hands-on skills required for Oracle EBS R12 technical roles. A detailed syllabus is provided in our course brochure."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Live training sessions are held Monday to Saturday, 1 hour per day. This schedule promotes consistent learning and practical implementation in Oracle Apps R12 development tasks."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, weekend-only batches are not available. All classes are conducted from Monday through Saturday to ensure steady progress in mastering Oracle EBS R12 technical skills."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, recorded sessions are available for those who prefer self-paced learning. Please note, live Q&A support is not included in the self-paced format for Oracle EBS technical training."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internship opportunities are offered based on mock evaluation performance. Internships involve working on real-time scenarios related to Oracle Apps R12 Technical components."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No. The Oracle Apps R12 Technical Training is offered as a complete learning package to ensure all key components of Oracle EBS R12 are covered holistically."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes. We help you craft resumes specifically targeting roles in Oracle Apps and Oracle EBS technical domains, focusing on your project experience and RICE skills."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes. A personal computer is necessary to install and access the Oracle Applications R12 environment for practical hands-on training."
+        },
+        {
+            "question": "Are There Any Prerequisites for This Training?",
+            "answer": "No prior experience is required. This Oracle EBS technical training is beginner-friendly, though basic knowledge of databases or coding is a plus."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Yes. We start with the fundamentals of Oracle EBS R12 and progress to advanced topics, making the course suitable for both freshers and professionals looking to upskill in Oracle Applications."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes. We offer full job placement support for Oracle Apps R12 Technical roles including mock interviews, interview guidance, and resume tips."
+        },
+        {
+            "question": "Do You Offer Oracle EBS Certification Support?",
+            "answer": "Yes, we provide expert support and study materials to prepare you for relevant Oracle EBS R12 technical certifications."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes. You’ll get 1-year access to training recordings and receive detailed guides, code samples, and documentation related to Oracle EBS R12 Technical topics."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Mock Support?",
+            "answer": "Absolutely. We supply interview questions tailored to Oracle Apps R12 Technical modules and conduct mock interviews to sharpen your skills."
+        },
+        {
+            "question": "Do You Provide Instance Access for Practice?",
+            "answer": "Yes. We provide 4 months of instance access with complete guidance for hands-on development in Oracle EBS R12."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes. You may rejoin any upcoming batch of Oracle Apps R12 Technical Training within your 1-year validity at no extra charge."
+        },
+        {
+            "question": "Will I Get a Course Completion Certificate?",
+            "answer": "Yes. Upon completing the course, you’ll receive an official certificate in Oracle Apps R12 Technical Training from Tech Leads IT."
+        },
+        {
+            "question": "Is Coding Knowledge Required?",
+            "answer": "Basic SQL/PLSQL knowledge is helpful, but not required. We cover all technical aspects from the ground up, focusing on Oracle EBS R12."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, one-on-one sessions are available upon request for Oracle Apps R12 Technical Training. Pricing for personalized sessions varies."
+        }
+    ]
+}

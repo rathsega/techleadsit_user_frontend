@@ -79,7 +79,7 @@ const HeroForm = ({ courseTitle }) => {
                 const response = await httpService.post("/contactus/submitHeroForm", formData);
                 setSuccess(true);
                 setError(false);
-                setFormData({ fullName: "", email: "", phone: "" });
+                // setFormData({ fullName: "", email: "", phone: "" });
                 setErrorMsg("Thank you for your submission!");
                 router.push(`/thankyou?courseTitle=${courseTitle}&slug=${router.query.slug.join('_')}`);
             } catch (err) {
@@ -118,7 +118,7 @@ const HeroForm = ({ courseTitle }) => {
                 // ignore parse errors
             }
         }
-    }, []);
+    }, [userDetails]);
 
     return (
         <><form className="contact-form" onSubmit={handleSubmit} noValidate>

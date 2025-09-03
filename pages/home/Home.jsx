@@ -104,8 +104,9 @@ const Home = () => {
         metaKeywords: "oracle fusion scm training, Oracle Fusion HCM Online Training, Oracle Fusion Financials Training, Oracle Cloud Training, oracle fusion technical training, Oracle Fusion Online Training",
         canonical: "https://www.maincourse.com/home",
         ogImage: {
-            path: "/images/Tech_Leads_IT_Logo.webp"
-        }
+            path: "/images/TLITLogoIcon.png"
+        },
+        home:true
     }
 
     return (

@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 import "./../public/styles/globals.css"
+import "./../public/styles/Webinar.css"
 import { HelmetProvider } from 'react-helmet-async';
 import { useEffect } from "react";
 import { useRouter } from 'next/router';

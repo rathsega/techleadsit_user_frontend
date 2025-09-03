@@ -1,0 +1,390 @@
+{
+    "title": "Fusion Cloud CRM Online Training",
+    "id": "ORF-PLC-OT-040",
+    "category": "Oracle",
+    "duration": "3 Months",
+    "hero": {
+        "title": "Master Fusion Cloud CRM Online Training At Tech Leads IT With",
+        "animationTitle": [
+            "Expert Training",
+            "Redwood Experience",
+            "AI With CRM"
+        ],
+        "shortDescription": "Accelerate your career in customer relationship management with our in-depth Oracle Fusion Cloud CRM online training! Learn core CRM concepts, develop real-world functional expertise, and gain hands-on experience with end-to-end sales and service processes. Our expert-led training helps you become proficient in Oracle’s robust Fusion CRM module and Redwood Experience.",
+        "brouchurePath": false,
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Fusion CRM",
+            "Sales Cloud",
+            "Service Cloud",
+            "Marketing Cloud",
+            "Commerce Cloud",
+            "Data Management",
+            "Integrations",
+            "Reports & Dashboards",
+            "Security & Roles"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Customer Relationship Management with Industry-Leading Oracle Fusion CRM Online Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in customer relationship management & ERP.",
+                        "Those interested in cloud-based CRM solutions & Oracle Fusion applications.",
+                        "Job seekers aiming to enhance their resumes with in-demand Oracle Fusion CRM (CX) skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT professionals or sales/marketing experts transitioning into Oracle Fusion CRM roles.",
+                        " CRM Analysts and Sales Executives seeking to specialize in Oracle’s CX Cloud solutions.",
+                        "Business Analysts & Application Support Engineers aiming to optimize CRM workflows.",
+                        "Professionals looking to build scalable, customer-focused CRM systems using Oracle Tools."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "25  JAN 2025",
+            "demoTimeSlot": "8:00 AM - 10:00 AM",
+            "demoTrainerName": "Join Oracle Fusion Cloud CRM Online Training Live Demo with Prashanthi"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "",
+        "demoVideoPath": "",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for  Oracle Fusion Experts!",
+            "shortDescription": "Unlock New Career Opportunities – Oracle Fusion CRM Consultants Are In High Demand. Start Your Journey Today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Ms. Prashanthi, a seasoned Oracle professional with over 18 years of hands-on experience in Oracle CRM and Fusion Cloud applications, has been instrumental in delivering scalable and innovative CRM solutions across various business domains. Her deep knowledge of Oracle CX Suite, CRM configuration, automation tools, and customer engagement strategies has helped organizations enhance their customer experience. Her passion for teaching and mentoring makes her the ideal guide for those aspiring to master Oracle Fusion CRM. With a focus on practical implementation, Ms. Prashanthi bridges the gap between theoretical learning and real-time practices."
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized Oracle Fusion CRM Trainer",
+            "points": [
+                "Oracle Certified CX Consultant, specializing in Fusion Cloud CRM solutions.",
+                "18+ years of experience in the Oracle ecosystem, with a core focus on CRM",
+                "Trained over 3,000 professionals in Oracle Fusion CRM, enabling them to become successful CRM consultants"
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Prashanthi",
+            "trainerDesignation": "Oracle CRM Expert",
+            "avatarImagePath": "/images/courses/trainer/crm.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Pratap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Satish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹18,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹25,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/crm.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/crm.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Oracle Fusion CRM (CX) Functionality",
+                    "Gain a Clear Understanding of CX Architecture & CRM Business Flows",
+                    "Develop Core Skills in Sales, Marketing, Service, and CPQ Modules"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-Time Oracle CRM Implementation Scenarios",
+                    "Solve Business Requirements with Lead Management, Campaigns & Service Req.",
+                    "Get In-Depth Exposure to Customer Data Management & Workflow Configuration"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume Tailored to CRM & CX Roles",
+                    "Build a Strong LinkedIn Profile and Project Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on End-to-End Oracle Fusion CRM Implementation Projects",
+                    "Learn Real-World Functional Design & Customer Journey Scenarios",
+                    "Enhance Client Engagement and CRM Integration Skills with Oracle Cloud"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "Our Hiring Partners  Trusted by Top Companies ",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Oracle Are You Ready?",
+            "shortDescription": "Join the growing demand for Oracle Fusion CRM professionals. Get certified and unlock high-paying roles with leading global companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle CRM Trainee",
+                "Oracle Fusion Functional Associate",
+                "Junior Oracle CRM Consultant",
+                "Oracle Fusion CRM Consultant",
+                "Oracle CX Support Consultant",
+                "Oracle CRM Functional Consultant",
+                "Oracle CRM Implementation Specialist",
+                "Oracle Fusion Delivery Manager",
+                "Oracle CRM Project Manager"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Client Success Master Oracle Fusion Cloud CRM Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, validating your Oracle Fusion CRM expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "relatedCourses": [
+        "Oracle Fusion SCM Online Training",
+        "Oracle Fusion HCM Online Training",
+        "Oracle Fusion Financials Online Training",
+        "Oracle Fusion Technical+OIC Online Training"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Oracle Fusion CRM Training?",
+            "answer": "Our Oracle Fusion CRM Training covers key modules including Sales, Marketing, Service, Commerce, Configure Price Quote (CPQ), Social, Functional Setup Manager (FSM), Business Processes, Analytics, and Hands-on Case Studies. A complete syllabus is available in our course brochure."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Live training sessions are conducted Monday to Saturday, 1 hour per day. This structured schedule ensures continuous learning and hands-on experience in Oracle Fusion CRM implementation."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, weekend-only batches are not available. All classes are held Monday through Saturday for consistent progress and in-depth understanding."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we offer recorded sessions for self-paced learning. Please note that live Q&A sessions are not included in the self-paced format for Oracle Fusion CRM."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, internships are provided based on mock evaluation performance. Internships involve practical experience on Oracle Fusion CRM real-time business scenarios."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No. Oracle Fusion CRM Training is offered as a complete course to ensure a comprehensive understanding of all CX suite features and configurations."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes. We offer resume building support specifically for CRM roles, highlighting your project experience and CRM application capabilities."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes. A personal system is needed to access the Oracle Fusion instance for hands-on practice and configuration exercises."
+        },
+        {
+            "question": "Are There Any Prerequisites for This Training?",
+            "answer": "No prior experience is required. This course is beginner-friendly. A basic understanding of CRM or sales processes can be helpful but is not mandatory."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Yes. The training starts with foundational concepts and gradually covers advanced CRM functionalities, suitable for beginners and working professionals alike."
+        },
+        {
+            "question": "Do You Provide Job Placement Assistance?",
+            "answer": "Yes. We provide complete placement support including mock interviews, interview preparation, and resume optimization for Oracle Fusion CRM roles."
+        },
+        {
+            "question": "Do You Offer Oracle Fusion Certification Support?",
+            "answer": "Yes, we provide expert guidance and study materials to help you prepare for Oracle Fusion CRM certification exams."
+        },
+        {
+            "question": "Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes. You will have 1-year access to recordings and receive detailed notes, process documentation, and relevant reference materials."
+        },
+        {
+            "question": "Do You Provide Interview Questions and Mock Support?",
+            "answer": "Absolutely. We provide CRM-specific interview questions and conduct mock interviews to help you prepare for real-time job roles."
+        },
+        {
+            "question": "Do You Provide Instance Access for Practice?",
+            "answer": "Yes. You’ll get 6 months of access to the Oracle Fusion instance for practicing CRM modules and configurations."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes. You can rejoin any upcoming batch of Oracle Fusion CRM Training within your 1-year course access at no extra cost."
+        },
+        {
+            "question": "Will I Get a Course Completion Certificate?",
+            "answer": "Yes. After successfully completing the training, you will receive an official Oracle Fusion CRM Training Certificate from Tech Leads IT."
+        },
+        {
+            "question": "Is Coding Knowledge Required?",
+            "answer": "No coding knowledge is required. This course is focused on functional and configuration aspects of Oracle Fusion CRM, making it suitable for both technical and non-technical learners."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, one-on-one training is available upon request. Fees for personalized sessions vary based on schedule and duration."
+        }
+    ]
+}
+

@@ -1,0 +1,2652 @@
+{
+    "title": "Oracle Fusion SCM Training in Hyderabad",
+    "id":"ORF-SCM-PT-024",
+    "category":"Oracle",
+    "duration":"3 Months",
+    "hero": {
+        "title": "Master Oracle Fusion SCM Training in Hyderabad at Tech Leads IT with",
+        "animationTitle": [
+            "Expert Training.",
+            "Redwood Experience",
+            "AI With SCM"
+        ],
+        "shortDescription": "Accelerate your career in Supply Chain Management with our comprehensive Oracle Fusion SCM Training! Master key concepts, gain hands-on experience, and position yourself for success in the industry with expert-led training on Oracle Fusion SCM modules.",
+        "brouchurePath": "/brochure/oracle-fusion-scm-online-training-course brouchure.pdf",
+        "successStories": {
+            "shortDescription": "Our students thrive in top supply chain roles worldwide driving success with Oracle Fusion SCM expertise",
+            "stories": [
+                {
+                    "studentName": "Mohammed Ghouse Shaik",
+                    "studentAvatarPath": "/images/courses/success_stories/scm/Main-Course-Hero-Img1.webp",
+                    "studentDesignation": "Technology Analyst",
+                    "salaryHikeInPercentage": "140%",
+                    "studentReview": "\"Tech Leads IT provided me with hands-on training and expert mentorship. The real-world projects made my transition into Oracle SCM Consultant seamless!\"",
+                    "preTechLeadsItCompanyName": "Polaris Associates",
+                    "postTechLeadsItCompanyLogoPath": "/images/courses/success_stories/scm/Infosys-Logo.svg"
+                },
+                {
+                    "studentName": "Shiva Rudru",
+                    "studentAvatarPath": "/images/courses/success_stories/scm/Main-Course-Hero-Img2.webp",
+                    "studentDesignation": "Associate Business Analyst",
+                    "salaryHikeInPercentage": "100%",
+                    "studentReview": "\"The structured learning approach and in-depth modules helped me understand complex SCM processes. I secured a better role with a great salary hike!\"",
+                    "preTechLeadsItCompanyName": "NTT data",
+                    "postTechLeadsItCompanyLogoPath": "/images/courses/success_stories/scm/Infosys-Logo.svg"
+                },
+                {
+                    "studentName": "Shaik Javeedh",
+                    "studentAvatarPath": "/images/courses/success_stories/scm/Main-Course-Hero-Img3.webp",
+                    "studentDesignation": "Oracle SCM Functional Consultant",
+                    "salaryHikeInPercentage": "120%",
+                    "studentReview": "\"Tech Leads IT provided industry-relevant training that helped me upskill quickly. The structured curriculum and case studies made learning practical.",
+                    "preTechLeadsItCompanyName": "Fresher",
+                    "postTechLeadsItCompanyLogoPath": "/images/courses/success_stories/scm/NTT-Logo.svg"
+                },
+                {
+                    "studentName": "Nagarjuna Markapudi",
+                    "studentAvatarPath": "/images/courses/success_stories/scm/Main-Course-Hero-Img4.webp",
+                    "studentDesignation": "DC Consultant",
+                    "salaryHikeInPercentage": "150%",
+                    "studentReview": "\"The mentorship and placement guidance were top-notch. The practical approach gave me the skills and confidence to switch roles smoothly. ",
+                    "preTechLeadsItCompanyName": "Oracle",
+                    "postTechLeadsItCompanyLogoPath": "/images/courses/success_stories/scm/Deloitte-Logo.svg"
+                }
+            ]
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Product Management",
+            "Inventory Management",
+            "Order Management",
+            "Pricing",
+            "RSSP",
+            "Purchasing",
+            "Sourcing",
+            "Supplier Portal",
+            "Procurement Contracts",
+            "SQM",
+            "Cost Management"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Supply Chain Management with Industry-Leading Oracle Fusion SCM Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields.",
+                        "Individuals looking to start a career in Supply Chain Management.",
+                        "Those interested in ERP, procurement, inventory, and logistics with Oracle Fusion SCM.",
+                        "job seekers aiming to enhance their resumes with in-demand SCM skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "IT & ERP Professionals transitioning from Oracle EBS or other ERP systems to Oracle Fusion SCM.",
+                        "Supply Chain Managers, Analysts, and ERP Consultants seeking expertise in SCM.",
+                        "Business owners seeking to streamline supply chain operations using Oracle SCM",
+                        " Professionals aiming to optimize operations using Oracle’s advanced tools."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "25 Jan 2025",
+            "demoTimeSlot": "8:00 AM to 10:00 PM",
+            "demoTrainerName": "Join the Oracle Fusion SCM Live Demo with Krishna V "
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "XYZ",
+        "modules": [
+            {
+                "moduleName": "Functional Setup Manager & Basics",
+                "chapters": [
+                    {
+                        "chapterName": "Application Licensing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Enterprise Structure",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Rreference Data",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Enterprise",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Division",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " General Ledger",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Legal Entity",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Business Unit",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Item Master Org",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Inventory Organizations",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Sub inventories",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Locators",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Rapid Implementation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Enterprise Structure Configurator",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Database connection: From the application & 3rd Party tool.",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Sandbox: Appearance (Theme, Logo)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Implementation Project Creation: Task Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Security:",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Roles overview",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Types of Roles",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Predefined Roles",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Custom Roles",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "LDAP",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "User Categories",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Implementation User creation & User Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Business User/Employee Setups",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Departments",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Jobs",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Position",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Business User Creation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Auto Provision Roles",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Data Access",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " HDL Process (Technical) - Bulk creation/upload Employees &",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Product Management Setups & Features",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Item class",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage templates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage life cycle phases",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Item Profile options",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Extensive flex fields",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Item class descriptive flex fields",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Item Statuses",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Item Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Item categories",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Unit of measures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "UOM Conversion",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Item Attributes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Item Cross Reference types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Item Descriptive Flex fields",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Item Revision Descriptive Flex fields",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Tables",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Item Management:",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Single Item creation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Multiple Item creation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Copy Item",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Item Deletion",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Mass update: Items",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Item Approvals",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Inventory Management",
+                "chapters": [
+                    {
+                        "chapterName": "Inventory Profile options ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Inventory Controls",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Serial Control",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Lot Control",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Revision Control",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Inventory Transactions",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Miscellaneous transactions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sub inventory transfer",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Movement request",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Movement Request Approvals",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Inter org transfer",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Reports",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Tables",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Consigned Inventory",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Planning Methods– Min Max Planning (Buy, Make)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Inter organization parameters",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Inventory Picking Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Inventory Transaction Reasons",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Descriptive Flex fields",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Inventory Lookups",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Counting Methods",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Cycle Counting",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Physical Counting",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Pricing Scenarios & Setups",
+                "chapters": [
+                    {
+                        "chapterName": "Pricing Scenarios ",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Pricing Scenarios",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Price is same for all the customers",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "End Customer, Special Customers, Distributors, Employee,",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Price is different from Region to Region - BU to BU",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Price List based on order type",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Customer specific price list",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Small Customer, Medium Customer, Large Customer",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Price, Cost, Discount, Shipping Charge Lists",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Manage Price Lists",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Export a Price List -ADFDI",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Import a Price List -ADFDI",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Cost Lists",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Discount Lists",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Flat Discount",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Tire Based Discounts",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Condition Based Discounts",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Profiles, Segments and Strategies",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Customer Pricing Profiles",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Pricing Segment",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Assignment",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Pricing Strategy",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Oracle Fusion Pricing Setups",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Manage Pricing Parameters",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Pricing Lookups",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Rounding Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Rounding Rule Types",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Roles",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Tables",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Reports",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Pricing Algorithm",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Service Mappings",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Matrix Classes",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Distribute Order Orchestration",
+                "chapters": [
+                    {
+                        "chapterName": "Predefined Orchestrations",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Sales Orders:",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " DOO_OrderFulfillmentGenericProcess",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " ShipOrderGenericProcess",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " DOO_BillOnlyGenericProcess",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " DOO_InventoryOrchestration",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Standard Sales Order, Dropship Sales Order, Back to Back Sale",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Normal Sales Order - Ship & Bill",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Bill Only",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Deducting onhand without performing picking & Shipping",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Return Sales Orders:",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " ReturnOrderGenericProcess",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Custom Orchestration",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Introducing Order Type Functionality",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Creating Order Types",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Creating Line Types",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Making Order Type Mandatory Field",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Calling orchestration based on order type",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Manage Jeopardy Thresholds",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Orchestration process definitions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Orchestration process assignment rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Task types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Task status conditions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Jeopardy Priorities",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Global Order Promising",
+                "chapters": [
+                    {
+                        "chapterName": "How to register Source Systems",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Planning Source Systems",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Run Collect planning data",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Sourcing Rule (Transfer from, Buy, Make",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Assignment Sets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage ATP Rules & Promising Modes",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Supply Chain Based",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Lead Time",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Infinite",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Refresh and Start the Order Promising Server. (OPS Refresh)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Profile options",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Tables",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Order Management Cloud Setups & Features",
+                "chapters": [
+                    {
+                        "chapterName": "Picking/Shipping Setups",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Release Sequence Rule",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Pick slip Report Grouping Rule",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Pick Release Documents -Print Pick Slip Report",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Ship Confirm Documents -Print Bill of Lading report, Print",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Shipping Document Job Set Rules (optional)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Ship Confirm Rule",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Stage Sub Inventory",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Document Sequences",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Document Categories -BOL, PKSLP",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Document Sequencing -BOL, PKSLP",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Pick wave Rule (Release Rule) -Auto/Manual",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Carrier Lookups",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Ship Methods/Carrier",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Freight Terms (lookup)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Payment Terms",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Order Management Setups",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Manage Order Management Parameters",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Activate Credit Check on Order Submit",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Credit Check Failure at Order Submit",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Start Sales Order Approval Process -> Yes/No",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " From Address for E-Mail Messages",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Document Sequences",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sales Order Approvals",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Pre Transformation Rules (Defaulting Rules)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Post Transformation Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Enterprise level -> User creation: Restriction",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sale Person",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create Custom Role to see reference datasets in the",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Resources",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Line Adjustment Lookups",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Adjustment Reason",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Generic Holds",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Credit Hold",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Credit Limit",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Stack holder notifications",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sales order pdf document",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sales order email template body",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Pick slip, BOL, Pack slip, Commercial Invoice BI-Layouts",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Processing Constraints",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Order Profiles",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Order Management Cycles",
+                "chapters": [
+                    {
+                        "chapterName": "Sales Order Cycles",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Order to cash cycle",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Dropship Sales Order",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Back to back sales order",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Transfer Order",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Ship Only",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Bill Only",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Counter Sales",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Sales Order Management",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Creating Sales Order",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Revising Sales Orders",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Copy Sales Order",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Serial & Parallel Approvals",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sales Order Upload",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Mass Update",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Defaulting Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Business Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Constraints",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Tables",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Reports",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Infolets",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Scenarios",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Standard sales order",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Drop ship sales order cycle",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Back to Back Scenarios",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Return Order Cycles",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Return Only",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Credit Only",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Return with Receipt & Credit",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Sales Order Credit Management",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Credit hold cycle",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Applying holds",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Releasing holds",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Exclusive Drop Ship Cycle Setups",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Enable Profit center Business Unit under Business Functions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Add the Profit Center BU to the Inv Org",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Supply Chain Financial Orchestration System Options",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Financial Orchestration Qualifiers",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create Drop Ship Financial Flow",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Preparer for Procurement",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sourcing Rule (Buy from -> Supplier Name, Supplier Site)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sourcing Assignment",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Refresh and Start Order Promising Server",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Transfer Order Setups",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Item - Assign to both org's, Transfer order enabled - Yes,",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Item - Non Planned – Inter organization Parameters/Shipping",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Item - Planned (Sourcing Rule, Sourcing Assignment)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Shipping Parameters - Enforce ship method should be",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Enter Item Cost - Transfer Cost",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Destination organization location should be attached to",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "SSP - Self Service Procurement",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Requisitions",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Non Catalog Requisition",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Information Catalogs - Information and Tips",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create Content Zone & Add Informational Catalog",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Smart Forms/Request Forms",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " DFF, Information Templates, Smart Form",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Purchasing News",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Browsing Category Hierarchy",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Local Catalog",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Punchout Catalog",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Public Shopping List",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Item Based Requisition",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Approvals",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Roles",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Tables",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Purchase Order (Document Builder/Auto create)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Receipt",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create Requisition",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cancel Requisition",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Requester initiated change order",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Duplicate Requisition",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Withdraw, Edit & Resubmit",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Add Attachments & Attachment Types",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Mass Cancelation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Reassign (change preparer name)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Requisition Pdf Layout",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Requisition Approval Email Body",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Fusion Purchasing Setups",
+                "chapters": [
+                    {
+                        "chapterName": "Suppliers",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Specify supplier numbering sequence",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Supplier Type Lookup",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Tax Organization lookup",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Supplier Product and Service Category",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Manage Procurement Agent",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Manage Supplier Descriptive Flex field (Supplier, Supplier Site)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Configure Supplier Registration and Profile Change Request",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Configure New Supplier Notification",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Audit Policies (Enable Objects & Audit Report",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Procurement Foundation",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Payment Terms",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Freight Terms",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Carriers",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Line Types (Goods, Fixed Price Services)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Common Options for Payables and Procurement",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Configure Requisitioning Business Function",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Change Order Template",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Configure Procurement Business Function",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Procurement Document Numbering",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Purchasing Profile Options",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Purchasing Foundation",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Manage Hazard Classes",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage UN Numbers",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Buyer Assignment Rules",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Requisition Descriptive Flex fields",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Purchasing Descriptive Flex fields",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Approved Supplier List Status",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Receiving",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Receiving Parameters",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Receiving Profile Options",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Receiving Descriptive Flex fields",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Requisition, Purchase Order Approvals (AMX)",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Requisition Approvals",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Purchase document Approvals",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Negotiation Approvals",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Manage Supplier Negotiation Approvals",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Supplier Negotiation Award Approvals",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Supplier Approvals",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Manage Internal Supplier Registration Approvals (Register",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Manage Supplier Registration Approvals (URL)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Supplier Profile Change Approvals",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Supplier Spend Authorization Approvals (Promoting Prospective -> Spend Authorized)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Internal Supplier Profile Change Approvals",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Types of Approval Hierarchies",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Supervisor Hierarchy",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Position Hierarchy/Tree",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Job Level Hierarchy",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Approval Group",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Single Approver",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Procurement Transaction Account Rule (TAB/TAD)",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Manage Mapping Set",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Account Rule",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Transaction Account Definitions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Sub ledger Accounting Options - Purchasing",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Fusion Purchasing Business Transactions",
+                "chapters": [
+                    {
+                        "chapterName": "Suppliers Model",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Create Suppliers",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Register Suppliers",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " External Registration",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Prospective -> Promote -> Spend Authorized Supplier",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " FBDI Template",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Approvals",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " How Supplier setup level options are defaulted to purchase",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Roles",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Tables",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Supplier Audit History",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Purchase Order Types",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Standard Purchase Order",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Blanket Purchase Agreement",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Contract Purchase Agreement",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Manage Orders",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Create Purchase Order",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Cancel Purchase Order",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Close Purchase Order",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Update Purchase Order",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Purchase Order Layout",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cancel of Purchase Order and purchase order lines before",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Mass Cancel of Purchase Order & Lines - ADFDI",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Mass Update of Purchase Orders Header, Lines, Schedule, Distributions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Change Orders",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Buyer initiated change order",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Manage Agreements",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Create Agreements",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Mass Upload",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Update agreement",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Retroactive price updates",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Touchless Buying/Automatic POCreation (without negotiated checkbox)",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Create orders immediately after requisition import & Agreement Required (BPA/CPA)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Automatically generate orders & Automatically submit for approval at agreement level",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Default Buyer - Procurement Business Function options",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Procure to pay cycle",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Receipt Accounting",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "P2P Accounting Impact",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Purchase Order Header/Line Status",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Approvals",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Hierarchy types",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Bell notification approval",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Email approvals",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Serial approvals",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Parallel approvals",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Approval reminders",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Approval Escalation",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Purchase Order Email Communication – Automatic",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Supplier Master - Provide Email id",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Purchasing Profile options - Enabling, From Email Address",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Procurement Business Function - Maximum File Size",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Enable CC,BCC functionality - 21B new feature",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Communication subject email & body layout",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Vacation Rules",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Setting for him self",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Setting for others as a Admin",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Reassign notifications to others from BPM as Admin",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Routing Methods",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Direct",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Standard",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Inspection",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Manage Receipts",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Receipt creation",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Unordered Receipts",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Express Receipts",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Returns",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Corrections",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Tables",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Reports",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Infolets",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Procurement Suite - Supplier Portal",
+                "chapters": [
+                    {
+                        "chapterName": "Create user account for supplier",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Tables",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Infolets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Profile Update",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Tracking Payments",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Tracking Returns",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Invoice creation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Submitting quotations to RFQ’s",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ASBN – Advance Shipment Billing Notice",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ASN - Advance Shipment Notice",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Updating the purchase order",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Purchase Agreement Acknowledgement",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Purchase Order Acknowledgement",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Supplier User Roles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Reports",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Procurement Suite - Sourcing",
+                "chapters": [
+                    {
+                        "chapterName": "Negotiation Types",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " RFI",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " RFQ",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Auction",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Infolets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Tables",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Automatic award recommendations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Asses & Award Supplier Responses",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Surrogate response",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Two stage RFQ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Single stage RFQ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Supplier questions & scoring attributes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Negotiation to Purchase agreements",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Negotiation to Purchase orders",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Requisition to Negotiation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Approvals",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Negotiation Setups",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Negotiation Styles",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Cost Factors",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Cost Factors List",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Attributes List",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sourcing Lookups",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Manage Sourcing Notifications",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Procurement Suite – Procurement Contracts",
+                "chapters": [
+                    {
+                        "chapterName": "Contract Types",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Buy – Lines",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Buy – No Lines",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Buy – Agreement",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "BPM- ContractsApproval",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "BPM- ContractClauseApproval",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "BPM- TemplateApprovalHumanTask",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Contract Terms Template",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Folder",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Clause",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Clause Type",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Sections",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Tables, Infolets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Profile options",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Lookups",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Contract Deviation Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Contract Expert Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Numbering Sequence",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Cloud Costing Setups & Features:",
+                "chapters": [
+                    {
+                        "chapterName": "Cost Methods",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Standard",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Average",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Loading different costs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Default cost profiles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Valuation unit",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Cost profile",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Cost component mapping",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Cost component",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Valuation structure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Establishing relationship",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Managing cost books",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Managing cost orgs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Cost Definition:",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Item Cost",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Resource Cost",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Cost Rollup",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Costing Period Close",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Transfer Transactions from Inventory to Costing",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Transfer Transactions from Receiving to Costing",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Transfer Transactions from Production to Costing",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Verifying Receiving Distributions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Verifying Cost Distributions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Create Accounting",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Period close process checks",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Common issues/Errors",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Verify Accounting entries – All Transactions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Inventory Transactions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " O2C Entries",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " P2P Entries",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "moduleName": "Master Data & Transactional data",
+                "chapters": [
+                    {
+                        "chapterName": "Master Data",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " Locations",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Currency Conversion Rates",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Jobs",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Departments",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Positions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Employee Load",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Item Categories",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Items",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " UOM",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Item Cost (Standard Costing Method)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Price List",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Customer",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sourcing Rule",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sourcing Assignment",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Suppliers",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " ASL",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Procurement Agents",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sales Agreements",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Transactional Data",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": " On-hand (Inventory Transactions Template)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " On-hand",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Sales Orders",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Requisitions",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Purchase Orders",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Blanket Purchase Agreement",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": " Purchase Orders Schedules Close",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "demoVideoPath": "https://youtu.be/6Ohm9for4KE",
+        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/scm.webp",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Oracle Fusion Experts!",
+            "shortDescription": "Companies are actively hiring Oracle Fusion SCM professionals. Don’t miss the opportunity to be in demand—start learning today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Our Founder  & Your Trainer",
+            "shortDescription": "Mr. Krishna, a seasoned professional with over 20 years of extensive experience across diverse projects and industries, is driven by an unwavering passion for sharing knowledge and transforming students into skilled, industry-ready professionals. With a clear vision to produce top-tier Oracle Fusion Supply Chain consultants who can meet the ever-growing global market demand, our founder firmly believes that knowledge is not only a powerful tool for individual financial growth but also a catalyst for career transformation. By equipping individuals with the right skills and guidance, he aims to empower them to uplift their families, secure better futures, and actively contribute to the growth of the economy."
+        },
+        "sectionTwo": {
+            "title": "Learn from the World Leading Oracle Fusion SCM Trainer",
+            "points": [
+                "Oracle Fusion SCM Certified Professional,  Supply Chain Management Expert.",
+                "20+ years of expertise in Oracle ERP, specializing in Fusion SCM Training.",
+                "Successfully trained over 5,000 students in Oracle Cloud SCM Course, empowering them to become skilled IT professionals."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Krishna V",
+            "trainerDesignation": "Oracle SCM expert",
+            "trainerSocialLinks": [
+                "https://www.linkedin.com/company/techleadsit1",
+                "https://www.instagram.com/techleadsit/",
+                "https://www.facebook.com/techleadsitinstitute"
+            ],
+            "avatarImagePath": "/images/courses/trainer/scm.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Tanvi Srivastava",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/ebs_r12_scm/Tanvi Srivastava.png",
+                "review": "Overall, A great learning experience and 5 star to Krishna Sir for always motivating his students to do better.",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/Y2quqG1XVGEKqhLF8"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Umashankar M",
+                "designation": "Oracle Consultant",
+                "imagePath": "/images/courses/students/scm/umashankar.png",
+                "review": "I highly recommend to join this institution They also provide LMS portal which helps to learn from videos",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/f3sH1GvWfGw59gBR9"
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Ratheesh Poshala",
+                "designation": "Senior Oracle Solution Engineer",
+                "imagePath": "/images/courses/students/scm/ratheesh poshala.png",
+                "review": "Techleads is one of the Best training institute for Oracle fusion Scm. I would strongly recommend this institute.",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/CAzYtE8NMrzVzgqE6"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Velmurugan M",
+                "designation": "Junior Engineer",
+                "imagePath": "/images/courses/students/scm/velmurugan.png",
+                "review": "Best institute to get trained in the module of SCM Fusion. Krishna teaches everything related to Live scenarios.",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/77awnEjxonY7gwpa6"
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divakar Buddiga",
+                "designation": "Process Engineer ",
+                "imagePath": "/images/courses/students/scm/divakar.png",
+                "review": "Krishna (trainer) is having good knowledge in SCM. I thank tech leads for the support and to be trained here.",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/uZSRFMsqJUBh6Ppj6"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Sudarshan kawade",
+                "designation": "Oracle Functional Consultant",
+                "imagePath": "/images/courses/students/scm/sudarshan.png",
+                "review": "I am part of Oracle Fusion SCM course. instructor Krishna Sir had explained all concepts clearly with real time examples",
+                "thumbnailPath": "",
+                "reviewVideoPath": "",
+                "googleReviewLink": "https://maps.app.goo.gl/vCnHhKN9xxpRN85r9"
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹20,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹30,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/scm.png"
+        },
+        "portalView":{"imagePath":"/images/courses/portal_view/scm.webp"}
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Oracle Fusion SCM",
+                    "Gain a Clear Understanding of Industry Requirements",
+                    "Develop Essential Problem-Solving Skills"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-World Use Cases",
+                    "Solve Business Scenarios with Industry Experts",
+                    "Get Extensive Knowledge on Implementation Methodologies"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume",
+                    "Build a Strong LinkedIn Profile and Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on case studies and sample projectes",
+                    "Understand Industry Expectations & Best Practices",
+                    "Develop Problem-Solving & Decision-Making Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Gurantee for Merit students"
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "Our Hiring Partners  Trusted by Top Companies in Oracle SCM",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Oracle Fusion  SCM Are You Ready?",
+            "shortDescription": "Join the growing demand for Oracle Fusion professionals. Get certified and open doors to high-paying opportunities in top companies."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle SCM Trainee",
+                "Junior SCM Functional Consultant",
+                "SCM Business Analyst",
+                "Oracle SCM Functional Consultant",
+                "SCM Implementation Specialist",
+                "Oracle SCM Cloud Consultant",
+                "Oracle Fusion SCM Lead",
+                "Oracle SCM Solution Architect",
+                "ERP Implementation Manager"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Power  Master Oracle Fusion SCM Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your Oracle Fusion SCM expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": "Top Oracle Cloud SCM Certifications",
+        "certifications": [
+            "Oracle Inventory Cloud 2024 Implementation Professional",
+            "Oracle Order Management Cloud Order to Cash 2024 Implementation Professional",
+            "Oracle Cost Management Cloud 2024 Implementation Professional",
+            "Oracle Manufacturing Cloud 2024 Implementation Professional",
+            "Oracle Maintenance Cloud 2024 Implementation Professional",
+            "Oracle Fusion Transportation and Global Trade Management Cloud 2024 Implementation Professional",
+            "Oracle Warehouse Management Cloud 2024 Implementation Professional",
+            "Oracle Product Lifecycle Management 2024 Implementation Professional",
+            "Oracle Fusion Cloud Procurement 2024 Implementation Professional"
+        ]
+    },
+    "relatedCourses": [
+        "Oracle Fusion HCM Online Training",
+        "Oracle Fusion Financials Training",
+        "Oracle Fusion Technical+OIC Training",
+        "Oracle Fusion WMS Cloud (Logfire) Training"
+    ],
+    "faqs": [
+        {
+            "question": "What Modules Are Covered in Oracle Fusion SCM Training?",
+            "answer": "Our Oracle Fusion SCM Training includes a comprehensive curriculum covering Product Management,Inventory Management, Procurement,  Order Management and Costing. For a detailed module breakdown, please refer to our course syllabus."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "The training sessions are conducted Monday to Saturday, with each class lasting 1 hour per day to ensure an interactive and structured learning experience."
+        },
+        {
+            "question": "Are Weekend Batches Available?",
+            "answer": "Currently, we do not offer weekend batches. Our live sessions run Monday to Saturday to provide a consistent learning flow."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we provide recorded sessions for learners who prefer a self-paced learning approach. However, doubt clarification sessions are not available for self-paced training."
+        },
+        {
+            "question": "Do You Provide Internship Opportunities?",
+            "answer": "Yes, we offer internships based on your performance in mock evaluations, helping you gain real-world experience in Oracle Fusion SCM."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "Downloads are not available through the web portal, but you’ll have secure access to all session recordings for 1 year. However, if you’re using our mobile learning app, you can download up to 20 videos to watch offline—ideal for learning without internet access."
+        },
+        {
+            "question": "Can I Enroll in a Single SCM Module Instead of the Full Course?",
+            "answer": "No, our Oracle Fusion SCM training is structured as a comprehensive course, and individual modules cannot be taken separately."
+        },
+        {
+            "question": "Do You Provide Resume Preparation Support?",
+            "answer": "Yes, we assist with resume preparation to help you showcase your skills effectively. Our expert team will guide you in creating a professional, job-ready resume tailored to Oracle SCM roles."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for Practice?",
+            "answer": "yes, having a Laptop or Desktop is essential to access the Oracle instance and complete hands-on exercises efficiently."
+        },
+        {
+            "question": "Are there any prerequisites or minimum qualifications required for the Oracle Fusion SCM Training?",
+            "answer": "No prior experience is required! We cover everything from the basics. However, if you have knowledge of Oracle EBS R12, Logistics, or Supply Chain, it will be an added advantage. The course is open to all graduates, including those with a Degree, PG, B.Tech, etc."
+        },
+        {
+            "question": "Do you teach from the basics?",
+            "answer": "Yes, we teach from the basics and progress to advanced concepts. This makes the Oracle Fusion SCM Online Training suitable for both freshers and experienced professionals. No prior experience is required to enroll."
+        },
+        {
+            "question": "Do you provide job placement assistance?",
+            "answer": "Yes, we support your job placement journey by conducting mock interviews, resume preparation, and career guidance. Additionally, we have tie-ups with several companies, including Hitachi Vantara, Evosys, NTT Data, Tech Mahindra, LTI, AAIS, FIS Global, Splash BI, and Innovacx."
+        },
+        {
+            "question": "Do you provide support for Oracle Certification?",
+            "answer": "Yes, we guide you through the Oracle Fusion SCM certification process, offering expert advice and sample dumps to help you prepare effectively."
+        },
+        {
+            "question": "Do you provide training recordings and study materials?",
+            "answer": "Yes, we provide daily session recordings through our learning portal, along with module-wise soft copy materials that include screenshots and navigation guidance."
+        },
+        {
+            "question": "Do you provide interview questions and assistance?",
+            "answer": "Yes, we provide module-wise latest interview questions and assist with interview preparation through mock interviews."
+        },
+        {
+            "question": "Do you provide instance or application access for practice?",
+            "answer": "Yes, we provide 6 months of instance access for practice. No software installation is required—just access through a URL link."
+        },
+        {
+            "question": "Can I Retake This Course?",
+            "answer": "Yes, once you register for the Fusion SCM Cloud Online Training course, you will receive a 1-year membership, allowing you to attend multiple batches of the Oracle SCM Cloud Online Training."
+        },
+        {
+            "question": "Can I Get a Course Completion Certificate?",
+            "answer": "Yes, we provide a Course Completion Certificate upon successfully finishing the training."
+        },
+        {
+            "question": "Is Any Coding Knowledge Required?",
+            "answer": "No, coding or programming knowledge is not required. This is a completely non-coding and functional course."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, we offer one-on-one training upon request. Please note that the pricing for personalized training is higher compared to group sessions."
+        }
+    ]
+}

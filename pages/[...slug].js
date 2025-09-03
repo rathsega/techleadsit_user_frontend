@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 import CoursePage from "./course"; // Import the courses page component
 import { readFile } from 'fs/promises';
@@ -50,10 +51,21 @@ const courseSlugs = [
     "oracle-fusion-cloud-crm-online-training-course"
 ];
 
+// Canonical mapping for specific slugs
+const canonicalMap = {
+    "oracle-fusion-scm-online-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-scm-online-training-course",
+    "oracle-fusion-hcm-online-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-hcm-online-training-course",
+    "oracle-fusion-technical-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-technical-training-course",
+    "oracle/oracle-fusion/oracle-fusion-financials-training/oracle-fusion-financials-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-fusion/oracle-fusion-financials-training/oracle-fusion-financials-course"
+};
+
 export default function DynamicPage(props) {
     const router = useRouter();
     const { slug } = router.query;
     const [courseTax, setCourseTax] = useState({});
+
+    // Compose slugPath for canonical check
+    const slugPath = Array.isArray(slug) ? slug.join('/') : slug;
 
     useEffect(() => {
         // Only fetch if needed
@@ -69,97 +81,39 @@ export default function DynamicPage(props) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [slug]);
 
-    if (slug) {
-        if (props.isCourse) {
-            return (
-                <CoursePage
-                    key={Array.isArray(slug) ? slug.join("/") : slug}
-                    slug={slug?.join(" / ")}
-                    filePath={props.filePath}
-                    courseData={props.courseData}
-                    nativeCourse={props.nativeCourse}
-                    changedData={props.changedData}
-                    courseId={props.courseId}
-                    courseTax={courseTax}
-                    demos={props.demos}
-                    upcomingDemoDate={props.upcomingDemoDate}
-                    relatedBlogs={props.relatedBlogs}
-                    relatedCourses={props.relatedCourses}
-                />
-            );
-        } else {
-            return <Home />;
-        }
-    } else {
-        // If slug is not defined, render the Home component
-        return <Home />;
-    }
+    return (
+        <>
+            {/* Canonical tag for specific slugs */}
+            {canonicalMap[slugPath] && (
+                <Head>
+                    <link rel="canonical" href={canonicalMap[slugPath]} />
+                </Head>
+            )}
+            {slug ? (
+                props.isCourse ? (
+                    <CoursePage
+                        key={Array.isArray(slug) ? slug.join("/") : slug}
+                        slug={slug?.join(" / ")}
+                        filePath={props.filePath}
+                        courseData={props.courseData}
+                        nativeCourse={props.nativeCourse}
+                        changedData={props.changedData}
+                        courseId={props.courseId}
+                        courseTax={courseTax}
+                        demos={props.demos}
+                        upcomingDemoDate={props.upcomingDemoDate}
+                        relatedBlogs={props.relatedBlogs}
+                        relatedCourses={props.relatedCourses}
+                    />
+                ) : (
+                    <Home />
+                )
+            ) : (
+                <Home />
+            )}
+        </>
+    );
 }
-
-// Server-side logic to determine if the slug should serve /courses
-/*export async function getServerSideProps({ params }) {
-    const { slug } = params;
-    const slugPath = Array.isArray(slug) ? slug.join("/") : slug;
-
-    if (courseSlugs.includes(slugPath)) {
-        const course_data_filename = slug.join("_");
-        const filePath = path.join(process.cwd(), 'data', course_data_filename + '.json');
-        const changesFilePath = path.join(process.cwd(), 'data/changes.json');
-
-        let data = {};
-        let nativeCourse = {};
-        let changedData = {};
-        let changedParsedData = [];
-        let courseId = "";
-
-        try {
-            const jsonData = fs.readFileSync(filePath, 'utf-8');
-            const changedJsonData = fs.readFileSync(changesFilePath, 'utf-8');
-            data = JSON.parse(jsonData);
-            changedParsedData = JSON.parse(changedJsonData)
-
-            changedData = changedParsedData.find(cpd => cpd.courseId == data?.id) || {}
-
-            const response = await httpService.get(`courses/getCourseDetailsByCourseId?courseId=${data?.id}`);
-
-            if (response?.status === 404) {
-                return { notFound: true };
-            }
-
-            if (response?.data) {
-                nativeCourse = response.data;
-            }
-        } catch (error) {
-            console.error("Error in getServerSideProps:", error);
-            return { notFound: true };
-        }
-
-        try {
-            const response = await httpService.post('course/getCourseIdBySlug', { slug: slug?.join(" / ") })
-            if (response?.data) {
-                courseId = response?.data?.id;
-            }
-        } catch (error) {
-            console.error("Error in getServerSideProps:", error);
-            return { notFound: true };
-        }
-
-
-
-        return {
-            props: {
-                isCourse: true,
-                courseData: data,
-                filePath,
-                nativeCourse,
-                changedData,
-                courseId: courseId
-            },
-        };
-    }
-
-    return { props: { isCourse: false } };
-}*/
 
 function getNearestUpcomingDate(data) {
     if (!Array.isArray(data)) return null; // <-- Fix: guard clause
