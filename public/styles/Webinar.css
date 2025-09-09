@@ -9,7 +9,10 @@ body {
   line-height: 1.6;
   color: #ffffff;
   background-color: #04111D;
+}
 
+.WebinarApp{
+  overflow-x: hidden;
 }
 
 html {
@@ -274,6 +277,7 @@ ul {
   .about-content {
     flex-direction: column;
     gap: 20px;
+    align-items: center;
   }
 
   .about-description {
@@ -631,7 +635,6 @@ ul {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   padding: 10px 24px;
-  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
@@ -812,12 +815,10 @@ ul {
 }
 
 .countdown-title {
-  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
   letter-spacing: 0.36px;
-  text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 10px;
 }
@@ -839,7 +840,6 @@ ul {
 }
 
 .time-value {
-  font-family: 'Poppins', sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
@@ -852,12 +852,10 @@ ul {
 }
 
 .time-label {
-  font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 0.24px;
-  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -992,7 +990,6 @@ div.badge-item.badge-item-1 {
   font-weight: 600;
   line-height: 17.07px;
   letter-spacing: 0.28px;
-  text-transform: uppercase;
 }
 
 .hero-title {
@@ -1044,12 +1041,10 @@ div.badge-item.badge-item-1 {
   background: linear-gradient(90.56deg, #0F5EE7 4.5%, #4D94FF 50.75%, #0076BE 99.22%);
   border-radius: 24px;
   padding: 10px 38px;
-  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 27px;
   letter-spacing: 0.36px;
-  text-transform: uppercase;
   color: #ffffff;
   transition: transform 0.3s ease;
 }
@@ -1107,7 +1102,9 @@ div.badge-item.badge-item-1 {
 
   .hero-left {
     max-width: 100%;
+    text-align: center;
   }
+  
 
   .hero-description {
     width: 100%;
@@ -1217,7 +1214,6 @@ div.badge-item.badge-item-1 {
   transform: translate(-50%, -50%);
   width: 265px;
   height: 265px;
-  border-radius: 50%;
   object-fit: cover;
   z-index: 2;
 }
@@ -1822,25 +1818,34 @@ div.badge-item.badge-item-1 {
   margin-bottom: 16px;
 }
 
+
 .companies-slider {
+  position: relative;
   overflow: hidden;
-  width: 100%;
+  --gap: 2rem;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
 
 .companies-track {
   display: flex;
-  gap: 16px;
-  animation: scroll 30s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translate3d(0,0,0);
 }
 
 .company-card {
-  border-radius: 6px;
-  min-width: 138.55px;
-  height: 48px;
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+}
+
+.track-segment {
+  display: flex;
+  gap: var(--gap);
+  flex: 0 0 auto;
+  padding-inline: var(--gap);
 }
 
 .Our-CP-Container {
@@ -1851,14 +1856,20 @@ div.badge-item.badge-item-1 {
   font-size: 18px !important;
   margin-bottom: 0px !important;
   line-height: 30px !important;
-  width: 300px;
+  width: 100%;
   color: rgba(120, 227, 255, 1) !important;
 }
 
 .company-card img {
-  max-width: 100%;
-  max-height: 100%;
+  display: block;
+  height: 48px;
+  width: auto;
   object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.company-card imghover {
+  transform: scale(1.04);
 }
 
 @keyframes scroll {
@@ -1870,6 +1881,8 @@ div.badge-item.badge-item-1 {
     transform: translateX(-50%);
   }
 }
+
+
 
 @media (max-width: 1400px) {
   .trusted-companies {
@@ -2171,6 +2184,12 @@ div.badge-item.badge-item-1 {
 
   .why-attend {
     padding: 20px 0;
+  }
+}
+
+@media (min-width:950px){
+  .Webinar-TA{
+    min-height: 70px;
   }
 }
 

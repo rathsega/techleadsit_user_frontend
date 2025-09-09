@@ -426,7 +426,7 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
         <Seo details={nativeCourse?.seo}></Seo>
         <SchemaLoader slug={slug}></SchemaLoader>
         <main className="Course-Page-CP">
-            {nativeCourse?.basic?.discountedPrice && demos.length > 0 && <UpcomingDemoHeaderStrip demos={demos} price={nativeCourse?.basic?.price} discountedPrice={nativeCourse?.basic?.discountedPrice} title={courseData?.title}></UpcomingDemoHeaderStrip>}
+            {nativeCourse?.basic?.discountedPrice && demos.length > 0 ? <UpcomingDemoHeaderStrip demos={demos} price={nativeCourse?.basic?.price} discountedPrice={nativeCourse?.basic?.discountedPrice} title={courseData?.title}></UpcomingDemoHeaderStrip> : null}
             <Hero data={courseData?.hero} courseTitle={courseData?.title} handleButtonClick={handleButtonClick} openForm={openForm} handleYoutibeOpenVideoPopup={handleYoutibeOpenVideoPopup} demoVideoPath={courseData?.curriculum?.demoVideoPath}></Hero>
 
             {showStrip && showStripByScroll && <div className="Main-Course-Banner-Strip" id="mainCourseStrip">
@@ -847,7 +847,6 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                                         <Image src="/images/courses/C-aingenious-Icon.png" width={254} height={88} alt="Company-Icon" />
                                         <Image src="/images/courses/C-AWC-Icon.png" width={254} height={88} alt="Company-Icon" />
                                         <Image src="/images/courses/C-cognizant-Icon.png" width={254} height={88} alt="Company-Icon" />
-                                        <Image src="/images/courses/C-Dhanush-Icon.png" width={254} height={88} alt="Company-Icon" />
                                         <Image src="/images/courses/C-DOYENSYS-Icon.png" width={254} height={88} alt="Company-Icon" />
                                         <Image src="/images/courses/C-FORTINET-Icon.png" width={254} height={88} alt="Company-Icon" />
                                         <Image src="/images/courses/C-Lenovo-Icon.png" width={254} height={88} alt="Company-Icon" />
@@ -1086,7 +1085,7 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                             </div>
                         </div>
 
-                        <a href="https://maps.app.goo.gl/MdpESQfm7xGgP7pw7" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                        <a href="https://maps.app.goo.gl/JM36K1D1phe5jPwK9" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                             <div className="d-flex align-items-start gap-2 mt-3">
                                 <Image loading='lazy' priority={false} alt="Location-Icon" height="56" width="56" className="Main-Course-Get-In-Touch-Icon-S" src="/images/courses/Main-Course-Get-In-Touch-Our-Location-Icon.svg" />
                                 <div>
@@ -1101,7 +1100,7 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
             </section>}
         </main>
 
-        {quickPaymentVisibility && <QuickPayment></QuickPayment>}
+        {quickPaymentVisibility && <QuickPayment courseId={courseData?.id}></QuickPayment>}
 
         {formVisibility && <><div className="Main-Course-Overlay"></div>
             <CourseRegistrationForm

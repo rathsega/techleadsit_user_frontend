@@ -4,8 +4,10 @@ import 'react-phone-number-input/style.css'
 import httpService from '../../../services/httpService'
 import Image from 'next/image'
 import { useExpiringLocalStorage } from "../../../services/useExpiringLocalStorage";
+import { useRouter } from 'next/router';
 
 const RegistrationForm = ({ webinarTitle, webinarId }) => {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -115,6 +117,7 @@ const RegistrationForm = ({ webinarTitle, webinarId }) => {
       setSuccess("Thank you for registering! We have received your details.");
       setMessageType("success");
       setUserDetails({...formData, fullName: formData.fullName});
+      router.push(`/thankyou`);
       setFormData({
         fullName: "",
         email: "",
@@ -146,7 +149,7 @@ const RegistrationForm = ({ webinarTitle, webinarId }) => {
             onChange={handleChange}
             autoComplete="off"
           />
-          {errors.fullName && <div style={{ color: "red" }}>{errors.fullName}</div>}
+          {errors.fullName && <div style={{ color: "red", fontSize: "12px" }}>{errors.fullName}</div>}
         </div>
 
         <div className="form-group">
@@ -160,7 +163,7 @@ const RegistrationForm = ({ webinarTitle, webinarId }) => {
             onChange={handleChange}
             autoComplete="off"
           />
-          {errors.email && <div style={{ color: "red" }}>{errors.email}</div>}
+          {errors.email && <div style={{ color: "red", fontSize: "12px" }}>{errors.email}</div>}
         </div>
 
         <div className="form-group">
@@ -176,7 +179,7 @@ const RegistrationForm = ({ webinarTitle, webinarId }) => {
               international
             />
           </div>
-          {errors.phone && <div style={{ color: "red" }}>{errors.phone}</div>}
+          {errors.phone && <div style={{ color: "red", fontSize: "12px" }}>{errors.phone}</div>}
         </div>
 
         <div className="form-group">
@@ -189,8 +192,9 @@ const RegistrationForm = ({ webinarTitle, webinarId }) => {
             onChange={handleChange}
             rows="2"
             autoComplete="off"
+            className='Webinar-TA'
           />
-          {errors.message && <div style={{ color: "red" }}>{errors.message}</div>}
+          {errors.message && <div style={{ color: "red", fontSize: "12px" }}>{errors.message}</div>}
         </div>
 
         <button type="submit" className="submit-btn" disabled={loading}>

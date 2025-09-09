@@ -109,19 +109,21 @@ const TopCourses = () => {
                             </div>
                         </div>
                         <div className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content cursor-pointer" onClick={() => openCourse('oracle-fusion-scm-online-training-course')}>
-                            <div className="d-flex align-items-center justify-content-between">
-                                <img src="/images/home/Top-Courses-Main-SCM.webp" alt="Oracle Fusion SCM Online Training" height="31" width="85"/>
+                            <div>
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                                <img src="/images/home/Top-Courses-Main-SCM.webp" alt="Oracle Fusion SCM Online Training" style={{"borderRadius":"5px"}} height="31" width="85"/>
                                 <img src="/images/home/Top-Courses-SCM.svg" alt="Oracle Fusion SCM Icon Online Training" height="32" width="32"/>
                             </div>
                             <h2 className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Heading">Oracle Fusion
                                 SCM Online Training</h2>
-                                <div className="d-flex align-items-center gap-2 flex-wrap row-gap-0">
+                                <div className="d-flex align-items-center gap-2 flex-wrap row-gap-0 mb-2">
                                     <p className="mb-0"><i class="fa-solid fa-circle-play Top-Courses-Card-Icon"></i><span className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Span">80 Lessons</span></p>
                                     <p className="mb-0"><i class="fa-solid fa-calendar Top-Courses-Card-Icon"></i><span className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Span">3 Months (Daily 1hour)</span></p>
                                 </div>
                             <p className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Para">Oracle Fusion SCM
                                 Online Training by Industry expert Mr. Krishna, with 18+ years of real-time experience,
                                 has delivered 60+ batches and trained more than 21,000+ students.</p>
+                            </div>
                             <button className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Button" onClick={() => openCourse('oracle-fusion-scm-online-training-course')}><span>Enroll
                                 Now </span>
                                 <div
@@ -201,19 +203,21 @@ const TopCourses = () => {
                             </div>
                         </div>
                         <div className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content cursor-pointer" onClick={() => openCourse('oracle-fusion-hcm-online-training-course')}>
-                            <div className="d-flex align-items-center justify-content-between">
-                                <img src="/images/home/Top-Courses-Main-HCM.webp" alt="Oracle Fusion HCM Online Training" height="31" width="85"/>
+                            <div>
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                                <img src="/images/home/Top-Courses-Main-HCM.webp" alt="Oracle Fusion HCM Online Training" style={{"borderRadius":"5px"}} height="31" width="85"/>
                                 <img src="/images/home/Top-Courses-HCM.svg" alt="Oracle Fusion HCM Icon Online Training" height="32" width="32"/>
                             </div>
                             <h2 className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Heading">Oracle Fusion
                                 HCM Online Training</h2>
-                                <div className="d-flex align-items-center gap-2 flex-wrap row-gap-0">
+                                <div className="d-flex align-items-center gap-2 flex-wrap row-gap-0 mb-2">
                                     <p className="mb-0"><i class="fa-solid fa-circle-play Top-Courses-Card-Icon"></i><span className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Span">70 Lessons</span></p>
                                     <p className="mb-0"><i class="fa-solid fa-calendar Top-Courses-Card-Icon"></i><span className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Span">3 Months (Daily 1hour)</span></p>
                                 </div>
                             <p className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Para">Oracle Fusion HCM
                                 Training at Tech Leads IT by Mr. Sumesh having 20+ years of real-time experience and
                                 successfully delivered/worked on a couple of Oracle Fusion HCM Implementations.</p>
+                                </div>
                             <button className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Button" onClick={() => openCourse('oracle-fusion-hcm-online-training-course')}><span>Enroll
                                 Now </span>
                                 <div
@@ -292,18 +296,20 @@ const TopCourses = () => {
                             </div>
                         </div>
                         <div className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content cursor-pointer" onClick={() => openCourse('oracle/oracle-fusion/oracle-fusion-financials-training/oracle-fusion-financials-course')}>
-                            <div className="d-flex align-items-center justify-content-between">
-                                <img src="/images/home/Top-Courses-Main-Financials.webp" alt="Oracle Fusion Financials Online Training" height="31" width="85"/>
+                            <div>
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                                <img src="/images/home/Top-Courses-Main-Financials.webp" alt="Oracle Fusion Financials Online Training" style={{"borderRadius":"5px"}} height="31" width="85"/>
                                 <img src="/images/home/Top-Courses-Financials.svg" alt="Oracle Fusion Financials Icon Online Training" height="32" width="32"/>
                             </div>
                             <h2 className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Heading">Oracle Fusion Financials Online Training</h2>
-                                <div className="d-flex align-items-center gap-2 flex-wrap row-gap-0">
+                                <div className="d-flex align-items-center gap-2 flex-wrap row-gap-0 mb-2">
                                     <p className="mb-0"><i class="fa-solid fa-circle-play Top-Courses-Card-Icon"></i><span className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Span">70 Lessons</span></p>
                                     <p className="mb-0"><i class="fa-solid fa-calendar Top-Courses-Card-Icon"></i><span className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Span">3 Months (Daily 1hour)</span></p>
                                 </div>
                             <p className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Para">Oracle Fusion
                                 Financials Training with detailed content covering almost all the modules and business
                                 cycles in the training.</p>
+                                </div>
                             <button className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Button" onClick={() => openCourse('oracle/oracle-fusion/oracle-fusion-financials-training/oracle-fusion-financials-course')}><span>Enroll
                                 Now </span>
                                 <div
@@ -384,19 +390,21 @@ const TopCourses = () => {
                             </div>
                         </div>
                         <div className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content cursor-pointer" onClick={() => openCourse('oracle-fusion-technical-training-course')}>
-                            <div className="d-flex align-items-center justify-content-between">
-                                <img src="/images/home/Top-Courses-Main-Technical.webp" alt="Oracle Fusion OIC Online Training" height="31" width="85"/>
+                            <div>
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                                <img src="/images/home/Top-Courses-Main-Technical.webp" alt="Oracle Fusion OIC Online Training" style={{"borderRadius":"5px"}} height="31" width="85"/>
                                 <img src="/images/home/Top-Courses-OIC.svg" alt="Oracle Fusion OIC Icon Online Training" height="32" width="32"/>
                             </div>
                             <h2 className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Heading">Oracle Fusion
-                                Technical + OIC</h2>
-                                <div className="d-flex align-items-center gap-2 flex-wrap row-gap-0">
+                                Technical + OIC Training</h2>
+                                <div className="d-flex align-items-center gap-2 flex-wrap row-gap-0 mb-2">
                                     <p className="mb-0"><i class="fa-solid fa-circle-play Top-Courses-Card-Icon"></i><span className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Span">50 Lessons</span></p>
                                     <p className="mb-0"><i class="fa-solid fa-calendar Top-Courses-Card-Icon"></i><span className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Span">2 Months (Daily 1hour)</span></p>
                                 </div>
                             <p className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Para">Oracle Fusion
                                 Technical Training from Real-Time expert covering depth in the content with hands on
                                 project based real time examples faced during the projects.</p>
+                                </div>
                             <button className="Main-Course-HP-Explore-Our-Top-Courses-Content-Bg-Content-Button" onClick={() => openCourse('oracle-fusion-technical-training-course')}><span>Enroll
                                 Now </span>
                                 <div

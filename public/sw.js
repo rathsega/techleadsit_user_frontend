@@ -5,9 +5,6 @@ const FONT_CACHE = 'font-cache-v1';
 // Critical resources to cache
 const CRITICAL_ASSETS = [
   'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css',
-  'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap',
-  'https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2',
-  'https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2'
 ];
 
 const NON_CRITICAL_ASSETS = [

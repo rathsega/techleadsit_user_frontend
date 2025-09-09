@@ -17,7 +17,6 @@ Trusted by Top Companies in Industry</h2>
                         <Image height={254} width={88} loading='lazy' priority={false} src="/images/home/HP-C-aingenious-Icon.png" alt="Company-Icon" />
                         <Image height={254} width={88} loading='lazy' priority={false} src="/images/home/HP-C-AWC-Icon.png" alt="Company-Icon" />
                         <Image height={254} width={88} loading='lazy' priority={false} src="/images/home/HP-C-cognizant-Icon.png" alt="Company-Icon" />
-                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/home/HP-C-Dhanush-Icon.png" alt="Company-Icon" />
                         <Image height={254} width={88} loading='lazy' priority={false} src="/images/home/HP-C-DOYENSYS-Icon.png" alt="Company-Icon" />
                         <Image height={254} width={88} loading='lazy' priority={false} src="/images/home/HP-C-FORTINET-Icon.png" alt="Company-Icon" />
                         <Image height={254} width={88} loading='lazy' priority={false} src="/images/home/HP-C-Lenovo-Icon.png" alt="Company-Icon" />

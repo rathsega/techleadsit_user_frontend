@@ -37,7 +37,7 @@ const CourseRegistrationForm = React.memo(({
   const [defaultCountry, setDefaultCountry] = useState("IN");
   const [demos, setDemos] = useState([])
   const setFormHeading = useLmsStore((state) => state.setFormHeading);
-
+  console.log("Rendering CourseRegistrationForm component : ", heading);
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -492,6 +492,9 @@ const CourseRegistrationForm = React.memo(({
       </form>
     </div>
   );
+}, (prevProps, nextProps) => {
+  // Only re-render if heading is actually different and not empty
+  return prevProps.heading === nextProps.heading;
 });
 
 export default CourseRegistrationForm;

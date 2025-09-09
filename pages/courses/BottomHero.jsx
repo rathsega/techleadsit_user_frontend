@@ -2,7 +2,7 @@ const BottomHero = ({openForm}) => {
     return (
         <section className="All-category-CTA-banner">
             <div className="All-category-CTA-banner-content">
-                <h1 className="All-category-CTA-banner-h">Take the First Step Toward Success!</h1>
+                <h2 className="All-category-CTA-banner-h">Take the First Step Toward Success!</h2>
                 <p className="All-category-CTA-banner-p">Upskill with expert-led courses to unlock endless career opportunities. Take the first step today and
                     transform your future!</p>
                 <button className="CL-CTA-button" onClick={()=>openForm("Join The Course")}>

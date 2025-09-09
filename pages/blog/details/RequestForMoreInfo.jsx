@@ -6,8 +6,10 @@ import { isValidPhoneNumber } from 'react-phone-number-input';
 import httpService from "../../../services/httpService";
 import SmartReCaptcha from "../../captcha/SmartReCaptcha";
 import { useExpiringLocalStorage } from "../../../services/useExpiringLocalStorage";
+import { useRouter } from 'next/router';
 
 const RequestForMoreInfo = ({ currentBlogId }) => {
+     const router = useRouter();
     const [formData, setFormData] = useState({
         fullName: "",
         email: "",
@@ -66,6 +68,13 @@ const RequestForMoreInfo = ({ currentBlogId }) => {
         if (errors.phone) setErrors({ ...errors, phone: undefined });
     };
 
+    const clearSuccessErrorMessages = () => {
+        setTimeout(() => {
+            setSuccessMsg(false);
+            setErrorMsg(false);
+        }, 3000);
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!validateForm()) return;
@@ -82,8 +91,9 @@ const RequestForMoreInfo = ({ currentBlogId }) => {
             const response = await httpService.post("/blogs/requestMoreInfo/" + currentBlogId, { ...formData, phone, token: captchaToken });
             // localStorage.setItem("userDetails", JSON.stringify(formData));
             setUserDetails(formData);
-            if (!response?.data) throw new Error("Failed to submit");
-            setSuccessMsg(true)
+            router.push(`/thankyou`);
+            setSuccessMsg(true);
+            setErrorMsg(false);
             // Reset after submission
             captchaRef.current?.resetCaptcha();
             setCaptchaToken('');

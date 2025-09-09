@@ -96,11 +96,11 @@ const Hero = React.memo(() => {
             <section className="Main-Course-Home-Page-Hero-Section">
                 <div className="Main-Course-Home-Page-Hero-Section-Content">
                     <div className="Main-Course-HP-Hero-Section-Content-Text">
-                        <h2 className="Main-Course-HP-Hero-Section-Heading">Accelerate Your Career with Expert-Led <span
+                        <h1 className="Main-Course-HP-Hero-Section-Heading">Accelerate Your Career with Expert-Led <span
                             className="Main-Course-HP-Hero-Section-Span-Heading"> Oracle Fusion Training <img
                                 src="/images/home/Main-Course-HP-Verified-Icon.svg"
                                 className="Main-Course-HP-Verified-Icon" alt="Main-Course-HP-Verified-Icon" /></span>
-                        </h2>
+                        </h1>
                         <p className="Main-Course-HP-Hero-Section-Para">Real-time projects, hands-on learning, and
                             globally
                             recognized certifications—learn at your own pace!</p>

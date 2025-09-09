@@ -17,6 +17,8 @@ const SmartReCaptcha = React.memo(forwardRef(
     const recaptchaRef = useRef(null);
     const [timerId, setTimerId] = useState(null);
 
+    console.log("Loading SmartReCaptcha component");
+
     // Expose resetCaptcha function to parent
     useImperativeHandle(ref, () => ({
       resetCaptcha: () => {

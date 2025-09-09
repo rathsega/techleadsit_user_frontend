@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 import useLmsStore from '../../store/lmsStore';
 import httpService from '../../services/httpService';
 
-const QuickPayment = ({ courseData }) => {
+const QuickPayment = ({ courseId }) => {
 
     const buyingCourse = useLmsStore((state) => state.buyingCourse);
     const setQuickPaymentVisibility = useLmsStore((state) => state.setQuickPaymentVisibility);
@@ -128,7 +128,7 @@ const QuickPayment = ({ courseData }) => {
             console.log('Form submitted:', formData);
             httpService.post('/payment/cartVisitor', {
                 ...formData,
-                courseId: buyingCourse?.id,
+                courseId: courseId,
             }).then(response => {
                 if (response.data.success) {
                     setSuccess(true);

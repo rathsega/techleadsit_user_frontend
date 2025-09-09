@@ -220,17 +220,15 @@ const Signin = () => {
                 <div className="Main-Course-User-Authentication-Signin-right-side">
                     <h1 className="Main-Course-UA-Main-heading">Sign In</h1>
                     <p className="Main-Course-UA-Main-Para">Enter your details to empower yourself with knowledge</p>
-                    <form id="Signin-form" onSubmit={handleSubmit} className="Main-Course-User-Authentication-Signin-form">
+                    <form id="Signin-form" method='POST' action="/login" onSubmit={handleSubmit} className="Main-Course-User-Authentication-Signin-form">
                         <div className="Main-Course-User-Authentication-Signin-form-group">
                             <label htmlFor="email">E-mail</label>
                             <input
                                 id="email"
-                                type="text"
-                                placeholder="Enter your email"
-                                className={`${submitted && emailOrPhoneError ? 'Main-Course-User-Authentication-Form-FB' : ''}`}
-                                value={input.emailOrPhone}
-                                name='username'
-                                autoComplete='username'
+                                type="email"
+                                name="username"
+                                autoComplete="username"
+                                defaultValue={input.emailOrPhone}
                                 onChange={(e) => handleUsername(e)}
                             />
                             {submitted && emailOrPhoneError && (
@@ -249,12 +247,10 @@ const Signin = () => {
                                     <input
                                         id="password"
                                         type={showPassword ? "text" : "password"}
-                                        placeholder="Enter your password"
-                                        className={`${submitted && passwordError ? 'Main-Course-User-Authentication-Form-FB' : ''}`}
-                                        value={input.password}
+                                        name="password"
+                                        autoComplete="current-password"
+                                        defaultValue={input.password}
                                         onChange={(e) => handlePassword(e)}
-                                        name='password'
-                                        autoComplete='current-password'
                                     />
                                     <span className="Main-Course-User-Authentication-Signin-toggle-eye" onClick={() => setShowPassword(prev => !prev)}
                                         style={{ cursor: "pointer" }}>

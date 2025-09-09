@@ -121,6 +121,7 @@ const ReserveYourSeatPopupForm = ({ handleReserveSeatVisibility, popupProps, han
                 //localStorage.setItem('userDetails', JSON.stringify(formData));
                 setUserDetails(formData);
                 handleUserDetailsSubmissionStatus(true);
+                router.push(`/thankyou`);
             } else {
                 setSuccess(false);
             }

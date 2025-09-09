@@ -639,7 +639,6 @@
   }
   
   .trusted-learners {
-    font-family: Poppins;
     color: #ffffff;
     margin: 40px;
     padding: 15px;
@@ -1231,7 +1230,6 @@
     font-size: 18px;
     cursor: pointer;
     border: none;
-    font-family: Poppins;
     width: max-content;
   }
   
@@ -1470,7 +1468,6 @@
     z-index: 99;
     bottom: 0;
     left: 3%;
-    font-family: "Poppins", serif;
   }
   
   .snackbar-heading {

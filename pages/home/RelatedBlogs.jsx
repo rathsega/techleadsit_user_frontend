@@ -44,8 +44,8 @@ const RelatedBlogs = () => {
     }, [])
     return (
         <section className="Main-Course-Home-Page-Related-Blogs-S-section">
-            <h1 className="Main-Course-Home-Page-Related-Blogs-S-heading text-center mb-3">Explore Our Related Blogs
-            </h1>
+            <h2 className="Main-Course-Home-Page-Related-Blogs-S-heading text-center mb-3">Explore Our Related Blogs
+            </h2>
             <p className="Main-Course-Home-Page-Related-Blogs-S-para text-center">"Explore our latest blogs &
                 articles for expert
                 insights, industry trends, and tips to boost your skills and stay ahead in your career."</p>

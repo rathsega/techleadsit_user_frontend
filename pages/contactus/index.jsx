@@ -336,10 +336,9 @@ const Contactus = () => {
                         <div>
                             <h2 className="Course-contact-us-OA-h">Our Address</h2>
                             <h2 className="Course-contact-us-OA-h">Branch 1:</h2>
-                            <p className="Course-contact-us-OA-p">4th Floor, Eashan Arcade, Plot no 3-164, Trendz Arcade, Kavuri Hills Road, Doctor's Colony, Hyderabad, Telangana 500033.</p>
+                        <p className="Course-contact-us-OA-p">4th Floor, Eashan Arcade, Plot no 3-164, Trendz Arcade, Kavuri Hills Road, Doctor's Colony, Hyderabad, Telangana 500033.</p>
                         </div>
                     </div>
-
                 </div>
                 <div className="Course-Contact-Map-Section">
                     <div className="map-container">
@@ -351,12 +350,13 @@ const Contactus = () => {
                     <div>
                         <h2 className="Course-contact-us-OA-h">Our Address</h2>
                         <h2 className="Course-contact-us-OA-h">Branch 2:</h2>
-                        <p className="Course-contact-us-OA-p">4th Floor, Sridevi Nilayam, plot no 38, near Jntu Metro
-                            Station, back side lane of Pista
-                            house, Sardar Patel Nagar, IDPL Staff Cooperative Housing Society, Kukatpally Housing Board
-                            Colony, Kukatpally, Hyderabad, Telangana 500085</p>
+                            <p className="Course-contact-us-OA-p">4th Floor, Sridevi Nilayam, plot no 38, near Jntu Metro
+                                Station, back side lane of Pista
+                                house, Sardar Patel Nagar, IDPL Staff Cooperative Housing Society, Kukatpally Housing Board
+                                Colony, Kukatpally, Hyderabad, Telangana 500085</p>
                     </div>
                 </div>
+
                 <div className="Course-Contact-Map-Section">
                     <div className="map-container">
                         <iframe title="instituteAddress2"
@@ -365,14 +365,12 @@ const Contactus = () => {
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div>
-                        <h2 className="Course-contact-us-OA-h">Our Address</h2>
+                        <h2 className="Course-contact-us-OA-h">Registered Address</h2>
                         <h2 className="Course-contact-us-OA-h">Branch 3:</h2>
                         <p className="Course-contact-us-OA-p">44/A, 302, Geetanjali Apartments, Near SR Nagar, SR Nagar Main Rd,
                             opp. Bahar Cafe, Hyderabad, Telangana 500038</p>
                     </div>
                 </div>
-
-
             </section>
 
             <SubscribeSection currentBlogId="0" classes="Course-Contact-Us-margin"></SubscribeSection>
