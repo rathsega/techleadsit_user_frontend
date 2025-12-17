@@ -141,7 +141,7 @@ const Forgotpassword = () => {
                     </button>
                     <div className="Main-Course-User-Authentication-Forgot-Password-left-side">
                         <div className="Main-Course-User-Authentication-Forgot-Password-slider">
-                            <img src="/images/auth/Main-Course-Reset-Password-img.svg" className="Main-Course-Reset-Password-img" />
+                            <img src="/images/auth/Main-Course-Reset-Password-img.svg" alt="reset password image" className="Main-Course-Reset-Password-img" />
                         </div>
                         <img src="/images/auth/Main-Course-TechLeads-Logo.svg" className="Main-Course-TechLeads-Logo" alt="TechLeads Logo" />
                     </div>
@@ -229,7 +229,7 @@ const Forgotpassword = () => {
                     <div className="Main-Course-User-Authentication-Screens-Check-Your-Email-Section-Container">
                         <div className="Main-Course-User-Authentication-Check-Your-Email-left-side">
                             <div className="Main-Course-User-Authentication-Check-Your-Email-slider">
-                                <img src="/images/auth/Main-Course-Reset-Password-img.svg" className="Main-Course-Reset-Password-img" />
+                                <img src="/images/auth/Main-Course-Reset-Password-img.svg" alt="reset password image" className="Main-Course-Reset-Password-img" />
                             </div>
                             <img src="/images/auth/Main-Course-TechLeads-Logo.svg" className="Main-Course-TechLeads-Logo" alt="TechLeads Logo" />
                         </div>

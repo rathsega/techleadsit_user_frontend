@@ -7,26 +7,26 @@ const RelatedCourses = React.memo(({ courses, courseTax }) => {
   const { setLoading } = useLoader();
   const router = useRouter();
 
-const containerRef = React.useRef(null);
-const railRef = React.useRef(null);
+  const containerRef = React.useRef(null);
+  const railRef = React.useRef(null);
 
   const [atStart, setAtStart] = useState(true);
   const [atEnd, setAtEnd] = useState(false);
 
 
-const updateEnds = () => {
-  const el = railRef.current;
-  if (!el) return;
-  const atStart = el.scrollLeft <= 0;
-  const atEnd = Math.ceil(el.scrollLeft + el.clientWidth) >= el.scrollWidth;
+  const updateEnds = () => {
+    const el = railRef.current;
+    if (!el) return;
+    const atStart = el.scrollLeft <= 0;
+    const atEnd = Math.ceil(el.scrollLeft + el.clientWidth) >= el.scrollWidth;
 
-  // toggle container flags for CSS
-  const box = containerRef.current;
-  if (box) {
-    box.classList.toggle('has-left', !atStart);
-    box.classList.toggle('has-right', !atEnd);
-  }
-};
+    // toggle container flags for CSS
+    const box = containerRef.current;
+    if (box) {
+      box.classList.toggle('has-left', !atStart);
+      box.classList.toggle('has-right', !atEnd);
+    }
+  };
 
   useEffect(() => {
     updateEnds();
@@ -105,10 +105,14 @@ const updateEnds = () => {
               onClick={() => openCourse(course?.basic?.slug)}
             >
               <div className="position-relative">
-                <div className="Main-Course-Related-Courses-Card-discount">
-                  <Image src="/images/courses/MC-Related-Blogs-Offer-Icon.svg" alt="Offer Icon" height={18} width={18} />
-                  <span className="Main-Course-Related-Courses-Card-offer">Get 20% Off</span>
-                </div>
+                {course?.basic?.discountedPrice > 0 && (
+                  <div className="Main-Course-Related-Courses-Card-discount">
+                    <Image src="/images/courses/MC-Related-Blogs-Offer-Icon.svg" alt="Offer Icon" height={18} width={18} />
+                    <span className="Main-Course-Related-Courses-Card-offer">
+                      Get {Math.round(((course?.basic?.price - course?.basic?.discountedPrice) / course?.basic?.price) * 100)}% Off
+                    </span>
+                  </div>
+                )}
 
                 <Image
                   src={process.env.NEXT_PUBLIC_FILES_URL + course?.basic?.thumbnailImage?.path}

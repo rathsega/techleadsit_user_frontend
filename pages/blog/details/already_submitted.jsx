@@ -1,5 +1,12 @@
 import React, { useEffect } from 'react';
-const AlreadySubmitted = ({handleDetailsSubmitted}) => {
+import useLmsStore from '../../../store/lmsStore';
+const AlreadySubmitted = () => {
+    const setPopupFormProps = useLmsStore((state) => state.setPopupFormProps);
+
+    const handleDetailsSubmitted = () => {
+        setPopupFormProps({visible: false, alreadySubmitted: false});
+    }
+
     //click on outside to close the popup and should close if we click on escape key
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -22,7 +29,7 @@ const AlreadySubmitted = ({handleDetailsSubmitted}) => {
             document.removeEventListener('mousedown', handleClickOutside);
             document.removeEventListener('keydown', handleEscapeKey);
         };
-    }, [handleDetailsSubmitted]);
+    }, []);
 
     
 

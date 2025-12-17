@@ -7,24 +7,29 @@ import LiveChatButton from "../../components/LiveChatButton";
 
 const MainSection = ({ openForm }) => {
     const searchParams = useSearchParams();
+    const [clearSideFilterFlag, setClearSideFilterFlag] = useState(false);
+
     const subCategoryId = searchParams.get('subCategoryId') ?? "";
     const subCategoryNameQp = searchParams.get('subCategoryName') ?? "";
-    const [clearSideFilterFlag, setClearSideFilterFlag] = useState(false);
-    useEffect(()=>{
-        setSubCategory(searchParams.get('subCategoryId') ?? "");
-    },[subCategoryId])
-    useEffect(()=>{
-        setSubCategoryName(searchParams.get('subCategoryName') ?? "");
-    },[subCategoryNameQp])
+
+    const [subCategory, setSubCategory] = useState(subCategoryId);
+    const [subCategoryName, setSubCategoryName] = useState(subCategoryNameQp);
+
+    useEffect(() => {
+        setSubCategory(subCategoryId);
+    }, [subCategoryId]);
+
+    useEffect(() => {
+        setSubCategoryName(subCategoryNameQp);
+    }, [subCategoryNameQp]);
 
     const [category, setCategory] = useState("");
-    const [subCategory, setSubCategory] = useState(subCategoryId);
     const [skillLevel, setSkillLevel] = useState("");
     const [courseType, setCourseType] = useState("");
     const [courseTracks, setCourseTracks] = useState("");
     const [categoryName, setCategoryName] = useState("");
-    const [subCategoryName, setSubCategoryName] = useState("");
-    const removeCategoryFilter = () => {
+    const removeCategoryFilter = (event) => {
+        event.preventDefault();
         subCategory ? setSubCategory("") : setCategory("");
         subCategory ? setSubCategoryName("") : setCategoryName("");
         setClearSideFilterFlag(prev => !prev);
@@ -40,7 +45,7 @@ const MainSection = ({ openForm }) => {
             <section>
                 <SearchFilter setSearchText={setSearchText} searchText={searchText} setSortByValue={setSortByValue} totalCoursesCount={totalCoursesCount}></SearchFilter>
                 {(categoryName || subCategoryName) && <div className="All-Category-Selected-option">
-                    <i className="fa-solid fa-xmark cursor-pointer" onClick={removeCategoryFilter}></i>
+                    <i className="fa-solid fa-xmark cursor-pointer" onClick={(e) => removeCategoryFilter(e)}></i>
                     <p className="mb-0 ms-2">{subCategoryName ? subCategoryName : (categoryName ? categoryName : "")}</p>
                 </div>}
                 <AllCourses {...{ category, subCategory, courseType, courseTracks, skillLevel, categoryName, subCategoryName, searchText, sortByValue, setTotalCoursesCount }}></AllCourses>

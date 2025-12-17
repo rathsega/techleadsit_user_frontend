@@ -121,7 +121,9 @@ const ReserveYourSeatPopupForm = ({ handleReserveSeatVisibility, popupProps, han
                 //localStorage.setItem('userDetails', JSON.stringify(formData));
                 setUserDetails(formData);
                 handleUserDetailsSubmissionStatus(true);
-                router.push(`/thankyou`);
+                const currentPageSlug = router.asPath.split('?')[0]; // Remove query params
+                const thankYouUrl = `/thankyou?fromPage=${encodeURIComponent('unknown')}&slug=${encodeURIComponent(currentPageSlug)}`;
+                window.location.href = thankYouUrl;
             } else {
                 setSuccess(false);
             }

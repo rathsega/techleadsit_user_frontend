@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, use } from "react";
 import { useRouter } from 'next/router';
 import httpService from "../../services/httpService";
 import dynamic from 'next/dynamic';
@@ -7,6 +7,7 @@ import 'react-phone-number-input/style.css';
 import { isValidPhoneNumber } from 'react-phone-number-input';
 import { useLoader } from "../../contexts/LoaderContext";
 import useLmsStore from "../../store/lmsStore";
+import Breadcrumb from "../../components/breadcrumb";
 
 function convertWebinarDateFormat(date) {
     const newDate = new Date(date);
@@ -49,7 +50,7 @@ const DirectPayments = ({ courseId }) => {
     const [phone, setPhone] = useState("");
     const [address, setAddress] = useState("");
     const [gstinNumber, setGstinNumber] = useState("");
-    const [selectedMethod, setSelectedMethod] = useState(null);
+    const [selectedMethod, setSelectedMethod] = useState('razorpay-emi');
 
     const { setLoading } = useLoader();
     const router = useRouter();
@@ -61,6 +62,8 @@ const DirectPayments = ({ courseId }) => {
     const [directPaymentId, setDirectPaymentId] = useState("");
     const [selectedCountryObj, setSelectedCountryObj] = useState(null);
     const [selectedStateObj, setSelectedStateObj] = useState(null);
+    const [slug, setSlug] = useState("");
+    const [showBreadcrumb, setShowBreadcrumb] = useState(false);
 
     // Prefill from cart visitor
     useEffect(() => {
@@ -70,6 +73,12 @@ const DirectPayments = ({ courseId }) => {
             setPhone(cartVisitor.phone || "");
         }
     }, [cartVisitor]);
+
+    useEffect(() => {
+        if (slug) {
+            setShowBreadcrumb(true);
+        }
+    }, [slug]);
 
     // Fetch countries
     const fetchCountries = async () => {
@@ -124,6 +133,22 @@ const DirectPayments = ({ courseId }) => {
                 setThumbnail(response.data.thumbnail || "/images/course/thumbnail.png");
                 const taxRates = response.data.course_selling_tax || { cgst: 0, sgst: 0, igst: 0, userState: "Telangana", userCountry: "IN" };
                 setTaxDetails(taxRates);
+
+                //Handle Slug based on slug count
+                const slugCount = response.data.data.slug_count || 0;
+                let course_details_slug = '';
+
+                if (slugCount === 1 || slugCount === 2) {
+                    course_details_slug = response.data.data.slug;
+                } else if (slugCount === 3 || slugCount === 4) {
+                    course_details_slug = `${response.data.data.category_slug}/${response.data.data.sub_category_slug}/${response.data.data.slug}`;
+                } else {
+                    course_details_slug = response.data.data.slug;
+                }
+
+                console.log("Course Details Slug : ", course_details_slug);
+
+                setSlug(course_details_slug);
 
                 // Set default country
                 let userCountryObj = countries.filter(country => country.iso === taxRates.userCountry);
@@ -200,13 +225,16 @@ const DirectPayments = ({ courseId }) => {
                                 `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
                             );
                             const data = await res.json();
+                            console.log("Address is  : ", data.address);
                             const countryCode = data.address.country_code?.toUpperCase() || "";
                             const stateName = data.address.state || "";
                             const cityName = data.address.city || data.address.town || data.address.village || "";
 
                             // Fetch countries and set default
                             const countryList = await fetchCountries();
-                            const foundCountry = countryList.find(c => c.iso === countryCode);
+                            const foundCountry = countryList.find(c => c.iso?.toUpperCase() === countryCode);
+                            console.log("Founded Country : ", foundCountry);
+
                             if (foundCountry) {
                                 setCountry(foundCountry.id);
                                 setCountryDisabled(true);
@@ -355,7 +383,17 @@ const DirectPayments = ({ courseId }) => {
             return;
         }
         setInvalidCouponMessage("");
+	const today = new Date();
+const startDate = new Date('2025-11-01');
+const endDate = new Date('2025-11-30');
 
+if ((coupon === 'EXTAVL12M8M' || coupon === 'EXTRAVL12M8M') &&
+    today >= startDate && today <= endDate) {
+    setCouponApplied(true);
+    setCouponDiscountText("🎉 You’ve unlocked 2 years of Membership + 8 months of Instance access!");
+    setInvalidCoupon(false);
+    return true;
+}
         try {
             let response;
             setLoading(true)
@@ -663,6 +701,8 @@ const DirectPayments = ({ courseId }) => {
     }, [couponApplied, couponDetails, email]);
 
     return (
+        <>
+        { showBreadcrumb && <Breadcrumb pageName="coursePayment" pageDetails={{ pageName: "coursePayment", slug: slug }} />}
         <section className="Payment-Gateway-section">
 
             <div className="pb-50 pb-20 table-align">
@@ -765,7 +805,7 @@ const DirectPayments = ({ courseId }) => {
                             <h5 className="checkout-box-h1">Select Payment Method</h5>
 
                             {/* PhonePe Payment Option */}
-                            <label className="radio-container bg-white">
+                            {/* <label className="radio-container bg-white">
                                 <div className="d-flex align-items-center">
                                     <input
                                         type="radio"
@@ -792,7 +832,7 @@ const DirectPayments = ({ courseId }) => {
                                         </div>
                                     </div>
                                 )}
-                            </label>
+                            </label> */}
 
                             {/* Razorpay EMI Option */}
                             <label className="radio-container bg-white">
@@ -935,6 +975,7 @@ const DirectPayments = ({ courseId }) => {
                 </div>
             </div>
         </section >
+        </>
     );
 };
 

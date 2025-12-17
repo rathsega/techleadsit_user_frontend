@@ -1,0 +1,554 @@
+{
+    "title": "PMP Certification Training",
+    "id":"GEN-PMP-OT-043",
+    "category":"PMP",
+    "duration":"1 Month",
+    "hero": {
+        "title": "Master PMP Training at Tech Leads IT with",
+        "animationTitle": [
+            "Expert-Led Sessions",
+            "Gain Real Project Insights",
+            "AI-Driven Learning Advantage."
+        ],
+        "shortDescription": "Accelerate your career in project management with our in-depth PMP online training! Learn core concepts, develop real-world skills, and gain practical experience with case-based scenarios. Our expert-led sessions help you become a confident, certified PMP professional.",
+        "brouchurePath": "/brochure/pmp-certification-training-course-brochure.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Project Life Cycle",
+            "Project Monitoring",
+            "Integration Management",
+            "Scope Management",
+            "Schedule Management",
+            "Cost Management",
+            "Quality Management",
+            "Resource Management",
+            "Risk Management",
+            "Procurement Management",
+            "Stakeholder Management",
+            "Agile & Hybrid Methods"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Project Management with Industry-Leading PMP Certification Training!",
+            "details": [
+                {
+                    "studentType": "Aspiring Project Managers",
+                    "points": [
+                        "Working professionals looking to advance their careers into project or program management roles.",
+                        "Team leads or coordinators aspiring to manage larger, cross-functional projects effectively.",
+                        "Professionals seeking structured project management knowledge aligned with PMI standards.",
+                        "Individuals aiming to fulfill the 35 PDUs requirement to apply for the PMP certification exam."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals ",
+                    "points": [
+                        "Mid to senior-level professionals managing projects, portfolios, or delivery teams.",
+                        "Project Managers preparing to validate their expertise with a globally recognized PMP credential.",
+                        "Professionals from IT, construction, manufacturing, or consulting domains managing complex projects.",
+                        "Certified CAPM® or Agile practitioners aiming to upgrade to PMP for higher leadership credibility."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "01 NOV 2025",
+            "demoTimeSlot": "9:30 AM – 1:30 PM ",
+            "demoTrainerName": "Join the PMP Certification Live Demo with Abhijit Ambulkar"
+        }
+    },
+    "curriculum": {
+        "curriculumPath": "XYZ",
+        "modules": [
+            {
+                "moduleName": "PMP Foundation",
+                "chapters": [
+                    {
+                        "chapterName": "Training Candidates Introduction (Background, experience, their motives, and expectations) ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Finding your “Why” for PMP (Ikigai / WhyPower)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Case Study Orientation (Setting up the Context)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Project Life Cycle & Building Blocks",
+                        "chaptherVideoPath": "",
+                        "lessons": [
+                            {
+                                "lessonName": "Project Initiation (Start the Project)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Project Planning (Plan the Project)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Project Execution (Lead Project Team)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Project Monitoring & Control (Support the Project Team Performance)",
+                                "lessonVideoPath": ""
+                            },
+                            {
+                                "lessonName": "Project Closure (Close Phase/Project)",
+                                "lessonVideoPath": ""
+                            }
+                        ]
+                    },
+                    {
+                        "chapterName": "Key Project Management Vocabulary & getting to the roots of the Fundamentals",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "The Project Management Processes “Recipe” – Inputs, Tools & Techniques, Outputs",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Deep Dive into Project Management (Traditional Approach)",
+                "chapters": [
+                    {
+                        "chapterName": "Integration Management (Holding all ends, the captain’s job)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Scope Management (What to Deliver)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Schedule Management (When to Deliver)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Cost Management (Within what budget)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Quality Management (Delivering right)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Resource Management (Getting the Team together)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Communication Management (What, how, when, and to whom)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Risk Management (Preparing for Unknowns)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Procurement Management (Getting External Help)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Stakeholder Management (Engaging everyone meaningfully for success)",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Deep Dive into Agile Methods",
+                "chapters": [
+                    {
+                        "chapterName": "Introduction to Agile",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Comparing Predictive, Iterative & Incremental Cycles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Scrum Overview & Other Agile Methodologies",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Agile Manifesto – Values, Principles, Practices",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Applying Agile in Real Projects",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Understanding PMBOK® 7th Edition",
+                "chapters": [
+                    {
+                        "chapterName": "Principles of Project Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Performance Domains",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Exam Preparation",
+                "chapters": [
+                    {
+                        "chapterName": "Tips, Tricks & Exam Mindset",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "PMP Application Process",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "2-Month & 3-Month Study Plans",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Conclusion & Takeaways",
+                "chapters": [
+                    {
+                        "chapterName": "Recap of Key Learnings",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "How to Apply PMP Knowledge in Your Projects Immediately",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            }
+        ],
+        "demoVideoPath": "",
+        "yourFutureBoss": {
+            "title": "Your Future Manager Is Looking For PMP-Certified Leaders!",
+            "shortDescription": "Unlock global career opportunities with PMP Certification — project management professionals are in high demand worldwide. Begin your certification journey today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet Your Trainer",
+            "shortDescription": "Mr. Abhijit Ambulkar, a seasoned Project Management professional with over 20 years of global experience, has successfully led complex programs across industries and geographies. His deep expertise in PMI methodologies, strategic planning, and leadership development makes him a trusted mentor for PMP aspirants. Abhijit’s passion for teaching and mentoring has helped professionals worldwide earn their PMP credentials with confidence. With a focus on practical project execution, exam strategies, and real-world case studies, he ensures learners gain both certification and competency. His unique approach blends frameworks with AI-driven tools to elevate project outcomes and leadership skills."
+        },
+        "sectionTwo": {
+            "title": "Learn from the Globally Recognized PMP Trainer",
+            "points": [
+                "PMP-Certified Project Management Professional",
+                "20+ years of expertise managing large-scale projects and global teams across IT and business domains.",
+                "Trained over 1,000 professionals, helping them achieve PMP success and advance into leadership roles."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Abhijit",
+            "trainerDesignation": "PMP Trainer ",
+            "avatarImagePath": "/images/courses/trainer/pmp.png"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Pratap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Satish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹10,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Certificate of Completion (35 PDUs)"
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹15,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification of Completion (35 PDUs)",
+                    "Post-training exam prep cohorts"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+         "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/pmp.png"
+        },
+        "portalView": {
+            "imagePath": "/images/courses/portal_view/pmp.webp"
+        }
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Learn the basics of Project Management as per PMI standards.",
+                    "Understand all process groups and knowledge areas clearly.",
+                    "Develop skills to plan, lead, and close projects successfully."
+                ]
+            },
+            {
+                "title": "Work on Real-Time Scenarios",
+                "points": [
+                    "Practice real-world case studies and sample PMP projects.",
+                    "Learn to apply concepts like scope, schedule, and risk control.",
+                    "Improve decision-making and leadership with guided examples."
+                ]
+            },
+            {
+                "title": "Exam & Profile Preparation",
+                "points": [
+                    "Get help to fill your PMP exam application step by step.",
+                    "Build a strong LinkedIn profile to show your project skills.",
+                    "Attempt mock tests and get trainer feedback on your progress."
+                ]
+            },
+            {
+                "title": "Industry Case Study & Practice Test",
+                "points": [
+                    "Work on live project case studies from different industries.",
+                    "Learn both Agile and traditional project management methods.",
+                    "Take practice exams to test your PMP readiness."
+                ]
+            },
+            {
+                "title": "Certification Readiness & Support",
+                "points": [
+                    "Earn 35 PDUs required for PMP certification eligibility.",
+                    "Get full support for PMI exam booking and preparation.",
+                    "Receive course completion certificate from Tech Leads IT."
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "Unlock Global Opportunities With PMP Certification — Are You Ready?",
+            "shortDescription": "Join the growing community of certified Project Managers. Earn your PMP credential and stand out in the global market with skills recognized by top organizations worldwide"
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Project Management Associate",
+                "Project Coordinator ",
+                "Assistant Project Manager",
+                "Project Manager ",
+                "Senior Project Manager",
+                "Program Manager",
+                "PMO Lead / Delivery Manager",
+                "Portfolio Manager",
+                "Director – Project Management"
+            ],
+            "averageFresherSalary": "4 - 8 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": ""
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "",
+        "shortDescription": ""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your PMP® course completion and 35 PDUs eligibility for the global PMP® exam.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "faqs": [
+        {
+            "question": "What Topics Are Covered in PMP Training?",
+            "answer": "Our PMP Training covers all key areas including Project Initiation, Planning, Execution, Monitoring & Control, and Closure. You will also learn Knowledge Areas like Integration, Scope, Schedule, Cost, Quality, Risk, and Stakeholder Management. For full details, please check our course brochure."
+        },
+        {
+            "question": "What Is the Course Schedule?",
+            "answer": "Training sessions are conducted on weekends, with 4-hour live classes each day (Saturday & Sunday, 9:30 AM – 1:30 PM IST). This format ensures flexibility and focus for working professionals."
+        },
+        {
+            "question": "Are Weekday Batches Available?",
+            "answer": "Currently, we only offer weekend batches. All live sessions are conducted on Saturdays and Sundays to maintain quality and learning continuity."
+        },
+        {
+            "question": "Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we provide recorded sessions for self-paced learners. Please note that real-time doubt clarification is not included in this mode."
+        },
+        {
+            "question": "Do You Provide Exam Application Assistance?",
+            "answer": "Yes! We guide you through the PMP application process step by step — from eligibility checks to PMI registration and scheduling your exam."
+        },
+        {
+            "question": "Can I Download the Training Videos?",
+            "answer": "No, downloads are not available. However, you will have secure access to all recordings and materials through our LMS for 1 year."
+        },
+        {
+            "question": "Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No, PMP Training is delivered as a complete certification preparation course covering all domains and process groups together."
+        },
+        {
+            "question": "Do You Provide Resume and Profile Guidance?",
+            "answer": "Yes, we provide professional resume-building and LinkedIn optimization support to help you showcase your PMP credentials effectively."
+        },
+        {
+            "question": "Is a Laptop or Desktop Required for the Training?",
+            "answer": "Yes, a laptop or desktop is required to access the LMS, attend online classes, and practice with case studies and mock exams."
+        },
+        {
+            "question": "Are There Any Prerequisites for This Training?",
+            "answer": "This course is designed for professionals with experience in managing projects or teams. Prior project management knowledge is helpful but not required, as the program bridges real-world experience with PMP principles."
+        },
+        {
+            "question": "Do You Teach from the Basics?",
+            "answer": "Absolutely. We start from project management fundamentals and progress step-by-step to advanced PMP concepts as per PMI standards."
+        },
+        {
+            "question": "Do You Provide Placement Assistance?",
+            "answer": "No, PMP is a certification-oriented course. However, we offer guidance to help you apply PMP principles in your current or future job roles effectively."
+        },
+        {
+            "question": " Do You Provide PMP Certification Support?",
+            "answer": "Yes, we support your PMP certification journey by sharing sample questions, study guides, and exam preparation strategies."
+        },
+        {
+            "question": "Do You Provide Study Materials and Notes?",
+            "answer": "Yes, all learners receive soft copies of study materials, class notes, and additional resources prepared by our certified PMP trainer."
+        },
+        {
+            "question": "Do You Provide Mock Exams and Practice Questions?",
+            "answer": "Yes, we offer module-wise mock tests and practice exams to help you evaluate your readiness for the actual PMP exam."
+        },
+        {
+            "question": "Do You Provide LMS Access for Learning?",
+            "answer": "Yes, all learners get 1-year access to our LMS, which includes session recordings, materials, and progress tracking."
+        },
+        {
+            "question": "Can I Retake the Course?",
+            "answer": "Yes, you can attend multiple upcoming PMP batches within 1 year at no additional cost under your active membership."
+        },
+        {
+            "question": "Will I Get a Course Completion Certificate?",
+            "answer": "Yes, after completing the training successfully, you will receive a Course Completion Certificate with 35 PDUs required for PMP exam eligibility."
+        },
+        {
+            "question": "Is Coding or Technical Knowledge Required?",
+            "answer": "No, PMP focuses on project management principles, people, and processes. It does not require any coding or programming knowledge."
+        },
+        {
+            "question": "Is One-on-One Training Available?",
+            "answer": "Yes, we offer personalized one-on-one sessions on request. Please note that the pricing for individual training differs from group batches."
+        }
+    ]
+}

@@ -4,17 +4,15 @@ import RequestForMoreInfo from "../blog/details/RequestForMoreInfo";
 import HappyStudentsCarousel from "../blog/details/HappyStudentsCarousel";
 import { useState, useEffect, useMemo, useRef } from "react";
 import httpService from "../../services/httpService";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 import { useLoader } from "../../contexts/LoaderContext";
 import LiveChatButton from "../../components/LiveChatButton";
 import NoResultsFound from "../../components/no_results_found";
-import UpcomingDemos from "./UpcomingDemos";
 
 
-const AllBlogs = ({ activeCategory, searchText, handlePopupformVisibility, handlePopupFormProps, sortByValue, blogType }) => {
+const AllBlogs = ({ activeCategory, searchText, openForm, sortByValue, blogType }) => {
     const [blogs, setBlogs] = useState([]);
     const [topBlogsList, setTopBlogsList] = useState([]);
-    const [categories, setCategories] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [totalBlogCount, setTotalBlogCount] = useState(0);
     const { setLoading } = useLoader();
@@ -24,9 +22,6 @@ const AllBlogs = ({ activeCategory, searchText, handlePopupformVisibility, handl
     const blogsPerPage = 14;
     const currentBlogId = 0;
     const router = useRouter();
-    const handleBlogRedirection = (id) => {
-        router.push("/blog/details/" + id);
-    }
 
     const scrollToBlogsIfNotVisible = () => {
         const element = allBlogsRef.current;
@@ -40,17 +35,6 @@ const AllBlogs = ({ activeCategory, searchText, handlePopupformVisibility, handl
         }
     };
 
-    // Debounced search to optimize API calls
-    const debouncedText = (value, delay = 500) => {
-        const [debouncedValue, setDebouncedValue] = useState(value);
-
-        useEffect(() => {
-            const handler = setTimeout(() => setDebouncedValue(value), delay);
-            return () => clearTimeout(handler);
-        }, [value, delay]);
-
-        return debouncedValue;
-    };
 
     useEffect(() => {
         const getUpcomingAdvertisements = async () => {
@@ -68,18 +52,6 @@ const AllBlogs = ({ activeCategory, searchText, handlePopupformVisibility, handl
 
     // ✅ Fetch Categories and Top Blogs on Mount
     useEffect(() => {
-        const fetchCategories = async () => {
-            try {
-                setLoading(true)
-                const response = await httpService.get("blogs/getActiveBlogCategories");
-                setLoading(false)
-                if (response?.data?.data) {
-                    setCategories(response.data.data);
-                }
-            } catch (error) {
-                console.error("Error fetching blog categories:", error);
-            }
-        };
 
         const getTopBlogs = async () => {
             try {
@@ -94,7 +66,6 @@ const AllBlogs = ({ activeCategory, searchText, handlePopupformVisibility, handl
             }
         };
 
-        fetchCategories();
         getTopBlogs();
     }, []);
 
@@ -135,8 +106,21 @@ const AllBlogs = ({ activeCategory, searchText, handlePopupformVisibility, handl
     const totalPages = Math.ceil(memoizedTotalBlogCount / blogsPerPage);
 
     const openBlog = (titleSlug, id) => {
+        console.log('Router available:', !!router);
+        console.log('Router push function:', typeof router.push);
+
         localStorage.setItem(titleSlug, id);
-        router.push("/blog/details/" + titleSlug);
+
+        const blogUrl = "/blog/details/" + titleSlug;
+        console.log('Navigating to:', blogUrl);
+
+        try {
+            router.push(blogUrl);
+        } catch (error) {
+            console.error('Navigation error:', error);
+            // Fallback
+            window.location.href = blogUrl;
+        }
     }
 
     const slugify = (title) => {
@@ -276,8 +260,7 @@ const AllBlogs = ({ activeCategory, searchText, handlePopupformVisibility, handl
                     <Image src="/images/blogs/category-blog-have-que.png" alt="have-questions-img" loading="lazy" className="blog-category-blog-img" style={{ "maxWidth": "100%", "width": "100%", "height": "auto" }} width="300" height="188" />
                     <LiveChatButton className="blog-category-live-chat"></LiveChatButton>
                     <button className="blog-category-request-a-call" onClick={() => {
-                        handlePopupformVisibility();
-                        handlePopupFormProps({ title: 'Request A Call back', buttonName: 'Submit' });
+                        openForm('Request A Call back', null, null);
                     }}>Request a Call Back</button>
                 </div>
             </div>

@@ -1,11 +1,11 @@
+
 import React, { useEffect, useState, useRef, lazy, useCallback } from "react";
 import httpService from "../services/httpService";
 import { useRouter } from 'next/router';
 import { useLoader } from "../contexts/LoaderContext";
-const CourseRegistrationForm = lazy(() => import('./course/RegistrationForm'));
-const AlreadySubmitted = lazy(() => import('../pages/blog/details/already_submitted'));
 import Image from "next/image";
 import { useExpiringLocalStorage } from "../services/useExpiringLocalStorage";
+import useLmsStore from '../store/lmsStore';
 const Header = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [isTab, setTab] = useState(false);
@@ -19,6 +19,8 @@ const Header = () => {
     const [categories, setCategories] = useState([]);
     const [categoriesAndCourses, setCategoriesAndCourses] = useState([]);
     const [mouseAt, setMouseAt] = useState(null);
+    const setPopupFormProps = useLmsStore((state) => state.setPopupFormProps);
+    const setCourseList = useLmsStore((state) => state.setCourseList);
 
     const formRef = useRef(null);
     const overlayRef = useRef(null);
@@ -30,30 +32,12 @@ const Header = () => {
         }
     }, []);
 
-    const hidePopupForm = useCallback(() => {
-        if (formRef.current && overlayRef.current) {
-            formRef.current.style.display = "none";
-            overlayRef.current.style.display = "none";
-        }
-    }, []);
-
-    const [formVisibility, setFormVisibility] = useState(false);
-    const [formFields, setFormFields] = useState([]);
-    const [heading, setHeading] = useState("");
-    const [buttonLabel, setButtonLabel] = useState("");
-    const [formSuccessCallback, setFormSuccessCallback] = useState(null);
-
     const formConfigs = {
-        "Enquiry Now": {
+        "Book A Demo": {
             fields: ["fullName", "email", "phone", "qualification", "message"],
-            heading: "Enquiry Now",
-            buttonLabel: "Enquiry Now",
+            heading: "Book A Demo",
+            buttonLabel: "Book A Demo",
         }
-    }
-
-    const [detailsSubmitted, setDetailsSubmitted] = useState(false);
-    const handleDetailsSubmitted = () => {
-        setDetailsSubmitted(false);
     }
 
     const now = new Date();
@@ -67,32 +51,31 @@ const Header = () => {
 
     const openForm = useCallback((formType, onSuccessCallback) => {
         const config = formConfigs[formType];
+        console.log("Opening form of type:", formType, "with config:", config);
 
         // let userDetails = localStorage.getItem("userDetails");
-        if (userDetails) {
-            setDetailsSubmitted(true);
+        // Double-check localStorage directly as well
+        const currentUserDetails = userDetails || localStorage.getItem("userDetails");
+        if (currentUserDetails) {
+            setPopupFormProps({visible: false, alreadySubmitted: true});
+            console.log("User details already submitted:", currentUserDetails);
         } else {
             if (config) {
-                setFormFields(config.fields);
-                setHeading(config.heading);
-                setButtonLabel(config.buttonLabel);
-                setFormVisibility(true);
-                handleButtonClick();
-            }
-            if (onSuccessCallback) {
-                setFormSuccessCallback(() => onSuccessCallback);
-            } else {
-                setFormSuccessCallback(null); // or undefined
+                setPopupFormProps({
+                    visible: true,
+                    alreadySubmitted: false,
+                    fields: config.fields,
+                    heading: config.heading,
+                    buttonLabel: config.buttonLabel,
+                    pageName: "Header - " + config.heading,
+                    courseTitle: "",
+                    courseId: "",
+                    onSuccess: () => { },
+                });
             }
         }
 
     }, [handleButtonClick]);
-
-    const handleUserDetailsSubmissionStatus = (status) => {
-        if (status) {
-            setTimeout(() => { hidePopupForm() }, 3000)
-        }
-    }
 
     const { setLoading } = useLoader();
     const router = useRouter();
@@ -137,6 +120,7 @@ const Header = () => {
                             });
                         });
                     });
+                    setCourseList(courseList);
                     setCategories(categoryList);
                 }
             } catch (e) {
@@ -156,15 +140,6 @@ const Header = () => {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
-
-    /*useEffect(() => {
-        Object.entries(panelsContent).forEach(([key, html]) => {
-            const panel = document.getElementById(key);
-            const mobilePanel = document.getElementById(`mobile-panel-${key}`);
-            if (panel) panel.innerHTML = html;
-            if (mobilePanel) mobilePanel.innerHTML = html;
-        });
-    }, []);*/
 
     useEffect(() => {
         const handleClickOutside = (e) => {
@@ -441,13 +416,13 @@ const Header = () => {
                 <a href="/careers" className="TLI-H-M-Main-Course-TLI-Header-a-hover">Careers</a>
                 <a href="/contactus" className="TLI-H-M-Main-Course-TLI-Header-a-hover">Contact Us</a>
                 <div className="TLI-H-M-Main-Course-TLI-Mobile-Header">
-                    <button className="TLI-H-M-Header-Enquiry-MB-Btn" onClick={() => openForm("Enquiry Now")}> Enquiry Now</button>
+                    <button className="TLI-H-M-Header-Enquiry-MB-Btn" onClick={() => openForm("Book A Demo")}> Book A Demo</button>
                     <a href="/signin" className="TLI-H-M-Main-Course-TLI-MB-Common-Header-login-btn">Login now!</a>
                 </div>
             </nav>
 
             <div className="TLI-H-M-Main-Course-TLI-Common-Header-icons">
-                <button className="TLI-H-M-Header-Enquiry-Btn" onClick={() => openForm("Enquiry Now")}> Enquiry Now</button>
+                <button className="TLI-H-M-Header-Enquiry-Btn" onClick={() => openForm("Book A Demo")}> Book A Demo</button>
                 <a href="/signin" className="TLI-H-M-Main-Course-TLI-Common-Header-login-btn">Login now!</a>
                 <label className="TLI-H-M-Main-Course-TLI-Common-Header-hamburger">
                     <input
@@ -465,28 +440,10 @@ const Header = () => {
                 </label>
             </div>
         </header>
-            <div className="Main-Course-Overlay" ref={formRef} style={{ display: "none" }}></div>
-            <CourseRegistrationForm
-                overlayRef={overlayRef}
-                visible={formVisibility}
-                fields={formFields}
-                heading={heading}
-                buttonLabel={buttonLabel}
-                hidePopupForm={hidePopupForm}
-                pageName="Header - Enquiry"
-                onSuccess={(data) => {
-                    //console.log("Success!", data);
-                    handleUserDetailsSubmissionStatus(true);
-                    if (formSuccessCallback) {
-                        formSuccessCallback(data); // ← This must be triggered here
-                        setFormSuccessCallback(null); // reset after call
-                    }
-                }}
-            ></CourseRegistrationForm>
-            {detailsSubmitted && <><div className="Main-Course-Overlay"></div><AlreadySubmitted handleDetailsSubmitted={handleDetailsSubmitted}></AlreadySubmitted></>}
-
+            
         </>
     );
 };
 
 export default Header;
+

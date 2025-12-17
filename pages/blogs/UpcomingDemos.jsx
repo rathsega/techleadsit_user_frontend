@@ -3,10 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import httpService from "../../services/httpService";
 import { useLoader } from "../../contexts/LoaderContext";
 import { useRouter } from "next/router";
-const UpcomingDemos = ({ handleReserveSeatVisibility, setCourseName, setDemoDate }) => {
+
+
+const UpcomingDemos = ({ openForm }) => {
     const [upcomingDemos, setUpcomingDemos] = useState([]);
     const router = useRouter();
-        const { setLoading } = useLoader();
+    const { setLoading } = useLoader();
+    
     useEffect(() => {
         if (typeof window !== "undefined") {
             import("bootstrap/dist/js/bootstrap.bundle.min.js").then((bootstrap) => {
@@ -62,12 +65,6 @@ const UpcomingDemos = ({ handleReserveSeatVisibility, setCourseName, setDemoDate
         return { formattedDate, formattedTime };
     };
 
-    const openForm = (courseName, demoDate) => {
-        setCourseName(courseName);
-        setDemoDate(demoDate);
-        handleReserveSeatVisibility();
-    }
-
     const openCourse = (slug) => {
         if (slug) {
             setLoading(true)
@@ -84,9 +81,9 @@ const UpcomingDemos = ({ handleReserveSeatVisibility, setCourseName, setDemoDate
                 {
                     upcomingDemos?.map((demo, index) => (
                         <div className={`carousel-item ${index === 0 ? "active" : ""}`} key={index}>
-                            <div className="live-demo-card cursor-pointer"  onClick={() => openForm(demo?.courseTitle, formatDateTimeIST(demo?.demoDate)?.formattedDate + " " + formatDateTimeIST(demo?.demoDate)?.formattedTime)}>
+                            <div className="live-demo-card cursor-pointer"  onClick={() => openForm("Reserve Your Seat", null, {demoDate: formatDateTimeIST(demo?.demoDate)?.formattedDate + " " + formatDateTimeIST(demo?.demoDate)?.formattedTime, courseName: demo?.courseTitle})}>
                                 <img src="/images/blogs/Announcement-slider.png" alt="Sliding-image" className="Slider-image cursor-pointer" onClick={(e)=>{ e.stopPropagation(); openCourse(demo?.slug)}}  />
-                                <div className="Demo-detail-grid cursor-pointer" onClick={(e) => {  e.stopPropagation(); openForm(demo?.courseTitle, formatDateTimeIST(demo?.demoDate)?.formattedDate + " " + formatDateTimeIST(demo?.demoDate)?.formattedTime)}}>
+                                <div className="Demo-detail-grid cursor-pointer" onClick={(e) => {  e.stopPropagation(); openForm("Reserve Your Seat", null, {demoDate: formatDateTimeIST(demo?.demoDate)?.formattedDate + " " + formatDateTimeIST(demo?.demoDate)?.formattedTime, courseName: demo?.courseTitle})}}>
                                     <span className="Upcoming-demo-detail">Upcoming Demo Sessions</span>
                                     <p className="Upcoming-demo-course-name">{demo?.courseTitle}</p>
                                     <img src="/images/blogs/live-demo-img.svg" alt="Demo-Type-image" className="category-carousal-img" />
@@ -102,8 +99,8 @@ const UpcomingDemos = ({ handleReserveSeatVisibility, setCourseName, setDemoDate
                                         </div>
                                     </div>
                                 </div>
-                                <div className="Reserve-CTA cursor-pointer" onClick={(e) => {  e.stopPropagation(); openForm(demo?.courseTitle, formatDateTimeIST(demo?.demoDate)?.formattedDate + " " + formatDateTimeIST(demo?.demoDate)?.formattedTime)}}>
-                                    <button className="Reserve-seat-CTA" onClick={(e) => {  e.stopPropagation(); openForm(demo?.courseTitle, formatDateTimeIST(demo?.demoDate)?.formattedDate + " " + formatDateTimeIST(demo?.demoDate)?.formattedTime)}}>Reserve Your Seat</button>
+                                <div className="Reserve-CTA cursor-pointer" onClick={(e) => {  e.stopPropagation(); openForm("Reserve Your Seat", null, {demoDate: formatDateTimeIST(demo?.demoDate)?.formattedDate + " " + formatDateTimeIST(demo?.demoDate)?.formattedTime, courseName: demo?.courseTitle})}}>
+                                    <button className="Reserve-seat-CTA" onClick={(e) => {  e.stopPropagation(); openForm("Reserve Your Seat", null, {demoDate: formatDateTimeIST(demo?.demoDate)?.formattedDate + " " + formatDateTimeIST(demo?.demoDate)?.formattedTime, courseName: demo?.courseTitle})}}>Reserve Your Seat</button>
                                     <p className="Reserve-seat-OP">Grab this now, limited seats available</p>
                                 </div>
                             </div>

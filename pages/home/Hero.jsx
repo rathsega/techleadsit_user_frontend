@@ -6,7 +6,7 @@ import { useLoader } from "../../contexts/LoaderContext";
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import httpService from "../../services/httpService";
 import Image from 'next/image'; // Importing Image component from next.js for optimized image handling
-
+import DemoRequestForm from "./DemoRequestForm";
 const Hero = React.memo(() => {
     const router = useRouter();
     const { setLoading } = useLoader();
@@ -184,7 +184,11 @@ const Hero = React.memo(() => {
                 </div>
             </section>
 
+
             <Counts></Counts>
+
+            <DemoRequestForm></DemoRequestForm>
+
 
             <Categories></Categories>
 

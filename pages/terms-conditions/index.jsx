@@ -11,20 +11,20 @@ const TermsConditions = () => {
 
             <div className="C-Terms-Conditions-content-Section">
                 <h1 className="T-C-Main-Heading">Terms of Use & Service Agreement</h1>
-                <p className="T-C-Main-Para">Welcome to Tech Leads IT. The following Terms and Conditions govern your use of our
+                <p className="T-C-Main-Para">Welcome to <b>Tech Leads IT Solutions Private Limited</b>. The following Terms and Conditions govern your use of our
                     website and services. Before using any of our services, please carefully read these terms. By accessing
                     our platform, you agree to abide by all the guidelines and policies outlined here.</p>
                 <h2 className="T-C-Sub-Main-Heading">
                     1. Agreement to Terms
                 </h2>
-                <p className="T-C-Sub-Para">By using the services provided by Tech Leads IT, you agree to be bound by these
+                <p className="T-C-Sub-Para">By using the services provided by <b>Tech Leads IT Solutions Private Limited</b>, you agree to be bound by these
                     Terms and Conditions. Should you disagree with these terms, kindly do not use our services.</p>
 
                 <h2 className="T-C-Sub-Main-Heading mb-4">
                     2. Service Details & Accessibility
                 </h2>
                 <h2 className="T-C-Sub-Heading">Instance Access Validity - 6 Months</h2>
-                <p className="T-C-Sub-Para">At Tech Leads IT Training, we understand the importance of providing our
+                <p className="T-C-Sub-Para">At <b>Tech Leads IT Solutions Private Limited</b> Training, we understand the importance of providing our
                     participant sample opportunities to practise and apply the skills learned during our training
                     programs. As part of our commitment to offering a dynamic and hands-on learning experience, we are
                     pleased to announce that instance access to training environments will be valid for six months from
@@ -53,7 +53,7 @@ const TermsConditions = () => {
                     our support team or training coordinator for details on the renewal process and associated fees.</p>
 
                 <h2 className="T-C-Sub-Heading">Video Access Validity - 12 Months</h2>
-                <p className="T-C-Sub-Para">At Tech Leads IT Training, we understand the importance of flexibility and
+                <p className="T-C-Sub-Para">At <b>Tech Leads IT Solutions Private Limited</b> Training, we understand the importance of flexibility and
                     convenience in your learning journey. To support your ongoing professional development, we are
                     pleased to offer an extended video access validity period of 12 months for our training programs.
                 </p>
@@ -81,7 +81,7 @@ const TermsConditions = () => {
                     support team or training coordinator for details on the renewal process and associated fees.</p>
 
                 <h2 className="T-C-Sub-Heading">1 Year Membership for Multiple Batches</h2>
-                <p className="T-C-Sub-Para">At Tech Leads IT Training, we are committed to providing you with a flexible and
+                <p className="T-C-Sub-Para">At <b>Tech Leads IT Solutions Private Limited</b> Training, we are committed to providing you with a flexible and
                     comprehensive learning experience. With our exclusive 1 Year Membership, participants can attend
                     multiple batches of the course they have initially enrolled in during the membership period.</p>
 
@@ -127,32 +127,32 @@ const TermsConditions = () => {
                 </p>
 
                 <h2 className="T-C-Sub-Heading">Account Security & Confidentiality</h2>
-                <p className="T-C-Sub-Para">All content on the Tech Leads IT website, including text, graphics, logos, and
-                    images, is the property of Tech Leads IT and is protected by intellectual property laws. No part of
+                <p className="T-C-Sub-Para">All content on the <b>Tech Leads IT Solutions Private Limited</b> website, including text, graphics, logos, and
+                    images, is the property of <b>Tech Leads IT Solutions Private Limited</b> and is protected by intellectual property laws. No part of
                     this content may be used without authorization.</p>
 
                 <h2 className="T-C-Sub-Main-Heading">4. Intellectual Property Rights</h2>
-                <p className="T-C-Sub-Para">All content on the Tech Leads IT website, including text, graphics, logos, and
-                    images, is the property of Tech Leads IT and is protected by intellectual property laws. No part of
+                <p className="T-C-Sub-Para">All content on the <b>Tech Leads IT Solutions Private Limited</b> website, including text, graphics, logos, and
+                    images, is the property of <b>Tech Leads IT Solutions Private Limited</b> and is protected by intellectual property laws. No part of
                     this content may be used without authorization.</p>
 
                 <h2 className="T-C-Sub-Main-Heading">5. Disclaimer & Liability Limitations</h2>
-                <p className="T-C-Sub-Para">Tech Leads IT is not liable for any direct, indirect, incidental, special, or
+                <p className="T-C-Sub-Para"><b>Tech Leads IT Solutions Private Limited</b> is not liable for any direct, indirect, incidental, special, or
                     consequential damages arising from the use of our services or the inability to use them.</p>
 
                 <h2 className="T-C-Sub-Main-Heading mb-4">6. Course Access & Termination Policy</h2>
                 <h2 className="T-C-Sub-Heading">Course Completion & Access Revocation</h2>
-                <p className="T-C-Sub-Para">After completing the course period, Tech Leads IT automatically revokes your
+                <p className="T-C-Sub-Para">After completing the course period, <b>Tech Leads IT Solutions Private Limited</b> automatically revokes your
                     access.</p>
 
                 <h2 className="T-C-Sub-Heading">Service Termination Rights</h2>
-                <p className="T-C-Sub-Para">Tech Leads IT reserves the right to terminate or suspend your access to our
+                <p className="T-C-Sub-Para"><b>Tech Leads IT Solutions Private Limited</b> reserves the right to terminate or suspend your access to our
                     services without notice, including for violating these Terms and Conditions.</p>
 
                 <h2 className="T-C-Sub-Main-Heading">7. Contact & Support</h2>
                 <p className="T-C-Sub-Heading">For any questions or concerns regarding these Terms and Conditions, please
                     email us at <a href="mailto:info@techleadsit.com">info@techleadsit.com</a></p>
-                <p className="T-C-Sub-Para">By using Tech Leads IT services, you acknowledge that you have read, understood,
+                <p className="T-C-Sub-Para">By using <b>Tech Leads IT Solutions Private Limited</b> services, you acknowledge that you have read, understood,
                     and agree to be bound by these Terms and Conditions.</p>
 
             </div>

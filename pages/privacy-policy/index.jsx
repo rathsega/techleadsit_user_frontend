@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
 
 
         <div className="C-Privacy-Policy-content-Section">
-            <p className="P-P-Main-Para">Welcome to Tech Leads IT Online Training. This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you access our online training platform. By using our services, you agree to the terms outlined in this policy.</p>
+            <p className="P-P-Main-Para">Welcome to <b>Tech Leads IT Solutions Private Limited</b>. This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you access our online training platform. By using our services, you agree to the terms outlined in this policy.</p>
                 <h2 className="P-P-Sub-Main-Heading">
                     Information We Collect
                 </h2>

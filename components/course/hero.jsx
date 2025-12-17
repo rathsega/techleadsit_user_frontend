@@ -1,26 +1,27 @@
 import React, { useCallback } from "react";
-import SuccessStories from "./hero_success_stories";
-import HeroForm from "./hero_form";
-import HeroSuccessStoriesForm from "./hero_success_stories_form";
+import dynamic from "next/dynamic";
+const SuccessStories = dynamic(() => import("./hero_success_stories"))
+const HeroForm = dynamic(() => import('./hero_form'))
+const HeroSuccessStoriesForm = dynamic(() => import('./hero_success_stories_form'))
 import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 
 const Hero = React.memo(({ data, handleButtonClick, openForm, courseTitle, handleYoutibeOpenVideoPopup, demoVideoPath }) => {
     const brouchurePath = data?.brouchurePath;
     const now = new Date();
-  const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
 
-  const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
-    "userDetails",
-    null,
-    endOfDay
-  );
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
     const handleBrochureDownload = useCallback(() => {
         // const userDetails = localStorage.getItem("userDetails");
 
         if (userDetails) {
             downloadBrochure();
         } else {
-            openForm("Download Course Brochure");
+            openForm("Download Course Brochure", downloadBrochure);
         }
     });
 
@@ -30,14 +31,14 @@ const Hero = React.memo(({ data, handleButtonClick, openForm, courseTitle, handl
         if (userDetails) {
             handleYoutibeOpenVideoPopup();
         } else {
-            openForm("Watch Demo Video");
+            openForm("Watch Demo Video", handleYoutibeOpenVideoPopup);
         }
     }, [handleYoutibeOpenVideoPopup, openForm]);
 
     const downloadBrochure = useCallback(() => {
         const link = document.createElement("a");
         link.href = brouchurePath; // Ensure this is a valid string URL
-        link.download = "brouchure.pdf";
+        link.download = courseTitle +  ".pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -101,12 +102,8 @@ const Hero = React.memo(({ data, handleButtonClick, openForm, courseTitle, handl
         </section >
     )
 }, (prevProps, nextProps) => {
-    return JSON.stringify(prevProps.data) === JSON.stringify(nextProps.data) &&
-        prevProps.handleButtonClick === nextProps.handleButtonClick &&
-        prevProps.openForm === nextProps.openForm &&
-        prevProps.courseTitle === nextProps.courseTitle &&
-        prevProps.handleYoutibeOpenVideoPopup === nextProps.handleYoutibeOpenVideoPopup &&
-        prevProps.demoVideoPath === nextProps.demoVideoPath;
+    return 
+        prevProps.courseTitle === nextProps.courseTitle
 });
 
 export default Hero;

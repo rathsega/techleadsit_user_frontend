@@ -8,6 +8,7 @@ import SocialLinks from "./SocialLinks";
 import StartYourJourney from "./StartYourourney";
 import RelatedJobs from "./RelatedJobs";
 import ExploreBlogs from "./ExploreBlogs";
+import Breadcrumb from "../../components/breadcrumb";
 const Career = () => {
     const router = useRouter();
     const { id } = router.query;
@@ -50,6 +51,8 @@ const Career = () => {
         }
     }, [id]);
     return (
+        <>
+        <Breadcrumb pageDetails={{ pageName: "careerJobDescription", jobId: id }} />
         <section className="Main-Course-CJD-Main-Section career-body">
              <div>
                 <Hero details={jobDetails}></Hero>
@@ -62,6 +65,7 @@ const Career = () => {
                 <ExploreBlogs></ExploreBlogs>
             </div>
         </section>
+        </>
     )
 }
 

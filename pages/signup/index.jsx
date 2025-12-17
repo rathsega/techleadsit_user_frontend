@@ -146,10 +146,10 @@ const Signup = () => {
                     </button>
                     <div className="Main-Course-User-Authentication-Signup-left-side">
                         <div className="Main-Course-User-Authentication-Signup-slider">
-                            <img src="/images/auth/Main-Course-SignUI-Rotating-Img-1.svg" className="Main-Course-User-Authentication-Signup-slide-img" />
-                            <img src="/images/auth/Main-Course-SignUI-Rotating-Img-2.svg" className="Main-Course-User-Authentication-Signup-slide-img" />
-                            <img src="/images/auth/Main-Course-SignUI-Rotating-Img-3.svg" className="Main-Course-User-Authentication-Signup-slide-img" />
-                            <img src="/images/auth/Main-Course-SignUI-Rotating-Img-4.svg" className="Main-Course-User-Authentication-Signup-slide-img" />
+                            <img src="/images/auth/Main-Course-SignUI-Rotating-Img-1.svg" alt="rotating image" className="Main-Course-User-Authentication-Signup-slide-img" />
+                            <img src="/images/auth/Main-Course-SignUI-Rotating-Img-2.svg" alt="rotating image" className="Main-Course-User-Authentication-Signup-slide-img" />
+                            <img src="/images/auth/Main-Course-SignUI-Rotating-Img-3.svg" alt="rotating image" className="Main-Course-User-Authentication-Signup-slide-img" />
+                            <img src="/images/auth/Main-Course-SignUI-Rotating-Img-4.svg" alt="rotating image" className="Main-Course-User-Authentication-Signup-slide-img" />
                         </div>
                         <img src="/images/auth/Main-Course-TechLeads-Logo.svg" className="Main-Course-TechLeads-Logo" alt="TechLeads Logo" />
                     </div>

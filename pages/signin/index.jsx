@@ -131,7 +131,7 @@ const Signin = () => {
         const form = document.createElement('form');
         form.method = 'GET';
         form.action = url;
-        form.target = '_blank';
+        // form.target = '_blank';
 
         for (let key in data) {
             const input = document.createElement('input');
@@ -150,7 +150,7 @@ const Signin = () => {
         const form = document.createElement('form');
         form.method = 'POST';
         form.action = url;
-        form.target = '_blank';
+        // form.target = '_blank';
 
         for (let key in data) {
             const input = document.createElement('input');
@@ -210,10 +210,10 @@ const Signin = () => {
                 </button>
                 <div className="Main-Course-User-Authentication-Signin-left-side">
                     <div className="Main-Course-User-Authentication-Signin-slider">
-                        <img src="/images/auth/Main-Course-SignUI-Rotating-Img-1.svg" className="Main-Course-User-Authentication-Signin-slide-img" />
-                        <img src="/images/auth/Main-Course-SignUI-Rotating-Img-2.svg" className="Main-Course-User-Authentication-Signin-slide-img" />
-                        <img src="/images/auth/Main-Course-SignUI-Rotating-Img-3.svg" className="Main-Course-User-Authentication-Signin-slide-img" />
-                        <img src="/images/auth/Main-Course-SignUI-Rotating-Img-4.svg" className="Main-Course-User-Authentication-Signin-slide-img" />
+                        <img src="/images/auth/Main-Course-SignUI-Rotating-Img-1.svg" alt='rotating image' className="Main-Course-User-Authentication-Signin-slide-img" />
+                        <img src="/images/auth/Main-Course-SignUI-Rotating-Img-2.svg" alt='rotating image' className="Main-Course-User-Authentication-Signin-slide-img" />
+                        <img src="/images/auth/Main-Course-SignUI-Rotating-Img-3.svg" alt='rotating image' className="Main-Course-User-Authentication-Signin-slide-img" />
+                        <img src="/images/auth/Main-Course-SignUI-Rotating-Img-4.svg" alt='rotating image' className="Main-Course-User-Authentication-Signin-slide-img" />
                     </div>
                     <img src="/images/auth/Main-Course-TechLeads-Logo.svg" className="Main-Course-TechLeads-Logo" alt="TechLeads Logo" />
                 </div>

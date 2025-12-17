@@ -19,9 +19,10 @@ const SuccessStories = React.memo(({ data }) => {
                 width={513}
                 height={548}
                 alt="Phone Image"
-                fetchPriority="high"
                 priority
-                style={{width: "100%", height: "100%", objectFit: "contain", display: "block"}}
+                placeholder="blur"
+                blurDataURL="data:image/webp;base64,UklGRoAAAABXRUJQVlA4WAoAAAAQAAAACAAACQAAQUxQSC8AAAABN6CQbQTI32WO90JEROqAgjaSot4dYAgpn38xBA0R/Y875xod/alPoBUikR39AQBWUDggKgAAALABAJ0BKgkACgABQCYlnAJ0AQ72puAA/v5QFEqRsiY6KShiCyFV/"
+                style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }}
             />
 
             <div className="carousel-overlay">

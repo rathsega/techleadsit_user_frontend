@@ -5,8 +5,7 @@ import React, {
   useState,
   useImperativeHandle,
   forwardRef,
-  useEffect,
-  memo
+  useEffect
 } from 'react';
 
 // Dynamically import the real component for SSR-safe usage
@@ -16,8 +15,6 @@ const SmartReCaptcha = React.memo(forwardRef(
   ({ siteKey, onTokenChange, theme = 'light', size = 'normal' }, ref) => {
     const recaptchaRef = useRef(null);
     const [timerId, setTimerId] = useState(null);
-
-    console.log("Loading SmartReCaptcha component");
 
     // Expose resetCaptcha function to parent
     useImperativeHandle(ref, () => ({

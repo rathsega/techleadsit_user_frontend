@@ -214,12 +214,16 @@ const UpcomingDemoSession = React.memo(({ data, courseTitle, courseId, demos, op
             return new Date(date.getTime() + 5.5 * 60 * 60 * 1000);
         };
 
+        const toUTC = (utcDateStr) => {
+            return new Date(utcDateStr);
+        };
+
         const now = new Date();
         let nearest = null;
         let minDiff = Infinity;
 
         demos.forEach((demo) => {
-            const demoDate = toIST(demo.date);
+            const demoDate = toUTC(demo.date);
             const diff = demoDate - now;
             if (diff > 0 && diff < minDiff) {
                 minDiff = diff;
@@ -234,7 +238,7 @@ const UpcomingDemoSession = React.memo(({ data, courseTitle, courseId, demos, op
             day: "2-digit",
             month: "long",
             year: "numeric",
-            timeZone: "Asia/Kolkata",
+            timeZone: "UTC",
         });
 
         // Format time: 8:00 AM
@@ -242,7 +246,7 @@ const UpcomingDemoSession = React.memo(({ data, courseTitle, courseId, demos, op
             hour: "numeric",
             minute: "2-digit",
             hour12: true,
-            timeZone: "Asia/Kolkata",
+            timeZone: "UTC",
         });
 
         return { date: dateStr, time: timeStr };

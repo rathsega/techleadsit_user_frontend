@@ -80,5 +80,171 @@
                 "name": "Tech Leads IT"
             }
         }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the Oracle Fusion Financials Course and why is it important?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The Oracle Fusion Financials Course is designed to teach core financial modules such as General Ledger (GL), Accounts Payable (AP), Accounts Receivable (AR), Fixed Assets (FA), and Cash Management on Oracle Cloud. It is important because global enterprises are rapidly adopting Oracle Fusion Cloud ERP, creating huge demand for trained professionals."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Who should join Oracle Fusion Financials Training – freshers or working professionals?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Both! Freshers can gain industry-relevant ERP knowledge to start their career, while working professionals (from finance, accounting, or ERP background) can upgrade their skills to advance into functional consultant or ERP specialist roles."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Who is Tech Leads IT?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tech Leads IT is a leading Oracle training and consulting company specializing in Oracle Fusion Financials Training and Oracle Fusion Financials Online Training. With 12+ years of experience, certified trainers, real-time project exposure, and proven placement assistance, Tech Leads IT has helped thousands of learners achieve successful ERP careers."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why is Tech Leads IT considered the No.1 training provider in the industry?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tech Leads IT stands out because of its practical, job-oriented approach, updated Oracle Cloud content, and dedicated support. Their focus on live project scenarios, resume building, and interview preparation ensures learners are job-ready — which is why they are rated as one of the best in the industry."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What job opportunities can I get after completing Oracle Fusion Financials Online Training?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can apply for roles like Oracle Fusion Financial Functional Consultant, Implementation Specialist, ERP Analyst, or Support Consultant across IT companies, consulting firms, and large enterprises worldwide."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What does the Oracle Fusion Financials Training curriculum cover?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The curriculum includes GL, AP, AR, FA, Cash Management, Subledger Accounting, BI Reporting, and real-time end-to-end project scenarios — ensuring you gain both theoretical knowledge and hands-on experience."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need finance or ERP background to join Oracle Fusion Financials Course?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No prior ERP experience is needed. The course starts from basics, making it easy for beginners, while also covering advanced concepts to benefit experienced professionals."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much practical exposure will I get in Oracle Fusion Financials Training?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You will work on live Oracle instances with real-time business scenarios like invoice processing, journal entries, bank reconciliation, and reporting — giving you the confidence to work on real projects."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does Oracle Fusion Financials Online Training take to complete?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Typically, the course duration is 6–8 weeks, depending on the learning schedule (weekday or weekend batches)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does the Oracle Fusion Financials Course include real-time projects?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. You’ll practice end-to-end implementation cycles including Procure-to-Pay and Order-to-Cash, which are essential for clearing interviews and working on client projects."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Tech Leads IT provide placement assistance after the training?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Tech Leads IT offers resume preparation, interview guidance, mock interviews, and connects you with hiring partners — helping you secure jobs faster."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the fees for Oracle Fusion Financials Training and are payment plans available?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The fee structure is competitive and value-driven. Flexible installment and EMI options are available to make the course affordable for students and working professionals."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I take Oracle Fusion Financials Online Training while working full-time?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The classes are online with flexible timings, making it convenient for working professionals to attend without affecting their job schedule."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How frequently is the Oracle Fusion Financials Training content updated?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tech Leads IT regularly updates the course content to match Oracle’s quarterly updates, ensuring you learn the latest features and best practices."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What salary growth can I expect after completing Oracle Fusion Financials Course?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Professionals with Oracle Fusion expertise often receive 30–100% salary hikes, depending on their current role, company, and experience level."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Who are the trainers for Oracle Fusion Financials Training?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The trainers are Oracle-certified professionals with multiple years of real-world implementation and consulting experience, making sessions highly practical and industry-oriented."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How is Oracle Fusion Financials Course different from other ERP finance courses?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Unlike generic finance or ERP courses, this program focuses entirely on Oracle Cloud ERP, giving you specialized knowledge that is highly valued by employers."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Oracle Fusion Financials Training recognized internationally?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Oracle Fusion Cloud ERP is implemented worldwide, so the skills you gain are globally recognized and can open opportunities in multiple countries."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What support is available after completing Oracle Fusion Financials Training?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You will have access to recordings, study materials, trainer support for queries, and ongoing guidance for interviews and project issues even after the course completion."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I attend a free demo session for Oracle Fusion Financials Course?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Tech Leads IT offers free demo sessions so you can experience the training quality, interact with the trainer, and review the curriculum before enrolling."
+                }
+            }
+        ]
     }
 ]

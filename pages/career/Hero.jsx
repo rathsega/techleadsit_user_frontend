@@ -83,7 +83,7 @@ const Hero = ({ details }) => {
                             <p className="CJD-Sub-Option-align-Para">{details?.career?.basic?.employmentType}</p>
                         </div>
                         <span className="align-self-center mb-2">.</span>
-                        <div className="d-flex gap-2 align-items-center cursor-pointer" onclick="CJDshareshowPopup()">
+                        <div className="d-flex gap-2 align-items-center cursor-pointer">
                             <img src="/images/careers/CP-FYNJ-Share-Icon.svg"
                                 alt="CP-FYNJ-Currency-Icon" width="18" height="18" className="CP-FYNJ-Small-Icons" />
                             <p className="CJD-Sub-Option-align-Para CP-CJD-Share-Popup-Para-text" onClick={handleSocialSharePopup}>Share this job</p>
@@ -98,7 +98,7 @@ const Hero = ({ details }) => {
                             <span>|</span>
                             <span>{details?.jobApplicationsCount} {details?.jobApplicationsCount == 1 ? " Applicant" : " Applicants"}</span>
                         </div>
-                        <div className="CJD-Send-Me-Job-Like-This-link" onclick="CJDSMJLTshareshowPopup()">
+                        <div className="CJD-Send-Me-Job-Like-This-link">
                             <a href="#" onClick={handleOpenPopup} className="Main-Course-CP-CJD-Job-Abouts-job-link">Send me jobs like this</a>
                         </div>
                     </div>

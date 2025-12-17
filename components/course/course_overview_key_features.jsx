@@ -11,8 +11,23 @@ const CourseOverviewKeyFeatures = React.memo(({title, id}) => {
         "GEN-DMO-OT-036",
         "SAP-MMO-OT-037",
         "SAP-ABP-OT-038",
-        "SFR-CRM-OT-039"
+        "SFR-CRM-OT-039",
+        "GEN-PMP-OT-043"
     ];
+
+    const expert_level_implementation = {
+        "GEN-PMP-OT-043" : {
+            heading: "Expert Level Implementation",
+            description: "Advanced project execution scenarios, stakeholder engagement, risk mitigation, and strategic PMP framework application for real-world project excellence."
+        }
+    }
+
+    const placement_job_support = {
+        "GEN-PMP-OT-043" : {
+            heading: "Exam Mentorship & Support",
+            description: "Dedicated guidance for PMP application, exam strategy, and concept revision — including performance tracking."
+        }
+    }
 
     // Determine if the current id is in the certifiedIds list
     const isCertified = certifiedIds.includes(id);
@@ -41,8 +56,7 @@ const CourseOverviewKeyFeatures = React.memo(({title, id}) => {
                         Expert Level Implementation
                     </h3>
                     <p className="Main-Course-Key-Feature-para">
-                        Complex real-time business scenario modeling, advanced
-                        system integrations, customizations, and implementation tips
+                        {expert_level_implementation[id] ? expert_level_implementation[id].description : "Complex real-time business scenario modeling, advanced system integrations, customizations, and implementation tips"}
                     </p>
                 </div>
                 <div className="Main-Course-Key-feature-card">
@@ -73,11 +87,10 @@ const CourseOverviewKeyFeatures = React.memo(({title, id}) => {
                     <Image priority={false} loading="lazy" src="/images/courses/Course-Key-Feature-5.svg" alt="key-feature"
                         width="30" height="30" />
                     <h3 className="Main-Course-Key-Feature-heading">
-                        Placements Support & Job Help
+                        {placement_job_support[id] ? placement_job_support[id].heading : "Placement & Job Support"}
                     </h3>
                     <p className="Main-Course-Key-Feature-para">
-                        Unmatched Career Assistance – 200% Placement Support for
-                        Merit Students to Secure Top Opportunities
+                        {placement_job_support[id] ? placement_job_support[id].description : "Unmatched Career Assistance – 200% Placement Support for Merit Students to Secure Top Opportunities"}
                     </p>
                 </div>
                 <div className="Main-Course-Key-feature-card">

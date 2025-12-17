@@ -6,19 +6,21 @@ const QuickForm = lazy(() => import("./QuickForm"));
 const BackToTop = lazy(() => import("./BackToTop"));
 const WhatsAppIcon = lazy(() => import("./WhatsAppIcon"));
 import Image from "next/image"; // Importing Image component from next.js for optimized image handling
+import {ChatWidgetTrigger} from '../components/chatbot/ChatWidgetTrigger' 
+import  ChatWidget from '../components/chatbot/ChatWidget'
 
-const Footer = React.memo(() => {
+const Footer = () => {
     const [topCourses, setTopCourses] = useState([]);
     const [categories, setCategories] = useState([])
     const router = useRouter();
     const { setLoading } = useLoader();
-
+ 
     const openHome = useCallback(() => {
         setLoading(true);
         router.push(`/`);
         setLoading(false);
     }, [setLoading, router]);
-
+ 
     const getTopCourses = useCallback(async () => {
         try {
             setLoading(true);
@@ -31,7 +33,7 @@ const Footer = React.memo(() => {
             console.log("unepected error", e);
         }
     }, [])
-
+ 
     const getActiveSubcategoriesWithCourseCount = async () => {
         try {
             setLoading(true);
@@ -44,29 +46,30 @@ const Footer = React.memo(() => {
             console.log("unepected error", e);
         }
     }
-
+ 
     useEffect(() => {
-
+ 
         getTopCourses();
         getActiveSubcategoriesWithCourseCount();
-
+ 
     }, [])
-
+ 
     return (
         <>
-
-
-            <section className="Main-Course-Footer-Section">
+ 
+        <section>
+            <div className="Main-Course-Footer-Section">
                 <div className="Main-Course-Footer-Section-Nav-Section">
                     <Image loading="lazy" src="/images/Main-Course-Page-Techleads-Logo.svg" className="cursor-pointer" width="236" height="40" onClick={openHome} alt="Footer-Techleads-Logo" />
                     <p><a href="tel:+918125323232">Phone: +91 8125323232</a></p>
                     <p><a href="mailto:info@techleadsit.com">Email: info@techleadsit.com</a></p>
-
+ 
                     <div className="d-flex gap-2 align-items-center" style={{ width: 'max-content' }}>
                         <div className="Footer-Mobile-App-Icons">
                             <a href="https://apps.apple.com/in/app/tech-leads-it/id6615066544" target="_blank" rel="noopener noreferrer"><img alt="Click-For-App-Store" loading="lazy" width="150" height="47" decoding="async" data-nimg="1" src="/images/courses/Click-For-App-Store.avif" /></a><a href="https://play.google.com/store/apps/details?id=com.techleadsit.academy_app&amp;pli=1" target="_blank" rel="noopener noreferrer"><img alt="Click-For-Play-Store" loading="lazy" width="150" height="47" decoding="async" data-nimg="1" src="/images/courses/Click-For-Play-Store.avif" /></a></div><img src="/images/courses/Scan-This-For-App.png" alt="Scan-for-Mobile-App" className="Main-Course-Footer-Scan-For-Mobile-App" /></div>
-
+ 
                 </div>
+                <div className="d-flex flex-row justify-content-between flex-wrap">
                 <div className="Main-Course-Footer-Wrap-Section">
                     <div className="Main-Course-Footer-Section-Nav-Section">
                         <h2 className="Footer-Heading-Underline-Top  Footer-Heading-Underline">Top Categories</h2>
@@ -88,9 +91,10 @@ const Footer = React.memo(() => {
                     <div class="v-dotted" aria-hidden="true"></div>
                     <div className="Main-Course-Footer-Section-Nav-Section">
                         <h2 className="Footer-Heading-Underline-Top Footer-Heading-Underline">Useful Links</h2>
+			<a href="/courses" target="_blank"><p>All Courses</p></a>
                         <a href="/upcoming-batches" target="_blank"><p>Upcoming Batches</p></a>
                         <a href="/blogs" target="_blank"><p>Blogs</p></a>
-                        <a href="/interview_questions" target="_blank"><p>Interview Questions</p></a>
+                        <a href="/interview-questions" target="_blank"><p>Interview Questions</p></a>
                         <a href="/careers" target="_blank"><p>Careers</p></a>
                     </div>
                     <div class="v-dotted" aria-hidden="true"></div>
@@ -102,6 +106,13 @@ const Footer = React.memo(() => {
                         <a href="/contactus" target="_blank"><p>Contact Us</p></a>
                     </div>
                 </div>
+                <div className="Main-Course-Footer-Bottom-img-section">
+                <Image src="/images/Oracle-Partner-Logo.webp" alt="Footer-Bottom-Design" height={40} width={145}  className="Main-Course-Footer-Bottom-Design" />
+                <Image src="/images/ISO-Certified.webp" alt="Footer-Bottom-Design" height={40} width={105} className="Main-Course-Footer-Bottom-Design" />
+                <Image src="/images/Google-Reviews.webp" alt="Footer-Bottom-Design" height={40} width={115} className="Main-Course-Footer-Bottom-Design" />
+            </div>
+                </div>
+            </div>
             </section>
             <div className="Main-Course-Footer-Copyright-Section">
                 <p className="Main-Course-Copyright-Text">&copy; Copyright Tech Leads IT. All Rights Reserved </p>
@@ -125,12 +136,13 @@ const Footer = React.memo(() => {
                 </div>
             </div>
             <Suspense fallback={<div>Loading...</div>}>
-                <QuickForm />
+                {/* <QuickForm /> */}
+                <ChatWidget />
                 <BackToTop />
                 <WhatsAppIcon />
             </Suspense>
         </>
     )
-})
-
+}
+ 
 export default Footer;

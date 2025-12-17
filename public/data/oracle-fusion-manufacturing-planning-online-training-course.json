@@ -1,0 +1,1150 @@
+{
+    "title": "Oracle Fusion Manufacturing & Planning Course",
+    "id": "ORF-MFP-OT-042",
+    "category": "Oracle",
+    "duration": "2 Months",
+    "hero": {
+        "title": "Master Oracle Fusion Planning & Manufacturing ",
+        "animationTitle": [
+            "Expert training",
+            "Redwood Experience ",
+            "AI with Manufacturing & Planning"
+        ],
+        "shortDescription": "Advance Your Career in Manufacturing & Planning Automation with Our Expert-Led Oracle Fusion Manufacturing & Planning Online Training! Master Common Foundations, Product Management, Inventory, Discrete Manufacturing, Process Manufacturing, Costing, Planning, and Quality with real-world implementation use cases. Gain real-time, hands-on experience with Oracle Fusion Manufacturing & Planning modules designed to streamline operations and improve decision-making.",
+        "brouchurePath": "/brochure/oracle-fusion-manufacturing-planning-online-training-course.pdf",
+        "successStories": {
+            "shortDescription": ""
+        }
+    },
+    "courseOverview": {
+        "toolsModules": [
+            "Common Foundations",
+            "Product Management",
+            "Inventory",
+            "Discrete Manufacturing",
+            "Process Manufacturing",
+            "Costing",
+            "Quality"
+        ],
+        "isThisCourseRightForYou": {
+            "shortDescription": "Gain Expertise in Smart Manufacturing with Industry-Leading Oracle Fusion Manufacturing Online Training!",
+            "details": [
+                {
+                    "studentType": "Students & Fresh Graduates",
+                    "points": [
+                        "Final-year students or graduates from B.Tech, MBA, or related fields. ",
+                        "Individuals looking to start a career in Oracle Fusion Manufacturing & Planning. ",
+                        "Those interested in areas such as smart manufacturing, production planning, supply chain planning, & factory automation ",
+                        "Job seekers aiming to enhance their resumes with in-demand Oracle Fusion Manufacturing & Planning skills."
+                    ]
+                },
+                {
+                    "studentType": "Working Professionals",
+                    "points": [
+                        "IT & ERP professionals transitioning from Oracle EBS, or other platforms to Oracle Fusion Manufacturing & Planning. ",
+                        "Manufacturing Consultants, Production Planners, & ERP Specialists seeking expertise in Oracle Cloud Manufacturing & Planning tools. ",
+                        "Business owners and operations managers aiming to digitize & streamline their production planning and manufacturing operations. ",
+                        "Professionals looking to optimize production and planning workflows using Oracle Manufacturing & Planning Cloud."
+                    ]
+                }
+            ]
+        },
+        "upcomingDemoSession": {
+            "demoMode": "Online",
+            "demoDate": "20 SEP 2025",
+            "demoTimeSlot": "08:00 AM",
+            "demoTrainerName": "Join the Oracle Fusion Manufacturing Live Demo with Santhosh"
+        }
+    },
+   "curriculum": {
+        "curriculumPath": "",
+        "modules": [
+            {
+                "moduleName": "Introduction to Oracle Cloud",
+                "chapters": [
+                    {
+                        "chapterName": "SAAS, PAAS and IAAS Overview ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Oracle SCM Cloud Capabilities: Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Navigation Basics ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Resources",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Intro to Functional Setup Manager and Quick Setup",
+                "chapters": [
+                    {
+                        "chapterName": "Implementation Planning",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Roles and Responsibilities",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Offerings",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Implementation Considerations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "SCM Simplified Setup: Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Automated Setup of SCM Common Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Simplified Setup: Time Savings",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Best Practices",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Enterprise Structure Overview",
+                "chapters": [
+                    {
+                        "chapterName": "Walkthrough on Enterprise Structure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Differentiate E-Business Suite and Cloud Org Structure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Business Unit Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Business Unit Implementation",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Demo on Connected Modules",
+                "chapters": [
+                    {
+                        "chapterName": "Fusion Product Data Hub",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Inventory Management and Costing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Manufacturing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Procurement",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Fusion Order Management",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Oracle Supply Chain Management Cloud Common Configuration",
+                "chapters": [
+                    {
+                        "chapterName": "Set up an Inventory Organization",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Units of Measure",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Calendars",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Inventory, including Issue and transfer of materials",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Manage Items and Item Structures",
+                "chapters": [
+                    {
+                        "chapterName": "Describe Item attributes that are critical to Oracle Manufacturing Cloud",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Items",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Item Structures and attributes that are critical to Oracle Manufacturing Cloud",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Manage Work Orders",
+                "chapters": [
+                    {
+                        "chapterName": "Explain Work Execution Work Areas",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create and update Work Orders for standard and non-standard Work Orders and Serialized Manufacturing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain Work Order Reservations and History",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Reporting and Analytics for Manufacturing",
+                "chapters": [
+                    {
+                        "chapterName": "Execute Work Definition and Work Order reports, including  Component Lists, Work Order traveler, and Labels",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Set up Product Task Reporting",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Set up BI and Reporting",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain OTBI Metrics",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain Reporting customization",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Manufacturing Set Up",
+                "chapters": [
+                    {
+                        "chapterName": "Describe Function Set Up Manager and Simplified Set Up",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Set up Product Resources and Standard Operations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain how to set up Plant, Plant Parameters, and Plant Security",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain how to set up Profile Options, Look Ups, and Descriptive Flexfields",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Import and Export Services for setup data",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Define Standard Operations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Work Centers set up",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Production Calendars and add Shift and Work Center Resource exceptions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Product Resources and Standard Operations setup",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Manage Work Definitions",
+                "chapters": [
+                    {
+                        "chapterName": "Describe Work Definitions, Work Definition Names, and Library",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create and update Work Definitions, including spreadsheets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Manufacturing Lead-time",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Process Item Structure changes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Work Definition versions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Visual Work Definitions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Import Work Definitions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe how to work definition is automatically generated",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Execute Production",
+                "chapters": [
+                    {
+                        "chapterName": "Describe Production Execution transactions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain a Dispatch List",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Report Production Transactions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Report Orderless Transactions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain a Production Transactions Review",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Transfer Production Transactions to Costing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Import Production Transactions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain Close Work Orders",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create manufacturing Production Exceptions, including raising exceptions and managing and resolving exceptions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Supply Types of Components (Push, Assembly Pull, Operation Pull, Bulk, Supplier",
+                        "chaptherVideoPath": ""
+                    },
+                    null,
+                    {
+                        "chapterName": "Operation Types (Couting Point, Auto Transact, Optional Operations)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "OperaWork Order Scheduling and type (Backward, Forward Scheduling and Mid Point Scheduling)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Work Order Types (Standard, Non Standard, Rework and Transform work order) and Orderless transactions",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Execute Production (Cont)",
+                "chapters": [
+                    {
+                        "chapterName": "Work Order Reservation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Work Order Pick Slip generation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Genealogy Tracking",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Derivation of Lead Time (Processing Lead Time, Fixed Lead Time, Variable Lead Time, Cumulative Manufacturing Lead Time, Cumulative Total Lead Time)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Process Manufacturing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Process Manufacturing - Work Definitions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Process Manufacturing - Work Order Cycle",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Process Manufacturing - Co product and By product",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Process Manufacturing - Scaling",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Costing and Inventory Foundations",
+                "chapters": [
+                    {
+                        "chapterName": "Explain Common Inventory Configurations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Managerial Accounting Basics",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain Cost Accounting",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Manufacturing Costing",
+                "chapters": [
+                    {
+                        "chapterName": "Describe Manufacturing Costing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Compute Production Costs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Evaluate a Work Order completion cost, including Partial and Scrap",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain Cost Reporting, including WIP Inventory Valuation Report Set up and implement Cost Planning estimates",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Oracle Planning Central Cloud Overview ",
+                "chapters": [
+                    {
+                        "chapterName": "Describe different types of Planning Business Flows ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create and manage Page Layouts ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage the Plan Summary Layout ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Tables and Graphs ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Info tiles and Tile Sets ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Material Planners ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Administer Planning Security ",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Manage Planning Profile Options ",
+                "chapters": [
+                    {
+                        "chapterName": "Describe Manufacturing Costing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Creating, Copying and Viewing a Supply Plan ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Apply Supply Plan options (Advanced Options) ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configure Safety Stock Plan options ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Evaluate Supply Plan inputs ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Perform Running Supply Plan",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Supply Planning Concepts ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Develop Modelling and Analyzing Supply Plan ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Release Recommendations (Requisition Creation and Approval and Transfer order) ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Analyze Demand Fulfillment",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Data Collections",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Data Collection from the Oracle Fusion Source System ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain Loading Planning Data from Files ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Analyze Collected Data in the Planning Data Repository ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Program Order – Collection and Refresh ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Dimensions and Hierarchies",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Measures and Measure Catalogs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Creation of Measures and Functions of Measures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Expressions in Measures",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Exceptions",
+                "chapters": [
+                    {
+                        "chapterName": "Configure Exceptions and Exception Sets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Analyze Exceptions in Plans",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Measure",
+                "chapters": [
+                    {
+                        "chapterName": "Creation of Measures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Measure catalog",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Assigning Measures to measure catalog",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Loading Measure Data",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Dimensions association in Measures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Review of seeded measures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Supply Planning Functions",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Supply Planning Functions",
+                "chapters": [
+                    {
+                        "chapterName": "Lead Time Calculations with respect to suggested dates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Release of Planned Orders",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Release of Reschedules from planning",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Supply Orchestration Overview",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "MPS and MRP Planning",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Unconstrained and Constrained Supply Plan",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Forecast Consumption",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Forecast Spreading",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Loading Planning data through FBDI",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Time Fences",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Forecast Consumption and Spreading",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Calendars consideration in supply planning",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Tables supply planning",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Supplies and Demands",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Material Plan",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Build Plan",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Demand Fulfillment",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "EDD (Enforced Demand Due dates)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ECC (Enforced capacity Constraints)",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "ECC for limited days",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Natural Time Fence",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Forecast Consumption",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Forecast Spreading",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Past due supply and demand consideration in plan",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Decision Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Alternate Work definitions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Alternate sourcing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Allocation Split in Sourcing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Rank based Sourcing",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Alternate Resources",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Substitute Components",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Bill of Distribution",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Lead Time and Suggested Dates in planning",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Calendar considerations in Planning",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Simulations",
+                "chapters": [
+                    {
+                        "chapterName": "Evaluate Demand/Supply Changes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Execute Simulations",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Demand Management",
+                "chapters": [
+                    {
+                        "chapterName": "Configure a Demand Plan",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Perform a Run and Manage Demand Plan",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Apply Forecasting Methods and Causal Factors  ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Describe Override Demand Forecast and Plan Approval",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Explain Disaggregation Parameters and Conditional Formatting",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Supply Network Model",
+                "chapters": [
+                    {
+                        "chapterName": "Explain Supply Network Model",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "View Approved Supplier List",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Create Assignment Sets, Sourcing Rules, and Bills of Distribution",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Apply Item Attributes for Supply Planning",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            }
+        ],
+        "demoVideoPath": "",
+        "yourFutureBoss": {
+            "title": "Your Future Boss is Looking for Oracle Fusion Experts!",
+            "shortDescription": "Unlock new career opportunities—Oracle Fusion Manufacturing  &Planning professionals are in high demand. Start your journey today!"
+        }
+    },
+    "instructorDetails": {
+        "sectionOne": {
+            "title": "Meet  Your Trainer",
+            "shortDescription": "Mr. Santhosh, a seasoned professional with over 22 years of experience across diverse projects and industries, combines deep expertise with an enduring passion for teaching and mentorship. Throughout his career, he has guided teams, delivered complex solutions, and inspired professionals to achieve their full potential.With a clear vision to develop highly skilled Oracle Fusion Manufacturing and Planning consultants, Mr. Santhosh focuses on bridging the gap between industry demand and talent availability. His approach blends real-world knowledge, practical learning, and hands-on guidance to prepare students for immediate success in the market.He strongly believes that knowledge is not just a tool for professional advancement but also a pathway to financial growth and personal empowerment. By enabling individuals to become self-reliant and support their families, Mr. Santhosh’s mission contributes to a stronger workforce and a thriving economy."
+        },
+        "sectionTwo": {
+            "title": "Learn from the World Leading Oracle Fusion Manufacturing & Planning Trainer",
+            "points": [
+                "Oracle Fusion Manufacturing & Planning Certified Professional, Supply Chain Management Expert.",
+                "22+ years of expertise in Oracle ERP, specializing in Fusion Manufacturing & Planning Training.",
+                "Successfully trained over 3,000 students in Oracle Cloud Manufacturing & Planning Courses."
+            ]
+        },
+        "sectionThree": {
+            "trainerName": "Santhosh",
+            "trainerDesignation": "Oracle Expert",
+            "avatarImagePath": "/images/courses/trainer/plan-man.webp"
+        },
+        "testimonials": [
+            {
+                "testimonialType": "Text",
+                "studentName": "Pratap",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prathap.png",
+                "review": "I recently completed my course from Tech Leads IT and had a great learning experience. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Satish",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/sathish.png",
+                "review": "I completed my course at Tech Leads IT and was impressed by the quality of teaching and hands-on training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Rakesh",
+                "designation": "Business Analyst at Vithi",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-1.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-1.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Prakash",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/prakash.png",
+                "review": "TechLeads IT provided a good learning environment with helpful guidance and practical training.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Hema Kumar",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/hema kumar.png",
+                "review": "Very professional and detailed training provided by the instructor. Helps to get a clear understanding of the concepts.",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Video",
+                "studentName": "Navya",
+                "designation": "Associate Consultant at Infolob ",
+                "imagePath": "",
+                "review": "",
+                "thumbnailPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Testimonial-Video-Image-2.webp",
+                "reviewVideoPath": "/images/courses/Main-Course-Hear-From-Our-Learners-Video-Testimonial-2.mp4"
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Divya Madhavi",
+                "designation": "Student",
+                "imagePath": "/images/courses/students/sap_cpi/divya madhavi.png",
+                "review": "Explanation is very good with real time scenarios. The trainer has got  clear vision of the course. ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            },
+            {
+                "testimonialType": "Text",
+                "studentName": "Rohith",
+                "designation": "Fresher",
+                "imagePath": "/images/courses/students/sap_cpi/ranjith.png",
+                "review": "This institute offers excellent for both freshers and experienced individuals,  with supportive trainers ",
+                "thumbnailPath": "",
+                "reviewVideoPath": ""
+            }
+        ]
+    },
+    "learningOptions": {
+        "pricingPlans": [
+            {
+                "planName": "Self Paced",
+                "planShortDescription": " Learn at your own speed with structured, pre-recorded lessons designed by experts. ",
+                "planPrice": "₹20,000",
+                "planFeatures": [
+                    "Pre-recorded high-quality video lessons",
+                    " Lifetime access to course materials",
+                    "Industry-relevant curriculum",
+                    "Assignments & quizzes",
+                    " Learn at your own pace",
+                    "Placement Guidance "
+                ]
+            },
+            {
+                "planName": "Live Training",
+                "planShortDescription": " Experience real-time learning with industry experts. Get personalized feedback from mentors.",
+                "planPrice": "₹30,000",
+                "planFeatures": [
+                    "Instructor-led live sessions",
+                    "Doubt-clearing sessions",
+                    "Hands-on projects & case studies",
+                    "Access to recorded sessions",
+                    "Certification support",
+                    "Placement assistance for merit students"
+                ]
+            },
+            {
+                "planName": "Corporate Training",
+                "planShortDescription": "Upskill your team with tailor-made corporate training programs. Get customized content & dedicated support.",
+                "planPrice": "Let’s Discuss",
+                "planFeatures": [
+                    "Customized training for teams",
+                    "Flexible batch scheduling",
+                    "Industry-focused curriculum",
+                    "One-on-one mentorship",
+                    "Dedicated support team",
+                    "Exclusive hiring support "
+                ]
+            }
+        ],
+        "mobileLearning": {
+            "imagePath": "/images/courses/mobile_learning/manufacturing.png"
+        },
+        "portalView": {
+            "imagePath": "/images/courses/portal_view/ppm_man.webp"
+        }
+    },
+    "placementPath": {
+        "steps": [
+            {
+                "title": "Build Strong Fundamentals",
+                "points": [
+                    "Master the Basics of Oracle Fusion Manufacturing & Planning Modules",
+                    "Gain a Clear Understanding of Manufacturing & Planning Processes & Architecture",
+                    "Develop Core Technical & Functional Knowledge in Oracle Fusion Manufacturing & Planning"
+                ]
+            },
+            {
+                "title": "Work on Hands-on Projects",
+                "points": [
+                    "Participate in Real-World Manufacturing & Planning Use Cases",
+                    "Solve Production, Work Order, Supply Chain & Planning Scenarios with Technical Experts",
+                    "Get Deep Insights into Work Definitions, Execution, Costing, Inventory, and Planning Modules"
+                ]
+            },
+            {
+                "title": "Resume & Profile Optimization",
+                "points": [
+                    "Create an ATS-Friendly Resume",
+                    "Build a Strong LinkedIn Profile and Portfolio",
+                    "Get Expert Reviews & Mock Interview Feedback"
+                ]
+            },
+            {
+                "title": "Industry Exposure & Capstone Project",
+                "points": [
+                    "Work on Real-Life Case Studies in Discrete & Process Manufacturing & Planning",
+                    "Understand Industry Expectations & Best Practices in Cloud Manufacturing & Planning",
+                    "Develop Problem-Solving & Decision-Making Skills"
+                ]
+            },
+            {
+                "title": "Placement Readiness & Job Opportunities",
+                "points": [
+                    "Exclusive Access to the Tech Leads IT Job Portal",
+                    "Interview Preparation with Mock Rounds",
+                    "100% Placement Guarantee for Merit students "
+                ]
+            }
+        ],
+        "hiringPartnersTitle": "",
+        "startJourney": {
+            "title": "6-Figure Jobs Start with Oracle fusion Manufacturing & Planning Are You Ready?",
+            "shortDescription": "Join the rising demand for Oracle Integration Cloud professionals. Get certified and unlock high-paying career opportunities with top enterprise IT, ERP, and cloud integration organizations."
+        },
+        "companiesWaitingForYou": {
+            "careerPath": [
+                "Oracle Fusion Manufacturing Trainee ",
+                "Oracle Manufacturing Support Analyst ",
+                "Oracle Fusion Supply Chain Associate ",
+                "Oracle Manufacturing  Specialist ",
+                "Oracle Fusion SCM Consultant ",
+                "Oracle Cloud Manufacturing Lead ",
+                "Oracle Manufacturing Practice Lead ",
+                "ERP Delivery Manager ",
+                "Oracle Manufacturing Project Manager"
+            ],
+            "averageFresherSalary": "3-6 LPA",
+            "highestSalary": "45 LPA"
+        }
+    },
+    "jobTrends": {
+        "awards": {
+            "title": "Oracle Fusion ERP has been named a Leader",
+            "awardsList": [
+                "2024 Gartner® Magic Quadrant for Cloud ERP for Service-Centric Enterprises,",
+                "2024 Gartner® Magic Quadrant for Cloud ERP for Product-Centric Enterprises, ",
+                "2024 Gartner® Magic Quadrant™ for Financial Planning Software."
+            ]
+        },
+        "jobGrowth": {
+            "title": "",
+            "footerTitle": ""
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "",
+            "shortDescription": "",
+            "sectionDetails": {
+                "title": "",
+                "shortDescription": ""
+            }
+        }
+    },
+    "turnKnowledgeIntoPower": {
+        "title": "Turn Knowledge into Power  Master Oracle Fusion Manufacturing & Planning Today!",
+        "shortDescription": "\"Knowledge is the key to unlocking greater career growth—empowering you with higher salary packages, leadership opportunities, onsite travel, and accelerated professional elevation.\""
+    },
+    "certificate": {
+        "shortDescription": "Celebrate your success with an official certificate, proving your Oracle Fusion Manufacturing & Planning expertise.",
+        "certificateimagePath": ""
+    },
+    "topCertifications": {
+        "title": ""
+    },
+    "faqs": [
+        {
+            "question": "1. What Modules Are Covered in Oracle Fusion Manufacturing & Planning Training?",
+            "answer": "Our Oracle Fusion Manufacturing & Planning Training covers key modules including Common Foundations, Product Management, Inventory, Discrete Manufacturing, Process Manufacturing, Costing (Standards & Average), Planning, and Quality. For a complete syllabus, please refer to our detailed course brochure."
+        },
+        {
+            "question": "2. What Is the Course Schedule?",
+            "answer": "Training sessions are conducted Monday to Saturday, with 1-hour live sessions each day. This schedule ensures regular engagement and hands-on experience with Oracle Fusion Manufacturing & Planning Cloud."
+        },
+        {
+            "question": "3. Are Weekend Batches Available?",
+            "answer": "Currently, we do not offer weekend-only batches. All live sessions are scheduled from Monday to Saturday to maintain consistency in learning."
+        },
+        {
+            "question": "4. Do You Offer Self-Paced Learning?",
+            "answer": "Yes, we provide recorded sessions for self-paced learners. Please note that real-time doubt clarification is not included in this mode. "
+        },
+        {
+            "question": "5. Do You Provide Internship Opportunities?",
+            "answer": "Yes! Internship opportunities are offered based on performance in mock evaluations. These internships provide practical exposure to Oracle Fusion Manufacturing & Planning tools and real-world projects. "
+        },
+        {
+            "question": "6. Can I Download the Training Videos?",
+            "answer": "No, downloads are not available. However, you will have secure access to session recordings for 1 year via our online portal. "
+        },
+        {
+            "question": "7. Can I Enroll in a Single Module Instead of the Full Course?",
+            "answer": "No, the Oracle Fusion Manufacturing & Planning Training is delivered as a comprehensive course package. Individual modules are not offered separately. "
+        },
+        {
+            "question": "8. Do You Provide Resume Preparation Support?",
+            "answer": "Yes, we offer complete resume-building assistance tailored to Oracle Fusion Manufacturing & Planning roles, highlighting your training and project experience."
+        },
+        {
+            "question": "9. Is a Laptop or Desktop Required for Practice?",
+            "answer": "Yes, access to a laptop or desktop is necessary for working with the Oracle Cloud instance during training. "
+        },
+        {
+            "question": "10. Are There Any Prerequisites for This Training?",
+            "answer": "No prior technical background is required. The course begins with the basics, making it suitable for students and professionals from any field. A basic understanding of manufacturing, supply chain, or planning processes is helpful but not mandatory. "
+        },
+        {
+            "question": "11. Do You Teach from the Basics?",
+            "answer": "Absolutely. We start from foundational topics and progress to advanced features in Oracle Fusion Manufacturing & Planning Cloud, making it ideal for both freshers and experienced professionals. "
+        },
+        {
+            "question": "12. Do You Provide Job Placement Assistance?",
+            "answer": "Yes, we offer full job placement support, including mock interviews, resume optimization, and career guidance. Our network includes top employers hiring for Oracle Fusion SCM, Manufacturing, and Planning roles. "
+        },
+        {
+            "question": "13. Do You Offer Oracle Fusion Manufacturing & Planning Certification Support?",
+            "answer": "Yes, we support your certification journey by providing sample questions, study tips, and expert mentoring to help you clear Oracle Fusion Manufacturing & Planning Cloud certification exams. "
+        },
+        {
+            "question": "14. Do You Provide Training Recordings and Study Materials?",
+            "answer": "Yes, all training recordings will be available for 1 year. Soft-copy materials, including detailed steps and screenshots, are provided for each module. "
+        },
+        {
+            "question": "15. Do You Provide Interview Questions and Mock Support?",
+            "answer": "Yes, we offer module-specific interview questions and conduct mock interview sessions to boost your confidence for real-time Oracle Fusion Manufacturing & Planning job roles. "
+        },
+        {
+            "question": "16. Do You Provide Instance Access for Practice?",
+            "answer": "Yes, 6 months of Oracle Cloud instance access is included, allowing you to gain real-time hands-on experience without any software installation. "
+        },
+        {
+            "question": "17. Can I Retake the Course?",
+            "answer": "Yes, your 1-year membership allows you to attend multiple batches of our Oracle Fusion Manufacturing & Planning training at no additional cost. "
+        },
+        {
+            "question": "18. Will I Get a Course Completion Certificate?",
+            "answer": "Yes, after completing the course successfully, you will receive an official Course Completion Certificate in Oracle Fusion Manufacturing & Planning Cloud. "
+        },
+        {
+            "question": "19. Is Coding Knowledge Required?",
+            "answer": "No, this is a non-coding focused course. The training is centered on the functional and technical configuration aspects of Oracle Fusion Manufacturing & Planning. "
+        },
+        {
+            "question": "20. Is One-on-One Training Available?",
+            "answer": "Yes, we offer personalized 1-on-1 training sessions on request. Please note that pricing differs from regular group batches."
+        }
+    ]
+}

@@ -7,6 +7,7 @@ import classNames from 'classnames';
 import { useRouter } from "next/router";
 import { useLoader } from '../../../contexts/LoaderContext';
 import httpService from '../../../services/httpService';
+import Breadcrumb from '../../../components/breadcrumb';
 
 const JobApplication = () => {
 
@@ -187,7 +188,8 @@ const JobApplication = () => {
         }
     };
 
-    return (
+    return (<>
+        <Breadcrumb pageDetails={{ pageName: "careerJobApply", jobId: job_id }} />
         <section className="Main-Course-CP-BAI-Main-Section">
             <div className="Main-Course-CP-BAI-Main-Content-Section">
                 <div className="d-flex gap-2">
@@ -403,7 +405,8 @@ const JobApplication = () => {
 
             </div>
         </section>
-    )
+        </>
+    );
 }
 
 export default JobApplication;

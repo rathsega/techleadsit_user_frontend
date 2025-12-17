@@ -836,3 +836,41 @@ body {
     }
 
 }
+
+
+
+  .breadcrumb-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: 500;
+  background-color: #222A33;
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0px !important;
+}
+.fa-house{
+  color: #008ad2;
+}
+.breadcrumb-icon {
+  color: #007bff;
+}
+.breadcrumb-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #008ad2;
+}
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+.breadcrumb-separator {
+  color: #b0b0b0;
+}
+.breadcrumb-current {
+  color: #b0b0b0;
+}

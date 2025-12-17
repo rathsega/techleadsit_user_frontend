@@ -1,16 +1,15 @@
-import React, { useState, useEffect, useRef, useCallback, act } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import httpService from './../../services/httpService';
-import CourseRegistrationForm from '../../components/course/RegistrationForm';
-import AlreadySubmitted from '../blog/details/already_submitted'
 import { useExpiringLocalStorage } from '../../services/useExpiringLocalStorage'
 import YoutubeVideoPopupPlayer from './../../components/course/YoutubeVideoPopupPlayer';
 import { useLoader } from "../../contexts/LoaderContext";
+import useLmsStore from "../../store/lmsStore";
 
 const UpcomingBatches = () => {
     const [webinars, setWebinars] = useState([]);
     const [batches, setBatches] = useState([]);
-    const overlayRef = useRef(null);
     const { setLoading } = useLoader();
+    const setPopupFormProps = useLmsStore((state) => state.setPopupFormProps);
 
     const formConfigs = {
         "Enroll Now": {
@@ -82,16 +81,8 @@ const UpcomingBatches = () => {
         return `${formatTime(start)} - ${formatTime(end)}`;
     }
 
-    const [formFields, setFormFields] = useState([]);
-    const [heading, setHeading] = useState("");
-    const [buttonLabel, setButtonLabel] = useState("");
-    const [formVisibility, setFormVisibility] = useState(false);
-    const [formSuccessCallback, setFormSuccessCallback] = useState(null);
-    const [detailsSubmitted, setDetailsSubmitted] = useState(false);
     const [youtibeopenVideoPopup, setYoutibeopenVideoPopup] = useState(false);
     const [videoPath, setVideoPath] = useState("");
-    const [courseTitle, setCourseTitle] = useState("");
-    const [slug, setSlug] = useState("");
 
     const now = new Date();
     const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
@@ -102,39 +93,28 @@ const UpcomingBatches = () => {
         endOfDay
     );
 
-    const handleDetailsSubmitted = () => {
-        setDetailsSubmitted(false);
-    }
-    const hidePopupForm = () => {
-        setFormVisibility(false)
-    }
-
-    const handleCTA = (action, title = null, slug= null) => {
+    const handleCTA = (action, title = null, slug = null) => {
 
         const config = formConfigs[action];
         console.log(action, config);
         if (userDetails) {
-            if(action === "Watch Video"){
+            if (action === "Watch Video") {
                 setYoutibeopenVideoPopup(true);
-            }else{
-            setDetailsSubmitted(true);
+            } else {
+                setPopupFormProps({ visible: false, alreadySubmitted: true });
             }
         } else {
             if (config) {
-                setFormFields(config.fields);
-                setHeading(config.heading);
-                setButtonLabel(config.buttonLabel);
-                setFormVisibility(true);
-                if(title){
-                    setCourseTitle(title);
-                }else{
-                    setCourseTitle("");
-                }
-                if(slug){
-                    setSlug(slug);
-                }else{
-                    setSlug("");
-                }
+                setPopupFormProps({
+                    visible: true,
+                    alreadySubmitted: false,
+                    fields: config.fields,
+                    heading: config.heading,
+                    buttonLabel: config.buttonLabel,
+                    pageName: "upcoming_demo - " + title,
+                    courseTitle: title,
+                    courseSlug: slug,
+                });
             }
         }
     };
@@ -163,14 +143,6 @@ const UpcomingBatches = () => {
             handleCTA("Watch Video");
         }
     }, []);
-
-    
-    const handleUserDetailsSubmissionStatus = (status) => {
-        if (status) {
-            setTimeout(() => { hidePopupForm() }, 3000)
-        }
-    }
-
 
     return (
         <section>
@@ -248,26 +220,6 @@ const UpcomingBatches = () => {
                     </div>
                 </div>}
             </section>
-            {formVisibility && <><div className="Main-Course-Overlay"></div><CourseRegistrationForm
-                overlayRef={overlayRef}
-                visible={formVisibility}
-                fields={formFields}
-                heading={heading}
-                buttonLabel={buttonLabel}
-                hidePopupForm={hidePopupForm}
-                pageName={"upcoming_demo - " + courseTitle}
-                courseTitle={courseTitle}
-                courseSlug={slug}
-                onSuccess={(data) => {
-                    //console.log("Success!", data);
-                    handleUserDetailsSubmissionStatus(true);
-                    if (formSuccessCallback) {
-                        formSuccessCallback(data); // ← This must be triggered here
-                        setFormSuccessCallback(null); // reset after call
-                    }
-                }}
-            /></>}
-            {detailsSubmitted && <><div className="Main-Course-Overlay"></div><AlreadySubmitted handleDetailsSubmitted={handleDetailsSubmitted} /></>}
             {youtibeopenVideoPopup && <YoutubeVideoPopupPlayer videoPath={videoPath} youtibeopenVideoPopup={youtibeopenVideoPopup} handleYoutibeOpenVideoPopup={handleYoutibeOpenVideoPopup}></YoutubeVideoPopupPlayer>}
         </section>
     )

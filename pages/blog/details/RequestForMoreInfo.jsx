@@ -68,13 +68,6 @@ const RequestForMoreInfo = ({ currentBlogId }) => {
         if (errors.phone) setErrors({ ...errors, phone: undefined });
     };
 
-    const clearSuccessErrorMessages = () => {
-        setTimeout(() => {
-            setSuccessMsg(false);
-            setErrorMsg(false);
-        }, 3000);
-    };
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!validateForm()) return;
@@ -91,7 +84,9 @@ const RequestForMoreInfo = ({ currentBlogId }) => {
             const response = await httpService.post("/blogs/requestMoreInfo/" + currentBlogId, { ...formData, phone, token: captchaToken });
             // localStorage.setItem("userDetails", JSON.stringify(formData));
             setUserDetails(formData);
-            router.push(`/thankyou`);
+            const currentPageSlug = router.asPath.split('?')[0]; // Remove query params
+                const thankYouUrl = `/thankyou?fromPage=${encodeURIComponent('unknown')}&slug=${encodeURIComponent(currentPageSlug)}`;
+                window.location.href = thankYouUrl;
             setSuccessMsg(true);
             setErrorMsg(false);
             // Reset after submission

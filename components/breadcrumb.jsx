@@ -1,38 +1,73 @@
-import { useRouter } from "next/router";
-import Link from "next/link";
+import { useRouter } from 'next/router';
 
-const Breadcrumb = () => {
+const Breadcrumb = ({ pageDetails }) => {
   const router = useRouter();
-  const pathArr = router.asPath.split("?")[0].split("/").filter(Boolean);
-
-  // Home always first
-  const crumbs = [
-    { href: "/", label: "Home" },
-    ...pathArr.map((seg, idx) => ({
-      href: "/" + pathArr.slice(0, idx + 1).join("/"),
-      label: decodeURIComponent(seg.replace(/-/g, " ")).replace(/\b\w/g, l => l.toUpperCase()),
-    })),
-  ];
+  
+  const navigateTo = (page) => {
+    if(page === 'home'){
+      router.push("/");
+      return;
+    }
+    router.push(`/${page}`);
+  };
 
   return (
-    <nav aria-label="breadcrumb" className="breadcrumb-nav">
-      <ol className="breadcrumb">
-        {crumbs.map((crumb, idx) => (
-          <li
-            key={crumb.href}
-            className={`breadcrumb-item${idx === crumbs.length - 1 ? " active" : ""}`}
-            aria-current={idx === crumbs.length - 1 ? "page" : undefined}
-          >
-            {idx === crumbs.length - 1 ? (
-              crumb.label
-            ) : (
-              <Link href={crumb.href}>{crumb.label}</Link>
-            )}
-          </li>
-        ))}
-      </ol>
-    </nav>
+    <div className="breadcrumb-container">
+      {/* Blogs > Blog Detail */}
+      {
+        pageDetails?.pageName === "blogDetail" && (
+          <div className="breadcrumb">
+            <i className="fa-solid fa-house"></i>
+            <span className="breadcrumb-link" onClick={() => navigateTo("home")}>Home</span>
+            <span className="breadcrumb-separator">›</span>
+            <span className="breadcrumb-link" onClick={() => navigateTo("blogs")}>Blogs</span>
+            <span className="breadcrumb-separator">›</span>
+            <span className="breadcrumb-current">Blog Detail</span>
+          </div>
+        )
+      }
+      {/* Career > CareerJobDescription > CareerJobApply */}
+      {
+        pageDetails?.pageName === "careerJobApply" && (
+          <div className="breadcrumb">
+            <i className="fa-solid fa-house"></i>
+            <span className="breadcrumb-link" onClick={() => navigateTo("home")}>Home</span>
+            <span className="breadcrumb-separator">›</span>
+            <span className="breadcrumb-link" onClick={() => navigateTo("careers")}>Career</span>
+        <span className="breadcrumb-separator">›</span>
+        <span className="breadcrumb-link" onClick={() => navigateTo(`career/${pageDetails?.jobId}`)}>CareerJobDescription</span>
+        <span className="breadcrumb-separator">›</span>
+        <span className="breadcrumb-current">CareerJobApply</span>
+      </div>
+        )
+      }
+      {/* Career > CareerJobDescription */}
+      {
+        pageDetails?.pageName === "careerJobDescription" && (
+          <div className="breadcrumb">
+            <i className="fa-solid fa-house"></i>
+            <span className="breadcrumb-link" onClick={() => navigateTo("home")}>Home</span>
+            <span className="breadcrumb-separator">›</span>
+            <span className="breadcrumb-link" onClick={() => navigateTo("careers")}>Career</span>
+            <span className="breadcrumb-separator">›</span>
+            <span className="breadcrumb-current">CareerJobDescription</span>
+          </div>
+        )
+      }
+      {/* Course > Payment */}
+      {
+        pageDetails?.pageName === "coursePayment" && (
+          <div className="breadcrumb">
+            <i className="fa-solid fa-house"></i>
+            <span className="breadcrumb-link" onClick={() => navigateTo("home")}>Home</span>
+            <span className="breadcrumb-separator">›</span>
+            <span className="breadcrumb-link" onClick={() => navigateTo(pageDetails?.slug)}>Course</span>
+            <span className="breadcrumb-separator">›</span>
+            <span className="breadcrumb-current">Payment</span>
+          </div>
+        )
+      }
+    </div>
   );
 };
-
 export default Breadcrumb;

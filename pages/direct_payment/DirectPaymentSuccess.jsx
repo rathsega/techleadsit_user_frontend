@@ -32,7 +32,7 @@ const DirectPaymentSuccess = () => {
         document.body.appendChild(form);
 
         // Set the form's target to the new window's name
-        form.target = "_blank";
+        // form.target = "_blank";
 
         // Append the form to the document body
         document.body.appendChild(form);

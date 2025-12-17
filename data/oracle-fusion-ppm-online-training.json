@@ -60,293 +60,46 @@
         "curriculumPath": "xyz",
         "modules": [
             {
-                "moduleName": "Introduction to Fusion",
-                "chapters": [
-                    {
-                        "chapterName": "Technologies Used",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Overview of Fusion Applications Architecture",
-                        "chaptherVideoPath": ""
-                    }
-                ]
-            },
-            {
                 "moduleName": "Functional Setup Manager",
                 "chapters": [
                     {
-                        "chapterName": "Benefits of Functional Setup Manager",
+                        "chapterName": "Creating Implementation Users",
                         "chaptherVideoPath": ""
                     },
                     {
-                        "chapterName": "Demo on Creating Implementation Project",
-                        "chaptherVideoPath": ""
-                    }
-                ]
-            },
-            {
-                "moduleName": "Activity",
-                "chapters": [
-                    {
-                        "chapterName": "Create Implementation Project",
-                        "chaptherVideoPath": ""
-                    }
-                ]
-            },
-            {
-                "moduleName": "Business Units in Fusion Applications",
-                "chapters": [
-                    {
-                        "chapterName": "Overview of Business Units and its Functions",
-                        "chaptherVideoPath": ""
-                    }
-                ]
-            },
-            {
-                "moduleName": "Common Manufacturing Configuration",
-                "chapters": [
-                    {
-                        "chapterName": "Users and assign roles",
+                        "chapterName": "Create Data Role for Implementation Users",
                         "chaptherVideoPath": ""
                     },
                     {
-                        "chapterName": "Security and Enterprise structure",
+                        "chapterName": "Run User and Roles Synchronization Process",
                         "chaptherVideoPath": ""
                     },
                     {
-                        "chapterName": "Common Reference Objects",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Manage Manufacturing Profile Options",
-                        "chaptherVideoPath": ""
-                    }
-                ]
-            },
-            {
-                "moduleName": "Manage General Master Data",
-                "chapters": [
-                    {
-                        "chapterName": "Setup Plant Parameters",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Print Work Definition Report",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Process Item Structure Changes to Work Definitions",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Calculate Manufacturing Lead Times",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Manage Work Definitions in Spreadsheet",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Manage Work Definitions",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Manage Work Definition Names",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Define Items and Product Structures",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Manage Facility shifts, Work day patterns and Schedules",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Manage Standard Operations",
-                        "chaptherVideoPath": ""
-                    }
-                ]
-            },
-            {
-                "moduleName": "Execute Production",
-                "chapters": [
-                    {
-                        "chapterName": "Manage Work Orders",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Transfer Transactions from Production to Costing 0",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Execute Work Orders",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Report Material Transactions",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Report Operation Transactions",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Report Resource Transactions",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Report Order less Transactions",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Review Dispatch List",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Print Components List",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Print Work Order Traveler",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Close Work Orders",
-                        "chaptherVideoPath": ""
-                    }
-                ]
-            },
-            {
-                "moduleName": "Cost Management",
-                "chapters": [
-                    {
-                        "chapterName": "Assign Costing Organization",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Review Cost Accounting Distributions",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Perform Cost Rollup and Review Rolled-up Costs",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Review Item Costs",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Publish Standard Costs",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Define Standard Costs",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Manage Default and Item Cost Profiles",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Manage Cost Component Mappings and Cost Profiles",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Manage Valuation Structures and Cost Elements",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Manage Cost Analysis Groups",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Manage Cost Books",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Review Work Order Costs",
-                        "chaptherVideoPath": ""
-                    }
-                ]
-            },
-            {
-                "moduleName": "Engineering Change Orders",
-                "chapters": [
-                    {
-                        "chapterName": "Overview of Change Order Setup",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Reasons for Creating Change Orders",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Change Order Priorities",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Change Order Statuses",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Change Order Types",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Considerations for Change Order Approvals",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Create Engineering Change Orders (ECO)",
-                        "chaptherVideoPath": ""
-                    },
-                    {
-                        "chapterName": "Schedule/Implement ECOs",
-                        "chaptherVideoPath": ""
-                    }
-                ]
-            },
-            {
-                "moduleName": "Inventory",
-                "chapters": [
-                    {
-                        "chapterName": "Inventory Transactions",
+                        "chapterName": "Enterprise Structure",
                         "chaptherVideoPath": "",
                         "lessons": [
                             {
-                                "lessonName": " Miscellaneous Transcations",
+                                "lessonName": "Establish Enterprise Structures",
                                 "lessonVideoPath": ""
                             },
                             {
-                                "lessonName": " Sub Inventory Transfer",
+                                "lessonName": "Manage Reference Data Sets",
                                 "lessonVideoPath": ""
                             },
                             {
-                                "lessonName": " Movement Request",
+                                "lessonName": "Manage Set Assignments for Set Determinant Type",
                                 "lessonVideoPath": ""
                             },
                             {
-                                "lessonName": " Inter Org Transfer",
-                                "lessonVideoPath": ""
-                            }
-                        ]
-                    },
-                    {
-                        "chapterName": "Inventory Controls",
-                        "chaptherVideoPath": "",
-                        "lessons": [
-                            {
-                                "lessonName": " Serial Control",
+                                "lessonName": "Manage Geographies",
                                 "lessonVideoPath": ""
                             },
                             {
-                                "lessonName": " Lot Control",
+                                "lessonName": "Manage Locations",
                                 "lessonVideoPath": ""
                             },
                             {
-                                "lessonName": " Revision Control",
+                                "lessonName": "Manage Enterprise HCM Information",
                                 "lessonVideoPath": ""
                             }
                         ]
@@ -354,37 +107,797 @@
                 ]
             },
             {
-                "moduleName": "Overview of Quality Management",
+                "moduleName": "Legal Structure",
                 "chapters": [
                     {
-                        "chapterName": "Create Inspection Plans",
+                        "chapterName": "Manage Legal Jurisdictions",
                         "chaptherVideoPath": ""
                     },
                     {
-                        "chapterName": "Quality Inspection Levels",
+                        "chapterName": "Manage Legal Entity",
                         "chaptherVideoPath": ""
                     },
                     {
-                        "chapterName": "Quality Inspection Plans",
+                        "chapterName": "Manage Legal Entity Registrations",
                         "chaptherVideoPath": ""
                     },
                     {
-                        "chapterName": "Inspection Plan Statuses",
+                        "chapterName": "Manage Legislative Data Groups",
                         "chaptherVideoPath": ""
                     },
                     {
-                        "chapterName": "Inspection Plan Specifications",
+                        "chapterName": "Manage Legal Entity HCM Information",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Financial Reporting Structures",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Currencies",
                         "chaptherVideoPath": ""
                     },
                     {
-                        "chapterName": "Setup Quality Issues and Quality Actions",
+                        "chapterName": "Manage Conversion Rate Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Daily Rates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Chart of Accounts Value Sets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Chart of Accounts Structures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Chart of Accounts Structure Instances",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Chart of Accounts Value Set Values",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Accounting Calendars",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Primary Ledgers",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Assign Legal Entities",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Specify Ledger Options",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Assign Balancing Segment Values to Legal Entities",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Assign Balancing Segment Values to Ledger",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Review and Submit Accounting Configuration",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Organization Structure",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Business Unit",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Assign Business Unit Business Function",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Business Unit Data Access for Users",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Business Unit Set Assignment",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Common CRM Business Unit Profile Options",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Workforce Structures",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Divisions",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Departments",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Department Trees",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Job",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Organization Trees",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Project Organizations",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Project Unit Organizations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Unit Options",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Unit Set Assignments",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Organization Classifications",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Organization Hierarchies and Classifications",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Verify Default Asset Book Setup",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configure Project Accounting Business Function",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Submit Process to Maintain Project Organizations",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Organization Classifications Data Access for Users",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Users & Security",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Users",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Roles",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Project Foundation",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Project Foundation Value Sets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Foundation Descriptive Flex fields",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Foundation Messages",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Foundation Attachment Categories",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Accounting Calendars",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Accounting Periods for Project Financial Management",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Accounting Periods",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Units of Measure",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Project Foundations (Cont.)",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Revenue Categories",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Expenditure Categories",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Expenditure Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Class Categories",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Service Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Work Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Submit Process to Update Work Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Statuses",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Priority Values",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Note Type",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Note Type Mapping",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Note Descriptive Flex fields",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Oracle Social Network Objects for Project Foundation",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Roles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Require Task Managers to be Project Team Members",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Resource Classes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Job Mappings",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Allow People with Future Effective Start Dates as Project Members",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Specify Number of Days to Display People with Terminated Assignments",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Non labour Resources",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Rate Schedules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Labour Costing Multipliers",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Labour Costing Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Labour Costing Overrides",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configure Project Accounting Business Function: Overtime Calculation Indicator",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Organization Costing Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Planning and Billing Resource Breakdown Structures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Reporting Resource Breakdown Structures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Submit Process to Refresh Resource Breakdown Structure Element Names",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configure Project Numbering",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Source Applications",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Action Controls",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Distribute and Install Desktop Integrator Client",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Budgeting",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Burden Cost Base Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Burden Cost Bases",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Burden Cost Codes",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Burden Structures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Burden Schedules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Submit Process to Build New Organization Burden Multipliers",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Types: Burdening Options",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Statuses: Burden Transaction Creation Status Control",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Project Control",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Project Control Value Sets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Control Descriptive Flex fields",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Control Messages",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Control Attachment Categories",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Period Profiles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Spread Curves",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Resource Classes: Spread Curves",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Financial Plan Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Plan Types",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Project Cost Base",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Project Costing Value Sets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Costing Descriptive Flex fields",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Costing Messages",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Costing Attachment Categories",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Transaction Sources",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Derive Billable Status of Expenditure Items from Work Type",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Derive Work Type for Project Expenditure Items",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Specify Number of Parallel Import and Process Cost Programs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Specify Allocation Method for ZeroBasis Amounts",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Standard Cost Collection Flex field",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Allow Cost Transactions with Zero Quantity as No billable",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configure Project Accounting Business Function: Borrowed and Lent Options",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Transaction Sources: CrossCharge Indicator",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Transfer Price Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Transfer Price Schedules",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Capital Projects",
+                "chapters": [
+                    {
+                        "chapterName": "Verify Default Asset Book Setup",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Standard Unit Costs",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Expenditure Types: Proceeds of Sale Indicator",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Types: Capitalization Options",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Statuses: Asset Capitalization Status Control",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Configure Project Accounting Business Function: Retirement Processing Indicator",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Capitalized Interest Rates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Capitalized Interest Rate Schedules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Types: Default Interest Rate Schedule",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Statuses: Capitalized Interest Generation Status Control",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Project Costing Integrations sub ledgers",
+                "chapters": [
+                    {
+                        "chapterName": "Discuss basic required setups from sub ledger",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "From Payables",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "From Purchasing Period end",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "From Purchasing At Receipt",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "From Inventory Misc Issues",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "From Expense",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Project Contracts",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Contract Line Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Contract Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Specify Customer Contract Management Business Function Properties",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Common CRM Business Unit Profile Options",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Document Sequence Categories",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Document Sequences",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Contract Party Roles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Contract Contact Roles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Contract Role Sources",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Contract Hold Reasons",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Contract Cancellation Reasons",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Contract Close Reasons",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Project Billing Case",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Event Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Rate Change Reasons",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Billing Cycles",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Invoice Formats",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Invoice Templates",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Revenue Methods",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Invoice Methods",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Specify Unit of Measure for Invoice Lines Sent to Oracle Fusion Receivables",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Specify Customer Contract Management Business Function Properties: Billing Options",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Auto Invoice Line Ordering Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Auto Invoice Grouping Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Receivables Payment Terms",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Auto Accounting Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Transaction Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Transaction Sources",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Project Performance Reporting",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Project Unit Options: Performance Reporting Options",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Status Indicators",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Trend Indicators",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage KPI Categories",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Performance Measures",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Key Performance Indicators",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Region Layouts",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Cross Project Comparison Graph Types",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Project Performance Reporting Messages",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Budgetary Control & Encumbrance Accounting",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Budgetary Control",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Budget Calendars",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Control Budget",
+                        "chaptherVideoPath": ""
+                    }
+                ]
+            },
+            {
+                "moduleName": "Project Accounting",
+                "chapters": [
+                    {
+                        "chapterName": "Manage Mapping Sets ",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Account Rules",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Sub ledger Journal Entry Rule Sets",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Manage Accounting Methods",
+                        "chaptherVideoPath": ""
+                    },
+                    {
+                        "chapterName": "Activate Sub ledger Journal Entry Rule Set Assignments",
                         "chaptherVideoPath": ""
                     }
                 ]
             }
         ],
-        "demoVideoPath": "https://www.youtube.com/watch?v=6DtPCjxDgyg&t=80s",
-        "demoVideoThumbnail" : "/images/courses/demo_thumbnail/ppm.webp",
+        "demoVideoPath": "",
         "yourFutureBoss": {
             "title": "Your Future Boss is Looking for Oracle Fusion Experts!",
             "shortDescription": "Unlock new career opportunities—Oracle Fusion PPM (Projects) professionals are in high demand. Start your journey today!"

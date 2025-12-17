@@ -1,5 +1,3 @@
-import { useState, useRef, useEffect } from "react";
-import React from "react";
 import dynamic from "next/dynamic";
 
 // Lazy load heavy or below-the-fold components
@@ -15,54 +13,20 @@ const RelatedBlogs = dynamic(() => import("./RelatedBlogs"), { ssr: false });
 const Subscribe = dynamic(() => import("./Subscribe"), { ssr: false });
 const SuccessStories = dynamic(() => import("./SuccessStories"), { ssr: false });
 const Testimonials = dynamic(() => import("./Testimonials"), { ssr: false });
-const CourseRegistrationForm = dynamic(() => import("./../../components/course/RegistrationForm"), { ssr: false });
-const AlreadySubmitted = dynamic(() => import("../blog/details/already_submitted"), { ssr: false });
 const HeaderStrip = dynamic(() => import("./HeaderStrip"));
-import Seo from "../Seo";
+import Seo from "../../components/Seo";
 import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
+import useLmsStore from "../../store/lmsStore";
 
 const Home = () => {
 
-    const formRef = useRef(null);
-    const overlayRef = useRef(null);
-
-    const [formVisibility, setFormVisibility] = useState(false);
-    const [formFields, setFormFields] = useState([]);
-    const [heading, setHeading] = useState("");
-    const [buttonLabel, setButtonLabel] = useState("");
-    const [detailsSubmitted, setDetailsSubmitted] = useState(false);
-    const [formSuccessCallback, setFormSuccessCallback] = useState(null);
-    const [userDetailsSubmitted, setUserDetailsSubmitted] = useState(false);
+    const setPopupFormProps = useLmsStore((state) => state.setPopupFormProps);
 
     const formConfigs = {
         "Start Your Journey": {
             fields: ["fullName", "email", "phone", "qualification", "message"],
             heading: "Start Your Journey",
             buttonLabel: "Register Now",
-        }
-    };
-
-    const handleButtonClick = () => {
-        if (formRef.current && overlayRef.current) {
-            formRef.current.style.display = "block";
-            overlayRef.current.style.display = "block";
-        }
-    };
-
-    const hidePopupForm = () => {
-        if (formRef.current && overlayRef.current) {
-            formRef.current.style.display = "none";
-            overlayRef.current.style.display = "none";
-        }
-    }
-
-    const handleDetailsSubmitted = () => {
-        setDetailsSubmitted(false);
-    }
-
-    const handleUserDetailsSubmissionStatus = (status) => {
-        if (status) {
-            setTimeout(() => { hidePopupForm() }, 3000)
         }
     };
 
@@ -79,20 +43,21 @@ const Home = () => {
         const config = formConfigs[formType];
 
         // let userDetails = localStorage.getItem("userDetails");
-        if (userDetails) {
-            setDetailsSubmitted(true);
+        // Double-check localStorage directly as well
+        const currentUserDetails = userDetails || localStorage.getItem("userDetails");
+        if (currentUserDetails) {
+            setPopupFormProps({ visible: false, alreadySubmitted: true });
         } else {
             if (config) {
-                setFormFields(config.fields);
-                setHeading(config.heading);
-                setButtonLabel(config.buttonLabel);
-                setFormVisibility(true);
-                handleButtonClick();
-            }
-            if (onSuccessCallback) {
-                setFormSuccessCallback(() => onSuccessCallback);
-            } else {
-                setFormSuccessCallback(null); // or undefined
+                setPopupFormProps({
+                    visible: true,
+                    alreadySubmitted: false,
+                    fields: config.fields,
+                    heading: config.heading,
+                    buttonLabel: config.buttonLabel,
+                    pageName: "Home Page",
+                    onSuccess: onSuccessCallback,
+                });
             }
         }
 
@@ -131,28 +96,6 @@ const Home = () => {
                     <GetInTouch></GetInTouch>
                     <Faq></Faq>
                 </section>
-
-                <div className="Main-Course-Overlay" ref={formRef} style={{ display: "none" }}></div>
-                <CourseRegistrationForm
-                    overlayRef={overlayRef}
-                    visible={formVisibility}
-                    fields={formFields}
-                    heading={heading}
-                    buttonLabel={buttonLabel}
-                    hidePopupForm={hidePopupForm}
-                    pageName="home"
-                    onSuccess={(data) => {
-                        //console.log("Success!", data);
-                        handleUserDetailsSubmissionStatus(true);
-                        if (formSuccessCallback) {
-                            formSuccessCallback(data); // ← This must be triggered here
-                            setFormSuccessCallback(null); // reset after call
-                        }
-                    }}
-                ></CourseRegistrationForm>
-                {detailsSubmitted && <><div className="Main-Course-Overlay"></div><AlreadySubmitted handleDetailsSubmitted={handleDetailsSubmitted}></AlreadySubmitted></>}
-                {/* <FooterStrip></FooterStrip> */}
-
             </section>
         </>
     )

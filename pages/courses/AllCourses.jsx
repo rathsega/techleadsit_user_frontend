@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import httpService from "../../services/httpService";
 import { useRouter } from "next/navigation";
 import { useLoader } from "../../contexts/LoaderContext";
@@ -9,36 +9,56 @@ const AllCourses = ({ category, subCategory, courseType, courseTracks, skillLeve
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
     const { setLoading } = useLoader();
+    const abortControllerRef = useRef();
+
 
     //console.log(searchText);
     //console.log(sortByValue);
     useEffect(() => {
-        fetchCourses();
-    }, [currentPage, category, subCategory, courseType, courseTracks, skillLevel, searchText, sortByValue]);
-    useEffect(() => {
         setCurrentPage(1);
     }, [category, subCategory, courseType, courseTracks, skillLevel, searchText, sortByValue]);
 
-    const fetchCourses = async () => {
-        try {
-            setLoading(true);
-            const response = await httpService.get("courses/getCoursesForUser", {
-                params: {
-                    page: currentPage,
-                    limit: 6,
-                    category, subCategory, courseType, courseTracks, skillLevel,
-                    searchText,
-                    sortByValue,
-                },
-            });
-            setLoading(false);
-            setCourses(response.data.courses);
-            setTotalPages(response.data.totalPages);
-            setTotalCoursesCount(response.data.totalCourses)
-        } catch (error) {
-            console.error("Error fetching courses:", error);
+    useEffect(() => {
+        // Cancel previous request if still in progress
+        if (abortControllerRef.current) {
+            abortControllerRef.current.abort();
         }
-    };
+        const controller = new AbortController();
+        abortControllerRef.current = controller;
+
+        const fetchCourses = async () => {
+            try {
+                setLoading(true);
+                const response = await httpService.get("courses/getCoursesForUser", {
+                    params: {
+                        page: currentPage,
+                        limit: 6,
+                        category, subCategory, courseType, courseTracks, skillLevel,
+                        searchText,
+                        sortByValue,
+                    },
+                    signal: controller.signal, // Pass abort signal
+                });
+                setLoading(false);
+                setCourses(response.data.courses);
+                setTotalPages(response.data.totalPages);
+                setTotalCoursesCount(response.data.totalCourses)
+            } catch (error) {
+                if (error.name === "CanceledError" || error.name === "AbortError") {
+                    // Request was aborted, do nothing
+                } else {
+                    console.error("Error fetching courses:", error);
+                }
+            }
+        };
+
+        fetchCourses();
+
+        // Cleanup: abort request on unmount
+        return () => {
+            controller.abort();
+        };
+    }, [currentPage, category, subCategory, courseType, courseTracks, skillLevel, searchText, sortByValue]);
 
 
     const handlePageChange = (newPage) => {

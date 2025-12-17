@@ -1,39 +1,41 @@
-import React, { useRef, useEffect, useState, useCallback } from 'react';
-import Faqs from '../../components/course/faqs';
+import React, { useRef, useEffect, useState } from 'react';
+
 import Hero from '../../components/course/hero';
-import CourseOverviewToolsAndModules from '../../components/course/course_overview_tool_modules';
-import IsthisCourseRightForYou from '../../components/course/course_overview_is_this_course_right_for_you';
-import UpcomingDemoSession from '../../components/course/course_overview_upcoming_demo_session';
-import StickyNav from '../../components/course/sticky_nav';
-import MobileStickyNav from '../../components/course/mobile_sticky_nav';
-import Curriculum from '../../components/course/curriculum';
-import InstructorDetails from '../../components/course/instructor_details';
-import PricingPlans from '../../components/course/learning_options_pricing_plans';
-import PlacementPathSteps from '../../components/course/placement_path_steps';
-import ComapniesWaitngForYou from '../../components/course/placement_path_companies_waiting_for_you';
-import TopCertifications from '../../components/course/top_certifications';
-import CourseRegistrationForm from '../../components/course/RegistrationForm';
-import SubscribeNewsLetters from '../../components/course/SubscribeNewaLetters';
-import ElevateYourLearning from '../../components/course/learning_options_elevate_your_learning';
-import RelatedBlogs from '../../components/course/related_blogs';
-import RelatedCourses from '../../components/course/related_courses';
-import AlreadySubmitted from '../blog/details/already_submitted';
-import YoutubeVideoPopupPlayer from '../../components/course/YoutubeVideoPopupPlayer';
-import WhatOurStudentsSay from '../../components/course/curriculum_what_our_students_say';
-import JobTrends from '../../components/course/job_trends';
-import Seo from '../Seo';
-import SchemaLoader from '../../components/course/SchemaLoader';
-import UpcomingDemoHeaderStrip from '../../components/course/upcoming_demo_header_strip';
-import LearningOptionsDeserveUpgrade from '../../components/course/learning_options_deserve_upgrade';
-import CourseOverviewKeyFeatures from '../../components/course/course_overview_key_features';
-import CourseOverviewHandsonProjects from '../../components/course/course_overview_handson_projects';
-import CourseOverviewWhyTechLeadSIT from '../../components/course/course_overview_why_techleadsit';
+import dynamic from 'next/dynamic';
+const Faqs = dynamic(() => import('../../components/course/faqs'))
+const CourseOverviewToolsAndModules = dynamic(() => import('../../components/course/course_overview_tool_modules'));
+const IsthisCourseRightForYou = dynamic(() => import('../../components/course/course_overview_is_this_course_right_for_you'));
+const UpcomingDemoSession = dynamic(() => import('../../components/course/course_overview_upcoming_demo_session'));
+const StickyNav = dynamic(() => import('../../components/course/sticky_nav'));
+const MobileStickyNav = dynamic(() => import('../../components/course/mobile_sticky_nav'));
+const Curriculum = dynamic(() => import('../../components/course/curriculum'));
+const InstructorDetails = dynamic(() => import('../../components/course/instructor_details'));
+const PricingPlans = dynamic(() => import('../../components/course/learning_options_pricing_plans'));
+const PlacementPathSteps = dynamic(() => import('../../components/course/placement_path_steps'));
+const ComapniesWaitngForYou = dynamic(() => import('../../components/course/placement_path_companies_waiting_for_you'));
+const TopCertifications = dynamic(() => import('../../components/course/top_certifications'));
+const SubscribeNewsLetters = dynamic(() => import('../../components/course/SubscribeNewaLetters'));
+const ElevateYourLearning = dynamic(() => import('../../components/course/learning_options_elevate_your_learning'));
+const RelatedBlogs = dynamic(() => import('../../components/course/related_blogs'));
+const RelatedCourses = dynamic(() => import('../../components/course/related_courses'));
+const YoutubeVideoPopupPlayer = dynamic(() => import('../../components/course/YoutubeVideoPopupPlayer'));
+const WhatOurStudentsSay = dynamic(() => import('../../components/course/curriculum_what_our_students_say'));
+const JobTrends = dynamic(() => import('../../components/course/job_trends'));
+const SchemaLoader = dynamic(() => import('../../components/course/SchemaLoader'));
+const UpcomingDemoHeaderStrip = dynamic(() => import('../../components/course/upcoming_demo_header_strip'));
+const LearningOptionsDeserveUpgrade = dynamic(() => import('../../components/course/learning_options_deserve_upgrade'));
+const CourseOverviewKeyFeatures = dynamic(() => import('../../components/course/course_overview_key_features'));
+const CourseOverviewHandsonProjects = dynamic(() => import('../../components/course/course_overview_handson_projects'));
+const CourseOverviewWhyTechLeadSIT = dynamic(() => import('../../components/course/course_overview_why_techleadsit'));
+const QuickPayment = dynamic(() => import('../../components/course/quick_payment'));
+const Achievers = dynamic(() => import('../../components/course/achievers'));
+import Seo from '../../components/Seo';
+
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import useLmsStore from '../../store/lmsStore';
-import QuickPayment from '../../components/course/quick_payment';
 import { useExpiringLocalStorage } from '../../services/useExpiringLocalStorage';
-import Achievers from '../../components/course/achievers';
+
 
 const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, courseId, courseTax, demos, upcomingDemoDate, relatedBlogs, relatedCourses }) => {
     // console.log("Changed Data: ", changedData);
@@ -42,38 +44,43 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
     const quickPaymentVisibility = useLmsStore((state) => state.showQuickPayment);
     const setQuickPaymentVisibility = useLmsStore((state) => state.setQuickPaymentVisibility);
     const setBuyingCourse = useLmsStore((state) => state.setBuyingCourse);
+    const setPopupFormProps = useLmsStore((state) => state.setPopupFormProps);
 
 
 
 
     useEffect(() => {
+        let ticking = false;
+
         const handleScroll = () => {
-            const mainCourseStripCust = document.getElementById("mainCourseStrip");
-            const mainCourseStripTextCust = document.querySelectorAll("#mainCourseStrip .mainCoursetext");
-            const mainCourseStripPaths = document.querySelectorAll("#mainCourseStrip svg path");
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const mainCourseStripCust = document.getElementById("mainCourseStrip");
+                    const mainCourseStripTextCust = document.querySelectorAll("#mainCourseStrip .mainCoursetext");
+                    const mainCourseStripPaths = document.querySelectorAll("#mainCourseStrip svg path");
 
-            if (mainCourseStripCust) {
-                if (window.scrollY > 50) {
-                    mainCourseStripCust.style.backgroundColor = "#ffffff";
-
-                    mainCourseStripTextCust.forEach((text) => {
-                        text.style.color = "#006FAA";
-                    });
-
-                    mainCourseStripPaths.forEach((path) => {
-                        path.setAttribute("fill", "#006FAA");
-                    });
-                } else {
-                    mainCourseStripCust.style.backgroundColor = "transparent";
-
-                    mainCourseStripTextCust.forEach((text) => {
-                        text.style.color = "#ffffff";
-                    });
-
-                    mainCourseStripPaths.forEach((path) => {
-                        path.setAttribute("fill", "#ffffff");
-                    });
-                }
+                    if (mainCourseStripCust) {
+                        if (window.scrollY > 50) {
+                            mainCourseStripCust.style.backgroundColor = "#ffffff";
+                            mainCourseStripTextCust.forEach((text) => {
+                                text.style.color = "#006FAA";
+                            });
+                            mainCourseStripPaths.forEach((path) => {
+                                path.setAttribute("fill", "#006FAA");
+                            });
+                        } else {
+                            mainCourseStripCust.style.backgroundColor = "transparent";
+                            mainCourseStripTextCust.forEach((text) => {
+                                text.style.color = "#ffffff";
+                            });
+                            mainCourseStripPaths.forEach((path) => {
+                                path.setAttribute("fill", "#ffffff");
+                            });
+                        }
+                    }
+                    ticking = false;
+                });
+                ticking = true;
             }
         };
 
@@ -85,30 +92,6 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
         };
     }, []);
 
-    const formRef = useRef(null);
-    const overlayRef = useRef(null);
-
-    const handleButtonClick = () => {
-        // if (formRef.current && overlayRef.current) {
-        // formRef.current.style.display = "block";
-        // overlayRef.current.style.display = "block";
-        setFormVisibility(true)
-        // }
-    };
-
-    const hidePopupForm = () => {
-        // if (formRef.current && overlayRef.current) {
-        // formRef.current.style.display = "none";
-        // overlayRef.current.style.display = "none";
-        setFormVisibility(false)
-        // }
-    }
-
-    const [formVisibility, setFormVisibility] = useState(false);
-    const [formFields, setFormFields] = useState([]);
-    const [heading, setHeading] = useState("");
-    const [buttonLabel, setButtonLabel] = useState("");
-    const [formSuccessCallback, setFormSuccessCallback] = useState(null);
 
     const jobTrendsNotRequired = [
         "SAP-CPI-OT-006",
@@ -117,7 +100,8 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
         "SAP-ABP-OT-038",
         "SFR-CRM-OT-039",
         "GEN-DST-OT-008",
-        "WRK-HCM-OT-009"
+        "WRK-HCM-OT-009",
+        "GEN-PMP-OT-043"
     ]
 
     const formConfigs = {
@@ -209,11 +193,6 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
     };
 
 
-    const [detailsSubmitted, setDetailsSubmitted] = useState(false);
-    const handleDetailsSubmitted = () => {
-        setDetailsSubmitted(false);
-    }
-
     const now = new Date();
     const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
 
@@ -228,20 +207,23 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
 
 
         // let userDetails = localStorage.getItem("userDetails");
-        if (userDetails) {
-            setDetailsSubmitted(true);
+        // Double-check localStorage directly as well
+        const currentUserDetails = userDetails || localStorage.getItem("userDetails");
+        if (currentUserDetails) {
+            setPopupFormProps({ visible: false, alreadySubmitted: true });
         } else {
             if (config) {
-                setFormFields(config.fields);
-                setHeading(config.heading);
-                setButtonLabel(config.buttonLabel);
-                setFormVisibility(true);
-                handleButtonClick();
-            }
-            if (onSuccessCallback) {
-                setFormSuccessCallback(() => onSuccessCallback);
-            } else {
-                setFormSuccessCallback(null); // or undefined
+                setPopupFormProps({
+                    visible: true,
+                    alreadySubmitted: false,
+                    fields: config.fields,
+                    heading: config.heading,
+                    buttonLabel: config.buttonLabel,
+                    pageName: "Course Page",
+                    courseTitle: courseData?.title || "",
+                    courseId: courseData?.id || "",
+                    onSuccess: onSuccessCallback,
+                });
             }
         }
 
@@ -264,53 +246,47 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
         document.body.removeChild(link);
     };
 
-    const handleUserDetailsSubmissionStatus = (status) => {
-        if (status) {
-            setTimeout(() => { hidePopupForm() }, 3000)
-        }
-    }
-
     const courseOverviewRef = useRef(null);
     const [showStrip, setShowStrip] = useState(false);
     const [showStripByScroll, setShowStripByScroll] = useState(false);
 
     useEffect(() => {
+        let debounceTimer = null;
+
         const handleScroll = () => {
-            const section = courseOverviewRef.current;
-            if (section) {
-                const top = section.getBoundingClientRect().top;
-                // Show the strip when top of element crosses top of viewport (<= 0)
-                setShowStrip(top <= 0);
-            }
+            if (debounceTimer) clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => {
+                const section = courseOverviewRef.current;
+                if (section) {
+                    const top = section.getBoundingClientRect().top;
+                    setShowStrip(top <= 0);
+                }
+            }, 100); // 100ms debounce
         };
 
         window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            if (debounceTimer) clearTimeout(debounceTimer);
+        };
     }, []);
+
 
     const [loading, setLoading] = useState(false);
 
     const [youtibeopenVideoPopup, setYoutibeopenVideoPopup] = useState(false);
     const handleYoutibeOpenVideoPopup = () => {
-        console.log("Opening YouTube video popup : ", youtibeopenVideoPopup);
         setYoutibeopenVideoPopup(prev => !prev)
     }
 
     const handleBrochureDownload = () => {
         // const userDetails = localStorage.getItem("userDetails");
-        const now = new Date();
-        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
-
-        const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
-            "userDetails",
-            null,
-            endOfDay
-        );
-
+        
         if (userDetails) {
             downloadBrochure();
         } else {
-            openForm("Download Course Brochure");
+            openForm("Download Course Brochure", downloadBrochure);
         }
     };
 
@@ -334,7 +310,6 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
         console.log(formHeading);
     }, [formHeading])
 
-    //console.log(courseId);
     const [usd, setUsd] = useState("");
     useEffect(() => {
         (async () => {
@@ -371,19 +346,27 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
     };
 
     useEffect(() => {
+        let debounceTimer = null;
+
         const handleScroll = () => {
-            const scrolledToBottom =
-                window.innerHeight + window.scrollY >= document.body.scrollHeight;
-            //console.log(scrolledToBottom)
-            if (scrolledToBottom) {
-                setShowStripByScroll(false); // hide element
-            } else {
-                setShowStripByScroll(true); // show element
-            }
+            if (debounceTimer) clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => {
+                const scrolledToBottom =
+                    window.innerHeight + window.scrollY >= document.body.scrollHeight;
+                if (scrolledToBottom) {
+                    setShowStripByScroll(false); // hide element
+                } else {
+                    setShowStripByScroll(true); // show element
+                }
+            }, 100); // 100ms debounce
         };
 
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            if (debounceTimer) clearTimeout(debounceTimer);
+        };
     }, []);
 
     const [loadBelowFold, setLoadBelowFold] = useState(true);
@@ -422,12 +405,70 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
         setQuickPaymentVisibility(true);
     };
 
+    const RequestAFreeDemo = () => openForm("Request A Free Demo")
+    const GetPersonalizedContent = () => openForm("Get Personalized Guidance")
+    const JoinTheCourse = () => openForm("join the course")
+    const EnrolNowEvent = () => openForm("Enroll Now")
+    const YourSuccessStartsHere = () => openForm("Your Success Starts Here")
+    const StartYourJourney = () => openForm("Start Your Journey")
+
+    const HideCourseOverviewHandsOnProjects = ["GEN-PMP-OT-043"]
+
+    const buyNowCourseIds = [
+        "ORF-SCM-OT-001",    // Oracle Fusion SCM Online Training
+        "ORF-HCM-OT-002",    // Oracle Fusion HCM Online Training
+        "ORF-FIN-OT-003",    // Oracle Fusion Financials Training
+        "ORF-TEC-OT-004",    // Oracle Fusion Technical + OIC Training
+        "SAP-CPI-OT-006",    // SAP CPI Online Training
+        "SAP-SDO-OT-007",    // SAP SD Online Training
+        "ORF-RCT-OT-012",    // Oracle Recruiting Cloud Online Training
+        "ORF-OIC-OT-015",    // Oracle Integration Cloud (OIC) Online Training
+        "ORF-MFG-OT-016",    // Oracle Fusion Manufacturing training
+        "ORF-PPM-OT-017",    // Oracle Fusion PPM | Project's Training
+        "ORF-SCM-PT-024",    // Oracle Fusion SCM Training in Hyderabad
+        "ORF-SCM-CT-025",    // Oracle Fusion SCM Certification Training
+        "ORF-SCM-SP-026",    // Oracle Fusion SCM Self Paced Training
+        "ORF-HCM-PT-027",    // Oracle Fusion HCM Training in Hyderabad
+        "ORF-HCM-CT-028",    // Oracle Fusion HCM Certification Training
+        "ORF-HCM-SP-029",    // Oracle Fusion HCM Self Paced Training
+        "ORF-FIN-PT-030",    // Oracle Fusion Financials Training in Hyderabad
+        "ORF-FIN-CT-031",    // Oracle Fusion Financials Certification Training
+        "ORF-FIN-SP-032",    // Oracle Fusion Financials Self Paced Training
+        "ORF-TEC-CT-033",    // Oracle Fusion Technical OIC Certification Training
+        "ORF-TEC-SP-034",    // Oracle Fusion Technical Self Paced Training
+        "ORF-WMS-SP-035",    // Oracle Fusion WMS Cloud (Logfire) Self Paced Training
+        "ORF-MFP-OT-042",    // Oracle Fusion Manufacturing & Planning training
+        "GEN-PMP-OT-043",     // PMP Certification Training
+        "ORF-WMS-OT-005",    // Oracle Fusion WMS Cloud (Logfire) Training
+        "ORF-APX-OT-044"
+    ];
+
+    // Course IDs that should show "Enquire Now" button (disabled courses)
+    const enquireNowCourseIds = [
+        "GEN-DST-OT-008",    // Data Science Online Training
+        "WRK-HCM-OT-009",    // Workday HCM Techno Functional Training
+        "ORF-PRC-OT-010",    // Oracle Fusion Procurement Training
+        "ORF-HCM-OT-011",    // Oracle Fusion HCM Technical Training
+        "ORF-OTM-OT-013",    // Oracle Transportation Management OTM cloud Training
+        "ORF-GTM-OT-014",    // Oracle Global Trade Management Cloud Online Training
+        "ORF-ADF-OT-018",    // Oracle ADF Online Training
+        "ORR-SCM-OT-019",    // Oracle EBS R12 SCM Training
+        "ORR-FIN-OT-020",    // Oracle EBS R12 Financials Training
+        "ORR-PAT-OT-021",    // Oracle EBS R12 Project Accounting Training
+        "ORR-TCH-OT-022",    // Oracle Apps R12 Technical Training
+        "ORR-OAF-OT-023",    // Oracle OAF Online Training
+        "GEN-DMO-OT-036",    // Digital Marketing Online Training
+        "SAP-MMO-OT-037",    // SAP MM online Training
+        "SAP-ABP-OT-038",    // SAP ABAP Online Training
+        "SFR-CRM-OT-039",    // Salesforce Online Training
+        "ORF-PLC-OT-040",    // Oracle Fusion Planning Central Training
+        "ORF-CRM-OT-041"     // Fusion Cloud CRM Online Training
+    ];
+
     return (<>
-        <Seo details={nativeCourse?.seo}></Seo>
-        <SchemaLoader slug={slug}></SchemaLoader>
         <main className="Course-Page-CP">
             {nativeCourse?.basic?.discountedPrice && demos.length > 0 ? <UpcomingDemoHeaderStrip demos={demos} price={nativeCourse?.basic?.price} discountedPrice={nativeCourse?.basic?.discountedPrice} title={courseData?.title}></UpcomingDemoHeaderStrip> : null}
-            <Hero data={courseData?.hero} courseTitle={courseData?.title} handleButtonClick={handleButtonClick} openForm={openForm} handleYoutibeOpenVideoPopup={handleYoutibeOpenVideoPopup} demoVideoPath={courseData?.curriculum?.demoVideoPath}></Hero>
+            <Hero data={courseData?.hero} courseTitle={courseData?.title} openForm={openForm} handleYoutibeOpenVideoPopup={handleYoutibeOpenVideoPopup} demoVideoPath={courseData?.curriculum?.demoVideoPath}></Hero>
 
             {showStrip && showStripByScroll && <div className="Main-Course-Banner-Strip" id="mainCourseStrip">
                 <div className="d-flex fl-d-cl-aic">
@@ -458,7 +499,7 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                     </svg>
                     <div className="ms-2 mainCoursetext">
                         <p className="Main-Course-strip-p1">Next Demo Date</p>
-                        {upcomingDemoDate ? <p className="Main-Course-strip-p2">{upcomingDemoDate}</p> : <p className="Main-Course-strip-p2 cursor-pointer" style={{ textDecoration: "underline" }} onClick={(e) => openForm("Request A Free Demo")}>Contact Us <i className="fa-solid fa-arrow-right"></i></p>}
+                        {upcomingDemoDate ? <p className="Main-Course-strip-p2">{upcomingDemoDate}</p> : <p className="Main-Course-strip-p2 cursor-pointer" style={{ textDecoration: "underline" }} onClick={RequestAFreeDemo}>Contact Us <i className="fa-solid fa-arrow-right"></i></p>}
                     </div>
                 </div>
 
@@ -514,14 +555,24 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                     <StickyNav showJobTrends={jobTrendsNotRequired.indexOf(courseData?.id)} ></StickyNav>
 
                     <MobileStickyNav showJobTrends={jobTrendsNotRequired.indexOf(courseData?.id)} handleBelowFoldLoad={handleBelowFoldLoad}></MobileStickyNav>
-                    <button
+
+                    { enquireNowCourseIds.includes(courseData?.id) && <button
+                        onClick={() => openForm("Enroll Now")}
+                        className="Main-Course-Top-Nav-CTA-Btn Main-Course-CTA-Button-Pop-Section"
+                        disabled={false}
+                    >
+                        <span>Enquire Now</span>
+                        <i className="fa-solid fa-arrow-right Main-Course-CTA-arrow Main-Course-CTA-Top-Nav-arrow ms-2"></i>
+                    </button>}
+
+                    { buyNowCourseIds.includes(courseData?.id) && <button
                         onClick={handleBuyNowClick}
                         className={`Main-Course-Top-Nav-CTA-Btn Main-Course-CTA-Button-Pop-Section ${!(typeof courseId === 'number' && courseId > 0) ? 'disabled' : ''}`}
                         disabled={!(typeof courseId === 'number' && courseId > 0)}
                     >
                         <span>Buy Now</span>
                         <i className="fa-solid fa-arrow-right Main-Course-CTA-arrow Main-Course-CTA-Top-Nav-arrow ms-2"></i>
-                    </button>
+                    </button>}
                 </div>
 
                 <section id="course-overview" ref={courseOverviewRef} className="Main-Course-T-scroll-container">
@@ -532,15 +583,14 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
 
                         <CourseOverviewWhyTechLeadSIT id={courseData?.id} openForm={openForm} bfRef={belowFoldRef}></CourseOverviewWhyTechLeadSIT>
 
-                        {loadBelowFold && <IsthisCourseRightForYou data={courseData?.courseOverview?.isThisCourseRightForYou}></IsthisCourseRightForYou>}
+                        {loadBelowFold && <IsthisCourseRightForYou data={courseData?.courseOverview?.isThisCourseRightForYou} id={courseData?.id}></IsthisCourseRightForYou>}
 
                         <section className="Main-Course-CTA-banner1">
                             <div className="Main-Course-CTA-banner-content1">
                                 <p className="Main-Course-CTA-banner-p1">
-                                    Is This Course the Right Choice for You? Let’s Figure It Out
-                                    Together!
+                                    {courseData?.id == 'ORF-FIN-OT-003' ? 'Still Stuck in a Low-Paying Role? Upgrade with Oracle Fusion Financials Course!' : 'Is This Course the Right Choice for You? Let’s Figure It Out Together!'}
                                 </p>
-                                <button className="Main-Course-CTA-Banner-Btn1" onClick={(e) => openForm("Get Personalized Guidance")}>
+                                <button className="Main-Course-CTA-Banner-Btn1" onClick={GetPersonalizedContent}>
                                     <i className="fa-solid fa-phone-volume Main-Course-CTA-Banner-Btn-icon"></i>Get Personalized
                                     Guidance
                                 </button>
@@ -551,7 +601,7 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                             </div>
                         </section>
 
-                        {loadBelowFold && <CourseOverviewHandsonProjects id={courseData?.id} openForm={openForm}></CourseOverviewHandsonProjects>}
+                        {loadBelowFold && !HideCourseOverviewHandsOnProjects.includes(courseData?.id) && <CourseOverviewHandsonProjects id={courseData?.id} openForm={openForm}></CourseOverviewHandsonProjects>}
 
                         <UpcomingDemoSession data={courseData?.courseOverview?.upcomingDemoSession} courseTitle={courseData?.hero?.title} courseId={courseData?.id} demos={demos} openForm={openForm} subHeading={changedData?.upcomingDemoSessionSubHeading}></UpcomingDemoSession>
 
@@ -564,7 +614,7 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                                 <p className="Main-Course-CTA-banner-p2">
                                     {changedData?.investInYourselfSubHeadingChange}
                                 </p>
-                                <button className="Main-Course-CTA-button2" onClick={(e) => openForm("join the course")}>
+                                <button className="Main-Course-CTA-button2" onClick={JoinTheCourse} aria-label="Join-the-course-button">
                                     <div className="Main-Course-CTA-button-dots_border2"></div>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         className="Main-Course-CTA-button-sparkle2">
@@ -600,7 +650,7 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                             <h2 className="Main-Course-Watch-Our-Demo-Section-heading">Watch Our Demo Video</h2>
                             <p className="Main-Course-Watch-Our-Demo-Section-para">Get an Exclusive Preview of Our Training and
                                 Learning Experience!</p>
-                            <div className="Main-Course-Why-TL-CTA-Btn-Section cursor-pointer" onClick={(e) => openForm("Request A Free Demo")}>
+                            <div className="Main-Course-Why-TL-CTA-Btn-Section cursor-pointer" onClick={RequestAFreeDemo}>
                                 <button className="Main-Course-Why-TL-CTA-Btn">Request for Free Demo</button>
                                 <i className="fa-solid fa-arrow-right Main-Course-CTA-arrow ms-2"></i>
                             </div>
@@ -634,7 +684,7 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                             <p className="Main-Course-CTA-banner-p3">
                                 {courseData?.curriculum?.yourFutureBoss?.shortDescription}
                             </p>
-                            <button className="Main-Course-CTA-button3" onClick={(e) => openForm("Enroll Now")}>
+                            <button className="Main-Course-CTA-button3" onClick={EnrolNowEvent} aria-label="Enroll-now-button">
                                 <div className="Main-Course-CTA-button-dots_border3"></div>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     className="Main-Course-CTA-button-sparkle3">
@@ -779,13 +829,14 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                                         style={{ "maxWidth": "100%", "width": "auto", "height": "auto", "position": "relative" }}
                                         alt="Sticky Image" />
                                     <div className="Main-Course-Placements-Path-Steps-We-Follow-Left-Content">
-                                        <h2 className="Main-Course-Placements-Path-Steps-We-Follow-Left-Content-Heading">Our Process
-                                        </h2>
+                                        <h3 className="Main-Course-Placements-Path-Steps-We-Follow-Left-Content-Heading">
+                                            {courseData?.id == 'ORF-FIN-OT-003' ? 'Key Modules Covered in Oracle Fusion Financials Course' : 'Our Process'}
+                                        </h3>
                                         <p className="Main-Course-Placements-Path-Steps-We-Follow-Left-Content-Para">Develop a solid
                                             foundation, gain hands-on experience, and refine your professional presence to
                                             transition from a learner to a high-demand ERP professional.</p>
                                         <div className="Main-Course-Placements-Path-Steps-We-Follow-Left-Content-Btn-Section">
-                                            <button className="Main-Course-Placements-Path-Steps-We-Follow-Left-Content-Btn" onClick={(e) => openForm("Your Success Starts Here")}>Your
+                                            <button className="Main-Course-Placements-Path-Steps-We-Follow-Left-Content-Btn" onClick={YourSuccessStartsHere}>Your
                                                 Success Starts Here!</button>
                                             <i className="fa-solid fa-arrow-right Main-Course-CTA-arrow ms-2"></i>
                                         </div>
@@ -857,7 +908,40 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                                         <Image src="/images/courses/C-SLK-Icon.png" width={254} height={88} alt="Company-Icon" />
                                         <Image src="/images/courses/C-splashBI.png" width={254} height={88} alt="Company-Icon" />
                                         <Image src="/images/courses/C-TechMahindra-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        {/* New company logos */}
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-CES-Icon.webp" alt="CES Company Logo" />
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-INCRESOL-Icon.webp" alt="Incresol Company Logo" />
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-INFOLOB-Icon.webp" alt="Infolob Company Logo" />
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-ITCONVERGENCE-Icon.webp" alt="IT Convergence Company Logo" />
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-SHAHGARON-Icon.webp" alt="Shahgaron Company Logo" />
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-STRAWBERRY-Icon.webp" alt="Strawberry Company Logo" />
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-VITHI-Icon.webp" alt="Vithi Company Logo" />
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-YASHTECHNOLOGIES-Icon.webp" alt="Yash Technologies Company Logo" />
 
+                                        <Image src="/images/courses/C-AAIS-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        <Image src="/images/courses/C-accenture-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        <Image src="/images/courses/C-aingenious-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        <Image src="/images/courses/C-AWC-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        <Image src="/images/courses/C-cognizant-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        <Image src="/images/courses/C-DOYENSYS-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        <Image src="/images/courses/C-FORTINET-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        <Image src="/images/courses/C-Lenovo-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        <Image src="/images/courses/C-LTIMindtree-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        <Image src="/images/courses/C-MOURITECH-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        <Image src="/images/courses/C-Mphasis-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        <Image src="/images/courses/C-NTTDATA-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        <Image src="/images/courses/C-SLK-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        <Image src="/images/courses/C-splashBI.png" width={254} height={88} alt="Company-Icon" />
+                                        <Image src="/images/courses/C-TechMahindra-Icon.png" width={254} height={88} alt="Company-Icon" />
+                                        {/* New company logos */}
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-CES-Icon.webp" alt="CES Company Logo" />
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-INCRESOL-Icon.webp" alt="Incresol Company Logo" />
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-INFOLOB-Icon.webp" alt="Infolob Company Logo" />
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-ITCONVERGENCE-Icon.webp" alt="IT Convergence Company Logo" />
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-SHAHGARON-Icon.webp" alt="Shahgaron Company Logo" />
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-STRAWBERRY-Icon.webp" alt="Strawberry Company Logo" />
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-VITHI-Icon.webp" alt="Vithi Company Logo" />
+                                        <Image height={254} width={88} loading='lazy' priority={false} src="/images/courses/C-YASHTECHNOLOGIES-Icon.webp" alt="Yash Technologies Company Logo" />
                                     </div>
                                 </div>
                             </div>
@@ -873,7 +957,7 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                                 <p className="Main-Course-CTA-banner-p5">
                                     {courseData?.placementPath?.startJourney?.shortDescription}
                                 </p>
-                                <button className="Main-Course-CTA-button5" onClick={(e) => openForm("Start Your Journey")}>
+                                <button className="Main-Course-CTA-button5" onClick={StartYourJourney} aria-label="Start-Your-Journey-button">
                                     <div className="Main-Course-CTA-button-dots_border5"></div>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         className="Main-Course-CTA-button-sparkle5">
@@ -902,7 +986,7 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                         <ComapniesWaitngForYou data={courseData?.placementPath?.companiesWaitingForYou}></ComapniesWaitngForYou>
                     </section>
 
-                    {jobTrendsNotRequired.indexOf(courseData?.id) == -1 && <JobTrends courseData={courseData} openForm={openForm}></JobTrends>}</>}
+                    {jobTrendsNotRequired.indexOf(courseData?.id) == -1 && <JobTrends turnKnowledgeIntoPowerData={courseData?.turnKnowledgeIntoPower} JobTrendsData={courseData?.jobTrends} courseTitle={courseData?.title} openForm={openForm}></JobTrends>}</>}
             </div>
             {loadBelowFold && <section className="Main-Course-Common-Sections">
 
@@ -921,7 +1005,12 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
 
                     <div className="Main-Course-Badge-Of-Excellence-Section-Whole-Content">
                         <div className="Main-Course-Badge-Of-Excellence-Image-Section">
-                            <Image src={`/images/courses/certificates/${courseData?.title?.replace(/\s*\+\s*/g, "_")?.replace(/\s_\s+/g, "_")}.webp`}
+                            <Image src={`/images/courses/certificates/${courseData?.title
+                                ?.replace(/\s*\+\s*/g, " ")
+                                ?.replace(/\s_\s+/g, " ")
+                                ?.replace(/[&,]/g, "") // removes both & and ,
+                                ?.replace(/\s+/g, " ")
+                                ?.trim()}.webp`}
                                 alt="Certificate-For-The-Badge-Of-Excellence-Img" loading='lazy' priority={false}
                                 className="Main-Course-Badge-Of-Excellence-Section-Img" width="632" height="447" />
                             <button className="Main-Course-Badge-Of-Excellence-Sample-Certificate-btn"
@@ -1044,11 +1133,11 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                     </div>
                 </section>
 
-                <RelatedCourses courses={relatedCourses} courseTax={courseTax}></RelatedCourses>
+                {relatedCourses?.length > 1 && <RelatedCourses courses={relatedCourses} courseTax={courseTax}></RelatedCourses>}
 
                 <Faqs data={courseData?.faqs} openForm={openForm}></Faqs>
 
-                <RelatedBlogs blogs={relatedBlogs}></RelatedBlogs>
+                {relatedBlogs?.length > 0 && <RelatedBlogs blogs={relatedBlogs}></RelatedBlogs>}
 
                 <SubscribeNewsLetters></SubscribeNewsLetters>
 
@@ -1100,29 +1189,10 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
             </section>}
         </main>
 
-        {quickPaymentVisibility && <QuickPayment courseId={courseData?.id}></QuickPayment>}
+        <Seo details={nativeCourse?.seo}></Seo>
+        <SchemaLoader slug={slug}></SchemaLoader>
 
-        {formVisibility && <><div className="Main-Course-Overlay"></div>
-            <CourseRegistrationForm
-                overlayRef={overlayRef}
-                visible={formVisibility}
-                fields={formFields}
-                heading={heading}
-                buttonLabel={buttonLabel}
-                hidePopupForm={hidePopupForm}
-                pageName="course"
-                courseTitle={courseData?.title}
-                courseId={courseData?.id}
-                onSuccess={(data) => {
-                    //console.log("Success!", data);
-                    handleUserDetailsSubmissionStatus(true);
-                    if (formSuccessCallback) {
-                        formSuccessCallback(data); // ← This must be triggered here
-                        setFormSuccessCallback(null); // reset after call
-                    }
-                }}
-            ></CourseRegistrationForm></>}
-        {detailsSubmitted && <><div className="Main-Course-Overlay"></div><AlreadySubmitted handleDetailsSubmitted={handleDetailsSubmitted}></AlreadySubmitted></>}
+        {quickPaymentVisibility && <QuickPayment courseId={courseData?.id}></QuickPayment>}
     </>)
 }
 

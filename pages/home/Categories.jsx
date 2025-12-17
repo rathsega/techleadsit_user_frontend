@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import httpService from './../../services/httpService'
 import { useRouter } from "next/navigation";
 import { useLoader } from "../../contexts/LoaderContext";
-import React from "react";
 import Image from 'next/image'; // Importing Image component from next.js for optimized image handling
 const Categories = () => {
     const [categories, setCategories] = useState([])
@@ -40,7 +39,7 @@ const Categories = () => {
                 {
                     categories?.length > 0 && categories.map((category, cindex) => (
                         <article key={cindex} className="Home-Section-CC-card" onClick={() => openCourses(category?._id, category?.title)}>
-                            <img src={process.env.NEXT_PUBLIC_FILES_URL + category?.icon?.path} alt={category?.name} className="Home-Section-CC-image-T1" loading="lazy" />
+                            <Image src={process.env.NEXT_PUBLIC_FILES_URL + category?.icon?.path} alt={category?.title} className="Home-Section-CC-image-T1" height={160} width={240} loading="lazy" />
                             <h3>{category?.title}</h3>
                             <p>{category?.subTitle}</p>
                             <div className="Home-Section-CC-meta">

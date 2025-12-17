@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Hero from "./Hero";
 import UpCominDemoSession from "./UpComingDemoSession";
@@ -15,11 +15,10 @@ import Faqs from "./Faqs";
 import GetInTouch from "./GetInTouch";
 import LimitedSeats from "./LimitedSeats";
 import httpService from "../../services/httpService";
-import Seo from "../Seo";
+import Seo from "../../components/Seo";
 import InstructorTestimonials from "../../components/course/instructor_testimonials";
-import CourseRegistrationForm from "../../components/course/RegistrationForm";
-import AlreadySubmitted from "../blog/details/already_submitted";
 import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
+import useLmsStore from "../../store/lmsStore";
 function convertWebinarDateFormat(date) {
     const newDate = new Date(date);
     return newDate.toISOString().slice(0, 10) + "T" + newDate.toTimeString().slice(0, 5);
@@ -29,14 +28,9 @@ const CourseDemo = ({ initialDemoDetails }) => {
     const [demoDetails, setDemoDetails] = useState(initialDemoDetails);
     const router = useRouter();
     const { id } = router.query;
-
-    const [showPopupform, setShowPopupform] = useState(false);
-    const [popupProps, setPopupProps] = useState({ title: "", buttonName: "" });
     const [userDetailsSubmitted, setUserDetailsSubmitted] = useState(false);
+    const setPopupFormProps = useLmsStore((state) => state.setPopupFormProps);
 
-    const handlePopupFormProps = (newProps) => {
-        setPopupProps(newProps);
-    };
 
     useEffect(() => {
         if (!id) return; // Prevent API call with undefined id
@@ -83,14 +77,6 @@ const CourseDemo = ({ initialDemoDetails }) => {
         }
     }, []);
 
-    const handleUserDetailsSubmissionStatus = (status) => {
-        setUserDetailsSubmitted(status);
-    };
-
-    const handlePopupformVisibility = () => {
-        setShowPopupform((prev) => !prev);
-    };
-
     const downloadBase64File = (fileSrc, fileName) => {
         if (!fileSrc?.data || !fileSrc?.type || !fileName) {
             console.error("Invalid file source");
@@ -125,30 +111,6 @@ const CourseDemo = ({ initialDemoDetails }) => {
             console.error("Error fetching image:", error);
         }
     };
-
-
-    const formRef = useRef(null);
-    const overlayRef = useRef(null);
-
-    const handleButtonClick = () => {
-        if (formRef.current && overlayRef.current) {
-            formRef.current.style.display = "block";
-            overlayRef.current.style.display = "block";
-        }
-    };
-
-    const hidePopupForm = () => {
-        if (formRef.current && overlayRef.current) {
-            formRef.current.style.display = "none";
-            overlayRef.current.style.display = "none";
-        }
-    }
-
-    const [formVisibility, setFormVisibility] = useState(false);
-    const [formFields, setFormFields] = useState([]);
-    const [heading, setHeading] = useState("");
-    const [buttonLabel, setButtonLabel] = useState("");
-    const [formSuccessCallback, setFormSuccessCallback] = useState(null);
 
     const formConfigs = {
         "Register For Free Demo": {
@@ -193,12 +155,6 @@ const CourseDemo = ({ initialDemoDetails }) => {
         }
     };
 
-
-    const [detailsSubmitted, setDetailsSubmitted] = useState(false);
-    const handleDetailsSubmitted = () => {
-        setDetailsSubmitted(false);
-    }
-
     const now = new Date();
     const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
 
@@ -212,20 +168,21 @@ const CourseDemo = ({ initialDemoDetails }) => {
         const config = formConfigs[formType];
 
         // let userDetails = localStorage.getItem("userDetails");
-        if (userDetails) {
-            setDetailsSubmitted(true);
+        // Double-check localStorage directly as well
+        const currentUserDetails = userDetails || localStorage.getItem("userDetails");
+        if (currentUserDetails) {
+            setPopupFormProps({ visible: false, alreadySubmitted: true });
         } else {
             if (config) {
-                setFormFields(config.fields);
-                setHeading(config.heading);
-                setButtonLabel(config.buttonLabel);
-                setFormVisibility(true);
-                handleButtonClick();
-            }
-            if (onSuccessCallback) {
-                setFormSuccessCallback(() => onSuccessCallback);
-            } else {
-                setFormSuccessCallback(null); // or undefined
+                setPopupFormProps({
+                    visible: true,
+                    alreadySubmitted: false,
+                    fields: config.fields,
+                    heading: config.heading,
+                    buttonLabel: config.buttonLabel,
+                    pageName: "Course Demo",
+                    onSuccess: onSuccessCallback,
+                });
             }
         }
 
@@ -262,7 +219,6 @@ const CourseDemo = ({ initialDemoDetails }) => {
                     details={demoDetails.upcomingDemoSession}
                     openForm={openForm}
                 />
-                {/* <CourseDemoTestimonials details={demoDetails.testimonials} /> */}
                 <InstructorTestimonials data={demoDetails.testimonials}></InstructorTestimonials>
                 <Alumni details={demoDetails.alumni} />
                 <RegisterForFreeDemoSession
@@ -272,28 +228,7 @@ const CourseDemo = ({ initialDemoDetails }) => {
                 <LimitedSeats details={demoDetails.upcomingDemoSession} openForm={openForm} />
                 <Faqs details={demoDetails.faq} />
                 <GetInTouch />
-                {/* <Footer /> */}
-                {/* {showPopupform && <PopupForm handlePopupformVisibility={handlePopupformVisibility} popupProps={popupProps} handleUserDetailsSubmissionStatus={handleUserDetailsSubmissionStatus} />} */}
-                <div className="Main-Course-Overlay" ref={formRef} style={{ display: "none" }}></div>
-                <CourseRegistrationForm
-                    overlayRef={overlayRef}
-                    visible={formVisibility}
-                    fields={formFields}
-                    heading={heading}
-                    buttonLabel={buttonLabel}
-                    hidePopupForm={hidePopupForm}
-                    pageName="course_demo"
-                    courseTitle={demoDetails.upcomingDemoSession.courseTitle}
-                    onSuccess={(data) => {
-                        //console.log("Success!", data);
-                        handleUserDetailsSubmissionStatus(true);
-                        if (formSuccessCallback) {
-                            formSuccessCallback(data); // ← This must be triggered here
-                            setFormSuccessCallback(null); // reset after call
-                        }
-                    }}
-                ></CourseRegistrationForm>
-                {detailsSubmitted && <><div className="Main-Course-Overlay"></div><AlreadySubmitted handleDetailsSubmitted={handleDetailsSubmitted}></AlreadySubmitted></>}
+                
             </div>
         </>
     );

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Banner from "./Banner";
 import SummaryContainer from "./SummaryContainer";
 import httpService from "../../../services/httpService";
-import Seo from "../../Seo";
+import Seo from "../../../components/Seo";
 import SubscribeSection from "./SubscribeSection";
 import RelatedBlogs from "./RelatedBlogs";
 import FloatingLabel from "./FloattingLabel";
@@ -11,6 +11,7 @@ import MobileView from "./MobileView";
 import SocialShare from "./SocialShare";
 import { useLoader } from "../../../contexts/LoaderContext";
 import { useExpiringLocalStorage } from "../../../services/useExpiringLocalStorage";
+import Breadcrumb from '../../../components/breadcrumb';
 
 export default function BlogDetailsPage({ initialBlogDetails }) {
     const router = useRouter();
@@ -140,6 +141,7 @@ export default function BlogDetailsPage({ initialBlogDetails }) {
 
     return (
         <>
+            <Breadcrumb pageDetails={{ pageName: "blogDetail", slug: titleSlug }} />
             <Seo details={blogDetails?.seo} />
             <Banner details={blogDetails?.basic} />
 

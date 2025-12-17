@@ -1,0 +1,179 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "@id": "https://www.techleadsit.com/courses/oracle-apex-online-training-course#webpage",
+            "url": "https://www.techleadsit.com/courses/oracle-apex-online-training-course",
+            "name": "Oracle APEX Online Training Course – Low-Code App Development",
+            "description": "Oracle APEX online training course by Tech Leads IT. Learn low-code app development with real-time projects, REST APIs, Redwood UX and career-focused guidance in a live online format.",
+            "inLanguage": "en",
+            "isPartOf": {
+                "@id": "https://www.techleadsit.com#website"
+            },
+            "breadcrumb": {
+                "@id": "https://www.techleadsit.com/courses/oracle-apex-online-training-course#breadcrumb"
+            },
+            "about": [
+                {
+                    "@type": "Thing",
+                    "name": "Oracle APEX online training"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Low-code application development"
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.techleadsit.com/courses/oracle-apex-online-training-course#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.techleadsit.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Courses",
+                    "item": "https://www.techleadsit.com/courses/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Oracle APEX Online Training"
+                }
+            ]
+        },
+        {
+            "@type": "Course",
+            "@id": "https://www.techleadsit.com/courses/oracle-apex-online-training-course#course",
+            "name": "Oracle APEX Online Training Course – Low-Code Application Development",
+            "description": "Job-focused Oracle APEX online training from Tech Leads IT. Learn to build secure, data-driven web applications using Oracle APEX, SQL, REST APIs and Redwood UX with real-time projects.",
+            "provider": {
+                "@type": "EducationalOrganization",
+                "@id": "https://www.techleadsit.com#organization",
+                "name": "Tech Leads IT",
+                "url": "https://www.techleadsit.com"
+            },
+            "educationalCredentialAwarded": "Oracle APEX Course Completion Certificate",
+            "timeRequired": "P2M",
+            "courseCode": "TL-APEX",
+            "inLanguage": "en",
+            "areaServed": [
+                "IN",
+                "AE",
+                "SA",
+                "US",
+                "GB",
+                "CA",
+                "AU"
+            ],
+            "hasCourseInstance": {
+                "@type": "CourseInstance",
+                "name": "Oracle APEX Live Online Training Batch",
+                "courseMode": [
+                    "online"
+                ],
+                "startDate": "2025-12-01",
+                "location": {
+                    "@type": "VirtualLocation",
+                    "url": "https://www.techleadsit.com/courses/oracle-apex-online-training-course"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.techleadsit.com/courses/oracle-apex-online-training-course#enroll",
+                    "priceCurrency": "INR",
+                    "price": "15000",
+                    "availability": "https://schema.org/InStock"
+                }
+            }
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://www.techleadsit.com/courses/oracle-apex-online-training-course#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Is this Oracle APEX course completely online?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. This Oracle APEX training is delivered 100% online through live instructor-led sessions, with recordings available for revision."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do I need programming experience to learn Oracle APEX?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Basic SQL and database concepts are enough. Oracle APEX is a low-code platform, and the course covers all essential concepts step by step."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How long does the Oracle APEX online course take to complete?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Most learners complete the live training and main project work in about 8 to 10 weeks, depending on the batch schedule."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Will I get practice access to Oracle APEX?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. Learners get guided access to an Oracle APEX workspace and database so they can practice forms, reports and complete project work."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What job roles can I target after this Oracle APEX training?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "After this Oracle APEX online training you can apply for roles such as Oracle APEX Developer, Low-Code App Developer, Oracle APEX Consultant or full-stack APEX Developer."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I join this Oracle APEX course from outside India?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. The training is delivered online, so learners from any country can join and attend sessions from their own location."
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "EducationalOrganization",
+            "@id": "https://www.techleadsit.com#organization",
+            "name": "Tech Leads IT",
+            "url": "https://www.techleadsit.com",
+            "telephone": "+91 8125323232",
+            "email": "info@techleadsit.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "44 A, 3rd Floor, Geethanjali Apartments, S R Nagar",
+                "addressLocality": "Hyderabad",
+                "addressRegion": "Telangana",
+                "postalCode": "500038",
+                "addressCountry": "IN"
+            },
+            "sameAs": [
+                "https://www.facebook.com/techleadsitinstitute",
+                "https://www.linkedin.com/company/tech-leads-it"
+            ]
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.techleadsit.com#website",
+            "name": "Tech Leads IT",
+            "url": "https://www.techleadsit.com",
+            "publisher": {
+                "@id": "https://www.techleadsit.com#organization"
+            }
+        }
+    ]
+}

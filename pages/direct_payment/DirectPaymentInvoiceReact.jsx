@@ -241,9 +241,9 @@ const DirectPaymentInvoiceReact = ({ invoiceDetails }) => {
                 </View> */}
 
                 <View style={[styles.section, styles.rightAlign, { alignItems: 'flex-end', position: 'relative' }]}>
-                    <Text style={styles.bold}>Tech Leads IT</Text>
+                    <Text style={styles.bold}>{process.env.NEXT_PUBLIC_LEGAL_ENTITY_NAME}</Text>
                     <Text>Digitally Signed by</Text>
-                    <Text>Tech Leads IT</Text>
+                    <Text>{process.env.NEXT_PUBLIC_LEGAL_ENTITY_NAME}</Text>
                     <Text>{new Date(invoiceDetails?.updated_at)?.toLocaleDateString()}</Text>
 
                     {/* Stamp Image */}
@@ -270,9 +270,9 @@ const DirectPaymentInvoiceReact = ({ invoiceDetails }) => {
 
                 {/* Footer */}
                 <View style={styles.footer}>
-                    <Text>Tech Leads IT</Text>
-                    <Text>44/A, Geetanjali Apartments, SR Nagar Main road, Hyderabad, Telangana, 500038, India</Text>
-                    <Text>+91 8125323232 | info@techleadsit.com</Text>
+                    <Text>{process.env.NEXT_PUBLIC_LEGAL_ENTITY_NAME}</Text>
+                    <Text>{process.env.NEXT_PUBLIC_LEGAL_ENTITY_ADDRESS}</Text>
+                    <Text>{process.env.NEXT_PUBLIC_PHONE} | {process.env.NEXT_PUBLIC_EMAIL}</Text>
                 </View>
             </Page>
         </Document>

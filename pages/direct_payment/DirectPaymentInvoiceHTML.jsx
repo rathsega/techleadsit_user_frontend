@@ -29,7 +29,7 @@ const DirectPaymentInvoiceHTML = forwardRef(({ invoiceDetails }, ref) => {
   return (
     <div ref={ref} style={styles.container}>
       <div style={styles.header}>
-        <img src="/images/logoDark.webp" alt="Tech Leads IT" style={styles.logo} />
+        <img src="/images/logoDark.webp" alt={process.env.NEXT_PUBLIC_LEGAL_ENTITY_NAME} style={styles.logo} />
       </div>
 
       <table style={styles.table}>
@@ -130,9 +130,9 @@ const DirectPaymentInvoiceHTML = forwardRef(({ invoiceDetails }, ref) => {
 
       <div style={styles.footer}>
         <div>
-          <h3 style={{ margin: 0 }}>Tech Leads IT</h3>
-          <p style={{ margin: '5px 0' }}>Police Station, 44/A, 302, Geetanjali Apartments,<br />SR Nagar Main Road, Hyderabad, Telangana, 500038</p>
-          <p style={{ margin: '5px 0' }}>+91 8125323232 | info@techleadsit.com</p>
+          <h3 style={{ margin: 0 }}>{process.env.NEXT_PUBLIC_LEGAL_ENTITY_NAME}</h3>
+          <p style={{ margin: '5px 0' }}>{process.env.NEXT_PUBLIC_LEGAL_ENTITY_ADDRESS}</p>
+          <p style={{ margin: '5px 0' }}>{process.env.NEXT_PUBLIC_PHONE} | {process.env.NEXT_PUBLIC_EMAIL}</p>
         </div>
         <div style={{ textAlign: 'right' }}>
           <img src="/images/payment_gateway/digital-sign.png" alt="Signature" style={{ height: '50px' }} />

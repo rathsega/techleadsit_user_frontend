@@ -84,7 +84,7 @@ const DirectPaymentInvoice = forwardRef((props, ref) => {
                                 <thead>
                                     <tr>
                                         <td style={{ padding: "5px", textAlign: "center" }}>
-                                            <img src="/images/logoDark.webp" style={{ height: "50px" }} alt="Tech Leads IT" />
+                                            <img src="/images/logoDark.webp" style={{ height: "50px" }} alt={process.env.NEXT_PUBLIC_LEGAL_ENTITY_NAME} />
                                         </td>
                                     </tr>
                                 </thead>
@@ -283,9 +283,9 @@ const DirectPaymentInvoice = forwardRef((props, ref) => {
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <h1 style={{ fontWeight: 600, fontSize: "16px", marginBottom: "2px" }}>Tech Leads IT</h1>
+                                            <h1 style={{ fontWeight: 600, fontSize: "16px", marginBottom: "2px" }}>{process.env.NEXT_PUBLIC_LEGAL_ENTITY_NAME}</h1>
                                             <p style={{ fontWeight: 400, fontSize: "16px", marginTop: "2px" }}>
-                                                Police Station, 44/A, 302, Geetanjali Apartments, SR Nagar Main road, Hyderabad, Telangana, 500038, India
+                                                {process.env.NEXT_PUBLIC_LEGAL_ENTITY_ADDRESS}
                                             </p>
                                         </td>
                                     </tr>
@@ -297,9 +297,9 @@ const DirectPaymentInvoice = forwardRef((props, ref) => {
                                         <td style={{ textAlign: "end" }}>
                                             <strong>
                                                 <span style={{ borderRight: "2px solid #bfc1c5", fontWeight: 600, color: "#000000", marginRight: "25px", paddingRight: "25px" }}>
-                                                    +91 8125323232
+                                                    {process.env.NEXT_PUBLIC_PHONE}
                                                 </span>
-                                                <span style={{ fontWeight: 600, color: "#000000" }}>info@techleadsit.com</span>
+                                                <span style={{ fontWeight: 600, color: "#000000" }}>{process.env.NEXT_PUBLIC_EMAIL}</span>
                                             </strong>
                                         </td>
                                     </tr>

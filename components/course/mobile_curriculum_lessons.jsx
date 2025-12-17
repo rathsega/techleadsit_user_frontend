@@ -10,7 +10,7 @@ const MobileCurriculumLessons = React.memo(({ lessons, isLessonActive, handleScr
                         <li className="Curriculum-Sample-card-content-bullet-points">
                             <Image priority={false} loading="lazy" src="/images/courses/Is-this-course-pointer.svg"
                                 className="Main-Course-Curriculum-imp-point-icon"
-                                alt="Is-this-course-pointer" width="10" height="23" />
+                                alt="Is-this-course-pointer" width="10" height="23" style={{transform: "translateY(1px)"}} />
                             <span className="Curriculum-Sample-card-content-bullet-imp-p">{lesson?.lessonName}
                             </span>
                         </li>

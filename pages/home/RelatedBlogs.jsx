@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import httpService from "../../services/httpService";
 import { useLoader } from "../../contexts/LoaderContext";
+import Image from "next/image";
 
 const RelatedBlogs = () => {
     const { setLoading } = useLoader();
@@ -53,9 +54,10 @@ const RelatedBlogs = () => {
                 {
                     latestPopularBlogs?.map((blog, bindex) => (
                         <div className="Main-Course-Home-Page-Related-Blogs-S-card cursor-pointer" key={bindex} onClick={() => openBlog(slugify(blog?.basic?.title), blog?._id)}>
-                            <img src={process.env.NEXT_PUBLIC_FILES_URL + blog?.basic?.thumbnailImage?.path}
-                                className="Main-Course-Home-Page-Related-Blogs-S-img" width="400" height="210"
+                            <Image src={process.env.NEXT_PUBLIC_FILES_URL + blog?.basic?.thumbnailImage?.path}
+                                className="Main-Course-Home-Page-Related-Blogs-S-img" width={400} height={210}
                                 style={{ "color": "transparent", "maxWidth": "100%", "width": "-webkit-fill-available", "height": "auto" }}
+                                loading="lazy"
                                 alt="blog-card-img" />
                             <div className="Main-Course-Home-Page-Related-Blogs-S-content">
                                 <div className="d-flex justify-content-between mb-2">

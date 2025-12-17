@@ -32,7 +32,6 @@ const courseList = [
 const TopCourses = () => {
     const router = useRouter();
     const { setLoading } = useLoader();
-    const [hoveredIdx, setHoveredIdx] = useState(null);
 
     const openCourse = (slug) => {
         if (slug) {

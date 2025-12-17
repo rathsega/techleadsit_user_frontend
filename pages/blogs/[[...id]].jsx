@@ -6,9 +6,7 @@ import UpcomingDemos from "./UpcomingDemos";
 import RelevantCourses from "./RelevantCourses";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import PopupForm from './PopupForm'
-import ReserveYourSeatPopupForm from './ReserveYourSeatPopupForm'
-import AlreadySubmitted from "../blog/details/already_submitted";
+import useLmsStore from '../../store/lmsStore';
 import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
 
 const Blogs = () => {
@@ -20,19 +18,7 @@ const Blogs = () => {
     const [blogType, setBlogType] = useState('all');
     const [searchText, setSearchText] = useState("");
     const [sortByValue, setSortByValue] = useState("popularity");
-    const [debouncedText, setDebouncedText] = useState("");
-    const [showPopupform, setShowPopupform] = useState(false);
-    const [showReserveSeatForm, setShowReserveSeatForm] = useState(false);
-    const [popupProps, setPopupProps] = useState({ title: "", buttonName: "" });
-    const [userDetailsSubmitted, setUserDetailsSubmitted] = useState(() => {
-        if (typeof window !== "undefined") {
-            return !!localStorage.getItem('userDetails');
-        }
-        return false;
-    });
-    const [alreadySubmittedVisibility, setAlreadySubmittedVisibility] = useState(false);
-    const [courseName, setCourseName] = useState("");
-    const [demoDate, setDemoDate] = useState("");
+    const setPopupFormProps = useLmsStore((state) => state.setPopupFormProps);
 
     /*useEffect(() => {
         if (id && id !== 'interview_questions') {
@@ -44,72 +30,79 @@ const Blogs = () => {
         }
     }, [id]);*/
 
-    const handleUserDetailsSubmissionStatus = (status) => {
-        setUserDetailsSubmitted(status);
+
+    const formConfigs = {
+        "Reserve Your Seat": {
+            fields: ["fullName", "email", "phone", "qualification"],
+            heading: "Reserve Your Seat",
+            buttonLabel: "Register Now",
+        },
+        "Request A Call back": {
+            fields: ["fullName", "email", "phone", "qualification"],
+            heading: "Request A Call back",
+            buttonLabel: "Submit",
+        },
     };
 
-    const handleDetailsSubmitted = () => {
-        setAlreadySubmittedVisibility(false);
-    }
+    const now = new Date();
+    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
 
-    const handlePopupformVisibility = () => {
-        if (!showPopupform) {
-            if (userDetailsSubmitted) {
-                setAlreadySubmittedVisibility(true);
-                return;
+    const [userDetails, setUserDetails, clearUserDetails] = useExpiringLocalStorage(
+        "userDetails",
+        null,
+        endOfDay
+    );
+
+    const openForm = (formType, onSuccessCallback, hiddenFields) => {
+        const config = formConfigs[formType];
+        console.log(formType, config    );
+        // let userDetails = localStorage.getItem("userDetails");
+        // Double-check localStorage directly as well
+        const currentUserDetails = userDetails || localStorage.getItem("userDetails");
+        if (currentUserDetails) {
+            setPopupFormProps({ visible: false, alreadySubmitted: true });
+        } else {
+            if (config) {
+                setPopupFormProps({
+                    visible: true,
+                    alreadySubmitted: false,
+                    fields: config.fields,
+                    heading: config.heading,
+                    buttonLabel: config.buttonLabel,
+                    pageName: "Blogs Page - " + formType,
+                    onSuccess: onSuccessCallback,
+                    hiddenFields: hiddenFields || {}
+                });
             }
         }
-        setShowPopupform((prev) => !prev);
-    };
-    const handleReserveSeatVisibility = () => {
-        if (!showPopupform) {
-            if (userDetailsSubmitted) {
-                setAlreadySubmittedVisibility(true);
-                return;
-            }
-        }
-        setShowReserveSeatForm((prev) => !prev);
-        setPopupProps({ title: "Reserve Your Seat", buttonName: "Submit" })
-    };
 
-    const handlePopupFormProps = (newProps) => {
-        setPopupProps(newProps);
     };
 
     useEffect(() => {
-        if (searchText.length < 3) return; // Only trigger debounce if input is 3+ characters
+        if (id && id !== activeCategory) {
+            setActiveCategory(id);
+        } else if (!id && activeCategory !== 0) {
+            setActiveCategory(0);
+        }
+        setBlogType('all');
 
-        const handler = setTimeout(() => {
-            setDebouncedText(searchText);
-        }, 2000); // 1-second debounce time
-
-        return () => clearTimeout(handler); // Cleanup on every change before 3 sec
-    }, [searchText]);
-    useEffect(() => {
-            if (id && id !== activeCategory) {
-                setActiveCategory(id);
-            } else if (!id && activeCategory !== 0) {
-                setActiveCategory(0);
-            }
-            setBlogType('all');
-        
     }, [id]);
 
 
 
     return (<section className="Category-Section">
-        <UpcomingDemos handleReserveSeatVisibility={handleReserveSeatVisibility} setCourseName={setCourseName} setDemoDate={setDemoDate}></UpcomingDemos>
+        <UpcomingDemos openForm={openForm}></UpcomingDemos>
         <HeroCard></HeroCard>
         <section className="mt-4">
             <Filters setSearchText={setSearchText} searchText={searchText} setSortByValue={setSortByValue}></Filters>
             <CategoriesList activeCategory={activeCategory} setActiveCategory={setActiveCategory} searchText={searchText} blogType={blogType}></CategoriesList>
-            <AllBlogs activeCategory={activeCategory} blogType={blogType} searchText={searchText} handlePopupformVisibility={handlePopupformVisibility}
-                handlePopupFormProps={handlePopupFormProps} sortByValue={sortByValue}></AllBlogs>
+            <AllBlogs activeCategory={activeCategory} blogType={blogType} searchText={searchText} openForm={openForm}
+                sortByValue={sortByValue}></AllBlogs>
         </section>
         <RelevantCourses activeCategory={activeCategory}></RelevantCourses>
-        {showPopupform && <PopupForm handlePopupformVisibility={handlePopupformVisibility} popupProps={popupProps} handleUserDetailsSubmissionStatus={handleUserDetailsSubmissionStatus} />}
-        {showReserveSeatForm && <ReserveYourSeatPopupForm handleReserveSeatVisibility={handleReserveSeatVisibility} popupProps={popupProps} handleUserDetailsSubmissionStatus={handleUserDetailsSubmissionStatus} courseName={courseName} demoDate={demoDate} />}
-        {alreadySubmittedVisibility && <><div className="Main-Course-Overlay"></div><AlreadySubmitted handleDetailsSubmitted={handleDetailsSubmitted} /></>}
+        {/* {showPopupform && <PopupForm handlePopupformVisibility={handlePopupformVisibility} popupProps={popupProps} handleUserDetailsSubmissionStatus={handleUserDetailsSubmissionStatus} />} */}
+        {/* {showReserveSeatForm && <ReserveYourSeatPopupForm handleReserveSeatVisibility={handleReserveSeatVisibility} popupProps={popupProps} handleUserDetailsSubmissionStatus={handleUserDetailsSubmissionStatus} courseName={courseName} demoDate={demoDate} />}
+        {alreadySubmittedVisibility && <><div className="Main-Course-Overlay"></div><AlreadySubmitted handleDetailsSubmitted={handleDetailsSubmitted} /></>} */}
     </section>)
 }
 

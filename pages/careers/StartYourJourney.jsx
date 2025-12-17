@@ -1,17 +1,9 @@
-import CourseRegistrationForm from "../../components/course/RegistrationForm";
-import AlreadySubmitted from "../blog/details/already_submitted";
-import { useState, useRef } from "react";
 import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
-const StartYourJourney = () => {
-    const formRef = useRef(null);
-    const overlayRef = useRef(null);
+import useLmsStore from "../../store/lmsStore";
 
-    const [formVisibility, setFormVisibility] = useState(false);
-    const [formFields, setFormFields] = useState([]);
-    const [heading, setHeading] = useState("");
-    const [buttonLabel, setButtonLabel] = useState("");
-    const [detailsSubmitted, setDetailsSubmitted] = useState(false);
-    const [formSuccessCallback, setFormSuccessCallback] = useState(null);
+const StartYourJourney = () => {
+
+    const setPopupFormProps = useLmsStore((state) => state.setPopupFormProps);
 
     const formConfigs = {
         "Start Your Journey": {
@@ -21,30 +13,7 @@ const StartYourJourney = () => {
         }
     };
 
-    const handleButtonClick = () => {
-        if (formRef.current && overlayRef.current) {
-            formRef.current.style.display = "block";
-            overlayRef.current.style.display = "block";
-        }
-    };
-
-    const hidePopupForm = () => {
-        if (formRef.current && overlayRef.current) {
-            formRef.current.style.display = "none";
-            overlayRef.current.style.display = "none";
-        }
-    }
-
-    const handleDetailsSubmitted = () => {
-        setDetailsSubmitted(false);
-    }
-
-    const handleUserDetailsSubmissionStatus = (status) => {
-        if (status) {
-            setTimeout(() => { hidePopupForm() }, 3000)
-        }
-    };
-
+    
     const now = new Date();
     const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).getTime();
 
@@ -58,20 +27,21 @@ const StartYourJourney = () => {
         const config = formConfigs[formType];
 
         // let userDetails = localStorage.getItem("userDetails");
-        if (userDetails) {
-            setDetailsSubmitted(true);
+        // Double-check localStorage directly as well
+        const currentUserDetails = userDetails || localStorage.getItem("userDetails");
+        if (currentUserDetails) {
+            setPopupFormProps({ visible: false, alreadySubmitted: true });
         } else {
             if (config) {
-                setFormFields(config.fields);
-                setHeading(config.heading);
-                setButtonLabel(config.buttonLabel);
-                setFormVisibility(true);
-                handleButtonClick();
-            }
-            if (onSuccessCallback) {
-                setFormSuccessCallback(() => onSuccessCallback);
-            } else {
-                setFormSuccessCallback(null); // or undefined
+                setPopupFormProps({
+                    visible: true,
+                    alreadySubmitted: false,
+                    fields: config.fields,
+                    heading: config.heading,
+                    buttonLabel: config.buttonLabel,
+                    pageName: "Careers - Start Your Journey",
+                    onSuccess: onSuccessCallback,
+                });
             }
         }
 
@@ -106,25 +76,7 @@ const StartYourJourney = () => {
                         style={{ "color": "transparent", "maxWidth": "100%", "width": "auto", "height": "auto" }} />
                 </div>
             </section>
-            <div className="Main-Course-Overlay" ref={formRef} style={{ display: "none" }}></div>
-            <CourseRegistrationForm
-                overlayRef={overlayRef}
-                visible={formVisibility}
-                fields={formFields}
-                heading={heading}
-                buttonLabel={buttonLabel}
-                hidePopupForm={hidePopupForm}
-                pageName="home"
-                onSuccess={(data) => {
-                    //console.log("Success!", data);
-                    handleUserDetailsSubmissionStatus(true);
-                    if (formSuccessCallback) {
-                        formSuccessCallback(data); // ← This must be triggered here
-                        setFormSuccessCallback(null); // reset after call
-                    }
-                }}
-            ></CourseRegistrationForm>
-            {detailsSubmitted && <><div className="Main-Course-Overlay"></div><AlreadySubmitted handleDetailsSubmitted={handleDetailsSubmitted}></AlreadySubmitted></>}
+            
         </>
     )
 }

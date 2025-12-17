@@ -2,9 +2,37 @@ import React, { lazy, useEffect, useRef, useState, Suspense } from "react";
 import Image from "next/image"; // Importing Image component from next.js for optimized image handling
 const TurnKnowledgeIntoPower = lazy(() => import("./job_trends_turn_knowledge_into_power"));
 
-const JobTrends = React.memo(({ courseData, openForm }) => {
+const JobTrends = React.memo(({ turnKnowledgeIntoPowerData, JobTrendsData, courseTitle, openForm }) => {
     const chartRef = useRef(null);
     const [inView, setInView] = useState(false);
+    const [defaultJobTrendsData] = useState({
+        "awards": {
+            "title": "Oracle Fusion ERP has been named a Leader",
+            "awardsList": [
+                "2024 Gartner® Magic Quadrant for Cloud ERP for Service-Centric Enterprises,",
+                "2024 Gartner® Magic Quadrant for Cloud ERP for Product-Centric Enterprises, ",
+                "2024 Gartner® Magic Quadrant™ for Financial Planning Software."
+            ]
+        },
+        "jobGrowth": {
+            "title": "Estimated Oracle Fusion ERP Job Growth (2024-2030)",
+            "footerTitle": "Here's a projected year-wise job trend growth chart for Oracle Fusion ERP based on available market insights and trends."
+        },
+        "jobTrendsAndOppertunities": {
+            "title": "Oracle Fusion ERP Job Trends & Opportunities",
+            "shortDescription": "The Oracle Fusion ERP job market is booming! Discover the latest trends, industry demand, and how you can secure a top-paying role.",
+            "sectionDetails": {
+                "title": "Oracle Fusion ERP Job Growth (2024-2030)",
+                "shortDescription": "The demand for Oracle Fusion ERP professionals is experiencing significant growth, driven by the increasing adoption of cloud-based ERP solutions. Key trends influencing this growth include:",
+                "bulletPoints": [
+                    "Annual growth rate of 20-22%, fueled by widespread implementation of Oracle Cloud ERP.",
+                    "High demand in Financials, HCM, and SCM modules, with organizations prioritizing these areas.",
+                    "Increasing opportunities in contract-based and remote roles, making Oracle ERP a flexible career choice.",
+                    "Advancements in AI-driven ERP analytics, automation, and cloud transformations, further increasing the need for skilled professionals."
+                ]
+            }
+        }
+    });
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -42,40 +70,27 @@ const JobTrends = React.memo(({ courseData, openForm }) => {
                         alt="Award-Winning-Image" className="Main-Course-Award-Winning-Job-Trends-Icon" />
                 </div>
                 <div>
-                    <h2 className="Main-Course-Award-Winning-Heading">Oracle Fusion ERP has been named a Leader</h2>
-                    <div className="d-flex align-items-center gap-3 mb-3">
-                        <div className="Award-Winning-Small-Icon-BP">
-                            <img loading="lazy" src="/images/courses/Main-Course-Award-Winning-Small-Icon.svg"
-                                className="Main-Course-Award-Winning-Small-Icon" alt="Award-Winning-Icon" />
-                        </div>
-                        <p className="Main-Course-Award-Winning-BP-Content">2024 Gartner&reg; Magic Quadrant for Cloud
-                            ERP for Service-Centric Enterprises,</p>
-                    </div>
-                    <div className="d-flex align-items-center gap-3 mb-3">
-                        <div className="Award-Winning-Small-Icon-BP">
-                            <img loading="lazy" src="/images/courses/Main-Course-Award-Winning-Small-Icon.svg"
-                                className="Main-Course-Award-Winning-Small-Icon" alt="Award-Winning-Icon" />
-                        </div>
-                        <p className="Main-Course-Award-Winning-BP-Content">2024 Gartner&reg; Magic Quadrant for Cloud
-                            ERP for Product-Centric Enterprises, </p>
-                    </div>
-                    <div className="d-flex align-items-center gap-3">
-                        <div className="Award-Winning-Small-Icon-BP">
-                            <img loading="lazy" src="/images/courses/Main-Course-Award-Winning-Small-Icon.svg"
-                                className="Main-Course-Award-Winning-Small-Icon" alt="Award-Winning-Icon" />
-                        </div>
-                        <p className="Main-Course-Award-Winning-BP-Content">2024 Gartner&reg; Magic Quadrant&trade; for
-                            Financial Planning Software.</p>
-                    </div>
+                    <h2 className="Main-Course-Award-Winning-Heading">{JobTrendsData?.awards?.title ? JobTrendsData.awards.title : defaultJobTrendsData?.awards?.title}</h2>
+                    {
+                        (JobTrendsData?.awards?.awardsList || defaultJobTrendsData?.awards?.awardsList)?.map((award, index) => (
+                            <div key={index} className="d-flex align-items-center gap-3 mb-3">
+                                <div className="Award-Winning-Small-Icon-BP">
+                                    <img loading="lazy" src="/images/courses/Main-Course-Award-Winning-Small-Icon.svg"
+                                        className="Main-Course-Award-Winning-Small-Icon" alt="Award-Winning-Icon" />
+                                </div>
+                                <p className="Main-Course-Award-Winning-BP-Content">{award}</p>
+                            </div>
+                        ))
+                    }
                 </div>
             </section>
             <section className="Main-Course-Estimated-Job-Openings-Section">
                 <h2 className="Main-Course-Estimated-Job-Openings-Heading text-center mb-3">
-                    Estimated Oracle Fusion ERP Job Growth (2024-2030)
+                    {}{JobTrendsData?.jobGrowth?.title ? JobTrendsData.jobGrowth.title : defaultJobTrendsData?.jobGrowth?.title}
                 </h2>
                 <div className="Main-Course-Estimated-Job-Openings-Content-Section">
                     <div className="revenue-chart-container" ref={chartRef}>
-                        { inView && (<svg viewBox="0 0 500 400" className={`revenue-chart ${inView ? "animate" : ""}`} loading="lazy">
+                        {inView && (<svg viewBox="0 0 500 400" className={`revenue-chart ${inView ? "animate" : ""}`} loading="lazy">
                             <g className="revenue-grid">
                                 <line x1="60" y1="350" x2="500" y2="350"></line>
                                 <line x1="60" y1="250" x2="500" y2="250"></line>
@@ -176,8 +191,7 @@ const JobTrends = React.memo(({ courseData, openForm }) => {
                     </div>
                 </div>
                 <div className="Main-Course-Source-Text-Section">
-                    <span className="Bottom-Source-Text-Content">Here's a projected year-wise job trend growth chart for
-                        Oracle Fusion ERP based on available market insights and trends.</span>
+                    <span className="Bottom-Source-Text-Content">{JobTrendsData?.jobGrowth?.footerTitle ? JobTrendsData.jobGrowth.footerTitle : defaultJobTrendsData?.jobGrowth?.footerTitle}</span>
                     <div className="Bottom-Source-Text-Content-1">
                         <span className="Bottom-Source-Content">Source:</span><Image priority={false} loading="lazy"
                             src="/images/courses/Source-Naukri-Icon.svg" alt="Naukri-Source" height="22"
@@ -187,56 +201,34 @@ const JobTrends = React.memo(({ courseData, openForm }) => {
             </section>
 
             <section className="Main-Course-ERP-Job-Trends-Section">
-                <h2 className="Main-Course-ERP-Job-Trends-Heading text-center mb-2">Oracle Fusion ERP Job Trends &
-                    Opportunities</h2>
-                <p className="Main-Course-ERP-Job-Trends-Para text-center">The Oracle Fusion ERP job market is booming!
-                    Discover the latest trends, industry demand, and how you can secure a top-paying role.</p>
+                <h2 className="Main-Course-ERP-Job-Trends-Heading text-center mb-2">{JobTrendsData?.jobGrowth?.title ? JobTrendsData.jobGrowth.title : defaultJobTrendsData?.jobGrowth?.title}</h2>
+                <p className="Main-Course-ERP-Job-Trends-Para text-center">{JobTrendsData?.jobGrowth?.shortDescription ? JobTrendsData.jobGrowth.shortDescription : defaultJobTrendsData?.jobGrowth?.shortDescription}</p>
                 <div className="Main-Course-ERP-Job-Trends-Content-Section">
                     <div className="d-flex align-items-baseline gap-2">
                         <Image priority={false} loading="lazy" src="/images/courses/Oracle-ERP-Job-Growth-Icon.svg" height="29" width="29"
                             alt="Oracle-ERP-Job-Growth-Icon" className="Main-Course-ERP-Job-Trends-Icon" />
-                        <h3 className="Main-Course-ERP-Job-Trends-Sub-Heading">Oracle Fusion ERP Job Growth (2024-2030)
+                        <h3 className="Main-Course-ERP-Job-Trends-Sub-Heading">{JobTrendsData?.jobTrendsAndOppertunities?.sectionDetails?.title ? JobTrendsData.jobTrendsAndOppertunities.sectionDetails.title : defaultJobTrendsData?.jobTrendsAndOppertunities?.sectionDetails?.title}
                         </h3>
                     </div>
-                    <p className="Main-Course-ERP-Job-Trends-Sub-Para">The demand for Oracle Fusion ERP professionals is
-                        experiencing significant growth, driven by the increasing adoption of cloud-based ERP
-                        solutions. Key trends influencing this growth include:</p>
+                    <p className="Main-Course-ERP-Job-Trends-Sub-Para">{JobTrendsData?.jobTrendsAndOppertunities?.sectionDetails?.shortDescription ? JobTrendsData.jobTrendsAndOppertunities.sectionDetails.shortDescription : defaultJobTrendsData?.jobTrendsAndOppertunities?.sectionDetails?.shortDescription}</p>
                     <div>
-                        <div className="Main-Course-ERP-Job-Trends-bullet-points">
-                            <Image priority={false} loading="lazy" src="/images/courses/Is-this-course-pointer.svg"
-                                className="Main-Course-ERP-Job-Trends-imp-point-icon" alt="Is-this-course-pointer"
-                                width="10" height="23" />
-                            <p className="Main-Course-ERP-Job-Trends-bullet-imp-p">Annual growth rate of 20-22%, fueled
-                                by widespread implementation of Oracle Cloud ERP.</p>
-                        </div>
-                        <div className="Main-Course-ERP-Job-Trends-bullet-points">
-                            <Image priority={false} loading="lazy" src="/images/courses/Is-this-course-pointer.svg"
-                                className="Main-Course-ERP-Job-Trends-imp-point-icon" alt="Is-this-course-pointer"
-                                width="10" height="23" />
-                            <p className="Main-Course-ERP-Job-Trends-bullet-imp-p">High demand in Financials, HCM, and
-                                SCM modules, with organizations prioritizing these areas.</p>
-                        </div>
-                        <div className="Main-Course-ERP-Job-Trends-bullet-points">
-                            <Image priority={false} loading="lazy" src="/images/courses/Is-this-course-pointer.svg"
-                                className="Main-Course-ERP-Job-Trends-imp-point-icon" alt="Is-this-course-pointer"
-                                width="10" height="23" />
-                            <p className="Main-Course-ERP-Job-Trends-bullet-imp-p">Increasing opportunities in
-                                contract-based and remote roles, making Oracle ERP a flexible career choice.</p>
-                        </div>
-                        <div className="Main-Course-ERP-Job-Trends-bullet-points">
-                            <Image priority={false} loading="lazy" src="/images/courses/Is-this-course-pointer.svg"
-                                className="Main-Course-ERP-Job-Trends-imp-point-icon" alt="Is-this-course-pointer"
-                                width="10" height="23" />
-                            <p className="Main-Course-ERP-Job-Trends-bullet-imp-p">Advancements in AI-driven ERP
-                                analytics, automation, and cloud transformations, further increasing the need for
-                                skilled professionals.</p>
-                        </div>
+                        {
+                            (JobTrendsData?.jobTrendsAndOppertunities?.sectionDetails?.bulletPoints || defaultJobTrendsData?.jobTrendsAndOppertunities?.sectionDetails?.bulletPoints)?.map((point, index) => (
+                                <div key={index} className="Main-Course-ERP-Job-Trends-bullet-points">
+                                    <Image priority={false} loading="lazy" src="/images/courses/Is-this-course-pointer.svg"
+                                        className="Main-Course-ERP-Job-Trends-imp-point-icon" alt="Is-this-course-pointer" style={{ transform: "translateY(1px)" }}
+                                        width="10" height="23" />
+                                    <p className="Main-Course-ERP-Job-Trends-bullet-imp-p">{point}</p>
+                                </div>
+                            ))
+                        }
+                        
                     </div>
                 </div>
             </section>
 
             <Suspense fallback={<div>Loading...</div>}>
-                <TurnKnowledgeIntoPower data={courseData?.turnKnowledgeIntoPower} courseTitle={courseData?.title} openForm={openForm}></TurnKnowledgeIntoPower>
+                <TurnKnowledgeIntoPower data={turnKnowledgeIntoPowerData} courseTitle={courseTitle} openForm={openForm}></TurnKnowledgeIntoPower>
             </Suspense>
         </section>
     )

@@ -34,7 +34,7 @@ const PaymentSuccessPage = () => {
         const form = document.createElement('form');
         form.method = 'GET';
         form.action = url;
-        form.target = '_blank';
+        // form.target = '_blank';
 
         for (let key in data) {
             const input = document.createElement('input');
@@ -149,7 +149,7 @@ const PaymentSuccessPage = () => {
                 setTimeout(() => {
                     setShowInvoice(true);
                 }, 0); // or 100ms for safer timing
-                generatePDF(paymentData.invoiceDetails);
+                await generatePDF(paymentData.invoiceDetails);
 
                 // For example, auto-login using the fetched userCourseId (or other data)
                 setTimeout(async () => {

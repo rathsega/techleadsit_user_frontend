@@ -124,6 +124,36 @@ const WhatOurStudentsSay = React.memo(({ courseId }) => {
                 review: "Techleads is One of the Best training institute for Oracle Fusion. I would strongly recommend this institute for beginners and experienced people. Here the faculty is very experienced and knowledgeable"
             }
         ],
+        "PMP Certification": [
+            {
+                name: "Deepak",
+                review_link: "",
+                linkedin: "https://www.linkedin.com/in/deepakat2/",
+                designation: "Project Manager",
+                review: "I attended Abhijit’s PMP sessions, and they played a crucial role in helping me clear my certification. His structured, engaging, and practical approach made learning enjoyable and career-focused."
+            },
+            {
+                name: "Sandeep",
+                review_link: "",
+                linkedin: "https://www.linkedin.com/in/sandeepwaghmare/",
+                designation: "Senior Project Manager",
+                review: "Being mentored by Abhijit for PMP prep was truly insightful. His real-world examples and continuous support made every concept easy to understand and apply in my professional projects."
+            },
+            {
+                name: "Tushar",
+                review_link: "",
+                linkedin: "https://www.linkedin.com/in/tushar-laharia/",
+                designation: "Project Manager",
+                review: "I recently completed the PMP training with Abhijit Sir. His 20+ years of experience blended theory with real practice. Interactive sessions, quizzes, and feedback boosted my exam readiness."
+            },
+            {
+                name: "Keyur",
+                review_link: "",
+                linkedin: "https://www.linkedin.com/in/keyur-tailor-705964140/",
+                designation: "Senior Structural Engineer",
+                review: "Abhijit’s deep passion for project management made the course engaging and meaningful. His vast experience and mentorship added immense value beyond just PMP exam preparation."
+            }
+        ],
         "Remaining Courses": [
             {
                 name: "Jaydip Tripathi",
@@ -181,8 +211,12 @@ const WhatOurStudentsSay = React.memo(({ courseId }) => {
             "Oracle Fusion Technical OIC Certification Training": "ORF-TEC-CT-033",
             "Oracle Fusion Technical Self Paced Training": "ORF-TEC-SP-034"
         },
+        "PMP Certification": {
+            "PMP Certification Training": "GEN-PMP-OT-043",
+        },
         "Remaining Courses": {
             "Oracle Fusion WMS Cloud (Logfire) Training": "ORF-WMS-OT-005",
+            "Oracle Apex Online Training": "ORF-APX-OT-044",
             "SAP CPI Online Training": "SAP-CPI-OT-006",
             "SAP SD Online Training": "SAP-SDO-OT-007",
             "Data Science Online Training": "GEN-DST-OT-008",
@@ -206,7 +240,8 @@ const WhatOurStudentsSay = React.memo(({ courseId }) => {
             "Oracle Integration Cloud (OIC) Online Training": "ORF-OIC-OT-015",
             "Oracle ADF Online Training": "ORF-ADF-OT-018",
             "Oracle Apps R12 Technical Training": "ORR-TCH-OT-022",
-            "Oracle OAF Online Training": "ORR-OAF-OT-023"
+            "Oracle OAF Online Training": "ORR-OAF-OT-023",
+            "Oracle Fusion Manufacturing & Planning Course": "ORF-MFP-OT-042"
         }
     };
 
@@ -245,11 +280,11 @@ const WhatOurStudentsSay = React.memo(({ courseId }) => {
             {
                 reviews?.map((review, reviewIndex) => (
                     <div className="Main-Course-What-Our-Students-Say-Card" key={reviewIndex}>
-                        <a href={review?.review_link} target="_blank"
+                        {review?.review_link && <a href={review?.review_link} target="_blank"
                             rel="noopener noreferrer">
                             <Image priority={false} loading="lazy" src="/images/courses/Google-Icon.svg" alt="Google-Icon" height="22"
                                 width="22" className="Main-Course-What-Our-Students-Say-Card-Source-Icon" />
-                        </a>
+                        </a>}
                         <Image priority={false} loading="lazy" src={`/images/courses/students/our_students/${review?.name}.png`} alt="What-Our-Students-Say"
                             height="150" width="150" className="Main-Course-What-Our-Students-Say-img" />
                         <div className="d-flex align-items-end mb-2 mt-2">

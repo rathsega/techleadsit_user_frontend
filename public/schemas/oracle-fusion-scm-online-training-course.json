@@ -54,7 +54,7 @@
     "@context": "https://schema.org",
     "@type": "Course",
     "name": "Online Fusion SCM Training",
-    "description": "Online training course for Oracle Fusion Financials, led by Mr. Kaleem Basha, an experienced consultant with over 20 years of real-time experience, who has completed 60+ batches and trained over 2,100 students.",
+    "description": "Online training course for Oracle Fusion Financials, led by Mr. Krishna, an experienced consultant with over 20 years of real-time experience, who has completed 60+ batches and trained over 2,100 students.",
     "provider": {
       "@type": "Organization",
       "name": "Tech Leads IT",
@@ -64,7 +64,7 @@
       "@type": "Person",
       "name": "Mr. Krishna",
       "jobTitle": "Oracle Fusion SCM Consultant",
-      "description": "Mr. Kaleem Basha has over 20 years of real-time experience, completed 60+ batches, and trained more than 2,100 students in Oracle Fusion Financials.",
+      "description": "Mr. Krishna has over 20 years of real-time experience, completed 60+ batches, and trained more than 2,100 students in Oracle Fusion Financials.",
       "worksFor": { "@type": "Organization", "name": "Tech Leads IT" }
     }
   }

@@ -6,6 +6,7 @@ import path from 'path';
 import { useEffect, useState } from "react";
 import Home from "./home/Home";
 import httpService from "../services/httpService";
+import PageNotFound from "./404";
 
 // Predefined list of slugs that should load /courses content
 const courseSlugs = [
@@ -16,7 +17,6 @@ const courseSlugs = [
     "oracle/oracle-fusion/oracle-warehouse-management-training/oracle-wms-training",
     "ERP/SAP/sap-cpi-training/sap-cpi-course",
     "ERP/SAP/sap-sd-online-training/sap-sd-course-online",
-    "data-science-online-training-course",
     "ERP/workday-hcm/workday-hcm-online-training/workday-hcm-techno-functional-training",
     "oracle-fusion-procurement-online-training-course",
     "oracle-fusion-technical-training",
@@ -48,16 +48,78 @@ const courseSlugs = [
     "ERP/SAP/sap-mm-online-training/sap-mm-course-online",
     "ERP/SAP/sap-abap-course-online/sap-abap-training-online",
     "oracle-fusion-planning-central-online-training",
-    "oracle-fusion-cloud-crm-online-training-course"
+    "oracle-fusion-cloud-crm-online-training-course",
+    "oracle-fusion-manufacturing-planning-online-training-course",
+    "pmp-certification-course",
+    "oracle-apex-online-training-course"
 ];
 
 // Canonical mapping for specific slugs
-const canonicalMap = {
+/*const canonicalMap = {
     "oracle-fusion-scm-online-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-scm-online-training-course",
     "oracle-fusion-hcm-online-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-hcm-online-training-course",
     "oracle-fusion-technical-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-technical-training-course",
     "oracle/oracle-fusion/oracle-fusion-financials-training/oracle-fusion-financials-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-fusion/oracle-fusion-financials-training/oracle-fusion-financials-course"
+};*/
+
+// Canonical mapping for all course slugs
+const canonicalMap = {
+    "oracle-fusion-scm-online-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-scm-online-training-course",
+    "oracle-fusion-hcm-online-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-hcm-online-training-course",
+    "oracle/oracle-fusion/oracle-fusion-financials-training/oracle-fusion-financials-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-fusion/oracle-fusion-financials-training/oracle-fusion-financials-course",
+    "oracle-fusion-technical-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-technical-training-course",
+    "oracle/oracle-fusion/oracle-warehouse-management-training/oracle-wms-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-fusion/oracle-warehouse-management-training/oracle-wms-training",
+    "ERP/SAP/sap-cpi-training/sap-cpi-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "ERP/SAP/sap-cpi-training/sap-cpi-course",
+    "ERP/SAP/sap-sd-online-training/sap-sd-course-online": process.env.NEXT_PUBLIC_APPLICATION_URL + "ERP/SAP/sap-sd-online-training/sap-sd-course-online",
+    "ERP/workday-hcm/workday-hcm-online-training/workday-hcm-techno-functional-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "ERP/workday-hcm/workday-hcm-online-training/workday-hcm-techno-functional-training",
+    "oracle-fusion-procurement-online-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-procurement-online-training-course",
+    "oracle-fusion-technical-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-technical-training",
+    "oracle/oracle-fusion/orc-training/oracle-recruiting-cloud-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-fusion/orc-training/oracle-recruiting-cloud-training",
+    "oracle/oracle-fusion/otm-training/oracle-transportation-management-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-fusion/otm-training/oracle-transportation-management-training",
+    "oracle/oracle-fusion/oracle-gtm-online-training/oracle-global-trade-management-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-fusion/oracle-gtm-online-training/oracle-global-trade-management-training",
+    "oracle/oracle-fusion/oracle-integration-cloud-training/oracle-fusion-technical-oic-online-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-fusion/oracle-integration-cloud-training/oracle-fusion-technical-oic-online-training",
+    "oracle-fusion-manufacturing-online-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-manufacturing-online-training-course",
+    "oracle-fusion-ppm-online-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-ppm-online-training",
+    "oracle-fusion-adf-certification-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-adf-certification-training-course",
+    "oracle-r12-scm-online-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-r12-scm-online-training-course",
+    "oracle-ebs-r12-financials-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-ebs-r12-financials-training",
+    "oracle-r12-project-accounting-online-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-r12-project-accounting-online-training",
+    "oracle-r12-technical-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-r12-technical-training-course",
+    "oracle-oaf-online-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-oaf-online-training-course",
+    "oracle/oracle-fusion/oracle-fusion-scm-training/oracle-fusion-scm-online-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-fusion/oracle-fusion-scm-training/oracle-fusion-scm-online-training",
+    "oracle/oracle-fusion-certification/oracle-scm-certification/oracle-fusion-scm-certification-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-fusion-certification/oracle-scm-certification/oracle-fusion-scm-certification-training",
+    "oracle/oracle-self-paced-training/oracle-fusion-scm-video-course/oracle-fusion-scm-self-paced-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-self-paced-training/oracle-fusion-scm-video-course/oracle-fusion-scm-self-paced-training",
+    "oracle/oracle-fusion/oracle-fusion-hcm-online-training/oracle-fusion-hcm-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-fusion/oracle-fusion-hcm-online-training/oracle-fusion-hcm-training",
+    "oracle/oracle-fusion-certification/oracle-hcm-certification/oracle-fusion-hcm-certification-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-fusion-certification/oracle-hcm-certification/oracle-fusion-hcm-certification-training",
+    "oracle/oracle-self-paced-training/oracle-fusion-hcm-video-course/oracle-fusion-hcm-self-paced-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-self-paced-training/oracle-fusion-hcm-video-course/oracle-fusion-hcm-self-paced-training",
+    "oracle-fusion-financials-online-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-financials-online-training-course",
+    "oracle/oracle-fusion-certification/oracle-financials-certification/oracle-fusion-financials-certification-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-fusion-certification/oracle-financials-certification/oracle-fusion-financials-certification-training",
+    "oracle/oracle-self-paced-training/oracle-fusion-financials-video-course/oracle-fusion-financials-self-paced-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-self-paced-training/oracle-fusion-financials-video-course/oracle-fusion-financials-self-paced-training",
+    "oracle/oracle-fusion-certification/oracle-fusion-technical-training/oic-certification-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-fusion-certification/oracle-fusion-technical-training/oic-certification-training",
+    "oracle/oracle-self-paced-training/oracle-fusion-technical-video-course/oracle-fusion-technical-self-paced-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-self-paced-training/oracle-fusion-technical-video-course/oracle-fusion-technical-self-paced-training",
+    "oracle/oracle-self-paced-training/oracle-warehouse-management-training/oracle-wms-self-paced-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle/oracle-self-paced-training/oracle-warehouse-management-training/oracle-wms-self-paced-training",
+    "ERP/salesforce-training/salesforce-crm-training/salesforce-online-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "ERP/salesforce-training/salesforce-crm-training/salesforce-online-training",
+    "ERP/SAP/sap-mm-online-training/sap-mm-course-online": process.env.NEXT_PUBLIC_APPLICATION_URL + "ERP/SAP/sap-mm-online-training/sap-mm-course-online",
+    "ERP/SAP/sap-abap-course-online/sap-abap-training-online": process.env.NEXT_PUBLIC_APPLICATION_URL + "ERP/SAP/sap-abap-course-online/sap-abap-training-online",
+    "oracle-fusion-planning-central-online-training": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-planning-central-online-training",
+    "oracle-fusion-cloud-crm-online-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-cloud-crm-online-training-course",
+    "oracle-fusion-manufacturing-planning-online-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-fusion-manufacturing-planning-online-training-course",
+    "pmp-certification-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "pmp-certification-course",
+    "oracle-apex-online-training-course": process.env.NEXT_PUBLIC_APPLICATION_URL + "oracle-apex-online-training-course"
 };
+
+const forbiddenSlugs = [
+    'CourseDemo',
+    'ErrorBoundary',
+    'Footer',
+    'Header',
+    'hello',
+    'Home',
+    'Login',
+    'QuickCall',
+    'reportWebVitals',
+    'Seo'
+];
 
 export default function DynamicPage(props) {
     const router = useRouter();
@@ -66,6 +128,12 @@ export default function DynamicPage(props) {
 
     // Compose slugPath for canonical check
     const slugPath = Array.isArray(slug) ? slug.join('/') : slug;
+
+    // ✅ Check if slug matches forbidden slugs
+    const isForbidden = Array.isArray(slug) 
+        ? slug.some(s => forbiddenSlugs.includes(s))
+        : forbiddenSlugs.includes(slug);
+
 
     useEffect(() => {
         // Only fetch if needed
@@ -79,6 +147,7 @@ export default function DynamicPage(props) {
         };
         getTaxDetails();
         // eslint-disable-next-line react-hooks/exhaustive-deps
+        console.log("Slug path:", slugPath);
     }, [slug]);
 
     return (
@@ -90,7 +159,9 @@ export default function DynamicPage(props) {
                 </Head>
             )}
             {slug ? (
-                props.isCourse ? (
+                isForbidden ? (
+                    <PageNotFound />
+                ) : props.isCourse ? (
                     <CoursePage
                         key={Array.isArray(slug) ? slug.join("/") : slug}
                         slug={slug?.join(" / ")}
@@ -106,16 +177,21 @@ export default function DynamicPage(props) {
                         relatedCourses={props.relatedCourses}
                     />
                 ) : (
-                    <Home />
+                    ((slug && Array.isArray(slug) && slug[0] === 'index.php') || (slug && slug === 'index.php')) ? <><Head>
+                        <link rel="canonical" href="https://www.techleadsit.com" />
+                    </Head><Home /></> : <PageNotFound />
                 )
             ) : (
-                <Home />
+                <><Head>
+                    <link rel="canonical" href="https://www.techleadsit.com" />
+                </Head><Home /></>
             )}
         </>
     );
 }
 
 function getNearestUpcomingDate(data) {
+    console.log("nearest date:", data);
     if (!Array.isArray(data)) return null; // <-- Fix: guard clause
 
     const now = new Date();
@@ -165,16 +241,18 @@ export async function getStaticProps({ params }) {
             httpService.post("courses/getUpcomingDemos", { courseId: data?.id }),
             httpService.get(`courses/getBlogsAndCoursesByCategory?categoryName=${encodeURIComponent(data?.category)}`)
         ]);
-
+        console.log("slugIdRes:", slugIdRes);
 
         if (courseDetailRes?.status === 404) {
+            console.log('Course not found via API', data?.id);
             return { notFound: true };
         }
 
         let demos, upcomingDemoDate;
+        console.log("upcomingDemosRes:", upcomingDemosRes?.data);
         if (upcomingDemosRes && upcomingDemosRes.data) {
             demos = upcomingDemosRes.data.upcomingDemos || [];
-            upcomingDemoDate = getNearestUpcomingDate(upcomingDemosRes.data);
+            upcomingDemoDate = getNearestUpcomingDate(upcomingDemosRes.data?.upcomingDemos);
         }
 
         let relatedBlogs, relatedCourses;
@@ -215,7 +293,6 @@ export async function getStaticPaths() {
         "oracle/oracle-fusion/oracle-warehouse-management-training/oracle-wms-training",
         "ERP/SAP/sap-cpi-training/sap-cpi-course",
         "ERP/SAP/sap-sd-online-training/sap-sd-course-online",
-        "data-science-online-training-course",
         "ERP/workday-hcm/workday-hcm-online-training/workday-hcm-techno-functional-training",
         "oracle-fusion-procurement-online-training-course",
         "oracle-fusion-technical-training",
@@ -247,7 +324,10 @@ export async function getStaticPaths() {
         "ERP/SAP/sap-mm-online-training/sap-mm-course-online",
         "ERP/SAP/sap-abap-course-online/sap-abap-training-online",
         "oracle-fusion-planning-central-online-training",
-        "oracle-fusion-cloud-crm-online-training-course"
+        "oracle-fusion-cloud-crm-online-training-course",
+        "oracle-fusion-manufacturing-planning-online-training-course",
+        "pmp-certification-course",
+        "oracle-apex-online-training-course"
     ];
 
     const paths = courseSlugs.map((slug) => {

@@ -9,14 +9,14 @@ const RefundPolicy = () => {
         </div>
 
         <div className="C-Refund-Policy-content-Section">
-            <h2 className="R-P-Sub-Main-Heading">Tech Leads IT Refund Policy</h2>
-            <p className="R-P-Main-Para">At Tech Leads IT, we are committed to delivering high-quality courses and products that equip our learners with valuable knowledge and skills. Customer satisfaction is our top priority, and we have developed a clear and fair refund policy to ensure a seamless experience.</p>
+            <h2 className="R-P-Sub-Main-Heading"><b>Tech Leads IT Solutions Private Limited</b> Refund Policy</h2>
+            <p className="R-P-Main-Para">At <b>Tech Leads IT Solutions Private Limited</b>, we are committed to delivering high-quality courses and products that equip our learners with valuable knowledge and skills. Customer satisfaction is our top priority, and we have developed a clear and fair refund policy to ensure a seamless experience.</p>
             <h2 className="R-P-Sub-Main-Heading">Course and Product Offerings</h2>
-            <p className="R-P-Main-Para">Tech Leads IT provides a variety of courses and products available for one-time or annual purchase. Our goal is to offer top-tier education and resources, helping learners stay ahead in the ever-evolving tech industry.</p>
+            <p className="R-P-Main-Para"><b>Tech Leads IT Solutions Private Limited</b> provides a variety of courses and products available for one-time or annual purchase. Our goal is to offer top-tier education and resources, helping learners stay ahead in the ever-evolving tech industry.</p>
             <h2 className="R-P-Sub-Main-Heading">Customer Satisfaction Guarantee</h2>
             <p className="R-P-Main-Para">We understand that circumstances may arise where you are not completely satisfied with your purchase. In such cases, we encourage you to contact our customer support team so we can address your concerns and find a suitable resolution.</p>
             <h2 className="R-P-Sub-Main-Heading">Cancellation Policy</h2>
-            <p className="R-P-Main-Para">At Tech Leads IT, we take pride in offering courses led by industry experts. To help students make informed decisions, we provide demo sessions before enrollment. If you choose to cancel a course or subscription, you may do so within the first three classes after attending the demo. We aim to provide flexibility while ensuring a smooth cancellation process.</p>
+            <p className="R-P-Main-Para">At <b>Tech Leads IT Solutions Private Limited</b>, we take pride in offering courses led by industry experts. To help students make informed decisions, we provide demo sessions before enrollment. If you choose to cancel a course or subscription, you may do so within the first three classes after attending the demo. We aim to provide flexibility while ensuring a smooth cancellation process.</p>
             <h2 className="R-P-Sub-Main-Heading">Batch Selection and Resource Access</h2>
             <p className="R-P-Main-Para">After attending a demo, students can select their preferred batch and gain access to the latest videos and learning materials relevant to their chosen course. Our content is regularly updated to keep learners ahead of industry trends.</p>
             <h2 className="R-P-Sub-Main-Heading">Refund Policy</h2>
@@ -43,12 +43,12 @@ const RefundPolicy = () => {
             <p className="R-P-Sub-H-Option">Technical Issues: <span className="R-P-Sub-Para"> If you encounter technical difficulties preventing course access, please contact our support team immediately.</span></p>
 
             <h2 className="R-P-Sub-Main-Heading">Duplicate Payment Resolution</h2>
-            <p className="R-P-Main-Para">If a duplicate payment occurs, Tech Leads IT will process a refund within 5 business days, ensuring minimal inconvenience.</p>
+            <p className="R-P-Main-Para">If a duplicate payment occurs, <b>Tech Leads IT Solutions Private Limited</b> will process a refund within 5 business days, ensuring minimal inconvenience.</p>
 
             <h2 className="R-P-Sub-Main-Heading">Contact Us</h2>
             <p className="R-P-Main-Para">For any inquiries, concerns, or refund requests, please reach out to our dedicated support team at <a href="mailto:info@techleadsit.com">info@techleadsit.com</a>.</p>
 
-            <p className="R-P-Main-Para mt-5">At Tech Leads IT, we value your trust and strive to provide an exceptional learning experience. Thank you for choosing us as your learning partner!</p>
+            <p className="R-P-Main-Para mt-5">At <b>Tech Leads IT Solutions Private Limited</b>, we value your trust and strive to provide an exceptional learning experience. Thank you for choosing us as your learning partner!</p>
         </div>
     </section>
     )

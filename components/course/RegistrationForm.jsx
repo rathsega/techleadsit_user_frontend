@@ -13,19 +13,7 @@ const ReactDatePicker = dynamic(() => import("react-datepicker"), { ssr: false }
 import Image from "next/image"; // Importing Image component from next.js for optimized image handling
 import useLmsStore from "../../store/lmsStore";
 import { useExpiringLocalStorage } from "../../services/useExpiringLocalStorage";
-const CourseRegistrationForm = React.memo(({
-  overlayRef,
-  visible = false,
-  fields = ["fullName", "email", "phone", "qualification", "demoDate"],
-  heading = "Registration Form",
-  buttonLabel = "Register Now",
-  hidePopupForm,
-  pageName,
-  courseTitle = "",
-  courseId = "",
-  courseSlug = "",
-  onSuccess = () => { },
-}) => {
+const CourseRegistrationForm = React.memo(() => {
   const router = useRouter();
   const { id } = router.query;
   const queryParams = new URLSearchParams(router.asPath?.split('?')[1]);
@@ -37,7 +25,22 @@ const CourseRegistrationForm = React.memo(({
   const [defaultCountry, setDefaultCountry] = useState("IN");
   const [demos, setDemos] = useState([])
   const setFormHeading = useLmsStore((state) => state.setFormHeading);
-  console.log("Rendering CourseRegistrationForm component : ", heading);
+
+  const popupFormProps = useLmsStore((state) => state.popupFormProps);
+  const setPopupFormProps = useLmsStore((state) => state.setPopupFormProps);
+  let fields = popupFormProps?.fields;
+  let heading = popupFormProps?.heading;
+  let buttonLabel = popupFormProps?.buttonLabel;
+  let pageName = popupFormProps?.pageName;
+  let courseTitle = popupFormProps?.courseTitle;
+  let courseId = popupFormProps?.courseId;
+  let courseSlug = popupFormProps?.courseSlug;
+  let onSuccess = popupFormProps?.onSuccess;
+  if (typeof onSuccess !== 'function') {
+    onSuccess = (formData) => {};
+  }
+  const overlayRef = useRef(null);
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -45,8 +48,8 @@ const CourseRegistrationForm = React.memo(({
     qualification: "",
     userType: "Student",
     source: queryParams.get("source") ?? "Own",
-    page: pageName == 'course' ? pageName + ' - ' + courseTitle : pageName,
-    pageId: courseId ?? id,
+    page: popupFormProps?.pageName == "Course Page" ? "course - " + popupFormProps?.courseTitle : popupFormProps?.pageName || "unknown",
+    pageId: popupFormProps?.courseId ?? id,
     demoDate: ""
   });
 
@@ -60,7 +63,6 @@ const CourseRegistrationForm = React.memo(({
   );
 
   useEffect(() => {
-    // const userDetails = localStorage.getItem('userDetails');
     if (userDetails) {
       try {
         const parsed = JSON.parse(userDetails);
@@ -99,19 +101,19 @@ const CourseRegistrationForm = React.memo(({
 
   const validateField = (field, value) => {
     let error = "";
-    if (field === "fullName" && fields.includes("fullName")) {
+    if (field === "fullName" && fields?.includes("fullName")) {
       if (!value) {
         error = "Full name is required";
       } else if (!/^[A-Za-z ]+$/.test(value)) {
         error = "Full name can only contain letters and spaces";
       }
-    } else if (field === "email" && fields.includes("email") && !value) {
+    } else if (field === "email" && fields?.includes("email") && !value) {
       error = "Email is required";
-    } else if (field === "phone" && fields.includes("phone") && !value) {
+    } else if (field === "phone" && fields?.includes("phone") && !value) {
       error = "Phone number is required";
-    } else if (field === "qualification" && fields.includes("qualification") && !value) {
+    } else if (field === "qualification" && fields?.includes("qualification") && !value) {
       error = "Qualification is required";
-    } else if (field === "demoDate" && fields.includes("demoDate") && !value) {
+    } else if (field === "demoDate" && fields?.includes("demoDate") && !value) {
       error = "Preferred demo date is required";
     }
 
@@ -123,7 +125,6 @@ const CourseRegistrationForm = React.memo(({
 
 
   const handleUserTypeChange = (e) => {
-    //console.log(e.target.value);
     setFormData((prev) => ({ ...prev, qualification: e.target.value }));
     if (submitted) {
       validateField('qualification', e.target.value);
@@ -132,8 +133,7 @@ const CourseRegistrationForm = React.memo(({
 
   const validate = () => {
     const errors = {};
-    //console.log(formData);
-    if (fields.includes("fullName")) {
+    if (fields?.includes("fullName")) {
       const fullName = formData.fullName?.trim();
 
       if (!fullName) {
@@ -143,17 +143,16 @@ const CourseRegistrationForm = React.memo(({
       }
     }
 
-    if (fields.includes("email") && !formData.email.trim()) errors.email = "Email is required";
-    if (fields.includes("email") && formData.email.trim() && !errors.hasOwnProperty(email) && !/^\S+@\S+\.\S+$/.test(formData.email)) errors.email = "Email is invalid";
+    if (fields?.includes("email") && !formData.email.trim()) errors.email = "Email is required";
+    if (fields?.includes("email") && formData.email.trim() && !errors.hasOwnProperty(email) && !/^\S+@\S+\.\S+$/.test(formData.email)) errors.email = "Email is invalid";
 
-    if (fields.includes("phone") && !formData.phone) errors.phone = "Phone number is required";
-    if (fields.includes("phone") && !errors.hasOwnProperty(phone) && (typeof formData.phone !== "string" || !isValidPhoneNumber(formData.phone))) errors.phone = "Phone number is invalid";
-    if (fields.includes("qualification") && !formData.qualification) errors.qualification = "Qualification is required";
-    if (fields.includes("demoDate") && !formData.demoDate) errors.demoDate = "Preferred demo date is required";
-    if (fields.includes("message") && !formData.message) errors.message = "Message is required";
+    if (fields?.includes("phone") && !formData.phone) errors.phone = "Phone number is required";
+    if (fields?.includes("phone") && !errors.hasOwnProperty(phone) && (typeof formData.phone !== "string" || !isValidPhoneNumber(formData.phone))) errors.phone = "Phone number is invalid";
+    if (fields?.includes("qualification") && !formData.qualification) errors.qualification = "Qualification is required";
+    if (fields?.includes("demoDate") && !formData.demoDate) errors.demoDate = "Preferred demo date is required";
+    if (fields?.includes("message") && !formData.message) errors.message = "Message is required";
     if (!captchaToken) errors.captcha = "Captcha is required";
 
-    //console.log(errors);
     return errors;
   };
 
@@ -162,39 +161,65 @@ const CourseRegistrationForm = React.memo(({
     setSubmitted(true);
     const errors = validate();
     setFormErrors(errors);
-    //console.log(errors);
     if (Object.keys(errors).length === 0) {
       try {
         setLoading(true)
         let response;
-        if (fields.includes("demoDate")) {
-          response = await httpService.post("/demo/register", { ...formData, courseName: courseTitle, name: formData.fullName, token: captchaToken });
+        if (fields?.includes("demoDate") || popupFormProps?.hiddenFields?.demoDate) {
+          response = await httpService.post("/demo/register", { ...formData, courseName: courseTitle, name: formData.fullName, token: captchaToken, ...popupFormProps?.hiddenFields });
         } else {
           delete formData.demoDate;
           response = await httpService.post("/contactus/submitForm", { ...formData, token: captchaToken });
         }
 
         if (response.data) {
-          //console.log("Form submitted:", formData);
-          // localStorage.setItem("userDetails", JSON.stringify(formData));
-          setUserDetails(formData);
-          onSuccess(formData);
-          captchaRef.current?.resetCaptcha(); // Reset after success
-          setCaptchaToken('');
-          setCaptchaKey(prev => prev + 1);
-          setLoading(false)
-          // hidePopupForm();
-          setSuccess(true);
-          //Redirect to thank you page
-          if (pageName === 'course') {
+        await setUserDetails(formData);
+        onSuccess(formData);
+        captchaRef.current?.resetCaptcha();
+        setCaptchaToken('');
+        setCaptchaKey(prev => prev + 1);
+        setLoading(false)
+        setSuccess(true);
+        
+        // Close the popup first
+        setPopupFormProps({ visible: false, hiddenFields: {} });
+        
+        // Add a small delay and then navigate
+        setTimeout(() => {
+          if (pageName === 'Course Page') {
             setFormHeading(" " + heading + " ");
-            router.push(`/thankyou?courseTitle=${courseTitle}&courseId=${courseId}&slug=${router.query.slug.join('_')}`);
-          } else if(pageName.includes('upcoming_demo')) {
-            router.push(`/thankyou?fromPage=upcoming_demo&slug=${courseSlug}`);
+            
+            // Safely handle slug
+            let slugParam = 'unknown';
+            try {
+              if (router.query.slug) {
+                if (Array.isArray(router.query.slug)) {
+                  slugParam = router.query.slug.join('_');
+                } else {
+                  slugParam = router.query.slug;
+                }
+              } else if (courseSlug) {
+                slugParam = courseSlug;
+              }
+            } catch (err) {
+              console.warn('Slug error:', err);
+              slugParam = courseSlug || 'unknown';
+            }
+            
+            // Use window.location for reliable navigation
+            window.location.href = `/thankyou?fromPage=${pageName}&courseTitle=${encodeURIComponent(courseTitle)}&courseId=${courseId}&slug=${slugParam}`;
+            
+          } else if (pageName?.includes('upcoming_demo')) {
+            window.location.href = `/thankyou?fromPage=upcoming_demo&slug=${courseSlug || 'unknown'}`;
           } else {
-            router.push(`/thankyou`);
+            // Simple navigation that should always work
+            // Get current page relative URL (without domain)
+            const currentPageSlug = router.asPath.split('?')[0]; // Remove query params
+            const thankYouUrl = `/thankyou?fromPage=${encodeURIComponent('unknown')}&slug=${encodeURIComponent(currentPageSlug)}`;
+            window.location.href = thankYouUrl;
           }
-        }
+        }, 200);
+      }
       } catch (err) {
         captchaRef.current?.resetCaptcha(); // Reset CAPTCHA
         setCaptchaToken('');
@@ -217,62 +242,6 @@ const CourseRegistrationForm = React.memo(({
     };
     getCountryCode();
   }, []);
-
-  const getNearestUpcomingDate = (data) => {
-    const now = new Date();
-
-    const nearest = data
-      .map(item => new Date(item.date))
-      .filter(date => date > now)
-      .sort((a, b) => a - b)[0];
-
-    if (!nearest) return null;
-
-    return nearest.toLocaleDateString("en-GB", {
-      day: "2-digit",
-      month: "long",
-      year: "numeric"
-    });
-  };
-
-  // Function to get the suffix (st, nd, rd, th)
-  const getDaySuffix = (date) => {
-    if (date > 3 && date < 21) return "th"; // Special case for 11th to 20th
-    switch (date % 10) {
-      case 1:
-        return "st";
-      case 2:
-        return "nd";
-      case 3:
-        return "rd";
-      default:
-        return "th";
-    }
-  };
-
-  // Function to format the date in the desired format
-  const formatDate = (date) => {
-    const dateObj = new Date(date);
-    const day = dateObj.getDate();
-    const suffix = getDaySuffix(day);
-
-    // Get the month name
-    const monthName = dateObj.toLocaleString("default", { month: "long" });
-
-    // Get the year
-    const year = dateObj.getFullYear();
-
-    // Get the time in 12-hour format with AM/PM
-    let hours = dateObj.getHours();
-    let minutes = dateObj.getMinutes();
-    const ampm = hours >= 12 ? "PM" : "AM";
-    hours = hours % 12;
-    hours = hours ? hours : 12; // the hour '0' should be '12'
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-
-    // Construct the formatted date as '6th May 2025 04:00 PM'
-    return `${day}${suffix} ${monthName} ${year} ${hours}:${minutes} ${ampm}`;
-  };
 
   useEffect(() => {
     const getUpcomingDemos = () => {
@@ -303,7 +272,7 @@ const CourseRegistrationForm = React.memo(({
       if (overlayRef.current && !overlayRef.current.contains(e.target)) {
         setFormErrors({});
         setSubmitted(false);
-        hidePopupForm();
+        setPopupFormProps({ visible: false});
       }
     };
 
@@ -311,7 +280,7 @@ const CourseRegistrationForm = React.memo(({
       if (e.key === "Escape") {
         setFormErrors({});
         setSubmitted(false);
-        hidePopupForm();
+        setPopupFormProps({ visible: false });
       }
     };
 
@@ -322,20 +291,20 @@ const CourseRegistrationForm = React.memo(({
       document.removeEventListener("mousedown", handleOverlayClick);
       document.removeEventListener("keydown", handleEscapeKey);
     };
-  }, [overlayRef, hidePopupForm]);
+  }, []);
 
   return (
     <div
       className="Main-Course-Form-Container Main-Course-Register-Form"
       ref={overlayRef}
-      style={{ display: visible ? "block" : "none" }}
+      style={{ display: popupFormProps?.visible ? "block" : "none" }}
     >
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h3 className="Main-Course-Register-Form-Heading">{heading}</h3>
         <button className="border-0 Main-Course-Close-Btn" onClick={() => {
           setFormErrors({});
           setSubmitted(false);
-          hidePopupForm();
+          setPopupFormProps({ visible: false});
         }}>
           <i className="fa fa-times Main-Course-Fa-Times Universal-Cross-Mark" aria-hidden="true"></i>
         </button>
@@ -343,7 +312,7 @@ const CourseRegistrationForm = React.memo(({
 
       <form onSubmit={handleSubmit}>
         <div>
-          {fields.includes("fullName") && (
+          {fields?.includes("fullName") && (
             <div className="Main-Course-Input-Container">
               <input
                 type="text"
@@ -360,7 +329,7 @@ const CourseRegistrationForm = React.memo(({
             </div>
           )}
 
-          {fields.includes("email") && (
+          {fields?.includes("email") && (
             <div className="Main-Course-Input-Container">
               <input
                 type="email"
@@ -377,7 +346,7 @@ const CourseRegistrationForm = React.memo(({
             </div>
           )}
 
-          {fields.includes("phone") && (
+          {fields?.includes("phone") && (
             <div className="Main-Course-Input-Container">
               <PhoneInput
                 international
@@ -393,7 +362,7 @@ const CourseRegistrationForm = React.memo(({
           )}
 
           {/* Preferred Demo Date */}
-          {fields.includes("demoDate") && (
+          {fields?.includes("demoDate") && (
             <div className="Main-Course-Upcoming-Demo-Details-input-container">
               <ReactDatePicker
                 selected={formData.demoDate ? new Date(formData.demoDate) : null}
@@ -429,7 +398,7 @@ const CourseRegistrationForm = React.memo(({
           )}
 
           {/* User type radio buttons */}
-          {fields.includes("qualification") &&
+          {fields?.includes("qualification") &&
             <div className="TI-Form-RB-container">
               {["Student", "IT Professional", "Domain Experience"].map((qualification) => (
                 <div className="TI-Form-RB" key={qualification}>
@@ -444,7 +413,7 @@ const CourseRegistrationForm = React.memo(({
           {formErrors.qualification && <small className="text-danger">{formErrors.qualification}</small>}
 
 
-          {fields.includes("message") && (
+          {fields?.includes("message") && (
             <div className="Main-Course-Input-Container mt-3">
               <textarea
                 id="message"
@@ -498,3 +467,4 @@ const CourseRegistrationForm = React.memo(({
 });
 
 export default CourseRegistrationForm;
+
