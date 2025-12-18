@@ -138,6 +138,21 @@ const DemoRequestForm = () => {
     }
   }, [userDetails]);
 
+  const courses_required_in_dropdown = [
+    "oracle-fusion-scm-online-training-course",
+    "oracle-fusion-hcm-online-training-course",
+    "oracle/oracle-fusion/oracle-fusion-financials-training/oracle-fusion-financials-course",
+    "oracle-fusion-technical-training-course",
+    "oracle-apex-online-training-course",
+    "ERP/SAP/sap-cpi-training/sap-cpi-course",
+    "oracle-fusion-manufacturing-planning-online-training-course",
+    "oracle/oracle-fusion/oracle-warehouse-management-training/oracle-wms-training",
+    "oracle/oracle-fusion/orc-training/oracle-recruiting-cloud-training",
+    "oracle-fusion-ppm-online-training",
+    "oracle/oracle-fusion/otm-training/oracle-transportation-management-training",
+    "oracle/oracle-fusion/oracle-gtm-online-training/oracle-global-trade-management-training"
+  ]
+
   return (
     <section className="Home-Page-Lead-Form-container">
       <h2 className="Home-Page-Lead-Form-title">Request For Free Demo</h2>
@@ -199,7 +214,7 @@ const DemoRequestForm = () => {
             required
           >
             <option value="">Select Course*</option>
-            {courseList.map((course) => (
+            {courseList.filter(course => courses_required_in_dropdown.includes(course.slug)).map((course) => (
               <option key={course.title} value={course.title}>{course.title}</option>
             ))}
           </select>

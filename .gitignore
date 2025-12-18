@@ -25,3 +25,5 @@ yarn-error.log*
 
 *.zip
 .next
+
+/bkp_current

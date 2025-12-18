@@ -1006,7 +1006,7 @@ const CoursePage = ({ slug, filePath, courseData, nativeCourse, changedData, cou
                     <div className="Main-Course-Badge-Of-Excellence-Section-Whole-Content">
                         <div className="Main-Course-Badge-Of-Excellence-Image-Section">
                             <Image src={`/images/courses/certificates/${courseData?.title
-                                ?.replace(/\s*\+\s*/g, " ")
+                                ?.replace(/\s*\+\s*/g, "_")
                                 ?.replace(/\s_\s+/g, " ")
                                 ?.replace(/[&,]/g, "") // removes both & and ,
                                 ?.replace(/\s+/g, " ")
